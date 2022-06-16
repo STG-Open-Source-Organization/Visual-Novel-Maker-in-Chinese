@@ -56,26 +56,38 @@ gTopicId = "5.3.1.0_2";
 <script type="text/javascript" src="./ehlpdhtm.js"></script>
 
 <div style="width: 100%; position: relative;" id="header">
- <p class="Topic_Heading"><span>Example: Styles</span></p>
+ <p class="Topic_Heading"><span>示例：样式</span></p>
 </div>
 <p>&#160;</p>
-<p><span class="Topic_Start">I</span>f you look at our custom title-screen from the first example, you will see that our button definitions have some redundant data like a bottom-margin of 10 pixel and they are all resizable. It is fine in our example, but in more complex scenarios this becomes a huge problem if we decide later to make a change like using 15 pixel margin instead of 10. Because then we have to go through all of our controls and change it. That's where styles can help you out!</p>
+<p>
+	<span class="Topic_Start"></span>
+	如果您查看第一个示例中的自定义标题屏幕,您将看到我们的按钮定义有一些冗余数据，例如底部边距为10像素，并且它们的大小都可以调整。在我们的示例中它工作的很好，但在更复杂的场景中，这将成为一个巨大的问题，例如使用15像素的边距而不是10像素的边距。因此那时我们必须检查并更改我们所有的控件。这就是样式（styles）可以帮助你的地方！
+	you will see that our button   have some redundant data like a bottom-margin of 10 pixel and they are all resizable. It is fine in our example, but in more complex scenarios this becomes a huge problem if we decide later to make a change like using 15 pixel margin instead of 10. Because then we have to go through all of our controls and change it.
+</p>
 <p>&#160;</p>
-<p class="Sub_Heading"><span>Define a style</span></p>
-<p>A style allows you to define a set of properties just once and then re-use it for as many controls or layouts as you like. If you want to define a new style, you can do it in every script you like or even create a new script. All default styles are in "Styles" folder in "Style_Default" script. An example style could look like this:</p>
+<p class="Sub_Heading"><span>样式（style）定义</span></p>
+<p>
+	style允许您一次定义一组特性，然后将其重新用于任意数量的控件或布局。如果要定义新样式（style），可以在每个脚本中定义，甚至可以创建一个新脚本。所有默认样式都位于“Style”文件夹中的“Style_Default"脚本。示例样式如下所示：
+</p>
 <p>&#160;</p>
 <p><span class="Code">ui.UIManager.styles.titleScreenButton = {</span></p>
 <p><span class="Code">&#160;&#160;&#160;&#160;"resizable": true,</span></p>
 <p><span class="Code">&#160;&#160;&#160;&#160;"margin": [0, 0, 0, 10]</span></p>
 <p><span class="Code">}</span></p>
 <p>&#160;</p>
-<p>We put that at the end of "Style_Default" script. The first line always has the same format:</p>
+<p>
+	我们把它放在“Style_Default”脚本的末尾。第一行的格式始终相同：
+</p>
 <p>&#160;</p>
 <p><span class="Code">ui.UIManager.styles.&lt;style_name&gt; = {</span></p>
 <p>&#160;</p>
-<p>Its not necessary to completely understand that line but it is important to know that you have to define a unique name for your style. The name shouldn't contain any spaces or special characters.</p>
+<p>
+	没有必要完全理解这一行，重要的是您必须为您的样式（style）定义一个唯一的名称。名称不应包含任何空格或特殊字符。
+</p>
 <p>&#160;</p>
-<p>After we defined our style, we can change our title-screen example as follows:</p>
+<p>
+	定义样式(style)后，我们可以更改标题屏幕示例，如下所示：
+</p>
 <p>&#160;</p>
 <p><span class="Code">ui.UIManager.layouts.titleLayout = {</span></p>
 <p><span class="Code">&#160;&#160;"type": "ui.FreeLayout",</span></p>
@@ -111,11 +123,15 @@ gTopicId = "5.3.1.0_2";
 <p><span class="Code">&#160;&#160;]</span></p>
 <p><span class="Code">}</span></p>
 <p>&#160;</p>
-<p>You can even apply multiple styles on one item like this:</p>
+<p>
+	您甚至可以在一个物件（item）上应用多种样式，如下所示：
+</p>
 <p>&#160;</p>
 <p><span class="Code">"styles": ["titleScreenButton", "otherStyle"]</span></p>
 <p>&#160;</p>
-<p>In that case the styles are applied one after another. If there are colliding properties like if two styles contain the same property, the last applied style wins.</p>
+<p>
+	在这种情况下，样式(style)将一个接一个地应用。如果存在冲突属性，如两个样式(style)包含相同的属性，则最后应用的样式(style)获胜。
+</p>
 <p>&#160;</p>
 <p class="Sub_Heading"><span>Events</span></p>
 <p>It is also possible to change the style of a control at runtime if a certain event takes place. For Example: If we hover a control's area with the mouse pointer, another style can be applied to give some visual feedback to the use like changing the control's color.</p>

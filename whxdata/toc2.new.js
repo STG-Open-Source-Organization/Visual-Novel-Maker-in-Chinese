@@ -9,7 +9,7 @@ var toc =  [
   {"type":"item","name":"资源管理器","url":"Resource_Manager.htm"},
   {"type":"item","name":"立绘","url":"Resource_Standards.htm"},
   {"type":"item","name":"打包游戏","url":"Create_Game_Package.htm"},
-  {"type":"item","name":"Extension Manager","url":"Extension_Manager.htm"},
+  {"type":"item","name":"扩展管理器","url":"Extension_Manager.htm"},
   {"type":"item","name":"应用首选项","url":"Application_Preferences.htm"},
   {"type":"item","name":"项目首选项","url":"Project_Preferences.htm"},
   {"type":"item","name":"快捷键","url":"Notes.htm"},
