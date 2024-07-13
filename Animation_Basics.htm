@@ -63,159 +63,179 @@ gTopicId = "4.1.0_5";
 <body>
 <script type="text/javascript" src="./ehlpdhtm.js"></script>
 
-<p class="Topic_Heading">Animations</p>
+<p class="Topic_Heading">动画</p>
 <p>&#160;</p>
-<p><span class="Topic_Start">V</span>isual Novel Maker's Engine already provides a lot of components to do smooth animations easily. However, in this chapter we will make some very simple animations from scratch to learn some basics first without using VN Maker's animation system.</p>
+<p>
+    <span class="Topic_Start">V</span>isual Novel Maker的引擎已经提供了许多组件，可以轻松进行平滑的动画。然而，在本章中，我们将从零开始制作一些非常简单的动画，首先学习一些基础知识，而不使用VN Maker的动画系统。
+</p>
 <p>&#160;</p>
-<p>You can use that knowledge to understand how animations work under the hood or maybe to even build your own animation system, but we recommend to use VN Maker's default animation system especially for beginners.</p>
+<p>您可以利用这些知识了解动画如何在内部工作，甚至可能构建自己的动画系统，但我们建议初学者使用VN Maker的默认动画系统。</p>
 <p>&#160;</p>
-<p class="Sub_Heading">How animation works</p>
+<p class="Sub_Heading">
+    动画的工作原理
+</p>
 <p>&#160;</p>
-<p>Your game is running in a so called game loop which means that a certain part of your game logic is executed and repeated over and over again. In regular cases, 60 times per second. That loop does not end until the user quits the game. In VN Maker, the loop pauses if the game window loses focus.</p>
+<p>您的游戏运行在所谓的游戏循环中，这意味着游戏逻辑的某部分会被执行并重复执行。通常情况下，每秒执行60次。该循环直到用户退出游戏才会结束。在VN Maker中，如果游戏窗口失去焦点，循环会暂停。</p>
 <p>&#160;</p>
-<p>To keep things as easy as possible, you can imagine the updateContent method of your test bed scene as the your entry-point into the game loop.</p>
+<p>为了尽可能简单，您可以将测试场景中的 `updateContent` 方法想象为您进入游戏循环的入口点。</p>
 <pre>
-<code class="coffee">###*
-* Update the scene's content.
-###         
-updateContent: -&gt;
-    # Your entry point into the game loop.</code>
+    <code class="coffee">
+        ###*
+        * 更新场景内容。
+        ###
+        updateContent: -&gt;
+        # 您进入游戏循环的入口点。
+    </code>
 </pre>
-<p>In our last examples, we left updateContent empty because there was nothing we need to do there. But this method is called 60 times per second in regular cases. We can use that to animate a graphic object by changing it's position each time the method it called. So let's change the method a bit and add some movement and rotation to our sprite:</p>
+<p>在我们的上一个示例中，我们将 `updateContent` 方法留空，因为那里没有需要执行的操作。但是，在正常情况下，该方法每秒被调用60次。我们可以利用这一点通过在每次调用方法时改变图形对象的位置来实现动画效果。因此，让我们稍微修改这个方法，为我们的精灵添加一些移动和旋转：</p>
 <pre>
-<code class="coffee">
-###*
-* Update the scene's content.
-###         
-updateContent: -&gt;
-    # Add 1 to the sprite's rotation angle to rotate with 60 degrees per second.
-    @sprite.angle += 1
-    # Add 1 to the sprite's x-coordinate to move it to the right with 60 pixels per second.
-    @sprite.x += 1</code>
-</pre>
-<p>If we execute this example we can see how our sprite slowly moves and rotates non-stop to the right until it completely left the screen. That's because we never put an end to our animation, it is executed as long as the game runs.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Control your animation</p>
-<p>&#160;</p>
-<p>To get more control over our animation from the above example, we will setup a timer and once our timer reaches 0 we will stop with the animation.</p>
-<pre>
-<code class="coffee">
-###*
-* Prepares all data for the scene and loads the necessary graphic and audio resources.
-### 
-prepareData: -&gt;
-    # Load the background image "Bench_Morning".
-    @bitmap = ResourceManager.getBitmap("Graphics/Backgrounds/Bench_Morning")
-    # Set an animation timer to 300 frames which are 5 seconds. 
-    @animationTimer = 300
-###*
-* Update the scene's content.
-###         
-updateContent: -&gt;
-    # As long as the timer has not reached 0 we will animate the sprite.
-    if @animationTimer &gt; 0
-        # Add 1 to the sprite's rotation angle to rotate with 60 degrees per second.
+    <code class="coffee">
+        ###*
+        * 更新场景内容。
+        ###
+        updateContent: -&gt;
+        # 将精灵的旋转角度加1，以每秒60度的速度旋转。
         @sprite.angle += 1
-        # Add 1 to the sprite's x-coordinate to move it to the right with 60 pixels per second.
+        # 将精灵的 x 坐标加 1，以每秒 60 像素的速度向右移动。
+        @sprite.x += 1
+    </code>
+</pre>
+<p>如果我们执行这个示例，我们可以看到我们的精灵缓慢地不停地向右移动和旋转，直到它完全离开屏幕。这是因为我们从未为动画设置结束条件，只要游戏在运行，它就会一直执行。</p>
+<p>&#160;</p>
+<p class="Sub_Heading">控制您的动画</p>
+<p>&#160;</p>
+<p>为了更好地控制上述示例中的动画，我们将设置一个计时器，一旦计时器达到0，我们就会停止动画。</p>
+<pre>
+    <code class="coffee">
+        ###*
+        * 为场景准备所有数据并加载必要的图形和音频资源。
+        ###
+        prepareData: -&gt;
+        # 加载背景图像 "Bench_Morning"。
+        @bitmap = ResourceManager.getBitmap("Graphics/Backgrounds/Bench_Morning")
+        # 设置一个动画计时器，设置为300帧，即5秒钟。
+        @animationTimer = 300
+        ###*
+        * Update the scene's content.
+        ###
+        updateContent: -&gt;
+        # 只要计时器尚未达到0，我们将继续对精灵进行动画处理。
+        if @animationTimer &gt; 0
+        # 每秒将精灵的旋转角度增加1，使其以60度每秒的速度旋转。
+        @sprite.angle += 1
+        # 将精灵的 x 坐标增加1，以每秒60像素的速度向右移动。
         @sprite.x += 1
         # Reduce the timer by 1.
-        @animationTimer -= 1</code>
+        @animationTimer -= 1
+    </code>
 </pre>
-<p>In prepareData we set up a timer variable and set it to 300. Means after 300 game loop runs, also called "frames", we will stop the animation. Since we have 60 frames per second, our animation will run for 5 seconds. In updateContent, we are checking the timer and only if the timer has not reached 0 we will continue with the animation and reduce the timer by 1.</p>
+<p>在 prepareData 方法中，我们设置了一个名为 timer 的变量，并将其设置为 300。这意味着在经过 300 个游戏循环运行后，也称为 "帧"，我们将停止动画。由于我们每秒钟有 60 帧，因此我们的动画将持续运行 5 秒钟。在 updateContent 方法中，我们检查 timer，并且只有在 timer 尚未达到 0 时，我们才会继续动画并将 timer 减少 1。</p>
 <p>&#160;</p>
-<p class="Sub_Heading">Make your animation smoother</p>
+<p class="Sub_Heading">使你的动画更加平滑</p>
 <p>&#160;</p>
-<p>Our current animation stops immediately after 5 seconds but sometimes it is more nice to add a smooth fade-out / easing which means that instead of immediately stopping the animation after 5 seconds, the animation becomes slower and slower until it stops.</p>
+<p>我们当前的动画在 5 秒后立即停止，但有时添加平滑的淡出 / 缓动效果会更加优雅。这意味着在 5 秒后，动画会变得越来越慢，直到停止。</p>
 <pre>
-<code class="coffee">
-updateContent: -&gt;
-    # As long as the timer has not reached 0 we will animate the sprite.
-    if @animationTimer &gt; 0
-        # Add 5 to the sprite's rotation angle at the beginning but then reduce
-        # the increment more and more depending on how much time has elapsed so that
-        # the rotation becomes slower and slower until it stops.
+    <code class="coffee">
+        updateContent: -&gt;
+        # 只要计时器未达到0，我们就会对精灵进行动画处理。
+        if @animationTimer &gt; 0
+        # 在开始时将精灵的旋转角度增加5，然后随着时间的推移逐渐减少增量，使旋转速度变得越来越慢。
+        # 增量越来越少，具体取决于经过的时间，
+        # 这样使得旋转速度变得越来越慢，直到停止。
         @sprite.angle += 5 * (@animationTimer / 300)
-        # Reduce the timer by 1.
-        @animationTimer -= 1</code>
+        # 将计时器减少1。
+        @animationTimer -= 1
+    </code>
 </pre>
-<p>With this example, we can see how the rotation is very fast in the beginning but then slowly loses more and more speed until it stops. This is also called linear easing, which is very simple. There are a lot of other easing equations which you can find under <a href="Easing_Effects.htm">Easing Effects</a> topic.</p>
+<p>通过这个例子，我们可以看到旋转在开始时非常快，然后逐渐失去速度，直到停止。这也被称为线性缓动，非常简单。还有许多其他的缓动方程，您可以在 <a href="Easing_Effects.htm">Easing Effects</a> topic.</p>
 <p>&#160;</p>
-<p class="Sub_Heading">Spritesheet Animation</p>
+<p class="Sub_Heading">精灵表动画</p>
 <p>&#160;</p>
-<p>In game development, a spritesheet is a single image file containing multiple smaller images. The following example shows a spritesheet of a 2D Character</p>
+<p>在游戏开发中，精灵表是一个包含多个较小图像的单个图像文件。以下示例显示了一个2D角色的精灵表。</p>
 <p>&#160;</p>
 <p style="font-family: Arial, sans-serif; font-weight: bold;"><img src="4FramesNaia-Helpfile.png" alt="" style=" border:none; width:100%; max-width:327px;" border="0" /></p>
 <p>&#160;</p>
-<p>The above spritesheet contains all directions the character can look at and also all images for a move-animation. A single image in a spritesheet is also called "frame" if it comes to animation.</p>
+<p>上面的精灵表包含角色可以看向的所有方向，还包含移动动画的所有图像。精灵表中的单个图像在动画中也称为“帧”。</p>
 <p>&#160;</p>
-<p>To make a spritesheet based animation, we only display one single frame of the spritesheet at a time. And after a certain time passed, we display the next frame of the spritesheet. If we do that with the right timing, it looks like a smooth animation. In our example, it makes the character walking.</p>
+<p>要创建基于精灵表的动画，我们每次只显示精灵表中的单个帧。在经过一定时间后，显示精灵表中的下一帧。如果我们控制得当，看起来就像是流畅的动画。在我们的示例中，这使得角色看起来在行走。</p>
 <p>&#160;</p>
 <p><img src="$Naia.gif" alt="" style=" border:none; width:100%; max-width:32px;" border="0" /></p>
 <p>&#160;</p>
-<p>Maybe you remember the srcRect property we set in <a href="Display_a_Picture.htm">Display a Picture</a> example. We set it to the full size of the image, but for a spritesheet animation we can use that property to only display a single frame since srcRect allows us to only display a certain portion of the image on screen.</p>
+<p>也许你还记得我们在<a href="Display_a_Picture.htm">Display a Picture</a> 示例中使用的 `srcRect` 属性。我们将其设置为图像的全尺寸，但是对于精灵表动画，我们可以利用这个属性来仅显示单个帧，因为 `srcRect` 允许我们在屏幕上只显示图像的特定部分。</p>
 <p>&#160;</p>
 <p><img src="4FramesNaia-Helpfile_Select.png" alt="" style=" border:none; width:100%; max-width:327px;" border="0" /></p>
 <p>&#160;</p>
-<p>The yellow area is the srcRect of the sprite so only that portion of the image will be displayed on screen and if we move that area fast enough we get an animation.</p>
+<p>黄色区域是精灵的 `srcRect`，因此只有图像的该部分将显示在屏幕上。如果我们足够快地移动该区域，就可以得到动画效果。</p>
 <p>&#160;</p>
-<p>Let's take a look at the following example, we use this spritesheet:</p>
+<p>
+    让我们来看看以下的例子，我们使用这个精灵表：
+</p>
 <p>&#160;</p>
 <p><img src="4FramesNaia.png" alt="" style=" border:none; width:100%; max-width:128px;" border="0" /></p>
 <p>&#160;</p>
 <p>with the following code:</p>
 <pre>
-<code class="coffee">
-###*
-* Prepares all visual game object for the scene.
-###  
-prepareVisual: -&gt;
-    # Create a new sprite
-    @sprite = new gs.Sprite(Graphics.viewport)
-    # Assign the spritesheet bitmap to the sprite
-    @sprite.bitmap = @bitmap
-    # Set the portion of the spritesheet which should be visible on screen.
-    @sprite.srcRect = new gs.Rect(32, 0, 32, 48)
-    # Center the sprite on screen
-    @sprite.x = (Graphics.width - @sprite.srcRect.width) / 2
-    # Center the sprite on screen
-    @sprite.y = (Graphics.height - @sprite.srcRect.height) / 2
-    # We are done with preparing our visual objects. So we can start
-    # the screen transition to fade in our new created objects smoothly.
-    @transition()
-    
-###*
-* Prepares all data for the scene and loads the necessary graphic and audio resources.
-### 
-prepareData: -&gt;
-    # Load the spritesheet bitmap
-    @bitmap = ResourceManager.getBitmap("Graphics/Pictures/Naia")</code>
+    <code class="coffee">
+        ###*
+        * 准备场景中的所有视觉游戏对象。
+        ###
+        prepareVisual: -&gt;
+        # 创建一个新的精灵。
+        @sprite = new gs.Sprite(Graphics.viewport)
+        # 将精灵表位图分配给精灵。
+        @sprite.bitmap = @bitmap
+        # 设置精灵表中应该在屏幕上可见的部分。
+        @sprite.srcRect = new gs.Rect(32, 0, 32, 48)
+        # 将精灵居中显示在屏幕上。
+        @sprite.x = (Graphics.width - @sprite.srcRect.width) / 2
+        # 将精灵居中显示在屏幕上。
+        @sprite.y = (Graphics.height - @sprite.srcRect.height) / 2
+        # 我们已经完成了准备视觉对象的工作。现在可以开始。
+        # 屏幕过渡淡入，以平滑地显示我们新创建的对象。
+        @transition()
+
+        ###*
+        * 准备场景的所有数据，并加载必要的图形和音频资源。
+        ###
+        prepareData: -&gt;
+        # 加载精灵表位图。
+        @bitmap = ResourceManager.getBitmap("Graphics/Pictures/Naia")
+    </code>
 </pre>
-<p>To make that example work, you have to import the above spritesheet in Graphics/Pictures folder of your project and call it "Naia". If we test that example, we can see the character on the center of the screen. That is because we set the srcRect to a 32x48 pixel portion of the spritesheet. A single frame on the spritesheet is 32x48 pixel.</p>
+<p>
+    为使该示例生效，您需要将上述精灵表导入到项目的 Graphics/Pictures 文件夹中，并将其命名为 "Naia"。如果我们测试该示例，我们会看到角色显示在屏幕中央。这是因为我们将 srcRect 设置为精灵表的一个 32x48 像素部分。精灵表中的单个帧大小为 32x48 像素。
+</p>
 <p>&#160;</p>
-<p>Let's make it animated next by changing updateContent:</p>
+<p>让我们通过修改 updateContent 方法使其实现动画效果：</p>
 <pre>
-<code class="coffee">
-###*
-* Update the scene's content.
-###         
-updateContent: -&gt;
-    # We only want to change to the next frame on each 8th frame of the game-loop which
-    # is 1/4 second. 
-    if Graphics.frameCount % 15 == 0
-        # We move our srcRect 32 pixels to the right to display the next frame of the
-        # spritesheet. We use a modulo-operation with 128 to loop the animation.
-        @sprite.srcRect.x = (@sprite.srcRect.x + 32) % 128</code>
+    <code class="coffee">
+        ###*
+        * Update the scene's content.
+        ###
+        updateContent: -&gt;
+        # 我们只希望在游戏循环的每第8帧时切换到下一帧。
+        # 每8帧游戏循环相当于1/4秒。
+        if Graphics.frameCount % 15 == 0
+        # 我们将 srcRect 向右移动 32 像素，以显示精灵表的下一帧。
+        # 我们使用 128 进行取模运算来循环播放动画。
+        @sprite.srcRect.x = (@sprite.srcRect.x + 32) % 128
+    </code>
 </pre>
-<p>If we run our game now, we will see the character walking on screen. Well she is not actually moving, but we can see her walking-animation. Let's take a closer look to the code above to see how that is done.</p>
+<p>如果我们现在运行游戏，我们会看到角色在屏幕上走动。其实她并没有真正移动，但我们可以看到她的行走动画。让我们仔细看一下上面的代码，看看是如何实现的。</p>
 <p>&#160;</p>
-<p>First we do a modulo-operation on the current Graphics.frameCount which is just a counter increased by 1 on each game-loop frame/run. So it stores the number of frames passed since game start. With modulo 15, the result will be 0 each 15 frames. So only after 15 frames we execute our animation-code below the if-condition.</p>
+<p>首先，我们对当前的 `Graphics.frameCount` 进行取模运算，它是一个在每个游戏循环帧/运行中递增的计数器。因此，它存储了自游戏开始以来经过的帧数。通过对 15 取模，每 15 帧结果会为 0。因此，只有在经过了 15 帧之后，我们才会执行下面 `if` 条件下的动画代码。</p>
 <p>&#160;</p>
-<p>What we do there is that we move the src-rect by 32 pixels. As mentioned before, a single frame on the spritesheet is 32x48 pixel. So if we move the src-rect by 32 pixel on x-axis, we display the next frame of the spritesheet. You can imagine the src-rect like a yellow-cursor hovering over the spritesheet-bitmap with a position and a size and only the area of that cursor is displayed on screen.</p>
+<p>在这里我们所做的是将 `srcRect` 沿着 x 轴移动 32 像素。如前所述，精灵表中的单个帧是 32x48 像素。因此，如果我们在 x 轴上将 `srcRect` 移动 32 像素，就会显示精灵表的下一帧。你可以将 `srcRect` 想象成是一个黄色光标悬浮在精灵表位图上，具有位置和大小，屏幕上只显示光标所在区域的内容。</p>
 <p>&#160;</p>
-<p>However, if we move that src-rect cursor to much tothe &#160;right, we will run out of the spritesheet. To avoid that, we add a module 128 operation. The width of our spritesheet is 128 pixels. A single frame is 32 pixels. So if the x-coordinate of our src-rect cursor reaches 128, the modulo operation result will be 0. So our srcRect cursor is moved back to 0 and so, the animation runs endless.</p>
+<p>然而，如果我们将 `srcRect` 光标移动得太远向右，会超出精灵表的范围。为了避免这种情况，我们添加了一个模 128 运算。我们的精灵表的宽度是 128 像素，而单个帧是 32 像素。因此，如果 `srcRect` 光标的 x 坐标达到 128，模运算的结果将为 0。这样，我们的 `srcRect` 光标会被移回到 0，使得动画可以无限循环播放。</p>
 <p>&#160;</p>
-<p>While that all sounds a bit complicated at first, just try to modify the example above to get a better feeling for it. Try to remove the modulo operation to see what happens then, change the % 15 to let's say % 60 to see how the animation becomes slower. If you experiment a bit you will get a much better feeling.</p>
+<p>
+    虽然一开始听起来有点复杂，但试着修改上面的例子会让你更好地理解它。尝试移除模运算看看会发生什么，将 % 15 改成 % 60 看看动画如何变慢。通过一些实验，你会对它有更好的感觉。
+</p>
 <p>&#160;</p>
-<p>As mentioned in the beginning of that chapter, that all is already implemented in <a href="Animations_Animator.htm">Visual Novel Maker's Animation System</a> which you can just use as we will learn in another chapter.</p>
+<p>
+    正如在这一章节开头提到的那样，所有这些功能已经在 <a href="Animations_Animator.htm">Visual Novel Maker's Animation System</a>
+    中实现了，你可以直接使用，我们将在另一个章节中学习如何使用它。
+</p>
 </body>
 </html>
