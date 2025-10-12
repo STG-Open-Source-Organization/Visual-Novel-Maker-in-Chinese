@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+例如，如果溶解速度为 2，则阴影/鬼影/粒子将在 50 毫秒后完全消失/死亡。
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="generator" content="Adobe RoboHelp 2015" />
-<title>Music &amp; Sounds</title>
-<link rel="StyleSheet" href="default.css" type="text/css" />
-<link rel="stylesheet" href="highlight/styles/default.css" type="text/css" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Adobe RoboHelp 2015" name="generator"/>
+<title>HTML</title>
+<link href="default.css" rel="StyleSheet" type="text/css"/>
+<link href="highlight/styles/default.css" rel="stylesheet" type="text/css"/>
 <script src="highlight/highlight.pack.js" type="text/javascript">
 </script>
 <script type="text/javascript">
@@ -13,7 +13,7 @@
 hljs.initHighlightingOnLoad();
 //]]>
 </script>
-<script type="text/javascript" language="JavaScript">
+<script language="JavaScript" type="text/javascript">
 //<![CDATA[
 function reDo() {
   if (innerWidth != origWidth || innerHeight != origHeight)
@@ -37,360 +37,338 @@ visibility:hidden; }
 p.WebHelpNavBar { text-align:right; }
 -->
 </style>
-
-<script type="text/javascript" src="template/scripts/rh.min.js"></script>
-<script type="text/javascript" src="template/scripts/common.min.js"></script>
-<script type="text/javascript" src="template/scripts/topic.min.js"></script>
-<script type="text/javascript" src="template/scripts/constants.js"></script>
-<script type="text/javascript" src="template/scripts/utils.js"></script>
-<script type="text/javascript" src="template/scripts/mhutils.js"></script>
-<script type="text/javascript" src="template/scripts/mhlang.js"></script>
-<script type="text/javascript" src="template/scripts/mhver.js"></script>
-<script type="text/javascript" src="template/scripts/settings.js"></script>
-<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
-<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
-<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
-<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
-<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
- <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
-<script type="text/javascript" >
+<script src="template/scripts/rh.min.js" type="text/javascript"></script>
+<script src="template/scripts/common.min.js" type="text/javascript"></script>
+<script src="template/scripts/topic.min.js" type="text/javascript"></script>
+<script src="template/scripts/constants.js" type="text/javascript"></script>
+<script src="template/scripts/utils.js" type="text/javascript"></script>
+<script src="template/scripts/mhutils.js" type="text/javascript"></script>
+<script src="template/scripts/mhlang.js" type="text/javascript"></script>
+<script src="template/scripts/mhver.js" type="text/javascript"></script>
+<script src="template/scripts/settings.js" type="text/javascript"></script>
+<script src="template/scripts/XmlJsReader.js" type="text/javascript"></script>
+<script src="template/scripts/loadparentdata.js" type="text/javascript"></script>
+<script src="template/scripts/loadscreen.js" type="text/javascript"></script>
+<script src="template/scripts/loadprojdata.js" type="text/javascript"></script>
+<script src="template/scripts/mhtopic.js" type="text/javascript"></script>
+<link href="template/styles/topic.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
 gRootRelPath = ".";
 gCommonRootRelPath = ".";
 gTopicId = "4.1.0_9";
 </script>
- <meta name="topic-breadcrumbs" content="Scripter's Guide > Basic Engine" />
+<meta content="Scripter's Guide &gt; Basic Engine" name="topic-breadcrumbs"/>
 </head>
 <body>
-<script type="text/javascript" src="./ehlpdhtm.js"></script>
-
-<p class="Topic_Heading">Music &amp; Sounds</p>
-<p>&#160;</p>
-<p><span class="Topic_Start">W</span>ith VN Maker you can play music and sounds easily with volume, speed and pan control.</p>
-<p>&#160;</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Play a Sound</p>
-<p>&#160;</p>
-<p>A sound can be loaded using ResourceManager.getAudioBuffer which returns a gs.AudioBuffer object which can be easily played by calling it's play-method.</p>
+<script src="./ehlpdhtm.js" type="text/javascript"></script>
+<p class="Topic_Heading">音乐和声音</p>
+<p> </p>
+<p><span class="Topic_Start">音乐和声音</span>W</p>
+<p> </p>
+<p> </p>
+<p class="Sub_Heading">使用 VN Maker，您可以轻松播放音乐和声音，并进行音量、速度和声像控制。</p>
+<p> </p>
+<p>播放声音</p>
 <pre>
-<code class="coffee">
-# ===================================================================
+<code class="coffee">可以使用 ResourceManager.getAudioBuffer 加载声音，它返回一个 gs.AudioBuffer 对象，可以通过调用其 play 方法轻松播放。</code>
+</pre>
+<p> </p>
+<p># ===================================================================
 #
-#   Script: Component_TestBedBehavior
+#   脚本：Component_TestBedBehavior
 #
-#   Put your name here
+#   在此处写下您的名字
 #
 # ===================================================================
 class Component_TestBedBehavior extends gs.Component_SceneBehavior
     ###*
-    * A test bed scene behavior. Here you can play around with Visual Novel Maker's 
-    * game engine to get a better feeling for everything.
+    * 一个测试场景行为。您可以在这里玩转 Visual Novel Maker 的
+    * 游戏引擎，以便更好地了解一切。
     ###
     constructor: -&gt;
         super
         
-        # Define resource context property
+        # 定义资源上下文属性
         @resourceContext = null
     
     ###*
-    * Initializes the scene. 
+    * 初始化场景。
     ###
     initialize: -&gt;
         super
         
-        # Create a new resource context
+        # 创建一个新的资源上下文
         @resourceContext = ResourceManager.createContext()
         
-        # Set current object manager
+        # 设置当前对象管理器
         gs.ObjectManager.current = SceneManager
         
-        # Set it as the current resource context
+        # 将其设置为当前资源上下文
         ResourceManager.context = @resourceContext
         
     ###*
-    * Disposes the scene.
+    * 释放场景。
     ###  
     dispose: -&gt;
         super
     
     ###*
-    * Prepares all visual game object for the scene.
+    * 准备场景的所有视觉游戏对象。
     ###  
     prepareVisual: -&gt;
-        # Start Screen Transition
+        # 开始场景过渡
         @transition()
         
     ###*
-    * Prepares all data for the scene and loads the necessary graphic and audio resources.
+    * 准备场景的所有数据并加载必要的图形和音频资源。
     ### 
     prepareData: -&gt;
-        # Load the sound
+        # 加载声音
         @audioBuffer = ResourceManager.getAudioBuffer("Audio/Sounds/ambulance_siren")
         
     ###*
-    * Update the scene's content.
+    * 更新场景内容。
     ###         
     updateContent: -&gt;
-        # If a mouse-button gets released we will play the sound
+        # 如果鼠标按钮被释放，我们将播放声音
         if Input.Mouse.buttonUp
-            # Play the sound
+            # 播放声音
             @audioBuffer.play()
         
-gs.Component_LayoutSceneBehavior = Component_TestBedBehavior</code>
-</pre>
-<p>&#160;</p>
-<p>If we test our game now and click on the screen, we can hear a sound.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Play the same sounds multiple times</p>
-<p>&#160;</p>
-<p>In our last example we just played a single sound. However, if we try to play that sound multiple times in parallel, like if we are click on the screen multiple times, we will see that it will work without any problems so far. Whenever we call the play-method of our audio-buffer object, the current sound stops and then re-plays. That's a big disadvantage for like shooting games where the shot-sound is played a lot of times in parallel. One thing we could do here is that we are just create multiple instances of gs.AudioBuffer with the same sound-file, but that would be a waste of memory.</p>
-<p>&#160;</p>
-<p>A much better solution is to use gs.AudioBufferReference class. It provides a similar set of methods as gs.AudioBuffer but the difference is that it's constructor takes an already existing gs.AudioBuffer object instead of creating a new one but still allows us to play the sound independent from other audio-buffer references. So instead of creating a bunch of gs.AudioBuffer objects with the same sound, we are creating a bunch of gs.AudioBufferReference objects referring to one audio-buffer object instead.</p>
-<p>&#160;</p>
-<p>Let's take a look at the following example.</p>
-<p>&#160;</p>
+gs.Component_LayoutSceneBehavior = Component_TestBedBehavior</p>
+<p> </p>
+<p class="Sub_Heading">如果我们现在测试游戏并单击屏幕，我们可以听到声音。</p>
+<p> </p>
+<p>多次播放相同的声音</p>
+<p> </p>
+<p>在最后一个示例中，我们只播放了一个声音。但是，如果我们尝试同时播放该声音多次，例如当我们多次单击屏幕时，我们会发现到目前为止一切正常。每当我们调用音频缓冲对象的 play 方法时，当前声音就会停止然后重新播放。这对于射击游戏来说是一个很大的缺点，因为射击声音会同时播放很多次。我们可以做的一件事是创建具有相同声音文件的 gs.AudioBuffer 的多个实例，但这会浪费内存。</p>
+<p> </p>
+<p>一个更好的解决方案是使用 gs.AudioBufferReference 类。它提供了一组与 gs.AudioBuffer 类似的方​​法，但不同之处在于它的构造函数接受一个已有的 gs.AudioBuffer 对象而不是创建一个新的对象，但仍然允许我们独立于其他音频缓冲引用播放声音。因此，我们不是创建许多具有相同声音的 gs.AudioBuffer 对象，而是创建许多引用同一个音频缓冲对象的 gs.AudioBufferReference 对象。</p>
+<p> </p>
 <pre>
-<code class="coffee">
-# ===================================================================
+<code class="coffee">让我们来看下面的例子。</code>
+</pre>
+<p># ===================================================================
 #
-#   Script: Component_TestBedBehavior
+#   脚本：Component_TestBedBehavior
 #
-#   Put your name here
+#   在此处写下您的名字
 #
 # ===================================================================
 class Component_TestBedBehavior extends gs.Component_SceneBehavior
     ###*
-    * A test bed scene behavior. Here you can play around with Visual Novel Maker's 
-    * game engine to get a better feeling for everything.
+    * 一个测试场景行为。您可以在这里玩转 Visual Novel Maker 的
+    * 游戏引擎，以便更好地了解一切。
     ###
     constructor: -&gt;
         super
         
-        # Define resource context property
+        # 定义资源上下文属性
         @resourceContext = null
     
     ###*
-    * Initializes the scene. 
+    * 初始化场景。
     ###
     initialize: -&gt;
         super
         
-        # Create a new resource context
+        # 创建一个新的资源上下文
         @resourceContext = ResourceManager.createContext()
         
-        # Set current object manager
+        # 设置当前对象管理器
         gs.ObjectManager.current = SceneManager
         
-        # Set it as the current resource context
+        # 将其设置为当前资源上下文
         ResourceManager.context = @resourceContext
         
     ###*
-    * Disposes the scene.
+    * 释放场景。
     ###  
     dispose: -&gt;
         super
     
     ###*
-    * Prepares all visual game object for the scene.
+    * 准备场景的所有视觉游戏对象。
     ###  
     prepareVisual: -&gt;
-        # Create audio buffer reference 1
+        # 创建音频缓冲引用 1
         @soundReference1 = new gs.AudioBufferReference(@audioBuffer)
-        # Create audio buffer reference 2
+        # 创建音频缓冲引用 2
         @soundReference2 = new gs.AudioBufferReference(@audioBuffer)
-        # Start Screen Transition
+        # 开始场景过渡
         @transition()
         
     ###*
-    * Prepares all data for the scene and loads the necessary graphic and audio resources.
+    * 准备场景的所有数据并加载必要的图形和音频资源。
     ### 
     prepareData: -&gt;
-        # Load the sound
+        # 加载声音
         @audioBuffer = ResourceManager.getAudioBuffer("Audio/Sounds/ambulance_siren")
         
         
     ###*
-    * Update the scene's content.
+    * 更新场景内容。
     ###         
     updateContent: -&gt;
-        # If a mouse-button gets released we will play the sound
+        # 如果鼠标按钮被释放，我们将播放声音
         if Input.Mouse.buttonUp
-            # Check if sthe original audio-buffer is not playing
+            # 检查原始音频缓冲是否未在播放
             if not @audioBuffer.isPlaying
-                # Play original audio buffer 
+                # 播放原始音频缓冲
                 @audioBuffer.play()
-            # If original audio-buffer is already playing, check if reference-1 is not playing instead.
+            # 如果原始音频缓冲已在播放，则检查引用 1 是否未在播放。
             else if not @soundReference1.isPlaying
-                # Play reference-1
+                # 播放引用 1
                 @soundReference1.play()
-            # If reference 1 is already playing too, check if reference-2 is not playing instead.
+            # 如果引用 1 也已在播放，则检查引用 2 是否未在播放。
             else if not @soundReference2.isPlaying
-                # Play reference-2
+                # 播放引用 2
                 @soundReference2.play()
         
-gs.Component_LayoutSceneBehavior = Component_TestBedBehavior</code>
-</pre>
-<p>Now we have 2 audio-buffer references in addition to the original audio-buffer so we can play the same sound 3 times in parallel now. Try to click three times on the screen to see the difference. Of course, that kind of mechanism is already implemented in gs.AudioManager script. So using gs.AudioManager we can easily play as much sounds as we want using the playSound method.</p>
-<p>&#160;</p>
+gs.Component_LayoutSceneBehavior = Component_TestBedBehavior</p>
+<p> </p>
 <pre>
-<code class="coffee">
-# ===================================================================
+<code class="coffee">现在我们除了原始音频缓冲之外，还有 2 个音频缓冲引用，因此我们可以同时播放同一个声音 3 次。尝试单击屏幕三次以查看区别。当然，这种机制已经实现在 gs.AudioManager 脚本中。因此，使用 gs.AudioManager，我们可以使用 playSound 方法轻松播放任意数量的声音。</code>
+</pre>
+<p># ===================================================================
 #
-#   Script: Component_TestBedBehavior
+#   脚本：Component_TestBedBehavior
 #
-#   Put your name here
+#   在此处写下您的名字
 #
 # ===================================================================
 class Component_TestBedBehavior extends gs.Component_SceneBehavior
     ###*
-    * A test bed scene behavior. Here you can play around with Visual Novel Maker's 
-    * game engine to get a better feeling for everything.
+    * 一个测试场景行为。您可以在这里玩转 Visual Novel Maker 的
+    * 游戏引擎，以便更好地了解一切。
     ###
     constructor: -&gt;
         super
         
-        # Define resource context property
+        # 定义资源上下文属性
         @resourceContext = null
     
     ###*
-    * Initializes the scene. 
+    * 初始化场景。
     ###
     initialize: -&gt;
         super
         
-        # Create a new resource context
+        # 创建一个新的资源上下文
         @resourceContext = ResourceManager.createContext()
         
-        # Set current object manager
+        # 设置当前对象管理器
         gs.ObjectManager.current = SceneManager
         
-        # Set it as the current resource context
+        # 将其设置为当前资源上下文
         ResourceManager.context = @resourceContext
         
     ###*
-    * Disposes the scene.
+    * 释放场景。
     ###  
     dispose: -&gt;
         super
     
     ###*
-    * Prepares all visual game object for the scene.
+    * 准备场景的所有视觉游戏对象。
     ###  
     prepareVisual: -&gt;
-        # Start Screen Transition
+        # 开始场景过渡
         @transition()
         
     ###*
-    * Prepares all data for the scene and loads the necessary graphic and audio resources.
+    * 准备场景的所有数据并加载必要的图形和音频资源。
     ### 
     prepareData: -&gt;
-        # Load the sound
+        # 加载声音
         gs.AudioManager.loadSound("ambulance_siren")
         
         
     ###*
-    * Update the scene's content.
+    * 更新场景内容。
     ###         
     updateContent: -&gt;
-        # If a mouse-button gets released we will play the sound
+        # 如果鼠标按钮被释放，我们将播放声音
         if Input.Mouse.buttonUp
-            # Play the sound
+            # 播放声音
             gs.AudioManager.playSound("ambulance_siren", 100, 100)
         
-gs.Component_LayoutSceneBehavior = Component_TestBedBehavior</code>
-</pre>
-<p>As we can see here, we no longer need to deal with gs.AudioBuffer and gs.AudioBufferReference directly. We can just call AudioManager.loadSound to load the sound and then easily play it with playSound.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Play Music</p>
-<p>&#160;</p>
-<p>To play a music file, we can just do the same as with sounds and use a gs.AudioBuffer object. But since music files are a lot larger in most cases, it is maybe not a good idea to load and decode them completely in memory before playing. Especially on some mobile devices that cloud result in long delays. Instead it is more recommend to stream the music-data. Streaming means that instead of loading the entire audio-file into memory, we only load and decode a small piece of it, then play that piece, free the memory and then load, decode and play the next piece. We can do that easily using gs.AudioBufferStream instead of gs.AudioBuffer.</p>
-<p>&#160;</p>
+gs.Component_LayoutSceneBehavior = Component_TestBedBehavior</p>
+<p> </p>
+<p class="Sub_Heading">正如我们在这里看到的，我们不再需要直接处理 gs.AudioBuffer 和 gs.AudioBufferReference。我们只需要调用 AudioManager.loadSound 来加载声音，然后就可以轻松地使用 playSound 来播放它。</p>
+<p> </p>
+<p>播放音乐</p>
+<p> </p>
 <pre>
-<code class="coffee">
-# ===================================================================
+<code class="coffee">要播放音乐文件，我们可以像处理声音一样使用 gs.AudioBuffer 对象。但是，由于音乐文件通常要大得多，因此在播放之前将它们完全加载和解码到内存中可能不是一个好主意。特别是在某些移动设备上，这可能会导致延迟。因此，更推荐流式传输音乐数据。流式传输意味着不是将整个音频文件加载到内存中，而是只加载和解码一小部分，然后播放该部分，释放内存，然后加载、解码和播放下一部分。我们可以使用 gs.AudioBufferStream 而不是 gs.AudioBuffer 来轻松实现这一点。</code>
+</pre>
+<p># ===================================================================
 #
-#   Script: Component_TestBedBehavior
+#   脚本：Component_TestBedBehavior
 #
-#   Put your name here
+#   在此处写下您的名字
 #
 # ===================================================================
 class Component_TestBedBehavior extends gs.Component_SceneBehavior
     ###*
-    * A test bed scene behavior. Here you can play around with Visual Novel Maker's 
-    * game engine to get a better feeling for everything.
+    * 一个测试场景行为。您可以在这里玩转 Visual Novel Maker 的
+    * 游戏引擎，以便更好地了解一切。
     ###
     constructor: -&gt;
         super
         
-        # Define resource context property
+        # 定义资源上下文属性
         @resourceContext = null
     
     ###*
-    * Initializes the scene. 
+    * 初始化场景。
     ###
     initialize: -&gt;
         super
         
-        # Create a new resource context
+        # 创建一个新的资源上下文
         @resourceContext = ResourceManager.createContext()
-        # Set current object manager
+        # 设置当前对象管理器
         gs.ObjectManager.current = SceneManager
-        # Set it as the current resource context
+        # 将其设置为当前资源上下文
         ResourceManager.context = @resourceContext
         
     ###*
-    * Disposes the scene.
+    * 释放场景。
     ###  
     dispose: -&gt;
         super
     
     ###*
-    * Prepares all visual game object for the scene.
+    * 准备场景的所有视觉游戏对象。
     ###  
     prepareVisual: -&gt;
-        # Start Screen Transition
+        # 开始场景过渡
         @transition()
         
     ###*
-    * Prepares all data for the scene and loads the necessary graphic and audio resources.
+    * 准备场景的所有数据并加载必要的图形和音频资源。
     ### 
     prepareData: -&gt;
-        # Load the music
+        # 加载音乐
         @audioStream = ResourceManager.getAudioStream("Audio/Music/Tutorial_-_Good_Mood")
         
         
     ###*
-    * Update the scene's content.
+    * 更新场景内容。
     ###         
     updateContent: -&gt;
-        # If a mouse-button gets released we will play the music
+        # 如果鼠标按钮被释放，我们将播放音乐
         if Input.Mouse.buttonUp
-            # Play the music
+            # 播放音乐
             @audioStream.play()
         
-gs.Component_LayoutSceneBehavior = Component_TestBedBehavior</code>
-</pre>
-<p>If we test our game now, we will hear some background music playing. But the recommended way is to use gs.AudioManager like in the following example.</p>
+gs.Component_LayoutSceneBehavior = Component_TestBedBehavior</p>
 <pre>
-<code class="coffee">
-###*
-* Prepares all data for the scene and loads the necessary graphic and audio resources.
-### 
-prepareData: -&gt;
-    # Load the music
-    gs.AudioManager.loadMusic("Tutorial_-_Good_Mood")
-    
-    
-###*
-* Update the scene's content.
-###         
-updateContent: -&gt;
-    # If a mouse-button gets released we will play the music
-    if Input.Mouse.buttonUp
-        # Play the music
-        gs.AudioManager.playMusic("Tutorial_-_Good_Mood", 100, 100)</code>
+<code class="coffee">如果我们现在测试游戏，我们会听到一些背景音乐。但推荐的方式是使用 gs.AudioManager，就像在下面的示例中一样。</code>
 </pre>
-<p>&#160;</p>
-<p>&#160;</p>
-<p>&#160;</p>
+<p> </p>
+<p> </p>
+<p> </p>
 </body>
 </html>

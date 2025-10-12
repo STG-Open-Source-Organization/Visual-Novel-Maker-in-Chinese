@@ -1,16 +1,16 @@
-<!DOCTYPE HTML>
+[通过拖放、双击或键盘实现事件命令的可能性]
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="generator" content="Adobe RoboHelp 2015" />
-<title>Tilemaps</title>
-<link rel="StyleSheet" href="default.css" type="text/css" />
-<link rel="stylesheet" href="highlight/styles/default.css" type="text/css" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Adobe RoboHelp 2015" name="generator"/>
+<title>HTML</title>
+<link href="default.css" rel="StyleSheet" type="text/css"/>
+<link href="highlight/styles/default.css" rel="stylesheet" type="text/css"/>
 <script src="highlight/highlight.pack.js" type="text/javascript"></script>
 <script type="text/javascript">//<![CDATA[
 hljs.initHighlightingOnLoad();
 //]]></script>
-<script type="text/javascript" language="JavaScript">
+<script language="JavaScript" type="text/javascript">
 //<![CDATA[
 function reDo() {
   if (innerWidth != origWidth || innerHeight != origHeight)
@@ -34,309 +34,219 @@ visibility:hidden; }
 p.WebHelpNavBar { text-align:right; }
 -->
 </style>
-
-<script type="text/javascript" src="template/scripts/rh.min.js"></script>
-<script type="text/javascript" src="template/scripts/common.min.js"></script>
-<script type="text/javascript" src="template/scripts/topic.min.js"></script>
-<script type="text/javascript" src="template/scripts/constants.js"></script>
-<script type="text/javascript" src="template/scripts/utils.js"></script>
-<script type="text/javascript" src="template/scripts/mhutils.js"></script>
-<script type="text/javascript" src="template/scripts/mhlang.js"></script>
-<script type="text/javascript" src="template/scripts/mhver.js"></script>
-<script type="text/javascript" src="template/scripts/settings.js"></script>
-<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
-<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
-<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
-<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
-<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
- <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
-<script type="text/javascript" >
+<script src="template/scripts/rh.min.js" type="text/javascript"></script>
+<script src="template/scripts/common.min.js" type="text/javascript"></script>
+<script src="template/scripts/topic.min.js" type="text/javascript"></script>
+<script src="template/scripts/constants.js" type="text/javascript"></script>
+<script src="template/scripts/utils.js" type="text/javascript"></script>
+<script src="template/scripts/mhutils.js" type="text/javascript"></script>
+<script src="template/scripts/mhlang.js" type="text/javascript"></script>
+<script src="template/scripts/mhver.js" type="text/javascript"></script>
+<script src="template/scripts/settings.js" type="text/javascript"></script>
+<script src="template/scripts/XmlJsReader.js" type="text/javascript"></script>
+<script src="template/scripts/loadparentdata.js" type="text/javascript"></script>
+<script src="template/scripts/loadscreen.js" type="text/javascript"></script>
+<script src="template/scripts/loadprojdata.js" type="text/javascript"></script>
+<script src="template/scripts/mhtopic.js" type="text/javascript"></script>
+<link href="template/styles/topic.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
 gRootRelPath = ".";
 gCommonRootRelPath = ".";
 gTopicId = "4.1.0_7";
 </script>
- <meta name="topic-breadcrumbs" content="Scripter's Guide > Basic Engine" />
+<meta content="Scripter's Guide &gt; Basic Engine" name="topic-breadcrumbs"/>
 </head>
-
 <body>
-<script type="text/javascript" src="./ehlpdhtm.js"></script>
-
-<p class="Sub_Heading">Tilemaps</p>
-<p>&#160;</p>
-<p><span class="Topic_Start">A</span> Tilemap is a common element seen 
- in Adventure, Side-Scrolling or Strategy like games. It is used to display 
- the environment of the current level, for example:</p>
-<p>&#160;</p>
-<p><img src="TilemapExample.png" alt="" style=" border:none; width:100%; max-width:836px;" border="0" /></p>
-<p>&#160;</p>
-<p>The above tilemap is Top Down point of view mostly seen in retro RPGs. 
- But you can also use other variants such as isometric or sideview.</p>
-<p>&#160;</p>
-<p>Tilemaps are represented by the gs.Tilemap class. They are also counted 
- as graphics objects so they can be rotated, zoomed, etc.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Tilesets</p>
-<p>&#160;</p>
-<p>A tilemap is constructed from a tileset (also known as Tilesheet). The 
- tileset is a single image file which contains the graphics, also called 
- &quot;Tiles&quot;, needed to construct the tilemap / level of the game. 
- It is very similar to a spritesheet.</p>
-<p>&#160;</p>
-<p><img src="image45.gif" alt="" style=" border:none; width:100%; max-width:256px;" border="0" /></p>
-<p>&#160;</p>
-<p>As you can see, the yellow marked graphic is called a &quot;Tile&quot;. 
- All tiles have the same size of 32x32 pixels and are quadratic in this 
- example. If we place these tiles on a 32x32 pixel grid on screen we can 
- construct a level.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Setup a simple Tilemap</p>
-<p>&#160;</p>
-<p>Let's start with a very simple tilemap. We are going to use the following 
- tileset to construct the tilemap:</p>
-<p>&#160;</p>
-<p><img src="WoodsTileset.png" alt="" style=" border:none; width:100%; max-width:256px;" border="0" /></p>
-<p>&#160;</p>
-<p>Import that tileset image into your project's Graphics/Pictures folder 
- and rename it to &quot;WoodsTileset&quot;. Then use the following code 
- for your test-bed scene.</p>
+<script src="./ehlpdhtm.js" type="text/javascript"></script>
+<p class="Sub_Heading">瓦片地图</p>
+<p> </p>
+<p><span class="Topic_Start">瓦片地图</span>瓦片地图是冒险、横版卷轴或策略类游戏中常见的元素。它用于显示当前关卡的场景，例如：</p>
+<p> </p>
+<p><img alt="" border="0" src="TilemapExample.png" style=" border:none; width:100%; max-width:836px;"/></p>
+<p> </p>
+<p>上面的瓦片地图是从上面看到的，主要在复古 RPG 中使用。但您也可以使用其他变体，例如等距或侧视图。</p>
+<p> </p>
+<p>瓦片地图由 gs.Tilemap 类表示。它们也被视为图形对象，因此可以进行旋转、缩放等操作。</p>
+<p> </p>
+<p class="Sub_Heading">瓦片集</p>
+<p> </p>
+<p>瓦片地图由瓦片集（也称为瓦片表）构建。瓦片集是一个单一的图像文件，包含构建游戏瓦片地图/关卡所需的图形，也称为“瓦片”。它与精灵表非常相似。</p>
+<p> </p>
+<p><img alt="" border="0" src="image45.gif" style=" border:none; width:100%; max-width:256px;"/></p>
+<p> </p>
+<p>正如您所见，黄色标记的图形称为“瓦片”。在本例中，所有瓦片的大小均为 32x32 像素且为方形。如果我们将在屏幕上的 32x32 像素网格上放置这些瓦片，我们就可以构建一个关卡。</p>
+<p> </p>
+<p class="Sub_Heading">设置简单的瓦片地图</p>
+<p> </p>
+<p>让我们从一个非常简单的瓦片地图开始。我们将使用以下瓦片集来构建瓦片地图：</p>
+<p> </p>
+<p><img alt="" border="0" src="WoodsTileset.png" style=" border:none; width:100%; max-width:256px;"/></p>
+<p> </p>
+<p>将此瓦片集图像导入到您项目的 Graphics/Pictures 文件夹中，并将其重命名为“WoodsTileset”。然后使用以下代码作为您的测试平台场景。</p>
 <pre>
-<code class="coffee">
-# ===================================================================
+<code class="coffee"># ===================================================================
 #
-# &#160;&#160;Script: Component_TestBedBehavior
+#   脚本：Component_TestBedBehavior
 #
-# &#160;&#160;Put your name here
+#   在此处输入您的姓名
 #
 # ===================================================================
 class Component_TestBedBehavior extends gs.Component_SceneBehavior
-&#160;&#160;&#160;&#160;###*
-&#160;&#160;&#160;&#160;* A test bed scene behavior. Here you can play around with Visual Novel Maker's 
-&#160;&#160;&#160;&#160;* game engine to get a better feeling for everything.
-&#160;&#160;&#160;&#160;###
-&#160;&#160;&#160;&#160;constructor: -&gt;
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;super
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# Define resource context property
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;@resourceContext = null
-&#160;&#160;&#160;&#160;
-&#160;&#160;&#160;&#160;###*
-&#160;&#160;&#160;&#160;* Initializes the scene. 
-&#160;&#160;&#160;&#160;###
-&#160;&#160;&#160;&#160;initialize: -&gt;
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;super
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# Create a new resource context
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;@resourceContext = ResourceManager.createContext()
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# Set current object manager
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;gs.ObjectManager.current = SceneManager
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# Set it as the current resource context
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ResourceManager.context = @resourceContext
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-&#160;&#160;&#160;&#160;###*
-&#160;&#160;&#160;&#160;* Disposes the scene.
-&#160;&#160;&#160;&#160;### &#160;
-&#160;&#160;&#160;&#160;dispose: -&gt;
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;super
-&#160;&#160;&#160;&#160;
-&#160;&#160;&#160;&#160;###*
-&#160;&#160;&#160;&#160;* Prepares all visual game object for the scene.
-&#160;&#160;&#160;&#160;### &#160;
-&#160;&#160;&#160;&#160;prepareVisual: -&gt;
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# Create tilemap
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;@tilemap = new gs.Tilemap(Graphics.viewport)
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# Assign tileset bitmap
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;@tilemap.tileset = ResourceManager.getBitmap(&quot;Graphics/Pictures/WoodsTileset&quot;)
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# Set the width of the tilemap in tiles
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;@tilemap.width = 100
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# Set the height of the tilemap in tiles
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;@tilemap.height = 100
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# Set the amount of tilemap layers.
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;@tilemap.depth = 1
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# Set the size of a single tile to 32x32. Only quadratic tiles are supported.
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;@tilemap.tileSize = 32
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# Initialize the map data array
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;@tilemap.mapData = []
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# Initialize the z-order array
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;@tilemap.priorities = []
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# Fill in the map data. The tile number 0 refers to the upper-left tile of the tileset.
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;for i in [0...(@tilemap.width * @tilemap.height)]
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# Set tile number 0
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;@tilemap.mapData[i] = 0
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# Initialize the tilemap
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;@tilemap.setup()
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# Update the tilemap before transition so that it fades-in smoothly.
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;@tilemap.update()
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# We are done with preparing our visual objects. So we can start
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# the screen transition to fade in our new created objects smoothly.
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;@transition()
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-&#160;&#160;&#160;&#160;###*
-&#160;&#160;&#160;&#160;* Prepares all data for the scene and loads the necessary graphic and audio resources.
-&#160;&#160;&#160;&#160;### 
-&#160;&#160;&#160;&#160;prepareData: -&gt;
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# Load the tileset image
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;ResourceManager.getBitmap(&quot;Graphics/Pictures/WoodsTileset&quot;)
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-&#160;&#160;&#160;&#160;###*
-&#160;&#160;&#160;&#160;* Update the scene's content.
-&#160;&#160;&#160;&#160;### &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
-&#160;&#160;&#160;&#160;updateContent: -&gt;
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# Update the tilemap
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;@tilemap.update()
-&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    ###*
+    * 一个测试平台场景行为。在这里，您可以玩转 Visual Novel Maker 的
+    * 游戏引擎，以更好地了解所有内容。
+    ###
+    constructor: -&gt;
+        super
+        
+        # 定义资源上下文属性
+        @resourceContext = null
+    
+    ###*
+    * 初始化场景。
+    ###
+    initialize: -&gt;
+        super
+        
+        # 创建一个新的资源上下文
+        @resourceContext = ResourceManager.createContext()
+        
+        # 设置当前对象管理器
+        gs.ObjectManager.current = SceneManager
+        
+        #将其设置为当前资源上下文
+        ResourceManager.context = @resourceContext
+        
+    ###*
+    * 销毁场景。
+    ###  
+    dispose: -&gt;
+        super
+    
+    ###*
+    * 准备场景的所有视觉游戏对象。
+    ###  
+    prepareVisual: -&gt;
+        # 创建瓦片地图
+        @tilemap = new gs.Tilemap(Graphics.viewport)
+        # 分配瓦片集位图
+        @tilemap.tileset = ResourceManager.getBitmap("Graphics/Pictures/WoodsTileset")
+        # 设置瓦片地图的宽度（以瓦片为单位）
+        @tilemap.width = 100
+        # 设置瓦片地图的高度（以瓦片为单位）
+        @tilemap.height = 100
+        # 设置瓦片地图层数。
+        @tilemap.depth = 1
+        # 设置单个瓦片的大小为 32x32。仅支持方形瓦片。
+        @tilemap.tileSize = 32
+        # 初始化地图数据数组
+        @tilemap.mapData = []
+        # 初始化 Z 顺序数组
+        @tilemap.priorities = []
+        # 填充地图数据。瓦片号 0 指的是瓦片集左上角的瓦片。
+        for i in [0...(@tilemap.width * @tilemap.height)]
+            # 设置瓦片号 0
+            @tilemap.mapData[i] = 0
+        # 初始化瓦片地图
+        @tilemap.setup()
+        # 在过渡之前更新瓦片地图，使其平滑淡入。
+        @tilemap.update()
+        
+        # 我们已经完成了视觉对象的准备工作。因此，我们可以开始
+        # 屏幕过渡，使我们新创建的对象平滑淡入。
+        @transition()
+        
+    ###*
+    * 准备场景的所有数据并加载必要的图形和音频资源。
+    ### 
+    prepareData: -&gt;
+        # 加载瓦片集图像
+        ResourceManager.getBitmap("Graphics/Pictures/WoodsTileset")
+        
+    ###*
+    * 更新场景内容。
+    ###         
+    updateContent: -&gt;
+        # 更新瓦片地图
+        @tilemap.update()
+        
 gs.Component_LayoutSceneBehavior = Component_TestBedBehavior</code></pre>
-<p>If we test our game now, we will see a tilemap showing us a huge grassland.</p>
-<p>&#160;</p>
-<p>Let's take look at the code from above. First we are creating an instance 
- of gs.Tilemap and assigning our tileset bitmap to it. Next we set the 
- size of our map to 100x100 tiles so our tilemap will display a 100x100 
- tiles grid with 32x32 pixels per cell on screen. Since a single tile is 
- 32x32 pixels in size by default, the map size in pixels is 100 * 32 = 
- 3200x3200 pixels.</p>
-<p>&#160;</p>
-<p>Next we have to setup the map's data. The map-data controls which kind 
- of tiles from the tilesets are displayed at which cell of the grid on 
- screen. So the map-data itself is an array with the size of the map and 
- stores a number for each cell and that number, also called tile-id, refers 
- to a tile on the tileset. We are setting each cell to 0 which refers to 
- the upper-left grass-tile on our tileset.</p>
-<p>&#160;</p>
-<p>After we set the map data we have to call the setup-method to initialize 
- the tilemap. We are also calling the update-method directly after that 
- to make sure that the tilemap is already rendered before we start with 
- the transition to make sure we get a smooth transition from black to the 
- tilemap. Just remove that line to see what happens then.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Animated Tiles</p>
-<p>&#160;</p>
-<p>In the last example, we displayed a simple tilemap using a regular tileset. 
- But what if we want to use animated tiles for fields such as an ocean, 
- sea or river? That's why gs.Tilemap supports animated tiles as well.</p>
-<p>&#160;</p>
-<p>To use animated tiles, we have to tell gs.Tilemap where the animated 
- tiles are located on our tileset and how they should be animated.</p>
-<p>&#160;</p>
-<p><img src="ExpandedTileset.png" alt="" style=" border:none; width:100%; max-width:684px;" border="0" /></p>
-<p>&#160;</p>
-<p>Everything to right of the bold red line is treated as an animated tile. 
- By default, that red-line is set to 8 tiles. So the more you move that 
- red line to the right, the more space for regular tiles you get. But in 
- exchange for that, you get less animation-frames for animated tiles because 
- the animation-frames are put from left to right.</p>
-<p>&#160;</p>
-<p>So the above example has space for 64 different animated tiles(from 
- top to bottom) with up to 56 animation-frames(from left to right) per 
- animated tile. That sounds a bit too much space but if you start to use 
- auto-tiles and animated auto-tiles, as we will learn later in this lesson, 
- you will see that this space is necessary sometimes.</p>
-<p>&#160;</p>
-<p>If you don't need animated or special tiles at all, you can just move 
- the red-line completely to the right. Then all tiles on you tileset are 
- seen as regular tiles. Check out gs.TilesetConfiguration class to learn 
- more about how to configure the tileset and animated tiles.</p>
-<p>&#160;</p>
-<p>By default, you don't need to configure anything if your tileset fits 
- into the 8xN tiles formats which means: 8 tiles per row. A tileset can 
- have endless rows of tiles but of course, the more rows the larger the 
- image and the more graphics memory is needed. Keep in mind that for many 
- average mobile devices, the max. image size is 2048x2048.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Auto-Linking Tilesets</p>
-<p>&#160;</p>
-<p>In the first example we displayed a simple tilemap on screen using a 
- regular tileset. But there is an additional kind of tileset called an 
- &quot;Auto-Linking Tilesets&quot; or in short-form &quot;Autotile&quot; 
- and sometimes also called &quot;Terrain Tilesets&quot;. An autotile is 
- a very small tileset where it only features a single tile-type but allows 
- to construct different kind of patterns.</p>
-<p>&#160;</p>
-<p><img src="Inq_XP_MT_-_Dirt.png" alt="" style=" border:none; width:100%; max-width:96px;" border="0" /></p>
-<p>&#160;</p>
-<p>The above example shows the dirt autotile used to map the areas of dirt 
- as seen below:</p>
-<p><img src="image69.gif" alt="" style=" border:none; width:100%; max-width:426px;" border="0" /></p>
-<p>&#160;</p>
-<p>If you&#160;try to map more natural-looking dirt like above using regular 
- tiles only, you will need a lot of different dirt-tiles on your tileset. 
- In addition, you also need to place them manually in your map-editor one 
- by one. That can become very exhausting after some time. To solve that 
- problem, Autotiles come into play.</p>
-<p>&#160;</p>
-<p>How does this work? At runtime, the autotile is &quot;expanded&quot; 
- and would output at least 48 different kinds of pattern. This allows you 
- to create natural looking patches of dirt. An expanded autotile looks 
- like this:</p>
-<p>&#160;</p>
-<p><img src="image46.gif" alt="" style=" border:none; width:100%; max-width:256px;" border="0" /></p>
-<p>&#160;</p>
-<p>A map-editor with auto-tile or terrain-tile support makes it very easy 
- to map terrains like dirt, grass, river, etc. You only have to choose 
- the dirt autotile and &quot;draw&quot; on your map and the shape of the 
- dirt is automatically calculated. The editor automatically picks the right 
- tiles for you!</p>
-<p>&#160;</p>
-<p>So autotiles are a quality of life (QoL) feature that make mapping easier. 
- You no longer need to manually pick the right tile so it's a feature you 
- can only feel at design/mapping-time in your map-editor. That means if 
- we generate our tilemap data hardcoded like we did in our first example, 
- we are not able too feel the true advantage of it. Because of the engine 
- they are just normal tiles, the magic happens on the map-editor side. 
- The best is if you just try that out yourself in a map-editor like <a 
-	 href="http://www.mapeditor.org/">Tiled Map Editor</a>.</p>
-<p>&#160;</p>
-<p>VN Maker's Basic Engine comes with gs.AutotileExpander class which allows 
- you to easily expand autotiles in the above format. It also possible to 
- animate auto-tiles by placing their expanded version from left to right 
- in the animated-tiles area of the tileset. You can then just configure 
- a larger animation offset value to animate them. Check out gs.TilesetConfiguration 
- class for more info.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Limitations</p>
-<p>&#160;</p>
-<p>Displaying a tilemap on screen with auto- and animated tiles as well 
- as other features can be time-consuming depending on the rendering-technique 
- as well as on the device/hardware used.</p>
-<p>&#160;</p>
-<p>A modern PC/Mac, in most cases, has no problems to display a tilemap 
- no matter what kind of rendering technique is used. But for mobile platforms 
- such as smartphones it makes a big different because, at the time of writing, 
- most average smartphones have good GPUs but a very low bandwidth which 
- means that the amount of data which can be transferred to the GPU in one 
- game-frame is very low.</p>
-<p>&#160;</p>
-<p>That's why VN Maker's tilemap rendering is highly optimized for devices 
- with low bandwidth. Unfortunately, with that optimization some small limitations 
- exist:</p>
-<p>&#160;</p>
+<p>如果我们现在测试游戏，我们将看到一个瓦片地图显示出一片广阔的草原。</p>
+<p> </p>
+<p>让我们来看看上面的代码。首先，我们创建一个 gs.Tilemap 实例，并将其分配给我们的瓦片集位图。接下来，我们将地图大小设置为 100x100 瓦片，以便我们的瓦片地图将在屏幕上显示一个 100x100 的瓦片网格，每个单元格 32x32 像素。由于单个瓦片默认大小为 32x32 像素，因此地图的像素尺寸为 100 * 32 = 3200x3200 像素。</p>
+<p> </p>
+<p>接下来，我们需要设置地图数据。地图数据控制着瓦片集中哪种瓦片在屏幕上的网格单元中显示。因此，地图数据本身是一个大小与地图相同的数组，并为每个单元格存储一个数字，该数字也称为瓦片 ID，它指向瓦片集中的一个瓦片。我们将每个单元格设置为 0，这指向我们瓦片集中的左上角草地瓦片。</p>
+<p> </p>
+<p>设置完地图数据后，我们必须调用 setup 方法来初始化瓦片地图。我们也在之后直接调用 update 方法，以确保瓦片地图在开始过渡之前就已经渲染，以确保我们获得从黑色到瓦片地图的平滑过渡。只需删除该行即可查看会发生什么。</p>
+<p> </p>
+<p class="Sub_Heading">动画瓦片</p>
+<p> </p>
+<p>在最后一个例子中，我们使用常规瓦片集显示了一个简单的瓦片地图。但如果我们想使用动画瓦片来制作海洋、大海或河流等区域呢？这就是 gs.Tilemap 也支持动画瓦片的原因。</p>
+<p> </p>
+<p>要使用动画瓦片，我们必须告诉 gs.Tilemap 动画瓦片在我们的瓦片集中的位置以及它们应该如何动画。</p>
+<p> </p>
+<p><img alt="" border="0" src="ExpandedTileset.png" style=" border:none; width:100%; max-width:684px;"/></p>
+<p> </p>
+<p>红色粗线右边的所有内容都将被视为动画瓦片。默认情况下，该红线设置为 8 个瓦片。因此，您将红线向右移动得越多，您获得的常规瓦片空间就越多。但作为交换，动画瓦片的动画帧就更少，因为动画帧是从左到右排列的。</p>
+<p> </p>
+<p>所以上面的例子有 64 个不同的动画瓦片（从上到下）的空间，每个动画瓦片最多有 56 个动画帧（从左到右）。这似乎太大的空间了，但如果您开始使用自动瓦片和动画自动瓦片（我们将在本课稍后学习），您就会发现有时这个空间是必要的。</p>
+<p> </p>
+<p>如果您根本不需要动画或特殊瓦片，您可以将红线完全移到右边。然后您瓦片集中的所有瓦片都将被视为常规瓦片。查看 gs.TilesetConfiguration 类以了解更多关于如何配置瓦片集和动画瓦片的信息。</p>
+<p> </p>
+<p>默认情况下，如果您的瓦片集符合 8xN 瓦片格式（即每行 8 个瓦片），则无需进行任何配置。瓦片集可以有无限行的瓦片，但当然，行数越多，图像越大，需要的图形内存越多。请记住，对于许多普通的移动设备，最大图像尺寸为 2048x2048。</p>
+<p> </p>
+<p class="Sub_Heading">自动链接瓦片集</p>
+<p> </p>
+<p>在第一个例子中，我们使用常规瓦片集在屏幕上显示了一个简单的瓦片地图。但还有一种额外的瓦片集叫做“自动链接瓦片集”或简称“自动瓦片”，有时也称为“地形瓦片集”。自动瓦片是一个非常小的瓦片集，它只包含一种瓦片类型，但可以构建不同的图案。</p>
+<p> </p>
+<p><img alt="" border="0" src="Inq_XP_MT_-_Dirt.png" style=" border:none; width:100%; max-width:96px;"/></p>
+<p> </p>
+<p>上面的例子显示了用于映射如下所示的泥土区域的泥土自动瓦片：</p>
+<p><img alt="" border="0" src="image69.gif" style=" border:none; width:100%; max-width:426px;"/></p>
+<p> </p>
+<p>如果您尝试使用常规瓦片绘制出上面这样的更自然的泥土，您将在瓦片集中需要大量不同的泥土瓦片。此外，您还需要在地图编辑器中逐个手动放置它们。随着时间的推移，这可能会变得非常累人。为了解决这个问题，自动瓦片就派上用场了。</p>
+<p> </p>
+<p>它是如何工作的？在运行时，自动瓦片会被“展开”，并输出至少 48 种不同的图案。这允许您创建自然的泥土斑块。展开的自动瓦片看起来像这样：</p>
+<p> </p>
+<p><img alt="" border="0" src="image46.gif" style=" border:none; width:100%; max-width:256px;"/></p>
+<p> </p>
+<p>具有自动瓦片或地形瓦片支持的地图编辑器可以轻松绘制泥土、草地、河流等地形。您只需选择泥土自动瓦片并在地图上“绘制”，然后自动计算出泥土的形状。编辑器会自动为您选择正确的瓦片！</p>
+<p> </p>
+<p>所以自动瓦片是生活质量（QoL）功能，使地图绘制更容易。您不再需要手动选择正确的瓦片，因此这是一项功能，您只能在地图编辑器中的设计/绘制时才能感受到。这意味着如果我们像第一个例子那样硬编码生成我们的瓦片地图数据，我们就无法感受到它的真正优势。由于引擎，它们只是普通瓦片，魔力发生在地图编辑器端。最好的办法是您自己尝试一下，比如在<a href="http://www.mapeditor.org/">Tiled Map Editor</a>这样的地图编辑器中。</p>
+<p> </p>
+<p>VN Maker 的基本引擎附带 gs.AutotileExpander 类，该类允许您轻松地以上述格式展开自动瓦片。通过将自动瓦片的展开版本从左到右放置在瓦片集的动画瓦片区域中，也可以使其动画化。然后，您只需配置更大的动画偏移值即可使其动画化。有关更多信息，请查看 gs.TilesetConfiguration 类。</p>
+<p> </p>
+<p class="Sub_Heading">限制</p>
+<p> </p>
+<p>在屏幕上显示瓦片地图，包括自动瓦片和动画瓦片以及其他功能，可能需要时间，具体取决于渲染技术以及使用的设备/硬件。</p>
+<p> </p>
+<p>现代 PC/Mac 在大多数情况下，无论使用何种渲染技术，都不会有问题地显示瓦片地图。但对于智能手机等移动平台，差别很大，因为在撰写本文时，大多数普通智能手机都有不错的 GPU，但带宽非常低，这意味着在一个游戏帧中可以传输到 GPU 的数据量非常少。</p>
+<p> </p>
+<p>这就是为什么 VN Maker 的瓦片地图渲染针对低带宽设备进行了高度优化。不幸的是，这种优化存在一些小限制：</p>
+<p> </p>
 <ul style="list-style: disc;">
-	<li>Only one tileset per tilemap layer can be used.</li>
-	<li>The map-size is limited to the maximum texture size of the GPU 
-	 (2048x2048 tiles for average mobile GPUs)</li>
-	<li>The tileset-size is limited to the maximum texture size of the 
-	 GPU (2048x2048 pixels for average mobile GPUs)</li>
-	<li>The amount of autotiles and animated tiles is limited and depends 
-	 on tileset-size and settings.</li>
-	<li>Only one kind of auto/animated/special tile can be used per tileset.</li>
-	<li>Changing map-data in real-time is supported, but can become more 
-	 time-consuming the larger the map is depending on GPU.</li>
+<li>每个瓦片地图层只能使用一个瓦片集。</li>
+<li>地图大小受限于 GPU 的最大纹理尺寸
+	 （对于普通移动 GPU 为 2048x2048 瓦片）</li>
+<li>瓦片集大小受限于 GPU 的最大纹理尺寸
+	 （对于普通移动 GPU 为 2048x2048 像素）</li>
+<li>自动瓦片和动画瓦片数量有限，取决于瓦片集大小和设置。</li>
+<li>每个瓦片集只能使用一种自动/动画/特殊瓦片。</li>
+<li>实时更改地图数据受支持，但根据 GPU 的不同，地图越大，所需时间就越长。</li>
 </ul>
-<p>&#160;</p>
-<p>For optimal usage, the tilemap can be configured to fit your needs. 
- The following parameters can be changed:</p>
-<p>&#160;</p>
+<p> </p>
+<p>为了获得最佳使用效果，可以配置瓦片地图以满足您的需求。可以更改以下参数：</p>
+<p> </p>
 <ul style="list-style: disc;">
-	<li>Tile Size (Default is 32x32)</li>
-	<li>Amount of layers (Default is 3)</li>
-	<li>Amount of regular tiles</li>
-	<li>Amount of autotiles / animated tiles</li>
-	<li>Amount of animation frames per animated tile.</li>
-	<li>Animation offset (To animate autotiles)</li>
-	<li>Animation speed of animated tiles</li>
+<li>瓦片大小（默认为 32x32）</li>
+<li>层数（默认为 3）</li>
+<li>常规瓦片数量</li>
+<li>自动瓦片/动画瓦片数量</li>
+<li>每个动画瓦片的动画帧数。</li>
+<li>动画偏移（用于动画自动瓦片）</li>
+<li>动画瓦片的动画速度</li>
 </ul>
-<p>&#160;</p>
-<p>&#160;</p>
+<p> </p>
+<p> </p>
 </body>
 </html>

@@ -1,1298 +1,761 @@
-<!DOCTYPE html>
+html
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>gs.Graphics</title>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
-    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
-    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
-    <link rel="icon" href="../assets/favicon.ico">
-    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+<meta charset="utf-8"/>
+<title>gs.Graphics</title>
+<link href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css" rel="stylesheet"/>
+<link href="../assets/vendor/prettify/prettify-min.css" rel="stylesheet"/>
+<link href="../assets/css/main.css" id="site_styles" rel="stylesheet"/>
+<link href="../assets/favicon.ico" rel="icon"/>
+<script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
 </head>
 <body class="yui3-skin-sam">
-
 <div id="doc">
-    <div id="hd" class="yui3-g header">
-        <div class="yui3-u-3-4">
-                <h1><img src="../assets/css/logo.png" title="" width="117" height="52"></h1>
-        </div>
-        <div class="yui3-u-1-4 version">
-            <em>API Docs for: </em>
-        </div>
-    </div>
-    <div id="bd" class="yui3-g">
-
-        <div class="yui3-u-1-4">
-            <div id="docs-sidebar" class="sidebar apidocs">
-                <div id="api-list">
-                    <h2 class="off-left">APIs</h2>
-                    <div id="api-tabview" class="tabview">
-                        <ul class="tabs">
-                            <li><a href="#api-classes">Classes</a></li>
-                            <li><a href="#api-modules">Modules</a></li>
-                        </ul>
-                
-                        <div id="api-tabview-filter">
-                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
-                        </div>
-                
-                        <div id="api-tabview-panel">
-                            <ul id="api-classes" class="apis classes">
-                                <li><a href="../classes/gs.Application.html">gs.Application</a></li>
-                                <li><a href="../classes/gs.Audio.html">gs.Audio</a></li>
-                                <li><a href="../classes/gs.AudioBuffer.html">gs.AudioBuffer</a></li>
-                                <li><a href="../classes/gs.AudioBufferReference.html">gs.AudioBufferReference</a></li>
-                                <li><a href="../classes/gs.Bitmap.html">gs.Bitmap</a></li>
-                                <li><a href="../classes/gs.BlendMode.html">gs.BlendMode</a></li>
-                                <li><a href="../classes/gs.BlurEffect.html">gs.BlurEffect</a></li>
-                                <li><a href="../classes/gs.Color.html">gs.Color</a></li>
-                                <li><a href="../classes/gs.Data.html">gs.Data</a></li>
-                                <li><a href="../classes/gs.Effect.html">gs.Effect</a></li>
-                                <li><a href="../classes/gs.EffectCollection.html">gs.EffectCollection</a></li>
-                                <li><a href="../classes/gs.EffectInfo.html">gs.EffectInfo</a></li>
-                                <li><a href="../classes/gs.Font.html">gs.Font</a></li>
-                                <li><a href="../classes/gs.Frame.html">gs.Frame</a></li>
-                                <li><a href="../classes/gs.GameStorage.html">gs.GameStorage</a></li>
-                                <li><a href="../classes/gs.GameStorageLocations.html">gs.GameStorageLocations</a></li>
-                                <li><a href="../classes/gs.GraphicEffect.html">gs.GraphicEffect</a></li>
-                                <li><a href="../classes/gs.GraphicEffectType.html">gs.GraphicEffectType</a></li>
-                                <li><a href="../classes/gs.GraphicObject.html">gs.GraphicObject</a></li>
-                                <li><a href="../classes/gs.Graphics.html">gs.Graphics</a></li>
-                                <li><a href="../classes/gs.Input.html">gs.Input</a></li>
-                                <li><a href="../classes/gs.Live2DModel.html">gs.Live2DModel</a></li>
-                                <li><a href="../classes/gs.Live2DMotionManager.html">gs.Live2DMotionManager</a></li>
-                                <li><a href="../classes/gs.Live2DMotionPlayTypes.html">gs.Live2DMotionPlayTypes</a></li>
-                                <li><a href="../classes/gs.Live2DObject.html">gs.Live2DObject</a></li>
-                                <li><a href="../classes/gs.Mask.html">gs.Mask</a></li>
-                                <li><a href="../classes/gs.MaskingType.html">gs.MaskingType</a></li>
-                                <li><a href="../classes/gs.MotionBlur.html">gs.MotionBlur</a></li>
-                                <li><a href="../classes/gs.MouseInput.html">gs.MouseInput</a></li>
-                                <li><a href="../classes/gs.PixelateEffect.html">gs.PixelateEffect</a></li>
-                                <li><a href="../classes/gs.Point.html">gs.Point</a></li>
-                                <li><a href="../classes/gs.Quad.html">gs.Quad</a></li>
-                                <li><a href="../classes/gs.Rect.html">gs.Rect</a></li>
-                                <li><a href="../classes/gs.Renderer.html">gs.Renderer</a></li>
-                                <li><a href="../classes/gs.RenderTask.html">gs.RenderTask</a></li>
-                                <li><a href="../classes/gs.Sprite.html">gs.Sprite</a></li>
-                                <li><a href="../classes/gs.Texture2D.html">gs.Texture2D</a></li>
-                                <li><a href="../classes/gs.TextureFilter.html">gs.TextureFilter</a></li>
-                                <li><a href="../classes/gs.ThreePartImage.html">gs.ThreePartImage</a></li>
-                                <li><a href="../classes/gs.Tilemap.html">gs.Tilemap</a></li>
-                                <li><a href="../classes/gs.TilemapLayer.html">gs.TilemapLayer</a></li>
-                                <li><a href="../classes/gs.TilemapRenderInfo.html">gs.TilemapRenderInfo</a></li>
-                                <li><a href="../classes/gs.TilesetConfiguration.html">gs.TilesetConfiguration</a></li>
-                                <li><a href="../classes/gs.TilingSprite.html">gs.TilingSprite</a></li>
-                                <li><a href="../classes/gs.Tone.html">gs.Tone</a></li>
-                                <li><a href="../classes/gs.Video.html">gs.Video</a></li>
-                                <li><a href="../classes/gs.Viewport.html">gs.Viewport</a></li>
-                                <li><a href="../classes/gs.WobbleEffect.html">gs.WobbleEffect</a></li>
-                            </ul>
-                
-                
-                            <ul id="api-modules" class="apis modules">
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="yui3-u-3-4">
-                <div id="api-options">
-                    Show:
-                    <label for="api-show-inherited">
-                        <input type="checkbox" id="api-show-inherited" checked>
-                        Inherited
-                    </label>
-            
-                    <label for="api-show-protected">
-                        <input type="checkbox" id="api-show-protected">
-                        Protected
-                    </label>
-            
-                    <label for="api-show-private">
-                        <input type="checkbox" id="api-show-private">
-                        Private
-                    </label>
-                    <label for="api-show-deprecated">
-                        <input type="checkbox" id="api-show-deprecated">
-                        Deprecated
-                    </label>
-            
-                </div>
-            
-            <div class="apidocs">
-                <div id="docs-main">
-                    <div class="content">
-<h1>gs.Graphics Class</h1>
+<div class="yui3-g header" id="hd">
+<div class="yui3-u-3-4">
+<h1><img height="52" src="../assets/css/logo.png" title="" width="117"/></h1>
+</div>
+<div class="yui3-u-1-4 version">
+<em>API 文档：</em>
+</div>
+</div>
+<div class="yui3-g" id="bd">
+<div class="yui3-u-1-4">
+<div class="sidebar apidocs" id="docs-sidebar">
+<div id="api-list">
+<h2 class="off-left">API</h2>
+<div class="tabview" id="api-tabview">
+<ul class="tabs">
+<li><a href="#api-classes">类</a></li>
+<li><a href="#api-modules">模块</a></li>
+</ul>
+<div id="api-tabview-filter">
+<input id="api-filter" placeholder="Type to filter APIs" type="search"/>
+</div>
+<div id="api-tabview-panel">
+<ul class="apis classes" id="api-classes">
+<li><a href="../classes/gs.Application.html">gs.Application</a></li>
+<li><a href="../classes/gs.Audio.html">gs.Audio</a></li>
+<li><a href="../classes/gs.AudioBuffer.html">gs.AudioBuffer</a></li>
+<li><a href="../classes/gs.AudioBufferReference.html">gs.AudioBufferReference</a></li>
+<li><a href="../classes/gs.Bitmap.html">gs.Bitmap</a></li>
+<li><a href="../classes/gs.BlendMode.html">gs.BlendMode</a></li>
+<li><a href="../classes/gs.BlurEffect.html">gs.BlurEffect</a></li>
+<li><a href="../classes/gs.Color.html">gs.Color</a></li>
+<li><a href="../classes/gs.Data.html">gs.Data</a></li>
+<li><a href="../classes/gs.Effect.html">gs.Effect</a></li>
+<li><a href="../classes/gs.EffectCollection.html">gs.EffectCollection</a></li>
+<li><a href="../classes/gs.EffectInfo.html">gs.EffectInfo</a></li>
+<li><a href="../classes/gs.Font.html">gs.Font</a></li>
+<li><a href="../classes/gs.Frame.html">gs.Frame</a></li>
+<li><a href="../classes/gs.GameStorage.html">gs.GameStorage</a></li>
+<li><a href="../classes/gs.GameStorageLocations.html">gs.GameStorageLocations</a></li>
+<li><a href="../classes/gs.GraphicEffect.html">gs.GraphicEffect</a></li>
+<li><a href="../classes/gs.GraphicEffectType.html">gs.GraphicEffectType</a></li>
+<li><a href="../classes/gs.GraphicObject.html">gs.GraphicObject</a></li>
+<li><a href="../classes/gs.Graphics.html">gs.Graphics</a></li>
+<li><a href="../classes/gs.Input.html">gs.Input</a></li>
+<li><a href="../classes/gs.Live2DModel.html">gs.Live2DModel</a></li>
+<li><a href="../classes/gs.Live2DMotionManager.html">gs.Live2DMotionManager</a></li>
+<li><a href="../classes/gs.Live2DMotionPlayTypes.html">gs.Live2DMotionPlayTypes</a></li>
+<li><a href="../classes/gs.Live2DObject.html">gs.Live2DObject</a></li>
+<li><a href="../classes/gs.Mask.html">gs.Mask</a></li>
+<li><a href="../classes/gs.MaskingType.html">gs.MaskingType</a></li>
+<li><a href="../classes/gs.MotionBlur.html">gs.MotionBlur</a></li>
+<li><a href="../classes/gs.MouseInput.html">gs.MouseInput</a></li>
+<li><a href="../classes/gs.PixelateEffect.html">gs.PixelateEffect</a></li>
+<li><a href="../classes/gs.Point.html">gs.Point</a></li>
+<li><a href="../classes/gs.Quad.html">gs.Quad</a></li>
+<li><a href="../classes/gs.Rect.html">gs.Rect</a></li>
+<li><a href="../classes/gs.Renderer.html">gs.Renderer</a></li>
+<li><a href="../classes/gs.RenderTask.html">gs.RenderTask</a></li>
+<li><a href="../classes/gs.Sprite.html">gs.Sprite</a></li>
+<li><a href="../classes/gs.Texture2D.html">gs.Texture2D</a></li>
+<li><a href="../classes/gs.TextureFilter.html">gs.TextureFilter</a></li>
+<li><a href="../classes/gs.ThreePartImage.html">gs.ThreePartImage</a></li>
+<li><a href="../classes/gs.Tilemap.html">gs.Tilemap</a></li>
+<li><a href="../classes/gs.TilemapLayer.html">gs.TilemapLayer</a></li>
+<li><a href="../classes/gs.TilemapRenderInfo.html">gs.TilemapRenderInfo</a></li>
+<li><a href="../classes/gs.TilesetConfiguration.html">gs.TilesetConfiguration</a></li>
+<li><a href="../classes/gs.TilingSprite.html">gs.TilingSprite</a></li>
+<li><a href="../classes/gs.Tone.html">gs.Tone</a></li>
+<li><a href="../classes/gs.Video.html">gs.Video</a></li>
+<li><a href="../classes/gs.Viewport.html">gs.Viewport</a></li>
+<li><a href="../classes/gs.WobbleEffect.html">gs.WobbleEffect</a></li>
+</ul>
+<ul class="apis modules" id="api-modules">
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="yui3-u-3-4">
+<div id="api-options">显示：<label for="api-show-inherited">
+<input checked="" id="api-show-inherited" type="checkbox"/>继承的</label>
+<label for="api-show-protected">
+<input id="api-show-protected" type="checkbox"/>受保护的</label>
+<label for="api-show-private">
+<input id="api-show-private" type="checkbox"/>私有的</label>
+<label for="api-show-deprecated">
+<input id="api-show-deprecated" type="checkbox"/>已弃用的</label>
+</div>
+<div class="apidocs">
+<div id="docs-main">
+<div class="content">
+<h1>gs.Graphics 类</h1>
 <div class="box meta">
-
-
-
-
 </div>
-
-
 <div class="box intro">
-    <p>This class manages the graphics system. It needs to be initializes before any
-graphical operations can be executed. It initializes the necessary graphic contexts
-allocates necessary resources.</p>
-<p>It manages all graphic objects and renders them automatically on screen ordered
-by the z-index of each object.</p>
-
+<p>此类管理图形系统。 在执行任何图形操作之前，需要对其进行初始化。 它初始化必要的图形上下文并分配必要的资源。</p>
+<p>它管理所有图形对象，并按照每个对象的 z-index 对它们进行排序，然后在屏幕上自动渲染。</p>
 </div>
-
-    <div class="constructor">
-        <h2>Constructor</h2>
-<div id="method_gs.Graphics" class="method item">
-    <h3 class="name"><code>gs.Graphics</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-        <span class="flag final">final</span>
-
-        <span class="flag static">static</span>
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        
-    </div>
-
-
-
-
+<div class="constructor">
+<h2>构造函数</h2>
+<div class="method item" id="method_gs.Graphics">
+<h3 class="name"><code>gs.Graphics</code></h3>
+<span class="paren">()</span>
+<span class="flag final">final</span>
+<span class="flag static">static</span>
+<div class="meta">
+<p>
+</p>
 </div>
-    </div>
-
-<div id="classdocs" class="tabview">
-    <ul class="api-class-tabs">
-        <li class="api-class-tab index"><a href="#index">Index</a></li>
-
-            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
-            <li class="api-class-tab properties"><a href="#properties">Properties</a></li>
-    </ul>
-
-    <div>
-        <div id="index" class="api-class-tabpanel index">
-            <h2 class="off-left">Item Index</h2>
-
-                <div class="index-section methods">
-                    <h3>Methods</h3>
-
-                    <ul class="index-list methods">
-                            <li class="index-item method">
-                                <a href="#method_addGraphicObject">addGraphicObject</a>
-
-                                    <span class="flag static">static</span>
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_clear">clear</a>
-
-                                    <span class="flag static">static</span>
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_dispose">dispose</a>
-
-                                    <span class="flag static">static</span>
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_enterFullscreen">enterFullscreen</a>
-
-                                    <span class="flag static">static</span>
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_freeze">freeze</a>
-
-                                    <span class="flag static">static</span>
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_initialize">initialize</a>
-
-                                    <span class="flag static">static</span>
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_isFullscreen">isFullscreen</a>
-
-                                    <span class="flag static">static</span>
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_leaveFullscreen">leaveFullscreen</a>
-
-                                    <span class="flag static">static</span>
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_removeGraphicObject">removeGraphicObject</a>
-
-                                    <span class="flag static">static</span>
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_setCursorBitmap">setCursorBitmap</a>
-
-                                    <span class="flag static">static</span>
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_snapshot">snapshot</a>
-
-                                    <span class="flag static">static</span>
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_snapshotAsData">snapshotAsData</a>
-
-                                    <span class="flag static">static</span>
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_transition">transition</a>
-
-                                    <span class="flag static">static</span>
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_update">update</a>
-
-                                    <span class="flag static">static</span>
-                            </li>
-                    </ul>
-                </div>
-
-                <div class="index-section properties">
-                    <h3>Properties</h3>
-
-                    <ul class="index-list properties">
-                            <li class="index-item property">
-                                <a href="#property_@onFocusLost">@onFocusLost</a>
-
-                                    <span class="flag static">static</span>
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_@onFocusReceive">@onFocusReceive</a>
-
-                                    <span class="flag static">static</span>
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_canvas">canvas</a>
-
-                                    <span class="flag static">static</span>
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_context">context</a>
-
-                                    <span class="flag static">static</span>
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_frameRate">frameRate</a>
-
-                                    <span class="flag static">static</span>
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_height">height</a>
-
-                                    <span class="flag static">static</span>
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_keepRatio">keepRatio</a>
-
-                                    <span class="flag static">static</span>
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_renderer">renderer</a>
-
-                                    <span class="flag static">static</span>
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_viewport">viewport</a>
-
-                                    <span class="flag static">static</span>
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_width">width</a>
-
-                                    <span class="flag static">static</span>
-                            </li>
-                    </ul>
-                </div>
-
-
-        </div>
-
-            <div id="methods" class="api-class-tabpanel">
-                <h2 class="off-left">Methods</h2>
-
-<div id="method_addGraphicObject" class="method item">
-    <h3 class="name"><code>addGraphicObject</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>object</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-        <span class="flag static">static</span>
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Adds a graphic object to the graphic system. The graphic object will be automatically
-rendered and sorted by z-index.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">object</code>
-                        <span class="type"><a href="../classes/gs.GraphicObject.html" class="crosslink">gs.GraphicObject</a></span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The graphic object to add.</li>
+<div class="description">
+</div>
+</div>
+</div>
+<div class="tabview" id="classdocs">
+<ul class="api-class-tabs">
+<li class="api-class-tab index"><a href="#index">Index</a></li>
+<li class="api-class-tab methods"><a href="#methods">方法</a></li>
+<li class="api-class-tab properties"><a href="#properties">属性</a></li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_clear" class="method item">
-    <h3 class="name"><code>clear</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-        <span class="flag static">static</span>
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Clears the screen.</p>
-
-    </div>
-
-
-
-
-</div>
-<div id="method_dispose" class="method item">
-    <h3 class="name"><code>dispose</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-        <span class="flag static">static</span>
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Disposes the graphic system and frees resources/memory. Should be called before
-the game quits. After that, no graphic objects should be created and no other
-graphical operations should be executed.</p>
-
-    </div>
-
-
-
-
-</div>
-<div id="method_enterFullscreen" class="method item">
-    <h3 class="name"><code>enterFullscreen</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-        <span class="flag static">static</span>
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Enters fullscreen mode.</p>
-
-    </div>
-
-
-
-
-</div>
-<div id="method_freeze" class="method item">
-    <h3 class="name"><code>freeze</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-        <span class="flag static">static</span>
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Freezes the current screen. Prepares for transition.</p>
-
-    </div>
-
-
-
-
-</div>
-<div id="method_initialize" class="method item">
-    <h3 class="name"><code>initialize</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>width</code>
-                </li>
-                <li class="arg">
-                        <code>height</code>
-                </li>
-                <li class="arg">
-                        <code>parent</code>
-                </li>
-                <li class="arg">
-                        <code>keepRatio</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-        <span class="flag static">static</span>
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Initializes the graphics system. Must be called before any graphic object are created
-or any other graphic operations are executed.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">width</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The width of the game's resolution.</li>
+<div>
+<div class="api-class-tabpanel index" id="index">
+<h2 class="off-left">项目索引</h2>
+<div class="index-section methods">
+<h3>方法</h3>
+<ul class="index-list methods">
+<li class="index-item method">
+<a href="#method_addGraphicObject">addGraphicObject</a>
+<span class="flag static">static</span>
+</li>
+<li class="index-item method">
+<a href="#method_clear">clear</a>
+<span class="flag static">static</span>
+</li>
+<li class="index-item method">
+<a href="#method_dispose">dispose</a>
+<span class="flag static">static</span>
+</li>
+<li class="index-item method">
+<a href="#method_enterFullscreen">enterFullscreen</a>
+<span class="flag static">static</span>
+</li>
+<li class="index-item method">
+<a href="#method_freeze">freeze</a>
+<span class="flag static">static</span>
+</li>
+<li class="index-item method">
+<a href="#method_initialize">initialize</a>
+<span class="flag static">static</span>
+</li>
+<li class="index-item method">
+<a href="#method_isFullscreen">isFullscreen</a>
+<span class="flag static">static</span>
+</li>
+<li class="index-item method">
+<a href="#method_leaveFullscreen">leaveFullscreen</a>
+<span class="flag static">static</span>
+</li>
+<li class="index-item method">
+<a href="#method_removeGraphicObject">removeGraphicObject</a>
+<span class="flag static">static</span>
+</li>
+<li class="index-item method">
+<a href="#method_setCursorBitmap">setCursorBitmap</a>
+<span class="flag static">static</span>
+</li>
+<li class="index-item method">
+<a href="#method_snapshot">snapshot</a>
+<span class="flag static">static</span>
+</li>
+<li class="index-item method">
+<a href="#method_snapshotAsData">snapshotAsData</a>
+<span class="flag static">static</span>
+</li>
+<li class="index-item method">
+<a href="#method_transition">transition</a>
+<span class="flag static">static</span>
+</li>
+<li class="index-item method">
+<a href="#method_update">update</a>
+<span class="flag static">static</span>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">height</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The height of the game's resolution.</li>
+</div>
+<div class="index-section properties">
+<h3>属性</h3>
+<ul class="index-list properties">
+<li class="index-item property">
+<a href="#property_@onFocusLost">@onFocusLost</a>
+<span class="flag static">static</span>
+</li>
+<li class="index-item property">
+<a href="#property_@onFocusReceive">@onFocusReceive</a>
+<span class="flag static">static</span>
+</li>
+<li class="index-item property">
+<a href="#property_canvas">canvas</a>
+<span class="flag static">static</span>
+</li>
+<li class="index-item property">
+<a href="#property_context">context</a>
+<span class="flag static">static</span>
+</li>
+<li class="index-item property">
+<a href="#property_frameRate">frameRate</a>
+<span class="flag static">static</span>
+</li>
+<li class="index-item property">
+<a href="#property_height">height</a>
+<span class="flag static">static</span>
+</li>
+<li class="index-item property">
+<a href="#property_keepRatio">keepRatio</a>
+<span class="flag static">static</span>
+</li>
+<li class="index-item property">
+<a href="#property_renderer">renderer</a>
+<span class="flag static">static</span>
+</li>
+<li class="index-item property">
+<a href="#property_viewport">viewport</a>
+<span class="flag static">static</span>
+</li>
+<li class="index-item property">
+<a href="#property_width">width</a>
+<span class="flag static">static</span>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">parent</code>
-                        <span class="type">HTMLElement</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The HTML element to which the canvas should be added.</li>
+</div>
+</div>
+<div class="api-class-tabpanel" id="methods">
+<h2 class="off-left">方法</h2>
+<div class="method item" id="method_addGraphicObject">
+<h3 class="name"><code>addGraphicObject</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>object</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="flag static">static</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>将图形对象添加到图形系统。图形对象将被自动渲染并按 z-index 排序。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">object</code>
+<span class="type"><a class="crosslink" href="../classes/gs.GraphicObject.html">gs.GraphicObject</a></span>
+<div class="param-description">
+<ul>
+<li>要添加的图形对象。</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">keepRatio</code>
-                        <span class="type">Boolean</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Indicates if the canvas should keep the ratio of the resolution on scaling.</li>
+</div>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_isFullscreen" class="method item">
-    <h3 class="name"><code>isFullscreen</code></h3>
-
-        <span class="paren">()</span>
-
-        <span class="returns-inline">
-            <span class="type">Boolean</span>
-        </span>
-
-
-
-
-        <span class="flag static">static</span>
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Indiciates if the game runs currently in fullscreen mode.</p>
-
-    </div>
-
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">Boolean</span>:
-                    <p>Returns <b>true</b> if the game runs in fullscreen mode. Otherwise <b>false</b>.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_leaveFullscreen" class="method item">
-    <h3 class="name"><code>leaveFullscreen</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-        <span class="flag static">static</span>
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Leaves fullscreen mode.</p>
-
-    </div>
-
-
-
-
+<div class="method item" id="method_clear">
+<h3 class="name"><code>clear</code></h3>
+<span class="paren">()</span>
+<span class="flag static">static</span>
+<div class="meta">
+<p>
+</p>
 </div>
-<div id="method_removeGraphicObject" class="method item">
-    <h3 class="name"><code>removeGraphicObject</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>object</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-        <span class="flag static">static</span>
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Removes a graphic object from the graphic system. The graphic object is no longer rendered
-then.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">object</code>
-                        <span class="type"><a href="../classes/gs.GraphicObject.html" class="crosslink">gs.GraphicObject</a></span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The graphic object to remove.</li>
+<div class="description">
+<p>清除屏幕。</p>
+</div>
+</div>
+<div class="method item" id="method_dispose">
+<h3 class="name"><code>dispose</code></h3>
+<span class="paren">()</span>
+<span class="flag static">static</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>释放图形系统并释放资源/内存。 应该在游戏退出之前调用。 之后，不应创建任何图形对象，也不应执行任何其他图形操作。</p>
+</div>
+</div>
+<div class="method item" id="method_enterFullscreen">
+<h3 class="name"><code>enterFullscreen</code></h3>
+<span class="paren">()</span>
+<span class="flag static">static</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>进入全屏模式。</p>
+</div>
+</div>
+<div class="method item" id="method_freeze">
+<h3 class="name"><code>freeze</code></h3>
+<span class="paren">()</span>
+<span class="flag static">static</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>冻结当前屏幕。 准备过渡。</p>
+</div>
+</div>
+<div class="method item" id="method_initialize">
+<h3 class="name"><code>initialize</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>width</code>
+</li>
+<li class="arg">
+<code>height</code>
+</li>
+<li class="arg">
+<code>parent</code>
+</li>
+<li class="arg">
+<code>keepRatio</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="flag static">static</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>初始化图形系统。 必须在创建任何图形对象或执行任何其他图形操作之前调用。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">width</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>游戏分辨率的宽度。</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_setCursorBitmap" class="method item">
-    <h3 class="name"><code>setCursorBitmap</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>bitmap</code>
-                </li>
-                <li class="arg">
-                        <code>hotspotX</code>
-                </li>
-                <li class="arg">
-                        <code>hotspotY</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-        <span class="flag static">static</span>
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Sets the current pointer/cursor image. The cursor's hotspot/click-point
-starts at the top-left corner of the image like 0, 0 means the top-left corner
-as hotspot/click-point.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">bitmap</code>
-                        <span class="type"><a href="../classes/gs.Bitmap.html" class="crosslink">gs.Bitmap</a></span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The bitmap used to display the current pointer/cursor.</li>
+</li>
+<li class="param">
+<code class="param-name">height</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>游戏分辨率的高度。</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">hotspotX</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The x-coordinate of the cursor's hotspot/click-point.</li>
+</div>
+</li>
+<li class="param">
+<code class="param-name">parent</code>
+<span class="type">HTMLElement</span>
+<div class="param-description">
+<ul>
+<li>应将画布添加到的 HTML 元素。</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">hotspotY</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The y-coordinate of the cursor's hotspot/click-point.</li>
+</div>
+</li>
+<li class="param">
+<code class="param-name">keepRatio</code>
+<span class="type">Boolean</span>
+<div class="param-description">
+<ul>
+<li>指示画布在缩放时是否应保持分辨率的比例。</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_snapshot" class="method item">
-    <h3 class="name"><code>snapshot</code></h3>
-
-        <span class="paren">()</span>
-
-        <span class="returns-inline">
-            <span class="type"><a href="../classes/gs.Bitmap.html" class="crosslink">gs.Bitmap</a></span>
-        </span>
-
-
-
-
-        <span class="flag static">static</span>
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates a snapshot from the current screen.</p>
-
-    </div>
-
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type"><a href="../classes/gs.Bitmap.html" class="crosslink">gs.Bitmap</a></span>:
-                    <p>A snapshot from the current screen.</p>
-
-            </div>
-        </div>
-
-
-</div>
-<div id="method_snapshotAsData" class="method item">
-    <h3 class="name"><code>snapshotAsData</code></h3>
-
-        <span class="paren">()</span>
-
-        <span class="returns-inline">
-            <span class="type">Uint8Array</span>
-        </span>
-
-
-
-
-        <span class="flag static">static</span>
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates a snapshot from the current screen.</p>
-
-    </div>
-
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">Uint8Array</span>:
-                    <p>A snapshot from the current screen a uint8 pixel data array.</p>
-
-            </div>
-        </div>
-
-
-</div>
-<div id="method_transition" class="method item">
-    <h3 class="name"><code>transition</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code class="optional">[transitionBitmap=null]</code>
-                </li>
-                <li class="arg">
-                        <code class="optional">[vague=null]</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-        <span class="flag static">static</span>
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Executes a transition from the frozen state to the current state. If no
-frozen state exists, no transition is executed. To freeze the current state
-use gs.Graphics.freeze method.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The transition duration in frames.</li>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name optional">[transitionBitmap=null]</code>
-                        <span class="type"><a href="../classes/gs.Bitmap.html" class="crosslink">gs.Bitmap</a></span>
-                        <span class="flag optional" title="This parameter is optional.">optional</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The mask-bitmap used for the transition. If <b>null</b> a simple
-transition using blending is executed.</li>
+</div>
+</div>
+<div class="method item" id="method_isFullscreen">
+<h3 class="name"><code>isFullscreen</code></h3>
+<span class="paren">()</span>
+<span class="returns-inline">
+<span class="type">Boolean</span>
+</span>
+<span class="flag static">static</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>指示游戏当前是否在全屏模式下运行。</p>
+</div>
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type">Boolean</span>:<p>返回<b>true</b>如果游戏在全屏模式下运行。 否则<b>false</b>.</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_leaveFullscreen">
+<h3 class="name"><code>leaveFullscreen</code></h3>
+<span class="paren">()</span>
+<span class="flag static">static</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>退出全屏模式。</p>
+</div>
+</div>
+<div class="method item" id="method_removeGraphicObject">
+<h3 class="name"><code>removeGraphicObject</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>object</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="flag static">static</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>从图形系统中移除图形对象。 然后不再渲染该图形对象。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">object</code>
+<span class="type"><a class="crosslink" href="../classes/gs.GraphicObject.html">gs.GraphicObject</a></span>
+<div class="param-description">
+<ul>
+<li>要移除的图形对象。</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name optional">[vague=null]</code>
-                        <span class="type">Number</span>
-                        <span class="flag optional" title="This parameter is optional.">optional</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The vague of the masking if a mask-bitmap is specified.</li>
+</div>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_update" class="method item">
-    <h3 class="name"><code>update</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-        <span class="flag static">static</span>
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Updates the screen. Renders all graphic objects. Should be called once per frame.</p>
-
-    </div>
-
-
-
-
 </div>
-            </div>
-
-            <div id="properties" class="api-class-tabpanel">
-                <h2 class="off-left">Properties</h2>
-
-<div id="property_@onFocusLost" class="property item">
-    <h3 class="name"><code>@onFocusLost</code></h3>
-    <span class="type">Function</span>
-
-
-
-
-        <span class="flag static">static</span>
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>A callback function called whenever the game screen loses input focus.</p>
-
-    </div>
-
-
-
+<div class="method item" id="method_setCursorBitmap">
+<h3 class="name"><code>setCursorBitmap</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>bitmap</code>
+</li>
+<li class="arg">
+<code>hotspotX</code>
+</li>
+<li class="arg">
+<code>hotspotY</code>
+</li>
+</ul><span class="paren">)</span>
 </div>
-<div id="property_@onFocusReceive" class="property item">
-    <h3 class="name"><code>@onFocusReceive</code></h3>
-    <span class="type">Function</span>
-
-
-
-
-        <span class="flag static">static</span>
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>A callback function called whenever the game screen receives input focus.</p>
-
-    </div>
-
-
-
+<span class="flag static">static</span>
+<div class="meta">
+<p>
+</p>
 </div>
-<div id="property_canvas" class="property item">
-    <h3 class="name"><code>canvas</code></h3>
-    <span class="type">Object</span>
-
-
-
-
-        <span class="flag static">static</span>
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The canvas/screen object. On most platforms that is an HTMLCanvasElement but there
-is no guarantee. Accessing the canvas directly is not recommended, it should only be done
-if really necessary.</p>
-
-    </div>
-
-
-
+<div class="description">
+<p>设置当前的指针/光标图像。 光标的热点/点击点从图像的左上角开始，例如 0, 0 表示左上角作为热点/点击点。</p>
 </div>
-<div id="property_context" class="property item">
-    <h3 class="name"><code>context</code></h3>
-    <span class="type">Object</span>
-
-
-
-
-        <span class="flag static">static</span>
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The graphic context. This in regular is an OpenGL context but it depends on the platform.
-The graphic context should only be accessed if really necessary.</p>
-
-    </div>
-
-
-
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">bitmap</code>
+<span class="type"><a class="crosslink" href="../classes/gs.Bitmap.html">gs.Bitmap</a></span>
+<div class="param-description">
+<ul>
+<li>用于显示当前指针/光标的位图。</li>
+</ul>
 </div>
-<div id="property_frameRate" class="property item">
-    <h3 class="name"><code>frameRate</code></h3>
-    <span class="type">Number</span>
-
-
-
-
-        <span class="flag static">static</span>
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The target frame-rate. This is property doesn't reflect the actual current frame-rate
-of the running game.</p>
-
-    </div>
-
-        <p><strong>Default:</strong> 60</p>
-
-
+</li>
+<li class="param">
+<code class="param-name">hotspotX</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>光标热点/点击点的 x 坐标。</li>
+</ul>
 </div>
-<div id="property_height" class="property item">
-    <h3 class="name"><code>height</code></h3>
-    <span class="type">Number</span>
-
-
-
-
-        <span class="flag static">static</span>
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The width of the game's resolution.</p>
-
-    </div>
-
-
-
+</li>
+<li class="param">
+<code class="param-name">hotspotY</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>光标热点/点击点的 y 坐标。</li>
+</ul>
 </div>
-<div id="property_keepRatio" class="property item">
-    <h3 class="name"><code>keepRatio</code></h3>
-    <span class="type">Boolean</span>
-
-
-
-
-        <span class="flag static">static</span>
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Indicates if the canvas/screen should keep the ratio of the resolution on scaling.</p>
-
-    </div>
-
-
-
+</li>
+</ul>
 </div>
-<div id="property_renderer" class="property item">
-    <h3 class="name"><code>renderer</code></h3>
-    <span class="type"><a href="../classes/gs.Renderer.html" class="crosslink">gs.Renderer</a></span>
-
-
-
-
-        <span class="flag static">static</span>
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The renderer to render graphical objects on screen.</p>
-
-    </div>
-
-
-
 </div>
-<div id="property_viewport" class="property item">
-    <h3 class="name"><code>viewport</code></h3>
-    <span class="type"><a href="../classes/gs.Viewport.html" class="crosslink">gs.Viewport</a></span>
-
-
-
-
-        <span class="flag static">static</span>
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The top-level viewport. Adding/Removing objects from that viewport is equivalent to
-gs.Graphics.addGraphicObject/gs.Graphics.removeGraphicObject methods.</p>
-
-    </div>
-
-
-
+<div class="method item" id="method_snapshot">
+<h3 class="name"><code>snapshot</code></h3>
+<span class="paren">()</span>
+<span class="returns-inline">
+<span class="type"><a class="crosslink" href="../classes/gs.Bitmap.html">gs.Bitmap</a></span>
+</span>
+<span class="flag static">static</span>
+<div class="meta">
+<p>
+</p>
 </div>
-<div id="property_width" class="property item">
-    <h3 class="name"><code>width</code></h3>
-    <span class="type">Number</span>
-
-
-
-
-        <span class="flag static">static</span>
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The width of the game's resolution.</p>
-
-    </div>
-
-
-
+<div class="description">
+<p>从当前屏幕创建一个快照。</p>
 </div>
-            </div>
-
-
-    </div>
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type"><a class="crosslink" href="../classes/gs.Bitmap.html">gs.Bitmap</a></span>:<p>当前屏幕的快照。</p>
 </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+</div>
+</div>
+<div class="method item" id="method_snapshotAsData">
+<h3 class="name"><code>snapshotAsData</code></h3>
+<span class="paren">()</span>
+<span class="returns-inline">
+<span class="type">Uint8Array</span>
+</span>
+<span class="flag static">static</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>从当前屏幕创建一个快照。</p>
+</div>
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type">Uint8Array</span>:<p>从当前屏幕快照得到的 uint8 像素数据数组。</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_transition">
+<h3 class="name"><code>transition</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>duration</code>
+</li>
+<li class="arg">
+<code class="optional">[transitionBitmap=null]</code>
+</li>
+<li class="arg">
+<code class="optional">[vague=null]</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="flag static">static</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>执行从冻结状态到当前状态的过渡。 如果不存在冻结状态，则不执行过渡。 要冻结当前状态，请使用 gs.Graphics.freeze 方法。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">duration</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>过渡持续时间（以帧为单位）。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name optional">[transitionBitmap=null]</code>
+<span class="type"><a class="crosslink" href="../classes/gs.Bitmap.html">gs.Bitmap</a></span>
+<span class="flag optional" title="This parameter is optional.">optional</span>
+<div class="param-description">
+<ul>
+<li>用于过渡的掩码位图。 如果<b>null</b>则执行使用混合的简单过渡。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name optional">[vague=null]</code>
+<span class="type">Number</span>
+<span class="flag optional" title="This parameter is optional.">optional</span>
+<div class="param-description">
+<ul>
+<li>如果指定了掩码位图，则为掩码的模糊度。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_update">
+<h3 class="name"><code>update</code></h3>
+<span class="paren">()</span>
+<span class="flag static">static</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>更新屏幕。 渲染所有图形对象。 应每帧调用一次。</p>
+</div>
+</div>
+</div>
+<div class="api-class-tabpanel" id="properties">
+<h2 class="off-left">属性</h2>
+<div class="property item" id="property_@onFocusLost">
+<h3 class="name"><code>@onFocusLost</code></h3>
+<span class="type">Function</span>
+<span class="flag static">static</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>每当游戏屏幕失去输入焦点时调用的回调函数。</p>
+</div>
+</div>
+<div class="property item" id="property_@onFocusReceive">
+<h3 class="name"><code>@onFocusReceive</code></h3>
+<span class="type">Function</span>
+<span class="flag static">static</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>每当游戏屏幕接收到输入焦点时调用的回调函数。</p>
+</div>
+</div>
+<div class="property item" id="property_canvas">
+<h3 class="name"><code>canvas</code></h3>
+<span class="type">Object</span>
+<span class="flag static">static</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>画布/屏幕对象。 在大多数平台上，这是一个 HTMLCanvasElement，但不能保证。 不建议直接访问画布，只有在真正需要时才应该这样做。</p>
+</div>
+</div>
+<div class="property item" id="property_context">
+<h3 class="name"><code>context</code></h3>
+<span class="type">Object</span>
+<span class="flag static">static</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>图形上下文。 通常，这是一个 OpenGL 上下文，但这取决于平台。 只有在真正需要时才应访问图形上下文。</p>
+</div>
+</div>
+<div class="property item" id="property_frameRate">
+<h3 class="name"><code>frameRate</code></h3>
+<span class="type">Number</span>
+<span class="flag static">static</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>目标帧速率。 此属性不反映运行游戏的实际当前帧速率。</p>
+</div>
+<p><strong>默认值：</strong>60</p>
+</div>
+<div class="property item" id="property_height">
+<h3 class="name"><code>height</code></h3>
+<span class="type">Number</span>
+<span class="flag static">static</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>游戏分辨率的宽度。</p>
+</div>
+</div>
+<div class="property item" id="property_keepRatio">
+<h3 class="name"><code>keepRatio</code></h3>
+<span class="type">Boolean</span>
+<span class="flag static">static</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>指示画布/屏幕是否应在缩放时保持分辨率的比例。</p>
+</div>
+</div>
+<div class="property item" id="property_renderer">
+<h3 class="name"><code>renderer</code></h3>
+<span class="type"><a class="crosslink" href="../classes/gs.Renderer.html">gs.Renderer</a></span>
+<span class="flag static">static</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>用于在屏幕上渲染图形对象的渲染器。</p>
+</div>
+</div>
+<div class="property item" id="property_viewport">
+<h3 class="name"><code>viewport</code></h3>
+<span class="type"><a class="crosslink" href="../classes/gs.Viewport.html">gs.Viewport</a></span>
+<span class="flag static">static</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>顶层视口。 从该视口添加/删除对象等同于 gs.Graphics.addGraphicObject/gs.Graphics.removeGraphicObject 方法。</p>
+</div>
+</div>
+<div class="property item" id="property_width">
+<h3 class="name"><code>width</code></h3>
+<span class="type">Number</span>
+<span class="flag static">static</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>游戏分辨率的宽度。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <script src="../assets/vendor/prettify/prettify-min.js"></script>
 <script>prettyPrint();</script>

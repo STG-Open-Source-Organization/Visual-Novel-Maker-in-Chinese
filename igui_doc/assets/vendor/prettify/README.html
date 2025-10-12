@@ -1,144 +1,86 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
- "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
 <html>
-  <head>
-    <title>Javascript code prettifier</title>
-
-    <link href="src/prettify.css" type="text/css" rel="stylesheet" />
-
-    <script src="src/prettify.js" type="text/javascript"></script>
-
-    <style type="text/css">
+<head>
+<title>Javascript 代码格式化</title>
+<link href="src/prettify.css" rel="stylesheet" type="text/css"/>
+<script src="src/prettify.js" type="text/javascript"></script>
+<style type="text/css">
       body { margin-left: .5in }
       h1, h2, h3, h4, .footer { margin-left: -.4in; }
     </style>
-  </head>
-
-  <body onload="prettyPrint()" bgcolor="white">
-    <small style="float: right">Languages : <a href="README-zh-Hans.html">CH</a></small>
-    <h1>Javascript code prettifier</h1>
-
-    <h2>Setup</h2>
-    <ol>
-      <li><a href="http://code.google.com/p/google-code-prettify/downloads/list">Download</a> a distribution
-      <li>Include the script and stylesheets in your document
-        (you will need to make sure the css and js file are on your server, and
-         adjust the paths in the <tt>script</tt> and <tt>link</tt> tag)
-        <pre class="prettyprint">
-&lt;link href="prettify.css" type="text/css" rel="stylesheet" />
-&lt;script type="text/javascript" src="prettify.js">&lt;/script></pre>
-      <li>Add <code class="prettyprint lang-html">onload="prettyPrint()"</code> to your
-      document's body tag.
-      <li>Modify the stylesheet to get the coloring you prefer</li>
-    </ol>
-
-    <h2>Usage</h2>
-    <p>Put code snippets in
-    <tt>&lt;pre class="prettyprint"&gt;...&lt;/pre&gt;</tt>
-    or <tt>&lt;code class="prettyprint"&gt;...&lt;/code&gt;</tt>
-    and it will automatically be pretty printed.
-
-    <table summary="code examples">
-      <tr>
-        <th>The original
-        <th>Prettier
-      <tr>
-        <td><pre style="border: 1px solid #888;padding: 2px"
-             ><a name="voila1"></a>class Voila {
+</head>
+<body bgcolor="white" onload="prettyPrint()">
+<small style="float: right">语言：<a href="README-zh-Hans.html">中文</a></small>
+<h1>Javascript 代码格式化</h1>
+<h2>安装</h2>
+<ol>
+<li><a href="http://code.google.com/p/google-code-prettify/downloads/list">下载</a>分发版<li>在您的文档中包含脚本和样式表
+        （您需要确保 CSS 和 JS 文件在您的服务器上，并
+         调整<tt>script</tt>和<tt>link</tt>标签中的路径）<pre class="prettyprint">&lt;link href="prettify.css" type="text/css" rel="stylesheet" /&gt;
+&lt;script type="text/javascript" src="prettify.js"&gt;&lt;/script&gt;</pre>
+<li>将<code class="prettyprint lang-html">onload="prettyPrint()"</code>添加到您
+      文档的 body 标签。<li>修改样式表以获得您喜欢的颜色</li>
+</li></li></li></ol>
+<h2>用法</h2>
+<p>将代码片段放入
+        &lt;pre class="prettyprint"&gt;...&lt;/pre&gt;<tt>或
+        &lt;code class="prettyprint"&gt;...&lt;/code&gt;</tt>中，它将自动进行美化。<tt>原始的</tt>Prettier<table summary="code examples">
+<tr>
+<th>类 Voila {
 public:
   // Voila
   static const string VOILA = "Voila";
 
-  // will not interfere with embedded <a href="#voila1">tags</a>.
-}</pre>
-
-        <td><pre class="prettyprint"><a name="voila2"></a>class Voila {
+  // 不会干扰嵌入的<th>tags<tr>
+<td><pre style="border: 1px solid #888;padding: 2px"><a name="voila1"></a>.
+}<a href="#voila1">类 Voila {
 public:
   // Voila
   static const string VOILA = "Voila";
 
-  // will not interfere with embedded <a href="#voila2">tags</a>.
-}</pre>
-    </table>
-
-    <h2>FAQ</h2>
-    <h3 id="langs">Which languages does it work for?</h3>
-    <p>The comments in <tt>prettify.js</tt> are authoritative but the lexer
-    should work on a number of languages including C and friends,
-    Java, Python, Bash, SQL, HTML, XML, CSS, Javascript, and Makefiles.
-    It works passably on Ruby, PHP, VB, and Awk and a decent subset of Perl
-    and Ruby, but, because of commenting conventions, doesn't work on
-    Smalltalk, or CAML-like languages.</p>
-
-    <p>LISPy languages are supported via an extension:
-    <a href="http://code.google.com/p/google-code-prettify/source/browse/trunk/src/lang-lisp.js"
-     ><code>lang-lisp.js</code></a>.</p>
-    <p>And similarly for
-    <a href="http://code.google.com/p/google-code-prettify/source/browse/trunk/src/lang-css.js"
-     ><code>CSS</code></a>,
-    <a href="http://code.google.com/p/google-code-prettify/source/browse/trunk/src/lang-hs.js"
-     ><code>Haskell</code></a>,
-    <a href="http://code.google.com/p/google-code-prettify/source/browse/trunk/src/lang-lua.js"
-     ><code>Lua</code></a>,
-    <a href="http://code.google.com/p/google-code-prettify/source/browse/trunk/src/lang-ml.js"
-     ><code>OCAML, SML, F#</code></a>,
-    <a href="http://code.google.com/p/google-code-prettify/source/browse/trunk/src/lang-vb.js"
-     ><code>Visual Basic</code></a>,
-    <a href="http://code.google.com/p/google-code-prettify/source/browse/trunk/src/lang-sql.js"
-     ><code>SQL</code></a>,
-    <a href="http://code.google.com/p/google-code-prettify/source/browse/trunk/src/lang-proto.js"
-     ><code>Protocol Buffers</code></a>, and
-    <a href="http://code.google.com/p/google-code-prettify/source/browse/trunk/src/lang-wiki.js"
-     ><code>WikiText</code></a>..
-
-    <p>If you'd like to add an extension for your favorite language, please
-    look at <tt>src/lang-lisp.js</tt> and file an
-    <a href="http://code.google.com/p/google-code-prettify/issues/list"
-     >issue</a> including your language extension, and a testcase.</p>
-
-    <h3>How do I specify which language my code is in?</h3>
-    <p>You don't need to specify the language since <code>prettyprint()</code>
-    will guess.  You can specify a language by specifying the language extension
-    along with the <code>prettyprint</code> class like so:</p>
-    <pre class="prettyprint lang-html"
->&lt;pre class=&quot;prettyprint <b>lang-html</b>&quot;&gt;
-  The lang-* class specifies the language file extensions.
-  File extensions supported by default include
+  // 不会干扰嵌入的</a>tags</pre>
+<td><pre class="prettyprint"><a name="voila2"></a>.
+}<a href="#voila2">常见问题</a>支持哪些语言？</pre>
+</td></td></tr></th></th></tr></table>
+<h2>prettify.js</h2>
+<h3 id="langs">中的注释是权威性的，但词法分析器
+    应该适用于多种语言，包括 C 及其相关语言、
+    Java、Python、Bash、SQL、HTML、XML、CSS、Javascript 和 Makefiles。
+    它对 Ruby、PHP、VB 和 Awk 效果尚可，并且对 Perl
+    和 Ruby 的大部分子集效果不错，但由于注释约定，它不适用于
+    Smalltalk 或 CAML 类语言。</h3>
+<p>LISPy 语言通过扩展名支持：<tt>lang-lisp.js</tt>.</p>
+<p>同样，对于<a href="http://code.google.com/p/google-code-prettify/source/browse/trunk/src/lang-lisp.js"><code>CSS</code></a>、</p>
+<p>Haskell<a href="http://code.google.com/p/google-code-prettify/source/browse/trunk/src/lang-css.js"><code>、</code></a>Lua<a href="http://code.google.com/p/google-code-prettify/source/browse/trunk/src/lang-hs.js"><code>、</code></a>OCAML、SML、F#<a href="http://code.google.com/p/google-code-prettify/source/browse/trunk/src/lang-lua.js"><code>、</code></a>Visual Basic<a href="http://code.google.com/p/google-code-prettify/source/browse/trunk/src/lang-ml.js"><code>、</code></a>SQL<a href="http://code.google.com/p/google-code-prettify/source/browse/trunk/src/lang-vb.js"><code>、</code></a>Protocol Buffers<a href="http://code.google.com/p/google-code-prettify/source/browse/trunk/src/lang-sql.js"><code>和</code></a>WikiText<a href="http://code.google.com/p/google-code-prettify/source/browse/trunk/src/lang-proto.js"><code>也支持。</code></a>如果您想为自己喜欢的语言添加扩展，请
+    查看<a href="http://code.google.com/p/google-code-prettify/source/browse/trunk/src/lang-wiki.js"><code>src/lang-lisp.js</code></a>，并在其中包含您的语言扩展和测试用例的情况下提交一个<p>issue<tt>.</tt>如何指定我的代码是什么语言？<a href="http://code.google.com/p/google-code-prettify/issues/list">您无需指定语言，因为</a>prettyprint()</p>
+<h3>会自动猜测。 您可以通过指定语言扩展
+        以及</h3>
+<p>prettyprint<code>类来指定语言，如下所示：</code>&lt;pre class="prettyprint<code>lang-html</code>"&gt;
+  lang-* 类指定语言文件扩展名。
+  默认支持的文件扩展名包括
     "bsh", "c", "cc", "cpp", "cs", "csh", "cyc", "cv", "htm", "html",
     "java", "js", "m", "mxml", "perl", "pl", "pm", "py", "rb", "sh",
-    "xhtml", "xml", "xsl".
-&lt;/pre&gt;</pre>
-
-    <h3>It doesn't work on <tt>&lt;obfuscated code sample&gt;</tt>?</h3>
-    <p>Yes.  Prettifying obfuscated code is like putting lipstick on a pig
-    &mdash; i.e. outside the scope of this tool.</p>
-
-    <h3>Which browsers does it work with?</h3>
-    <p>It's been tested with IE 6, Firefox 1.5 &amp; 2, and Safari 2.0.4.
-    Look at <a href="tests/prettify_test.html">the test page</a> to see if it
-    works in your browser.</p>
-
-    <h3>What's changed?</h3>
-    <p>See the <a href="CHANGES.html">change log</a></p>
-
-    <h3>Why doesn't Prettyprinting of strings work on WordPress?</h3>
-    <p>Apparently wordpress does "smart quoting" which changes close quotes.
-    This causes end quotes to not match up with open quotes.
-    <p>This breaks prettifying as well as copying and pasting of code samples.
-    See
-    <a href="http://wordpress.org/support/topic/125038"
-    >WordPress's help center</a> for info on how to stop smart quoting of code
-    snippets.</p>
-
-    <h3 id="linenums">How do I put line numbers in my code?</h3>
-    <p>You can use the <code>linenums</code> class to turn on line
-    numbering.  If your code doesn't start at line number 1, you can
-    add a colon and a line number to the end of that class as in
-    <code>linenums:52</code>.
-
-    <p>For example
-<pre class="prettyprint">&lt;pre class="prettyprint linenums:<b>4</b>"
+    "xhtml", "xml", "xsl"。
+&lt;/pre&gt;</p>
+<pre class="prettyprint lang-html">它对<b>&lt;obfuscated code sample&gt;</b>不起作用？</pre>
+<h3>是的。美化混淆代码就像给猪化妆——也就是说，超出了此工具的范围。<tt>支持哪些浏览器？</tt>它已在 IE 6、Firefox 1.5 和 2 以及 Safari 2.0.4 中进行过测试。
+    查看</h3>
+<p>测试页面</p>
+<h3>，看看它
+    在您的浏览器中是否有效。</h3>
+<p>有什么变化？<a href="tests/prettify_test.html">请参阅</a>更改日志</p>
+<h3>为什么 WordPress 上不能对字符串进行美化？</h3>
+<p>据报道，WordPress 会进行“智能引用”，这会更改结束引号。
+    这导致结束引号与开始引号不匹配。<a href="CHANGES.html">这破坏了美化以及代码样本的复制和粘贴。
+    有关如何停止对代码
+    片段进行智能引用的信息，请参阅</a></p>
+<h3>WordPress 的帮助中心</h3>
+<p>.<p>如何为我的代码添加行号？<a href="http://wordpress.org/support/topic/125038">您可以使用</a>linenums</p>
+<h3 id="linenums">类来开启行
+    号。如果您的代码不是从第 1 行开始，您可以
+    在该类的末尾添加冒号和行号，例如</h3>
+<p>linenums:52<code>.</code>例如，<code>&lt;pre class="prettyprint linenums:</code>4<p>"
 &gt;// This is line 4.
 foo();
 bar();
@@ -146,58 +88,35 @@ baz();
 boo();
 far();
 faz();
-&lt;pre&gt;</pre>
-    produces
-<pre class="prettyprint linenums:4"
->// This is line 4.
+&lt;pre&gt;<pre class="prettyprint">会生成：<b>// This is line 4.
 foo();
 bar();
 baz();
 boo();
 far();
-faz();
-</pre>
-
-    <h3>How do I prevent a portion of markup from being marked as code?</h3>
-    <p>You can use the <code>nocode</code> class to identify a span of markup
-    that is not code.
-<pre class="prettyprint">&lt;pre class=prettyprint&gt;
+faz();</b>如何防止一部分标记被标记为代码？</pre>您可以使用<pre class="prettyprint linenums:4">nocode</pre>
+<h3>类来标识一段
+    不是代码的标记。</h3>
+<p>&lt;pre class=prettyprint&gt;
 int x = foo();  /* This is a comment  &lt;span class="nocode"&gt;This is not code&lt;/span&gt;
   Continuation of comment */
 int y = bar();
-&lt;/pre&gt;</pre>
-produces
-<pre class="prettyprint">
-int x = foo();  /* This is a comment  <span class="nocode">This is not code</span>
-  Continuation of comment */
-int y = bar();
-</pre>
-
-    <p>For a more complete example see the issue22
-    <a href="tests/prettify_test.html#issue22">testcase</a>.</p>
-
-    <h3>I get an error message "a is not a function" or "opt_whenDone is not a function"</h3>
-    <p>If you are calling <code>prettyPrint</code> via an event handler, wrap it in a function.
-    Instead of doing
-    <blockquote>
-      <code class="prettyprint lang-js"
-       >addEventListener('load', prettyPrint, false);</code>
-    </blockquote>
-    wrap it in a closure like
-    <blockquote>
-      <code class="prettyprint lang-js"
-       >addEventListener('load', function (event) { prettyPrint() }, false);</code>
-    </blockquote>
-    so that the browser does not pass an event object to <code>prettyPrint</code> which
-    will confuse it.
-
-    <br><br><br>
-
-    <div class="footer">
-<!-- Created: Tue Oct  3 17:51:56 PDT 2006 -->
+&lt;/pre&gt;<code>会生成：</code>int x = foo();  /* This is a comment<pre class="prettyprint">This is not code</pre>Continuation of comment */
+int y = bar();<pre class="prettyprint">有关更完整的示例，请参阅 issue22<span class="nocode">testcase</span>.</pre>
+<p>我收到错误消息“a is not a function”或“opt_whenDone is not a function”<a href="tests/prettify_test.html#issue22">如果您通过事件处理程序调用</a>prettyPrint</p>
+<h3>，请将其包装在一个函数中。
+    不要执行</h3>
+<p>addEventListener('load', prettyPrint, false);<code>而是将其包装在一个闭包中，如</code>addEventListener('load', function (event) { prettyPrint() }, false);<blockquote>
+<code class="prettyprint lang-js">这样，浏览器就不会将事件对象传递给</code>
+</blockquote>prettyPrint<blockquote>
+<code class="prettyprint lang-js">，
+    从而避免混淆。</code>
+</blockquote>创建于：2006 年 10 月 3 日星期二 17:51:56 PDT<code>hhmts start</code>最后修改于：2010 年 7 月 19 日星期三 13:56:00 PST<br/><br/><br/>
+<div class="footer">
+hhmts end
 <!-- hhmts start -->
 Last modified: Wed Jul 19 13:56:00 PST 2010
 <!-- hhmts end -->
-    </div>
-  </body>
+</div>
+</p></p></p></p></p></p></p></body>
 </html>

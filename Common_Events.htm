@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+通用事件
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="generator" content="Adobe RoboHelp 2015" />
-<title>Common Events</title>
-<link rel="StyleSheet" href="default.css" type="text/css" />
-<script type="text/javascript" language="JavaScript">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Adobe RoboHelp 2015" name="generator"/>
+<title>通用事件</title>
+<link href="default.css" rel="StyleSheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
 //<![CDATA[
 function reDo() {
   if (innerWidth != origWidth || innerHeight != origHeight)
@@ -29,112 +29,64 @@ visibility:hidden; }
 p.WebHelpNavBar { text-align:right; }
 -->
 </style>
-
-<script type="text/javascript" src="template/scripts/rh.min.js"></script>
-<script type="text/javascript" src="template/scripts/common.min.js"></script>
-<script type="text/javascript" src="template/scripts/topic.min.js"></script>
-<script type="text/javascript" src="template/scripts/constants.js"></script>
-<script type="text/javascript" src="template/scripts/utils.js"></script>
-<script type="text/javascript" src="template/scripts/mhutils.js"></script>
-<script type="text/javascript" src="template/scripts/mhlang.js"></script>
-<script type="text/javascript" src="template/scripts/mhver.js"></script>
-<script type="text/javascript" src="template/scripts/settings.js"></script>
-<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
-<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
-<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
-<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
-<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
- <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
-<script type="text/javascript" >
+<script src="template/scripts/rh.min.js" type="text/javascript"></script>
+<script src="template/scripts/common.min.js" type="text/javascript"></script>
+<script src="template/scripts/topic.min.js" type="text/javascript"></script>
+<script src="template/scripts/constants.js" type="text/javascript"></script>
+<script src="template/scripts/utils.js" type="text/javascript"></script>
+<script src="template/scripts/mhutils.js" type="text/javascript"></script>
+<script src="template/scripts/mhlang.js" type="text/javascript"></script>
+<script src="template/scripts/mhver.js" type="text/javascript"></script>
+<script src="template/scripts/settings.js" type="text/javascript"></script>
+<script src="template/scripts/XmlJsReader.js" type="text/javascript"></script>
+<script src="template/scripts/loadparentdata.js" type="text/javascript"></script>
+<script src="template/scripts/loadscreen.js" type="text/javascript"></script>
+<script src="template/scripts/loadprojdata.js" type="text/javascript"></script>
+<script src="template/scripts/mhtopic.js" type="text/javascript"></script>
+<link href="template/styles/topic.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
 gRootRelPath = ".";
 gCommonRootRelPath = ".";
 gTopicId = "2.2.0_6";
 </script>
- <meta name="topic-breadcrumbs" content="Exploring the Editor > Database" />
+<meta content="Exploring the Editor &gt; Database" name="topic-breadcrumbs"/>
 </head>
-
 <body>
-<script type="text/javascript" src="./ehlpdhtm.js"></script>
-
-<div style="width: 100%; position: relative;" id="header">
-	<p class="Topic_Heading">Common Events</p>
+<script src="./ehlpdhtm.js" type="text/javascript"></script>
+<div id="header" style="width: 100%; position: relative;">
+<p class="Topic_Heading">通用</p>
 </div>
-<p style="font-family: Arial, sans-serif;">&#160;</p>
-<p style="font-family: Arial, sans-serif;"><img src="15.jpg" alt="" style=" border:none; width:100%; max-width:1283px;" border="0" /></p>
-<p style="font-weight: bold; font-size: 18pt; font-family: 'Book Antiqua', serif;">&#160;</p>
-<p class="Sub_Heading">General</p>
+<p style="font-family: Arial, sans-serif;"> </p>
+<p style="font-family: Arial, sans-serif;"><img alt="" border="0" src="15.jpg" style=" border:none; width:100%; max-width:1283px;"/></p>
+<p style="font-weight: bold; font-size: 18pt; font-family: 'Book Antiqua', serif;"> </p>
+<p class="Sub_Heading">名称</p>
 <ul style="list-style: disc;">
-	<li><p style="font-family: Arial, sans-serif; font-weight: bold;">Name 
-	 <span style="font-weight: normal;">- The name of the common event.</span></p></li>
-	<li><p style="font-weight: bold; font-family: Arial, sans-serif;">Trigger 
-	 <span style="font-weight: normal;">- The condition for running the 
-	 common event.</span></p></li>
-	<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Call</span> - The common event will 
-		 run if you use the Call Common Event scene command.</p></li>
-		<li><p style="font-weight: bold; font-family: Arial, sans-serif;">Auto 
-		 <span style="font-weight: normal;">- The common event will automatically 
-		 activate itself. It will stop all processes unless Runs Parallel 
-		 is checked.</span></p></li>
-	</ul></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: bold;">Condition 
-	 Switch <span style="font-weight: normal;">- Use a switch as a condition 
-	 to run the common event.</span></p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: bold;">Runs 
-	 Parallel <span style="font-weight: normal;">- Also known as Asynchronous. 
-	 If Parallel is checked, it will let the current scene to continue 
-	 playing while running the common event.</span></p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: bold;">Auto 
-	 Preload <span style="font-weight: normal;">- Determines if the common 
-	 event is processed by the resource preloader. That only works for 
-	 common events with trigger set to &quot;Auto&quot;. &#160;If checked, 
-	 all resources used in that common event are preloaded. That is useful 
-	 for Auto/Parallel common events, since they are never called in a 
-	 scene, this is the only way to tell the resource-preloader to preload 
-	 used resources at start-up time. Keep in mind that if you have a huge 
-	 amount of Auto/Parallel common events with Auto Preload set, all resources 
-	 used by that common events are loaded at start-up time and never freed 
-	 which can consume a huge amount of memory.</span></p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: bold;">Single 
-	 Instance <span style="font-weight: normal;">- Determines if only a 
-	 single-instance of that common event can exist at a time. If unchecked, 
-	 each Call Common Event produces a new instance with an own command-interpreter 
-	 and own local variables. This is useful for parallel calls or recursion.</span></p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: bold;"><span>Inline</span> 
-	 <span style="font-weight: normal;">- If checked, the engine tries 
-	 to optimize the call to that common event by copy &amp; paste it's 
-	 commands directly into the caller's command-list to speed up execution. 
-	 That is useful if a common event is called very often like 1000 or 
-	 10000 times in a loop or something. It has no effect if the Trigger 
-	 set to Auto or if the common event has parameters or uses recursion(Calling 
-	 itself).</span></p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: bold;">- 通用事件的名称。<span style="font-weight: normal;">触发</span></p></li>
+<li><p style="font-weight: bold; font-family: Arial, sans-serif;">- 运行<span style="font-weight: normal;">通用事件</span></p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">的条件。</span>调用</p></li>
+<li><p style="font-weight: bold; font-family: Arial, sans-serif;">- 如果您使用“调用通用事件”场景命令，则该通用事件将运行。<span style="font-weight: normal;">自动</span></p></li>
+</ul></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: bold;">- 通用事件将自动激活。它将停止所有进程，除非勾选了“运行并行”。<span style="font-weight: normal;">条件</span></p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: bold;">开关<span style="font-weight: normal;">- 使用开关作为条件来运行通用事件。</span></p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: bold;">运行<span style="font-weight: normal;">并行</span></p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: bold;">- 也称为异步。如果选中“并行”，它将允许当前场景在运行通用事件的同时继续播放。<span style="font-weight: normal;">自动</span></p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: bold;"><span>预加载</span>
+<span style="font-weight: normal;">- 确定通用事件是否由资源预加载器处理。这仅适用于触发设置为“自动”的通用事件。如果选中，则预加载该通用事件中使用的所有资源。这对于自动/并行通用事件非常有用，因为它们从不通过场景调用，这是告诉资源预加载器在启动时预加载已用资源的唯一方法。请记住，如果您有大量带有“自动预加载”的自动/并行通用事件，则这些通用事件使用的所有资源将在启动时加载并且永远不会释放，这可能会消耗大量内存。</span></p></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: bold;">&#160;</p>
-<p class="Sub_Heading">Parameters</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">Parameters 
- allows you to define some values like Numbers, Texts, etc. to trigger 
- the common event. If you want an example, you can check the <a href="Tips_and_Tricks.htm">Tips 
- and Tricks</a> page.</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">&#160;</p>
+<p style="font-family: Arial, sans-serif; font-weight: bold;"> </p>
+<p class="Sub_Heading">单一实例</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">- 确定一次只能存在一个该通用事件的实例。如果未选中，每次调用通用事件都会产生一个带有自己命令解释器和自己局部变量的新实例。这对于并行调用或递归很有用。<a href="Tips_and_Tricks.htm">内联</a>- 如果选中，引擎会尝试通过将其命令复制并粘贴到调用者的命令列表中来优化对该通用事件的调用，以加快执行速度。如果一个通用事件被调用非常频繁，例如在循环中调用 1000 或 10000 次，这将非常有用。如果触发设置为“自动”或通用事件有参数或使用递归（调用自身），则它无效。</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;"> </p>
 <ul style="list-style: disc;">
-	<li><p style="font-family: Arial, sans-serif;"><span style="font-weight: bold;">Name</span> 
-	 - The name of the parameter displayed in auto-generated UI window..</p></li>
-	<li><p style="font-family: Arial, sans-serif;"><span style="font-weight: bold;">Number</span> 
-	 - Inserts a numerical value or ID to a number variable.</p></li>
-	<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif;">List 
-	 Entries <span style="font-weight: normal;">- A user-defined list. 
-	 Each list-entry is Name : Number-Value pair. The number-value of the 
-	 selected entry is stored in the number-variable</span></p></li>
-	<li><p style="font-family: Arial, sans-serif;"><span style="font-weight: bold;">Switch</span> 
-	 - Inserts a switch value into a switch variable.</p></li>
-	<li><p style="font-family: Arial, sans-serif;"><span style="font-weight: bold;">Text</span> 
-	 - Inserts a text value into a text variable.</p></li>
+<li><p style="font-family: Arial, sans-serif;"><span style="font-weight: bold;">参数</span>参数允许您定义一些值，如数字、文本等来触发通用事件。如果您想要一个示例，可以查看</p></li>
+<li><p style="font-family: Arial, sans-serif;"><span style="font-weight: bold;">技巧与窍门</span>页面。</p></li>
+<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif;">名称<span style="font-weight: normal;">- 在自动生成的 UI 窗口中显示的参数名称。</span></p></li>
+<li><p style="font-family: Arial, sans-serif;"><span style="font-weight: bold;">数字</span>- 将数值或 ID 插入数字变量。</p></li>
+<li><p style="font-family: Arial, sans-serif;"><span style="font-weight: bold;">列表</span>条目</p></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: bold;">&#160;</p>
-<p class="Sub_Heading"><span>Scene Content</span></p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">The contents 
- of the Common Event. You can read more information about the individual 
- commands in the <a href="Scene_Content.htm">Scenes</a> page.</p>
+<p style="font-family: Arial, sans-serif; font-weight: bold;"> </p>
+<p class="Sub_Heading"><span>- 用户定义的列表。每个列表条目都是名称：数值对。选定条目的数值存储在数字变量中。</span></p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">开关<a href="Scene_Content.htm">- 将开关值插入开关变量。</a>文本</p>
 </body>
 </html>

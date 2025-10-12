@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+HTML
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="generator" content="Adobe RoboHelp 2015" />
-<title>Parallax Scrolling</title>
-<link rel="StyleSheet" href="default.css" type="text/css" />
-<script type="text/javascript" language="JavaScript">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Adobe RoboHelp 2015" name="generator"/>
+<title>视差滚动</title>
+<link href="default.css" rel="StyleSheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
 //<![CDATA[
 function reDo() {
   if (innerWidth != origWidth || innerHeight != origHeight)
@@ -29,78 +29,76 @@ visibility:hidden; }
 p.WebHelpNavBar { text-align:right; }
 -->
 </style>
-
-<script type="text/javascript" src="template/scripts/rh.min.js"></script>
-<script type="text/javascript" src="template/scripts/common.min.js"></script>
-<script type="text/javascript" src="template/scripts/topic.min.js"></script>
-<script type="text/javascript" src="template/scripts/constants.js"></script>
-<script type="text/javascript" src="template/scripts/utils.js"></script>
-<script type="text/javascript" src="template/scripts/mhutils.js"></script>
-<script type="text/javascript" src="template/scripts/mhlang.js"></script>
-<script type="text/javascript" src="template/scripts/mhver.js"></script>
-<script type="text/javascript" src="template/scripts/settings.js"></script>
-<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
-<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
-<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
-<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
-<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
- <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
-<script type="text/javascript" >
+<script src="template/scripts/rh.min.js" type="text/javascript"></script>
+<script src="template/scripts/common.min.js" type="text/javascript"></script>
+<script src="template/scripts/topic.min.js" type="text/javascript"></script>
+<script src="template/scripts/constants.js" type="text/javascript"></script>
+<script src="template/scripts/utils.js" type="text/javascript"></script>
+<script src="template/scripts/mhutils.js" type="text/javascript"></script>
+<script src="template/scripts/mhlang.js" type="text/javascript"></script>
+<script src="template/scripts/mhver.js" type="text/javascript"></script>
+<script src="template/scripts/settings.js" type="text/javascript"></script>
+<script src="template/scripts/XmlJsReader.js" type="text/javascript"></script>
+<script src="template/scripts/loadparentdata.js" type="text/javascript"></script>
+<script src="template/scripts/loadscreen.js" type="text/javascript"></script>
+<script src="template/scripts/loadprojdata.js" type="text/javascript"></script>
+<script src="template/scripts/mhtopic.js" type="text/javascript"></script>
+<link href="template/styles/topic.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
 gRootRelPath = ".";
 gCommonRootRelPath = ".";
 gTopicId = "3.2.4.0_1";
 </script>
- <meta name="topic-breadcrumbs" content="Beginner's Guide > Customizing your Game > Camera Movement" />
+<meta content="Beginner's Guide &gt; Customizing your Game &gt; Camera Movement" name="topic-breadcrumbs"/>
 </head>
 <body>
-<script type="text/javascript" src="./ehlpdhtm.js"></script>
-
-<div style="width: 100%; position: relative;" id="header">
- <p class="Topic_Heading">Parallax Scrolling</p>
+<script src="./ehlpdhtm.js" type="text/javascript"></script>
+<div id="header" style="width: 100%; position: relative;">
+<p class="Topic_Heading">视差滚动</p>
 </div>
-<p>&#160;</p>
-<p><span class="Topic_Start">P</span>arallax Scrolling is a visual technique in which layers of images are moving in different speeds to create an illusion of depth.</p>
-<p>&#160;</p>
-<p><img src="ParallaxScrolling-2.gif" alt="" style=" border:none; width:100%; max-width:517px;" border="0" /></p>
-<p>&#160;</p>
-<p class="Sub_Heading">Preparation Work</p>
-<p>First, all the images must be separated into layers and will move at different speeds. This involves the Foreground, Middleground and Background.</p>
-<p><img src="01_Background.png" alt="" style=" border:none; width:100%; max-width:544px;" border="0" /></p>
-<p><span style="font-weight: bold;">The Background</span> would move the slowest.</p>
-<p><img src="02_Middleground.png" alt="" style=" border:none; width:100%; max-width:544px;" border="0" /></p>
-<p><span style="font-weight: bold;">The Middleground</span> will move in-between the Foreground and Background speed.</p>
-<p><img src="02_MiddlegroundB.jpg" alt="" style=" border:none; width:100%; max-width:544px;" border="0" /></p>
-<p>And here's <span style="font-weight: bold;">another Middleground</span> that doesn't move.</p>
-<p><img src="03_Foreground.png" alt="" style=" border:none; width:100%; max-width:544px;" border="0" /></p>
-<p><span style="font-weight: bold;">The Foreground</span> will move the fastest.</p>
-<p>&#160;</p>
-<p>It's important to remember that the images must be created for 'looping'. This means that if you put the image side by side, it will still look seamless.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Implementation</p>
-<p><img src="ParallaxScrolling_Forest.jpg" alt="" style=" border:none; width:100%; max-width:836px;" border="0" /></p>
-<p>&#160;</p>
+<p> </p>
+<p><span class="Topic_Start">P</span>视差滚动是一种视觉技术，其中图像的层以不同的速度移动，以创建深度感。</p>
+<p> </p>
+<p><img alt="" border="0" src="ParallaxScrolling-2.gif" style=" border:none; width:100%; max-width:517px;"/></p>
+<p> </p>
+<p class="Sub_Heading">准备工作</p>
+<p>首先，所有图像必须分成层，并以不同的速度移动。这包括前景、中景和背景。</p>
+<p><img alt="" border="0" src="01_Background.png" style=" border:none; width:100%; max-width:544px;"/></p>
+<p><span style="font-weight: bold;">背景</span>移动速度最慢。</p>
+<p><img alt="" border="0" src="02_Middleground.png" style=" border:none; width:100%; max-width:544px;"/></p>
+<p><span style="font-weight: bold;">中景</span>移动速度将在前景和背景速度之间。</p>
+<p><img alt="" border="0" src="02_MiddlegroundB.jpg" style=" border:none; width:100%; max-width:544px;"/></p>
+<p>以及这个<span style="font-weight: bold;">另一个中景</span>不移动。</p>
+<p><img alt="" border="0" src="03_Foreground.png" style=" border:none; width:100%; max-width:544px;"/></p>
+<p><span style="font-weight: bold;">前景</span>移动速度最快。</p>
+<p> </p>
+<p>重要的是要记住，图像必须是为“循环”而创建的。这意味着如果你将图像并排放置，它仍然看起来是无缝的。</p>
+<p> </p>
+<p class="Sub_Heading">实施</p>
+<p><img alt="" border="0" src="ParallaxScrolling_Forest.jpg" style=" border:none; width:100%; max-width:836px;"/></p>
+<p> </p>
 <ul style="list-style: disc;">
-<li>First, we need to set all the background layers. Make sure to select Yes to Loop Horizontal.</li>
+<li>首先，我们需要设置所有背景层。确保选择“是”进行水平循环。</li>
 <li style="list-style: none; display: inline">
 <ul style="list-style: disc;">
-<li>You have to add a Wait on the last Change Background command. Otherwise, they will scroll immediately before the Loop effect takes place.</li>
+<li>您必须在最后一个“更改背景”命令上添加“等待”。否则，它们将在循环效果发生之前立即滚动。</li>
 </ul>
 </li>
-<li>Then we will need to add the <a href="Background.htm#Scroll_Background">Scroll Background</a> command.</li>
+<li>然后我们将需要添加<a href="Background.htm#Scroll_Background">滚动背景</a>命令。</li>
 <li style="list-style: none; display: inline">
 <ul style="list-style: disc;">
-<li>Notice how the Duration is set to 0ms. This means the background will scroll infinitely.</li>
-<li>Speed X and Speed Y represents how fast they will scroll. You can use decimal values. The higher the number, the faster they will scroll.</li>
-<li>You can use <a href="Easing_Effects.htm">Easing Effects</a> to affect how their scroll animation will move. I used different ones in random and settle with one that I felt just right.</li>
+<li>请注意，“持续时间”设置为0毫秒。这意味着背景将无限滚动。</li>
+<li>速度X和速度Y代表它们的滚动速度。您可以使用小数。数字越大，滚动速度越快。</li>
+<li>您可以使用<a href="Easing_Effects.htm">缓动效果</a>来影响它们的滚动动画的移动方式。我在随机设置中使用了不同的效果，并选择了一个我觉得合适的。</li>
 </ul>
 </li>
 </ul>
-<p>&#160;</p>
-<p>And that's about it! You can create the following visual effect with the very same commands!</p>
-<p><img src="ParallaxScrolling.gif" alt="" style=" border:none; width:100%; max-width:517px;" border="0" /></p>
-<p>&#160;</p>
-<div style="width: 100%; position: relative;" id="footer">
- <p>The Parallax Images used are by <a href="http://ansimuz.com/site/resources">Luis Zuno</a> and are under Public Domain License.</p>
+<p> </p>
+<p>就这样！您可以使用完全相同的命令创建以下视觉效果！</p>
+<p><img alt="" border="0" src="ParallaxScrolling.gif" style=" border:none; width:100%; max-width:517px;"/></p>
+<p> </p>
+<div id="footer" style="width: 100%; position: relative;">
+<p>使用的视差图像由<a href="http://ansimuz.com/site/resources">Luis Zuno</a>提供，并处于公共领域许可下。</p>
 </div>
 </body>
 </html>

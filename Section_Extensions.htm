@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+category.name
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="generator" content="Adobe RoboHelp 2015" />
-<title>Section Extensions</title>
-<link rel="StyleSheet" href="default.css" type="text/css" />
-<script type="text/javascript" language="JavaScript">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Adobe RoboHelp 2015" name="generator"/>
+<title>Visual Novel Maker 主菜单中类别的显示名称。</title>
+<link href="default.css" rel="StyleSheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
 //<![CDATA[
 function reDo() {
   if (innerWidth != origWidth || innerHeight != origHeight)
@@ -29,69 +29,67 @@ visibility:hidden; }
 p.WebHelpNavBar { text-align:right; }
 -->
 </style>
-
-<script type="text/javascript" src="template/scripts/rh.min.js"></script>
-<script type="text/javascript" src="template/scripts/common.min.js"></script>
-<script type="text/javascript" src="template/scripts/topic.min.js"></script>
-<script type="text/javascript" src="template/scripts/constants.js"></script>
-<script type="text/javascript" src="template/scripts/utils.js"></script>
-<script type="text/javascript" src="template/scripts/mhutils.js"></script>
-<script type="text/javascript" src="template/scripts/mhlang.js"></script>
-<script type="text/javascript" src="template/scripts/mhver.js"></script>
-<script type="text/javascript" src="template/scripts/settings.js"></script>
-<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
-<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
-<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
-<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
-<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
- <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
-<script type="text/javascript" >
+<script src="template/scripts/rh.min.js" type="text/javascript"></script>
+<script src="template/scripts/common.min.js" type="text/javascript"></script>
+<script src="template/scripts/topic.min.js" type="text/javascript"></script>
+<script src="template/scripts/constants.js" type="text/javascript"></script>
+<script src="template/scripts/utils.js" type="text/javascript"></script>
+<script src="template/scripts/mhutils.js" type="text/javascript"></script>
+<script src="template/scripts/mhlang.js" type="text/javascript"></script>
+<script src="template/scripts/mhver.js" type="text/javascript"></script>
+<script src="template/scripts/settings.js" type="text/javascript"></script>
+<script src="template/scripts/XmlJsReader.js" type="text/javascript"></script>
+<script src="template/scripts/loadparentdata.js" type="text/javascript"></script>
+<script src="template/scripts/loadscreen.js" type="text/javascript"></script>
+<script src="template/scripts/loadprojdata.js" type="text/javascript"></script>
+<script src="template/scripts/mhtopic.js" type="text/javascript"></script>
+<link href="template/styles/topic.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
 gRootRelPath = ".";
 gCommonRootRelPath = ".";
 gTopicId = "5.2.1.0_3";
 </script>
- <meta name="topic-breadcrumbs" content="Script and Plugin Reference > Extension Documentation > Getting Started" />
+<meta content="Script and Plugin Reference &gt; Extension Documentation &gt; Getting Started" name="topic-breadcrumbs"/>
 </head>
 <body>
-<script type="text/javascript" src="./ehlpdhtm.js"></script>
-
-<div style="width: 100%; position: relative;" id="header">
- <p class="Topic_Heading"><span>Section Extensions</span></p>
+<script src="./ehlpdhtm.js" type="text/javascript"></script>
+<div id="header" style="width: 100%; position: relative;">
+<p class="Topic_Heading"><span>category.identifier</span></p>
 </div>
-<p>&#160;</p>
-<p><span class="Topic_Start">I</span>n our <a href="Example__Adding_a_new_database_category.htm">Card Extension Example</a> we added a whole new database category. But sometimes it makes more sense to just modify an already existing database category like if we just want to add some new options to &#160;"System" category. We could just edit "System" category but collisions with other extensions are possible. To avoid those collisions, it is possible to create a section-extension.</p>
-<p>&#160;</p>
-<p>A section-extension only adds one or more new sections to an already existing UI view. To create a section-extension, we first have to add a unique identifier using the uid-property to all the sections we want to install through our section-extension. An example section, which we put into "System" database category, could look like this:</p>
-<p>&#160;</p>
-<p><span class="Code">{</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"name": "Custom Section",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"uid": "ext.CustomSystemSection",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"items": [</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "GSLabel",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"text": "Custom Field:",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"group": "labels",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"frame": [0, 0]</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "GSTextField",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"frame": [1, 0],</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"attribute": "ext.customValue",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;]</span></p>
-<p><span class="Code">}</span></p>
-<p>&#160;</p>
-<p>To create a section-extension which is adding only that section to System category, we open Extension Composer and add "System" data-record view to our extension. Next we make a right-click on "System" data-record view in "Your Extension" tree-view. We select "Properties" and then we can see the following popup window:</p>
-<p>&#160;</p>
-<p><img src="InstallSections.png" alt="" style=" border:none; width:100%; max-width:512px;" border="0" /></p>
-<p>We check "Install Sections only" and then double-click "&lt;new&gt;" and then select "Custom Section" from the drop-down field and click "OK".</p>
-<p>&#160;</p>
-<p><img src="InstallSections2.png" alt="" style=" border:none; width:100%; max-width:512px;" border="0" /></p>
-<p>We can click "OK" now again and done.</p>
-<p>&#160;</p>
-<p>Now if we install our extension, only the sections we selected are installed for "System" category. If we don't check "Install Sections only" the whole "System" category would be exchanged which is the default behavior we don't want in this case.</p>
-<p>&#160;</p>
-<p>As you can see, with section-extensions is it possible that multiple independent extensions modifying the same UI view by adding custom sections to it. It is a good idea to choose unique attribute-names for your controls if you developing section-plugins. Otherwise attribute-name collisions can happen if two or more extension are writing data into the same fields.</p>
+<p> </p>
+<p><span class="Topic_Start">类别的唯一标识符。</span>target<a href="Example__Adding_a_new_database_category.htm">保留。始终为 "none"。</a>dialog</p>
+<p> </p>
+<p>在执行代理之前请求用户输入数据的对话框。如果不存在，则代理将立即执行。</p>
+<p> </p>
+<p><span class="Code">process.description</span></p>
+<p><span class="Code">代理在进度窗口中显示的描述。（可以由代理在运行时更改）。</span></p>
+<p><span class="Code">process.run</span></p>
+<p><span class="Code">定义代理逻辑的 JavaScript 函数。它接受两个参数：</span></p>
+<p><span class="Code">object</span></p>
+<p><span class="Code">如果存在 dialog 属性，则包含来自用户的输入数据。否则为 null。</span></p>
+<p><span class="Code">context</span></p>
+<p><span class="Code">脚本上下文 (GSScriptContext) 对象，允许获取、修改、创建和删除文档以及执行其他操作。</span></p>
+<p><span class="Code">使用 Objective-J</span></p>
+<p><span class="Code">            </span></p>
+<p><span class="Code">为了获得更多控制，也可以为脚本代理使用 Objective-J。由于 Objective-J 是 JavaScript 的超集，您可以只创建一个 Objective-J 文件而不是 JavaScript 文件，所有其他步骤都与您现在可以访问 Objective-J API 的区别相同。</span></p>
+<p><span class="Code">HTML</span></p>
+<p><span class="Code">部分扩展</span></p>
+<p><span class="Code">部分扩展</span></p>
+<p><span class="Code">I</span></p>
+<p><span class="Code">n our</span></p>
+<p><span class="Code">卡片扩展示例</span></p>
+<p><span class="Code">我们添加了一个全新的数据库类别。但有时，仅仅修改现有的数据库类别更有意义，就像如果我们只想为“系统”类别添加一些新选项一样。我们可以编辑“系统”类别，但与其他扩展的冲突是可能的。为避免这些冲突，可以创建部分扩展。</span></p>
+<p> </p>
+<p>部分扩展只向已存在的 UI 视图添加一个或多个新部分。要创建部分扩展，我们首先必须使用 uid 属性为我们希望通过部分扩展安装的所有部分添加一个唯一标识符。示例部分，我们将其放入“系统”数据库类别，如下所示：</p>
+<p> </p>
+<p><img alt="" border="0" src="InstallSections.png" style=" border:none; width:100%; max-width:512px;"/></p>
+<p>{</p>
+<p> </p>
+<p><img alt="" border="0" src="InstallSections2.png" style=" border:none; width:100%; max-width:512px;"/></p>
+<p>"name": "Custom Section",</p>
+<p> </p>
+<p>"uid": "ext.CustomSystemSection",</p>
+<p> </p>
+<p>"items": [</p>
 </body>
 </html>

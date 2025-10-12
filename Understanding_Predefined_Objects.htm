@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+显示胸像图像
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="generator" content="Adobe RoboHelp 2015" />
-<title>Displaying a Bust Image</title>
-<link rel="StyleSheet" href="default.css" type="text/css" />
-<script type="text/javascript" language="JavaScript">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Adobe RoboHelp 2015" name="generator"/>
+<title>A</title>
+<link href="default.css" rel="StyleSheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
 //<![CDATA[
 function reDo() {
   if (innerWidth != origWidth || innerHeight != origHeight)
@@ -29,181 +29,174 @@ visibility:hidden; }
 p.WebHelpNavBar { text-align:right; }
 -->
 </style>
-
-<script type="text/javascript" src="template/scripts/rh.min.js"></script>
-<script type="text/javascript" src="template/scripts/common.min.js"></script>
-<script type="text/javascript" src="template/scripts/topic.min.js"></script>
-<script type="text/javascript" src="template/scripts/constants.js"></script>
-<script type="text/javascript" src="template/scripts/utils.js"></script>
-<script type="text/javascript" src="template/scripts/mhutils.js"></script>
-<script type="text/javascript" src="template/scripts/mhlang.js"></script>
-<script type="text/javascript" src="template/scripts/mhver.js"></script>
-<script type="text/javascript" src="template/scripts/settings.js"></script>
-<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
-<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
-<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
-<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
-<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
- <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
-<script type="text/javascript" >
+<script src="template/scripts/rh.min.js" type="text/javascript"></script>
+<script src="template/scripts/common.min.js" type="text/javascript"></script>
+<script src="template/scripts/topic.min.js" type="text/javascript"></script>
+<script src="template/scripts/constants.js" type="text/javascript"></script>
+<script src="template/scripts/utils.js" type="text/javascript"></script>
+<script src="template/scripts/mhutils.js" type="text/javascript"></script>
+<script src="template/scripts/mhlang.js" type="text/javascript"></script>
+<script src="template/scripts/mhver.js" type="text/javascript"></script>
+<script src="template/scripts/settings.js" type="text/javascript"></script>
+<script src="template/scripts/XmlJsReader.js" type="text/javascript"></script>
+<script src="template/scripts/loadparentdata.js" type="text/javascript"></script>
+<script src="template/scripts/loadscreen.js" type="text/javascript"></script>
+<script src="template/scripts/loadprojdata.js" type="text/javascript"></script>
+<script src="template/scripts/mhtopic.js" type="text/javascript"></script>
+<link href="template/styles/topic.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
 gRootRelPath = ".";
 gCommonRootRelPath = ".";
 gTopicId = "3.2.2.0_2";
 </script>
- <meta name="topic-breadcrumbs" content="Beginner's Guide > Customizing your Game > How to Display a Bust Image" />
+<meta content="Beginner's Guide &gt; Customizing your Game &gt; How to Display a Bust Image" name="topic-breadcrumbs"/>
 </head>
 <body>
-<script type="text/javascript" src="./ehlpdhtm.js"></script>
-
-<div style="width: 100%; position: relative;" id="header">
- <p class="Topic_Heading">Displaying a Bust Image</p>
+<script src="./ehlpdhtm.js" type="text/javascript"></script>
+<div id="header" style="width: 100%; position: relative;">
+<p class="Topic_Heading">growing trend of modern Visual Novels nowadays is including a bust of the characters near the message box. There are many reasons why the developer might want to do this, some examples are:</p>
 </div>
-<p>&#160;</p>
-<p><span class="Topic_Start">A</span> growing trend of modern Visual Novels nowadays is including a bust of the characters near the message box. There are many reasons why the developer might want to do this, some examples are:</p>
-<p>&#160;</p>
+<p> </p>
+<p><span class="Topic_Start">主要角色可以表达情感，因此文本的语气会更清晰。</span>如果一个角色离得太远，或者视角发生了变化，他们将显示为胸像，而不是出现在屏幕中心。</p>
+<p> </p>
 <ul style="list-style: disc;">
-<li>The main character can express emotions so the tone of the text clearer would be clearer.</li>
-<li>If a character is too far away or there's a change of POV, they will displayed as busts instead of being on the center of the screen.</li>
+<li>由于我们使用的是默认 UI，以下是它在游戏中的样子。</li>
+<li>准备预定义对象位置</li>
 </ul>
-<p>&#160;</p>
-<p>Since we're using the default UI, here is how it will look like in-game.</p>
-<p><img src="BustTutorial.jpg" alt="" style=" border:none; width:100%; max-width:1037px;" border="0" /></p>
-<p>&#160;</p>
-<p class="Sub_Heading">Preparing the Predefined Object Position</p>
-<p>Make sure to read <a href="Understanding_Predefined_Position.htm">Understanding Predefined Object Position</a> first! This tutorial will only skim over the details.</p>
-<p>&#160;</p>
+<p> </p>
+<p>确保阅读</p>
+<p><img alt="" border="0" src="BustTutorial.jpg" style=" border:none; width:100%; max-width:1037px;"/></p>
+<p> </p>
+<p class="Sub_Heading">理解预定义对象位置</p>
+<p>首先！本教程只会粗略介绍细节。<a href="Understanding_Predefined_Position.htm">转到</a>数据库 -&gt;</p>
+<p> </p>
 <ul style="list-style: disc;">
-<li>Go to <span style="font-family: 'Book Antiqua', serif; font-size: 14pt; text-decoration: underline;"><img src="icon_database_view.png" alt="" style=" border:none; max-width:16px; width:100%;" border="0" /></span><span style="font-family: Arial, sans-serif; font-weight: bold;">Database -&gt; <img src="icon_database_system.png" alt="" style=" border:none; width:100%; max-width:16px;" border="0" />System</span> <span style="font-family: Arial, sans-serif;">and scroll all the way down to Predefined Object Position</span></li>
+<li>系统<span style="font-family: 'Book Antiqua', serif; font-size: 14pt; text-decoration: underline;"><img alt="" border="0" src="icon_database_view.png" style=" border:none; max-width:16px; width:100%;"/></span><span style="font-family: Arial, sans-serif; font-weight: bold;">并一直滚动到“预定义对象位置”<img alt="" border="0" src="icon_database_system.png" style=" border:none; width:100%; max-width:16px;"/>由于我希望 Willow 的脸部位于右下角，所以我复制了右下角公式并创建了自己的条目，名为“Bust-BottomRight”。</span> <span style="font-family: Arial, sans-serif;">return { x: Graphics.width - object.dstRect.width * object.zoom.x, y: Graphics.height - object.dstRect.height * object.zoom.y  }</span></li>
 </ul>
 <ul style="list-style: disc;">
-<li>Since I want Willow's face to Bottom Right, I copied the Bottom Right Formula and created my own entry named, Bust-BottomRight.</li>
+<li>我只调整了公式的 Y 参数。我将角色的高度除以三 (3)，这样只有他们的胸像区域可见。</li>
 </ul>
-<pre>
-return { x: Graphics.width - object.dstRect.width * object.zoom.x, y: Graphics.height - object.dstRect.height * object.zoom.y  }
+<pre>return { x: Graphics.width - object.dstRect.width * object.zoom.x,</pre>
+<ul style="list-style: disc;">
+<li>y: Graphics.height - (object.dstRect.height/3 * object.zoom.y) }</li>
+</ul>
+<pre>然而，有一个问题，正如您所看到的，她位于消息框下方。<span style="background-color: #ffff00;">我们可以避免这种情况的一种方法是在</span>
 </pre>
-<ul style="list-style: disc;">
-<li>I only adjusted the formula's Y parameter. I divided the character height by three (3) so their bust area is the only one visible.</li>
-</ul>
-<pre>
-return { x: Graphics.width - object.dstRect.width * object.zoom.x, <span style="background-color: #ffff00;">y: Graphics.height - (object.dstRect.height/3 * object.zoom.y) }</span>
-</pre>
-<p style="margin-left: 40px;">However, there is one problem, as you can see, she's below the message box.</p>
-<p style="margin-left: 0px;"><img src="BustTutorial-2.jpg" alt="" style=" border:none; width:100%; max-width:1040px;" border="0" /></p>
-<p style="margin-left: 0px;">&#160;</p>
+<p style="margin-left: 40px;">加入场景</p>
+<p style="margin-left: 0px;"><img alt="" border="0" src="BustTutorial-2.jpg" style=" border:none; width:100%; max-width:1040px;"/></p>
+<p style="margin-left: 0px;"> </p>
 <ul style="list-style: disc;">
 <li>
-<p style="margin-left: 0px;">One way we could avert this is to adjust the Z-Order of the character in <a href="Character.htm#Join_Scene">Join Scene</a> to 9999. But this isn't efficient because every time this character appears, we would need to adjust their z-order. Instead I added another line of code, just before return.</p>
+<p style="margin-left: 0px;">中将角色的 Z 顺序调整为 9999。但这并不高效，因为每次这个角色出现时，我们都需要调整他们的 z 顺序。我添加了另一行代码，在 return 之前。<a href="Character.htm#Join_Scene">object.zIndex = 9999;</a>return { x: Graphics.width - object.dstRect.width * object.zoom.x, y: Graphics.height - (object.dstRect.height/3 * object.zoom.y) }</p>
 </li>
 </ul>
 <pre>
-<span style="background-color: #ffff00;">object.zIndex = 9999;</span> return { x: Graphics.width - object.dstRect.width * object.zoom.x, y: Graphics.height - (object.dstRect.height/3 * object.zoom.y) }
-</pre>
-<p style="margin-left: 40px;">What this line of code does is change the object's Z-Index. Since it's before return, it won't be applied on the coordinate fields of the Join Character command. This saves tremendous amounts of time from repetitive work.</p>
-<p style="margin-left: 0px;">&#160;</p>
-<p style="margin-left: 0px; text-align: center;"><img src="Metisnotes13_en.png" alt="" style=" border:none; width:100%; max-width:465px;" border="0" /></p>
+<span style="background-color: #ffff00;">这行代码的作用是更改对象的 Z-Index。由于它在 return 之前，它不会应用于 Join Character 命令的坐标字段。这节省了大量重复工作的宝贵时间。</span>请确保保存您的进度！</pre>
+<p style="margin-left: 40px;">准备文本宏</p>
+<p style="margin-left: 0px;"> </p>
+<p style="margin-left: 0px; text-align: center;"><img alt="" border="0" src="Metisnotes13_en.png" style=" border:none; width:100%; max-width:465px;"/></p>
 <ul style="list-style: disc;">
 <li>
-<p style="margin-left: 0px;">Make sure to save your progress!</p>
+<p style="margin-left: 0px;">接下来，我们将创建一个文本宏来清除角色表情。这用于角色不说话的场景。</p>
 </li>
 </ul>
-<p style="margin-left: 0px; text-align: center;">&#160;</p>
-<p class="Sub_Heading">Preparing Text Macro</p>
-<p>Next, we will create a Text Macro to clear the character expression. This is for scenes that the character isn't talking.</p>
-<p>Make sure to read the <a href="System.htm#Text_Macro">Text Macro</a> and <a href="Message.htm#Text_Codes">Text Codes</a> to have an idea of what we're trying to do!</p>
-<p>&#160;</p>
+<p style="margin-left: 0px; text-align: center;"> </p>
+<p class="Sub_Heading">请确保阅读</p>
+<p>文本宏</p>
+<p>和<a href="System.htm#Text_Macro">文本代码</a>，以便了解我们在做什么！<a href="Message.htm#Text_Codes">转到</a>数据库 -&gt;</p>
+<p> </p>
 <ul style="list-style: disc;">
-<li>Go to <span style="font-family: 'Book Antiqua', serif; font-size: 14pt; text-decoration: underline;"><img src="icon_database_view.png" alt="" style=" border:none; max-width:16px; width:100%;" border="0" /></span><span style="font-family: Arial, sans-serif; font-weight: bold;">Database -&gt; <img src="icon_database_system.png" alt="" style=" border:none; width:100%; max-width:16px;" border="0" />System</span> <span style="font-family: Arial, sans-serif;">and scroll all the way down to Text Macro.</span></li>
-<li><span style="font-family: Arial, sans-serif;">Create a new macro either by Double-clicking &lt;New&gt; or Right-Click -&gt; New Macro.</span></li>
-<li><span style="font-family: Arial, sans-serif;">We will name it 'clr' and add the following <a href="Message.htm#Text_Codes">Text Codes</a>:</span></li>
+<li>系统<span style="font-family: 'Book Antiqua', serif; font-size: 14pt; text-decoration: underline;"><img alt="" border="0" src="icon_database_view.png" style=" border:none; max-width:16px; width:100%;"/></span><span style="font-family: Arial, sans-serif; font-weight: bold;">并一直滚动到“文本宏”。<img alt="" border="0" src="icon_database_system.png" style=" border:none; width:100%; max-width:16px;"/>通过双击“&lt;新建&gt;”或右键单击 -&gt; “新建宏”来创建一个新宏。</span> <span style="font-family: Arial, sans-serif;">我们将它命名为“clr”，并添加以下</span></li>
+<li><span style="font-family: Arial, sans-serif;">文本代码</span></li>
+<li><span style="font-family: Arial, sans-serif;">：<a href="Message.htm#Text_Codes">{W:A}{WE:N}{E:1}</a>这有什么作用：</span></li>
 </ul>
 <pre>
-<span>{W:A}{WE:N}{E:1}</span>
+<span>等待用户输入</span>
 </pre>
 <ul style="list-style: disc;">
-<li>What this does is the following:</li>
+<li>消息结束时不执行下一个文本代码</li>
 <li style="list-style: none; display: inline">
 <ul style="list-style: disc;">
-<li>Wait for User Input</li>
-<li>Do not execute the next text code when the message ends</li>
-<li>Change the assigned character's expression to 1 (also known as None).</li>
+<li>将指定角色的表情更改为 1（也称为“无”）。</li>
+<li>这意味着，除非玩家点击，否则它不会擦除表情。否则，当消息完全显示时，角色的表情将被擦除！</li>
+<li>为了使用这个宏，我们将不得不使用 {M:clr}</li>
 </ul>
 </li>
 </ul>
-<p>&#160;</p>
-<p style="margin-left: 40px;">It means, unless the player clicks, it will not erase the expression. Otherwise, the character's expression will be erased the moment the message is fully displayed!</p>
+<p> </p>
+<p style="margin-left: 40px;">调整消息窗口</p>
 <ul style="list-style: disc;">
 <li>
-<p style="margin-left: 0px;">In order to use this macro, we will have to use {M:clr}</p>
+<p style="margin-left: 0px;">现在让我们转到</p>
 </li>
 </ul>
-<p>&#160;</p>
-<p class="Sub_Heading">Adjusting the Message Window</p>
-<p>Now let's move to <a href="Scene_Content.htm">Scenes</a> and setup our character. Because of the character's position, we have to change the width of the message box whenever they are displayed. Otherwise, this is how it will look like:</p>
-<p><img src="BustTutorial-3.jpg" alt="" style=" border:none; width:100%; max-width:1038px;" border="0" /></p>
-<p>&#160;</p>
-<p>This is where <a href="Message.htm#Create_Message_Area">Create Message Area</a> and <a href="Message.htm#Set_Message_Target">Set Message Target</a> are useful.</p>
-<p>&#160;</p>
+<p> </p>
+<p class="Sub_Heading">场景</p>
+<p>并设置我们的角色。由于角色的位置，当他们出现时，我们需要更改消息框的宽度。否则，它看起来会像这样：<a href="Scene_Content.htm">这就是</a>创建消息区域</p>
+<p><img alt="" border="0" src="BustTutorial-3.jpg" style=" border:none; width:100%; max-width:1038px;"/></p>
+<p> </p>
+<p>和<a href="Message.htm#Create_Message_Area">设置消息目标</a>非常有用。<a href="Message.htm#Set_Message_Target">首先添加</a>创建消息区域</p>
+<p> </p>
 <ul style="list-style: disc;">
-<li>First add the <a href="Message.htm#Create_Message_Area">Create Message Area</a> command and put it below the show text that display a long text. Like this:<br />
-<img src="BustTutorial-4.jpg" alt="" style=" border:none; width:100%; max-width:817px;" border="0" /><br /></li>
-<li>Wait for Live Preview to display the text. Click on the rectangular box that says [0, 0, 300, 100]. If you did it right, it will display like this:<br />
-<img src="BustTutorial-5.jpg" alt="" style=" border:none; width:100%; max-width:656px;" border="0" /><br />
-Sometimes the live preview gets reset, so try moving the Create Message Area Command above the Show Message and try again.<br /></li>
-<li>Drag the black box as seen on the Top Left and resize and adjust as necessary. You can also Double-click or Right-click the box to show the Cell Properties window and manually input numbers. Like this:<br />
-<img src="BustTutorial-7.jpg" alt="" style=" border:none; width:100%; max-width:656px;" border="0" /><br /></li>
-<li>Move the Create Message Area command <span style="font-style: italic;">above</span> <span>the Show Message if it's not already.</span></li>
-<li><span>Next, add the</span> <a href="Message.htm#Set_Message_Area">Set Message Area</a> command. If done correctly, this is how the event commands would look:<br />
-<img src="BustTutorial-8.jpg" alt="" style=" border:none; width:100%; max-width:827px;" border="0" /></li>
+<li>命令，并将其放在显示长文本的“显示文本”下方。像这样：<a href="Message.htm#Create_Message_Area">等待实时预览显示文本。单击标有“[0, 0, 300, 100]”的矩形框。如果操作正确，它将显示如下：</a>有时实时预览会重置，所以尝试将“创建消息区域”命令移到“显示消息”之上，然后重试。<br/>
+<img alt="" border="0" src="BustTutorial-4.jpg" style=" border:none; width:100%; max-width:817px;"/><br/></li>
+<li>拖动左上角的黑框，并根据需要调整大小和位置。您也可以双击或右键单击该框以显示“单元格属性”窗口并手动输入数字。像这样：<br/>
+<img alt="" border="0" src="BustTutorial-5.jpg" style=" border:none; width:100%; max-width:656px;"/><br/>如果尚未进行，请将<br/></li>
+<li>创建消息区域<br/>
+<img alt="" border="0" src="BustTutorial-7.jpg" style=" border:none; width:100%; max-width:656px;"/><br/></li>
+<li>命令<span style="font-style: italic;">移到</span> <span>“显示消息”</span></li>
+<li><span>上方。</span> <a href="Message.htm#Set_Message_Area">接下来，添加</a>设置消息区域<br/>
+<img alt="" border="0" src="BustTutorial-8.jpg" style=" border:none; width:100%; max-width:827px;"/></li>
 </ul>
-<p>&#160;</p>
+<p> </p>
 <ul style="list-style: disc;">
-<li>If we want to reset the message window, all you need to do is to add the following commands,</li>
+<li>命令。如果操作正确，事件命令将如下所示：</li>
 <li style="list-style: none; display: inline">
 <ul style="list-style: disc;">
-<li><a href="Message.htm#Erase_Message_Area">Erase Message Area</a>, Since we used 0, we'll leave it at that.</li>
-<li><a href="Message.htm#Set_Message_Area">Set Message Area</a>'s Type to Layout-Based with the ID gameMessage_message. Make sure that Clear is set to Yes.</li>
+<li><a href="Message.htm#Erase_Message_Area">如果我们想重置消息窗口，您只需要添加以下命令：</a>擦除消息区域</li>
+<li><a href="Message.htm#Set_Message_Area">，由于我们使用了 0，我们将保留它。</a>将“设置消息区域”</li>
 </ul>
 </li>
-<li>Before we forget, we should add the macro command, {M:clr}, that we made earlier. Put it at the end of Willow's message.</li>
-<li>By the end, it should look like this:<br />
-<img src="BustTutorial-010.jpg" alt="" style=" border:none; width:100%; max-width:827px;" border="0" /></li>
+<li>的类型设置为“基于布局”，ID 为“gameMessage_message”。确保“清除”设置为“是”。</li>
+<li>在我们忘记之前，我们应该添加宏命令 {M:clr}，这是我们之前制作的。将其放在 Willow 消息的末尾。<br/>
+<img alt="" border="0" src="BustTutorial-010.jpg" style=" border:none; width:100%; max-width:827px;"/></li>
 </ul>
-<p>&#160;</p>
-<p>As you might have noticed, it would be inefficient to keep doing this whenever we want our protagonist to talk. Which leads us to...</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Common Event Setup</p>
-<p>If you are unsure what a <a href="Common_Events_Guide.htm">Common Event</a> is, make sure to read the tutorial!</p>
-<p>&#160;</p>
+<p> </p>
+<p>到最后，它应该看起来像这样：</p>
+<p> </p>
+<p class="Sub_Heading">正如您可能已经注意到的，每次我们想让主角说话时都这样做效率低下。这引出了...</p>
+<p>通用事件设置<a href="Common_Events_Guide.htm">如果您不确定</a>通用事件</p>
+<p> </p>
 <ul style="list-style: disc;">
-<li>Go to&#160;<span style="font-family: 'Book Antiqua', serif; font-size: 14pt; text-decoration: underline;"><img src="icon_database_view.png" alt="" style=" border:none; max-width:16px; width:100%;" border="0" /></span><span style="font-family: Arial, sans-serif; font-weight: bold;">Database -&gt; <img src="icon_database_commonevents.png" alt="" style=" border:none; width:100%; max-width:16px;" border="0" />Common Events</span></li>
-<li>Create two new Common Events. If you want, put them inside a folder to organize them.</li>
-<li>Name them Set Message Area and Reset Message Area respectively.</li>
-<li>If done correctly, this is how it should like:<br />
-<img src="BustTutorial-011.jpg" alt="" style=" border:none; width:100%; max-width:303px;" border="0" /></li>
-<li>Now go back to <a href="Scene_Content.htm">Scenes</a> and Cut the first batch of commands, <a href="Message.htm#Create_Message_Area">Create Message Area</a> and <a href="Message.htm#Set_Message_Area">Set Message Area</a>.</li>
-<li>Go back to &#160;<span style="font-family: 'Book Antiqua', serif; font-size: 14pt; text-decoration: underline;"><img src="icon_database_view.png" alt="" style=" border:none; max-width:16px; width:100%;" border="0" /></span><span style="font-family: Arial, sans-serif; font-weight: bold;">Database -&gt; <img src="icon_database_commonevents.png" alt="" style=" border:none; width:100%; max-width:16px;" border="0" />Common Events</span> <span style="font-family: Arial, sans-serif;">and put them inside the Set Message Area Common Event.</span></li>
-<li>Go back to <a href="Scene_Content.htm">Scenes</a> and Cut the second batch of commands, <a href="Message.htm#Erase_Message_Area">Erase Message Area</a> and <a href="Message.htm#Set_Message_Area">Set Message Area</a>.</li>
-<li><span style="font-family: Arial, sans-serif;">G</span>o back to &#160;<span style="font-family: 'Book Antiqua', serif; font-size: 14pt; text-decoration: underline;"><img src="icon_database_view.png" alt="" style=" border:none; max-width:16px; width:100%;" border="0" /></span><span style="font-family: Arial, sans-serif; font-weight: bold;">Database -&gt; <img src="icon_database_commonevents.png" alt="" style=" border:none; width:100%; max-width:16px;" border="0" />Common Events</span> <span style="font-family: Arial, sans-serif;">and put them inside the Reset Message Area Common Event.</span></li>
+<li>是什么，请务必阅读教程！<span style="font-family: 'Book Antiqua', serif; font-size: 14pt; text-decoration: underline;"><img alt="" border="0" src="icon_database_view.png" style=" border:none; max-width:16px; width:100%;"/></span><span style="font-family: Arial, sans-serif; font-weight: bold;">转到<img alt="" border="0" src="icon_database_commonevents.png" style=" border:none; width:100%; max-width:16px;"/>数据库 -&gt;</span></li>
+<li>通用事件</li>
+<li>创建两个新的通用事件。如果需要，可以将它们放在文件夹中以进行组织。</li>
+<li>将它们命名为“设置消息区域”和“重置消息区域”。<br/>
+<img alt="" border="0" src="BustTutorial-011.jpg" style=" border:none; width:100%; max-width:303px;"/></li>
+<li>如果操作正确，它应该看起来像这样：<a href="Scene_Content.htm">现在回到</a>场景<a href="Message.htm#Create_Message_Area">并剪切第一批命令，</a>创建消息区域<a href="Message.htm#Set_Message_Area">和</a>设置消息区域</li>
+<li>。<span style="font-family: 'Book Antiqua', serif; font-size: 14pt; text-decoration: underline;"><img alt="" border="0" src="icon_database_view.png" style=" border:none; max-width:16px; width:100%;"/></span><span style="font-family: Arial, sans-serif; font-weight: bold;">回到<img alt="" border="0" src="icon_database_commonevents.png" style=" border:none; width:100%; max-width:16px;"/>数据库 -&gt;</span> <span style="font-family: Arial, sans-serif;">通用事件</span></li>
+<li>并将它们放入“设置消息区域”通用事件中。<a href="Scene_Content.htm">回到</a>场景<a href="Message.htm#Erase_Message_Area">并剪切第二批命令，</a>擦除消息区域<a href="Message.htm#Set_Message_Area">和</a>设置消息区域</li>
+<li><span style="font-family: Arial, sans-serif;">。</span>G<span style="font-family: 'Book Antiqua', serif; font-size: 14pt; text-decoration: underline;"><img alt="" border="0" src="icon_database_view.png" style=" border:none; max-width:16px; width:100%;"/></span><span style="font-family: Arial, sans-serif; font-weight: bold;">o back to<img alt="" border="0" src="icon_database_commonevents.png" style=" border:none; width:100%; max-width:16px;"/>数据库 -&gt;</span> <span style="font-family: Arial, sans-serif;">通用事件</span></li>
 </ul>
-<p>&#160;</p>
-<p>Your <span style="font-family: Arial, sans-serif; font-weight: bold;">&#160;<img src="icon_database_commonevents.png" alt="" style=" border:none; width:100%; max-width:16px;" border="0" />Common Events</span> would look something like these:</p>
-<p><img src="BustTutorial-012.jpg" alt="" style=" border:none; width:100%; max-width:1325px;" border="0" /></p>
-<p>&#160;</p>
-<p><img src="BustTutorial-013.jpg" alt="" style=" border:none; width:100%; max-width:1325px;" border="0" /></p>
-<p>&#160;</p>
-<p class="Sub_Heading">Scene Content Setup</p>
-<p>Phew, we're almost there! Let's go back to <a href="Scene_Content.htm">Scenes</a> and set up the commands.</p>
-<p>&#160;</p>
+<p> </p>
+<p>并将它们放入“重置消息区域”通用事件中。<span style="font-family: Arial, sans-serif; font-weight: bold;"> <img alt="" border="0" src="icon_database_commonevents.png" style=" border:none; width:100%; max-width:16px;"/>您的</span>通用事件</p>
+<p><img alt="" border="0" src="BustTutorial-012.jpg" style=" border:none; width:100%; max-width:1325px;"/></p>
+<p> </p>
+<p><img alt="" border="0" src="BustTutorial-013.jpg" style=" border:none; width:100%; max-width:1325px;"/></p>
+<p> </p>
+<p class="Sub_Heading">看起来可能像这样：</p>
+<p>场景内容设置<a href="Scene_Content.htm">长舒一口气，我们快到了！让我们回到</a>场景</p>
+<p> </p>
 <ul style="list-style: disc;">
-<li>Just above the character's Show Message, add the <a href="System_Command.htm#Call_Common_Event">Call Common Event</a> command and set the Event to Set Message Area.</li>
-<li>After the character's Show Message, add the <a href="System_Command.htm#Call_Common_Event">Call Common Event</a> command and set the Event to Reset Message Area</li>
+<li>并设置命令。<a href="System_Command.htm#Call_Common_Event">在角色“显示消息”的上方，添加</a>调用通用事件</li>
+<li>命令并将事件设置为“设置消息区域”。<a href="System_Command.htm#Call_Common_Event">在角色“显示消息”之后，添加</a>调用通用事件</li>
 </ul>
-<p>&#160;</p>
-<p>If done correctly, our final scene should look like this:</p>
-<p><img src="BustTutorial-015.jpg" alt="" style=" border:none; width:100%; max-width:797px;" border="0" />.</p>
-<p>&#160;</p>
-<p>Now instead of having four commands, we reduced it to two! Now you can use this everywhere you want!</p>
-<p>&#160;</p>
-<p>&#160;</p>
+<p> </p>
+<p>命令并将事件设置为“重置消息区域”</p>
+<p><img alt="" border="0" src="BustTutorial-015.jpg" style=" border:none; width:100%; max-width:797px;"/>如果操作正确，我们最终的场景应该看起来像这样：</p>
+<p> </p>
+<p>.</p>
+<p> </p>
+<p> </p>
 </body>
 </html>

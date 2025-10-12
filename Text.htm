@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+允许您通过输入 X 和 Y 坐标或设置变量来定位文本。
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="generator" content="Adobe RoboHelp 2015" />
-<title>Text</title>
-<link rel="StyleSheet" href="default.css" type="text/css" />
-<script type="text/javascript" language="JavaScript">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Adobe RoboHelp 2015" name="generator"/>
+<title>持续时间</title>
+<link href="default.css" rel="StyleSheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
 //<![CDATA[
 function reDo() {
   if (innerWidth != origWidth || innerHeight != origHeight)
@@ -29,644 +29,363 @@ visibility:hidden; }
 p.WebHelpNavBar { text-align:right; }
 -->
 </style>
-
-<script type="text/javascript" src="template/scripts/rh.min.js"></script>
-<script type="text/javascript" src="template/scripts/common.min.js"></script>
-<script type="text/javascript" src="template/scripts/topic.min.js"></script>
-<script type="text/javascript" src="template/scripts/constants.js"></script>
-<script type="text/javascript" src="template/scripts/utils.js"></script>
-<script type="text/javascript" src="template/scripts/mhutils.js"></script>
-<script type="text/javascript" src="template/scripts/mhlang.js"></script>
-<script type="text/javascript" src="template/scripts/mhver.js"></script>
-<script type="text/javascript" src="template/scripts/settings.js"></script>
-<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
-<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
-<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
-<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
-<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
- <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
-<script type="text/javascript" >
+<script src="template/scripts/rh.min.js" type="text/javascript"></script>
+<script src="template/scripts/common.min.js" type="text/javascript"></script>
+<script src="template/scripts/topic.min.js" type="text/javascript"></script>
+<script src="template/scripts/constants.js" type="text/javascript"></script>
+<script src="template/scripts/utils.js" type="text/javascript"></script>
+<script src="template/scripts/mhutils.js" type="text/javascript"></script>
+<script src="template/scripts/mhlang.js" type="text/javascript"></script>
+<script src="template/scripts/mhver.js" type="text/javascript"></script>
+<script src="template/scripts/settings.js" type="text/javascript"></script>
+<script src="template/scripts/XmlJsReader.js" type="text/javascript"></script>
+<script src="template/scripts/loadparentdata.js" type="text/javascript"></script>
+<script src="template/scripts/loadscreen.js" type="text/javascript"></script>
+<script src="template/scripts/loadprojdata.js" type="text/javascript"></script>
+<script src="template/scripts/mhtopic.js" type="text/javascript"></script>
+<link href="template/styles/topic.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
 gRootRelPath = ".";
 gCommonRootRelPath = ".";
 gTopicId = "2.3.1.0_11";
 </script>
- <meta name="topic-breadcrumbs" content="Exploring the Editor > Scene Editor > Scene Content Commands" />
+<meta content="Exploring the Editor &gt; Scene Editor &gt; Scene Content Commands" name="topic-breadcrumbs"/>
 </head>
-
 <body>
-<script type="text/javascript" src="./ehlpdhtm.js"></script>
-
-<div style="width: 100%; position: relative;" id="header">
-	<p class="Topic_Heading">Text</p>
+<script src="./ehlpdhtm.js" type="text/javascript"></script>
+<div id="header" style="width: 100%; position: relative;">
+<p class="Topic_Heading">- 显示动画的持续时间（以毫秒为单位）。</p>
 </div>
-<p>&#160;</p>
+<p> </p>
 <p><span style="font-family: 'Book Antiqua', serif; font-weight: bold; 
-		 font-size: 18pt;">I</span>nclude highly customizable text displays 
- in your scenes to make them pop out even more!</p>
-<p>&#160;</p>
-<p class="Sub_Heading"><a name="Show_Text" id="Show_Text"></a>Show Text</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">Place a 
- text into your scene.</p>
+		 font-size: 18pt;">继续</span>将立即继续场景。</p>
+<p> </p>
+<p class="Sub_Heading"><a id="Show_Text" name="Show_Text"></a>等待</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">将使场景等待直到显示动画完成。</p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Number</span> 
-	 - The text's index (ID). This determines their layer order.<br />
-	You can also use a variable by clicking on the [...] next to the number 
-	 input box.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal"><span style="font-weight: bold;">Position</span> 
-	 <span style="font-family: Arial, sans-serif;">- Choose between Predefined 
-	 and Calculated positioning to place your text into the scene.</span></p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Predefined</span> allows to select one 
-	 of the predefined positions configured in Database &gt; System &gt; 
-	 Predefined Object Positions.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Calculated</span> allows you to position 
-	 the text by inputting the X and Y coordinates or through setting variables.</p></li>
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Duration</span> 
-	 - The duration of the show-animation in milliseconds.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Continue</span> will make the scene immediately 
-	 continue.</p></li>
-	<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span 
-	 style="font-weight: bold;">Wait</span> will make the scene wait until 
-	 the show-animation is done.</p></li>
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Effects</span> 
-	 - These options affect how the text will appear.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Easing</span> sets the tween movement of 
-	 the text. More information can be seen in <a href="Easing_Effects.htm">Easing 
-	 Effects</a> page.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Animation</span> sets the movement of the 
-	 text.</p></li>
-	<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Movement</span> is the origin point 
-		 of the text where it will appear from Left/Top/Right/Bottom.</p></li>
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Blending</span> allows you to fade 
-		 in the text.</p></li>
-		<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
-											 font-weight: bold;">Masking 
-		 <span style="font-weight: normal;">allows you to mask the text 
-		 to a Masks file.</span></p></li>
-	</ul></li>
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: bold;">Display <span 
-	 style="font-weight: normal;">- Allows you to specify the display order 
-	 and anchor for the text.</span></p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: bold;">Anchor 
-	 - <span style="font-weight: normal;">Select the location of your anchor 
-	 point between top-left and center.<br />
-	Setting the anchor to center is only important when the zoom and rotation 
-	 commands will used and will not affect positioning.</span></p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: bold;"><span>Position 
-	 Anchor</span><span style="font-weight: normal;"> - Select the location 
-	 of the position anchor-point. Setting the position anchor-point only 
-	 affects the positioning but not the rotation or zoom anchor-point</span><span 
-	 style="font-weight: normal;">.</span></p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: bold;">Z-Order 
-	 <span style="font-weight: normal;">- Sets the display order of the 
-	 texts. You can also use a variable by clicking on the [...] next to 
-	 the number input box.</span></p></li>
-	<li><p style="font-weight: bold; font-family: Arial, sans-serif;">Blend 
-	 Mode <span style="font-weight: normal;">- Determines how text are 
-	 blended to the objects on the screen.</span></p></li>
-	<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-		<li><p style="font-weight: bold; font-family: Arial, sans-serif;">Normal<span 
-		 style="font-weight: normal;">&#160;is the standard blend mode.</span></p></li>
-		<li><p style="font-weight: bold; font-family: Arial, sans-serif;">Additive 
-		 <span style="font-weight: normal;">results the text to be applied 
-		 in a lighter color.</span></p></li>
-		<li><p style="font-family: Arial, sans-serif; font-weight: bold;">Subtractive 
-		 <span style="font-weight: normal;">results the text to be applied 
-		 in a darker color.</span></p></li>
-	</ul></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: bold;">Viewport<span 
-	 style="font-weight: normal;">&#160;- The viewport the text will be 
-	 assigned to. The viewport determines if the text gets affected by 
-	 camera-movements or screen effects or not.</span></p></li>
-	<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Scene</span> - The text is assigned 
-		 to the scene-viewport and behaves like an object which belongs 
-		 to the scene so it gets affected by camera-movements and screen 
-		 effects.</p></li>
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">User Interface</span> - The text is 
-		 assigned to the ui-viewport and behaves like an object which belongs 
-		 to the user interface so it doesn't get affected by camera-movements 
-		 and screen effects.</p></li>
-	</ul></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">效果</span>- 这些选项会影响文本的显示方式。<br/>缓动</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal"><span style="font-weight: bold;">设置文本的缓动运动。更多信息可以在
+	 缓动效果</span>
+<span style="font-family: Arial, sans-serif;">页面中找到。</span></p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">动画</span>设置文本的运动。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">运动</span>是文本的起点，文本将从左/上/右/下出现。</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">混合</span>允许您淡入文本。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">遮罩</span>允许您将文本遮罩到遮罩文件。</p></li>
+<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span style="font-weight: bold;">显示</span>- 允许您指定文本的显示顺序和锚点。</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">锚点
+	 -</span>在左上角和中心之间选择您的锚点位置。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">将锚点设置为中心仅在使用了缩放和旋转命令时才重要，并且不会影响定位。</span>位置
+	锚点<a href="Easing_Effects.htm">- 选择位置锚点的位置。设置位置锚点仅影响定位，而不影响旋转或缩放锚点。</a>Z-Order</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 设置文本的显示顺序。您还可以通过单击数字输入框旁边的 [...] 来使用变量。</span>混合
+	 模式</p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 确定文本如何与屏幕上的对象混合。</span>正常</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">是标准的混合模式。</span>加法</p></li>
+<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
+											 font-weight: bold;">结果是文本以更亮的颜色应用。<span style="font-weight: normal;">减法</span></p></li>
+</ul></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: bold;">结果是文本以更暗的颜色应用。<span style="font-weight: normal;">视口</span></p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: bold;">- 将分配文本的视口。视口决定文本是否受相机移动或屏幕效果的影响。<span style="font-weight: normal;">场景<br/>- 文本被分配到场景视口，并表现得像属于场景的对象，因此会受到相机移动和屏幕效果的影响。</span></p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: bold;"><span>用户界面</span><span style="font-weight: normal;">- 文本被分配到 UI 视口，并表现得像属于用户界面的对象，因此不会受到相机移动和屏幕效果的影响。</span><span style="font-weight: normal;">混合文本</span></p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: bold;">将文本混合到指定的透明度。<span style="font-weight: normal;">数字</span></p></li>
+<li><p style="font-weight: bold; font-family: Arial, sans-serif;">- 要操作的文本的索引（ID）。<span style="font-weight: normal;">不透明度</span></p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li><p style="font-weight: bold; font-family: Arial, sans-serif;">- 透明度。<span style="font-weight: normal;">持续时间</span></p></li>
+<li><p style="font-weight: bold; font-family: Arial, sans-serif;">-
+	 混合动画的持续时间。<span style="font-weight: normal;">继续</span></p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: bold;">将立即继续场景。<span style="font-weight: normal;">等待</span></p></li>
+</ul></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: bold;">将使场景等待直到缩放动画完成。<span style="font-weight: normal;">缓动</span></p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">影响混合动画。更多信息可以在
+	 缓动效果</span>页面中找到。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">移动文本</span>操纵文本的位置。</p></li>
+</ul></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: bold;">&#160;</p>
-<p class="Sub_Heading"><a name="Blend_Text" id="Blend_Text"></a>Blend Text</p>
-<p style="font-family: Arial, sans-serif;">Blends a textto the specified 
- opacity.</p>
+<p style="font-family: Arial, sans-serif; font-weight: bold;"> </p>
+<p class="Sub_Heading"><a id="Blend_Text" name="Blend_Text"></a>数字</p>
+<p style="font-family: Arial, sans-serif;">- 要操作的文本的索引（ID）。</p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: bold;">Number <span 
-	 style="font-weight: normal;">- The text's index (ID) that you want 
-	 to manipulate.</span></p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal"><span style="mso-bidi-font-weight: normal; 
-	 font-weight: bold;">Opacity</span> - The opacity.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal"><span style="font-weight: bold;">Duration</span> 
-	 <span style="font-family: Arial, sans-serif;">-</span> The duration 
-	 of the blend-animation.</p></li>
-	<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span 
-	 style="font-weight: bold;">Continue</span> will make the scene immediately 
-	 continue.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Wait</span> will make the scene wait until 
-	 the zoom animation is done.</p></li>
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Easing</span> 
-	 affects the blend animation. More information can be seen in <a href="Easing_Effects.htm">Easing 
-	 Effects</a> page.</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: bold;">位置<span style="font-weight: normal;">- 在预定义和计算位置之间进行选择，以设置文本的目的地。</span></p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal"><span style="mso-bidi-font-weight: normal; 
+	 font-weight: bold;">预定义</span>允许选择在数据库 &gt; 系统 &gt; 预定义对象位置中配置的预定义位置之一。</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal"><span style="font-weight: bold;">计算</span>
+<span style="font-family: Arial, sans-serif;">允许您通过输入 X 和 Y 坐标或设置变量来定位文本。</span>持续时间</p></li>
+<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span style="font-weight: bold;">- 移动动画的持续时间（以毫秒为单位）。</span>继续</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">将立即继续场景。</span>等待</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">将使场景等待直到移动动画完成。</span>缓动<a href="Easing_Effects.htm">设置文本的缓动运动。更多信息可以在
+	 缓动效果</a>页面中找到。</p></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">&#160;</p>
-<p class="Sub_Heading"><a name="Move_Text" id="Move_Text"></a>Move Text</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">Manipulate 
- the position of your text.</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;"> </p>
+<p class="Sub_Heading"><a id="Move_Text" name="Move_Text"></a>旋转文本</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">以指定的 speeds 和方向旋转文本。</p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: bold;">Number <span 
-	 style="font-weight: normal;">- The text's index (ID) that you want 
-	 to manipulate..</span></p></li>
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Position</span> 
-	 - Choose between Predefined and Calculated positioning to set the 
-	 destination of your text.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Predefined</span> allows to select one 
-	 of the predefined positions configured in Database &gt; System &gt; 
-	 Predefined Object Positions.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Calculated</span> allows you to position 
-	 the text by inputting the X and Y coordinates or through setting variables.</p></li>
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Duration</span> 
-	 - The duration of the move-animation in milliseconds.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: bold;">Continue 
-	 <span style="font-weight: normal;">will make the scene immediately 
-	 continue.</span></p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Wait</span> will make the scene wait until 
-	 the move-animation is done.</p></li>
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Easing</span> 
-	 sets the tween movement of the text. More information can be seen 
-	 in <a href="Easing_Effects.htm">Easing Effects</a> page.</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: bold;">数字<span style="font-weight: normal;">- 要操作的
+	 文本</span></p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">的索引（ID）。</span>方向</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 设置文本以顺时针或逆时针方向旋转。</span>速度</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 旋转速度。值越高，旋转越快。</span>持续时间</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">- 确定旋转将持续多长时间。</span>继续</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: bold;">将立即继续场景。<span style="font-weight: normal;">等待</span></p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">将使场景等待直到退出动画完成。</span>缓动</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">影响旋转的动画。更多信息可以在
+	 缓动效果</span>页面中找到。<a href="Easing_Effects.htm">缩放文本</a>放大或缩小文本。</p></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">&#160;</p>
-<p class="Sub_Heading"><a name="Rotate_Text" id="Rotate_Text"></a>Rotate 
- Text</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">Rotate 
- your text at specified speed and direction.</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;"> </p>
+<p class="Sub_Heading"><a id="Rotate_Text" name="Rotate_Text"></a>数字</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">- 要操作的文本的索引（ID）。</p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: bold;">Number <span 
-	 style="font-weight: normal;">- The</span> <span style="font-weight: normal;">text</span><span 
-	 style="font-weight: normal;">'s index (ID) that you want to manipulate.</span></p></li>
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Direction</span> 
-	 - Set the text to rotate in clockwise or counterclockwise direction.</p></li>
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Speed</span> 
-	 - The speed of the rotation. The higher the value, the faster it rotates.</p></li>
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Duration</span> 
-	 - Determines how long the rotation will take place.</p></li>
-	<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span 
-	 style="font-weight: bold;">Continue</span> will make the scene immediately 
-	 continue.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Wait</span> will make the scene wait until 
-	 the exit animation is done.</p></li>
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Easing</span> 
-	 affects the animation of the rotation. More information can be seen 
-	 in <a href="Easing_Effects.htm">Easing Effects</a> page.</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: bold;">缩放
+	 X<span style="font-weight: normal;">- 影响文本的水平缩放。在不更改其设置字体大小的情况下，视觉上更改文本的水平高度。</span> <span style="font-weight: normal;">缩放
+	 Y</span><span style="font-weight: normal;">- 影响文本的垂直缩放。在不更改其设置字体大小的情况下，视觉上更改文本的垂直高度。</span></p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">持续时间</span>-
+	 图像改变其缩放百分比的比率。</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">继续</span>将立即继续场景。</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">等待</span>将使场景等待直到缩放动画完成。</p></li>
+<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span style="font-weight: bold;">缓动</span>影响缩放动画。更多信息可以在
+	 缓动效果</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">页面中找到。</span>着色文本</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">操纵所选文本的颜色。这不会改变真实的文本颜色，而是像 [闪烁图片] 一样用颜色填充它。因此，如果您的文本有轮廓，该轮廓也会被着色。</span>数字<a href="Easing_Effects.htm">- 要操作的文本的索引（ID）。</a>颜色控件</p></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">&#160;</p>
-<p class="Sub_Heading"><a name="Zoom_Text" id="Zoom_Text"></a>Zoom Text</p>
-<p class="MsoNormal">Zoom in or out of your text.</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;"> </p>
+<p class="Sub_Heading"><a id="Zoom_Text" name="Zoom_Text"></a>- 控制文本颜色。使用
+	 红、绿、蓝滑块（0 到 255）来指定颜色。</p>
+<p class="MsoNormal">您可以在对话框顶部的预览区域中检查您指定的颜色。使用“强度”来指定颜色的不透明度（0 到 255）。</p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p class="MsoNormal"><span style="font-weight: bold;">Number</span> 
-	 - The text's index (ID) that you want to manipulate.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal"><span style="font-weight: bold;">Zoom 
-	 X</span> - Affects the horizontal zoom of the text. Changes the horizontal 
-	 height of the text visually without changing its set font size.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal"><span style="font-weight: bold;">Zoom 
-	 Y</span> - Affects the vertical zoom of the text. Changes the vertical 
-	 height of the text visually without changing its set font size.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal"><span style="font-weight: bold;">Duration</span> 
-	 <span style="font-family: Arial, sans-serif;">-</span> The rate at 
-	 which the image will alter its zoom percentage.</p></li>
-	<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span 
-	 style="font-weight: bold;">Continue</span> will make the scene immediately 
-	 continue.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Wait</span> will make the scene wait until 
-	 the zoom animation is done.</p></li>
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Easing</span> 
-	 affects the zoom animation. More information can be seen in <a href="Easing_Effects.htm">Easing 
-	 Effects</a> page.</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal"><span style="font-weight: bold;">将“强度”设置为“0”会使颜色完全透明，从而在屏幕上不可见。</span>持续时间</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal"><span style="font-weight: bold;">- 确定颜色动画将持续多长时间。</span>继续</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal"><span style="font-weight: bold;">将立即继续场景。</span>等待</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal"><span style="font-weight: bold;">将使场景等待直到动画完成。</span>
+<span style="font-family: Arial, sans-serif;">缓动</span>影响颜色的动画。更多信息可以在
+	 缓动效果</p></li>
+<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span style="font-weight: bold;">页面中找到。</span>擦除文本</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">从场景中移除文本。</span>数字</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">- 要从屏幕上移除的文本的索引（ID）。</span>持续时间 -<a href="Easing_Effects.htm">文本完全消失所需的时间。</a>继续</p></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">&#160;</p>
-<p class="Sub_Heading"><a name="Color_Text" id="Color_Text"></a>Color Text</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">Manipulate 
- the color of your selected text. This doesn't change the true text-color 
- but just fills it with a color in a similar way like [Flash Picture]. 
- So if your text has an outline, that outline is colored as well.</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;"> </p>
+<p class="Sub_Heading"><a id="Color_Text" name="Color_Text"></a>将立即继续场景。</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">等待</p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: bold;">Number <span 
-	 style="font-weight: normal;">- The text's index (ID) that you want 
-	 to manipulate.</span></p></li>
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: bold;">Color Control 
-	 <span style="font-weight: normal;">- Controls the text color. Use 
-	 the Red, Green, and Blue slider bars (0 to 255) to specify the color.<br />
-	You can check the color you specified in the preview area on the top 
-	 side of the dialog box. Use Power to specify the color's opacity (0 
-	 to 255).<br />
-	Setting Power to &quot;0&quot; makes the color completely transparent, 
-	 rendering it invisible on screen.</span></p></li>
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Duration</span> 
-	 - Determines how long the color-animation will take place.</p></li>
-	<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span 
-	 style="font-weight: bold;">Continue</span> will make the scene immediately 
-	 continue.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Wait</span> will make the scene wait until 
-	 the animation is done.</p></li>
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Easing</span> 
-	 affects the animation of the color. More information can be seen in 
-	 <a href="Easing_Effects.htm">Easing Effects</a> page.</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: bold;">将使场景等待直到退出动画完成。<span style="font-weight: normal;">动画</span></p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: bold;">设置文本的运动。<span style="font-weight: normal;">运动<br/>是文本消失到左/上/右/下的起点。<br/>混合</span></p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">允许您淡出文本。</span>遮罩</p></li>
+<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span style="font-weight: bold;">允许您将文本遮罩到遮罩文件。</span>文本
+	 设置</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">更改文本字体类型、大小和/或样式。</span>数字</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">- 要从屏幕上移除的文本的索引（ID）。</span>字体<a href="Easing_Effects.htm">- 输入您希望应用于文本的字体。</a>大小</p></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">&#160;</p>
-<p class="Sub_Heading"><a name="Erase_Text" id="Erase_Text"></a>Erase Text</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">Remove 
- text from the scene.</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;"> </p>
+<p class="Sub_Heading"><a id="Erase_Text" name="Erase_Text"></a>- 字体大小（以像素为单位）。</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">样式</p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p style="font-weight: bold; font-family: Arial, sans-serif;">Number 
-	 <span style="font-weight: normal;">- The text's index (ID) that you 
-	 want to remove from the screen.</span></p></li>
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: bold;">Duration - 
-	 <span style="font-weight: normal;">The amount of time it will take 
-	 for the text to disappear completely.</span></p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Continue</span> will make the scene immediately 
-	 continue.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Wait</span> will make the scene wait until 
-	 the exit animation is done.</p></li>
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Animation</span> 
-	 sets the movement of the text.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Movement</span> is the origin point of 
-	 the text where it will disappear to the Left/Top/Right/Bottom.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Blending</span> allows you to fade out 
-	 the text.</p></li>
-	<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: bold;">Masking <span 
-	 style="font-weight: normal;">allows you to mask the text to a Masks 
-	 file.</span></p></li>
+<li style="margin-left: -20px;"><p style="font-weight: bold; font-family: Arial, sans-serif;">- 为文本设置轮廓和阴影。一次只能激活其中一个。<span style="font-weight: normal;">颜色</span></p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: bold;">- 文本的颜色。<span style="font-weight: normal;">粗体</span></p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 使文本更粗。</span>斜体</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 使文本倾斜。</span>小型大写字母</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">- 使小写字母显示为小型大写字母/大写字母。</span>下划线</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 在文本下方绘制一条水平线，使其看起来有下划线。</span>删除线</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 在文本上方绘制一条水平居中线，使其看起来有删除线。</span>行距</p></li>
+<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: bold;">- 文本行之间的间距（以像素为单位）。<span style="font-weight: normal;">轮廓
+		 -</span></p></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: bold;">&#160;</p>
-<p class="Sub_Heading"><a name="Text_Settings" id="Text_Settings"></a>Text 
- Settings</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">Change 
- text font type, size, and/or style.</p>
+<p style="font-family: Arial, sans-serif; font-weight: bold;"> </p>
+<p class="Sub_Heading"><a id="Text_Settings" name="Text_Settings"></a>为文本添加轮廓。</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">轮廓</p>
 <ul style="list-style: disc;">
-	<li style="font-family: Arial, sans-serif; margin-left: -20px;"><p 
-		 style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Number</span> - The text's index (ID) that 
-	 you want to remove from the screen.</p></li>
-	<li style="font-family: Arial, sans-serif; margin-left: -20px;"><p 
-		 style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Font</span> - Input the font you wish to 
-	 apply to the text.</p></li>
-	<li style="font-family: Arial, sans-serif; margin-left: -20px;"><p 
-		 style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Size</span> - Font size in pixels.</p></li>
-	<li style="font-family: Arial, sans-serif; margin-left: -20px;"><p 
-		 style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Style</span> - Set an outline and shadow 
-	 to your text. Only one o- f them can be activated at a time.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Color </span>- The color of the text.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Bold</span> - Makes the text bolder.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Italic </span>- Makes the text oblique.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Small Caps</span>&#160;- Makes lower-case 
-	 letters appear as small upper-case/capitalized letters.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Underline</span> - Draws a horizontal line 
-	 under the text to make it look underlined.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Strikethrough</span> - Draws a horizontal 
-	 centered line over the text to make it look strike-through.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Line Spacing</span> - Spacing between text-lines 
-	 in pixels.</p></li>
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Outline 
-	 - </span><span>Add an outline to the text.</span></p></li>
-	<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
-													 font-weight: normal;"><span 
-	 style="font-weight: bold;">Outline</span> - Add an outline to the 
-	 text. Set Yes for an outline, and No to leave it turned off.</p></li>
-	<li style="font-family: Arial, sans-serif; margin-left: -20px;"><ul 
-			 style="list-style: disc;">
-		<li style="font-family: Arial, sans-serif; margin-left: -20px;"><p 
-			 style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Color</span> - Controls the outline 
-		 color. Use the Red, Green, and Blue slider bars (0 to 255) to 
-		 specify the color.<br />
-		You can check the color you specified in the preview area on the 
-		 top side of the dialog box. Use Power to specify the color's opacity 
-		 (0 to 255).<br />
-		Setting Power to &quot;0&quot; makes the color completely transparent, 
-		 rendering it invisible on screen.</p></li>
-		<li style="font-family: Arial, sans-serif; margin-left: -20px;"><p 
-			 style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Size </span>- The thickness of the 
-		 outline in pixels.</p></li>
-	</ul></li>
-	<li style="font-family: Arial, sans-serif; margin-left: -20px;"><p 
-		 style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Shadow</span> - Add a shadow to the text.</p></li>
-	<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
-													 font-weight: normal;"><span 
-	 style="font-weight: bold;">Shadow</span> - Set Yes to turn shadows 
-	 on, No to leave it turned off.</p></li>
+<li style="font-family: Arial, sans-serif; margin-left: -20px;"><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 为文本添加轮廓。设置为“是”以添加轮廓，设置为“否”以关闭它。</span>颜色</p></li>
+<li style="font-family: Arial, sans-serif; margin-left: -20px;"><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 控制轮廓颜色。使用
+		 红、绿、蓝滑块（0 到 255）来指定颜色。</span>您可以在对话框顶部的预览区域中检查您指定的颜色。使用“强度”来指定颜色的不透明度（0 到 255）。</p></li>
+<li style="font-family: Arial, sans-serif; margin-left: -20px;"><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">将“强度”设置为“0”会使颜色完全透明，从而在屏幕上不可见。</span>大小</p></li>
+<li style="font-family: Arial, sans-serif; margin-left: -20px;"><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 轮廓的厚度（以像素为单位）。</span>阴影</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 为文本添加阴影。</span>阴影</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 设置为“是”以打开阴影，设置为“否”以关闭它。</span>颜色
+		 -</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">控制阴影颜色。使用
+		 红、绿、蓝滑块（0 到 255）来指定颜色。</span>您可以在对话框顶部的预览区域中检查您指定的颜色。使用“强度”来指定颜色的不透明度（0 到 255）。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">将“强度”设置为“0”会使颜色完全透明，从而在屏幕上不可见。</span>偏移 X</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 阴影的水平偏移（以像素为单位）。值越高，阴影向右移动越多。</span>偏移 Y</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 阴影的垂直偏移（以像素为单位）。值越高，阴影向下移动越多。</span>填充</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 为您的文本添加填充。这在有较大的阴影或轮廓或任何可能导致阴影、轮廓或文本被截断的特殊样式时很有用。</span>左</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">- 左侧填充（以像素为单位）。</span><span>顶部</span></p></li>
+<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
+													 font-weight: normal;"><span style="font-weight: bold;">- 顶部填充（以像素为单位）。</span>右侧</p></li>
+<li style="font-family: Arial, sans-serif; margin-left: -20px;"><ul style="list-style: disc;">
+<li style="font-family: Arial, sans-serif; margin-left: -20px;"><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 右侧填充（以像素为单位）。</span>底部<br/>- 底部填充（以像素为单位）。<br/>沿路径移动文本</p></li>
+<li style="font-family: Arial, sans-serif; margin-left: -20px;"><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">允许您通过使用点和曲线创建自定义移动路径来移动文本。</span>数字</p></li>
+</ul></li>
+<li style="font-family: Arial, sans-serif; margin-left: -20px;"><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 要移动的文本的索引（ID）。</span>路径</p></li>
+<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
+													 font-weight: normal;"><span style="font-weight: bold;">- 打开路径编辑器，允许您通过曲线定义路径。您可以通过右键单击删除运动点，或单击自由区域添加新的运动点。</span>S 圆圈</p></li>
 </ul>
 <ul style="list-style: disc;">
-	<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
-													 font-weight: bold;">Color 
-	 - <span style="font-weight: normal;">Controls the shadow color. Use 
-	 the Red, Green, and Blue slider bars (0 to 255) to specify the color.<br />
-	You can check the color you specified in the preview area on the top 
-	 side of the dialog box. Use Power to specify the color's opacity (0 
-	 to 255).<br />
-	Setting Power to &quot;0&quot; makes the color completely transparent, 
-	 rendering it invisible on screen.</span></p></li>
-	<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
-													 font-weight: bold;">Offset-X 
-	 <span style="font-weight: normal;">- The horizontal offset of the 
-	 shadow in pixels. The higher the value, the more the shadow is moved 
-	 to the right.</span></p></li>
-	<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
-													 font-weight: bold;">Offset-Y 
-	 <span style="font-weight: normal;">- The vertical offset of the shadow 
-	 in pixels. The higher the value, the more the shadow is moved to the 
-	 bottom.</span></p></li>
-	<li style="font-family: Arial, sans-serif; margin-left: -20px;"><p 
-		 style="font-family: Arial, sans-serif; font-weight: bold;">Padding<span 
-	 style="font-weight: normal;"> - Add padding to your text. That is 
-	 useful whenever you have larger shadows or outlines or any special 
-	 style which makes the shadow, outline or text cut-off.</span></p></li>
-	<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
-													 font-weight: bold;">Left 
-	 <span style="font-weight: normal;">- The left-side padding in pixels.</span></p></li>
-	<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
-													 font-weight: bold;">Top<span 
-	 style="font-weight: normal;"> - The top-side padding in pixels.</span></p></li>
-	<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
-													 font-weight: bold;">Right 
-	 <span style="font-weight: normal;">- The right-side padding in pixels.</span></p></li>
-	<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
-													 font-weight: bold;"><span>Bottom 
-	 </span><span style="font-weight: normal;">- The bottom-size padding 
-	 in pixels.</span></p></li>
+<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
+													 font-weight: bold;">(<span style="font-weight: normal;">) 是运动的起点。<br/>绿色圆圈<br/>(</span></p></li>
+<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
+													 font-weight: bold;">) 是运动中的一个点，它允许您实现更动态的运动。<span style="font-weight: normal;">黄色圆圈</span></p></li>
+<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
+													 font-weight: bold;">(<span style="font-weight: normal;">) 调整运动曲线。如果您按下一个绿色圆圈（</span></p></li>
+<li style="font-family: Arial, sans-serif; margin-left: -20px;"><p style="font-family: Arial, sans-serif; font-weight: bold;">），您也可以调整该路径的运动。<span style="font-weight: normal;">E 圆圈</span></p></li>
+<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
+													 font-weight: bold;">(<span style="font-weight: normal;">) 是运动的终点。</span></p></li>
+<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
+													 font-weight: bold;">垂直镜像 -<span style="font-weight: normal;">垂直翻转曲线。</span></p></li>
+<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
+													 font-weight: bold;">水平镜像<span style="font-weight: normal;">- 水平翻转曲线。</span></p></li>
+<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
+													 font-weight: bold;"><span>旋转 90*</span><span style="font-weight: normal;">- 旋转曲线 90 度。</span></p></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: bold;">&#160;</p>
+<p style="font-family: Arial, sans-serif; font-weight: bold;"> </p>
 <ol style="list-style: disc;">
-	<li style="list-style: none; display: inline; margin-left: -20px;"><p 
-		 style="font-family: Arial, sans-serif; font-weight: bold;">&#160;</p>
-	<p style="font-family: Arial, sans-serif; font-weight: bold;">&#160;</p></li>
+<li style="list-style: none; display: inline; margin-left: -20px;"><p style="font-family: Arial, sans-serif; font-weight: bold;"> </p>
+<p style="font-family: Arial, sans-serif; font-weight: bold;"> </p></li>
 </ol>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">&#160;</p>
-<p class="Sub_Heading"><a name="Move_Text_Along_Path" id="Move_Text_Along_Path"></a>Move 
- Text Along Path</p>
-<p class="MsoNormal" style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-family: Arial, sans-serif; font-weight: normal;">Allows 
- you to create custom path of movement through the use of points and curves 
- to move the text.</span></p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;"> </p>
+<p class="Sub_Heading"><a id="Move_Text_Along_Path" name="Move_Text_Along_Path"></a>效果</p>
+<p class="MsoNormal" style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-family: Arial, sans-serif; font-weight: normal;">- 允许您在背景沿路径移动时设置定时声音效果。</span></p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Number</span> 
-	 - The text's index (ID) that you want to move.</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">循环</span>- 允许您在持续时间内重复路径。</p></li>
 </ul>
 <div>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Path</span> 
-	 - Opens up a path editor that allows you to define the path via curves. 
-	 You can press right click to delete a motion point or click at a free 
-	 area to add a new motion point.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">The S circle</span> (<img src="circ1.png" alt="" style=" border:none; width:100%; max-width:22px;" border="0" />) 
-	 is the start point of the motion.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">The green circle</span> (<img src="circ2.png" alt="" style=" border:none; width:100%; max-width:22px;" border="0" />) is a point in the motion 
-	 that allows you to have a more dynamic motion.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">The yellow circle</span> (<img src="circ3.png" alt="" style=" border:none; width:100%; max-width:22px;" border="0" />) adjusts the motion curve. 
-	 If you press a green circle (<img src="circ2.png" alt="" style=" border:none; width:100%; max-width:22px;" border="0" />), you can adjust 
-	 the motion for that path as well.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">The E circle</span> (<img src="circ4.png" alt="" style=" border:none; width:100%; max-width:22px;" border="0" />) 
-	 is the end point of the motion.</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">无</span>- 关闭循环。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">正常</span>- 从终点循环路径。<img alt="" border="0" src="circ1.png" style=" border:none; width:100%; max-width:22px;"/>反向</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 从终点反向循环路径。</span>持续时间<img alt="" border="0" src="circ2.png" style=" border:none; width:100%; max-width:22px;"/>- 运动完成所需的时间（以毫秒为单位）。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">等待/继续</span>- 将命令设置为等待意味着场景将在加载下一个命令之前等待运动结束。<img alt="" border="0" src="circ3.png" style=" border:none; width:100%; max-width:22px;"/>刷新文本<img alt="" border="0" src="circ2.png" style=" border:none; width:100%; max-width:22px;"/>更新屏幕上显示的文本。例如：如果您的文本使用文本代码显示变量的值，则需要在变量更改时调用此
+	 命令，以重新计算文本。此命令可能会耗时，如果过度使用，因为它会重新渲染整个文本。尤其是在移动设备/智能手机上。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">数字</span>- 要刷新的文本的索引（ID）。<img alt="" border="0" src="circ4.png" style=" border:none; width:100%; max-width:22px;"/>文本
+	效果</p></li>
 </ul>
-<p style="font-family: Arial, sans-serif;">&#160;</p>
-<p style="font-family: Arial, sans-serif;"><img src="path.jpg" alt="" style=" border:none; width:100%; max-width:883px;" border="0" /></p>
-<p style="font-family: Arial, sans-serif;">&#160;</p>
+<p style="font-family: Arial, sans-serif;"> </p>
+<p style="font-family: Arial, sans-serif;"><img alt="" border="0" src="path.jpg" style=" border:none; width:100%; max-width:883px;"/></p>
+<p style="font-family: Arial, sans-serif;"> </p>
 <ul style="list-style: disc;">
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Mirror Vertical -</span> &#160;Flips the 
-	 curve vertically.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Mirror Horizontal</span> - &#160;Flips 
-	 the curve horizontally.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Rotate 90*</span> - &#160;Rotates the curve 
-	 at 90 degrees.</p></li>
-	<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span 
-	 style="font-weight: bold;">Effects</span> - &#160;Allows you to set 
-	 sound effects at timed intervals while the background moves along 
-	 the path.</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">将效果应用于文本。</span>类型</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 将应用于文本的效果。</span>摆动</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">使电影以不规则和摇晃的运动移动。这仅在禁用循环时才有效。</span>强度</p></li>
+<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span style="font-weight: bold;">设置摆动的强度。强度越高，摆动效果越明显。</span>速度</p></li>
 </ul>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Loop</span> 
-	 - Allows you to repeat the path for the extent of its duration.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">None</span> - &#160;Turns the loop off.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Normal</span> - &#160;Loops the path from 
-	 the end point.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Reversed</span> - &#160;Loops the path 
-	 in the opposite direction from the end point.</p></li>
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Duration</span> 
-	 - The time the motion has to finish in milliseconds.</p></li>
-	<li style="font-weight: bold; margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-															 font-weight: normal;"><span 
-	 style="font-weight: bold;">Wait/Continue</span> - Setting the command 
-	 to wait means that the scene will wait for the motion to end before 
-	 it loads the next command.</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">设置摆动的速度。速度越高，速度越快。</span>方向</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 设置摆动方向。</span>垂直</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">将摆动
+			 方向设置为垂直方向。</span>水平</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">将摆动
+			 方向设置为水平方向。</span>两者</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">将摆动方向设置为两个方向。</span>持续时间</p></li>
+<li style="font-weight: bold; margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+															 font-weight: normal;"><span style="font-weight: bold;">设置效果将持续多长时间（以毫秒为单位）。</span>模糊</p></li>
 </ul>
 </div>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">&#160;</p>
-<p class="Sub_Heading"><a name="Refresh_Text" id="Refresh_Text"></a>Refresh 
- Text</p>
-<p class="MsoNormal" style="font-family: Arial, sans-serif; font-weight: normal;">Updates 
- a text displayed on the screen. For Example: If your text displays a value 
- of a variable using a text-code, you need to call this</p>
-<p class="MsoNormal" style="font-family: Arial, sans-serif; font-weight: normal;">command 
- when ever the variable has been changed to recalculate the text. This 
- command can be time-consuming if over-used since it is re-rendering the 
- entire text. That's especially the case on mobile devices / smartphones.</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;"> </p>
+<p class="Sub_Heading"><a id="Refresh_Text" name="Refresh_Text"></a>对文本无效。</p>
+<p class="MsoNormal" style="font-family: Arial, sans-serif; font-weight: normal;">像素化</p>
+<p class="MsoNormal" style="font-family: Arial, sans-serif; font-weight: normal;">使文本看起来像素化/块状。</p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Number</span> 
-	 - The text's index (ID) that you want to refresh.</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">宽度</span>设置单个
+		 块/像素的宽度。</p></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">&#160;</p>
-<p class="Sub_Heading"><a name="Text_Effect" id="Text_Effect"></a>Text 
- Effect</p>
-<p style="font-family: Arial, sans-serif;"><span style="font-family: Arial, sans-serif;">Applies 
- an effect to a text..</span></p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;"> </p>
+<p class="Sub_Heading"><a id="Text_Effect" name="Text_Effect"></a>高度</p>
+<p style="font-family: Arial, sans-serif;"><span style="font-family: Arial, sans-serif;">设置单个
+		 块/像素的高度。</span></p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Type</span> 
-	 - The effect that will be applied to the text.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Wobble</span> makes the movie move in irregular 
-	 and staggering motion. That only works if looping is disabled.</p></li>
-	<li><ul style="list-style: disc;">
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Power</span> sets the intensity of 
-		 the wobble. It makes the wobble effect more visible the higher 
-		 it is.</p></li>
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Speed</span> <span>sets the speed of 
-		 the wobble. The higher it is, the faster it is.</span></p></li>
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Orientation</span> - Sets the wobble 
-		 direction.</p></li>
-		<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-			<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-			 style="font-weight: bold;">Vertical</span> sets the wobble 
-			 direction to the vertical direction.</p></li>
-			<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-			 style="font-weight: bold;">Horizontal</span> sets the wobble 
-			 direction to the horizontal direction</p></li>
-			<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-			 style="font-weight: bold;">Both</span> sets the wobble direction 
-			 to both directions.</p></li>
-		</ul></li>
-		<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
-											 font-weight: bold;">Duration 
-		 <span style="font-weight: normal;">sets how long, in milliseconds, 
-		 the effect will take place.</span></p></li>
-	</ul></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Blur</span> has no effect on texts.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Pixelate</span> makes the text appear pixelated/blocky.</p></li>
-	<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Width</span> sets the width of a single 
-		 block/pixel.</p></li>
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Height</span> sets the height of a 
-		 single block/pixel.</p></li>
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Duration</span> sets how much time, 
-		 in milliseconds, it takes until the pixelation reaches the specified 
-		 block/pixel-size. Use this to smoothly pixelate the text.</p></li>
-	</ul></li>
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Easing</span> 
-	 applies tweening to the effect animation. More information can be 
-	 seen in <a href="Easing_Effects.htm">Easing Effects</a> page.</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">持续时间</span>设置从现在到像素化达到指定的
+		 块/像素大小所需的时间（以毫秒为单位）。使用此来平滑地像素化文本。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">缓动</span>将缓动应用于效果动画。更多信息可以在
+	 缓动效果</p></li>
+<li><ul style="list-style: disc;">
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">页面中找到。</span>文本
+	 默认值</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">允许覆盖文本特定命令的默认值。</span> <span>显示
+		 持续时间</span></p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">是显示动画的持续时间（以毫秒为单位）。</span>擦除
+		 持续时间</p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">是擦除动画的持续时间（以毫秒为单位）。</span>显示
+		 效果</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">缓动</span>是用于显示动画的缓动设置。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">动画</span>是显示动画的动画设置。</p></li>
+</ul></li>
+<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
+											 font-weight: bold;">擦除
+		 效果<span style="font-weight: normal;">缓动</span></p></li>
+</ul></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">是用于擦除动画的缓动设置。</span>动画</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">是擦除动画的动画设置。</span>显示</p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Z-Order</span>是
+		 文本的显示顺序。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">运动
+		 模糊</span>-
+		 设置为“是”以应用运动模糊，“否”以关闭它。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">生成时间</span>- 每两毫秒创建的副本数量。默认值为 2。</p></li>
+</ul></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">溶解速度</span>- 复制件消散的比率。具体来说，副本的不透明度在每一帧都会下降。<a href="Easing_Effects.htm">不透明度</a>- 复制图像在生成时开始的不透明度。默认值为 100。</p></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">&#160;</p>
-<p class="Sub_Heading"><a name="Text_Defaults" id="Text_Defaults"></a>Text 
- Defaults</p>
-<p class="MsoNormal" style="font-family: Arial, sans-serif; font-weight: normal;">Allows 
- to override default values for text specific commands.</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;"> </p>
+<p class="Sub_Heading"><a id="Text_Defaults" name="Text_Defaults"></a>例如，如果溶解速度为 2，则阴影/鬼影/粒子将在 50 毫秒后完全消失/死亡。</p>
+<p class="MsoNormal" style="font-family: Arial, sans-serif; font-weight: normal;">HTML</p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Appear 
-	 Duration</span> is the duration of the show-animation in milliseconds.</p></li>
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Disappear 
-	 Duration</span> is the duration of the erase-animation in milliseconds.</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">菜单栏</span>菜单栏</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">菜单栏上的命令如下所述：</span>菜单栏上的许多命令也可以通过单击工具栏上相关的图标按钮来执行。此外，旁边显示快捷键的菜单和命令可以通过按相应的键来选择。</p></li>
 </ul>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: bold;">Appear Effects</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Easing</span> is the easing settings used 
-	 for the show-animation.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Animation</span> is the animation settings 
-	 for the show-animation.</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: bold;">这意味着有多种执行相同命令的方法。例如，要执行撤消命令，您可以单击“编辑”菜单上的“撤消”，按住 CTRL 键同时按 Z 键 (CTRL+Z)，或者单击工具栏上的“撤消”按钮。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">文件菜单</span>新建项目</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">创建一个新项目。如果已打开项目，将在创建新项目后关闭。</span>打开项目</p></li>
 </ul>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Disappear 
-	 Effects</span></p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Easing</span> is the easing settings used 
-	 for the erase-animation.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Animation</span> is the animation settings 
-	 for the erase-animation.</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">打开先前保存的项目，以便您可以继续创建游戏。在出现的“打开”窗口中，选择项目文件夹中的 Game.vnproject 文件。</span></p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">关闭项目</span>关闭当前项目。会出现一个确认对话框。要保存项目后再关闭，请单击“是”，或者要关闭而不保存，请单击“否”。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">保存项目</span>保存您当前正在处理的项目。（这将覆盖同名的任何现有数据。）</p></li>
 </ul>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Display</span></p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: bold;"><span 
-	 style="font-family: Arial, sans-serif; font-weight: bold;">Z-Order</span> 
-	 <span style="font-weight: normal; font-family: Arial, sans-serif;">is 
-	 the display-order of a text.</span></p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-family: Arial, sans-serif; font-weight: bold;">Motion 
-	 Blur</span> <span style="font-family: Arial, sans-serif; font-weight: normal;">- 
-	 Set Yes to apply motion blur, No to turn it off.</span></p></li>
-	<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Spawn Time</span> - The amount of copies 
-		 created every two milliseconds. By default, the amount is 2.</p></li>
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Dissolve Speed</span> - The rate at 
-		 which the spawned copies dissipate. Specifically, the opacity 
-		 of the copies are dropped every frame.</p></li>
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Opacity</span> - The opacity the copied 
-		 image starts at the time it is spawned. By default, it is at 100.<br />
-		For example, if the dissolve speed is 2, the shadow/ghost/particle 
-		 is completely invisible/dead after 50 milliseconds.</p></li>
-	</ul></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">退出 Visual Novel Maker</span></p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: bold;"><span style="font-family: Arial, sans-serif; font-weight: bold;">关闭程序。与“关闭项目”命令一样，会出现一个确认对话框。</span>
+<span style="font-weight: normal; font-family: Arial, sans-serif;">编辑菜单</span></p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-family: Arial, sans-serif; font-weight: bold;">撤销</span> <span style="font-family: Arial, sans-serif; font-weight: normal;">撤销上一个操作，返回到执行之前的状态。它无限，直到您切换到另一个场景。</span></p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">剪切</span>将选定的命令复制并从其当前位置删除。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">复制</span>复制选定的命令。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">粘贴</span>将剪贴板的内容添加到所选命令下方。<br/>删除</p></li>
+</ul></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">&#160;</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;"> </p>
 </body>
 </html>

@@ -1,3187 +1,2014 @@
-<!DOCTYPE html>
+html
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Component_LayoutSceneBehavior</title>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
-    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
-    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
-    <link rel="icon" href="../assets/favicon.ico">
-    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+<meta charset="utf-8"/>
+<title>Component_LayoutSceneBehavior</title>
+<link href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css" rel="stylesheet"/>
+<link href="../assets/vendor/prettify/prettify-min.css" rel="stylesheet"/>
+<link href="../assets/css/main.css" id="site_styles" rel="stylesheet"/>
+<link href="../assets/favicon.ico" rel="icon"/>
+<script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
 </head>
 <body class="yui3-skin-sam">
-
 <div id="doc">
-    <div id="hd" class="yui3-g header">
-        <div class="yui3-u-3-4">
-                <h1><img src="../assets/css/logo.png" title="" width="117" height="52"></h1>
-        </div>
-        <div class="yui3-u-1-4 version">
-            <em>API Docs for: </em>
-        </div>
-    </div>
-    <div id="bd" class="yui3-g">
-
-        <div class="yui3-u-1-4">
-            <div id="docs-sidebar" class="sidebar apidocs">
-                <div id="api-list">
-                    <h2 class="off-left">APIs</h2>
-                    <div id="api-tabview" class="tabview">
-                        <ul class="tabs">
-                            <li><a href="#api-classes">Classes</a></li>
-                            <li><a href="#api-modules">Modules</a></li>
-                        </ul>
-                
-                        <div id="api-tabview-filter">
-                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
-                        </div>
-                
-                        <div id="api-tabview-panel">
-                            <ul id="api-classes" class="apis classes">
-                                <li><a href="../classes/AnimationLoopType.html">AnimationLoopType</a></li>
-                                <li><a href="../classes/AnimationTypes.html">AnimationTypes</a></li>
-                                <li><a href="../classes/AudioManager.html">AudioManager</a></li>
-                                <li><a href="../classes/CircularDistortionEffect.html">CircularDistortionEffect</a></li>
-                                <li><a href="../classes/Colors.html">Colors</a></li>
-                                <li><a href="../classes/CommandFieldFlags.html">CommandFieldFlags</a></li>
-                                <li><a href="../classes/Component.html">Component</a></li>
-                                <li><a href="../classes/Component_ActionHandler.html">Component_ActionHandler</a></li>
-                                <li><a href="../classes/Component_Animation.html">Component_Animation</a></li>
-                                <li><a href="../classes/Component_AnimationExecutor.html">Component_AnimationExecutor</a></li>
-                                <li><a href="../classes/Component_AnimationHandler.html">Component_AnimationHandler</a></li>
-                                <li><a href="../classes/Component_Animator.html">Component_Animator</a></li>
-                                <li><a href="../classes/Component_BindingHandler.html">Component_BindingHandler</a></li>
-                                <li><a href="../classes/Component_BlendAnimation.html">Component_BlendAnimation</a></li>
-                                <li><a href="../classes/Component_BlurAnimation.html">Component_BlurAnimation</a></li>
-                                <li><a href="../classes/Component_CallSceneInterpreter.html">Component_CallSceneInterpreter</a></li>
-                                <li><a href="../classes/Component_CharacterBehavior.html">Component_CharacterBehavior</a></li>
-                                <li><a href="../classes/Component_CommandInterpreter.html">Component_CommandInterpreter</a></li>
-                                <li><a href="../classes/Component_CommonEventBehavior.html">Component_CommonEventBehavior</a></li>
-                                <li><a href="../classes/Component_Container.html">Component_Container</a></li>
-                                <li><a href="../classes/Component_DataGridBehavior.html">Component_DataGridBehavior</a></li>
-                                <li><a href="../classes/Component_DomainContainer.html">Component_DomainContainer</a></li>
-                                <li><a href="../classes/Component_Draggable.html">Component_Draggable</a></li>
-                                <li><a href="../classes/Component_EventEmitter.html">Component_EventEmitter</a></li>
-                                <li><a href="../classes/Component_FieldAnimation.html">Component_FieldAnimation</a></li>
-                                <li><a href="../classes/Component_Frame.html">Component_Frame</a></li>
-                                <li><a href="../classes/Component_FrameAnimation.html">Component_FrameAnimation</a></li>
-                                <li><a href="../classes/Component_FreeLayoutBehavior.html">Component_FreeLayoutBehavior</a></li>
-                                <li><a href="../classes/Component_GameSceneBehavior.html">Component_GameSceneBehavior</a></li>
-                                <li><a href="../classes/Component_GridLayoutBehavior.html">Component_GridLayoutBehavior</a></li>
-                                <li><a href="../classes/Component_Handler.html">Component_Handler</a></li>
-                                <li><a href="../classes/Component_HotspotBehavior.html">Component_HotspotBehavior</a></li>
-                                <li><a href="../classes/Component_ImageAnimation.html">Component_ImageAnimation</a></li>
-                                <li><a href="../classes/Component_ImageMap.html">Component_ImageMap</a></li>
-                                <li><a href="../classes/Component_InputHandler.html">Component_InputHandler</a></li>
-                                <li><a href="../classes/Component_IntervalTimer.html">Component_IntervalTimer</a></li>
-                                <li><a href="../classes/Component_LayoutBehavior.html">Component_LayoutBehavior</a></li>
-                                <li><a href="../classes/Component_LayoutSceneBehavior.html">Component_LayoutSceneBehavior</a></li>
-                                <li><a href="../classes/Component_Live2D.html">Component_Live2D</a></li>
-                                <li><a href="../classes/Component_Live2DAnimation.html">Component_Live2DAnimation</a></li>
-                                <li><a href="../classes/Component_MaskAnimation.html">Component_MaskAnimation</a></li>
-                                <li><a href="../classes/Component_MessageBehavior.html">Component_MessageBehavior</a></li>
-                                <li><a href="../classes/Component_MessageTextRenderer.html">Component_MessageTextRenderer</a></li>
-                                <li><a href="../classes/Component_MoveAnimation.html">Component_MoveAnimation</a></li>
-                                <li><a href="../classes/Component_NumberInput.html">Component_NumberInput</a></li>
-                                <li><a href="../classes/Component_PanelBehavior.html">Component_PanelBehavior</a></li>
-                                <li><a href="../classes/Component_PathAnimation.html">Component_PathAnimation</a></li>
-                                <li><a href="../classes/Component_PixelateAnimation.html">Component_PixelateAnimation</a></li>
-                                <li><a href="../classes/Component_Quad.html">Component_Quad</a></li>
-                                <li><a href="../classes/Component_RotateAnimation.html">Component_RotateAnimation</a></li>
-                                <li><a href="../classes/Component_SceneBehavior.html">Component_SceneBehavior</a></li>
-                                <li><a href="../classes/Component_ShakeAnimation.html">Component_ShakeAnimation</a></li>
-                                <li><a href="../classes/Component_SpreadLayoutBehavior.html">Component_SpreadLayoutBehavior</a></li>
-                                <li><a href="../classes/Component_Sprite.html">Component_Sprite</a></li>
-                                <li><a href="../classes/Component_StackLayoutBehavior.html">Component_StackLayoutBehavior</a></li>
-                                <li><a href="../classes/Component_TextBehavior.html">Component_TextBehavior</a></li>
-                                <li><a href="../classes/Component_TextInput.html">Component_TextInput</a></li>
-                                <li><a href="../classes/Component_TextRenderer.html">Component_TextRenderer</a></li>
-                                <li><a href="../classes/Component_ThreePartImage.html">Component_ThreePartImage</a></li>
-                                <li><a href="../classes/Component_TilingPlane.html">Component_TilingPlane</a></li>
-                                <li><a href="../classes/Component_TilingSprite.html">Component_TilingSprite</a></li>
-                                <li><a href="../classes/Component_Timer.html">Component_Timer</a></li>
-                                <li><a href="../classes/Component_TintAnimation.html">Component_TintAnimation</a></li>
-                                <li><a href="../classes/Component_UIBehavior.html">Component_UIBehavior</a></li>
-                                <li><a href="../classes/Component_Viewport.html">Component_Viewport</a></li>
-                                <li><a href="../classes/Component_Visual.html">Component_Visual</a></li>
-                                <li><a href="../classes/Component_WebStartBehavior.html">Component_WebStartBehavior</a></li>
-                                <li><a href="../classes/Component_WobbleAnimation.html">Component_WobbleAnimation</a></li>
-                                <li><a href="../classes/Component_ZoomAnimation.html">Component_ZoomAnimation</a></li>
-                                <li><a href="../classes/ContainerDisposeBehavior.html">ContainerDisposeBehavior</a></li>
-                                <li><a href="../classes/DataManager.html">DataManager</a></li>
-                                <li><a href="../classes/DataOptimizer.html">DataOptimizer</a></li>
-                                <li><a href="../classes/Easing.html">Easing</a></li>
-                                <li><a href="../classes/Easings.html">Easings</a></li>
-                                <li><a href="../classes/EasingTypes.html">EasingTypes</a></li>
-                                <li><a href="../classes/Fonts.html">Fonts</a></li>
-                                <li><a href="../classes/Formula.html">Formula</a></li>
-                                <li><a href="../classes/GameManager.html">GameManager</a></li>
-                                <li><a href="../classes/GameTemp.html">GameTemp</a></li>
-                                <li><a href="../classes/Helper.html">Helper</a></li>
-                                <li><a href="../classes/ImageHandling.html">ImageHandling</a></li>
-                                <li><a href="../classes/InterpreterContext.html">InterpreterContext</a></li>
-                                <li><a href="../classes/LanguageManager.html">LanguageManager</a></li>
-                                <li><a href="../classes/LayoutManagementMode.html">LayoutManagementMode</a></li>
-                                <li><a href="../classes/LivePreviewInfo.html">LivePreviewInfo</a></li>
-                                <li><a href="../classes/Main.html">Main</a></li>
-                                <li><a href="../classes/MessageSettings.html">MessageSettings</a></li>
-                                <li><a href="../classes/Object_Animation.html">Object_Animation</a></li>
-                                <li><a href="../classes/Object_Background.html">Object_Background</a></li>
-                                <li><a href="../classes/Object_Base.html">Object_Base</a></li>
-                                <li><a href="../classes/Object_Character.html">Object_Character</a></li>
-                                <li><a href="../classes/Object_CommonEvent.html">Object_CommonEvent</a></li>
-                                <li><a href="../classes/Object_Container.html">Object_Container</a></li>
-                                <li><a href="../classes/Object_DataGrid.html">Object_DataGrid</a></li>
-                                <li><a href="../classes/Object_DomainContainer.html">Object_DomainContainer</a></li>
-                                <li><a href="../classes/Object_Frame.html">Object_Frame</a></li>
-                                <li><a href="../classes/Object_FreeLayout.html">Object_FreeLayout</a></li>
-                                <li><a href="../classes/Object_GridLayout.html">Object_GridLayout</a></li>
-                                <li><a href="../classes/Object_Hotspot.html">Object_Hotspot</a></li>
-                                <li><a href="../classes/Object_Image.html">Object_Image</a></li>
-                                <li><a href="../classes/Object_ImageMap.html">Object_ImageMap</a></li>
-                                <li><a href="../classes/Object_IntervalTimer.html">Object_IntervalTimer</a></li>
-                                <li><a href="../classes/Object_Layout.html">Object_Layout</a></li>
-                                <li><a href="../classes/Object_Live2DCharacter.html">Object_Live2DCharacter</a></li>
-                                <li><a href="../classes/Object_Message.html">Object_Message</a></li>
-                                <li><a href="../classes/Object_MessageArea.html">Object_MessageArea</a></li>
-                                <li><a href="../classes/Object_Panel.html">Object_Panel</a></li>
-                                <li><a href="../classes/Object_Picture.html">Object_Picture</a></li>
-                                <li><a href="../classes/Object_Scene.html">Object_Scene</a></li>
-                                <li><a href="../classes/Object_SpreadLayout.html">Object_SpreadLayout</a></li>
-                                <li><a href="../classes/Object_StackLayout.html">Object_StackLayout</a></li>
-                                <li><a href="../classes/Object_Text.html">Object_Text</a></li>
-                                <li><a href="../classes/Object_ThreePartImage.html">Object_ThreePartImage</a></li>
-                                <li><a href="../classes/Object_Timer.html">Object_Timer</a></li>
-                                <li><a href="../classes/Object_UIElement.html">Object_UIElement</a></li>
-                                <li><a href="../classes/Object_Video.html">Object_Video</a></li>
-                                <li><a href="../classes/Object_Viewport.html">Object_Viewport</a></li>
-                                <li><a href="../classes/Object_Visual.html">Object_Visual</a></li>
-                                <li><a href="../classes/ObjectManager.html">ObjectManager</a></li>
-                                <li><a href="../classes/RecordManager.html">RecordManager</a></li>
-                                <li><a href="../classes/RendererTextLine.html">RendererTextLine</a></li>
-                                <li><a href="../classes/RendererToken.html">RendererToken</a></li>
-                                <li><a href="../classes/ResourceLoader.html">ResourceLoader</a></li>
-                                <li><a href="../classes/ResourceManager.html">ResourceManager</a></li>
-                                <li><a href="../classes/SceneManager.html">SceneManager</a></li>
-                                <li><a href="../classes/Space.html">Space</a></li>
-                                <li><a href="../classes/Sprite_Debug.html">Sprite_Debug</a></li>
-                                <li><a href="../classes/Style.html">Style</a></li>
-                                <li><a href="../classes/UIElementPoint.html">UIElementPoint</a></li>
-                                <li><a href="../classes/UIElementRectangle.html">UIElementRectangle</a></li>
-                                <li><a href="../classes/UIManager.html">UIManager</a></li>
-                                <li><a href="../classes/UpdateBehavior.html">UpdateBehavior</a></li>
-                                <li><a href="../classes/VariableStore.html">VariableStore</a></li>
-                            </ul>
-                
-                
-                            <ul id="api-modules" class="apis modules">
-                                <li><a href="../modules/gs.html">gs</a></li>
-                                <li><a href="../modules/gs.RendererTextLine.html">gs.RendererTextLine</a></li>
-                                <li><a href="../modules/ui.html">ui</a></li>
-                                <li><a href="../modules/vn.html">vn</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="yui3-u-3-4">
-                <div id="api-options">
-                    Show:
-                    <label for="api-show-inherited">
-                        <input type="checkbox" id="api-show-inherited" checked>
-                        Inherited
-                    </label>
-            
-                    <label for="api-show-protected">
-                        <input type="checkbox" id="api-show-protected">
-                        Protected
-                    </label>
-            
-                    <label for="api-show-private">
-                        <input type="checkbox" id="api-show-private">
-                        Private
-                    </label>
-                    <label for="api-show-deprecated">
-                        <input type="checkbox" id="api-show-deprecated">
-                        Deprecated
-                    </label>
-            
-                </div>
-            
-            <div class="apidocs">
-                <div id="docs-main">
-                    <div class="content">
-<h1>Component_LayoutSceneBehavior Class</h1>
-<div class="box meta">
-
-
-
-            Module: <a href="../modules/gs.html">gs</a>
-
+<div class="yui3-g header" id="hd">
+<div class="yui3-u-3-4">
+<h1><img height="52" src="../assets/css/logo.png" title="" width="117"/></h1>
 </div>
-
-
+<div class="yui3-u-1-4 version">
+<em>API 文档，适用于：</em>
+</div>
+</div>
+<div class="yui3-g" id="bd">
+<div class="yui3-u-1-4">
+<div class="sidebar apidocs" id="docs-sidebar">
+<div id="api-list">
+<h2 class="off-left">API</h2>
+<div class="tabview" id="api-tabview">
+<ul class="tabs">
+<li><a href="#api-classes">类</a></li>
+<li><a href="#api-modules">模块</a></li>
+</ul>
+<div id="api-tabview-filter">
+<input id="api-filter" placeholder="Type to filter APIs" type="search"/>
+</div>
+<div id="api-tabview-panel">
+<ul class="apis classes" id="api-classes">
+<li><a href="../classes/AnimationLoopType.html">AnimationLoopType (动画循环类型)</a></li>
+<li><a href="../classes/AnimationTypes.html">AnimationTypes (动画类型)</a></li>
+<li><a href="../classes/AudioManager.html">AudioManager (音频管理器)</a></li>
+<li><a href="../classes/CircularDistortionEffect.html">CircularDistortionEffect (圆形扭曲效果)</a></li>
+<li><a href="../classes/Colors.html">Colors (颜色)</a></li>
+<li><a href="../classes/CommandFieldFlags.html">CommandFieldFlags (命令字段标志)</a></li>
+<li><a href="../classes/Component.html">Component (组件)</a></li>
+<li><a href="../classes/Component_ActionHandler.html">Component_ActionHandler (组件_动作处理器)</a></li>
+<li><a href="../classes/Component_Animation.html">Component_Animation (组件_动画)</a></li>
+<li><a href="../classes/Component_AnimationExecutor.html">Component_AnimationExecutor (组件_动画执行器)</a></li>
+<li><a href="../classes/Component_AnimationHandler.html">Component_AnimationHandler (组件_动画处理器)</a></li>
+<li><a href="../classes/Component_Animator.html">Component_Animator (组件_动画器)</a></li>
+<li><a href="../classes/Component_BindingHandler.html">Component_BindingHandler (组件_绑定处理器)</a></li>
+<li><a href="../classes/Component_BlendAnimation.html">Component_BlendAnimation (组件_混合动画)</a></li>
+<li><a href="../classes/Component_BlurAnimation.html">Component_BlurAnimation (组件_模糊动画)</a></li>
+<li><a href="../classes/Component_CallSceneInterpreter.html">Component_CallSceneInterpreter (组件_调用场景解释器)</a></li>
+<li><a href="../classes/Component_CharacterBehavior.html">Component_CharacterBehavior (组件_角色行为)</a></li>
+<li><a href="../classes/Component_CommandInterpreter.html">Component_CommandInterpreter (组件_命令解释器)</a></li>
+<li><a href="../classes/Component_CommonEventBehavior.html">Component_CommonEventBehavior (组件_通用事件行为)</a></li>
+<li><a href="../classes/Component_Container.html">Component_Container (组件_容器)</a></li>
+<li><a href="../classes/Component_DataGridBehavior.html">Component_DataGridBehavior (组件_数据网格行为)</a></li>
+<li><a href="../classes/Component_DomainContainer.html">Component_DomainContainer (组件_域容器)</a></li>
+<li><a href="../classes/Component_Draggable.html">Component_Draggable (组件_可拖动)</a></li>
+<li><a href="../classes/Component_EventEmitter.html">Component_EventEmitter (组件_事件发射器)</a></li>
+<li><a href="../classes/Component_FieldAnimation.html">Component_FieldAnimation (组件_字段动画)</a></li>
+<li><a href="../classes/Component_Frame.html">Component_Frame (组件_帧)</a></li>
+<li><a href="../classes/Component_FrameAnimation.html">Component_FrameAnimation (组件_帧动画)</a></li>
+<li><a href="../classes/Component_FreeLayoutBehavior.html">Component_FreeLayoutBehavior (组件_自由布局行为)</a></li>
+<li><a href="../classes/Component_GameSceneBehavior.html">Component_GameSceneBehavior (组件_游戏场景行为)</a></li>
+<li><a href="../classes/Component_GridLayoutBehavior.html">Component_GridLayoutBehavior (组件_网格布局行为)</a></li>
+<li><a href="../classes/Component_Handler.html">Component_Handler (组件_处理器)</a></li>
+<li><a href="../classes/Component_HotspotBehavior.html">Component_HotspotBehavior (组件_热点行为)</a></li>
+<li><a href="../classes/Component_ImageAnimation.html">Component_ImageAnimation (组件_图像动画)</a></li>
+<li><a href="../classes/Component_ImageMap.html">Component_ImageMap (组件_图像映射)</a></li>
+<li><a href="../classes/Component_InputHandler.html">Component_InputHandler (组件_输入处理器)</a></li>
+<li><a href="../classes/Component_IntervalTimer.html">Component_IntervalTimer (组件_间隔计时器)</a></li>
+<li><a href="../classes/Component_LayoutBehavior.html">Component_LayoutBehavior (组件_布局行为)</a></li>
+<li><a href="../classes/Component_LayoutSceneBehavior.html">Component_LayoutSceneBehavior (组件_布局场景行为)</a></li>
+<li><a href="../classes/Component_Live2D.html">Component_Live2D (组件_Live2D)</a></li>
+<li><a href="../classes/Component_Live2DAnimation.html">Component_Live2DAnimation (组件_Live2D 动画)</a></li>
+<li><a href="../classes/Component_MaskAnimation.html">Component_MaskAnimation (组件_遮罩动画)</a></li>
+<li><a href="../classes/Component_MessageBehavior.html">Component_MessageBehavior (组件_消息行为)</a></li>
+<li><a href="../classes/Component_MessageTextRenderer.html">Component_MessageTextRenderer (组件_消息文本渲染器)</a></li>
+<li><a href="../classes/Component_MoveAnimation.html">Component_MoveAnimation (组件_移动动画)</a></li>
+<li><a href="../classes/Component_NumberInput.html">Component_NumberInput (组件_数字输入)</a></li>
+<li><a href="../classes/Component_PanelBehavior.html">Component_PanelBehavior (组件_面板行为)</a></li>
+<li><a href="../classes/Component_PathAnimation.html">Component_PathAnimation (组件_路径动画)</a></li>
+<li><a href="../classes/Component_PixelateAnimation.html">Component_PixelateAnimation (组件_像素化动画)</a></li>
+<li><a href="../classes/Component_Quad.html">Component_Quad (组件_四边形)</a></li>
+<li><a href="../classes/Component_RotateAnimation.html">Component_RotateAnimation (组件_旋转动画)</a></li>
+<li><a href="../classes/Component_SceneBehavior.html">Component_SceneBehavior (组件_场景行为)</a></li>
+<li><a href="../classes/Component_ShakeAnimation.html">Component_ShakeAnimation (组件_震动动画)</a></li>
+<li><a href="../classes/Component_SpreadLayoutBehavior.html">Component_SpreadLayoutBehavior (组件_扩散布局行为)</a></li>
+<li><a href="../classes/Component_Sprite.html">Component_Sprite (组件_精灵)</a></li>
+<li><a href="../classes/Component_StackLayoutBehavior.html">Component_StackLayoutBehavior (组件_堆叠布局行为)</a></li>
+<li><a href="../classes/Component_TextBehavior.html">Component_TextBehavior (组件_文本行为)</a></li>
+<li><a href="../classes/Component_TextInput.html">Component_TextInput (组件_文本输入)</a></li>
+<li><a href="../classes/Component_TextRenderer.html">Component_TextRenderer (组件_文本渲染器)</a></li>
+<li><a href="../classes/Component_ThreePartImage.html">Component_ThreePartImage (组件_三段式图像)</a></li>
+<li><a href="../classes/Component_TilingPlane.html">Component_TilingPlane (组件_平铺平面)</a></li>
+<li><a href="../classes/Component_TilingSprite.html">Component_TilingSprite (组件_平铺精灵)</a></li>
+<li><a href="../classes/Component_Timer.html">Component_Timer (组件_计时器)</a></li>
+<li><a href="../classes/Component_TintAnimation.html">Component_TintAnimation (组件_着色动画)</a></li>
+<li><a href="../classes/Component_UIBehavior.html">Component_UIBehavior (组件_UI行为)</a></li>
+<li><a href="../classes/Component_Viewport.html">Component_Viewport (组件_视口)</a></li>
+<li><a href="../classes/Component_Visual.html">Component_Visual (组件_视觉)</a></li>
+<li><a href="../classes/Component_WebStartBehavior.html">Component_WebStartBehavior (组件_Web启动行为)</a></li>
+<li><a href="../classes/Component_WobbleAnimation.html">Component_WobbleAnimation (组件_摆动动画)</a></li>
+<li><a href="../classes/Component_ZoomAnimation.html">Component_ZoomAnimation (组件_缩放动画)</a></li>
+<li><a href="../classes/ContainerDisposeBehavior.html">ContainerDisposeBehavior (容器销毁行为)</a></li>
+<li><a href="../classes/DataManager.html">DataManager (数据管理器)</a></li>
+<li><a href="../classes/DataOptimizer.html">DataOptimizer (数据优化器)</a></li>
+<li><a href="../classes/Easing.html">Easing (缓动)</a></li>
+<li><a href="../classes/Easings.html">Easings (缓动函数)</a></li>
+<li><a href="../classes/EasingTypes.html">EasingTypes (缓动类型)</a></li>
+<li><a href="../classes/Fonts.html">Fonts (字体)</a></li>
+<li><a href="../classes/Formula.html">Formula (公式)</a></li>
+<li><a href="../classes/GameManager.html">GameManager (游戏管理器)</a></li>
+<li><a href="../classes/GameTemp.html">GameTemp (游戏临时数据)</a></li>
+<li><a href="../classes/Helper.html">Helper (助手)</a></li>
+<li><a href="../classes/ImageHandling.html">ImageHandling (图像处理)</a></li>
+<li><a href="../classes/InterpreterContext.html">InterpreterContext (解释器上下文)</a></li>
+<li><a href="../classes/LanguageManager.html">LanguageManager (语言管理器)</a></li>
+<li><a href="../classes/LayoutManagementMode.html">LayoutManagementMode (布局管理模式)</a></li>
+<li><a href="../classes/LivePreviewInfo.html">LivePreviewInfo (实时预览信息)</a></li>
+<li><a href="../classes/Main.html">Main (主程序)</a></li>
+<li><a href="../classes/MessageSettings.html">MessageSettings (消息设置)</a></li>
+<li><a href="../classes/Object_Animation.html">Object_Animation (对象_动画)</a></li>
+<li><a href="../classes/Object_Background.html">Object_Background (对象_背景)</a></li>
+<li><a href="../classes/Object_Base.html">Object_Base (对象_基类)</a></li>
+<li><a href="../classes/Object_Character.html">Object_Character (对象_角色)</a></li>
+<li><a href="../classes/Object_CommonEvent.html">Object_CommonEvent (对象_通用事件)</a></li>
+<li><a href="../classes/Object_Container.html">Object_Container (对象_容器)</a></li>
+<li><a href="../classes/Object_DataGrid.html">Object_DataGrid (对象_数据网格)</a></li>
+<li><a href="../classes/Object_DomainContainer.html">Object_DomainContainer (对象_域容器)</a></li>
+<li><a href="../classes/Object_Frame.html">Object_Frame (对象_帧)</a></li>
+<li><a href="../classes/Object_FreeLayout.html">Object_FreeLayout (对象_自由布局)</a></li>
+<li><a href="../classes/Object_GridLayout.html">Object_GridLayout (对象_网格布局)</a></li>
+<li><a href="../classes/Object_Hotspot.html">Object_Hotspot (对象_热点)</a></li>
+<li><a href="../classes/Object_Image.html">Object_Image (对象_图像)</a></li>
+<li><a href="../classes/Object_ImageMap.html">Object_ImageMap (对象_图像映射)</a></li>
+<li><a href="../classes/Object_IntervalTimer.html">Object_IntervalTimer (对象_间隔计时器)</a></li>
+<li><a href="../classes/Object_Layout.html">Object_Layout (对象_布局)</a></li>
+<li><a href="../classes/Object_Live2DCharacter.html">Object_Live2DCharacter (对象_Live2D角色)</a></li>
+<li><a href="../classes/Object_Message.html">Object_Message (对象_消息)</a></li>
+<li><a href="../classes/Object_MessageArea.html">Object_MessageArea (对象_消息区域)</a></li>
+<li><a href="../classes/Object_Panel.html">Object_Panel (对象_面板)</a></li>
+<li><a href="../classes/Object_Picture.html">Object_Picture (对象_图片)</a></li>
+<li><a href="../classes/Object_Scene.html">Object_Scene (对象_场景)</a></li>
+<li><a href="../classes/Object_SpreadLayout.html">Object_SpreadLayout (对象_扩散布局)</a></li>
+<li><a href="../classes/Object_StackLayout.html">Object_StackLayout (对象_堆叠布局)</a></li>
+<li><a href="../classes/Object_Text.html">Object_Text (对象_文本)</a></li>
+<li><a href="../classes/Object_ThreePartImage.html">Object_ThreePartImage (对象_三段式图像)</a></li>
+<li><a href="../classes/Object_Timer.html">Object_Timer (对象_计时器)</a></li>
+<li><a href="../classes/Object_UIElement.html">Object_UIElement (对象_UI元素)</a></li>
+<li><a href="../classes/Object_Video.html">Object_Video (对象_视频)</a></li>
+<li><a href="../classes/Object_Viewport.html">Object_Viewport (对象_视口)</a></li>
+<li><a href="../classes/Object_Visual.html">Object_Visual (对象_视觉)</a></li>
+<li><a href="../classes/ObjectManager.html">ObjectManager (对象管理器)</a></li>
+<li><a href="../classes/RecordManager.html">RecordManager (记录管理器)</a></li>
+<li><a href="../classes/RendererTextLine.html">RendererTextLine (渲染器文本行)</a></li>
+<li><a href="../classes/RendererToken.html">RendererToken (渲染器令牌)</a></li>
+<li><a href="../classes/ResourceLoader.html">ResourceLoader (资源加载器)</a></li>
+<li><a href="../classes/ResourceManager.html">ResourceManager (资源管理器)</a></li>
+<li><a href="../classes/SceneManager.html">SceneManager (场景管理器)</a></li>
+<li><a href="../classes/Space.html">Space (空间)</a></li>
+<li><a href="../classes/Sprite_Debug.html">Sprite_Debug (精灵_调试)</a></li>
+<li><a href="../classes/Style.html">Style (样式)</a></li>
+<li><a href="../classes/UIElementPoint.html">UIElementPoint (UI元素点)</a></li>
+<li><a href="../classes/UIElementRectangle.html">UIElementRectangle (UI元素矩形)</a></li>
+<li><a href="../classes/UIManager.html">UIManager (UI管理器)</a></li>
+<li><a href="../classes/UpdateBehavior.html">UpdateBehavior (更新行为)</a></li>
+<li><a href="../classes/VariableStore.html">VariableStore (变量存储)</a></li>
+</ul>
+<ul class="apis modules" id="api-modules">
+<li><a href="../modules/gs.html">gs</a></li>
+<li><a href="../modules/gs.RendererTextLine.html">gs.RendererTextLine</a></li>
+<li><a href="../modules/ui.html">ui</a></li>
+<li><a href="../modules/vn.html">vn</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="yui3-u-3-4">
+<div id="api-options">显示：<label for="api-show-inherited">
+<input checked="" id="api-show-inherited" type="checkbox"/>继承的</label>
+<label for="api-show-protected">
+<input id="api-show-protected" type="checkbox"/>受保护的</label>
+<label for="api-show-private">
+<input id="api-show-private" type="checkbox"/>私有的</label>
+<label for="api-show-deprecated">
+<input id="api-show-deprecated" type="checkbox"/>已弃用的</label>
+</div>
+<div class="apidocs">
+<div id="docs-main">
+<div class="content">
+<h1>Component_LayoutSceneBehavior 类</h1>
+<div class="box meta">模块：<a href="../modules/gs.html">gs</a>
+</div>
 <div class="box intro">
-    <p>The base class of all scene-behavior components. A scene-behavior component
-define the logic of a single game scene.</p>
-
+<p>所有场景行为组件的基类。场景行为组件定义单个游戏场景的逻辑。</p>
 </div>
-
-
-<div id="classdocs" class="tabview">
-    <ul class="api-class-tabs">
-        <li class="api-class-tab index"><a href="#index">Index</a></li>
-
-            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
-    </ul>
-
-    <div>
-        <div id="index" class="api-class-tabpanel index">
-            <h2 class="off-left">Item Index</h2>
-
-                <div class="index-section methods">
-                    <h3>Methods</h3>
-
-                    <ul class="index-list methods">
-                            <li class="index-item method">
-                                <a href="#method_createControl">createControl</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_dispose">dispose</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_disposeControl">disposeControl</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_emitEvent">emitEvent</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_enterFullScreen">enterFullScreen</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_executeAnimation">executeAnimation</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_executeBindings">executeBindings</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_executeBindings">executeBindings</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_executeFormulas">executeFormulas</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_exitGame">exitGame</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_fullRefreshObject">fullRefreshObject</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_initialize">initialize</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_leaveFullScreen">leaveFullScreen</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_loadGame">loadGame</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_newGame">newGame</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_playSound">playSound</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_playVoice">playVoice</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_prepareData">prepareData</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_prepareSaveGame">prepareSaveGame</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_prepareVisual">prepareVisual</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_previousLayout">previousLayout</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_quitGame">quitGame</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_refreshObject">refreshObject</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_resetGlobalData">resetGlobalData</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_saveGame">saveGame</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_saveSettings">saveSettings</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_selectLanguage">selectLanguage</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_show">show</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_switchGameScene">switchGameScene</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_switchLayout">switchLayout</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_switchScene">switchScene</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_toggleFullScreen">toggleFullScreen</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_turnOffMusic">turnOffMusic</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_turnOffSound">turnOffSound</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_turnOffVoice">turnOffVoice</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_turnOnMusic">turnOnMusic</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_turnOnOffMusic">turnOnOffMusic</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_turnOnOffSound">turnOnOffSound</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_turnOnOffVoice">turnOnOffVoice</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_turnOnSound">turnOnSound</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_turnOnVoice">turnOnVoice</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_updateContent">updateContent</a>
-
-                            </li>
-                    </ul>
-                </div>
-
-
-
-        </div>
-
-            <div id="methods" class="api-class-tabpanel">
-                <h2 class="off-left">Methods</h2>
-
-<div id="method_createControl" class="method item">
-    <h3 class="name"><code>createControl</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which creates a new control from the specified descriptor.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
+<div class="tabview" id="classdocs">
+<ul class="api-class-tabs">
+<li class="api-class-tab index"><a href="#index">索引</a></li>
+<li class="api-class-tab methods"><a href="#methods">方法</a></li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Contains the descriptor and other data needed to construct the control.</li>
+<div>
+<div class="api-class-tabpanel index" id="index">
+<h2 class="off-left">项目索引</h2>
+<div class="index-section methods">
+<h3>方法</h3>
+<ul class="index-list methods">
+<li class="index-item method">
+<a href="#method_createControl">createControl (创建控件)</a>
+</li>
+<li class="index-item method">
+<a href="#method_dispose">dispose (销毁)</a>
+</li>
+<li class="index-item method">
+<a href="#method_disposeControl">disposeControl (销毁控件)</a>
+</li>
+<li class="index-item method">
+<a href="#method_emitEvent">emitEvent (触发事件)</a>
+</li>
+<li class="index-item method">
+<a href="#method_enterFullScreen">enterFullScreen (进入全屏)</a>
+</li>
+<li class="index-item method">
+<a href="#method_executeAnimation">executeAnimation (执行动画)</a>
+</li>
+<li class="index-item method">
+<a href="#method_executeBindings">executeBindings (执行绑定)</a>
+</li>
+<li class="index-item method">
+<a href="#method_executeBindings">executeBindings (执行绑定)</a>
+</li>
+<li class="index-item method">
+<a href="#method_executeFormulas">executeFormulas (执行公式)</a>
+</li>
+<li class="index-item method">
+<a href="#method_exitGame">exitGame (退出游戏)</a>
+</li>
+<li class="index-item method">
+<a href="#method_fullRefreshObject">fullRefreshObject (完整刷新对象)</a>
+</li>
+<li class="index-item method">
+<a href="#method_initialize">initialize (初始化)</a>
+</li>
+<li class="index-item method">
+<a href="#method_leaveFullScreen">leaveFullScreen (退出全屏)</a>
+</li>
+<li class="index-item method">
+<a href="#method_loadGame">loadGame (加载游戏)</a>
+</li>
+<li class="index-item method">
+<a href="#method_newGame">newGame (新游戏)</a>
+</li>
+<li class="index-item method">
+<a href="#method_playSound">playSound (播放声音)</a>
+</li>
+<li class="index-item method">
+<a href="#method_playVoice">playVoice (播放语音)</a>
+</li>
+<li class="index-item method">
+<a href="#method_prepareData">prepareData (准备数据)</a>
+</li>
+<li class="index-item method">
+<a href="#method_prepareSaveGame">prepareSaveGame (准备保存游戏)</a>
+</li>
+<li class="index-item method">
+<a href="#method_prepareVisual">prepareVisual (准备视觉效果)</a>
+</li>
+<li class="index-item method">
+<a href="#method_previousLayout">previousLayout (上一个布局)</a>
+</li>
+<li class="index-item method">
+<a href="#method_quitGame">quitGame (退出游戏)</a>
+</li>
+<li class="index-item method">
+<a href="#method_refreshObject">refreshObject (刷新对象)</a>
+</li>
+<li class="index-item method">
+<a href="#method_resetGlobalData">resetGlobalData (重置全局数据)</a>
+</li>
+<li class="index-item method">
+<a href="#method_saveGame">saveGame (保存游戏)</a>
+</li>
+<li class="index-item method">
+<a href="#method_saveSettings">saveSettings (保存设置)</a>
+</li>
+<li class="index-item method">
+<a href="#method_selectLanguage">selectLanguage (选择语言)</a>
+</li>
+<li class="index-item method">
+<a href="#method_show">show (显示)</a>
+</li>
+<li class="index-item method">
+<a href="#method_switchGameScene">switchGameScene (切换游戏场景)</a>
+</li>
+<li class="index-item method">
+<a href="#method_switchLayout">switchLayout (切换布局)</a>
+</li>
+<li class="index-item method">
+<a href="#method_switchScene">switchScene (切换场景)</a>
+</li>
+<li class="index-item method">
+<a href="#method_toggleFullScreen">toggleFullScreen (切换全屏)</a>
+</li>
+<li class="index-item method">
+<a href="#method_turnOffMusic">turnOffMusic (关闭音乐)</a>
+</li>
+<li class="index-item method">
+<a href="#method_turnOffSound">turnOffSound (关闭声音)</a>
+</li>
+<li class="index-item method">
+<a href="#method_turnOffVoice">turnOffVoice (关闭语音)</a>
+</li>
+<li class="index-item method">
+<a href="#method_turnOnMusic">turnOnMusic (打开音乐)</a>
+</li>
+<li class="index-item method">
+<a href="#method_turnOnOffMusic">turnOnOffMusic (切换音乐)</a>
+</li>
+<li class="index-item method">
+<a href="#method_turnOnOffSound">turnOnOffSound (切换声音)</a>
+</li>
+<li class="index-item method">
+<a href="#method_turnOnOffVoice">turnOnOffVoice (切换语音)</a>
+</li>
+<li class="index-item method">
+<a href="#method_turnOnSound">turnOnSound (打开声音)</a>
+</li>
+<li class="index-item method">
+<a href="#method_turnOnVoice">turnOnVoice (打开语音)</a>
+</li>
+<li class="index-item method">
+<a href="#method_updateContent">updateContent (更新内容)</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="api-class-tabpanel" id="methods">
+<h2 class="off-left">方法</h2>
+<div class="method item" id="method_createControl">
+<h3 class="name"><code>createControl</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>sender</code>
+</li>
+<li class="arg">
+<code>params</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>从指定的描述符创建一个新控件的动作方法。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">params</code>
+<span class="type">String</span>
+<div class="param-description">
+<ul>
+<li>包含构造控件所需的描述符和其他数据。</li>
 </ul>
 <ul>
-<li>params.descriptor - The control' descriptor. Can be a direct descriptor definition or a template name</li>
-<li>params.parent - A binding-expression which returns the control's parent.</li>
-<li>params.senderData - An object containing additional data merged into the control object.</li>
+<li>params.descriptor - 控件的描述符。可以是直接描述符定义或模板名称</li>
+<li>params.parent - 一个绑定表达式，它返回控件的父级。</li>
+<li>params.senderData - 一个对象，包含合并到控件对象中的其他数据。</li>
 </ul>
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_dispose" class="method item">
-    <h3 class="name"><code>dispose</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Disposes the scene.</p>
-
-    </div>
-
-
-
-
+</li>
+</ul>
 </div>
-<div id="method_disposeControl" class="method item">
-    <h3 class="name"><code>disposeControl</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which disposes the specified control.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The ID of the control to dispose. Can be a binding-expression.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_emitEvent" class="method item">
-    <h3 class="name"><code>emitEvent</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which emits the specified event.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
+<div class="method item" id="method_dispose">
+<h3 class="name"><code>dispose</code></h3>
+<span class="paren">()</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>销毁场景。</p>
+</div>
+</div>
+<div class="method item" id="method_disposeControl">
+<h3 class="name"><code>disposeControl</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>sender</code>
+</li>
+<li class="arg">
+<code>params</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>销毁指定控件的动作方法。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Contains event name, source and data.</li>
+</div>
+</li>
+<li class="param">
+<code class="param-name">params</code>
+<span class="type">String</span>
+<div class="param-description">
+<ul>
+<li>要销毁的控件的 ID。可以是绑定表达式。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_emitEvent">
+<h3 class="name"><code>emitEvent</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>sender</code>
+</li>
+<li class="arg">
+<code>params</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>触发指定事件的动作方法。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">params</code>
+<span class="type">Object</span>
+<div class="param-description">
+<ul>
+<li>包含事件名称、源和数据。</li>
 </ul>
 <ul>
-<li>params.name - The name of the event to emit</li>
-<li>params.source - A binding-expression to define the game object which should emit the event.</li>
-<li>params.data - An object containing additional event specific data.</li>
+<li>params.name - 要触发的事件的名称</li>
+<li>params.source - 用于定义应该触发事件的游戏对象的绑定表达式。</li>
+<li>params.data - 一个对象，包含其他特定于事件的数据。</li>
 </ul>
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_enterFullScreen" class="method item">
-    <h3 class="name"><code>enterFullScreen</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which enters fullscreen mode.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Boolean</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Can be <b>null</b></li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_executeAnimation" class="method item">
-    <h3 class="name"><code>executeAnimation</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which executes an animation on a specified target game object.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Contains target-id and animations: { target, animations }</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_executeBindings" class="method item">
-    <h3 class="name"><code>executeBindings</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which executes the specified bindings.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>An array of binding-definitions.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+<div class="method item" id="method_enterFullScreen">
+<h3 class="name"><code>enterFullScreen</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>sender</code>
+</li>
+<li class="arg">
+<code>params</code>
+</li>
+</ul><span class="paren">)</span>
 </div>
-<div id="method_executeBindings" class="method item">
-    <h3 class="name"><code>executeBindings</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which changes the game's aspect ratio.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Boolean</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>If <b>true</b> the game screen will stretched so that it fills the entire screen
-of the player without any black borders. Otherwise the game screen stretches but keeps its ratio
-so black borders are possible if the game resolution's ratio and the target display's ratio are not match. It can also
-be a binding-expression.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+<div class="meta">
+<p>
+</p>
 </div>
-<div id="method_executeFormulas" class="method item">
-    <h3 class="name"><code>executeFormulas</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which executes the specified formulas.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">ui.Formula</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>An array of formula-definitions.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+<div class="description">
+<p>进入全屏模式的动作方法。</p>
 </div>
-<div id="method_exitGame" class="method item">
-    <h3 class="name"><code>exitGame</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which exists the current game. It doesn't change the scene and
-should be called before switching back to the title screen or main menu.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Can be <b>null</b></li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_fullRefreshObject" class="method item">
-    <h3 class="name"><code>fullRefreshObject</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which triggers a full refresh on the object returned by the specified binding-expression.
-The params must be a direct binding-expression string.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
+</li>
+<li class="param">
+<code class="param-name">params</code>
+<span class="type">Boolean</span>
+<div class="param-description">
+<ul>
+<li>可以为<b>null</b></li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The binding expression.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_initialize" class="method item">
-    <h3 class="name"><code>initialize</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Initializes the scene.</p>
-
-    </div>
-
-
-
-
+</li>
+</ul>
 </div>
-<div id="method_leaveFullScreen" class="method item">
-    <h3 class="name"><code>leaveFullScreen</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which leaves fullscreen mode.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Boolean</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Can be <b>null</b></li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_loadGame" class="method item">
-    <h3 class="name"><code>loadGame</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which loads the game from the specified save slot.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
+<div class="method item" id="method_executeAnimation">
+<h3 class="name"><code>executeAnimation</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>sender</code>
+</li>
+<li class="arg">
+<code>params</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>在指定的目标游戏对象上执行动画的动作方法。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Contains the slot-index where the game should be loaded from.</li>
+</div>
+</li>
+<li class="param">
+<code class="param-name">params</code>
+<span class="type">Object</span>
+<div class="param-description">
+<ul>
+<li>包含目标 ID 和动画：{ target, animations }</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_executeBindings">
+<h3 class="name"><code>executeBindings</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>sender</code>
+</li>
+<li class="arg">
+<code>params</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>执行指定绑定的动作方法。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">params</code>
+<span class="type">Object</span>
+<div class="param-description">
+<ul>
+<li>绑定定义的数组。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_executeBindings">
+<h3 class="name"><code>executeBindings</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>sender</code>
+</li>
+<li class="arg">
+<code>params</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>改变游戏宽高比的动作方法。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">params</code>
+<span class="type">Boolean</span>
+<div class="param-description">
+<ul>
+<li>如果<b>true</b>游戏屏幕将被拉伸，以便它填充玩家的整个屏幕，没有任何黑色边框。 否则，游戏屏幕会拉伸但保持其比例</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_executeFormulas">
+<h3 class="name"><code>因此，如果游戏分辨率的比例与目标显示器的比例不匹配，则可能会出现黑色边框。 也可以是一个绑定表达式。</code></h3>
+<div class="args">
+<span class="paren">executeFormulas</span><ul class="args-list inline commas">
+<li class="arg">
+<code>(</code>
+</li>
+<li class="arg">
+<code>sender</code>
+</li>
+</ul><span class="paren">params</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>)</p>
+</div>
+<div class="params">
+<h4>执行指定公式的动作方法。</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">参数：</code>
+<span class="type">sender</span>
+<div class="param-description">
+<ul>
+<li>gs.Object_Base</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">发送者对象。</code>
+<span class="type">params</span>
+<div class="param-description">
+<ul>
+<li>ui.Formula</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_exitGame">
+<h3 class="name"><code>公式定义的数组。</code></h3>
+<div class="args">
+<span class="paren">exitGame</span><ul class="args-list inline commas">
+<li class="arg">
+<code>(</code>
+</li>
+<li class="arg">
+<code>sender</code>
+</li>
+</ul><span class="paren">params</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>)</p>
+</div>
+<div class="params">
+<h4>退出当前游戏的动作方法。它不会更改场景，并且</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">应该在切换回标题屏幕或主菜单之前调用。</code>
+<span class="type">参数：</span>
+<div class="param-description">
+<ul>
+<li>sender</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">gs.Object_Base</code>
+<span class="type">发送者对象。</span>
+<div class="param-description">
+<ul>
+<li>params<b>Object</b></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_fullRefreshObject">
+<h3 class="name"><code>可以为</code></h3>
+<div class="args">
+<span class="paren">null</span><ul class="args-list inline commas">
+<li class="arg">
+<code>fullRefreshObject</code>
+</li>
+<li class="arg">
+<code>(</code>
+</li>
+</ul><span class="paren">sender</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>params</p>
+</div>
+<div class="params">
+<h4>)</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">触发由指定绑定表达式返回的对象上的完全刷新的动作方法。</code>
+<span class="type">params 必须是一个直接绑定表达式字符串。</span>
+<div class="param-description">
+<ul>
+<li>参数：</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_initialize">
+<h3 class="name"><code>params</code></h3>
+<span class="paren">String</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>绑定表达式。</p>
+</div>
+</div>
+<div class="method item" id="method_leaveFullScreen">
+<h3 class="name"><code>initialize</code></h3>
+<div class="args">
+<span class="paren">()</span><ul class="args-list inline commas">
+<li class="arg">
+<code>初始化场景。</code>
+</li>
+<li class="arg">
+<code>leaveFullScreen</code>
+</li>
+</ul><span class="paren">(</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>sender</p>
+</div>
+<div class="params">
+<h4>params</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">)</code>
+<span class="type">退出全屏模式的动作方法。</span>
+<div class="param-description">
+<ul>
+<li>参数：</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。<b>params</b></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_loadGame">
+<h3 class="name"><code>Boolean</code></h3>
+<div class="args">
+<span class="paren">可以为</span><ul class="args-list inline commas">
+<li class="arg">
+<code>null</code>
+</li>
+<li class="arg">
+<code>loadGame</code>
+</li>
+</ul><span class="paren">(</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>sender</p>
+</div>
+<div class="params">
+<h4>params</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">)</code>
+<span class="type">从指定的保存槽加载游戏的动作方法。</span>
+<div class="param-description">
+<ul>
+<li>参数：</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
 </ul>
 <ul>
-<li>params.slot - The slot-index where the game should be loaded from. Can be a binding-expression.</li>
+<li>params</li>
 </ul>
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_newGame" class="method item">
-    <h3 class="name"><code>newGame</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which starts a new game.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Can be <b>null</b></li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_playSound" class="method item">
-    <h3 class="name"><code>playSound</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which plays the specified sound.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sound to play.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_playVoice" class="method item">
-    <h3 class="name"><code>playVoice</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which plays the specified voice.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The voice to play.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+<div class="method item" id="method_newGame">
+<h3 class="name"><code>Object</code></h3>
+<div class="args">
+<span class="paren">包含应该从中加载游戏的插槽索引。</span><ul class="args-list inline commas">
+<li class="arg">
+<code>params.slot - 应该从中加载游戏的插槽索引。可以是绑定表达式。</code>
+</li>
+<li class="arg">
+<code>newGame</code>
+</li>
+</ul><span class="paren">(</span>
 </div>
-<div id="method_prepareData" class="method item">
-    <h3 class="name"><code>prepareData</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Prepares all data for the scene and loads the necessary graphic and audio resources.</p>
-
-    </div>
-
-
-
-
+<div class="meta">
+<p>
+</p>
 </div>
-<div id="method_prepareSaveGame" class="method item">
-    <h3 class="name"><code>prepareSaveGame</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which prepares the game for saving by taking a snapshot of the current game state
-and storing it in GameManager.saveGame.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Can be <b>null</b>.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+<div class="description">
+<p>sender</p>
 </div>
-<div id="method_prepareVisual" class="method item">
-    <h3 class="name"><code>prepareVisual</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Prepares all visual game object for the scene.</p>
-
-    </div>
-
-
-
-
+<div class="params">
+<h4>params</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">)</code>
+<span class="type">开始一个新游戏的动作方法。</span>
+<div class="param-description">
+<ul>
+<li>参数：</li>
+</ul>
 </div>
-<div id="method_previousLayout" class="method item">
-    <h3 class="name"><code>previousLayout</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which returns to previous layout. (If savePrevious was set to <b>true</b> on switchLayout.).</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
+</li>
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。<b>params</b></li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Can be <b>null</b>.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_quitGame" class="method item">
-    <h3 class="name"><code>quitGame</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which quits the game.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Can be <b>null</b>.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_refreshObject" class="method item">
-    <h3 class="name"><code>refreshObject</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which triggers a refresh on the object returned by the specified binding-expression.
-The params must be a direct binding-expression string.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The binding expression.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_resetGlobalData" class="method item">
-    <h3 class="name"><code>resetGlobalData</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which resets global data storage.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Can be <b>null</b>.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+<div class="method item" id="method_playSound">
+<h3 class="name"><code>Object</code></h3>
+<div class="args">
+<span class="paren">可以为</span><ul class="args-list inline commas">
+<li class="arg">
+<code>null</code>
+</li>
+<li class="arg">
+<code>playSound</code>
+</li>
+</ul><span class="paren">(</span>
 </div>
-<div id="method_saveGame" class="method item">
-    <h3 class="name"><code>saveGame</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which saves the current game at the specified save slot.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>sender</p>
+</div>
+<div class="params">
+<h4>params</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">)</code>
+<span class="type">播放指定声音的动作方法。</span>
+<div class="param-description">
+<ul>
+<li>参数：</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Contains the slot-index where the game should be saved.</li>
+</div>
+</li>
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_playVoice">
+<h3 class="name"><code>params</code></h3>
+<div class="args">
+<span class="paren">Object</span><ul class="args-list inline commas">
+<li class="arg">
+<code>要播放的声音。</code>
+</li>
+<li class="arg">
+<code>playVoice</code>
+</li>
+</ul><span class="paren">(</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>sender</p>
+</div>
+<div class="params">
+<h4>params</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">)</code>
+<span class="type">播放指定语音的动作方法。</span>
+<div class="param-description">
+<ul>
+<li>参数：</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_prepareData">
+<h3 class="name"><code>params</code></h3>
+<span class="paren">Object</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>要播放的语音。</p>
+</div>
+</div>
+<div class="method item" id="method_prepareSaveGame">
+<h3 class="name"><code>prepareData</code></h3>
+<div class="args">
+<span class="paren">()</span><ul class="args-list inline commas">
+<li class="arg">
+<code>准备场景的所有数据并加载必要的图形和音频资源。</code>
+</li>
+<li class="arg">
+<code>prepareSaveGame</code>
+</li>
+</ul><span class="paren">(</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>sender</p>
+</div>
+<div class="params">
+<h4>params</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">)</code>
+<span class="type">通过拍摄当前游戏状态的快照</span>
+<div class="param-description">
+<ul>
+<li>并将它存储在 GameManager.saveGame 中，来准备游戏以进行保存的动作方法。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">参数：</code>
+<span class="type">sender</span>
+<div class="param-description">
+<ul>
+<li>gs.Object_Base<b>发送者对象。</b>params</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_prepareVisual">
+<h3 class="name"><code>Object</code></h3>
+<span class="paren">可以为</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>null</p>
+</div>
+</div>
+<div class="method item" id="method_previousLayout">
+<h3 class="name"><code>.</code></h3>
+<div class="args">
+<span class="paren">prepareVisual</span><ul class="args-list inline commas">
+<li class="arg">
+<code>()</code>
+</li>
+<li class="arg">
+<code>准备场景的所有视觉游戏对象。</code>
+</li>
+</ul><span class="paren">previousLayout</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>(<b>sender</b>params</p>
+</div>
+<div class="params">
+<h4>)</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">返回到上一个布局的动作方法。（如果在 switchLayout 上将 savePrevious 设置为</code>
+<span class="type">true）。</span>
+<div class="param-description">
+<ul>
+<li>参数：</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。<b>params</b>Object</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_quitGame">
+<h3 class="name"><code>可以为</code></h3>
+<div class="args">
+<span class="paren">null</span><ul class="args-list inline commas">
+<li class="arg">
+<code>.</code>
+</li>
+<li class="arg">
+<code>quitGame</code>
+</li>
+</ul><span class="paren">(</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>sender</p>
+</div>
+<div class="params">
+<h4>params</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">)</code>
+<span class="type">退出游戏的动作方法。</span>
+<div class="param-description">
+<ul>
+<li>参数：</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。<b>params</b>String</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_refreshObject">
+<h3 class="name"><code>可以为</code></h3>
+<div class="args">
+<span class="paren">null</span><ul class="args-list inline commas">
+<li class="arg">
+<code>.</code>
+</li>
+<li class="arg">
+<code>refreshObject</code>
+</li>
+</ul><span class="paren">(</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>sender</p>
+</div>
+<div class="params">
+<h4>params</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">)</code>
+<span class="type">触发由指定绑定表达式返回的对象上的刷新的动作方法。</span>
+<div class="param-description">
+<ul>
+<li>params 必须是一个直接绑定表达式字符串。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">参数：</code>
+<span class="type">sender</span>
+<div class="param-description">
+<ul>
+<li>gs.Object_Base</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_resetGlobalData">
+<h3 class="name"><code>发送者对象。</code></h3>
+<div class="args">
+<span class="paren">params</span><ul class="args-list inline commas">
+<li class="arg">
+<code>String</code>
+</li>
+<li class="arg">
+<code>绑定表达式。</code>
+</li>
+</ul><span class="paren">resetGlobalData</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>(</p>
+</div>
+<div class="params">
+<h4>sender</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">params</code>
+<span class="type">)</span>
+<div class="param-description">
+<ul>
+<li>重置全局数据存储的动作方法。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">参数：</code>
+<span class="type">sender</span>
+<div class="param-description">
+<ul>
+<li>gs.Object_Base<b>发送者对象。</b>params</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_saveGame">
+<h3 class="name"><code>Object</code></h3>
+<div class="args">
+<span class="paren">可以为</span><ul class="args-list inline commas">
+<li class="arg">
+<code>null</code>
+</li>
+<li class="arg">
+<code>.</code>
+</li>
+</ul><span class="paren">saveGame</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>(</p>
+</div>
+<div class="params">
+<h4>参数:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">params</code>
+<span class="type">对象</span>
+<div class="param-description">
+<ul>
+<li>包含游戏应该被保存的槽位索引。</li>
 </ul>
 <ul>
-<li>params.slot - The slot-index where the game should be saved. Can be a binding-expression.</li>
+<li>params.slot - 游戏应该被保存的槽位索引。 可以是一个绑定表达式。</li>
 </ul>
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_saveSettings" class="method item">
-    <h3 class="name"><code>saveSettings</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which saves game settings.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Can be <b>null</b>.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_selectLanguage" class="method item">
-    <h3 class="name"><code>selectLanguage</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which selects the specified language.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Number | String</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Index of the language to set. Can be a binding-expression.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_show" class="method item">
-    <h3 class="name"><code>show</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>visible</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Shows/Hides the current scene. A hidden scene is no longer shown and executed
-but all objects and data is still there and be shown again anytime.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">visible</code>
-                        <span class="type">Boolean</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Indicates if the scene should be shown or hidden.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+<div class="method item" id="method_saveSettings">
+<h3 class="name"><code>saveSettings</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>sender</code>
+</li>
+<li class="arg">
+<code>params</code>
+</li>
+</ul><span class="paren">)</span>
 </div>
-<div id="method_switchGameScene" class="method item">
-    <h3 class="name"><code>switchGameScene</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which switches to another game scene.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>保存游戏设置的动作方法。</p>
+</div>
+<div class="params">
+<h4>参数:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Contains the UID of the scene to switch to.</li>
+</div>
+</li>
+<li class="param">
+<code class="param-name">params</code>
+<span class="type">对象</span>
+<div class="param-description">
+<ul>
+<li>可以是<b>null</b>.</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_selectLanguage">
+<h3 class="name"><code>selectLanguage</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>sender</code>
+</li>
+<li class="arg">
+<code>params</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>选择指定语言的动作方法。</p>
+</div>
+<div class="params">
+<h4>参数:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">params</code>
+<span class="type">数字 | 字符串</span>
+<div class="param-description">
+<ul>
+<li>要设置的语言的索引。 可以是一个绑定表达式。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_show">
+<h3 class="name"><code>show</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>visible</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>显示/隐藏当前场景。 一个隐藏的场景不再显示和执行，但是所有的对象和数据仍然存在，并且可以随时再次显示。</p>
+</div>
+<div class="params">
+<h4>参数:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">visible</code>
+<span class="type">布尔值</span>
+<div class="param-description">
+<ul>
+<li>指示场景应该被显示还是隐藏。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_switchGameScene">
+<h3 class="name"><code>switchGameScene</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>sender</code>
+</li>
+<li class="arg">
+<code>params</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>切换到另一个游戏场景的动作方法。</p>
+</div>
+<div class="params">
+<h4>参数:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">params</code>
+<span class="type">对象</span>
+<div class="param-description">
+<ul>
+<li>包含要切换到的场景的 UID。</li>
 </ul>
 <ul>
-<li>params.uid - The UID of the scene to switch to.</li>
+<li>params.uid - 要切换到的场景的 UID。</li>
 </ul>
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_switchLayout" class="method item">
-    <h3 class="name"><code>switchLayout</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which switches to another layout.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Contains the name of the layout to switch to.</li>
+</div>
+</div>
+<div class="method item" id="method_switchLayout">
+<h3 class="name"><code>switchLayout</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>sender</code>
+</li>
+<li class="arg">
+<code>params</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>切换到另一个布局的动作方法。</p>
+</div>
+<div class="params">
+<h4>参数:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">params</code>
+<span class="type">对象</span>
+<div class="param-description">
+<ul>
+<li>包含要切换到的布局的名称。</li>
 </ul>
 <ul>
-<li>params.name - The name of the layout to switch to.</li>
-<li>params.savePrevious - Indicates if the current layout should not be erased but paused and hidden instead so
-that it can be restored using <i>returnToPrevious</i> action.</li>
-<li>params.dataFields - Defines the data of "$dataFields" binding-expression variable. Can be a binding-expression
-or a direct object. Optional.</li>
+<li>params.name - 要切换到的布局的名称。</li>
+<li>params.savePrevious - 指示当前布局是否不应该被删除，而是暂停和隐藏，以便它可以使用<i>returnToPrevious</i>动作恢复。</li>
+<li>params.dataFields - 定义 "$dataFields" 绑定表达式变量的数据。 可以是一个绑定表达式或一个直接对象。 可选。</li>
 </ul>
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_switchScene" class="method item">
-    <h3 class="name"><code>switchScene</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which switches to another scene.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Contains the class name of the scene to switch to.</li>
+</div>
+</div>
+<div class="method item" id="method_switchScene">
+<h3 class="name"><code>switchScene</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>sender</code>
+</li>
+<li class="arg">
+<code>params</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>切换到另一个场景的动作方法。</p>
+</div>
+<div class="params">
+<h4>参数:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">params</code>
+<span class="type">对象</span>
+<div class="param-description">
+<ul>
+<li>包含要切换到的场景的类名。</li>
 </ul>
 <ul>
-<li>params.name - The class-name of the scene to switch to. The class must be defined in vn-namespace.</li>
+<li>params.name - 要切换到的场景的类名。 该类必须在 vn 命名空间中定义。</li>
 </ul>
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_toggleFullScreen" class="method item">
-    <h3 class="name"><code>toggleFullScreen</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which toggles between window and fullscreen mode.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Boolean | String</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Can be <b>null</b></li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_turnOffMusic" class="method item">
-    <h3 class="name"><code>turnOffMusic</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which turns off music.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Boolean | String</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Can be <b>null</b>.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_turnOffSound" class="method item">
-    <h3 class="name"><code>turnOffSound</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which turns off sound.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Boolean | String</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Can be <b>null</b>.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+<div class="method item" id="method_toggleFullScreen">
+<h3 class="name"><code>toggleFullScreen</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>sender</code>
+</li>
+<li class="arg">
+<code>params</code>
+</li>
+</ul><span class="paren">)</span>
 </div>
-<div id="method_turnOffVoice" class="method item">
-    <h3 class="name"><code>turnOffVoice</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which turns off voice.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Boolean | String</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Can be <b>null</b>.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+<div class="meta">
+<p>
+</p>
 </div>
-<div id="method_turnOnMusic" class="method item">
-    <h3 class="name"><code>turnOnMusic</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which turns on music.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Boolean | String</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Can be <b>null</b>.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+<div class="description">
+<p>在窗口和全屏模式之间切换的动作方法。</p>
 </div>
-<div id="method_turnOnOffMusic" class="method item">
-    <h3 class="name"><code>turnOnOffMusic</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which turns music on or off.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
+<div class="params">
+<h4>参数:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Boolean | String</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>If <b>true</b> music will be turned on. Otherwise it will be turned off. Can also be a binding-expression.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_turnOnOffSound" class="method item">
-    <h3 class="name"><code>turnOnOffSound</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which turns sound on or off.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
+</li>
+<li class="param">
+<code class="param-name">params</code>
+<span class="type">布尔值 | 字符串</span>
+<div class="param-description">
+<ul>
+<li>可以是<b>null</b></li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Boolean | String</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>If <b>true</b> sound will be turned on. Otherwise it will be turned off. Can also be a binding-expression.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_turnOnOffVoice" class="method item">
-    <h3 class="name"><code>turnOnOffVoice</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which turns voice on or off.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Boolean | String</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>If <b>true</b> voice will be turned on. Otherwise it will be turned off. Can also be a binding-expression.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_turnOnSound" class="method item">
-    <h3 class="name"><code>turnOnSound</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which turns on sound.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Boolean | String</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Can be <b>null</b>.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_turnOnVoice" class="method item">
-    <h3 class="name"><code>turnOnVoice</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>sender</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Action method which turns on voice.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">sender</code>
-                        <span class="type">gs.Object_Base</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The sender object.</li>
+<div class="method item" id="method_turnOffMusic">
+<h3 class="name"><code>turnOffMusic</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>sender</code>
+</li>
+<li class="arg">
+<code>params</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>关闭音乐的动作方法。</p>
+</div>
+<div class="params">
+<h4>参数:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Boolean | String</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Can be <b>null</b>.</li>
+</div>
+</li>
+<li class="param">
+<code class="param-name">params</code>
+<span class="type">布尔值 | 字符串</span>
+<div class="param-description">
+<ul>
+<li>可以是<b>null</b>.</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_updateContent" class="method item">
-    <h3 class="name"><code>updateContent</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Updates the scene's content.</p>
-
-    </div>
-
-
-
-
+</li>
+</ul>
 </div>
-            </div>
-
-
-
-    </div>
 </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="method item" id="method_turnOffSound">
+<h3 class="name"><code>turnOffSound</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>sender</code>
+</li>
+<li class="arg">
+<code>params</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>关闭声音的动作方法。</p>
+</div>
+<div class="params">
+<h4>参数:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">params</code>
+<span class="type">布尔值 | 字符串</span>
+<div class="param-description">
+<ul>
+<li>可以是<b>null</b>.</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_turnOffVoice">
+<h3 class="name"><code>turnOffVoice</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>sender</code>
+</li>
+<li class="arg">
+<code>params</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>关闭语音的动作方法。</p>
+</div>
+<div class="params">
+<h4>参数:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">params</code>
+<span class="type">布尔值 | 字符串</span>
+<div class="param-description">
+<ul>
+<li>可以是<b>null</b>.</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_turnOnMusic">
+<h3 class="name"><code>turnOnMusic</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>sender</code>
+</li>
+<li class="arg">
+<code>params</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>开启音乐的动作方法。</p>
+</div>
+<div class="params">
+<h4>参数:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">params</code>
+<span class="type">布尔值 | 字符串</span>
+<div class="param-description">
+<ul>
+<li>可以是<b>null</b>.</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_turnOnOffMusic">
+<h3 class="name"><code>turnOnOffMusic</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>sender</code>
+</li>
+<li class="arg">
+<code>params</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>开启或关闭音乐的动作方法。</p>
+</div>
+<div class="params">
+<h4>参数:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">params</code>
+<span class="type">布尔值 | 字符串</span>
+<div class="param-description">
+<ul>
+<li>如果<b>true</b>音乐将会开启。否则它将会被关闭。也可以是一个绑定表达式。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_turnOnOffSound">
+<h3 class="name"><code>turnOnOffSound</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>sender</code>
+</li>
+<li class="arg">
+<code>params</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>开启或关闭声音的动作方法。</p>
+</div>
+<div class="params">
+<h4>参数:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">params</code>
+<span class="type">布尔值 | 字符串</span>
+<div class="param-description">
+<ul>
+<li>如果<b>true</b>声音将会开启。否则它将会被关闭。也可以是一个绑定表达式。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_turnOnOffVoice">
+<h3 class="name"><code>turnOnOffVoice</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>sender</code>
+</li>
+<li class="arg">
+<code>params</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>开启或关闭语音的动作方法。</p>
+</div>
+<div class="params">
+<h4>参数:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">params</code>
+<span class="type">布尔值 | 字符串</span>
+<div class="param-description">
+<ul>
+<li>如果<b>true</b>语音将会开启。否则它将会被关闭。也可以是一个绑定表达式。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_turnOnSound">
+<h3 class="name"><code>turnOnSound</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>sender</code>
+</li>
+<li class="arg">
+<code>params</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>开启声音的动作方法。</p>
+</div>
+<div class="params">
+<h4>参数:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">params</code>
+<span class="type">布尔值 | 字符串</span>
+<div class="param-description">
+<ul>
+<li>可以是<b>null</b>.</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_turnOnVoice">
+<h3 class="name"><code>turnOnVoice</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>sender</code>
+</li>
+<li class="arg">
+<code>params</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>开启语音的动作方法。</p>
+</div>
+<div class="params">
+<h4>参数:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">sender</code>
+<span class="type">gs.Object_Base</span>
+<div class="param-description">
+<ul>
+<li>发送者对象。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">params</code>
+<span class="type">布尔值 | 字符串</span>
+<div class="param-description">
+<ul>
+<li>可以是<b>null</b>.</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_updateContent">
+<h3 class="name"><code>updateContent</code></h3>
+<span class="paren">()</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>更新场景的内容。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <script src="../assets/vendor/prettify/prettify-min.js"></script>
 <script>prettyPrint();</script>

@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+指示位图是否已加载。
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="generator" content="Adobe RoboHelp 2015" />
-<title>Bitmap Basics</title>
-<link rel="StyleSheet" href="default.css" type="text/css" />
-<link rel="stylesheet" href="highlight/styles/default.css" type="text/css" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Adobe RoboHelp 2015" name="generator"/>
+<title>HTML</title>
+<link href="default.css" rel="StyleSheet" type="text/css"/>
+<link href="highlight/styles/default.css" rel="stylesheet" type="text/css"/>
 <script src="highlight/highlight.pack.js" type="text/javascript">
 </script>
 <script type="text/javascript">
@@ -13,7 +13,7 @@
 hljs.initHighlightingOnLoad();
 //]]>
 </script>
-<script type="text/javascript" language="JavaScript">
+<script language="JavaScript" type="text/javascript">
 //<![CDATA[
 function reDo() {
   if (innerWidth != origWidth || innerHeight != origHeight)
@@ -37,199 +37,193 @@ visibility:hidden; }
 p.WebHelpNavBar { text-align:right; }
 -->
 </style>
-
-<script type="text/javascript" src="template/scripts/rh.min.js"></script>
-<script type="text/javascript" src="template/scripts/common.min.js"></script>
-<script type="text/javascript" src="template/scripts/topic.min.js"></script>
-<script type="text/javascript" src="template/scripts/constants.js"></script>
-<script type="text/javascript" src="template/scripts/utils.js"></script>
-<script type="text/javascript" src="template/scripts/mhutils.js"></script>
-<script type="text/javascript" src="template/scripts/mhlang.js"></script>
-<script type="text/javascript" src="template/scripts/mhver.js"></script>
-<script type="text/javascript" src="template/scripts/settings.js"></script>
-<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
-<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
-<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
-<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
-<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
- <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
-<script type="text/javascript" >
+<script src="template/scripts/rh.min.js" type="text/javascript"></script>
+<script src="template/scripts/common.min.js" type="text/javascript"></script>
+<script src="template/scripts/topic.min.js" type="text/javascript"></script>
+<script src="template/scripts/constants.js" type="text/javascript"></script>
+<script src="template/scripts/utils.js" type="text/javascript"></script>
+<script src="template/scripts/mhutils.js" type="text/javascript"></script>
+<script src="template/scripts/mhlang.js" type="text/javascript"></script>
+<script src="template/scripts/mhver.js" type="text/javascript"></script>
+<script src="template/scripts/settings.js" type="text/javascript"></script>
+<script src="template/scripts/XmlJsReader.js" type="text/javascript"></script>
+<script src="template/scripts/loadparentdata.js" type="text/javascript"></script>
+<script src="template/scripts/loadscreen.js" type="text/javascript"></script>
+<script src="template/scripts/loadprojdata.js" type="text/javascript"></script>
+<script src="template/scripts/mhtopic.js" type="text/javascript"></script>
+<link href="template/styles/topic.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
 gRootRelPath = ".";
 gCommonRootRelPath = ".";
 gTopicId = "4.1.0_3";
 </script>
- <meta name="topic-breadcrumbs" content="Scripter's Guide > Basic Engine" />
+<meta content="Scripter's Guide &gt; Basic Engine" name="topic-breadcrumbs"/>
 </head>
 <body>
-<script type="text/javascript" src="./ehlpdhtm.js"></script>
-
-<p class="Topic_Heading">Bitmap Basics</p>
-<p>&#160;</p>
-<p><span class="Topic_Start">I</span>n this chapter we will learn more about bitmaps and also how to display a text on screen.</p>
-<p>&#160;</p>
+<script src="./ehlpdhtm.js" type="text/javascript"></script>
+<p class="Topic_Heading">位图基础</p>
+<p> </p>
+<p><span class="Topic_Start">位图基础</span>I</p>
+<p> </p>
+<p>n this chapter we will learn more about bitmaps and also how to display a text on screen.</p>
 <p>As we learned in the chapters before, a bitmap object is just storing the image data without any knowledge about how to display itself on screen. But it also allows us to manipulate the image data by using its draw- and fill methods to draw colored shapes, other bitmaps and text on it. You can imagine a bitmap object</p>
-<p>like a sheet of paper where you can freely draw on. Of course you cannot draw beyond the bounds of the paper sheet, same for bitmaps.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Draw simple shapes</p>
-<p>&#160;</p>
-<p>We will start very simple by creating an in-memory bitmap, means a bitmap which is not loaded from disk, with a size of 400x400 pixels and draw two colored overlapping squares on it.</p>
+<p> </p>
+<p class="Sub_Heading">like a sheet of paper where you can freely draw on. Of course you cannot draw beyond the bounds of the paper sheet, same for bitmaps.</p>
+<p> </p>
+<p>绘制简单形状</p>
 <pre>
-<code class="coffee">
-###*
-* Prepares all visual game object for the scene.
+<code class="coffee">We will start very simple by creating an in-memory bitmap, means a bitmap which is not loaded from disk, with a size of 400x400 pixels and draw two colored overlapping squares on it.</code>
+</pre>
+<p> </p>
+<p>###*
+* 为场景准备所有视觉游戏对象。
 ###  
 prepareVisual: -&gt;
-    # Create a new in-memory bitmap
+    # 创建一个新的内存位图
     @bitmap = new gs.Bitmap(400, 400)
-    # Draw a red square at the top-left of the bitmap with a size of 250x250 pixels.
+    # 在位图的左上角绘制一个红色正方形，大小为 250x250 像素。
     @bitmap.fillRect(0, 0, 250, 250, new gs.Color(255, 0, 0))
-    # Draw a blue square starting from pixel 150, 150 with a size of 250x250 pixels.
+    # 从像素 150, 150 开始绘制一个蓝色正方形，大小为 250x250 像素。
     @bitmap.fillRect(150, 150, 250, 250, new gs.Color(0, 0, 255))
     
-    # Create a new sprite object to show our bitmap on screen.
+    # 创建一个新的 Sprite 对象以在屏幕上显示我们的位图。
     @sprite = new gs.Sprite(Graphics.viewport)
-    # Assign our bitmap to the sprite to display it on screen
+    # 将我们的位图分配给 Sprite 以在屏幕上显示
     @sprite.bitmap = @bitmap
-    # Setup the position on screen. We make it centered.
+    # 设置屏幕上的位置。我们使其居中。
     @sprite.x = (Graphics.width - @bitmap.width) / 2
     @sprite.y = (Graphics.height - @bitmap.height) / 2
-    # Define the portion of the bitmap we want to display on screen.
+    # 定义我们要显示在屏幕上的位图部分。
     @sprite.srcRect = new gs.Rect(0, 0, @bitmap.width, @bitmap.height)
     
-    # We are done with preparing our visual objects. So we can start
-    # the screen transition to fade in our new created objects smoothly.
+    # 我们已经完成了准备视觉对象。所以我们可以开始
+    # 屏幕过渡，使我们新创建的对象平滑地淡入。
     @transition()
     
 ###*
-* Prepares all data for the scene and loads the necessary graphic and audio resources.
+* 准备场景的所有数据并加载必要的图形和音频资源。
 ### 
 prepareData: -&gt;
-    # We don't need to do anything here since our bitmap is created in memory and not
-    # loaded from disk this time.</code>
-</pre>
-<p>&#160;</p>
-<p>We only need to change prepareVisual method to create our in-memory bitmap and then create a sprite to display the bitmap on screen in the same way as we did in the <a href="Display_a_Picture.htm">Display a Picture</a> chapter. We can leave prepareData empty this time since we don't need to load anything or prepare any kind of game data.</p>
-<p>&#160;</p>
-<p>If we start our game now, we can see two colored overlapping squares at the center of the screen.</p>
-<p>&#160;</p>
-<p><img src="image26.gif" alt="" style=" border:none; width:100%; max-width:507px;" border="0" /></p>
-<p>&#160;</p>
-<p class="Sub_Heading">Draw text</p>
-<p>&#160;</p>
-<p>Next we want to do something more interesting: Let's draw a text on our bitmap!</p>
+    # 我们在这里不需要做任何事情，因为我们的位图是在内存中创建的，而不是
+    # 这次从磁盘加载。<a href="Display_a_Picture.htm">我们只需要更改 prepareVisual 方法来创建我们的内存位图，然后像在</a>显示图片</p>
+<p> </p>
+<p>章节中一样创建一个 Sprite 来在屏幕上显示位图。这次我们可以将 prepareData 留空，因为我们不需要加载任何东西或准备任何游戏数据。</p>
+<p> </p>
+<p><img alt="" border="0" src="image26.gif" style=" border:none; width:100%; max-width:507px;"/></p>
+<p> </p>
+<p class="Sub_Heading">如果我们现在开始游戏，我们将在屏幕中央看到两个重叠的彩色正方形。</p>
+<p> </p>
+<p>绘制文本</p>
 <pre>
-<code class="coffee">
-###*
-* Prepares all visual game object for the scene.
+<code class="coffee">接下来，我们想做一些更有趣的事情：让我们在位图上绘制文本！</code>
+</pre>
+<p> </p>
+<p>###*
+* 为场景准备所有视觉游戏对象。
 ###  
 prepareVisual: -&gt;
-    # Create a new in-memory bitmap
+    # 创建一个新的内存位图
     @bitmap = new gs.Bitmap(400, 400)
-    # Draw a red square at the top-left of the bitmap with a size of 250x250 pixels.
+    # 在位图的左上角绘制一个红色正方形，大小为 250x250 像素。
     @bitmap.fillRect(0, 0, 250, 250, new gs.Color(255, 0, 0))
-    # Draw a blue square starting from pixel 150, 150 with a size of 250x250 pixels.
+    # 从像素 150, 150 开始绘制一个蓝色正方形，大小为 250x250 像素。
     @bitmap.fillRect(150, 150, 250, 250, new gs.Color(0, 0, 255))
     
-    # Set "Time New Roman" as font family
+    # 将“Times New Roman”设置为字体系列
     @bitmap.font.name = "Times New Roman"
-    # Set font size to 32 pixel.
+    # 将字体大小设置为 32 像素。
     @bitmap.font.size = 32
-    # Set a default black border
+    # 设置默认黑色边框
     @bitmap.font.border = yes
-    # Set italic style
+    # 设置斜体样式
     @bitmap.font.italic = yes
-    # Draw the text "VN Maker!" at the center of the bitmap.
+    # 在位图的中心绘制文本“VN Maker！”。
     @bitmap.drawText(0, 0, 400, 400, "VN Maker!", 1, 1)
     
-    # Create a new sprite object to show our bitmap on screen.
+    # 创建一个新的 Sprite 对象以在屏幕上显示我们的位图。
     @sprite = new gs.Sprite(Graphics.viewport)
-    # Assign our bitmap to the sprite to display it on screen
+    # 将我们的位图分配给 Sprite 以在屏幕上显示
     @sprite.bitmap = @bitmap
-    # Setup the position on screen. We make it centered.
+    # 设置屏幕上的位置。我们使其居中。
     @sprite.x = (Graphics.width - @bitmap.width) / 2
     @sprite.y = (Graphics.height - @bitmap.height) / 2
-    # Define the portion of the bitmap we want to display on screen.
+    # 定义我们要显示在屏幕上的位图部分。
     @sprite.srcRect = new gs.Rect(0, 0, @bitmap.width, @bitmap.height)
     
-    # We are done with preparing our visual objects. So we can start
-    # the screen transition to fade in our new created objects smoothly.
-    @transition()</code>
-</pre>
-<p>&#160;</p>
-<p>The only part we have changed from our square example is this one:</p>
+    # 我们已经完成了准备视觉对象。所以我们可以开始
+    # 屏幕过渡，使我们新创建的对象平滑地淡入。
+    @transition()</p>
 <pre>
-<code class="coffee">
-# Set "Time New Roman" as font family
+<code class="coffee">我们唯一改变的部分是我们上面正方形示例中的这一部分：</code>
+</pre>
+<p># 将“Times New Roman”设置为字体系列
 @bitmap.font.name = "Times New Roman"
-# Set font size to 32 pixel.
+# 将字体大小设置为 32 像素。
 @bitmap.font.size = 32
-# Set a default black border
+# 设置默认黑色边框
 @bitmap.font.border = yes
-# Set italic style
+# 设置斜体样式
 @bitmap.font.italic = yes
-# Draw the text "VN Maker!" at the center of the bitmap.
-@bitmap.drawText(0, 0, 400, 400, "VN Maker!", gs.TextAlignment.CENTER, gs.TextAlignment.CENTER)</code>
-</pre>
-<p>Each bitmap object has an own gs.Font object which can be accessed via the font-property. So we can easily set common font properties like the font family, size, style, etc.</p>
-<p>&#160;</p>
-<p>With drawText method we can draw a text on the bitmap. We just have to specify a rectangular area on our bitmap where we want to draw the text. That area is also used to align the text with the last two optional parameters where we pass gs.TextAlignment.CENTER for both, the horizontal and the vertical align. Since the size of the rectangular area is 400x400 pixel, which is the same size as our bitmap, the text appears centered on the bitmap.</p>
-<p>&#160;</p>
-<p><img src="image28.gif" alt="" style=" border:none; width:100%; max-width:457px;" border="0" /></p>
-<p>&#160;</p>
-<p>While that sounds a bit complicated for a beginner at first, if you feel a bit unsure about it, just play around with it. Try to remove the last two parameters and see what happens then and also try to modify the x- and y coordinates of the rectangular area(the first two parameters) to see how the text moves. Don't hesitate to ask questions in our forums!</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Draw bitmaps</p>
-<p>&#160;</p>
-<p>In the last two examples we drew some shapes and text but it is also possible to draw a bitmap on another bitmap. In the next example, we will draw an image icon and a text next to it like in an item-menu for example.</p>
+# 在位图的中心绘制文本“VN Maker！”。
+@bitmap.drawText(0, 0, 400, 400, "VN Maker!", gs.TextAlignment.CENTER, gs.TextAlignment.CENTER)</p>
+<p> </p>
+<p>每个位图对象都有自己的 gs.Font 对象，可以通过 font 属性访问。因此，我们可以轻松设置常用的字体属性，如字体系列、大小、样式等。</p>
+<p> </p>
+<p><img alt="" border="0" src="image28.gif" style=" border:none; width:100%; max-width:457px;"/></p>
+<p> </p>
+<p>使用 drawText 方法，我们可以在位图上绘制文本。我们只需要指定位图上的一个矩形区域来绘制文本。该区域也用于通过最后两个可选参数对齐文本，我们在其中将 gs.TextAlignment.CENTER 传递给水平和垂直对齐。由于矩形区域的大小为 400x400 像素，与我们的位图大小相同，因此文本会出现在位图的中心。</p>
+<p> </p>
+<p class="Sub_Heading">虽然这对于初学者来说一开始听起来有点复杂，但如果您对此不太确定，请随意尝试。尝试删除最后两个参数，看看会发生什么，然后尝试修改矩形区域的 x 和 y 坐标（前两个参数）以查看文本如何移动。不要犹豫在我们的论坛上提问！</p>
+<p> </p>
+<p>绘制位图</p>
 <pre>
-<code class="coffee">
-###*
-* Prepares all visual game object for the scene.
+<code class="coffee">在最后两个示例中，我们绘制了一些形状和文本，但也可以将一个位图绘制到另一个位图上。在下一个示例中，我们将像在物品菜单中一样，绘制一个图像图标和旁边的文本。</code>
+</pre>
+<p>###*
+* 为场景准备所有视觉游戏对象。
 ###  
 prepareVisual: -&gt;
-    # Create a new in-memory bitmap with 400 pixels width and
-    # the height of the diamond icon bitmap.
+    # 创建一个新的内存位图，宽度为 400 像素，
+    # 高度为金刚石图标位图的高度。
     @bitmap = new gs.Bitmap(400, @diamondBitmap.height)
-    # Draws the diamond bitmap on our in-memory bitmap at the left side (0, 0).
+    # 在内存位图的左侧 (0, 0) 绘制金刚石位图。
     @bitmap.blt(0, 0, @diamondBitmap, @diamondBitmap.bounds)
-    # Set "Time New Roman" as font family
+    # 将“Times New Roman”设置为字体系列
     @bitmap.font.name = "Times New Roman"
-    # Set font size to 32 pixel.
+    # 将字体大小设置为 32 像素。
     @bitmap.font.size = 32
-    # Set a default black border
+    # 设置默认黑色边框
     @bitmap.font.border = yes
-    # Set italic style
+    # 设置斜体样式
     @bitmap.font.italic = yes
-    # Draw the text "A diamond!" next to the diamond icon. We set the x-coordinate to the 
-    # width of the diamond-icon to let the text appear next to the diamond. We add 10 pixel
-    # extra space to make it look more nice.
+    # 在金刚石图标旁边绘制文本“A diamond！”。我们将 x 坐标设置为
+    # 金刚石图标的宽度，以便文本出现在金刚石旁边。我们添加 10 像素
+    # 额外的空间，使其看起来更漂亮。
     @bitmap.drawText(@diamondBitmap.width + 10, 0, @bitmap.width, @bitmap.height, "A diamond!")
     
-    # Create a new sprite object to show our bitmap on screen.
+    # 创建一个新的 Sprite 对象以在屏幕上显示我们的位图。
     @sprite = new gs.Sprite(Graphics.viewport)
-    # Assign our bitmap to the sprite to display it on screen
+    # 将我们的位图分配给 Sprite 以在屏幕上显示
     @sprite.bitmap = @bitmap
-    # Setup the position on screen. We make it centered.
+    # 设置屏幕上的位置。我们使其居中。
     @sprite.x = (Graphics.width - @bitmap.width) / 2
     @sprite.y = (Graphics.height - @bitmap.height) / 2
-    # Define the portion of the bitmap we want to display on screen.
+    # 定义我们要显示在屏幕上的位图部分。
     @sprite.srcRect = new gs.Rect(0, 0, @bitmap.width, @bitmap.height)
     
-    # We are done with preparing our visual objects. So we can start
-    # the screen transition to fade in our new created objects smoothly.
+    # 我们已经完成了准备视觉对象。所以我们可以开始
+    # 屏幕过渡，使我们新创建的对象平滑地淡入。
     @transition()
     
 ###*
-* Prepares all data for the scene and loads the necessary graphic and audio resources.
+* 准备场景的所有数据并加载必要的图形和音频资源。
 ### 
 prepareData: -&gt;
-    # Load the diamond icon image
-    @diamondBitmap = ResourceManager.getBitmap("Graphics/Pictures/diamond-large-on")</code>
-</pre>
-<p>As we can see in this example, with the blt-method we can draw another bitmap an our bitmap. In our case we draw the loaded diamond icon at the left side of our bitmap. In the next step, we are just draw a text "A diamond!" next to the diamond icon.</p>
-<p>&#160;</p>
-<p><img src="image29.gif" alt="" style=" border:none; width:100%; max-width:231px;" border="0" /></p>
-<p>&#160;</p>
-<p>If you feel a bit unsure, you should try to play around more with bitmaps and drawing to get a better feeling for it. Just grab the Basic Engine documentations to see what kind of other methods are available for gs.Bitmap and gs.Font and do some experimenting.</p>
+    # 加载金刚石图标图像
+    @diamondBitmap = ResourceManager.getBitmap("Graphics/Pictures/diamond-large-on")</p>
+<p> </p>
+<p><img alt="" border="0" src="image29.gif" style=" border:none; width:100%; max-width:231px;"/></p>
+<p> </p>
+<p>正如我们在示例中看到的，使用 blt 方法，我们可以在位图上绘制另一个位图。在我们的例子中，我们将加载的金刚石图标绘制在位图的左侧。在下一步中，我们只是绘制文本“A diamond！”在金刚石图标旁边。</p>
 </body>
 </html>

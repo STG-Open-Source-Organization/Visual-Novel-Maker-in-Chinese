@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+速度
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="generator" content="Adobe RoboHelp 2015" />
-<title>Scripter's Guide</title>
-<link rel="StyleSheet" href="default.css" type="text/css" />
-<link rel="stylesheet" href="highlight/styles/default.css" type="text/css" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Adobe RoboHelp 2015" name="generator"/>
+<title>- 旋转速度。值越高，旋转越快。</title>
+<link href="default.css" rel="StyleSheet" type="text/css"/>
+<link href="highlight/styles/default.css" rel="stylesheet" type="text/css"/>
 <script src="highlight/highlight.pack.js" type="text/javascript">
 </script>
 <script type="text/javascript">
@@ -13,7 +13,7 @@
 hljs.initHighlightingOnLoad();
 //]]>
 </script>
-<script type="text/javascript" language="JavaScript">
+<script language="JavaScript" type="text/javascript">
 //<![CDATA[
 function reDo() {
   if (innerWidth != origWidth || innerHeight != origHeight)
@@ -37,65 +37,55 @@ visibility:hidden; }
 p.WebHelpNavBar { text-align:right; }
 -->
 </style>
-
-<script type="text/javascript" src="template/scripts/rh.min.js"></script>
-<script type="text/javascript" src="template/scripts/common.min.js"></script>
-<script type="text/javascript" src="template/scripts/topic.min.js"></script>
-<script type="text/javascript" src="template/scripts/constants.js"></script>
-<script type="text/javascript" src="template/scripts/utils.js"></script>
-<script type="text/javascript" src="template/scripts/mhutils.js"></script>
-<script type="text/javascript" src="template/scripts/mhlang.js"></script>
-<script type="text/javascript" src="template/scripts/mhver.js"></script>
-<script type="text/javascript" src="template/scripts/settings.js"></script>
-<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
-<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
-<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
-<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
-<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
- <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
-<script type="text/javascript" >
+<script src="template/scripts/rh.min.js" type="text/javascript"></script>
+<script src="template/scripts/common.min.js" type="text/javascript"></script>
+<script src="template/scripts/topic.min.js" type="text/javascript"></script>
+<script src="template/scripts/constants.js" type="text/javascript"></script>
+<script src="template/scripts/utils.js" type="text/javascript"></script>
+<script src="template/scripts/mhutils.js" type="text/javascript"></script>
+<script src="template/scripts/mhlang.js" type="text/javascript"></script>
+<script src="template/scripts/mhver.js" type="text/javascript"></script>
+<script src="template/scripts/settings.js" type="text/javascript"></script>
+<script src="template/scripts/XmlJsReader.js" type="text/javascript"></script>
+<script src="template/scripts/loadparentdata.js" type="text/javascript"></script>
+<script src="template/scripts/loadscreen.js" type="text/javascript"></script>
+<script src="template/scripts/loadprojdata.js" type="text/javascript"></script>
+<script src="template/scripts/mhtopic.js" type="text/javascript"></script>
+<link href="template/styles/topic.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
 gRootRelPath = ".";
 gCommonRootRelPath = ".";
 gTopicId = "4";
 </script>
 </head>
 <body>
-<script type="text/javascript" src="./ehlpdhtm.js"></script>
-
-<p class="Topic_Heading">Scripter's Guide</p>
-<p>&#160;</p>
-<p><span class="Topic_Start">V</span>isual Novel Maker offers powerful scripting to change the game engine to fit your needs. The Help File contains a detailed Script- and Plugin Reference where you can find API Documentations, Examples, etc.</p>
-<p>&#160;</p>
-<p>The Scripter's Guide is a separate guide to help you making your first steps with Visual Novel Maker's game scripting system. If you have further questions or if you just need help with something, please don't hesitate to ask in our forums!</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Scripting in VN Maker</p>
-<p>&#160;</p>
-<p>As a visual novel developer, if you hear the term "Scripting" you probably think about something like this:</p>
+<script src="./ehlpdhtm.js" type="text/javascript"></script>
+<p class="Topic_Heading">持续时间</p>
+<p> </p>
+<p><span class="Topic_Start">- 确定旋转动画将持续多长时间。</span>继续</p>
+<p> </p>
+<p>将使场景立即继续。</p>
+<p> </p>
+<p class="Sub_Heading">等待</p>
+<p> </p>
+<p>将使场景等待直到旋转完成。</p>
 <pre>
-<code class="coffee">
-show image "background.jpg" 
-show image "character_nina.png" at center 
-nina = create character "Nina", Color.Blue
-nina "Hey! How is it going!" 
-if $already_seen
-  nina "Ah... its just you..."
-else
-  nina "So nice to meet you!"</code>
+<code class="coffee">冻结屏幕</code>
 </pre>
-<p>That's just a fictional/fake example of course, but that's how scripting works in a traditional VN scripting engine without graphical user interface. However, VN Maker's scripting system is a completely different thing, you are one layer below. In VN Maker, scripting means to modify and extend the actual VN game engine and not to script your VN scenes line by line.</p>
-<p>&#160;</p>
-<p>Well, something like that could be built on top. Means if you learn VN Maker's game engine, you could probably built a traditional scripting engine by yourself. However, VN Maker provides a powerful, extensible graphical editor so it is highly recommended to script your scenes using the <a href="Scene_Content.htm">Scene Editor</a> to take full advantages of all VN Maker features.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">About this Guide</p>
-<p>&#160;</p>
-<p>In this guide you will learn &#160;the basics about VN Maker's basic game engine as well as its object-component system and the actual VN engine. However, this guide will not teach you directly how to make a plugin or custom scene-editor commands or how to modify the in-game UI. If you are looking for a guide about that, check out the:</p>
-<p>&#160;</p>
-<p><a href="Plugin_Getting_Started.htm">Extension Documentation + Examples</a> (How to make plugins for editor and game engine)</p>
-<p><a href="IGUI_Getting_Started.htm">In-Game UI System Documentation + Examples</a> (How to modify in-game UI layouts, etc.)</p>
-<p>&#160;</p>
-<p>Also, it is recommended to take a look at the:</p>
-<p>&#160;</p>
-<p><a href="Game_Script_API_Reference.htm">Game Script API Documentation</a></p>
-<p><a href="engine_doc/index.html">Basic Engine API Documentation</a></p>
+<p>停止所有命令的执行。屏幕将保持冻结状态，直到您调用 [屏幕过渡]。</p>
+<p> </p>
+<p>屏幕过渡<a href="Scene_Content.htm">此命令更改场景的显示方式。</a>文件</p>
+<p> </p>
+<p class="Sub_Heading">- 选择一个蒙版文件应用于屏幕。</p>
+<p> </p>
+<p>模糊 -</p>
+<p> </p>
+<p><a href="Plugin_Getting_Started.htm">对蒙版边缘进行平滑处理。这是模糊值 0（最小值）和 255（最大值）的比较。</a>持续时间</p>
+<p><a href="IGUI_Getting_Started.htm">- 确定过渡速度。</a>HTML</p>
+<p> </p>
+<p>脚本编写者指南</p>
+<p> </p>
+<p><a href="Game_Script_API_Reference.htm">脚本编写者指南</a></p>
+<p><a href="engine_doc/index.html">V</a></p>
 </body>
 </html>

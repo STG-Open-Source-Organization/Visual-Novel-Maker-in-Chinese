@@ -1,355 +1,236 @@
-<!DOCTYPE html>
+html
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>GSQItem</title>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
-    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
-    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
-    <link rel="icon" href="../assets/favicon.ico">
-    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+<meta charset="utf-8"/>
+<title>GSQItem</title>
+<link href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css" rel="stylesheet"/>
+<link href="../assets/vendor/prettify/prettify-min.css" rel="stylesheet"/>
+<link href="../assets/css/main.css" id="site_styles" rel="stylesheet"/>
+<link href="../assets/favicon.ico" rel="icon"/>
+<script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
 </head>
 <body class="yui3-skin-sam">
-
 <div id="doc">
-    <div id="hd" class="yui3-g header">
-        <div class="yui3-u-3-4">
-                <h1><img src="../assets/css/logo.png" title="" width="117" height="52"></h1>
-        </div>
-        <div class="yui3-u-1-4 version">
-            <em>API Docs for: </em>
-        </div>
-    </div>
-    <div id="bd" class="yui3-g">
-
-        <div class="yui3-u-1-4">
-            <div id="docs-sidebar" class="sidebar apidocs">
-                <div id="api-list">
-                    <h2 class="off-left">APIs</h2>
-                    <div id="api-tabview" class="tabview">
-                        <ul class="tabs">
-                            <li><a href="#api-classes">Classes</a></li>
-                            <li><a href="#api-modules">Modules</a></li>
-                        </ul>
-                
-                        <div id="api-tabview-filter">
-                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
-                        </div>
-                
-                        <div id="api-tabview-panel">
-                            <ul id="api-classes" class="apis classes">
-                                <li><a href="../classes/DataRecordView.html">DataRecordView</a></li>
-                                <li><a href="../classes/DataSourceDescriptor.html">DataSourceDescriptor</a></li>
-                                <li><a href="../classes/DialogDescriptor.html">DialogDescriptor</a></li>
-                                <li><a href="../classes/FormatHelper.html">FormatHelper</a></li>
-                                <li><a href="../classes/GS.GAME.html">GS.GAME</a></li>
-                                <li><a href="../classes/GSButton.html">GSButton</a></li>
-                                <li><a href="../classes/GSCheckBox.html">GSCheckBox</a></li>
-                                <li><a href="../classes/GSCollectionView.html">GSCollectionView</a></li>
-                                <li><a href="../classes/GSColorView.html">GSColorView</a></li>
-                                <li><a href="../classes/GSContainer.html">GSContainer</a></li>
-                                <li><a href="../classes/GSDataRecordField.html">GSDataRecordField</a></li>
-                                <li><a href="../classes/GSDispositionView.html">GSDispositionView</a></li>
-                                <li><a href="../classes/GSDocumentTree.html">GSDocumentTree</a></li>
-                                <li><a href="../classes/GSFilePathBox.html">GSFilePathBox</a></li>
-                                <li><a href="../classes/GSGraphicalPathView.html">GSGraphicalPathView</a></li>
-                                <li><a href="../classes/GSImageView.html">GSImageView</a></li>
-                                <li><a href="../classes/GSLabel.html">GSLabel</a></li>
-                                <li><a href="../classes/GSLive2DView.html">GSLive2DView</a></li>
-                                <li><a href="../classes/GSParameterView.html">GSParameterView</a></li>
-                                <li><a href="../classes/GSPopupField.html">GSPopupField</a></li>
-                                <li><a href="../classes/GSQCheckBox.html">GSQCheckBox</a></li>
-                                <li><a href="../classes/GSQDataRecordField.html">GSQDataRecordField</a></li>
-                                <li><a href="../classes/GSQItem.html">GSQItem</a></li>
-                                <li><a href="../classes/GSQPopupField.html">GSQPopupField</a></li>
-                                <li><a href="../classes/GSQSlider.html">GSQSlider</a></li>
-                                <li><a href="../classes/GSQStepper.html">GSQStepper</a></li>
-                                <li><a href="../classes/GSQTextArea.html">GSQTextArea</a></li>
-                                <li><a href="../classes/GSRadioButton.html">GSRadioButton</a></li>
-                                <li><a href="../classes/GSResourcePopupField.html">GSResourcePopupField</a></li>
-                                <li><a href="../classes/GSSceneContentView.html">GSSceneContentView</a></li>
-                                <li><a href="../classes/GSSceneToolBox.html">GSSceneToolBox</a></li>
-                                <li><a href="../classes/GSSlider.html">GSSlider</a></li>
-                                <li><a href="../classes/GSSpacer.html">GSSpacer</a></li>
-                                <li><a href="../classes/GSSplitView.html">GSSplitView</a></li>
-                                <li><a href="../classes/GSStepper.html">GSStepper</a></li>
-                                <li><a href="../classes/GSTable.html">GSTable</a></li>
-                                <li><a href="../classes/GSTabView.html">GSTabView</a></li>
-                                <li><a href="../classes/GSTextField.html">GSTextField</a></li>
-                                <li><a href="../classes/GSToneView.html">GSToneView</a></li>
-                                <li><a href="../classes/GSViewItem.html">GSViewItem</a></li>
-                                <li><a href="../classes/LanguageBundle.html">LanguageBundle</a></li>
-                                <li><a href="../classes/SceneCommand.html">SceneCommand</a></li>
-                                <li><a href="../classes/View.html">View</a></li>
-                            </ul>
-                
-                
-                            <ul id="api-modules" class="apis modules">
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="yui3-u-3-4">
-                <div id="api-options">
-                    Show:
-                    <label for="api-show-inherited">
-                        <input type="checkbox" id="api-show-inherited" checked>
-                        Inherited
-                    </label>
-            
-                    <label for="api-show-protected">
-                        <input type="checkbox" id="api-show-protected">
-                        Protected
-                    </label>
-            
-                    <label for="api-show-private">
-                        <input type="checkbox" id="api-show-private">
-                        Private
-                    </label>
-                    <label for="api-show-deprecated">
-                        <input type="checkbox" id="api-show-deprecated">
-                        Deprecated
-                    </label>
-            
-                </div>
-            
-            <div class="apidocs">
-                <div id="docs-main">
-                    <div class="content">
-<h1>GSQItem Class</h1>
+<div class="yui3-g header" id="hd">
+<div class="yui3-u-3-4">
+<h1><img height="52" src="../assets/css/logo.png" title="" width="117"/></h1>
+</div>
+<div class="yui3-u-1-4 version">
+<em>API 文档：</em>
+</div>
+</div>
+<div class="yui3-g" id="bd">
+<div class="yui3-u-1-4">
+<div class="sidebar apidocs" id="docs-sidebar">
+<div id="api-list">
+<h2 class="off-left">APIs</h2>
+<div class="tabview" id="api-tabview">
+<ul class="tabs">
+<li><a href="#api-classes">Classes</a></li>
+<li><a href="#api-modules">Modules</a></li>
+</ul>
+<div id="api-tabview-filter">
+<input id="api-filter" placeholder="Type to filter APIs" type="search"/>
+</div>
+<div id="api-tabview-panel">
+<ul class="apis classes" id="api-classes">
+<li><a href="../classes/DataRecordView.html">DataRecordView</a></li>
+<li><a href="../classes/DataSourceDescriptor.html">DataSourceDescriptor</a></li>
+<li><a href="../classes/DialogDescriptor.html">DialogDescriptor</a></li>
+<li><a href="../classes/FormatHelper.html">FormatHelper</a></li>
+<li><a href="../classes/GS.GAME.html">GS.GAME</a></li>
+<li><a href="../classes/GSButton.html">GSButton</a></li>
+<li><a href="../classes/GSCheckBox.html">GSCheckBox</a></li>
+<li><a href="../classes/GSCollectionView.html">GSCollectionView</a></li>
+<li><a href="../classes/GSColorView.html">GSColorView</a></li>
+<li><a href="../classes/GSContainer.html">GSContainer</a></li>
+<li><a href="../classes/GSDataRecordField.html">GSDataRecordField</a></li>
+<li><a href="../classes/GSDispositionView.html">GSDispositionView</a></li>
+<li><a href="../classes/GSDocumentTree.html">GSDocumentTree</a></li>
+<li><a href="../classes/GSFilePathBox.html">GSFilePathBox</a></li>
+<li><a href="../classes/GSGraphicalPathView.html">GSGraphicalPathView</a></li>
+<li><a href="../classes/GSImageView.html">GSImageView</a></li>
+<li><a href="../classes/GSLabel.html">GSLabel</a></li>
+<li><a href="../classes/GSLive2DView.html">GSLive2DView</a></li>
+<li><a href="../classes/GSParameterView.html">GSParameterView</a></li>
+<li><a href="../classes/GSPopupField.html">GSPopupField</a></li>
+<li><a href="../classes/GSQCheckBox.html">GSQCheckBox</a></li>
+<li><a href="../classes/GSQDataRecordField.html">GSQDataRecordField</a></li>
+<li><a href="../classes/GSQItem.html">GSQItem</a></li>
+<li><a href="../classes/GSQPopupField.html">GSQPopupField</a></li>
+<li><a href="../classes/GSQSlider.html">GSQSlider</a></li>
+<li><a href="../classes/GSQStepper.html">GSQStepper</a></li>
+<li><a href="../classes/GSQTextArea.html">GSQTextArea</a></li>
+<li><a href="../classes/GSRadioButton.html">GSRadioButton</a></li>
+<li><a href="../classes/GSResourcePopupField.html">GSResourcePopupField</a></li>
+<li><a href="../classes/GSSceneContentView.html">GSSceneContentView</a></li>
+<li><a href="../classes/GSSceneToolBox.html">GSSceneToolBox</a></li>
+<li><a href="../classes/GSSlider.html">GSSlider</a></li>
+<li><a href="../classes/GSSpacer.html">GSSpacer</a></li>
+<li><a href="../classes/GSSplitView.html">GSSplitView</a></li>
+<li><a href="../classes/GSStepper.html">GSStepper</a></li>
+<li><a href="../classes/GSTable.html">GSTable</a></li>
+<li><a href="../classes/GSTabView.html">GSTabView</a></li>
+<li><a href="../classes/GSTextField.html">GSTextField</a></li>
+<li><a href="../classes/GSToneView.html">GSToneView</a></li>
+<li><a href="../classes/GSViewItem.html">GSViewItem</a></li>
+<li><a href="../classes/LanguageBundle.html">LanguageBundle</a></li>
+<li><a href="../classes/SceneCommand.html">SceneCommand</a></li>
+<li><a href="../classes/View.html">View</a></li>
+</ul>
+<ul class="apis modules" id="api-modules">
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="yui3-u-3-4">
+<div id="api-options">显示：<label for="api-show-inherited">
+<input checked="" id="api-show-inherited" type="checkbox"/>继承的</label>
+<label for="api-show-protected">
+<input id="api-show-protected" type="checkbox"/>受保护的</label>
+<label for="api-show-private">
+<input id="api-show-private" type="checkbox"/>私有的</label>
+<label for="api-show-deprecated">
+<input id="api-show-deprecated" type="checkbox"/>已弃用的</label>
+</div>
+<div class="apidocs">
+<div id="docs-main">
+<div class="content">
+<h1>GSQItem 类</h1>
 <div class="box meta">
-
-
-
-
 </div>
-
-
 <div class="box intro">
-    <p>Describes all general properties each GSQ item can have. A GSQ item is used to describe a single field of a
-scene command like a character-selection, duration value, a popup-list, etc.</p>
-
+<p>描述了每个 GSQ 项可以拥有的所有通用属性。GSQ 项用于描述场景命令的单个字段，例如角色选择、持续时间值、弹出列表等。</p>
 </div>
-
-
-<div id="classdocs" class="tabview">
-    <ul class="api-class-tabs">
-        <li class="api-class-tab index"><a href="#index">Index</a></li>
-
-            <li class="api-class-tab properties"><a href="#properties">Properties</a></li>
-    </ul>
-
-    <div>
-        <div id="index" class="api-class-tabpanel index">
-            <h2 class="off-left">Item Index</h2>
-
-
-                <div class="index-section properties">
-                    <h3>Properties</h3>
-
-                    <ul class="index-list properties">
-                            <li class="index-item property">
-                                <a href="#property_attribute">attribute</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_identifier">identifier</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_label">label</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_lockable">lockable</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_tooltip">tooltip</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_type">type</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_valueFormula">valueFormula</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_valueTranslator">valueTranslator</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_variableButton">variableButton</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_width">width</a>
-
-                            </li>
-                    </ul>
-                </div>
-
-
-        </div>
-
-
-            <div id="properties" class="api-class-tabpanel">
-                <h2 class="off-left">Properties</h2>
-
-<div id="property_attribute" class="property item">
-    <h3 class="name"><code>attribute</code></h3>
-    <span class="type">String</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The path of the backend-field where the item should store its data. For Example:</p>
+<div class="tabview" id="classdocs">
+<ul class="api-class-tabs">
+<li class="api-class-tab index"><a href="#index">索引</a></li>
+<li class="api-class-tab properties"><a href="#properties">属性</a></li>
+</ul>
+<div>
+<div class="api-class-tabpanel index" id="index">
+<h2 class="off-left">项索引</h2>
+<div class="index-section properties">
+<h3>属性</h3>
+<ul class="index-list properties">
+<li class="index-item property">
+<a href="#property_attribute">attribute</a>
+</li>
+<li class="index-item property">
+<a href="#property_identifier">identifier</a>
+</li>
+<li class="index-item property">
+<a href="#property_label">label</a>
+</li>
+<li class="index-item property">
+<a href="#property_lockable">lockable</a>
+</li>
+<li class="index-item property">
+<a href="#property_tooltip">tooltip</a>
+</li>
+<li class="index-item property">
+<a href="#property_type">type</a>
+</li>
+<li class="index-item property">
+<a href="#property_valueFormula">valueFormula</a>
+</li>
+<li class="index-item property">
+<a href="#property_valueTranslator">valueTranslator</a>
+</li>
+<li class="index-item property">
+<a href="#property_variableButton">variableButton</a>
+</li>
+<li class="index-item property">
+<a href="#property_width">width</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="api-class-tabpanel" id="properties">
+<h2 class="off-left">属性</h2>
+<div class="property item" id="property_attribute">
+<h3 class="name"><code>attribute</code></h3>
+<span class="type">String</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>后端字段的路径，项应在此路径中存储其数据。例如：</p>
 <code>myField</code>
-<p>Stores the data in params.myField of the command object. It is also possible to specify paths like:</p>
+<p>将数据存储在命令对象的 params.myField 中。也可以指定如下路径：</p>
 <code>myField.mySubField</code>
-<p>In the above example the data is written into params.myField.mySubField of the command object. If <i>myField</i>
-doesn't exist it will be automatically created an initialized with an empty object. It is also possible to specify paths to array values like:</p>
+<p>在上面的例子中，数据被写入命令对象的 params.myField.mySubField。如果<i>myField</i>不存在，它将被自动创建并初始化为空对象。也可以指定数组值的路径，如下：</p>
 <code>myField.mySubArray.4</code>
-<p>In the above example the data is written into <i>params.myField.mySubArray[4]</i>. If the array or the index doesn't exist it it
-automatically created. In our example, the values from index 0 to 3 are initializes with <b>null</b>
-    </div>
-
-
-
+<p>在上面的例子中，数据被写入<i>params.myField.mySubArray[4]</i>。如果数组或索引不存在，它将
+被自动创建。在我们的例子中，索引 0 到 3 的值被初始化为<b>null</b>
+</p></div>
 </div>
-<div id="property_identifier" class="property item">
-    <h3 class="name"><code>identifier</code></h3>
-    <span class="type">String</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The unique identifier of the item. It can be any kind of text as long as it is
-unique inside the command. So you don’t need to follow any kind of format or syntax. If <i>identifier</i> is
-not present, the <i>attribute</i> is automatically used as identifier. The identifier can be used
-refer to the item like in <i>enableItems</i> or <i>showItems</i> property.</p>
-
-    </div>
-
-
-
+<div class="property item" id="property_identifier">
+<h3 class="name"><code>identifier</code></h3>
+<span class="type">String</span>
+<div class="meta">
+<p>
+</p>
 </div>
-<div id="property_label" class="property item">
-    <h3 class="name"><code>label</code></h3>
-    <span class="type">String</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The field's label text to display a short description of the field.</p>
-
-    </div>
-
-
-
+<div class="description">
+<p>项的唯一标识符。它可以是任何文本，只要它在命令中
+是唯一的。所以您不需要遵循任何格式或语法。如果<i>identifier</i>不存在，<i>attribute</i>将被自动用作标识符。标识符可用于
+引用该项，例如在<i>enableItems</i>或<i>showItems</i>属性中。</p>
 </div>
-<div id="property_lockable" class="property item">
-    <h3 class="name"><code>lockable</code></h3>
-    <span class="type">Boolean</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Indicates if the field is lockable and displays a lock-icon on the left side. If <b>true</b> the params-object contains
-a special property <i>fieldFlags</i> which contains flags for each property. If the field is locked, the flag 0x01 is set. For Example:</p>
-<code>locked = params.fieldFlags["myField"] & 0x01</code>
-<p>The above example checks if <i>myField</i> is locked. In game script there is a constant which can be used instead of 0x01:</p>
-<code>locked = params.fieldFlags["myField"] & gs.CommandFieldFlags.LOCKED</code>
-<p>Or the helper method:</p>
+</div>
+<div class="property item" id="property_label">
+<h3 class="name"><code>label</code></h3>
+<span class="type">String</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>字段的标签文本，用于显示字段的简短描述。</p>
+</div>
+</div>
+<div class="property item" id="property_lockable">
+<h3 class="name"><code>lockable</code></h3>
+<span class="type">Boolean</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>指示字段是否可锁定并在左侧显示锁定图标。如果<b>true</b>，则 params 对象包含
+一个特殊属性<i>fieldFlags</i>，其中包含每个属性的标志。如果字段被锁定，则设置标志 0x01。例如：</p>
+<code>locked = params.fieldFlags["myField"] &amp; 0x01</code>
+<p>上面的例子检查<i>myField</i>是否被锁定。在游戏脚本中，有一个常量可以代替 0x01 使用：</p>
+<code>locked = params.fieldFlags["myField"] &amp; gs.CommandFieldFlags.LOCKED</code>
+<p>或者辅助方法：</p>
 <code>locked = gs.CommandFieldFlags.isLocked(params.fieldFlags["myField"])</code>
-<p>A field which is locked is ignored by the command and the default value is used. But the exact behavior depends on the command's implementation in
-<i>gs.Component_CommandInterpreter</i> class.</p>
-    </div>
-
-
-
+<p>被锁定的字段将被命令忽略，并使用默认值。但确切的行为取决于命令在<i>gs.Component_CommandInterpreter</i>类中的实现。</p>
 </div>
-<div id="property_tooltip" class="property item">
-    <h3 class="name"><code>tooltip</code></h3>
-    <span class="type">String</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Displays a popup help-text if the mouse-pointer is place above the field for a few seconds. The exact behavior
-of the help-text popup depends on the operating system.</p>
-
-    </div>
-
-
-
 </div>
-<div id="property_type" class="property item">
-    <h3 class="name"><code>type</code></h3>
-    <span class="type">String</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The type of items like if its a number field, a text field, etc. The following types are supported:</p>
+<div class="property item" id="property_tooltip">
+<h3 class="name"><code>tooltip</code></h3>
+<span class="type">String</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>如果鼠标指针在字段上停留几秒钟，则显示弹出帮助文本。帮助文本弹出窗口的确切行为
+取决于操作系统。</p>
+</div>
+</div>
+<div class="property item" id="property_type">
+<h3 class="name"><code>type</code></h3>
+<span class="type">String</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>项的类型，例如是数字字段、文本字段等。支持以下类型：</p>
 <ul>
 <li>GSQStepper</li>
 <li>GSQTextArea</li>
@@ -358,126 +239,75 @@ of the help-text popup depends on the operating system.</p>
 <li>GSQCheckBox</li>
 <li>GSQSlider</li>
 </ul>
-    </div>
-
-
-
 </div>
-<div id="property_valueFormula" class="property item">
-    <h3 class="name"><code>valueFormula</code></h3>
-    <span class="type">String</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Defines a JavaScript formula calculating the display text of the fields value. The local variable "p" is a reference to the params-object. If the formula doesn't return a string the <i>toString</i> method is executed on the return-value. For Example:</p>
+</div>
+<div class="property item" id="property_valueFormula">
+<h3 class="name"><code>valueFormula</code></h3>
+<span class="type">String</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>定义一个 JavaScript 公式来计算字段值的显示文本。局部变量 "p" 是 params 对象的引用。如果公式不返回字符串，则对返回值执行<i>toString</i>方法。例如：</p>
 <code>"valueFormula": "return p.myValue"</code>
-    </div>
-
-
-
 </div>
-<div id="property_valueTranslator" class="property item">
-    <h3 class="name"><code>valueTranslator</code></h3>
-    <span class="type">Object</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>A value-translator can be used to convert the item's value before written or after read. It has the
-following format:</p>
-<pre>
-valueTranslator: { read: "return ROUND(v * 100)", write: "return v / 100" }
-</pre>
+</div>
+<div class="property item" id="property_valueTranslator">
+<h3 class="name"><code>valueTranslator</code></h3>
+<span class="type">Object</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>值转换器可用于在写入或读取项的值之前对其进行转换。它具有
+以下格式：</p>
+<pre>valueTranslator: { read: "return ROUND(v * 100)", write: "return v / 100" }</pre>
 <ul>
-<li>read - A formula is used to convert the value after read but before transferring it to the item. It has one parameter "v" which is the original value.</li>
-<li>write - A formula is used to convert the value before it is written to the backend. It has one parameter "v" which is the original value.</li>
+<li>read - 公式用于在读取值之后、将其传输到项之前进行转换。它有一个参数 "v"，即原始值。</li>
+<li>write - 公式用于在将值写入后端之前进行转换。它有一个参数 "v"，即原始值。</li>
 </ul>
-<p>In the above example the value is stored as a factor between 0.0 and 1.0 but displayed as a percentage between 0 and 100.</p>
-    </div>
-
-
-
+<p>在上面的例子中，值存储为 0.0 到 1.0 之间的因子，但显示为 0 到 100 之间的百分比。</p>
 </div>
-<div id="property_variableButton" class="property item">
-    <h3 class="name"><code>variableButton</code></h3>
-    <span class="type">Object</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Indicates if the field can be calculated by variable. Only available for GSQStepper, GSQTextArea, GSQPopupField and GSQDataRecordField. The object has the format:</p>
+</div>
+<div class="property item" id="property_variableButton">
+<h3 class="name"><code>variableButton</code></h3>
+<span class="type">Object</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>指示字段是否可以通过变量计算。仅适用于 GSQStepper、GSQTextArea、GSQPopupField 和 GSQDataRecordField。该对象具有以下格式：</p>
 <code>"variableButton": { "dataSource": "numbers "}</code>
-<p>The <i>dataSource</i> describes the variable type and can be "numbers", "strings", "booleans" or "lists".</p>
-    </div>
-
-
-
+<p>该<i>dataSource</i>描述变量类型，可以是 "numbers"、"strings"、"booleans" 或 "lists"。</p>
 </div>
-<div id="property_width" class="property item">
-    <h3 class="name"><code>width</code></h3>
-    <span class="type">Number | String</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The field's width in pixels or percentage. Can be:</p>
+</div>
+<div class="property item" id="property_width">
+<h3 class="name"><code>width</code></h3>
+<span class="type">Number | String</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>字段的宽度（以像素或百分比为单位）。可以是：</p>
 <ul>
-<li>"50%" - Percentage value</li>
-<li>50 - Number value describing the width in pixels</li>
-<li>"auto" - The width is calculated automatically</li>
-    </div>
-
-        <p><strong>Default:</strong> &quot;auto&quot;</p>
-
-
+<li>"50%" - 百分比值</li>
+<li>50 - 以像素为单位表示宽度的数字值</li>
+<li>"auto" - 宽度将自动计算</li>
+</ul></div>
+<p><strong>默认：</strong>"auto"</p>
 </div>
-            </div>
-
-
-    </div>
 </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <script src="../assets/vendor/prettify/prettify-min.js"></script>
 <script>prettyPrint();</script>

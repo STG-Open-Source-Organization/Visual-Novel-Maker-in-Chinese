@@ -1,2241 +1,1413 @@
-<!DOCTYPE html>
+html
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>UIManager</title>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
-    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
-    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
-    <link rel="icon" href="../assets/favicon.ico">
-    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+<meta charset="utf-8"/>
+<title>UI管理器</title>
+<link href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css" rel="stylesheet"/>
+<link href="../assets/vendor/prettify/prettify-min.css" rel="stylesheet"/>
+<link href="../assets/css/main.css" id="site_styles" rel="stylesheet"/>
+<link href="../assets/favicon.ico" rel="icon"/>
+<script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
 </head>
 <body class="yui3-skin-sam">
-
 <div id="doc">
-    <div id="hd" class="yui3-g header">
-        <div class="yui3-u-3-4">
-                <h1><img src="../assets/css/logo.png" title="" width="117" height="52"></h1>
-        </div>
-        <div class="yui3-u-1-4 version">
-            <em>API Docs for: </em>
-        </div>
-    </div>
-    <div id="bd" class="yui3-g">
-
-        <div class="yui3-u-1-4">
-            <div id="docs-sidebar" class="sidebar apidocs">
-                <div id="api-list">
-                    <h2 class="off-left">APIs</h2>
-                    <div id="api-tabview" class="tabview">
-                        <ul class="tabs">
-                            <li><a href="#api-classes">Classes</a></li>
-                            <li><a href="#api-modules">Modules</a></li>
-                        </ul>
-                
-                        <div id="api-tabview-filter">
-                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
-                        </div>
-                
-                        <div id="api-tabview-panel">
-                            <ul id="api-classes" class="apis classes">
-                                <li><a href="../classes/AnimationLoopType.html">AnimationLoopType</a></li>
-                                <li><a href="../classes/AnimationTypes.html">AnimationTypes</a></li>
-                                <li><a href="../classes/AudioManager.html">AudioManager</a></li>
-                                <li><a href="../classes/CircularDistortionEffect.html">CircularDistortionEffect</a></li>
-                                <li><a href="../classes/Colors.html">Colors</a></li>
-                                <li><a href="../classes/CommandFieldFlags.html">CommandFieldFlags</a></li>
-                                <li><a href="../classes/Component.html">Component</a></li>
-                                <li><a href="../classes/Component_ActionHandler.html">Component_ActionHandler</a></li>
-                                <li><a href="../classes/Component_Animation.html">Component_Animation</a></li>
-                                <li><a href="../classes/Component_AnimationExecutor.html">Component_AnimationExecutor</a></li>
-                                <li><a href="../classes/Component_AnimationHandler.html">Component_AnimationHandler</a></li>
-                                <li><a href="../classes/Component_Animator.html">Component_Animator</a></li>
-                                <li><a href="../classes/Component_BindingHandler.html">Component_BindingHandler</a></li>
-                                <li><a href="../classes/Component_BlendAnimation.html">Component_BlendAnimation</a></li>
-                                <li><a href="../classes/Component_BlurAnimation.html">Component_BlurAnimation</a></li>
-                                <li><a href="../classes/Component_CallSceneInterpreter.html">Component_CallSceneInterpreter</a></li>
-                                <li><a href="../classes/Component_CharacterBehavior.html">Component_CharacterBehavior</a></li>
-                                <li><a href="../classes/Component_CommandInterpreter.html">Component_CommandInterpreter</a></li>
-                                <li><a href="../classes/Component_CommonEventBehavior.html">Component_CommonEventBehavior</a></li>
-                                <li><a href="../classes/Component_Container.html">Component_Container</a></li>
-                                <li><a href="../classes/Component_DataGridBehavior.html">Component_DataGridBehavior</a></li>
-                                <li><a href="../classes/Component_DomainContainer.html">Component_DomainContainer</a></li>
-                                <li><a href="../classes/Component_Draggable.html">Component_Draggable</a></li>
-                                <li><a href="../classes/Component_EventEmitter.html">Component_EventEmitter</a></li>
-                                <li><a href="../classes/Component_FieldAnimation.html">Component_FieldAnimation</a></li>
-                                <li><a href="../classes/Component_Frame.html">Component_Frame</a></li>
-                                <li><a href="../classes/Component_FrameAnimation.html">Component_FrameAnimation</a></li>
-                                <li><a href="../classes/Component_FreeLayoutBehavior.html">Component_FreeLayoutBehavior</a></li>
-                                <li><a href="../classes/Component_GameSceneBehavior.html">Component_GameSceneBehavior</a></li>
-                                <li><a href="../classes/Component_GridLayoutBehavior.html">Component_GridLayoutBehavior</a></li>
-                                <li><a href="../classes/Component_Handler.html">Component_Handler</a></li>
-                                <li><a href="../classes/Component_HotspotBehavior.html">Component_HotspotBehavior</a></li>
-                                <li><a href="../classes/Component_ImageAnimation.html">Component_ImageAnimation</a></li>
-                                <li><a href="../classes/Component_ImageMap.html">Component_ImageMap</a></li>
-                                <li><a href="../classes/Component_InputHandler.html">Component_InputHandler</a></li>
-                                <li><a href="../classes/Component_IntervalTimer.html">Component_IntervalTimer</a></li>
-                                <li><a href="../classes/Component_LayoutBehavior.html">Component_LayoutBehavior</a></li>
-                                <li><a href="../classes/Component_LayoutSceneBehavior.html">Component_LayoutSceneBehavior</a></li>
-                                <li><a href="../classes/Component_Live2D.html">Component_Live2D</a></li>
-                                <li><a href="../classes/Component_Live2DAnimation.html">Component_Live2DAnimation</a></li>
-                                <li><a href="../classes/Component_MaskAnimation.html">Component_MaskAnimation</a></li>
-                                <li><a href="../classes/Component_MessageBehavior.html">Component_MessageBehavior</a></li>
-                                <li><a href="../classes/Component_MessageTextRenderer.html">Component_MessageTextRenderer</a></li>
-                                <li><a href="../classes/Component_MoveAnimation.html">Component_MoveAnimation</a></li>
-                                <li><a href="../classes/Component_NumberInput.html">Component_NumberInput</a></li>
-                                <li><a href="../classes/Component_PanelBehavior.html">Component_PanelBehavior</a></li>
-                                <li><a href="../classes/Component_PathAnimation.html">Component_PathAnimation</a></li>
-                                <li><a href="../classes/Component_PixelateAnimation.html">Component_PixelateAnimation</a></li>
-                                <li><a href="../classes/Component_Quad.html">Component_Quad</a></li>
-                                <li><a href="../classes/Component_RotateAnimation.html">Component_RotateAnimation</a></li>
-                                <li><a href="../classes/Component_SceneBehavior.html">Component_SceneBehavior</a></li>
-                                <li><a href="../classes/Component_ShakeAnimation.html">Component_ShakeAnimation</a></li>
-                                <li><a href="../classes/Component_SpreadLayoutBehavior.html">Component_SpreadLayoutBehavior</a></li>
-                                <li><a href="../classes/Component_Sprite.html">Component_Sprite</a></li>
-                                <li><a href="../classes/Component_StackLayoutBehavior.html">Component_StackLayoutBehavior</a></li>
-                                <li><a href="../classes/Component_TextBehavior.html">Component_TextBehavior</a></li>
-                                <li><a href="../classes/Component_TextInput.html">Component_TextInput</a></li>
-                                <li><a href="../classes/Component_TextRenderer.html">Component_TextRenderer</a></li>
-                                <li><a href="../classes/Component_ThreePartImage.html">Component_ThreePartImage</a></li>
-                                <li><a href="../classes/Component_TilingPlane.html">Component_TilingPlane</a></li>
-                                <li><a href="../classes/Component_TilingSprite.html">Component_TilingSprite</a></li>
-                                <li><a href="../classes/Component_Timer.html">Component_Timer</a></li>
-                                <li><a href="../classes/Component_TintAnimation.html">Component_TintAnimation</a></li>
-                                <li><a href="../classes/Component_UIBehavior.html">Component_UIBehavior</a></li>
-                                <li><a href="../classes/Component_Viewport.html">Component_Viewport</a></li>
-                                <li><a href="../classes/Component_Visual.html">Component_Visual</a></li>
-                                <li><a href="../classes/Component_WebStartBehavior.html">Component_WebStartBehavior</a></li>
-                                <li><a href="../classes/Component_WobbleAnimation.html">Component_WobbleAnimation</a></li>
-                                <li><a href="../classes/Component_ZoomAnimation.html">Component_ZoomAnimation</a></li>
-                                <li><a href="../classes/ContainerDisposeBehavior.html">ContainerDisposeBehavior</a></li>
-                                <li><a href="../classes/DataManager.html">DataManager</a></li>
-                                <li><a href="../classes/DataOptimizer.html">DataOptimizer</a></li>
-                                <li><a href="../classes/Easing.html">Easing</a></li>
-                                <li><a href="../classes/Easings.html">Easings</a></li>
-                                <li><a href="../classes/EasingTypes.html">EasingTypes</a></li>
-                                <li><a href="../classes/Fonts.html">Fonts</a></li>
-                                <li><a href="../classes/Formula.html">Formula</a></li>
-                                <li><a href="../classes/GameManager.html">GameManager</a></li>
-                                <li><a href="../classes/GameTemp.html">GameTemp</a></li>
-                                <li><a href="../classes/Helper.html">Helper</a></li>
-                                <li><a href="../classes/ImageHandling.html">ImageHandling</a></li>
-                                <li><a href="../classes/InterpreterContext.html">InterpreterContext</a></li>
-                                <li><a href="../classes/LanguageManager.html">LanguageManager</a></li>
-                                <li><a href="../classes/LayoutManagementMode.html">LayoutManagementMode</a></li>
-                                <li><a href="../classes/LivePreviewInfo.html">LivePreviewInfo</a></li>
-                                <li><a href="../classes/Main.html">Main</a></li>
-                                <li><a href="../classes/MessageSettings.html">MessageSettings</a></li>
-                                <li><a href="../classes/Object_Animation.html">Object_Animation</a></li>
-                                <li><a href="../classes/Object_Background.html">Object_Background</a></li>
-                                <li><a href="../classes/Object_Base.html">Object_Base</a></li>
-                                <li><a href="../classes/Object_Character.html">Object_Character</a></li>
-                                <li><a href="../classes/Object_CommonEvent.html">Object_CommonEvent</a></li>
-                                <li><a href="../classes/Object_Container.html">Object_Container</a></li>
-                                <li><a href="../classes/Object_DataGrid.html">Object_DataGrid</a></li>
-                                <li><a href="../classes/Object_DomainContainer.html">Object_DomainContainer</a></li>
-                                <li><a href="../classes/Object_Frame.html">Object_Frame</a></li>
-                                <li><a href="../classes/Object_FreeLayout.html">Object_FreeLayout</a></li>
-                                <li><a href="../classes/Object_GridLayout.html">Object_GridLayout</a></li>
-                                <li><a href="../classes/Object_Hotspot.html">Object_Hotspot</a></li>
-                                <li><a href="../classes/Object_Image.html">Object_Image</a></li>
-                                <li><a href="../classes/Object_ImageMap.html">Object_ImageMap</a></li>
-                                <li><a href="../classes/Object_IntervalTimer.html">Object_IntervalTimer</a></li>
-                                <li><a href="../classes/Object_Layout.html">Object_Layout</a></li>
-                                <li><a href="../classes/Object_Live2DCharacter.html">Object_Live2DCharacter</a></li>
-                                <li><a href="../classes/Object_Message.html">Object_Message</a></li>
-                                <li><a href="../classes/Object_MessageArea.html">Object_MessageArea</a></li>
-                                <li><a href="../classes/Object_Panel.html">Object_Panel</a></li>
-                                <li><a href="../classes/Object_Picture.html">Object_Picture</a></li>
-                                <li><a href="../classes/Object_Scene.html">Object_Scene</a></li>
-                                <li><a href="../classes/Object_SpreadLayout.html">Object_SpreadLayout</a></li>
-                                <li><a href="../classes/Object_StackLayout.html">Object_StackLayout</a></li>
-                                <li><a href="../classes/Object_Text.html">Object_Text</a></li>
-                                <li><a href="../classes/Object_ThreePartImage.html">Object_ThreePartImage</a></li>
-                                <li><a href="../classes/Object_Timer.html">Object_Timer</a></li>
-                                <li><a href="../classes/Object_UIElement.html">Object_UIElement</a></li>
-                                <li><a href="../classes/Object_Video.html">Object_Video</a></li>
-                                <li><a href="../classes/Object_Viewport.html">Object_Viewport</a></li>
-                                <li><a href="../classes/Object_Visual.html">Object_Visual</a></li>
-                                <li><a href="../classes/ObjectManager.html">ObjectManager</a></li>
-                                <li><a href="../classes/RecordManager.html">RecordManager</a></li>
-                                <li><a href="../classes/RendererTextLine.html">RendererTextLine</a></li>
-                                <li><a href="../classes/RendererToken.html">RendererToken</a></li>
-                                <li><a href="../classes/ResourceLoader.html">ResourceLoader</a></li>
-                                <li><a href="../classes/ResourceManager.html">ResourceManager</a></li>
-                                <li><a href="../classes/SceneManager.html">SceneManager</a></li>
-                                <li><a href="../classes/Space.html">Space</a></li>
-                                <li><a href="../classes/Sprite_Debug.html">Sprite_Debug</a></li>
-                                <li><a href="../classes/Style.html">Style</a></li>
-                                <li><a href="../classes/UIElementPoint.html">UIElementPoint</a></li>
-                                <li><a href="../classes/UIElementRectangle.html">UIElementRectangle</a></li>
-                                <li><a href="../classes/UIManager.html">UIManager</a></li>
-                                <li><a href="../classes/UpdateBehavior.html">UpdateBehavior</a></li>
-                                <li><a href="../classes/VariableStore.html">VariableStore</a></li>
-                            </ul>
-                
-                
-                            <ul id="api-modules" class="apis modules">
-                                <li><a href="../modules/gs.html">gs</a></li>
-                                <li><a href="../modules/gs.RendererTextLine.html">gs.RendererTextLine</a></li>
-                                <li><a href="../modules/ui.html">ui</a></li>
-                                <li><a href="../modules/vn.html">vn</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="yui3-u-3-4">
-                <div id="api-options">
-                    Show:
-                    <label for="api-show-inherited">
-                        <input type="checkbox" id="api-show-inherited" checked>
-                        Inherited
-                    </label>
-            
-                    <label for="api-show-protected">
-                        <input type="checkbox" id="api-show-protected">
-                        Protected
-                    </label>
-            
-                    <label for="api-show-private">
-                        <input type="checkbox" id="api-show-private">
-                        Private
-                    </label>
-                    <label for="api-show-deprecated">
-                        <input type="checkbox" id="api-show-deprecated">
-                        Deprecated
-                    </label>
-            
-                </div>
-            
-            <div class="apidocs">
-                <div id="docs-main">
-                    <div class="content">
-<h1>UIManager Class</h1>
-<div class="box meta">
-
-
-
-            Module: <a href="../modules/ui.html">ui</a>
-
+<div class="yui3-g header" id="hd">
+<div class="yui3-u-3-4">
+<h1><img height="52" src="../assets/css/logo.png" title="" width="117"/></h1>
 </div>
-
-
+<div class="yui3-u-1-4 version">
+<em>API 文档：</em>
+</div>
+</div>
+<div class="yui3-g" id="bd">
+<div class="yui3-u-1-4">
+<div class="sidebar apidocs" id="docs-sidebar">
+<div id="api-list">
+<h2 class="off-left">API</h2>
+<div class="tabview" id="api-tabview">
+<ul class="tabs">
+<li><a href="#api-classes">类</a></li>
+<li><a href="#api-modules">模块</a></li>
+</ul>
+<div id="api-tabview-filter">
+<input id="api-filter" placeholder="Type to filter APIs" type="search"/>
+</div>
+<div id="api-tabview-panel">
+<ul class="apis classes" id="api-classes">
+<li><a href="../classes/AnimationLoopType.html">动画循环类型</a></li>
+<li><a href="../classes/AnimationTypes.html">动画类型</a></li>
+<li><a href="../classes/AudioManager.html">音频管理器</a></li>
+<li><a href="../classes/CircularDistortionEffect.html">圆形失真效果</a></li>
+<li><a href="../classes/Colors.html">颜色</a></li>
+<li><a href="../classes/CommandFieldFlags.html">命令字段标志</a></li>
+<li><a href="../classes/Component.html">组件</a></li>
+<li><a href="../classes/Component_ActionHandler.html">组件_动作处理器</a></li>
+<li><a href="../classes/Component_Animation.html">组件_动画</a></li>
+<li><a href="../classes/Component_AnimationExecutor.html">组件_动画执行器</a></li>
+<li><a href="../classes/Component_AnimationHandler.html">组件_动画处理器</a></li>
+<li><a href="../classes/Component_Animator.html">组件_动画器</a></li>
+<li><a href="../classes/Component_BindingHandler.html">组件_绑定处理器</a></li>
+<li><a href="../classes/Component_BlendAnimation.html">组件_混合动画</a></li>
+<li><a href="../classes/Component_BlurAnimation.html">组件_模糊动画</a></li>
+<li><a href="../classes/Component_CallSceneInterpreter.html">组件_调用场景解释器</a></li>
+<li><a href="../classes/Component_CharacterBehavior.html">组件_角色行为</a></li>
+<li><a href="../classes/Component_CommandInterpreter.html">组件_命令解释器</a></li>
+<li><a href="../classes/Component_CommonEventBehavior.html">组件_通用事件行为</a></li>
+<li><a href="../classes/Component_Container.html">组件_容器</a></li>
+<li><a href="../classes/Component_DataGridBehavior.html">组件_数据网格行为</a></li>
+<li><a href="../classes/Component_DomainContainer.html">组件_域容器</a></li>
+<li><a href="../classes/Component_Draggable.html">组件_可拖动</a></li>
+<li><a href="../classes/Component_EventEmitter.html">组件_事件发射器</a></li>
+<li><a href="../classes/Component_FieldAnimation.html">组件_字段动画</a></li>
+<li><a href="../classes/Component_Frame.html">组件_帧</a></li>
+<li><a href="../classes/Component_FrameAnimation.html">组件_帧动画</a></li>
+<li><a href="../classes/Component_FreeLayoutBehavior.html">组件_自由布局行为</a></li>
+<li><a href="../classes/Component_GameSceneBehavior.html">组件_游戏场景行为</a></li>
+<li><a href="../classes/Component_GridLayoutBehavior.html">组件_网格布局行为</a></li>
+<li><a href="../classes/Component_Handler.html">组件_处理器</a></li>
+<li><a href="../classes/Component_HotspotBehavior.html">组件_热点行为</a></li>
+<li><a href="../classes/Component_ImageAnimation.html">组件_图像动画</a></li>
+<li><a href="../classes/Component_ImageMap.html">组件_图像映射</a></li>
+<li><a href="../classes/Component_InputHandler.html">组件_输入处理器</a></li>
+<li><a href="../classes/Component_IntervalTimer.html">组件_间隔计时器</a></li>
+<li><a href="../classes/Component_LayoutBehavior.html">组件_布局行为</a></li>
+<li><a href="../classes/Component_LayoutSceneBehavior.html">组件_场景布局行为</a></li>
+<li><a href="../classes/Component_Live2D.html">组件_Live2D</a></li>
+<li><a href="../classes/Component_Live2DAnimation.html">组件_Live2D动画</a></li>
+<li><a href="../classes/Component_MaskAnimation.html">组件_遮罩动画</a></li>
+<li><a href="../classes/Component_MessageBehavior.html">组件_消息行为</a></li>
+<li><a href="../classes/Component_MessageTextRenderer.html">组件_消息文本渲染器</a></li>
+<li><a href="../classes/Component_MoveAnimation.html">组件_移动动画</a></li>
+<li><a href="../classes/Component_NumberInput.html">组件_数字输入</a></li>
+<li><a href="../classes/Component_PanelBehavior.html">组件_面板行为</a></li>
+<li><a href="../classes/Component_PathAnimation.html">组件_路径动画</a></li>
+<li><a href="../classes/Component_PixelateAnimation.html">组件_像素化动画</a></li>
+<li><a href="../classes/Component_Quad.html">组件_四边形</a></li>
+<li><a href="../classes/Component_RotateAnimation.html">组件_旋转动画</a></li>
+<li><a href="../classes/Component_SceneBehavior.html">组件_场景行为</a></li>
+<li><a href="../classes/Component_ShakeAnimation.html">组件_抖动动画</a></li>
+<li><a href="../classes/Component_SpreadLayoutBehavior.html">组件_展开布局行为</a></li>
+<li><a href="../classes/Component_Sprite.html">组件_精灵</a></li>
+<li><a href="../classes/Component_StackLayoutBehavior.html">组件_堆叠布局行为</a></li>
+<li><a href="../classes/Component_TextBehavior.html">组件_文本行为</a></li>
+<li><a href="../classes/Component_TextInput.html">组件_文本输入</a></li>
+<li><a href="../classes/Component_TextRenderer.html">组件_文本渲染器</a></li>
+<li><a href="../classes/Component_ThreePartImage.html">组件_三部分图像</a></li>
+<li><a href="../classes/Component_TilingPlane.html">组件_平铺平面</a></li>
+<li><a href="../classes/Component_TilingSprite.html">组件_平铺精灵</a></li>
+<li><a href="../classes/Component_Timer.html">组件_计时器</a></li>
+<li><a href="../classes/Component_TintAnimation.html">组件_色调动画</a></li>
+<li><a href="../classes/Component_UIBehavior.html">组件_UI行为</a></li>
+<li><a href="../classes/Component_Viewport.html">组件_视口</a></li>
+<li><a href="../classes/Component_Visual.html">组件_视觉</a></li>
+<li><a href="../classes/Component_WebStartBehavior.html">组件_Web启动行为</a></li>
+<li><a href="../classes/Component_WobbleAnimation.html">组件_摆动动画</a></li>
+<li><a href="../classes/Component_ZoomAnimation.html">组件_缩放动画</a></li>
+<li><a href="../classes/ContainerDisposeBehavior.html">容器释放行为</a></li>
+<li><a href="../classes/DataManager.html">数据管理器</a></li>
+<li><a href="../classes/DataOptimizer.html">数据优化器</a></li>
+<li><a href="../classes/Easing.html">缓动</a></li>
+<li><a href="../classes/Easings.html">缓动函数</a></li>
+<li><a href="../classes/EasingTypes.html">缓动类型</a></li>
+<li><a href="../classes/Fonts.html">字体</a></li>
+<li><a href="../classes/Formula.html">公式</a></li>
+<li><a href="../classes/GameManager.html">游戏管理器</a></li>
+<li><a href="../classes/GameTemp.html">游戏临时</a></li>
+<li><a href="../classes/Helper.html">助手</a></li>
+<li><a href="../classes/ImageHandling.html">图像处理</a></li>
+<li><a href="../classes/InterpreterContext.html">解释器上下文</a></li>
+<li><a href="../classes/LanguageManager.html">语言管理器</a></li>
+<li><a href="../classes/LayoutManagementMode.html">布局管理模式</a></li>
+<li><a href="../classes/LivePreviewInfo.html">实时预览信息</a></li>
+<li><a href="../classes/Main.html">主</a></li>
+<li><a href="../classes/MessageSettings.html">消息设置</a></li>
+<li><a href="../classes/Object_Animation.html">对象_动画</a></li>
+<li><a href="../classes/Object_Background.html">对象_背景</a></li>
+<li><a href="../classes/Object_Base.html">对象_基础</a></li>
+<li><a href="../classes/Object_Character.html">对象_角色</a></li>
+<li><a href="../classes/Object_CommonEvent.html">对象_通用事件</a></li>
+<li><a href="../classes/Object_Container.html">对象_容器</a></li>
+<li><a href="../classes/Object_DataGrid.html">对象_数据网格</a></li>
+<li><a href="../classes/Object_DomainContainer.html">对象_域容器</a></li>
+<li><a href="../classes/Object_Frame.html">对象_帧</a></li>
+<li><a href="../classes/Object_FreeLayout.html">对象_自由布局</a></li>
+<li><a href="../classes/Object_GridLayout.html">对象_网格布局</a></li>
+<li><a href="../classes/Object_Hotspot.html">对象_热点</a></li>
+<li><a href="../classes/Object_Image.html">对象_图像</a></li>
+<li><a href="../classes/Object_ImageMap.html">对象_图像映射</a></li>
+<li><a href="../classes/Object_IntervalTimer.html">对象_间隔计时器</a></li>
+<li><a href="../classes/Object_Layout.html">对象_布局</a></li>
+<li><a href="../classes/Object_Live2DCharacter.html">对象_Live2D角色</a></li>
+<li><a href="../classes/Object_Message.html">对象_消息</a></li>
+<li><a href="../classes/Object_MessageArea.html">对象_消息区域</a></li>
+<li><a href="../classes/Object_Panel.html">对象_面板</a></li>
+<li><a href="../classes/Object_Picture.html">对象_图片</a></li>
+<li><a href="../classes/Object_Scene.html">对象_场景</a></li>
+<li><a href="../classes/Object_SpreadLayout.html">对象_展开布局</a></li>
+<li><a href="../classes/Object_StackLayout.html">对象_堆叠布局</a></li>
+<li><a href="../classes/Object_Text.html">对象_文本</a></li>
+<li><a href="../classes/Object_ThreePartImage.html">对象_三部分图像</a></li>
+<li><a href="../classes/Object_Timer.html">对象_计时器</a></li>
+<li><a href="../classes/Object_UIElement.html">对象_UI元素</a></li>
+<li><a href="../classes/Object_Video.html">对象_视频</a></li>
+<li><a href="../classes/Object_Viewport.html">对象_视口</a></li>
+<li><a href="../classes/Object_Visual.html">对象_视觉</a></li>
+<li><a href="../classes/ObjectManager.html">对象管理器</a></li>
+<li><a href="../classes/RecordManager.html">记录管理器</a></li>
+<li><a href="../classes/RendererTextLine.html">渲染器文本行</a></li>
+<li><a href="../classes/RendererToken.html">渲染器令牌</a></li>
+<li><a href="../classes/ResourceLoader.html">资源加载器</a></li>
+<li><a href="../classes/ResourceManager.html">资源管理器</a></li>
+<li><a href="../classes/SceneManager.html">场景管理器</a></li>
+<li><a href="../classes/Space.html">空间</a></li>
+<li><a href="../classes/Sprite_Debug.html">精灵_调试</a></li>
+<li><a href="../classes/Style.html">样式</a></li>
+<li><a href="../classes/UIElementPoint.html">UI元素点</a></li>
+<li><a href="../classes/UIElementRectangle.html">UI元素矩形</a></li>
+<li><a href="../classes/UIManager.html">UI管理器</a></li>
+<li><a href="../classes/UpdateBehavior.html">更新行为</a></li>
+<li><a href="../classes/VariableStore.html">变量存储</a></li>
+</ul>
+<ul class="apis modules" id="api-modules">
+<li><a href="../modules/gs.html">gs</a></li>
+<li><a href="../modules/gs.RendererTextLine.html">gs.渲染器文本行</a></li>
+<li><a href="../modules/ui.html">ui</a></li>
+<li><a href="../modules/vn.html">vn</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="yui3-u-3-4">
+<div id="api-options">显示：<label for="api-show-inherited">
+<input checked="" id="api-show-inherited" type="checkbox"/>继承的</label>
+<label for="api-show-protected">
+<input id="api-show-protected" type="checkbox"/>受保护的</label>
+<label for="api-show-private">
+<input id="api-show-private" type="checkbox"/>私有的</label>
+<label for="api-show-deprecated">
+<input id="api-show-deprecated" type="checkbox"/>已弃用的</label>
+</div>
+<div class="apidocs">
+<div id="docs-main">
+<div class="content">
+<h1>UI管理器类</h1>
+<div class="box meta">模块：<a href="../modules/ui.html">ui</a>
+</div>
 <div class="box intro">
-    <p>Handles the creation of In Game UI elements. For more information about
-In-Game UI see help file.</p>
-
+<p>处理游戏内UI元素的创建。有关更多信息，请参阅帮助文件。</p>
 </div>
-
-
-<div id="classdocs" class="tabview">
-    <ul class="api-class-tabs">
-        <li class="api-class-tab index"><a href="#index">Index</a></li>
-
-            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
-            <li class="api-class-tab properties"><a href="#properties">Properties</a></li>
-    </ul>
-
-    <div>
-        <div id="index" class="api-class-tabpanel index">
-            <h2 class="off-left">Item Index</h2>
-
-                <div class="index-section methods">
-                    <h3>Methods</h3>
-
-                    <ul class="index-list methods">
-                            <li class="index-item method protected">
-                                <a href="#method__createFromDescriptor">_createFromDescriptor</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_addControlStyles">addControlStyles</a>
-
-                            </li>
-                            <li class="index-item method protected">
-                                <a href="#method_createCalcFunction">createCalcFunction</a>
-
-                            </li>
-                            <li class="index-item method protected">
-                                <a href="#method_createControl">createControl</a>
-
-                            </li>
-                            <li class="index-item method protected">
-                                <a href="#method_createControlFromDescriptor">createControlFromDescriptor</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_createDataGrid">createDataGrid</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_createFrame">createFrame</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_createFreeLayout">createFreeLayout</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_createFromDescriptor">createFromDescriptor</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_createGridLayout">createGridLayout</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_createImage">createImage</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_createImageButton">createImageButton</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_createImageMap">createImageMap</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_createMessage">createMessage</a>
-
-                            </li>
-                            <li class="index-item method protected">
-                                <a href="#method_createObject">createObject</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_createPanel">createPanel</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_createSpreadLayout">createSpreadLayout</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_createStackLayout">createStackLayout</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_createText">createText</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_createThreePartImage">createThreePartImage</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_createVideo">createVideo</a>
-
-                            </li>
-                            <li class="index-item method protected">
-                                <a href="#method_executePlaceholderFormulas">executePlaceholderFormulas</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_setup">setup</a>
-
-                            </li>
-                            <li class="index-item method protected">
-                                <a href="#method_setupStyles">setupStyles</a>
-
-                            </li>
-                    </ul>
-                </div>
-
-                <div class="index-section properties">
-                    <h3>Properties</h3>
-
-                    <ul class="index-list properties">
-                            <li class="index-item property protected">
-                                <a href="#property_alignments">alignments</a>
-
-                            </li>
-                            <li class="index-item property protected">
-                                <a href="#property_blendModes">blendModes</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_customTypes">customTypes</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_customTypes">customTypes</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_customTypes">customTypes</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_layouts">layouts</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_selectors">selectors</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_styles">styles</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_stylesById">stylesById</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_stylesByName">stylesByName</a>
-
-                            </li>
-                    </ul>
-                </div>
-
-
-        </div>
-
-            <div id="methods" class="api-class-tabpanel">
-                <h2 class="off-left">Methods</h2>
-
-<div id="method__createFromDescriptor" class="method item protected">
-    <h3 class="name"><code>_createFromDescriptor</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>descriptor</code>
-                </li>
-                <li class="arg">
-                        <code>parent</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">gs.Object_UIElement</span>
-        </span>
-
-
-        <span class="flag protected">protected</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates an UI object from a specified UI descriptor.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">descriptor</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The UI object descriptor.</li>
+<div class="tabview" id="classdocs">
+<ul class="api-class-tabs">
+<li class="api-class-tab index"><a href="#index">索引</a></li>
+<li class="api-class-tab methods"><a href="#methods">方法</a></li>
+<li class="api-class-tab properties"><a href="#properties">属性</a></li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">parent</code>
-                        <span class="type">gs.Object_UIElement</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The UI parent object. (A layout for example).</li>
+<div>
+<div class="api-class-tabpanel index" id="index">
+<h2 class="off-left">项目索引</h2>
+<div class="index-section methods">
+<h3>方法</h3>
+<ul class="index-list methods">
+<li class="index-item method protected">
+<a href="#method__createFromDescriptor">_从描述符创建</a>
+</li>
+<li class="index-item method">
+<a href="#method_addControlStyles">添加控件样式</a>
+</li>
+<li class="index-item method protected">
+<a href="#method_createCalcFunction">创建计算函数</a>
+</li>
+<li class="index-item method protected">
+<a href="#method_createControl">创建控件</a>
+</li>
+<li class="index-item method protected">
+<a href="#method_createControlFromDescriptor">从描述符创建控件</a>
+</li>
+<li class="index-item method">
+<a href="#method_createDataGrid">创建数据网格</a>
+</li>
+<li class="index-item method">
+<a href="#method_createFrame">创建帧</a>
+</li>
+<li class="index-item method">
+<a href="#method_createFreeLayout">创建自由布局</a>
+</li>
+<li class="index-item method">
+<a href="#method_createFromDescriptor">从描述符创建</a>
+</li>
+<li class="index-item method">
+<a href="#method_createGridLayout">创建网格布局</a>
+</li>
+<li class="index-item method">
+<a href="#method_createImage">创建图像</a>
+</li>
+<li class="index-item method">
+<a href="#method_createImageButton">创建图像按钮</a>
+</li>
+<li class="index-item method">
+<a href="#method_createImageMap">创建图像映射</a>
+</li>
+<li class="index-item method">
+<a href="#method_createMessage">创建消息</a>
+</li>
+<li class="index-item method protected">
+<a href="#method_createObject">创建对象</a>
+</li>
+<li class="index-item method">
+<a href="#method_createPanel">创建面板</a>
+</li>
+<li class="index-item method">
+<a href="#method_createSpreadLayout">创建展开布局</a>
+</li>
+<li class="index-item method">
+<a href="#method_createStackLayout">创建堆叠布局</a>
+</li>
+<li class="index-item method">
+<a href="#method_createText">创建文本</a>
+</li>
+<li class="index-item method">
+<a href="#method_createThreePartImage">创建三部分图像</a>
+</li>
+<li class="index-item method">
+<a href="#method_createVideo">创建视频</a>
+</li>
+<li class="index-item method protected">
+<a href="#method_executePlaceholderFormulas">执行占位符公式</a>
+</li>
+<li class="index-item method">
+<a href="#method_setup">设置</a>
+</li>
+<li class="index-item method protected">
+<a href="#method_setupStyles">设置样式</a>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">gs.Object_UIElement</span>:
-                    <p>The created UI object.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_addControlStyles" class="method item">
-    <h3 class="name"><code>addControlStyles</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>control</code>
-                </li>
-                <li class="arg">
-                        <code>styles</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Adds the styles defined in an array of style-names to the specified control.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">control</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The control to add the styles to.</li>
+<div class="index-section properties">
+<h3>属性</h3>
+<ul class="index-list properties">
+<li class="index-item property protected">
+<a href="#property_alignments">对齐方式</a>
+</li>
+<li class="index-item property protected">
+<a href="#property_blendModes">混合模式</a>
+</li>
+<li class="index-item property">
+<a href="#property_customTypes">自定义类型</a>
+</li>
+<li class="index-item property">
+<a href="#property_customTypes">自定义类型</a>
+</li>
+<li class="index-item property">
+<a href="#property_customTypes">自定义类型</a>
+</li>
+<li class="index-item property">
+<a href="#property_layouts">布局</a>
+</li>
+<li class="index-item property">
+<a href="#property_selectors">选择器</a>
+</li>
+<li class="index-item property">
+<a href="#property_styles">样式</a>
+</li>
+<li class="index-item property">
+<a href="#property_stylesById">按ID样式</a>
+</li>
+<li class="index-item property">
+<a href="#property_stylesByName">按名称样式</a>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">styles</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Array of style-names to add.</li>
+</div>
+</div>
+<div class="api-class-tabpanel" id="methods">
+<h2 class="off-left">方法</h2>
+<div class="method item protected" id="method__createFromDescriptor">
+<h3 class="name"><code>_从描述符创建</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>描述符</code>
+</li>
+<li class="arg">
+<code>父对象</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="returns-inline">
+<span class="type">gs.UI元素</span>
+</span>
+<span class="flag protected">受保护的</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>根据指定的UI描述符创建一个UI对象。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">描述符</code>
+<span class="type">对象</span>
+<div class="param-description">
+<ul>
+<li>UI对象描述符。</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_createCalcFunction" class="method item protected">
-    <h3 class="name"><code>createCalcFunction</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>expression</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">Function</span>
-        </span>
-
-
-        <span class="flag protected">protected</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates a calculation for a specified expression.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">expression</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The expression to create a calculation function for.</li>
+</li>
+<li class="param">
+<code class="param-name">父对象</code>
+<span class="type">gs.UI元素</span>
+<div class="param-description">
+<ul>
+<li>UI父对象。（例如，一个布局）。</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">Function</span>:
-                    <p>The calculation function.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_createControl" class="method item protected">
-    <h3 class="name"><code>createControl</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>descriptor</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">gs.Object_UIElement</span>
-        </span>
-
-
-        <span class="flag protected">protected</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates an UI object depending on the object-type of the specified UI descriptor.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">descriptor</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The UI object descriptor.</li>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">gs.Object_UIElement</span>:
-                    <p>The created UI object.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_createControlFromDescriptor" class="method item protected">
-    <h3 class="name"><code>createControlFromDescriptor</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>descriptor</code>
-                </li>
-                <li class="arg">
-                        <code>parent</code>
-                </li>
-                <li class="arg">
-                        <code>index</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">gs.Object_UIElement</span>
-        </span>
-
-
-        <span class="flag protected">protected</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates an UI object from a specified UI descriptor. This method is called
-recursively for all child-descriptors.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">descriptor</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The UI object descriptor.</li>
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type">gs.UI元素</span>:<p>创建的UI对象。</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_addControlStyles">
+<h3 class="name"><code>添加控件样式</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>控件</code>
+</li>
+<li class="arg">
+<code>样式</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>将样式数组中定义的样式添加到指定的控件。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">控件</code>
+<span class="type">对象</span>
+<div class="param-description">
+<ul>
+<li>要添加样式的控件。</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">parent</code>
-                        <span class="type">gs.Object_UIElement</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The UI parent object. (A layout for example).</li>
+</div>
+</li>
+<li class="param">
+<code class="param-name">样式</code>
+<span class="type">字符串</span>
+<div class="param-description">
+<ul>
+<li>要添加的样式名称数组。</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">index</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The index.</li>
+</div>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">gs.Object_UIElement</span>:
-                    <p>The created UI object.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_createDataGrid" class="method item">
-    <h3 class="name"><code>createDataGrid</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>descriptor</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">gs.Object_UIElement</span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates a data-grid UI object.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">descriptor</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The UI object descriptor.</li>
+</div>
+<div class="method item protected" id="method_createCalcFunction">
+<h3 class="name"><code>创建计算函数</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>表达式</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="returns-inline">
+<span class="type">函数</span>
+</span>
+<span class="flag protected">受保护的</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>为指定的表达式创建计算。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">表达式</code>
+<span class="type">字符串</span>
+<div class="param-description">
+<ul>
+<li>要为其创建计算函数的表达式。</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">gs.Object_UIElement</span>:
-                    <p>The created image button UI object.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_createFrame" class="method item">
-    <h3 class="name"><code>createFrame</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>descriptor</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">gs.Object_UIElement</span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates a frame UI object.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">descriptor</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The UI object descriptor.</li>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">gs.Object_UIElement</span>:
-                    <p>The created image button UI object.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_createFreeLayout" class="method item">
-    <h3 class="name"><code>createFreeLayout</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>descriptor</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">gs.Object_UIElement</span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates a free-layout UI object.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">descriptor</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The UI object descriptor.</li>
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type">函数</span>:<p>计算函数。</p>
+</div>
+</div>
+</div>
+<div class="method item protected" id="method_createControl">
+<h3 class="name"><code>创建控件</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>描述符</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="returns-inline">
+<span class="type">gs.UI元素</span>
+</span>
+<span class="flag protected">受保护的</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>根据指定的UI描述符创建UI对象，具体取决于对象的类型。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">描述符</code>
+<span class="type">对象</span>
+<div class="param-description">
+<ul>
+<li>UI对象描述符。</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">gs.Object_UIElement</span>:
-                    <p>The created image button UI object.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_createFromDescriptor" class="method item">
-    <h3 class="name"><code>createFromDescriptor</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>descriptor</code>
-                </li>
-                <li class="arg">
-                        <code>parent</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">gs.Object_UIElement</span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates an UI object from a specified UI descriptor.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">descriptor</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The UI object descriptor.</li>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">parent</code>
-                        <span class="type">gs.Object_UIElement</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The UI parent object. (A layout for example).</li>
+</div>
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type">gs.UI元素</span>:<p>创建的UI对象。</p>
+</div>
+</div>
+</div>
+<div class="method item protected" id="method_createControlFromDescriptor">
+<h3 class="name"><code>从描述符创建控件</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>描述符</code>
+</li>
+<li class="arg">
+<code>父对象</code>
+</li>
+<li class="arg">
+<code>索引</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="returns-inline">
+<span class="type">gs.UI元素</span>
+</span>
+<span class="flag protected">受保护的</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>根据指定的UI描述符创建一个UI对象。此方法会递归调用所有子描述符。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">描述符</code>
+<span class="type">对象</span>
+<div class="param-description">
+<ul>
+<li>UI对象描述符。</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">gs.Object_UIElement</span>:
-                    <p>The created UI object.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_createGridLayout" class="method item">
-    <h3 class="name"><code>createGridLayout</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>descriptor</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">gs.Object_UIElement</span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates a grid-layout UI object.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">descriptor</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The UI object descriptor.</li>
+</li>
+<li class="param">
+<code class="param-name">父对象</code>
+<span class="type">gs.UI元素</span>
+<div class="param-description">
+<ul>
+<li>UI父对象。（例如，一个布局）。</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">gs.Object_UIElement</span>:
-                    <p>The created image button UI object.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_createImage" class="method item">
-    <h3 class="name"><code>createImage</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>descriptor</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">gs.Object_UIElement</span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates an image UI object.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">descriptor</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The UI object descriptor.</li>
+</li>
+<li class="param">
+<code class="param-name">索引</code>
+<span class="type">数字</span>
+<div class="param-description">
+<ul>
+<li>索引。</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">gs.Object_UIElement</span>:
-                    <p>The created image button UI object.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_createImageButton" class="method item">
-    <h3 class="name"><code>createImageButton</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>descriptor</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">gs.Object_UIElement</span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates an image button UI object.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">descriptor</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The UI object descriptor.</li>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">gs.Object_UIElement</span>:
-                    <p>The created image button UI object.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_createImageMap" class="method item">
-    <h3 class="name"><code>createImageMap</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>descriptor</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">gs.Object_UIElement</span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates an image map UI object.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">descriptor</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The UI object descriptor.</li>
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type">gs.UI元素</span>:<p>创建的UI对象。</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_createDataGrid">
+<h3 class="name"><code>创建数据网格</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>描述符</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="returns-inline">
+<span class="type">gs.UI元素</span>
+</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>创建数据网格UI对象。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">描述符</code>
+<span class="type">对象</span>
+<div class="param-description">
+<ul>
+<li>UI对象描述符。</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">gs.Object_UIElement</span>:
-                    <p>The created image button UI object.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_createMessage" class="method item">
-    <h3 class="name"><code>createMessage</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>descriptor</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">gs.Object_UIElement</span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates a message UI object.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">descriptor</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The UI object descriptor.</li>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">gs.Object_UIElement</span>:
-                    <p>The created image button UI object.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_createObject" class="method item protected">
-    <h3 class="name"><code>createObject</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>type</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">Object</span>
-        </span>
-
-
-        <span class="flag protected">protected</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates an object from the specified object type. The type has the format
-<namespace>.<typename> like vn.Component_Hotspot.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">type</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The type name.</li>
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type">gs.UI元素</span>:<p>创建的图像按钮UI对象。</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_createFrame">
+<h3 class="name"><code>创建帧</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>描述符</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="returns-inline">
+<span class="type">gs.UI元素</span>
+</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>创建帧UI对象。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">描述符</code>
+<span class="type">对象</span>
+<div class="param-description">
+<ul>
+<li>UI对象描述符。</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">Object</span>:
-                    <p>The created object.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_createPanel" class="method item">
-    <h3 class="name"><code>createPanel</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>descriptor</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">gs.Object_UIElement</span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates a panel UI object.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">descriptor</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The UI object descriptor.</li>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">gs.Object_UIElement</span>:
-                    <p>The created image button UI object.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_createSpreadLayout" class="method item">
-    <h3 class="name"><code>createSpreadLayout</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>descriptor</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">gs.Object_UIElement</span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates a spread-layout UI object.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">descriptor</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The UI object descriptor.</li>
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type">gs.UI元素</span>:<p>创建的图像按钮UI对象。</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_createFreeLayout">
+<h3 class="name"><code>创建自由布局</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>描述符</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="returns-inline">
+<span class="type">gs.UI元素</span>
+</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>创建自由布局UI对象。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">描述符</code>
+<span class="type">对象</span>
+<div class="param-description">
+<ul>
+<li>UI对象描述符。</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">gs.Object_UIElement</span>:
-                    <p>The created image button UI object.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_createStackLayout" class="method item">
-    <h3 class="name"><code>createStackLayout</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>descriptor</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">gs.Object_UIElement</span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates a stack-layout UI object.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">descriptor</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The UI object descriptor.</li>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">gs.Object_UIElement</span>:
-                    <p>The created image button UI object.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_createText" class="method item">
-    <h3 class="name"><code>createText</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>descriptor</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">gs.Object_UIElement</span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates a text UI object.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">descriptor</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The UI object descriptor.</li>
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type">gs.UI元素</span>:<p>创建的图像按钮UI对象。</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_createFromDescriptor">
+<h3 class="name"><code>从描述符创建</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>描述符</code>
+</li>
+<li class="arg">
+<code>父对象</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="returns-inline">
+<span class="type">gs.UI元素</span>
+</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>根据指定的UI描述符创建一个UI对象。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">描述符</code>
+<span class="type">对象</span>
+<div class="param-description">
+<ul>
+<li>UI对象描述符。</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">gs.Object_UIElement</span>:
-                    <p>The created image button UI object.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_createThreePartImage" class="method item">
-    <h3 class="name"><code>createThreePartImage</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>descriptor</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">gs.Object_UIElement</span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates a three-part image UI object.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">descriptor</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The UI object descriptor.</li>
+</li>
+<li class="param">
+<code class="param-name">父对象</code>
+<span class="type">gs.UI元素</span>
+<div class="param-description">
+<ul>
+<li>UI父对象。（例如，一个布局）。</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">gs.Object_UIElement</span>:
-                    <p>The created image button UI object.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_createVideo" class="method item">
-    <h3 class="name"><code>createVideo</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>descriptor</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">gs.Object_UIElement</span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates a video UI object.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">descriptor</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The UI object descriptor.</li>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">gs.Object_UIElement</span>:
-                    <p>The created image button UI object.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_executePlaceholderFormulas" class="method item protected">
-    <h3 class="name"><code>executePlaceholderFormulas</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>descriptor</code>
-                </li>
-                <li class="arg">
-                        <code>params</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-        <span class="flag protected">protected</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Executes all placeholder formulas in the specified descriptor. The descriptor will be changed
-and placeholder formulas are replaced with their evaluated result value.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">descriptor</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The descriptor.</li>
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type">gs.UI元素</span>:<p>创建的UI对象。</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_createGridLayout">
+<h3 class="name"><code>创建网格布局</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>描述符</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="returns-inline">
+<span class="type">gs.UI元素</span>
+</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>创建网格布局UI对象。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">描述符</code>
+<span class="type">对象</span>
+<div class="param-description">
+<ul>
+<li>UI对象描述符。</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">params</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Object containing the placeholder params.</li>
+</div>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_setup" class="method item">
-    <h3 class="name"><code>setup</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Sets up UI Manager, optimizes styles, etc.</p>
-
-    </div>
-
-
-
-
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type">gs.UI元素</span>:<p>创建的图像按钮UI对象。</p>
 </div>
-<div id="method_setupStyles" class="method item protected">
-    <h3 class="name"><code>setupStyles</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-        <span class="flag protected">protected</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Sets up the UI styles by wrapping them into ui.Style objects and optimizing the access.</p>
-
-    </div>
-
-
-
-
 </div>
-            </div>
-
-            <div id="properties" class="api-class-tabpanel">
-                <h2 class="off-left">Properties</h2>
-
-<div id="property_alignments" class="property item protected">
-    <h3 class="name"><code>alignments</code></h3>
-    <span class="type">Object</span>
-
-
-        <span class="flag protected">protected</span>
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Mapping to table to map alignment names to number values.</p>
-
-    </div>
-
-
-
 </div>
-<div id="property_blendModes" class="property item protected">
-    <h3 class="name"><code>blendModes</code></h3>
-    <span class="type">Object</span>
-
-
-        <span class="flag protected">protected</span>
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Mapping to table to map blend-mode names to number values.</p>
-
-    </div>
-
-
-
+<div class="method item" id="method_createImage">
+<h3 class="name"><code>创建图像</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>描述符</code>
+</li>
+</ul><span class="paren">)</span>
 </div>
-<div id="property_customTypes" class="property item">
-    <h3 class="name"><code>customTypes</code></h3>
-    <span class="type">Object</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Stores all registered custom UI types/templates by name/id.</p>
-
-    </div>
-
-
-
+<span class="returns-inline">
+<span class="type">gs.UI元素</span>
+</span>
+<div class="meta">
+<p>
+</p>
 </div>
-<div id="property_customTypes" class="property item">
-    <h3 class="name"><code>customTypes</code></h3>
-    <span class="type">Object</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Stores all registered UI controllers by name/id.</p>
-
-    </div>
-
-
-
+<div class="description">
+<p>创建图像UI对象。</p>
 </div>
-<div id="property_customTypes" class="property item">
-    <h3 class="name"><code>customTypes</code></h3>
-    <span class="type">Object</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Stores all registered UI data sources by name/id.</p>
-
-    </div>
-
-
-
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">描述符</code>
+<span class="type">对象</span>
+<div class="param-description">
+<ul>
+<li>UI对象描述符。</li>
+</ul>
 </div>
-<div id="property_layouts" class="property item">
-    <h3 class="name"><code>layouts</code></h3>
-    <span class="type">Object</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Stores all registered UI layouts by name/id.</p>
-
-    </div>
-
-
-
+</li>
+</ul>
 </div>
-<div id="property_selectors" class="property item">
-    <h3 class="name"><code>selectors</code></h3>
-    <span class="type">Object</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Mapping to table to map selector names to number values.</p>
-
-    </div>
-
-
-
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type">gs.UI元素</span>:<p>创建的图像按钮UI对象。</p>
 </div>
-<div id="property_styles" class="property item">
-    <h3 class="name"><code>styles</code></h3>
-    <span class="type">Object</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Stores all registered UI styles by name/id.</p>
-
-    </div>
-
-
-
 </div>
-<div id="property_stylesById" class="property item">
-    <h3 class="name"><code>stylesById</code></h3>
-    <span class="type">ui.Style</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Stores all UI styles by number id.</p>
-
-    </div>
-
-
-
 </div>
-<div id="property_stylesByName" class="property item">
-    <h3 class="name"><code>stylesByName</code></h3>
-    <span class="type">Object</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Stores all UI styles by style-name.</p>
-
-    </div>
-
-
-
+<div class="method item" id="method_createImageButton">
+<h3 class="name"><code>创建图像按钮</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>描述符</code>
+</li>
+</ul><span class="paren">)</span>
 </div>
-            </div>
-
-
-    </div>
+<span class="returns-inline">
+<span class="type">gs.UI元素</span>
+</span>
+<div class="meta">
+<p>
+</p>
 </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="description">
+<p>创建图像按钮UI对象。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">描述符</code>
+<span class="type">对象</span>
+<div class="param-description">
+<ul>
+<li>UI对象描述符。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type">gs.UI元素</span>:<p>创建的图像按钮UI对象。</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_createImageMap">
+<h3 class="name"><code>创建图像映射</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>描述符</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="returns-inline">
+<span class="type">gs.UI元素</span>
+</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>创建图像映射UI对象。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">描述符</code>
+<span class="type">对象</span>
+<div class="param-description">
+<ul>
+<li>UI对象描述符。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type">gs.UI元素</span>:<p>创建的图像按钮UI对象。</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_createMessage">
+<h3 class="name"><code>创建消息</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>描述符</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="returns-inline">
+<span class="type">gs.UI元素</span>
+</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>创建消息UI对象。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">描述符</code>
+<span class="type">对象</span>
+<div class="param-description">
+<ul>
+<li>UI对象描述符。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type">gs.UI元素</span>:<p>创建的图像按钮UI对象。</p>
+</div>
+</div>
+</div>
+<div class="method item protected" id="method_createObject">
+<h3 class="name"><code>创建对象</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>类型</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="returns-inline">
+<span class="type">对象</span>
+</span>
+<span class="flag protected">受保护的</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>根据指定的对象类型创建一个对象。类型格式为<namespace>.<typename>类似vn.Component_Hotspot。</typename></namespace></p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">类型</code>
+<span class="type">字符串</span>
+<div class="param-description">
+<ul>
+<li>类型名称。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type">对象</span>:<p>创建的对象。</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_createPanel">
+<h3 class="name"><code>创建面板</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>描述符</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="returns-inline">
+<span class="type">gs.UI元素</span>
+</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>创建面板UI对象。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">描述符</code>
+<span class="type">对象</span>
+<div class="param-description">
+<ul>
+<li>UI对象描述符。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type">gs.UI元素</span>:<p>创建的图像按钮UI对象。</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_createSpreadLayout">
+<h3 class="name"><code>创建展开布局</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>描述符</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="returns-inline">
+<span class="type">gs.UI元素</span>
+</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>创建展开布局UI对象。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">描述符</code>
+<span class="type">对象</span>
+<div class="param-description">
+<ul>
+<li>UI对象描述符。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type">gs.UI元素</span>:<p>创建的图像按钮UI对象。</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_createStackLayout">
+<h3 class="name"><code>创建堆叠布局</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>描述符</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="returns-inline">
+<span class="type">gs.UI元素</span>
+</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>创建堆叠布局UI对象。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">描述符</code>
+<span class="type">对象</span>
+<div class="param-description">
+<ul>
+<li>UI对象描述符。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type">gs.UI元素</span>:<p>创建的图像按钮UI对象。</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_createText">
+<h3 class="name"><code>创建文本</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>描述符</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="returns-inline">
+<span class="type">gs.UI元素</span>
+</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>创建文本UI对象。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">描述符</code>
+<span class="type">对象</span>
+<div class="param-description">
+<ul>
+<li>UI对象描述符。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type">gs.UI元素</span>:<p>创建的图像按钮UI对象。</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_createThreePartImage">
+<h3 class="name"><code>创建三部分图像</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>描述符</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="returns-inline">
+<span class="type">gs.UI元素</span>
+</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>创建三部分图像UI对象。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">描述符</code>
+<span class="type">对象</span>
+<div class="param-description">
+<ul>
+<li>UI对象描述符。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type">gs.UI元素</span>:<p>创建的图像按钮UI对象。</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_createVideo">
+<h3 class="name"><code>创建视频</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>描述符</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="returns-inline">
+<span class="type">gs.Object_UIElement</span>
+</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>创建视频 UI 对象。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">descriptor</code>
+<span class="type">Object</span>
+<div class="param-description">
+<ul>
+<li>UI 对象描述符。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="returns">
+<h4>返回值：</h4>
+<div class="returns-description">
+<span class="type">gs.Object_UIElement</span>:<p>创建的图像按钮 UI 对象。</p>
+</div>
+</div>
+</div>
+<div class="method item protected" id="method_executePlaceholderFormulas">
+<h3 class="name"><code>executePlaceholderFormulas</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>descriptor</code>
+</li>
+<li class="arg">
+<code>params</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="flag protected">protected</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>执行指定描述符中的所有占位符公式。描述符将被修改，占位符公式将被其计算结果值替换。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">descriptor</code>
+<span class="type">Object</span>
+<div class="param-description">
+<ul>
+<li>描述符。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">params</code>
+<span class="type">Object</span>
+<div class="param-description">
+<ul>
+<li>包含占位符参数的对象。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_setup">
+<h3 class="name"><code>setup</code></h3>
+<span class="paren">()</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>设置 UI 管理器，优化样式等。</p>
+</div>
+</div>
+<div class="method item protected" id="method_setupStyles">
+<h3 class="name"><code>setupStyles</code></h3>
+<span class="paren">()</span>
+<span class="flag protected">protected</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>通过将 UI 样式包装成 ui.Style 对象并优化访问来设置 UI 样式。</p>
+</div>
+</div>
+</div>
+<div class="api-class-tabpanel" id="properties">
+<h2 class="off-left">属性</h2>
+<div class="property item protected" id="property_alignments">
+<h3 class="name"><code>alignments</code></h3>
+<span class="type">Object</span>
+<span class="flag protected">protected</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>映射到表格，将对齐名称映射到数值。</p>
+</div>
+</div>
+<div class="property item protected" id="property_blendModes">
+<h3 class="name"><code>blendModes</code></h3>
+<span class="type">Object</span>
+<span class="flag protected">protected</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>映射到表格，将混合模式名称映射到数值。</p>
+</div>
+</div>
+<div class="property item" id="property_customTypes">
+<h3 class="name"><code>customTypes</code></h3>
+<span class="type">Object</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>按名称/ID 存储所有注册的自定义 UI 类型/模板。</p>
+</div>
+</div>
+<div class="property item" id="property_customTypes">
+<h3 class="name"><code>customTypes</code></h3>
+<span class="type">Object</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>按名称/ID 存储所有注册的 UI 控制器。</p>
+</div>
+</div>
+<div class="property item" id="property_customTypes">
+<h3 class="name"><code>customTypes</code></h3>
+<span class="type">Object</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>按名称/ID 存储所有注册的 UI 数据源。</p>
+</div>
+</div>
+<div class="property item" id="property_layouts">
+<h3 class="name"><code>layouts</code></h3>
+<span class="type">Object</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>按名称/ID 存储所有注册的 UI 布局。</p>
+</div>
+</div>
+<div class="property item" id="property_selectors">
+<h3 class="name"><code>selectors</code></h3>
+<span class="type">Object</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>映射到表格，将选择器名称映射到数值。</p>
+</div>
+</div>
+<div class="property item" id="property_styles">
+<h3 class="name"><code>styles</code></h3>
+<span class="type">Object</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>按名称/ID 存储所有注册的 UI 样式。</p>
+</div>
+</div>
+<div class="property item" id="property_stylesById">
+<h3 class="name"><code>stylesById</code></h3>
+<span class="type">ui.Style</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>按数字 ID 存储所有 UI 样式。</p>
+</div>
+</div>
+<div class="property item" id="property_stylesByName">
+<h3 class="name"><code>stylesByName</code></h3>
+<span class="type">Object</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>按样式名称存储所有 UI 样式。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <script src="../assets/vendor/prettify/prettify-min.js"></script>
 <script>prettyPrint();</script>

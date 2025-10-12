@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+HTML
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="generator" content="Adobe RoboHelp 2015" />
-<title>Example: Movable Character</title>
-<link rel="StyleSheet" href="default.css" type="text/css" />
-<link rel="stylesheet" href="highlight/styles/default.css" type="text/css" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Adobe RoboHelp 2015" name="generator"/>
+<title>示例：可移动角色</title>
+<link href="default.css" rel="StyleSheet" type="text/css"/>
+<link href="highlight/styles/default.css" rel="stylesheet" type="text/css"/>
 <script src="highlight/highlight.pack.js" type="text/javascript">
 </script>
 <script type="text/javascript">
@@ -13,7 +13,7 @@
 hljs.initHighlightingOnLoad();
 //]]>
 </script>
-<script type="text/javascript" language="JavaScript">
+<script language="JavaScript" type="text/javascript">
 //<![CDATA[
 function reDo() {
   if (innerWidth != origWidth || innerHeight != origHeight)
@@ -37,83 +37,80 @@ visibility:hidden; }
 p.WebHelpNavBar { text-align:right; }
 -->
 </style>
-
-<script type="text/javascript" src="template/scripts/rh.min.js"></script>
-<script type="text/javascript" src="template/scripts/common.min.js"></script>
-<script type="text/javascript" src="template/scripts/topic.min.js"></script>
-<script type="text/javascript" src="template/scripts/constants.js"></script>
-<script type="text/javascript" src="template/scripts/utils.js"></script>
-<script type="text/javascript" src="template/scripts/mhutils.js"></script>
-<script type="text/javascript" src="template/scripts/mhlang.js"></script>
-<script type="text/javascript" src="template/scripts/mhver.js"></script>
-<script type="text/javascript" src="template/scripts/settings.js"></script>
-<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
-<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
-<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
-<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
-<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
- <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
-<script type="text/javascript" >
+<script src="template/scripts/rh.min.js" type="text/javascript"></script>
+<script src="template/scripts/common.min.js" type="text/javascript"></script>
+<script src="template/scripts/topic.min.js" type="text/javascript"></script>
+<script src="template/scripts/constants.js" type="text/javascript"></script>
+<script src="template/scripts/utils.js" type="text/javascript"></script>
+<script src="template/scripts/mhutils.js" type="text/javascript"></script>
+<script src="template/scripts/mhlang.js" type="text/javascript"></script>
+<script src="template/scripts/mhver.js" type="text/javascript"></script>
+<script src="template/scripts/settings.js" type="text/javascript"></script>
+<script src="template/scripts/XmlJsReader.js" type="text/javascript"></script>
+<script src="template/scripts/loadparentdata.js" type="text/javascript"></script>
+<script src="template/scripts/loadscreen.js" type="text/javascript"></script>
+<script src="template/scripts/loadprojdata.js" type="text/javascript"></script>
+<script src="template/scripts/mhtopic.js" type="text/javascript"></script>
+<link href="template/styles/topic.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
 gRootRelPath = ".";
 gCommonRootRelPath = ".";
 gTopicId = "4.2.0_3";
 </script>
- <meta name="topic-breadcrumbs" content="Scripter's Guide > VN Engine" />
+<meta content="Scripter's Guide &gt; VN Engine" name="topic-breadcrumbs"/>
 </head>
 <body>
-<script type="text/javascript" src="./ehlpdhtm.js"></script>
-
-<p class="Topic_Heading">Example: Movable Character</p>
-<p>&#160;</p>
-<p><span class="Topic_Start">I</span>n this example, we want to make a RPG/Adventure game style character who can walk over the screen using keyboard and also a NPC who walks by itself. In addition, we will display the current position of the character at the top-left of the screen.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Planning</p>
-<p>&#160;</p>
-<p>To follow VN Maker's Object-Component design, we first have to think about what kind of game objects and components we need.</p>
-<p>&#160;</p>
-<p class="SubSubHeading">Game Objects</p>
-<p>&#160;</p>
+<script src="./ehlpdhtm.js" type="text/javascript"></script>
+<p class="Topic_Heading">示例：可移动角色</p>
+<p> </p>
+<p><span class="Topic_Start">I</span>n 这个例子中，我们想做一个 RPG/冒险游戏风格的角色，他可以使用键盘在屏幕上行走，还有一个 NPC 自己走。此外，我们将在屏幕左上方显示角色的当前位置。</p>
+<p> </p>
+<p class="Sub_Heading">规划</p>
+<p> </p>
+<p>为了遵循 VN Maker 的对象-组件设计，我们首先必须考虑我们需要什么样的游戏对象和组件。</p>
+<p> </p>
+<p class="SubSubHeading">游戏对象</p>
+<p> </p>
 <ul style="list-style: disc;">
-<li>A character who can be controlled by the player</li>
-<li>A NPC who walks by itself</li>
-<li>A text at the top-left corner displaying the position of the playable character</li>
+<li>一个可以由玩家控制的角色</li>
+<li>一个自己行走的 NPC</li>
+<li>一个显示可玩角色位置的左上角文本</li>
 </ul>
-<p>&#160;</p>
-<p class="SubSubHeading">Components</p>
-<p>&#160;</p>
-<p>Let's think about what kind of components we need for our two characters. For our playable character, we need the following functionality:</p>
-<p>&#160;</p>
+<p> </p>
+<p class="SubSubHeading">组件</p>
+<p> </p>
+<p>让我们考虑我们需要为两个角色准备什么样的组件。对于我们的可玩角色，我们需要以下功能：</p>
+<p> </p>
 <ul style="list-style: disc;">
-<li>Display a character on screen</li>
-<li>Allow a character to walk in 4 different directions with animation</li>
-<li>Allow a character to walk in 4 different directions using keyboard</li>
+<li>在屏幕上显示角色</li>
+<li>允许角色在 4 个不同方向上带动画行走</li>
+<li>允许角色使用键盘在 4 个不同方向上行走</li>
 </ul>
-<p>&#160;</p>
-<p>For our NPC, we need the following funcationality:</p>
-<p>&#160;</p>
+<p> </p>
+<p>对于我们的 NPC，我们需要以下功能：</p>
+<p> </p>
 <ul style="list-style: disc;">
-<li>Display a character on screen</li>
-<li>Allow a character to walk in 4 different directions with animation</li>
-<li>Allow a character to walk along a hard-coded route/pattern like an NPC.</li>
+<li>在屏幕上显示角色</li>
+<li>允许角色在 4 个不同方向上带动画行走</li>
+<li>允许角色沿着硬编码的路线/模式行走，就像 NPC 一样。</li>
 </ul>
-<p>&#160;</p>
-<p>As we can see, the first two abilities are the same for both characters. Only the last one is different. If we break that down into components, we will end up with 3 components per character and 4 different kind of components in total.</p>
-<p>&#160;</p>
+<p> </p>
+<p>正如我们所看到的，前两种能力对于两个角色来说是相同的。只有最后一个不同。如果我们将其分解为组件，我们将得到每个角色 3 个组件，总共 4 种不同类型的组件。</p>
+<p> </p>
 <ul style="list-style: disc;">
-<li>gs.Component_Sprite - To display a character on screen</li>
-<li>gs.Component_CharacterWalking - To allow walking in 4 different directions with animation</li>
-<li>gs.Component_CharacterPlayer - To allow walking in 4 different directions using keyboard</li>
-<li>gs.Component_CharacterNpc - To allow walking in 4 different directions based on a route/pattern.</li>
+<li>gs.Component_Sprite - 在屏幕上显示角色</li>
+<li>gs.Component_CharacterWalking - 允许在 4 个不同方向上带动画行走</li>
+<li>gs.Component_CharacterPlayer - 允许使用键盘在 4 个不同方向上行走</li>
+<li>gs.Component_CharacterNpc - 允许在 4 个不同方向上基于路线/模式行走。</li>
 </ul>
-<p>&#160;</p>
-<p>For the first point, we can reuse the default sprite component to display our character on screen. But the other three components do not exist yet so we have to develop them ourselves.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Setup our Scene</p>
-<p>&#160;</p>
-<p>First, before we start to develop any new components, we will setup our scene and create two new game object templates in "Objects" folder called "Object_NpcCharacter" and "Object_PlayerCharacter" with the following content.</p>
+<p> </p>
+<p>对于第一点，我们可以重用默认的 sprite 组件在屏幕上显示我们的角色。但是其他三个组件还不存在，所以我们必须自己开发它们。</p>
+<p> </p>
+<p class="Sub_Heading">设置我们的场景</p>
+<p> </p>
+<p>首先，在我们开始开发任何新组件之前，我们将设置场景，并在“Objects”文件夹中创建两个名为“Object_NpcCharacter”和“Object_PlayerCharacter”的新游戏对象模板，内容如下。</p>
 <pre>
-<code class="coffee">
-# Game Object Template for the Player Character
+<code class="coffee"># Game Object Template for the Player Character
 class Object_PlayerCharacter extends gs.Object_Visual
     constructor: -&gt;
         super
@@ -130,10 +127,9 @@ class Object_PlayerCharacter extends gs.Object_Visual
         
 gs.Object_PlayerCharacter = Object_PlayerCharacter</code>
 </pre>
-<p>&#160;</p>
+<p> </p>
 <pre>
-<code class="coffee">
-# Game Object Template for NPC Character
+<code class="coffee"># Game Object Template for NPC Character
 class Object_NpcCharacter extends gs.Object_Visual
     constructor: -&gt;
         super
@@ -150,11 +146,10 @@ class Object_NpcCharacter extends gs.Object_Visual
         
 gs.Object_NpcCharacter = Object_NpcCharacter</code>
 </pre>
-<p>&#160;</p>
-<p>Next, we will setup our basic scene and create two game objects using our new game object templates.</p>
+<p> </p>
+<p>接下来，我们将设置基本场景并使用我们新的游戏对象模板创建两个游戏对象。</p>
 <pre>
-<code class="coffee">
-# ===================================================================
+<code class="coffee"># ===================================================================
 #
 #   Script: Component_TestBedBehavior
 #
@@ -241,14 +236,13 @@ class Component_TestBedBehavior extends gs.Component_SceneBehavior
         
 gs.Component_LayoutSceneBehavior = Component_TestBedBehavior</code>
 </pre>
-<p>If we test our game now, we will see two fully visible spritesheets on the screen. One more on the left side and the other more on the right side. However, they are not doing much, they are not showing the correct frame, they are not animated, not moving and we are not able to move one of them with our keyboard. That is because we only added a sprite-component to each of them so far. We need to develop and add the other components next to make our example work.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">The Walking Component</p>
-<p>&#160;</p>
-<p>To allow our characters to walk over the screen, we will develop a new component called gs.Component_CharacterWalking. To do that, we create a new script "Component_CharacterWalking" in Components folder and put the following code in.</p>
+<p>如果我们现在测试游戏，我们将看到屏幕上有两个完全可见的精灵表。一个在左边，另一个在右边。然而，它们并没有做什么，它们没有显示正确的帧，它们没有动画，它们没有移动，我们也无法用键盘移动其中一个。这是因为到目前为止，我们只向它们添加了一个 sprite 组件。我们接下来需要开发并添加其他组件才能使我们的示例正常工作。</p>
+<p> </p>
+<p class="Sub_Heading">行走组件</p>
+<p> </p>
+<p>为了让我们的角色能够在屏幕上行走，我们将开发一个名为 gs.Component_CharacterWalking 的新组件。要做到这一点，我们在 Components 文件夹中创建一个名为“Component_CharacterWalking”的新脚本，并将以下代码放入其中。</p>
 <pre>
-<code class="coffee">
-# A component which allows a character to walk
+<code class="coffee"># A component which allows a character to walk
 class Component_CharacterWalking extends gs.Component
     # Define component properties, etc. here.
     constructor: -&gt;
@@ -260,12 +254,11 @@ class Component_CharacterWalking extends gs.Component
         
 gs.Component_CharacterWalking = Component_CharacterWalking</code>
 </pre>
-<p>&#160;</p>
-<p>Next we go back to our Object_PlayerCharacter and Object_NpcCharacter script and add our new component to allow them to move.</p>
-<p>&#160;</p>
+<p> </p>
+<p>接下来我们回到 Object_PlayerCharacter 和 Object_NpcCharacter 脚本，并添加我们的新组件以便它们可以移动。</p>
+<p> </p>
 <pre>
-<code class="coffee">
-# Game Object Template for the Player Character
+<code class="coffee"># Game Object Template for the Player Character
 class Object_PlayerCharacter extends gs.Object_Visual
     constructor: -&gt;
         super
@@ -286,10 +279,9 @@ class Object_PlayerCharacter extends gs.Object_Visual
         
 gs.Object_PlayerCharacter = Object_PlayerCharacter</code>
 </pre>
-<p>&#160;</p>
+<p> </p>
 <pre>
-<code class="coffee">
-# Game Object Template for NPC Character
+<code class="coffee"># Game Object Template for NPC Character
 class Object_NpcCharacter extends gs.Object_Visual
     constructor: -&gt;
         super
@@ -310,37 +302,36 @@ class Object_NpcCharacter extends gs.Object_Visual
         
 gs.Object_NpcCharacter = Object_NpcCharacter</code>
 </pre>
-<p>&#160;</p>
-<p>If we test our game now, we will see that... nothing has changed. Our characters are still not able to walk over the screen. We are still just seeing the entire spritesheet. If we go back to Component_CharacterWalking, we will see the reason: Our component is almost empty and does not add any new behavior to our game object. Let's change that next.</p>
-<p>&#160;</p>
-<p>Let's think about what kind of functionality our component should add to the character.</p>
-<p>&#160;</p>
+<p> </p>
+<p>如果我们现在测试游戏，我们将看到……什么都没有改变。我们的角色仍然无法在屏幕上行走。我们仍然只看到整个精灵表。如果我们回到 Component_CharacterWalking，我们会发现原因：我们的组件几乎是空的，没有给我们的游戏对象添加任何新行为。我们接下来将其更改。</p>
+<p> </p>
+<p>让我们思考一下我们的组件应该给角色添加什么样的功能。</p>
+<p> </p>
 <ul style="list-style: disc;">
-<li>Only show a single character-frame and not the entire sprite-sheet</li>
-<li>Allow the character to watch into 4 different directions by displaying the appropriate character-frame</li>
-<li>Allow the character to walk into 4 different directions with a walk-animation</li>
-<li>If the character is not walking, the stand-pose for the current direction should be displayed.</li>
+<li>只显示一个角色帧，而不是整个精灵表</li>
+<li>允许角色通过显示适当的角色帧来查看 4 个不同的方向</li>
+<li>允许角色在 4 个不同方向上带步行动画行走</li>
+<li>如果角色不走路，应显示当前方向的站立姿势。</li>
 </ul>
-<p>&#160;</p>
-<p>One thing mentioned in each point is the direction. We need a way to know at what direction our character is currently looking so that our walking component can move the character in the right direction. That's why we added a direction-property to store a number value describing the current direction</p>
-<p>&#160;</p>
+<p> </p>
+<p>每一点中提到的一件事是方向。我们需要一种方法来知道我们的角色目前看向哪个方向，以便我们的行走组件可以朝正确的方向移动角色。这就是为什么我们添加了一个 direction 属性来存储一个描述当前方向的数字值</p>
+<p> </p>
 <ul style="list-style: disc;">
-<li>0 = Look Down</li>
-<li>1 = Look Left</li>
-<li>2 = Look Up</li>
-<li>3 = Look Right</li>
+<li>0 = 向下看</li>
+<li>1 = 向左看</li>
+<li>2 = 向上看</li>
+<li>3 = 向右看</li>
 </ul>
-<p>&#160;</p>
-<p>We added that property to the game object, not to the walking component. That is because the direction is more a general element of our character, its not specific for the walking-behavior only but maybe also for other functionalities / components.</p>
-<p>&#160;</p>
-<p>Next, we need to implement a lot of functionality for our component compared to the previous examples in this guide. But we will do it step by step.</p>
-<p>&#160;</p>
-<p class="SubSubHeading">Only show a single character-frame and not the entire sprite-sheet</p>
-<p>&#160;</p>
-<p>The first thing on our list is that we want to display only a single character-frame of the spritesheet.</p>
+<p> </p>
+<p>我们将该属性添加到游戏对象，而不是行走组件。这是因为方向更多地是我们角色的一个通用元素，它不仅仅是行走行为特有的，也可能适用于其他功能/组件。</p>
+<p> </p>
+<p>接下来，我们需要为我们的组件实现很多功能，与本指南中的先前示例相比。但我们将一步一步来。</p>
+<p> </p>
+<p class="SubSubHeading">只显示一个角色帧，而不是整个精灵表</p>
+<p> </p>
+<p>我们列表中的第一件事是，我们只想显示精灵表中的一个角色帧。</p>
 <pre>
-<code class="coffee">
-# A component which allows a character to walk
+<code class="coffee"># A component which allows a character to walk
 class Component_CharacterWalking extends gs.Component
     # Define component properties, etc. here.
     constructor: -&gt;
@@ -368,14 +359,13 @@ class Component_CharacterWalking extends gs.Component
         
 gs.Component_CharacterWalking = Component_CharacterWalking</code>
 </pre>
-<p>If we test our game now, we will see that our characters look a lot better now. What we are doing is here is that in our setup-method, which is only called once, we set the srcRect to the stand-pose frame of the spritesheet and also changing the size of the game object to match the spritesheet frame-size (32x48). Otherwise the character would look zoomed very much.</p>
-<p>&#160;</p>
-<p class="SubSubHeading">Allow the character to watch into 4 different directions by displaying the appropriate character-frame</p>
-<p>&#160;</p>
-<p>In the update-method of our component, which is called once per frame, we will check the direction-property and change the character-frame depending on the value so that the character looks into the right direction. To keep the code more clean, especially because we will add a lot more functionality later, we will create a new method updateDirection.</p>
+<p>如果我们现在测试游戏，我们将看到我们的角色看起来好多了。我们在这里做的是，在我们的 setup 方法中（只调用一次），我们将 srcRect 设置为精灵表的站立姿势帧，并更改游戏对象的大小以匹配精灵表帧大小（32x48）。否则角色看起来会非常放大。</p>
+<p> </p>
+<p class="SubSubHeading">允许角色通过显示适当的角色帧来查看 4 个不同的方向</p>
+<p> </p>
+<p>在我们的组件的 update 方法中（每帧调用一次），我们将检查 direction 属性并根据值更改角色帧，以便角色看向正确的方向。为了保持代码更干净，特别是因为我们稍后会添加更多功能，我们将创建一个新的 updateDirection 方法。</p>
 <pre>
-<code class="coffee">
-# A component which allows a character to walk
+<code class="coffee"># A component which allows a character to walk
 class Component_CharacterWalking extends gs.Component
     # Define component properties, etc. here.
     constructor: -&gt;
@@ -430,23 +420,22 @@ class Component_CharacterWalking extends gs.Component
         
 gs.Component_CharacterWalking = Component_CharacterWalking</code>
 </pre>
-<p>If we test our game now, we will see that our characters will look into the correct direction depending on the direction-property. So if we change that property, our character will now look at a different direction. We can try that out live during game-play by pressing F12 on Windows / Linux or Ctrl+Shift+i on Mac to open the debug tools, there we can select "Console" and then we can type:</p>
-<p>&#160;</p>
-<p><img src="image33.gif" alt="" style=" border:none; width:100%; max-width:446px;" border="0" /></p>
-<p>&#160;</p>
-<p>to change the direction of the character live during game play.</p>
-<p>&#160;</p>
-<p><img src="image34.gif" alt="" style=" border:none; width:100%; max-width:422px;" border="0" /></p>
-<p>&#160;</p>
-<p>That is useful for debugging or to play around. As a quick note: In most changes, those live-changes are only reflected if you click on the game window again after executing the script line on the console. That's because the game pauses whenever the game windows loses focus.</p>
-<p>&#160;</p>
-<p class="SubSubHeading">Allow the character to walk into 4 different directions with a walk-animation</p>
-<p>&#160;</p>
-<p>So far, our character can look into 4 different directions, that's great! &#160;In our next step we will teach the character how to walk.</p>
-<p>&#160;</p>
+<p>如果我们现在测试游戏，我们将看到我们的角色将根据 direction 属性看向正确的方向。所以如果我们改变那个属性，我们的角色现在将看向不同的方向。我们可以通过在 Windows/Linux 上按 F12 或在 Mac 上按 Ctrl+Shift+i 打开调试工具来在游戏期间实时尝试这一点，在那里我们可以选择“Console”（控制台），然后我们可以输入：</p>
+<p> </p>
+<p><img alt="" border="0" src="image33.gif" style=" border:none; width:100%; max-width:446px;"/></p>
+<p> </p>
+<p>以便在游戏期间实时更改角色的方向。</p>
+<p> </p>
+<p><img alt="" border="0" src="image34.gif" style=" border:none; width:100%; max-width:422px;"/></p>
+<p> </p>
+<p>这对于调试或玩耍很有用。快速提示：在大多数更改中，只有在执行控制台中的脚本行后再次单击游戏窗口时，这些实时更改才会反映出来。这是因为游戏窗口失去焦点时游戏会暂停。</p>
+<p> </p>
+<p class="SubSubHeading">允许角色在 4 个不同方向上带步行动画行走</p>
+<p> </p>
+<p>到目前为止，我们的角色可以看向 4 个不同的方向，这太棒了！在下一步中，我们将教角色如何行走。</p>
+<p> </p>
 <pre>
-<code class="coffee">
-# A component which allows a character to walk
+<code class="coffee"># A component which allows a character to walk
 class Component_CharacterWalking extends gs.Component
     # Define component properties, etc. here.
     constructor: -&gt;
@@ -559,23 +548,22 @@ class Component_CharacterWalking extends gs.Component
         
 gs.Component_CharacterWalking = Component_CharacterWalking</code>
 </pre>
-<p>As we can see above, we added a lot of functionality. Let's go through that step by step. We have added a new method "walk" which takes the amount of steps to walk in the current direction. One step is 32 pixels so the character moves on a virtual grid of 32x32 cells.</p>
-<p>&#160;</p>
-<p>In updateWalkingAnimation and updateWalking(), we used our knowledge from <a href="Animation_Basics.htm">Animation Basics</a> to play the spritesheet animation and move the character in the right direction if the character is currently walking. The walk-method allows us to start a X steps walk. We can start a walk using Debug Console very easily:</p>
-<p>&#160;</p>
-<p><img src="image35.gif" alt="" style=" border:none; width:100%; max-width:491px;" border="0" /></p>
-<p>&#160;</p>
-<p>With that line we let the NPC character walk 10 steps (320 pixel) down. Try to play around with it more and change the direction to let the character walk to the left or right.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">The Player Component</p>
-<p>&#160;</p>
-<p>Our characters are able to look and walk into different directions with animations now. So the most difficult part of our example is done! All what we have to do now is to make a component which let's a character walk over the screen depending on key-presses on the keyboard.</p>
-<p>&#160;</p>
-<p>So let's create a new component in "Components" folder called "Component_CharacterPlayer" with the following code.</p>
-<p>&#160;</p>
+<p>正如我们上面所看到的，我们添加了很多功能。让我们一步一步地进行。我们添加了一个新的“walk”方法，它接受在当前方向上行走的步数。一步是 32 像素，所以角色在 32x32 单元格的虚拟网格上移动。</p>
+<p> </p>
+<p>在 updateWalkingAnimation 和 updateWalking() 中，我们利用我们从<a href="Animation_Basics.htm">动画基础</a>中学到的知识来播放精灵表动画并在角色当前行走时向正确的方向移动角色。“walk”方法允许我们开始 X 步行走。我们可以使用调试控制台非常轻松地开始行走：</p>
+<p> </p>
+<p><img alt="" border="0" src="image35.gif" style=" border:none; width:100%; max-width:491px;"/></p>
+<p> </p>
+<p>使用这行代码，我们让 NPC 角色向下行走 10 步（320 像素）。尝试更多地玩它，并更改方向以让角色向左或向右行走。</p>
+<p> </p>
+<p class="Sub_Heading">玩家组件</p>
+<p> </p>
+<p>我们的角色现在能够看向动画的不同方向并行走，这很棒！我们现在最难的部分完成了！我们现在要做的就是创建一个组件，让角色根据键盘按键在屏幕上行走。</p>
+<p> </p>
+<p>所以让我们在“Components”文件夹中创建一个名为“Component_CharacterPlayer”的新组件，其内容如下。</p>
+<p> </p>
 <pre>
-<code class="coffee">
-# A component which allows to move a character via keyboard / gamepad.
+<code class="coffee"># A component which allows to move a character via keyboard / gamepad.
 class Component_CharacterPlayer extends gs.Component
     # Define component properties, etc. here.
     constructor: -&gt;
@@ -618,10 +606,9 @@ class Component_CharacterPlayer extends gs.Component
         
 gs.Component_CharacterPlayer = Component_CharacterPlayer</code>
 </pre>
-<p>What we do here is that we check if one of the arrow-keys or gamepad buttons is pressed and then we will just call the walk-method to let the character walk in the appropriate direction. That's it! Only thing left is that we have to go to our game object template "Object_PlayerCharacter" and add our new component to it.</p>
+<p>我们在这里做的是，我们检查方向键或游戏手柄按钮是否被按下，然后我们调用 walk 方法让角色朝着适当的方向行走。就这样！唯一剩下的就是我们必须转到我们的游戏对象模板“Object_PlayerCharacter”并添加我们的新组件。</p>
 <pre>
-<code class="coffee">
-# Game Object Template for the Player Character
+<code class="coffee"># Game Object Template for the Player Character
 class Object_PlayerCharacter extends gs.Object_Visual
     constructor: -&gt;
         super
@@ -647,14 +634,13 @@ class Object_PlayerCharacter extends gs.Object_Visual
         
 gs.Object_PlayerCharacter = Object_PlayerCharacter</code>
 </pre>
-<p>This time, we haven't defined an additional quick-access property for the player-component because we don't need to access it quickly. Feel free to add a property for it if you need it. If we test our game now, we can move our player character, the left character on the screen, using the arrow-keys of our keyboard or a gamepad!</p>
-<p>&#160;</p>
-<p class="Sub_Heading">The NPC Component</p>
-<p>&#160;</p>
-<p>We are very close to the end, next we need to let our NPC character walk on its own and then we are almost done. To do that, we will create a new component for NPC logic called "Component_CharacterNpc" with the following content.</p>
+<p>这次，我们没有为 player 组件定义额外的快速访问属性，因为我们不需要快速访问它。如果您需要，可以随时为其添加属性。如果我们现在测试游戏，我们可以使用键盘的方向键或游戏手柄来移动我们的玩家角色，屏幕左边的那个角色！</p>
+<p> </p>
+<p class="Sub_Heading">NPC 组件</p>
+<p> </p>
+<p>我们非常接近结尾了，接下来我们需要让我们的 NPC 角色自己行走，然后我们就差不多完成了。要做到这一点，我们将创建一个名为“Component_CharacterNpc”的 NPC 逻辑新组件，内容如下。</p>
 <pre>
-<code class="coffee">
-# A component which allows to move a character via keyboard / gamepad.
+<code class="coffee"># A component which allows to move a character via keyboard / gamepad.
 class Component_CharacterNpc extends gs.Component
     # Define component properties, etc. here.
     constructor: -&gt;
@@ -691,14 +677,13 @@ class Component_CharacterNpc extends gs.Component
         
 gs.Component_CharacterNpc = Component_CharacterNpc</code>
 </pre>
-<p>&#160;</p>
-<p>As we can see above, we added a property "@route" which is a list containing number where each number-entry describes a single step into a direction. The direction depends on the number. In our update-method, we are going through that list and let the character walk using the walk-method depending on the number. If we reach the end of the route, we are just jump back to the beginning to the list to make the movement of our NPC endless.</p>
-<p>&#160;</p>
-<p>Next we go to our game object template "Object_NpcCharacter" and add our NPC component to it.</p>
-<p>&#160;</p>
+<p> </p>
+<p>正如我们上面所看到的，我们添加了一个“@route”属性，它是一个包含数字的列表，每个数字条目描述了一个朝向的单步。方向取决于数字。在我们的 update 方法中，我们遍历这个列表，并让角色根据数字使用 walk 方法行走。当我们到达路线的末尾时，我们只是跳回到列表的开头，使 NPC 的移动变得无穷无尽。</p>
+<p> </p>
+<p>接下来我们去我们的游戏对象模板“Object_NpcCharacter”，并将我们的 NPC 组件添加到其中。</p>
+<p> </p>
 <pre>
-<code class="coffee">
-# Game Object Template for NPC Character
+<code class="coffee"># Game Object Template for NPC Character
 class Object_NpcCharacter extends gs.Object_Visual
     constructor: -&gt;
         super
@@ -726,23 +711,22 @@ class Object_NpcCharacter extends gs.Object_Visual
         
 gs.Object_NpcCharacter = Object_NpcCharacter</code>
 </pre>
-<p>After that, we can open Debug Console again and try to set the route-property to a simple route which let's the character walking around in a circle.</p>
-<p>&#160;</p>
-<p><img src="image37.gif" alt="" style=" border:none; width:100%; max-width:660px;" border="0" /></p>
-<p>&#160;</p>
-<p>So we are just accessing the route-property and set the route. After that, the NPC will start to walk around! Instead of hard-coding the route, that route could also come from a graphical level-editor for example. We could also instantiate multiple NPCs and give them different routes and maybe also implement other kind of behaviors besides walking.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Display the player character's current position</p>
-<p>&#160;</p>
-<p>We are not 100% done yet. One last thing we want to implement is an in-game display for the character's current position. We will learn two different approaches here, one approach uses one of the pre-defined game object's and the other approach uses VN Maker's In-Game UI System.</p>
-<p>&#160;</p>
-<p class="SubSubHeading">Display a text using ui.Object_Text</p>
-<p>&#160;</p>
-<p>Luckily, VN Maker already provides an easy-to-use game object for display text on screen: ui.Object_Text. We can just create an instance of that class in our scene and set it's text-property to the current position of our character object.</p>
-<p>&#160;</p>
+<p>之后，我们可以再次打开调试控制台，尝试将 route 属性设置为一个简单的路线，让角色绕圈行走。</p>
+<p> </p>
+<p><img alt="" border="0" src="image37.gif" style=" border:none; width:100%; max-width:660px;"/></p>
+<p> </p>
+<p>所以我们只是访问 route 属性并设置路线。之后，NPC 将开始行走！与其硬编码路线，不如说路线也可以来自图形级别编辑器，例如。我们还可以实例化多个 NPC 并给它们不同的路线，也许还可以实现除行走之外的其他行为。</p>
+<p> </p>
+<p class="Sub_Heading">显示玩家角色的当前位置</p>
+<p> </p>
+<p>我们还没有 100% 完成。最后一件事是我们想要实现的是一个游戏内的角色当前位置显示。我们将在这里学习两种不同的方法，一种方法使用预定义的某个游戏对象，另一种方法使用 VN Maker 的游戏内 UI 系统。</p>
+<p> </p>
+<p class="SubSubHeading">使用 ui.Object_Text 显示文本</p>
+<p> </p>
+<p>幸运的是，VN Maker 已经提供了一个易于使用的游戏对象来在屏幕上显示文本：ui.Object_Text。我们只需在场景中创建一个该类的实例，并将其 text 属性设置为角色对象的当前位置。</p>
+<p> </p>
 <pre>
-<code class="coffee">
-# ===================================================================
+<code class="coffee"># ===================================================================
 #
 #   Script: Component_TestBedBehavior
 #
@@ -838,53 +822,51 @@ class Component_TestBedBehavior extends gs.Component_SceneBehavior
         
 gs.Component_LayoutSceneBehavior = Component_TestBedBehavior</code>
 </pre>
-<p>As we can see in prepareVisual method, we are creating a third game object using ui.Object_Text and adding it to the scene. In updateContent we are just updating the text so that it displays the current position of the player character.</p>
-<p>&#160;</p>
-<p class="SubSubHeading">Using the In-Game UI System</p>
-<p>&#160;</p>
-<p>Actually, we already used the In-Game UI System with our first solution. The ui.Object_Text template is part of the In-Game UI System game objects and responsible for displaying text on screen. The only different in this example is that we will use a JSON Layout to make our position display a bit more stunning. You can read more about JSON layouts in <a href="IGUI_Getting_Started.htm">In-Game UI System</a> documentation.</p>
-<p>&#160;</p>
-<p>First we navigate to the "Layouts" folder in script-editor and add a new CoffeeScript file called "Layout_CharacterDisplay" with the following content.</p>
+<p>正如我们在 prepareVisual 方法中所见，我们使用 ui.Object_Text 创建了第三个游戏对象并将其添加到场景中。在 updateContent 中，我们只是更新文本，以便它显示玩家角色的当前位置。</p>
+<p> </p>
+<p class="SubSubHeading">使用游戏内 UI 系统</p>
+<p> </p>
+<p>实际上，我们已经用我们的第一个解决方案使用了游戏内 UI 系统。ui.Object_Text 模板是游戏内 UI 系统游戏对象的一部分，负责在屏幕上显示文本。本例中唯一的区别是我们将使用 JSON 布局来使我们的位置显示更具吸引力。您可以阅读更多关于 JSON 布局的信息，请参阅<a href="IGUI_Getting_Started.htm">游戏内 UI 系统</a>文档。</p>
+<p> </p>
+<p>首先，我们导航到脚本编辑器中的“Layouts”文件夹，并添加一个名为“Layout_CharacterDisplay”的新 CoffeeScript 文件，内容如下。</p>
 <pre>
-<code class="json">
-ui.UIManager.layouts.characterDisplay = {
-    "type": "ui.FreeLayout",
-    "frame": [(Graphics.width - 300) / 2, 0, Graphics.width, Graphics.height],
-    "controls": [
+<code class="json">ui.UIManager.layouts.characterDisplay = {
+    "类型": "ui.FreeLayout",
+    "框架": [(Graphics.width - 300) / 2, 0, Graphics.width, Graphics.height],
+    "控件": [
         {
-            "type": "ui.TitledWindow",
-            "params": { "title": "Character Info" }
-            "frame": [0, 0, 300, 100]
+            "类型": "ui.TitledWindow",
+            "参数": { "标题": "角色信息" }
+            "框架": [0, 0, 300, 100]
         },
         {
-            "type": "ui.Text",
-            "style": "regularUIText",
+            "类型": "ui.Text",
+            "样式": "regularUIText",
             "id": "positionDisplay",
             "updateBehavior": "continuous",
-            "formulas": [$ -&gt; 
+            "公式": [$ -&gt; 
                     x = SceneManager.scene.behavior.playerObject.dstRect.x
                     y = SceneManager.scene.behavior.playerObject.dstRect.y
                     o.text = "Position: (#{x}, #{y})"
             ],
-            "text": "Position: (0, 0)",
-            "frame": [10, 55],
+            "文本": "Position: (0, 0)",
+            "框架": [10, 55],
             "sizeToFit": true
         }
     ]
 }</code>
 </pre>
-<p>&#160;</p>
-<p>With the above JSON syntax, we are defining a background UI window with a styled text on top. We added a formulas-property with a formula which sets the text to the current position of the player. The id-property with "positionDisplay" as value allows us to access the text object from script via:</p>
-<p>&#160;</p>
+<p> </p>
+<p>使用上面的 JSON 语法，我们定义了一个带有样式文本的背景 UI 窗口。我们添加了一个 formulas 属性，其中包含一个将文本设置为玩家当前位置的公式。值为“positionDisplay”的 id 属性允许我们通过以下方式从脚本访问文本对象：</p>
+<p> </p>
 <p>textObject = gs.ObjectManager.current.objectById("positionDisplay")</p>
-<p>&#160;</p>
-<p>if necessary. It is recommended to use formulas only for very easy data-binding and not for complex code-blocks.</p>
-<p>&#160;</p>
-<p>Next we have to bring that layout on screen. To do that, we need to change our scene a bit:</p>
-<p>&#160;</p>
+<p> </p>
+<p>如果需要。建议仅将公式用于非常简单的数据绑定，而不是复杂代码块。</p>
+<p> </p>
+<p>接下来我们需要将该布局显示在屏幕上。为此，我们需要稍微更改我们的场景：</p>
+<p> </p>
 <pre>
-<code class="coffee">
-# ===================================================================
+<code class="coffee"># ===================================================================
 #
 #   Script: Component_TestBedBehavior
 #
@@ -975,10 +957,10 @@ class Component_TestBedBehavior extends gs.Component_SceneBehavior
         
 gs.Component_LayoutSceneBehavior = Component_TestBedBehavior</code>
 </pre>
-<p>In prepareVisual method, we create a new layout object using ui.UIManager.createFromDescriptor which allows us to create a layout game object easily from a specified JSON layout(also called layout descriptor). We just need to add that layout game object to the scene and done:</p>
-<p>&#160;</p>
-<p><img src="image38.gif" alt="" style=" border:none; width:100%; max-width:797px;" border="0" /></p>
-<p>&#160;</p>
-<p>Now we have a better looking position display. Follow the link to the <a href="IGUI_Getting_Started.htm">In-Game UI System</a> documentation and take a look at the examples there to learn more about it.</p>
+<p>在 prepareVisual 方法中，我们使用 ui.UIManager.createFromDescriptor 创建了一个新的布局对象，它允许我们轻松地从指定的 JSON 布局（也称为布局描述符）创建布局游戏对象。我们只需将该布局游戏对象添加到场景中即可：</p>
+<p> </p>
+<p><img alt="" border="0" src="image38.gif" style=" border:none; width:100%; max-width:797px;"/></p>
+<p> </p>
+<p>现在我们有了更好看的职位显示。请访问<a href="IGUI_Getting_Started.htm">游戏内 UI 系统</a>文档并查看其中的示例，以了解更多关于它的信息。</p>
 </body>
 </html>

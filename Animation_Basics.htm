@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+HTML
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="generator" content="Adobe RoboHelp 2015" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Adobe RoboHelp 2015" name="generator"/>
 <title>Animation Basics</title>
-<link rel="StyleSheet" href="default.css" type="text/css" />
-<link rel="stylesheet" href="highlight/styles/default.css" type="text/css" />
+<link href="default.css" rel="StyleSheet" type="text/css"/>
+<link href="highlight/styles/default.css" rel="stylesheet" type="text/css"/>
 <script src="highlight/highlight.pack.js" type="text/javascript">
 </script>
 <script type="text/javascript">
@@ -13,7 +13,7 @@
 hljs.initHighlightingOnLoad();
 //]]>
 </script>
-<script type="text/javascript" language="JavaScript">
+<script language="JavaScript" type="text/javascript">
 //<![CDATA[
 function reDo() {
   if (innerWidth != origWidth || innerHeight != origHeight)
@@ -37,77 +37,67 @@ visibility:hidden; }
 p.WebHelpNavBar { text-align:right; }
 -->
 </style>
-
-<script type="text/javascript" src="template/scripts/rh.min.js"></script>
-<script type="text/javascript" src="template/scripts/common.min.js"></script>
-<script type="text/javascript" src="template/scripts/topic.min.js"></script>
-<script type="text/javascript" src="template/scripts/constants.js"></script>
-<script type="text/javascript" src="template/scripts/utils.js"></script>
-<script type="text/javascript" src="template/scripts/mhutils.js"></script>
-<script type="text/javascript" src="template/scripts/mhlang.js"></script>
-<script type="text/javascript" src="template/scripts/mhver.js"></script>
-<script type="text/javascript" src="template/scripts/settings.js"></script>
-<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
-<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
-<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
-<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
-<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
- <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
-<script type="text/javascript" >
+<script src="template/scripts/rh.min.js" type="text/javascript"></script>
+<script src="template/scripts/common.min.js" type="text/javascript"></script>
+<script src="template/scripts/topic.min.js" type="text/javascript"></script>
+<script src="template/scripts/constants.js" type="text/javascript"></script>
+<script src="template/scripts/utils.js" type="text/javascript"></script>
+<script src="template/scripts/mhutils.js" type="text/javascript"></script>
+<script src="template/scripts/mhlang.js" type="text/javascript"></script>
+<script src="template/scripts/mhver.js" type="text/javascript"></script>
+<script src="template/scripts/settings.js" type="text/javascript"></script>
+<script src="template/scripts/XmlJsReader.js" type="text/javascript"></script>
+<script src="template/scripts/loadparentdata.js" type="text/javascript"></script>
+<script src="template/scripts/loadscreen.js" type="text/javascript"></script>
+<script src="template/scripts/loadprojdata.js" type="text/javascript"></script>
+<script src="template/scripts/mhtopic.js" type="text/javascript"></script>
+<link href="template/styles/topic.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
 gRootRelPath = ".";
 gCommonRootRelPath = ".";
 gTopicId = "4.1.0_5";
 </script>
- <meta name="topic-breadcrumbs" content="Scripter's Guide > Basic Engine" />
+<meta content="Scripter's Guide &gt; Basic Engine" name="topic-breadcrumbs"/>
 </head>
 <body>
-<script type="text/javascript" src="./ehlpdhtm.js"></script>
-
+<script src="./ehlpdhtm.js" type="text/javascript"></script>
 <p class="Topic_Heading">动画</p>
-<p>&#160;</p>
+<p> </p>
 <p>
-    <span class="Topic_Start">V</span>isual Novel Maker的引擎已经提供了许多组件，可以轻松进行平滑的动画。然而，在本章中，我们将从零开始制作一些非常简单的动画，首先学习一些基础知识，而不使用VN Maker的动画系统。
-</p>
-<p>&#160;</p>
+<span class="Topic_Start">V</span>isual Novel Maker的引擎已经提供了许多组件，可以轻松进行平滑的动画。然而，在本章中，我们将从零开始制作一些非常简单的动画，首先学习一些基础知识，而不使用VN Maker的动画系统。</p>
+<p> </p>
 <p>您可以利用这些知识了解动画如何在内部工作，甚至可能构建自己的动画系统，但我们建议初学者使用VN Maker的默认动画系统。</p>
-<p>&#160;</p>
-<p class="Sub_Heading">
-    动画的工作原理
-</p>
-<p>&#160;</p>
+<p> </p>
+<p class="Sub_Heading">动画的工作原理</p>
+<p> </p>
 <p>您的游戏运行在所谓的游戏循环中，这意味着游戏逻辑的某部分会被执行并重复执行。通常情况下，每秒执行60次。该循环直到用户退出游戏才会结束。在VN Maker中，如果游戏窗口失去焦点，循环会暂停。</p>
-<p>&#160;</p>
+<p> </p>
 <p>为了尽可能简单，您可以将测试场景中的 `updateContent` 方法想象为您进入游戏循环的入口点。</p>
 <pre>
-    <code class="coffee">
-        ###*
+    <code class="coffee">###*
         * 更新场景内容。
         ###
         updateContent: -&gt;
-        # 您进入游戏循环的入口点。
-    </code>
+        # 您进入游戏循环的入口点。</code>
 </pre>
 <p>在我们的上一个示例中，我们将 `updateContent` 方法留空，因为那里没有需要执行的操作。但是，在正常情况下，该方法每秒被调用60次。我们可以利用这一点通过在每次调用方法时改变图形对象的位置来实现动画效果。因此，让我们稍微修改这个方法，为我们的精灵添加一些移动和旋转：</p>
 <pre>
-    <code class="coffee">
-        ###*
+    <code class="coffee">###*
         * 更新场景内容。
         ###
         updateContent: -&gt;
         # 将精灵的旋转角度加1，以每秒60度的速度旋转。
         @sprite.angle += 1
         # 将精灵的 x 坐标加 1，以每秒 60 像素的速度向右移动。
-        @sprite.x += 1
-    </code>
+        @sprite.x += 1</code>
 </pre>
 <p>如果我们执行这个示例，我们可以看到我们的精灵缓慢地不停地向右移动和旋转，直到它完全离开屏幕。这是因为我们从未为动画设置结束条件，只要游戏在运行，它就会一直执行。</p>
-<p>&#160;</p>
+<p> </p>
 <p class="Sub_Heading">控制您的动画</p>
-<p>&#160;</p>
+<p> </p>
 <p>为了更好地控制上述示例中的动画，我们将设置一个计时器，一旦计时器达到0，我们就会停止动画。</p>
 <pre>
-    <code class="coffee">
-        ###*
+    <code class="coffee">###*
         * 为场景准备所有数据并加载必要的图形和音频资源。
         ###
         prepareData: -&gt;
@@ -126,17 +116,15 @@ gTopicId = "4.1.0_5";
         # 将精灵的 x 坐标增加1，以每秒60像素的速度向右移动。
         @sprite.x += 1
         # Reduce the timer by 1.
-        @animationTimer -= 1
-    </code>
+        @animationTimer -= 1</code>
 </pre>
 <p>在 prepareData 方法中，我们设置了一个名为 timer 的变量，并将其设置为 300。这意味着在经过 300 个游戏循环运行后，也称为 "帧"，我们将停止动画。由于我们每秒钟有 60 帧，因此我们的动画将持续运行 5 秒钟。在 updateContent 方法中，我们检查 timer，并且只有在 timer 尚未达到 0 时，我们才会继续动画并将 timer 减少 1。</p>
-<p>&#160;</p>
+<p> </p>
 <p class="Sub_Heading">使你的动画更加平滑</p>
-<p>&#160;</p>
+<p> </p>
 <p>我们当前的动画在 5 秒后立即停止，但有时添加平滑的淡出 / 缓动效果会更加优雅。这意味着在 5 秒后，动画会变得越来越慢，直到停止。</p>
 <pre>
-    <code class="coffee">
-        updateContent: -&gt;
+    <code class="coffee">updateContent: -&gt;
         # 只要计时器未达到0，我们就会对精灵进行动画处理。
         if @animationTimer &gt; 0
         # 在开始时将精灵的旋转角度增加5，然后随着时间的推移逐渐减少增量，使旋转速度变得越来越慢。
@@ -144,39 +132,35 @@ gTopicId = "4.1.0_5";
         # 这样使得旋转速度变得越来越慢，直到停止。
         @sprite.angle += 5 * (@animationTimer / 300)
         # 将计时器减少1。
-        @animationTimer -= 1
-    </code>
+        @animationTimer -= 1</code>
 </pre>
-<p>通过这个例子，我们可以看到旋转在开始时非常快，然后逐渐失去速度，直到停止。这也被称为线性缓动，非常简单。还有许多其他的缓动方程，您可以在 <a href="Easing_Effects.htm">Easing Effects</a> topic.</p>
-<p>&#160;</p>
+<p>通过这个例子，我们可以看到旋转在开始时非常快，然后逐渐失去速度，直到停止。这也被称为线性缓动，非常简单。还有许多其他的缓动方程，您可以在<a href="Easing_Effects.htm">Easing Effects</a>topic.</p>
+<p> </p>
 <p class="Sub_Heading">精灵表动画</p>
-<p>&#160;</p>
+<p> </p>
 <p>在游戏开发中，精灵表是一个包含多个较小图像的单个图像文件。以下示例显示了一个2D角色的精灵表。</p>
-<p>&#160;</p>
-<p style="font-family: Arial, sans-serif; font-weight: bold;"><img src="4FramesNaia-Helpfile.png" alt="" style=" border:none; width:100%; max-width:327px;" border="0" /></p>
-<p>&#160;</p>
+<p> </p>
+<p style="font-family: Arial, sans-serif; font-weight: bold;"><img alt="" border="0" src="4FramesNaia-Helpfile.png" style=" border:none; width:100%; max-width:327px;"/></p>
+<p> </p>
 <p>上面的精灵表包含角色可以看向的所有方向，还包含移动动画的所有图像。精灵表中的单个图像在动画中也称为“帧”。</p>
-<p>&#160;</p>
+<p> </p>
 <p>要创建基于精灵表的动画，我们每次只显示精灵表中的单个帧。在经过一定时间后，显示精灵表中的下一帧。如果我们控制得当，看起来就像是流畅的动画。在我们的示例中，这使得角色看起来在行走。</p>
-<p>&#160;</p>
-<p><img src="$Naia.gif" alt="" style=" border:none; width:100%; max-width:32px;" border="0" /></p>
-<p>&#160;</p>
-<p>也许你还记得我们在<a href="Display_a_Picture.htm">Display a Picture</a> 示例中使用的 `srcRect` 属性。我们将其设置为图像的全尺寸，但是对于精灵表动画，我们可以利用这个属性来仅显示单个帧，因为 `srcRect` 允许我们在屏幕上只显示图像的特定部分。</p>
-<p>&#160;</p>
-<p><img src="4FramesNaia-Helpfile_Select.png" alt="" style=" border:none; width:100%; max-width:327px;" border="0" /></p>
-<p>&#160;</p>
+<p> </p>
+<p><img alt="" border="0" src="$Naia.gif" style=" border:none; width:100%; max-width:32px;"/></p>
+<p> </p>
+<p>也许你还记得我们在<a href="Display_a_Picture.htm">Display a Picture</a>示例中使用的 `srcRect` 属性。我们将其设置为图像的全尺寸，但是对于精灵表动画，我们可以利用这个属性来仅显示单个帧，因为 `srcRect` 允许我们在屏幕上只显示图像的特定部分。</p>
+<p> </p>
+<p><img alt="" border="0" src="4FramesNaia-Helpfile_Select.png" style=" border:none; width:100%; max-width:327px;"/></p>
+<p> </p>
 <p>黄色区域是精灵的 `srcRect`，因此只有图像的该部分将显示在屏幕上。如果我们足够快地移动该区域，就可以得到动画效果。</p>
-<p>&#160;</p>
-<p>
-    让我们来看看以下的例子，我们使用这个精灵表：
-</p>
-<p>&#160;</p>
-<p><img src="4FramesNaia.png" alt="" style=" border:none; width:100%; max-width:128px;" border="0" /></p>
-<p>&#160;</p>
+<p> </p>
+<p>让我们来看看以下的例子，我们使用这个精灵表：</p>
+<p> </p>
+<p><img alt="" border="0" src="4FramesNaia.png" style=" border:none; width:100%; max-width:128px;"/></p>
+<p> </p>
 <p>with the following code:</p>
 <pre>
-    <code class="coffee">
-        ###*
+    <code class="coffee">###*
         * 准备场景中的所有视觉游戏对象。
         ###
         prepareVisual: -&gt;
@@ -199,17 +183,13 @@ gTopicId = "4.1.0_5";
         ###
         prepareData: -&gt;
         # 加载精灵表位图。
-        @bitmap = ResourceManager.getBitmap("Graphics/Pictures/Naia")
-    </code>
+        @bitmap = ResourceManager.getBitmap("Graphics/Pictures/Naia")</code>
 </pre>
-<p>
-    为使该示例生效，您需要将上述精灵表导入到项目的 Graphics/Pictures 文件夹中，并将其命名为 "Naia"。如果我们测试该示例，我们会看到角色显示在屏幕中央。这是因为我们将 srcRect 设置为精灵表的一个 32x48 像素部分。精灵表中的单个帧大小为 32x48 像素。
-</p>
-<p>&#160;</p>
+<p>为使该示例生效，您需要将上述精灵表导入到项目的 Graphics/Pictures 文件夹中，并将其命名为 "Naia"。如果我们测试该示例，我们会看到角色显示在屏幕中央。这是因为我们将 srcRect 设置为精灵表的一个 32x48 像素部分。精灵表中的单个帧大小为 32x48 像素。</p>
+<p> </p>
 <p>让我们通过修改 updateContent 方法使其实现动画效果：</p>
 <pre>
-    <code class="coffee">
-        ###*
+    <code class="coffee">###*
         * Update the scene's content.
         ###
         updateContent: -&gt;
@@ -218,24 +198,18 @@ gTopicId = "4.1.0_5";
         if Graphics.frameCount % 15 == 0
         # 我们将 srcRect 向右移动 32 像素，以显示精灵表的下一帧。
         # 我们使用 128 进行取模运算来循环播放动画。
-        @sprite.srcRect.x = (@sprite.srcRect.x + 32) % 128
-    </code>
+        @sprite.srcRect.x = (@sprite.srcRect.x + 32) % 128</code>
 </pre>
 <p>如果我们现在运行游戏，我们会看到角色在屏幕上走动。其实她并没有真正移动，但我们可以看到她的行走动画。让我们仔细看一下上面的代码，看看是如何实现的。</p>
-<p>&#160;</p>
+<p> </p>
 <p>首先，我们对当前的 `Graphics.frameCount` 进行取模运算，它是一个在每个游戏循环帧/运行中递增的计数器。因此，它存储了自游戏开始以来经过的帧数。通过对 15 取模，每 15 帧结果会为 0。因此，只有在经过了 15 帧之后，我们才会执行下面 `if` 条件下的动画代码。</p>
-<p>&#160;</p>
+<p> </p>
 <p>在这里我们所做的是将 `srcRect` 沿着 x 轴移动 32 像素。如前所述，精灵表中的单个帧是 32x48 像素。因此，如果我们在 x 轴上将 `srcRect` 移动 32 像素，就会显示精灵表的下一帧。你可以将 `srcRect` 想象成是一个黄色光标悬浮在精灵表位图上，具有位置和大小，屏幕上只显示光标所在区域的内容。</p>
-<p>&#160;</p>
+<p> </p>
 <p>然而，如果我们将 `srcRect` 光标移动得太远向右，会超出精灵表的范围。为了避免这种情况，我们添加了一个模 128 运算。我们的精灵表的宽度是 128 像素，而单个帧是 32 像素。因此，如果 `srcRect` 光标的 x 坐标达到 128，模运算的结果将为 0。这样，我们的 `srcRect` 光标会被移回到 0，使得动画可以无限循环播放。</p>
-<p>&#160;</p>
-<p>
-    虽然一开始听起来有点复杂，但试着修改上面的例子会让你更好地理解它。尝试移除模运算看看会发生什么，将 % 15 改成 % 60 看看动画如何变慢。通过一些实验，你会对它有更好的感觉。
-</p>
-<p>&#160;</p>
-<p>
-    正如在这一章节开头提到的那样，所有这些功能已经在 <a href="Animations_Animator.htm">Visual Novel Maker's Animation System</a>
-    中实现了，你可以直接使用，我们将在另一个章节中学习如何使用它。
-</p>
+<p> </p>
+<p>虽然一开始听起来有点复杂，但试着修改上面的例子会让你更好地理解它。尝试移除模运算看看会发生什么，将 % 15 改成 % 60 看看动画如何变慢。通过一些实验，你会对它有更好的感觉。</p>
+<p> </p>
+<p>正如在这一章节开头提到的那样，所有这些功能已经在<a href="Animations_Animator.htm">Visual Novel Maker's Animation System</a>中实现了，你可以直接使用，我们将在另一个章节中学习如何使用它。</p>
 </body>
 </html>

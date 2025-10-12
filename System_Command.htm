@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+系统命令
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="generator" content="Adobe RoboHelp 2015" />
-<title>System Commands</title>
-<link rel="StyleSheet" href="default.css" type="text/css" />
-<script type="text/javascript" language="JavaScript">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Adobe RoboHelp 2015" name="generator"/>
+<title>系统命令</title>
+<link href="default.css" rel="StyleSheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
 //<![CDATA[
 function reDo() {
   if (innerWidth != origWidth || innerHeight != origHeight)
@@ -29,1067 +29,741 @@ visibility:hidden; }
 p.WebHelpNavBar { text-align:right; }
 -->
 </style>
-
-<script type="text/javascript" src="template/scripts/rh.min.js"></script>
-<script type="text/javascript" src="template/scripts/common.min.js"></script>
-<script type="text/javascript" src="template/scripts/topic.min.js"></script>
-<script type="text/javascript" src="template/scripts/constants.js"></script>
-<script type="text/javascript" src="template/scripts/utils.js"></script>
-<script type="text/javascript" src="template/scripts/mhutils.js"></script>
-<script type="text/javascript" src="template/scripts/mhlang.js"></script>
-<script type="text/javascript" src="template/scripts/mhver.js"></script>
-<script type="text/javascript" src="template/scripts/settings.js"></script>
-<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
-<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
-<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
-<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
-<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
- <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
-<script type="text/javascript" >
+<script src="template/scripts/rh.min.js" type="text/javascript"></script>
+<script src="template/scripts/common.min.js" type="text/javascript"></script>
+<script src="template/scripts/topic.min.js" type="text/javascript"></script>
+<script src="template/scripts/constants.js" type="text/javascript"></script>
+<script src="template/scripts/utils.js" type="text/javascript"></script>
+<script src="template/scripts/mhutils.js" type="text/javascript"></script>
+<script src="template/scripts/mhlang.js" type="text/javascript"></script>
+<script src="template/scripts/mhver.js" type="text/javascript"></script>
+<script src="template/scripts/settings.js" type="text/javascript"></script>
+<script src="template/scripts/XmlJsReader.js" type="text/javascript"></script>
+<script src="template/scripts/loadparentdata.js" type="text/javascript"></script>
+<script src="template/scripts/loadscreen.js" type="text/javascript"></script>
+<script src="template/scripts/loadprojdata.js" type="text/javascript"></script>
+<script src="template/scripts/mhtopic.js" type="text/javascript"></script>
+<link href="template/styles/topic.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
 gRootRelPath = ".";
 gCommonRootRelPath = ".";
 gTopicId = "2.3.1.0_13";
 </script>
- <meta name="topic-breadcrumbs" content="Exploring the Editor > Scene Editor > Scene Content Commands" />
+<meta content="Exploring the Editor &gt; Scene Editor &gt; Scene Content Commands" name="topic-breadcrumbs"/>
 </head>
-
 <body>
-<script type="text/javascript" src="./ehlpdhtm.js"></script>
-
-<div style="width: 100%; position: relative;" id="header">
-	<p class="Topic_Heading">System Command</p>
+<script src="./ehlpdhtm.js" type="text/javascript"></script>
+<div id="header" style="width: 100%; position: relative;">
+<p class="Topic_Heading">T</p>
 </div>
-<p style="font-family: Arial, sans-serif;">&#160;</p>
+<p style="font-family: Arial, sans-serif;"> </p>
 <p style="font-family: Arial, sans-serif;"><span style="font-family: 'Book Antiqua', serif; 
-												 font-weight: bold; font-size: 18pt;">T</span>he 
- System commands control database and game-system functions for specific 
- purposes.</p>
-<p style="font-family: Arial, sans-serif;">&#160;</p>
-<p class="Sub_Heading"><a name="Call_Common_Event" id="Call_Common_Event"></a>Call 
- Common Event</p>
+												 font-weight: bold; font-size: 18pt;">系统命令用于控制数据库和游戏系统功能的特定</span>目的。</p>
+<p style="font-family: Arial, sans-serif;"> </p>
+<p class="Sub_Heading"><a id="Call_Common_Event" name="Call_Common_Event"></a>调用公共事件</p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
 	 mso-layout-grid-align: none; text-autospace: none;"><span style="line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">Calls the selected 
- common event. If the common event has &quot;Runs parallel” checkbox checked, 
- the scene will not wait for the common event to finish.</span></p>
+	 mso-layout-grid-align: none; text-autospace: none;">调用选定的公共事件。如果公共事件勾选了“并行运行”复选框，则场景将不会等待公共事件完成。</span></p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Event -</span> The common event to call</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">事件 -</span>要调用的公共事件</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Parameters</span> - Optional parameters 
-	 for the common event (If the common event has any).</p></li>
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">参数</span>- 公共事件的可选参数（如果公共事件有任何）。</p></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">&#160;</p>
-<p class="Sub_Heading"><a name="End_Common_Event" id="End_Common_Event"></a>End 
- Common Event</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;"> </p>
+<p class="Sub_Heading"><a id="End_Common_Event" name="End_Common_Event"></a>结束公共事件</p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none; font-family: Arial, sans-serif;">Ends 
- the execution of the selected common event.</p>
+	 mso-layout-grid-align: none; text-autospace: none; font-family: Arial, sans-serif;">结束选定公共事件的执行。</p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Event -</span> The common event to end.</p></li>
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">事件 -</span>要结束的公共事件。</p></li>
 </ul>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">&#160;</p>
-<p class="Sub_Heading"><a name="Resume_Common_Event" id="Resume_Common_Event"></a>Resume 
- Common Event</p>
+	 mso-layout-grid-align: none; text-autospace: none;"> </p>
+<p class="Sub_Heading"><a id="Resume_Common_Event" name="Resume_Common_Event"></a>恢复公共事件</p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">Resumes the execution 
- of the selected common event from the point where it has been stopped.</p>
+	 mso-layout-grid-align: none; text-autospace: none;">从停止点恢复选定公共事件的执行。</p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Event</span> - The common event to resume.</p></li>
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">事件</span>- 要恢复的公共事件。</p></li>
 </ul>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">&#160;</p>
-<p class="Sub_Heading"><a name="Unlock_CG" id="Unlock_CG"></a>Unlock CG</p>
+	 mso-layout-grid-align: none; text-autospace: none;"> </p>
+<p class="Sub_Heading"><a id="Unlock_CG" name="Unlock_CG"></a>解锁 CG</p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">Unlocks the selected 
- CG to become visible for the player in CG Gallery menu.</p>
+	 mso-layout-grid-align: none; text-autospace: none;">解锁选定的 CG，使其在 CG 画廊菜单中对玩家可见。</p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">CG</span> - The CG to unlock</p></li>
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">CG</span>- 要解锁的 CG</p></li>
 </ul>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">&#160;</p>
-<p class="Sub_Heading"><a name="UI_Access" id="UI_Access"></a>UI Access</p>
+	 mso-layout-grid-align: none; text-autospace: none;"> </p>
+<p class="Sub_Heading"><a id="UI_Access" name="UI_Access"></a>UI 访问</p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">Changes the player's 
- access to certain in-game UIs/Menus like the save-menu for example.</p>
+	 mso-layout-grid-align: none; text-autospace: none;">更改玩家对某些游戏内 UI/菜单的访问权限，例如保存菜单。</p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Save Menu</span> - Indicates if the save-menu 
-	 can be accessed.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">保存菜单</span>- 指示是否可以访问保存菜单。</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Load Menu</span> - Indicates if the load-menu 
-	 can be accessed.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">加载菜单</span>- 指示是否可以访问加载菜单。</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Menu</span> - Indicates if the main-menu 
-	 can be accessed.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">菜单</span>- 指示是否可以访问主菜单。</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Backlog</span> - Indicates if the backlog 
-	 can be accessed.</p></li>
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">日志</span>- 指示是否可以访问日志。</p></li>
 </ul>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">&#160;</p>
-<p class="Sub_Heading"><a name="Save_Persistent_Data" id="Save_Persistent_Data"></a>Save 
- Persistent Data</p>
+	 mso-layout-grid-align: none; text-autospace: none;"> </p>
+<p class="Sub_Heading"><a id="Save_Persistent_Data" name="Save_Persistent_Data"></a>保存持久数据</p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none; font-family: Arial, sans-serif;">Saves 
- current state of all persistent variables. Should be called after persistent 
- variables got modified. This command can be time-consuming since it write 
- data to disk.</p>
+	 mso-layout-grid-align: none; text-autospace: none; font-family: Arial, sans-serif;">保存所有持久变量的当前状态。在持久变量被修改后应调用此命令。此命令可能耗时，因为它会将数据写入磁盘。</p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none; font-family: Arial, sans-serif;">&#160;</p>
-<p class="Sub_Heading"><a name="Save_Settings" id="Save_Settings"></a>Save 
- Settings</p>
+	 mso-layout-grid-align: none; text-autospace: none; font-family: Arial, sans-serif;"> </p>
+<p class="Sub_Heading"><a id="Save_Settings" name="Save_Settings"></a>保存设置</p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none; font-family: Arial, sans-serif;">Saves 
- the current game settings. Should be called after settings have been changed 
- like through <a href="#Set_Game_Data">Set Game Data</a> command.</p>
+	 mso-layout-grid-align: none; text-autospace: none; font-family: Arial, sans-serif;">保存当前游戏设置。在更改设置后（例如通过<a href="#Set_Game_Data">设置游戏数据</a>命令）应调用此命令。</p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">&#160;</p>
-<p class="Sub_Heading"><a name="Get_Game_Data" id="Get_Game_Data"></a>Get 
- Game Data</p>
+	 mso-layout-grid-align: none; text-autospace: none;"> </p>
+<p class="Sub_Heading"><a id="Get_Game_Data" name="Get_Game_Data"></a>获取游戏数据</p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">Gets a specific 
- game data like the ID of the current scene or the current date &amp; time.</p>
+	 mso-layout-grid-align: none; text-autospace: none;">获取特定的游戏数据，例如当前场景的 ID 或当前日期和时间。</p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Field</span> - The kind of game data value 
-	 to get.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">字段</span>- 要获取的游戏数据值的类型。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Scene ID</span> - The UID (Unique ID) of 
-	 the current scene.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">场景 ID</span>- 当前场景的 UID（唯一 ID）。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Game Time - Seconds -</span> The seconds 
-	 of the current game/play time.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">游戏时间 - 秒 -</span>当前游戏/游戏时间的秒数。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Game Time - Minutes</span> - The minutes 
-	 of the current game/play time.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">游戏时间 - 分钟</span>- 当前游戏/游戏时间的分钟数。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Game Time - Hours -</span> The hours of 
-	 the current game/play time.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">游戏时间 - 小时 -</span>当前游戏/游戏时间的小时数。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Date - Day of Month -</span> The current 
-	 day of the month.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">日期 - 月份中的某一天 -</span>当前月份的日期。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Date - Day of Week</span> - The current 
-	 week-day (0 - 6, starts with Sunday).</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">日期 - 星期几</span>- 当前星期几（0-6，周日开始）。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Date - Month</span> - The current month 
-	 (0 - 11)</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">日期 - 月份</span>- 当前月份（0-11）</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Date - Year</span> - The current year.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">日期 - 年份</span>- 当前年份。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Allow Skip</span> - Gets if 
-	 skipping is allowed</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 允许跳过</span>- 获取是否允许跳过</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Allow Skip Unread</span> - Gets 
-	 if skipping unread messages is allowed.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 允许跳过未读</span>- 获取是否允许跳过未读消息。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Message Speed</span> - Gets 
-	 the message speed setting. (Might be different then the current message 
-	 speed)</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 消息速度</span>- 获取消息速度设置。（可能与当前消息速度不同）</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Auto Message</span> - Gets if 
-	 auto-message is enabled</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 自动消息</span>- 获取是否启用自动消息</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Auto Message Duration</span> 
-	 - Gets the duration between messages if auto-message is enabled.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 自动消息持续时间</span>- 获取自动消息启用时的消息间隔。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Wait for Voice</span> - Gets 
-	 the setting if auto-message should wait for the current voice to finish 
-	 before showing the next message.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 等待语音</span>- 获取自动消息在显示下一条消息之前是否应等待当前语音播放完毕的设置。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Stop Auto-Message on Click</span> 
-	 - Gets the settings if auto-message should be disabled if the player 
-	 clicks on the message box.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 单击停止自动消息</span>- 获取自动消息是否应在玩家单击消息框时禁用的设置。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - &#160;Time Message</span> - 
-	 Gets the setting if a message-animation should be timed to its voice.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 -  定时消息</span>-  获取消息动画是否应与语音同步的设置。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Video Skip</span> - Gets the 
-	 setting if a video can be skipped by click.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 视频跳过</span>- 获取是否可以通过单击跳过视频的设置。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Choice Skip</span> - Gets the 
-	 setting if a choice can be skipped.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 选择跳过</span>- 获取是否可以跳过选择的设置。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Voice Skip</span> - Gets the 
-	 setting if &#160;a voice can be skipped.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 语音跳过</span>- 获取是否可以跳过语音的设置。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Fullscreen Mode</span> - Gets 
-	 the settings if the game should start in fullscreen mode.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 全屏模式</span>- 获取游戏是否应以全屏模式开始的设置。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Stretch Mode</span> - Gets the 
-	 setting if the game should be stretched to fill the entire screen/window 
-	 by ignoring the ratio of the game’s resolution.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 拉伸模式</span>- 获取游戏是否应拉伸以填充整个屏幕/窗口，忽略游戏分辨率比例的设置。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Confirmation</span> - Gets the 
-	 setting if the game should always ask the player first before doing 
-	 important things like loading a save game.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 确认</span>- 获取游戏是否应在执行加载游戏等重要操作之前始终先询问玩家的设置。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Music Volume</span> - Gets the 
-	 music volume setting.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 音乐音量</span>- 获取音乐音量设置。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Voice Volume</span> - Gets the 
-	 voice volume setting.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 语音音量</span>- 获取语音音量设置。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - SE Volume</span> - Gets the 
-	 sound-effects volume setting.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 音效音量</span>- 获取音效音量设置。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Music Enabled</span> - Gets 
-	 the setting if music is enabled.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 音乐启用</span>- 获取是否启用音乐的设置。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Voice Enabled</span> - Gets 
-	 the setting if voice is enabled.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 语音启用</span>- 获取是否启用语音的设置。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - SE Enabled</span> - Gets the 
-	 setting if sounds-effects are enabled.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 音效启用</span>- 获取是否启用音效的设置。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Language - Code</span> - Gets the code, 
-	 like &quot;de” or &quot;jp” for the current selected language.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">语言 - 代码</span>- 获取当前所选语言的代码，例如“de”或“jp”。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Language - Name</span> - Gets the name 
-	 of the current selected language.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">语言 - 名称</span>- 获取当前所选语言的名称。</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Store In</span> - The variable to store 
-	 the game data value in.</p></li>
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">存储到</span>- 用于存储游戏数据值的变量。</p></li>
 </ul>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">&#160;</p>
-<p class="Sub_Heading"><a name="Set_Game_Data" id="Set_Game_Data"></a>Set 
- Game Data</p>
+	 mso-layout-grid-align: none; text-autospace: none;"> </p>
+<p class="Sub_Heading"><a id="Set_Game_Data" name="Set_Game_Data"></a>设置游戏数据</p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
 	 mso-layout-grid-align: none; text-autospace: none;"><span style="line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">Sets a game data 
- value like a game setting.</span></p>
+	 mso-layout-grid-align: none; text-autospace: none;">设置游戏数据值，例如游戏设置。</span></p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Field</span> - The kind of game data value 
-	 to set.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">字段</span>- 要设置的游戏数据值的类型。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Allow Skip</span> - Sets if 
-	 skipping is allowed</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 允许跳过</span>- 设置是否允许跳过</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Allow Skip Unread</span> - Sets 
-	 if skipping unread messages is allowed.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 允许跳过未读</span>- 设置是否允许跳过未读消息。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Message Speed</span> - Sets 
-	 the message speed setting. It ranges from 0 to 5. But negative values 
-	 are still possible as well as decimal values. </p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 消息速度</span>- 设置消息速度。范围从 0 到 5。负值和小数值也可能。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Auto Message</span> - Sets if 
-	 auto-message is enabled</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 自动消息</span>- 设置是否启用自动消息</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Auto Message Duration</span> 
-	 - Sets the duration between messages if auto-message is enabled.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 自动消息持续时间</span>- 设置自动消息启用时的消息间隔。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Wait for Voice</span> - Sets 
-	 the setting if auto-message should wait for the current voice to finish 
-	 before showing the next message.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 等待语音</span>- 设置自动消息在显示下一条消息之前是否应等待当前语音播放完毕。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Stop Auto-Message on Click</span> 
-	 - Sets the settings if auto-message should be disabled if the player 
-	 clicks on the message box.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 单击停止自动消息</span>- 设置自动消息是否应在玩家单击消息框时禁用的设置。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - &#160;Time Message</span> - 
-	 Sets the setting if a message-animation should be timed to its voice.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 -  定时消息</span>-  设置消息动画是否应与语音同步。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Video Skip</span> - Sets the 
-	 setting if a video can be skipped by click.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 视频跳过</span>- 设置是否可以通过单击跳过视频。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Choice Skip</span> - Sets the 
-	 setting if a choice can be skipped.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 选择跳过</span>- 设置是否可以跳过选择。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Voice Skip</span> - Sets the 
-	 setting if &#160;a voice can be skipped.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 语音跳过</span>- 设置是否可以跳过语音。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Fullscreen Mode</span> - Sets 
-	 the settings if the game should start in fullscreen mode.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 全屏模式</span>- 设置游戏是否应以全屏模式开始。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Stretch Mode -</span> Sets the 
-	 setting if the game should be stretched to fill the entire screen/window 
-	 by ignoring the ratio of the game’s resolution.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 拉伸模式 -</span>设置游戏是否应拉伸以填充整个屏幕/窗口，忽略游戏分辨率比例。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Confirmation</span> - Sets the 
-	 setting if the game should always ask the player first before doing 
-	 important things like loading a save game.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 确认</span>- 设置游戏是否应在执行加载游戏等重要操作之前始终先询问玩家。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Music Volume</span> - Sets the 
-	 music volume setting.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 音乐音量</span>- 设置音乐音量。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Voice Volume</span> - Sets the 
-	 voice volume setting.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 语音音量</span>- 设置语音音量。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - SE Volume</span> - Sets the 
-	 sound-effects volume setting.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 音效音量</span>- 设置音效音量。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Music Enabled</span> - Sets 
-	 the setting if music is enabled.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 音乐启用</span>- 设置是否启用音乐。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - Voice Enabled</span> - Sets 
-	 the setting if voice is enabled.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 语音启用</span>- 设置是否启用语音。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Settings - SE Enabled</span> - Sets the 
-	 setting if sounds-effects are enabled.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置 - 音效启用</span>- 设置是否启用音效。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Language - Code</span> - Sets the current 
-	 language of the game. Must be the language code set in Language Profile.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">语言 - 代码</span>- 设置游戏的当前语言。必须是语言配置文件中设置的语言代码。</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Store in</span> - The variable to store 
-	 the game data value in.</p></li>
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">存储到</span>- 用于存储游戏数据值的变量。</p></li>
 </ul>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">&#160;</p>
-<p class="Sub_Heading"><a name="Input_Data" id="Input_Data"></a>Input Data</p>
+	 mso-layout-grid-align: none; text-autospace: none;"> </p>
+<p class="Sub_Heading"><a id="Input_Data" name="Input_Data"></a>输入数据</p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
 	 mso-layout-grid-align: none; text-autospace: none;"><span style="line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">Gets the current 
- state of the specified key/button.</span></p>
+	 mso-layout-grid-align: none; text-autospace: none;">获取指定按键/按钮的当前状态。</span></p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Field</span> - The key/button to get the 
-	 current state for.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">字段</span>- 要获取当前状态的按键/按钮。</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Store in</span> - A number variable to 
-	 store the current state in. &#160;0 means &quot;Not Pressed”. 1 means 
-	 &quot;Pressed”. 2 means &quot;Released”.</p></li>
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">存储到</span>- 用于存储当前状态的数字变量。 0 表示“未按下”。1 表示“按下”。2 表示“释放”。</p></li>
 </ul>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">&#160;</p>
-<p class="Sub_Heading"><a name="Get_Object_Data" id="Get_Object_Data"></a>Get 
- Object Data</p>
+	 mso-layout-grid-align: none; text-autospace: none;"> </p>
+<p class="Sub_Heading"><a id="Get_Object_Data" name="Get_Object_Data"></a>获取对象数据</p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">Gets a specified 
- value from a game object like a character, picture, background, movie, 
- text or message box.</p>
+	 mso-layout-grid-align: none; text-autospace: none;">从游戏对象（如角色、图片、背景、电影、文本或消息框）获取指定值。</p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
 										 line-height: normal; mso-pagination: none; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Object Type</span> - The type of game object 
-	 to get the value from.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">对象类型</span>- 要从中获取值的游戏对象类型。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
 			 line-height: normal; mso-pagination: none; mso-layout-grid-align: none; 
-			 text-autospace: none;"><span style="font-weight: bold;">Picture</span> 
-	 - A picture object.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
+			 text-autospace: none;"><span style="font-weight: bold;">图片</span>- 图片对象。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
 			 line-height: normal; mso-pagination: none; mso-layout-grid-align: none; 
-			 text-autospace: none; font-weight: bold;">Background - A background 
-	 object/layer.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
+			 text-autospace: none; font-weight: bold;">背景 - 背景</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
 			 line-height: normal; mso-pagination: none; mso-layout-grid-align: none; 
-			 text-autospace: none;"><span style="font-weight: bold;">Text</span> 
-	 - A text object.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
+			 text-autospace: none;"><span style="font-weight: bold;">对象/图层。</span>文本</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
 			 line-height: normal; mso-pagination: none; mso-layout-grid-align: none; 
-			 text-autospace: none;"><span style="font-weight: bold;">Movie</span> 
-	 - A movie object.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
+			 text-autospace: none;"><span style="font-weight: bold;">- 文本对象。</span>电影</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
 			 line-height: normal; mso-pagination: none; mso-layout-grid-align: none; 
-			 text-autospace: none;"><span style="font-weight: bold;">Hotspot</span> 
-	 - A hotspot object.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 text-autospace: none;"><span style="font-weight: bold;">- 电影对象。</span>热点</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Message Box</span> - The current message 
-	 box.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">- 热点对象。</span>消息框</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Message</span> - A message area.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">- 当前消息框。</span>消息</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Number</span> - The number of the game 
-	 object to get the value from. (Except for Character and Message Box)</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">- 消息区域。</span>数字</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Character -</span> The character to get 
-	 the value from. (Only for Characters)</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">- 要从中获取值的游戏对象的编号。（除角色和消息框外）</span>角色 -</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Field</span> - The value to get.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">- 要从中获取值的角色。（仅限角色）</span>字段</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">ID (Only for Character)</span> - The ID 
-	 of the character-record in database.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">- 要获取的值。</span>ID（仅限角色）</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Name (Only for Character</span>) - The 
-	 name of the character.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">- 数据库中角色记录的 ID。</span>名称（仅限角色</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Resource Name</span> - The name of the 
-	 graphic resource used by the game object.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">) - 角色的</span>名称。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Position - X</span> - The x-coordinate 
-	 of the game object’s position on screen.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">资源名称</span>- 游戏对象使用的图形资源的名称。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Position - Y</span> - The y-coordinate 
-	 of the game object’s position on screen.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">位置 - X</span>- 游戏对象在屏幕上的 X 坐标。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Anchor - X</span> - The x-coordinate of 
-	 the game object’s anchor-point used to determine the rotation- and 
-	 zoom-point. It is a percentage value which goes from 0%(left) to 100%(right).</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">位置 - Y</span>- 游戏对象在屏幕上的 Y 坐标。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Anchor - Y</span> - The y-coordinate of 
-	 the game object’s anchor-point used to determine the rotation- and 
-	 zoom-point. It is a percentage value which goes from 0%(top) to 100%(bottom).</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">锚点 - X</span>- 游戏对象的锚点 X 坐标，用于确定旋转和缩放点。它是一个百分比值，范围从 0%（左）到 100%（右）。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Zoom - X</span> - The x-axis zoom of the 
-	 game object. It is a percentage value.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">锚点 - Y</span>- 游戏对象的锚点 Y 坐标，用于确定旋转和缩放点。它是一个百分比值，范围从 0%（上）到 100%（下）。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Zoom - Y</span> - The y-axis zoom of the 
-	 game object. It is a percentage value.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">缩放 - X</span>- 游戏对象的 X 轴缩放。这是一个百分比值。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Size - Width</span> - The width of the 
-	 game object in pixels.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">缩放 - Y</span>- 游戏对象的 Y 轴缩放。这是一个百分比值。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Size - Height</span> - The height of the 
-	 game object in pixels.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">尺寸 - 宽度</span>- 游戏对象的宽度（以像素为单位）。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Z-Index</span> - The z-index of the game 
-	 object to control the overlapping.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">尺寸 - 高度</span>- 游戏对象的高度（以像素为单位）。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Opacity</span> - The opacity of the game 
-	 object. It goes from 0(transparent) to 255(opaque).</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">Z 索引</span>- 游戏对象的 Z 索引，用于控制重叠。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Angle</span> - The rotation angle of the 
-	 game object in degrees.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">不透明度</span>- 游戏对象的不透明度。范围从 0（透明）到 255（不透明）。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
 			 line-height: normal; mso-pagination: none; mso-layout-grid-align: none; 
-			 text-autospace: none;"><span style="font-weight: bold;">Visible</span> 
-	 - The visibility of the game object. If OFF the game object is not 
-	 visible.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
+			 text-autospace: none;"><span style="font-weight: bold;">角度</span>- 游戏对象的旋转角度（以度为单位）。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
 			 line-height: normal; mso-pagination: none; mso-layout-grid-align: none; 
-			 text-autospace: none;"><span style="font-weight: bold;">Blend 
-	 Mode</span> - The blend mode of the game object.</p></li>
-	<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-		<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
+			 text-autospace: none;"><span style="font-weight: bold;">可见</span>- 游戏对象的可见性。如果关闭，则游戏对象不可见。</p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
 				 line-height: normal; mso-pagination: none; mso-layout-grid-align: none; 
-				 text-autospace: none;"><span style="font-weight: bold;">0</span> 
-		 - Standard blend mode.</p></li>
-		<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
+				 text-autospace: none;"><span style="font-weight: bold;">混合模式</span>- 游戏对象的混合模式。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
 				 line-height: normal; mso-pagination: none; mso-layout-grid-align: none; 
-				 text-autospace: none;"><span style="font-weight: bold;">1</span> 
-		 - Additive blend mode. Results the object to be shown in a lighter 
-		 color.</p></li>
-		<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
+				 text-autospace: none;"><span style="font-weight: bold;">0</span>- 标准混合模式。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
 				 line-height: normal; mso-pagination: none; mso-layout-grid-align: none; 
-				 text-autospace: none;"><span style="font-weight: bold;">2</span> 
-		 - Subtractive blend mode. Results the object to be shown in a 
-		 darker color.</p></li>
-	</ul></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+				 text-autospace: none;"><span style="font-weight: bold;">1</span>- 加法混合模式。使对象显示为更亮的颜色。</p></li>
+</ul></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Store in</span> - The variable to store 
-	 the value in.</p></li>
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">2</span>- 减法混合模式。使对象显示为更暗的颜色。</p></li>
 </ul>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">&#160;</p>
-<p class="Sub_Heading"><a name="Set_Object_Data" id="Set_Object_Data"></a>Set 
- Object Data</p>
+	 mso-layout-grid-align: none; text-autospace: none;"> </p>
+<p class="Sub_Heading"><a id="Set_Object_Data" name="Set_Object_Data"></a>存储到</p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">Sets a value for 
- a game object like a character, picture, background, movie, text or message 
- box.</p>
+	 mso-layout-grid-align: none; text-autospace: none;">- 用于存储值的变量。</p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Object Type -</span> The type of game object 
-	 to set the value for.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">设置对象数据</span>为游戏对象（如角色、图片、背景、电影、文本或消息框）设置值。</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Picture</span> - A picture object.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">对象类型 -</span>- 要设置值的游戏对象类型。</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Background</span> - A background object/layer.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">图片</span>- 图片对象。</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Text</span> - A text object.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">背景</span>- 背景对象/图层。</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Movie</span> - A movie object.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">文本</span>- 文本对象。</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Hotspot</span> - A hotspot object.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">电影</span>- 电影对象。</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Message Box</span> - The current message 
-	 box.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">热点</span>- 热点对象。</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Message</span> - A message area.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">消息框</span>- 当前消息框。</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Number -</span> The number of the game 
-	 object to set the value for. (Except for Character and Message Box)</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">消息</span>- 消息区域。</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Character</span> - The character to set 
-	 the value for. (Only for Characters)</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">数字 -</span>- 要设置值的游戏对象的编号。（除角色和消息框外）</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Field</span> - The game object’s field 
-	 to set.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">角色</span>- 要设置值的角色。（仅限角色）</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span 
-	 style="font-weight: bold;">Name (Only for Character) -</span> The 
-	 name of the character.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span style="font-weight: bold;">字段</span>- 要设置的游戏对象字段。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span 
-	 style="font-weight: bold;">Resource Name</span> - The name of the 
-	 graphic resource used by the game object.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span style="font-weight: bold;">名称（仅限角色） -</span>- 角色的</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span 
-	 style="font-weight: bold;">Position - X</span> - The x-coordinate 
-	 of the game object’s position on screen.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span style="font-weight: bold;">名称。</span>资源名称</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span 
-	 style="font-weight: bold;">Position - Y</span> - The y-coordinate 
-	 of the game object’s position on screen.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span style="font-weight: bold;">- 游戏对象使用的图形资源的名称。</span>位置 - X</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span 
-	 style="font-weight: bold;">Anchor - X</span> - The x-coordinate of 
-	 the game object’s anchor-point used to determine the rotation- and 
-	 zoom-point. It is a percentage value which goes from 0%(left) to 100%(right).</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span style="font-weight: bold;">- 游戏对象在屏幕上的 X 坐标。</span>位置 - Y</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span 
-	 style="font-weight: bold;">Anchor - Y</span> - The y-coordinate of 
-	 the game object’s anchor-point used to determine the rotation- and 
-	 zoom-point. It is a percentage value which goes from 0%(top) to 100%(bottom).</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span style="font-weight: bold;">- 游戏对象在屏幕上的 Y 坐标。</span>锚点 - X</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span 
-	 style="font-weight: bold;">Zoom - X</span> - The x-axis zoom of the 
-	 game object. It is a percentage value.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span style="font-weight: bold;">- 游戏对象的锚点 X 坐标，用于确定旋转和缩放点。它是一个百分比值，范围从 0%（左）到 100%（右）。</span>锚点 - Y</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span 
-	 style="font-weight: bold;">Zoom - Y</span> - The y-axis zoom of the 
-	 game object. It is a percentage value.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span style="font-weight: bold;">- 游戏对象的锚点 Y 坐标，用于确定旋转和缩放点。它是一个百分比值，范围从 0%（上）到 100%（下）。</span>缩放 - X</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span 
-	 style="font-weight: bold;">Z-Index</span> - The z-index of the game 
-	 object to control the overlapping.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span style="font-weight: bold;">- 游戏对象的 X 轴缩放。这是一个百分比值。</span>缩放 - Y</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span 
-	 style="font-weight: bold;">Opacity</span> - The opacity of the game 
-	 object. It goes from 0(transparent) to 255(opaque).</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span style="font-weight: bold;">- 游戏对象的 Y 轴缩放。这是一个百分比值。</span>Z 索引</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span 
-	 style="font-weight: bold;">Angle</span> - The rotation angle of the 
-	 game object in degrees.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span style="font-weight: bold;">- 游戏对象的 Z 索引，用于控制重叠。</span>不透明度</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span 
-	 style="font-weight: bold;">Visible</span> - The visibility of the 
-	 game object. If OFF the game object is not visible</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span style="font-weight: bold;">- 游戏对象的不透明度。范围从 0（透明）到 255（不透明）。</span>角度</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span 
-	 style="font-weight: bold;">Blend Mode</span> - The blend mode of the 
-	 game object.</p></li>
-	<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-		<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
+			 mso-layout-grid-align: none; text-autospace: none; margin-left: 0px;"><span style="font-weight: bold;">- 游戏对象的旋转角度（以度为单位）。</span>可见</p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
 				 line-height: normal; mso-pagination: none; mso-layout-grid-align: none; 
-				 text-autospace: none;"><span style="font-weight: bold;">0</span> 
-		 - Standard blend mode.</p></li>
-		<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
+				 text-autospace: none;"><span style="font-weight: bold;">- 游戏对象的可见性。如果关闭，则游戏对象不可见。</span>混合模式</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
 				 line-height: normal; mso-pagination: none; mso-layout-grid-align: none; 
-				 text-autospace: none;"><span style="font-weight: bold;">1</span> 
-		 - Additive blend mode. Results the object to be shown in a lighter 
-		 color.</p></li>
-		<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
+				 text-autospace: none;"><span style="font-weight: bold;">- 游戏对象的混合模式。</span>0</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
 				 line-height: normal; mso-pagination: none; mso-layout-grid-align: none; 
-				 text-autospace: none;"><span style="font-weight: bold;">2</span> 
-		 - Subtractive blend mode. Results the object to be shown in a 
-		 darker color.</p></li>
-	</ul></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+				 text-autospace: none;"><span style="font-weight: bold;">- 标准混合模式。</span>1</p></li>
+</ul></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Set To</span> - The value to set.</p></li>
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">- 加法混合模式。使对象显示为更亮的颜色。</span>2</p></li>
 </ul>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">&#160;</p>
-<p class="Sub_Heading"><a name="Reset_Global_Data" id="Reset_Global_Data"></a>Reset 
- Global Data</p>
+	 mso-layout-grid-align: none; text-autospace: none;"> </p>
+<p class="Sub_Heading"><a id="Reset_Global_Data" name="Reset_Global_Data"></a>- 减法混合模式。使对象显示为更暗的颜色。</p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">Resets the persistent 
- data-store of the game. All persistent variables and data are deleted 
- like unlocked CGs, read messages, etc.</p>
+	 mso-layout-grid-align: none; text-autospace: none;">设置到</p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">Not to be confused 
- with Global Variables or Switches which are restarted every time you start 
- a new game.</p>
+	 mso-layout-grid-align: none; text-autospace: none;">- 要设置的值。</p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">&#160;</p>
+	 mso-layout-grid-align: none; text-autospace: none;"> </p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">&#160;</p>
+	 mso-layout-grid-align: none; text-autospace: none;"> </p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">&#160;</p>
+	 mso-layout-grid-align: none; text-autospace: none;"> </p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">&#160;</p>
-<p class="Sub_Heading"><a name="Change_Sounds" id="Change_Sounds"></a>Change 
- Sounds</p>
+	 mso-layout-grid-align: none; text-autospace: none;"> </p>
+<p class="Sub_Heading"><a id="Change_Sounds" name="Change_Sounds"></a>重置全局数据</p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">Changes the sounds 
- 1 - 8 which can be used in a message using the text-codes {SP:1} to {SP:8}.</p>
+	 mso-layout-grid-align: none; text-autospace: none;">重置游戏的持久数据存储。所有持久变量和数据将被删除，例如已解锁的 CG、已读消息等。</p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Sound 1</span> - The sound for {SP:1} text-code.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">不要与每次启动新游戏时都会重新启动的全局变量或开关混淆。</span>更改声音</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Sound 2</span> - The sound for {SP:2} text-code.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">更改消息中可用的声音 1-8，可以使用文本代码 {SP:1} 到 {SP:8}。</span>声音 1</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Sound 3</span> - The sound for {SP:3} text-code.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">- {SP:1} 文本代码的声音。</span>声音 2</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Sound 4</span> - The sound for {SP:4} text-code.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">- {SP:2} 文本代码的声音。</span>声音 3</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Sound 5</span> - The sound for {SP:5} text-code.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">- {SP:3} 文本代码的声音。</span>声音 4</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Sound 6</span> - The sound for {SP:6} text-code.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">- {SP:4} 文本代码的声音。</span>声音 5</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Sound 7</span> - The sound for {SP:7} text-code.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">- {SP:5} 文本代码的声音。</span>声音 6</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Sound 8</span> - The sound for {SP:8} text-code.</p></li>
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">- {SP:6} 文本代码的声音。</span>声音 7</p></li>
 </ul>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">&#160;</p>
-<p class="Sub_Heading"><a name="Change_Colors" id="Change_Colors"></a>Change 
- Colors</p>
+	 mso-layout-grid-align: none; text-autospace: none;"> </p>
+<p class="Sub_Heading"><a id="Change_Colors" name="Change_Colors"></a>- {SP:7} 文本代码的声音。</p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">Changes the colors 
- 1 - 8 which can be used in a message using the text-codes {C:1} to {C:8}</p>
+	 mso-layout-grid-align: none; text-autospace: none;">声音 8</p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Color 1</span> - The color for {C:1} text-code.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">- {SP:8} 文本代码的声音。</span>更改颜色</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Color 2</span> - The color for {C:2} text-code.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">更改消息中可用的颜色 1-8，可以使用文本代码 {C:1} 到 {C:8}。</span>- {C:2} 文本代码的颜色。</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Color 3</span> - The color for {C:3} text-code.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">颜色 3</span>- {C:3} 文本代码的颜色。</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Color 4</span> - The color for {C:4} text-code.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">颜色 4</span>- {C:4} 文本代码的颜色。</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Color 5</span> - The color for {C:5} text-code.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">颜色 5</span>- {C:5} 文本代码的颜色。</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Color 6</span> - The color for {C:6} text-code.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">颜色 6</span>- {C:6} 文本代码的颜色。</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Color 7</span> - The color for {C:7} text-code.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">颜色 7</span>- {C:7} 文本代码的颜色。</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Color 8</span> - The color for {C:8} text-code.</p></li>
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">更改 鼠标指针</span>更改鼠标指针的外观。</p></li>
 </ul>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">&#160;</p>
-<p class="Sub_Heading"><a name="Change_Cursor" id="Change_Cursor"></a>Change 
- Cursor</p>
+	 mso-layout-grid-align: none; text-autospace: none;"> </p>
+<p class="Sub_Heading"><a id="Change_Cursor" name="Change_Cursor"></a>文件 -</p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
 	 mso-layout-grid-align: none; text-autospace: none;"><span style="line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">Changes the appearance 
- of the mouse-pointer.</span></p>
+	 mso-layout-grid-align: none; text-autospace: none;">鼠标指针的图形。
+	 最大 32x32 像素。</span></p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">File -</span> The graphic for the mouse-pointers. 
-	 Max. 32x32 pixels.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">热点 X -</span>鼠标指针单击点/热点的
+	 x 坐标。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Hotspot-X -</span> The x-coordinate of 
-	 the mouse-pointers click-spot/hot-spot.</p></li>
-	<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">热点 Y -</span>鼠标指针单击点/热点的
+	 y 坐标。</p></li>
+<li><p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 			 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-			 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Hotspot-Y -</span> The y-coordinate of 
-	 the mouse-pointers click-spot/hot-spot.</p></li>
+			 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">准备
+ 保存游戏</span>创建当前游戏状态的快照，并可选择性地创建当前场景的屏幕截图。但它不会将其保存到磁盘/存储，因为这由
+	 命令完成。此命令必须在
+	 命令可用之前调用。通常情况下，应在场景切换到保存菜单之前调用此命令。此命令可能耗时，因为它会创建当前游戏状态的快照。</p></li>
 </ul>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">&#160;</p>
+	 mso-layout-grid-align: none; text-autospace: none;"> </p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">&#160;</p>
+	 mso-layout-grid-align: none; text-autospace: none;"> </p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">&#160;</p>
-<p class="Sub_Heading"><a name="Prepare_Save_Game" id="Prepare_Save_Game"></a>Prepare 
- Save Game</p>
+	 mso-layout-grid-align: none; text-autospace: none;"> </p>
+<p class="Sub_Heading"><a id="Prepare_Save_Game" name="Prepare_Save_Game"></a>保存游戏</p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">Creates a snapshot 
- of the current game state and optionally a screenshot from the current 
- scene. But it doesn't save it to disk/storage since that is done by the 
- <a href="#Save_Game">Save Game</a> command. This command must be called 
- before the <a href="#Save_Game">Save Game</a> command can be used. In 
- regular, this command should be called before the scene switches to the 
- save menu. This command may be time-consuming since it creates a snapshot 
- from the current game state.</p>
+	 mso-layout-grid-align: none; text-autospace: none;">将由
+	 命令创建的游戏状态快照保存到指定的保存游戏槽中。此命令不会创建游戏状态的快照。重要的是，
+	 命令必须在场景仍然处于活动状态时调用。<a href="#Save_Game">槽</a>- 要将
+	 游戏状态快照保存到的保存游戏槽。<a href="#Save_Game">缩略图宽度</a>- 缩略图的宽度。您可以指定 0，表示“自动”，以自动计算缩略图的尺寸，也可以设置固定尺寸，这可能对自定义游戏内 UI 有用。</p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Snapshot</span> - If set to Yes, a screenshot 
-	 from the current scene is created.</p></li>
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">缩略图高度</span>- 缩略图的高度。您可以指定 0，表示“自动”，以自动计算
+	 缩略图的尺寸，也可以设置固定尺寸，这可能对自定义游戏内 UI 有用。</p></li>
 </ul>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">&#160;</p>
-<p class="Sub_Heading"><a name="Save_Game" id="Save_Game"></a>Save Game</p>
+	 mso-layout-grid-align: none; text-autospace: none;"> </p>
+<p class="Sub_Heading"><a id="Save_Game" name="Save_Game"></a>加载游戏</p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">Stores the game 
- state snapshot created by the <a href="#Prepare_Save_Game">Prepare Save 
- Game</a> command into the specified save game slot. This command doesn't 
- create a snapshot of the game state. It is important that <a href="#Prepare_Save_Game">Prepare 
- Save Game</a> command is called before and when the scene is still active.</p>
+	 mso-layout-grid-align: none; text-autospace: none;">从指定的保存游戏槽加载游戏。如果该槽中没有保存的游戏，则不会发生任何事。<a href="#Prepare_Save_Game">槽</a>- 要加载的保存游戏槽<a href="#Prepare_Save_Game">HTML</a>模板</p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Slot</span> - The save game slot to store 
-	 the game state snapshot in.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">示例：模板</span>在示例 2 中，我们学习了样式如何帮助我们避免布局中的冗余数据。但由于样式有限，我们将在本例中学习一种更强大的方法，称为“模板”。模板定义了一种自定义控件类型，用于常用的控件。默认游戏内 UI 的“模板”文件夹中已经有很多模板。“ui.Button”项，我们在过去的示例中使用过，实际上只是一个名为“Template_Button”的模板。让我们来看看那个模板：</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Thumb Width</span> - The width of the thumb 
-	 image. You can specify 0, which stands for &quot;Auto&quot;, to automatically 
-	 calculate the size of the thumb image or you can set a fixed size 
-	 which might be useful for custom in-game UI.</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">ui.UIManager.customTypes["ui.Button"] = {</span>"type": "ui.FreeLayout",</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Thumb Height</span> - The height of the 
-	 thumb image. You can specify 0, which means &quot;Auto&quot;, to automatically 
-	 calculate</p></li>
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">"controls":[</span>{</p></li>
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span>the 
-	 size of the thumb image or you can set a fixed size which might be 
-	 useful for custom in-game UI.</span></p></li>
+										 mso-layout-grid-align: none; text-autospace: none;"><span>"type": "ui.SelectableWindow",</span></p></li>
 </ul>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">&#160;</p>
-<p class="Sub_Heading"><a name="Load_Game" id="Load_Game"></a>Load Game</p>
+	 mso-layout-grid-align: none; text-autospace: none;"> </p>
+<p class="Sub_Heading"><a id="Load_Game" name="Load_Game"></a>"frame": [0, 0, "100%", "100%"],</p>
 <p class="MsoNormal" style="margin-bottom: .0001pt; line-height: normal; 
 	 mso-pagination: none; tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-	 mso-layout-grid-align: none; text-autospace: none;">Loads the game 
- from the specified save game slot. If there is no saved game on that slot, 
- nothing will happen.</p>
+	 mso-layout-grid-align: none; text-autospace: none;">"margin": [0, 0, 0, 30],</p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
+<li style="margin-left: -20px;"><p class="MsoNormal" style="margin-bottom: .0001pt; 
 										 line-height: normal; mso-pagination: none; 
 										 tab-stops: 28.3pt 56.65pt 85.0pt 113.35pt 141.7pt 170.05pt 198.4pt 226.75pt 255.1pt 283.45pt 311.8pt 340.15pt; 
-										 mso-layout-grid-align: none; text-autospace: none;"><span 
-	 style="font-weight: bold;">Slot</span> - The save game slot to load</p></li>
+										 mso-layout-grid-align: none; text-autospace: none;"><span style="font-weight: bold;">"params": {</span>"action": -&gt; p.action</p></li>
 </ul>
 </body>
 </html>

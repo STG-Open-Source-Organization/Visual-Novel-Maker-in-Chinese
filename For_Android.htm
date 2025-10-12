@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+HTML
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="generator" content="Adobe RoboHelp 2015" />
-<title>For Android</title>
-<link rel="StyleSheet" href="default.css" type="text/css" />
-<script type="text/javascript" language="JavaScript">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Adobe RoboHelp 2015" name="generator"/>
+<title>适用于 Android</title>
+<link href="default.css" rel="StyleSheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
 //<![CDATA[
 function reDo() {
   if (innerWidth != origWidth || innerHeight != origHeight)
@@ -29,237 +29,161 @@ visibility:hidden; }
 p.WebHelpNavBar { text-align:right; }
 -->
 </style>
-
-<script type="text/javascript" src="template/scripts/rh.min.js"></script>
-<script type="text/javascript" src="template/scripts/common.min.js"></script>
-<script type="text/javascript" src="template/scripts/topic.min.js"></script>
-<script type="text/javascript" src="template/scripts/constants.js"></script>
-<script type="text/javascript" src="template/scripts/utils.js"></script>
-<script type="text/javascript" src="template/scripts/mhutils.js"></script>
-<script type="text/javascript" src="template/scripts/mhlang.js"></script>
-<script type="text/javascript" src="template/scripts/mhver.js"></script>
-<script type="text/javascript" src="template/scripts/settings.js"></script>
-<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
-<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
-<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
-<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
-<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
- <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
-<script type="text/javascript" >
+<script src="template/scripts/rh.min.js" type="text/javascript"></script>
+<script src="template/scripts/common.min.js" type="text/javascript"></script>
+<script src="template/scripts/topic.min.js" type="text/javascript"></script>
+<script src="template/scripts/constants.js" type="text/javascript"></script>
+<script src="template/scripts/utils.js" type="text/javascript"></script>
+<script src="template/scripts/mhutils.js" type="text/javascript"></script>
+<script src="template/scripts/mhlang.js" type="text/javascript"></script>
+<script src="template/scripts/mhver.js" type="text/javascript"></script>
+<script src="template/scripts/settings.js" type="text/javascript"></script>
+<script src="template/scripts/XmlJsReader.js" type="text/javascript"></script>
+<script src="template/scripts/loadparentdata.js" type="text/javascript"></script>
+<script src="template/scripts/loadscreen.js" type="text/javascript"></script>
+<script src="template/scripts/loadprojdata.js" type="text/javascript"></script>
+<script src="template/scripts/mhtopic.js" type="text/javascript"></script>
+<link href="template/styles/topic.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
 gRootRelPath = ".";
 gCommonRootRelPath = ".";
 gTopicId = "2.5.0_3";
 </script>
- <meta name="topic-breadcrumbs" content="Exploring the Editor > Testing & Deployment" />
+<meta content="Exploring the Editor &gt; Testing &amp; Deployment" name="topic-breadcrumbs"/>
 </head>
-
 <body>
-<script type="text/javascript" src="./ehlpdhtm.js"></script>
-
-<p class="Topic_Heading">For Android</p>
-<p>&#160;</p>
-<p><span class="Topic_Start">T</span>esting &amp; Deployment for Android 
- requires a few preparation steps to work properly. This topic will guide 
- you through the necessary steps and tries to make everything as easy as 
- possible for you. If you get stuck or have any question, please take a 
- look at our support forums.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Requirements</p>
-<p>&#160;</p>
-<p>To test and/or deploy your game on Android, you have to meet the following 
- requirements:</p>
-<p>&#160;</p>
+<script src="./ehlpdhtm.js" type="text/javascript"></script>
+<p class="Topic_Heading">适用于 Android</p>
+<p> </p>
+<p><span class="Topic_Start">T</span>esting &amp; Deployment for Android 需要一些准备步骤才能正常工作。本主题将引导你完成必要的步骤，并尽量让你一切尽可能轻松。如果你遇到困难或有任何问题，请查看我们的支持论坛。</p>
+<p> </p>
+<p class="Sub_Heading">要求</p>
+<p> </p>
+<p>要测试和/或将你的游戏部署到 Android，你必须满足以下要求：</p>
+<p> </p>
 <ul style="list-style: disc;">
-	<li>An Android Device with Android 5+ (You can also use an Emulator, 
-	 but we don't recommend it)</li>
-	<li>JDK 7+ (Java Development Kit)</li>
-	<li>Android Studio + SDK </li>
-	<li>Node.js</li>
-	<li>Cordova</li>
+<li>具有 Android 5+ 的 Android 设备（你也可以使用模拟器，但我们不推荐）</li>
+<li>JDK 7+（Java 开发工具包）</li>
+<li>Android Studio + SDK</li>
+<li>Node.js</li>
+<li>Cordova</li>
 </ul>
-<p>&#160;</p>
-<p>If you plan to submit your game to the Google Play Store, which is optional, 
- you have to do the following steps:</p>
-<p>&#160;</p>
+<p> </p>
+<p>如果你计划将你的游戏提交到 Google Play 商店（这是可选的），你必须执行以下步骤：</p>
+<p> </p>
 <ul style="list-style: disc;">
-	<li>Register/Connect your Google Account with Google Play Store</li>
+<li>注册/连接你的 Google 帐户与 Google Play 商店</li>
 </ul>
-<p>&#160;</p>
-<p>&#160;</p>
-<p>It is also recommend to take look at the Android Platform Guidelines 
- for Cordova which you can find here:<br />
-<br />
+<p> </p>
+<p> </p>
+<p>我们也建议查看 Cordova 的 Android 平台指南，你可以在此处找到：<br/>
+<br/>
 <a href="https://cordova.apache.org/docs/en/latest/guide/platforms/android/">https://cordova.apache.org/docs/en/latest/guide/platforms/android/</a></p>
-<p>&#160;</p>
-<p>Let's go through the above step-by-step.</p>
-<p>&#160;</p>
-<p class="SubSubHeading">Install JDK (Java Development Kit)</p>
-<p>You need to install the JDK (Java Develpment Kit). You can download 
- it from here:</p>
-<p>&#160;</p>
+<p> </p>
+<p>让我们一步一步地进行上述步骤。</p>
+<p> </p>
+<p class="SubSubHeading">安装 JDK（Java 开发工具包）</p>
+<p>你需要安装 JDK（Java 开发工具包）。你可以从这里下载：</p>
+<p> </p>
 <p><a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a></p>
-<p>&#160;</p>
-<p class="SubSubHeading">Install Android Studio + SDK</p>
-<p>&#160;</p>
-<p>You need the Android SDK to build and deploy your game for Android. 
- You can install just the Android SDK Tools only or the entire Android 
- Studio bundled with the SDK. You can get it from here:</p>
-<p>&#160;</p>
+<p> </p>
+<p class="SubSubHeading">安装 Android Studio + SDK</p>
+<p> </p>
+<p>你需要 Android SDK 来构建和部署你的 Android 游戏。你只需安装 Android SDK Tools 或安装包含 SDK 的完整 Android Studio。你可以从这里获取：</p>
+<p> </p>
 <p><a href="https://developer.android.com/studio/index.html#downloads">https://developer.android.com/studio/index.html#downloads</a></p>
-<p>&#160;</p>
-<p>&#160;</p>
-<p class="SubSubHeading">Install Node.js</p>
-<p>&#160;</p>
-<p>You need Node.js to run Cordova which is needed to package your game 
- correctly for Android deployment. You can download Node.js from <a href="http://nodejs.org">http://nodejs.org</a></p>
-<p>&#160;</p>
-<p class="SubSubHeading">Install Cordova</p>
-<p>&#160;</p>
-<p>You need Cordova to package your game correctly for Android deployment. 
- To install Cordova, just open a Terminal / Command-Line window. </p>
-<p>&#160;</p>
-<p>Once the terminal has been opened, you will see a black window (in most 
- cases) with a blinking cursor where you can type in some text (commands). 
- Just type the following command:</p>
-<p>&#160;</p>
+<p> </p>
+<p> </p>
+<p class="SubSubHeading">安装 Node.js</p>
+<p> </p>
+<p>你需要 Node.js 来运行 Cordova，Cordova 是正确打包你的 Android 部署游戏所必需的。你可以从以下网址下载 Node.js：<a href="http://nodejs.org">http://nodejs.org</a></p>
+<p> </p>
+<p class="SubSubHeading">安装 Cordova</p>
+<p> </p>
+<p>你需要 Cordova 来正确打包你的 Android 部署游戏。 要安装 Cordova，只需打开一个终端/命令行窗口。</p>
+<p> </p>
+<p>打开终端后，你会看到一个黑色窗口（在大多数情况下），其中有一个闪烁的光标，你可以在其中输入一些文本（命令）。 只需键入以下命令：</p>
+<p> </p>
 <p style="font-style: italic;">npm install -g cordova</p>
-<p>&#160;</p>
-<p>and press the return-key. After that, a lot of text will be displayed 
- on terminal window. Just wait until everything is done. Then type:</p>
-<p>&#160;</p>
+<p> </p>
+<p>然后按回车键。 之后，终端窗口将显示大量文本。 只需等待所有操作完成。 然后键入：</p>
+<p> </p>
 <p style="font-style: italic;">cordova --version</p>
-<p>&#160;</p>
-<p>and press return-key. If you see the cordova version number, the installation 
- was successful. If you get an error, something went wrong. In that case, 
- take a look at the text/message on the terminal window and take a look 
- in our forums for help.</p>
-<p>&#160;</p>
-<p class="SubSubHeading">Sign up for Google Play Store (Optional)</p>
-<p>&#160;</p>
-<p>This step is optional and you can skip if you just want to test your 
- app or if you don't plan to ship your game via Google Play Store. Just 
- visit:</p>
-<p>&#160;</p>
+<p> </p>
+<p>然后按回车键。 如果你看到 cordova 的版本号，则安装成功。 如果出现错误，则说明有些地方出错了。 在这种情况下，请查看终端窗口中的文本/消息，并在我们的论坛中寻求帮助。</p>
+<p> </p>
+<p class="SubSubHeading">注册 Google Play 商店（可选）</p>
+<p> </p>
+<p>此步骤是可选的，如果你只想测试你的应用或不打算通过 Google Play 商店发布你的游戏，则可以跳过。 只需访问：</p>
+<p> </p>
 <p><a href="https://play.google.com/apps/publish/signup">https://play.google.com/apps/publish/signup</a></p>
-<p>&#160;</p>
-<p>to sign up and follow the guides on that website to learn more about 
- how to submit your game to the Google Play Store. At time of writing, 
- it will cost you 25 USD per year.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Prepare your VN Maker Project for Android Deployment</p>
-<p>&#160;</p>
-<p>Since everything has been setup now, you can start to build your game 
- for Android! Make sure your project has a <span style="font-weight: bold;">game 
- title</span> in Database &gt; System.</p>
-<p>&#160;</p>
-<p class="SubSubHeading">Audio &amp; Video Assets</p>
-<p>&#160;</p>
-<p>At the time of writing, Android games packaged via Cordova may have 
- problems with .m4a/.mp4/.mp3/.aac audio and .mp4 video formats. To be 
- safe, you should use .ogg &amp; .wav for Audio and .webm,for Video. Make 
- sure that you convert all your audio and video files into the necessary 
- format. VN Maker allows you to import the same file multiple times with 
- a different format and then automatically chooses the right format at 
- runtime which is useful for HTML5 Webbrowser Games. However, if you plan 
- to ship your game offline over the Play Store or just as APK download, 
- you should delete any unused files to reduce file size.</p>
-<p>&#160;</p>
-<p class="SubSubHeading">Project Preferences (Signing &amp; Play Store)</p>
-<p>If you just want to internally test your app on Android, you can skip 
- the following step. Otherwise, you need to open <a href="Project_Preferences.htm">Project 
- Preferences</a> and navigate to the Android Deployment tab.</p>
-<p>&#160;</p>
-<p><img src="AndroidDeployment.png" alt="" style=" border:none; width:100%; max-width:600px;" border="0" /></p>
-<p>(The displayed data is not real and just to give you and example about 
- what kind of data you have to input here).</p>
-<p>&#160;</p>
-<p>You need to specify your keystore information to sign the APK properly. 
- Otherwise it will be signed with a development-certificate. You can ignore 
- <span style="font-weight: bold;">License Key</span><span> and </span><span 
-	 style="font-weight: bold;">Use APK Expansion File</span><span> if 
- you don't want to submit your APK to Play Store. Also, make sure to enter 
- a unique </span><span style="font-weight: bold;">Game ID</span><span> 
- on </span><span style="font-weight: bold;">General</span><span> tab</span><span>.</span></p>
-<p>&#160;</p>
-<p>Once you have entered all the necessary information, click the Close 
- button and save your project.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Testing on Android</p>
-<p>&#160;</p>
-<p>If you want to do a quick play-test on Android, just connect your device 
- to your computer and make sure it stays unlocked/active. Make sure the 
- Developer Mode is enabled on your device. Check the Settings app on your 
- Android device to enable Developer Mode and the execution of unsigned 
- APKs.</p>
-<p>&#160;</p>
-<p>Next choose Build For &gt; Android (Cordova) from The Menubar to build 
- your game for Android. The build-process will take a few minutes. After 
- the build-process is done, open the Debug Console via Tools &gt; Debug 
- Console and check for any errors.</p>
-<p>&#160;</p>
-<p>You can find the <span style="font-weight: bold;">.apk</span> file inside 
- the build-folder of your project: </p>
-<p>&#160;</p>
-<p><span style="font-style: italic;">&lt;project-folder&gt;/build/&lt;project-name&gt;/&lt;project-name&gt;/platforms/android/build/outputs/apk/&lt;project-name&gt;.apk</span></p>
-<p>&#160;</p>
-<p>if you want to install it manually.</p>
-<p>&#160;</p>
-<p>Now you can play your game on your connected device by choosing Play 
- On &gt; Android (Cordova) from The Menubar. You game-build will be transfered 
- and installed to your connected device which might take a few minutes 
- and then start automatically. Check Debug Console for any errors. If you 
- game doesn't start automatically, you have to start it manually.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Deploy for Android</p>
-<p>By default, VN Maker supports to export a single APK for self-publishing 
- or other stores and also to export for use with Play Store.</p>
-<p>&#160;</p>
-<p class="SubSubHeading">Deploy an APK for self-publishing</p>
-<p>You can deploy your game for Android using the <a href="Create_Game_Package.htm">Create 
- Game Package</a> wizard. Just select &quot;Android (Cordova)&quot; from 
- the list of platforms. Open the Debug Console to check for errors. The 
- package creation may take a while. You can find the .apk file at: </p>
-<p>&#160;</p>
-<p style="font-style: italic;">&lt;output-location&gt;/&lt;project-name&gt;/&lt;project-name&gt;/platforms/android/build/outputs/apk/&lt;project-name&gt;.apk</p>
-<p>&#160;</p>
-<p class="SubSubHeading">Deploy an APK for Play Store</p>
-<p>You can deploy your game for Android Play Store using the <a href="Create_Game_Package.htm">Create 
- Game Package</a> wizard. Just select &quot;Android (Cordova, Play Store)&quot; 
- from the list of platforms. Make sure that you put in all necessary information 
- in to the Android Deployment tab in <a href="Project_Preferences.htm">Project 
- Preferences</a>. Open the Debug Console to check for errors. The package 
- creation may take a while. You can find the .apk file at: </p>
-<p>&#160;</p>
-<p style="font-style: italic;">&lt;output-location&gt;/&lt;project-name&gt;/&lt;project-name&gt;/platforms/android/build/outputs/apk/&lt;project-name&gt;.apk</p>
-<p>&#160;</p>
-<p>For more information about how to submit your app to the Play Store, 
- just follow the guides on the Google Play Store Website.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Troubleshooting</p>
-<p>&#160;</p>
-<p>If you went through all the above steps without any errors then congratulations! 
- But that is not the regular case, especially not if your doing this the 
- first time. So don't worry if you get stuck or get any error messages 
- since those are related to wrong configuration in most cases and can be 
- solved easily. </p>
-<p>&#160;</p>
-<p>The first thing you should try to do is to figure out the error message 
- by checking the error logs. Sometimes the error messages are understandable 
- even for non-programmers. Common errors are:</p>
-<p>&#160;</p>
+<p> </p>
+<p>进行注册，并按照该网站上的指南了解有关如何提交你的游戏的更多信息。 在撰写本文时，每年将花费你 25 美元。</p>
+<p> </p>
+<p class="Sub_Heading">准备你的 VN Maker 项目以进行 Android 部署</p>
+<p> </p>
+<p>既然一切都已设置好，你就可以开始为 Android 构建你的游戏了！ 确保你的项目在 Database &gt; System 中有一个<span style="font-weight: bold;">游戏标题</span>。</p>
+<p> </p>
+<p class="SubSubHeading">音频和视频资源</p>
+<p> </p>
+<p>在撰写本文时，通过 Cordova 打包的 Android 游戏可能在 .m4a/.mp4/.mp3/.aac 音频和 .mp4 视频格式方面存在问题。 为安全起见，你应该为音频使用 .ogg 和 .wav，为视频使用 .webm。 确保将所有音频和视频文件转换为必要的格式。 VN Maker 允许你多次导入同一个文件，但使用不同的格式，然后在运行时自动选择正确的格式，这对于 HTML5 网页浏览器游戏很有用。 但是，如果你计划离线通过 Play 商店发布你的游戏，或者仅作为 APK 下载，则应删除任何未使用的文件以减小文件大小。</p>
+<p> </p>
+<p class="SubSubHeading">项目偏好设置（签名和 Play 商店）</p>
+<p>如果你只想在 Android 上内部测试你的应用程序，则可以跳过以下步骤。 否则，你需要打开<a href="Project_Preferences.htm">项目偏好设置</a>并导航到 Android 部署选项卡。</p>
+<p> </p>
+<p><img alt="" border="0" src="AndroidDeployment.png" style=" border:none; width:100%; max-width:600px;"/></p>
+<p>（显示的 data 并非真实 data，仅为提供示例说明你需要输入什么样的数据）。</p>
+<p> </p>
+<p>你需要指定你的密钥库信息才能正确签名 APK。 否则，它将使用开发证书签名。 如果你不想将 APK 提交到 Play 商店，则可以忽略<span style="font-weight: bold;">License Key</span><span>和</span><span style="font-weight: bold;">Use APK Expansion File</span><span>。 另外，请确保在</span><span style="font-weight: bold;">General</span><span>选项卡中输入一个唯一的</span><span style="font-weight: bold;">Game ID</span><span>。</span><span>输入所有必需的信息后，单击“关闭”按钮并保存你的项目。</span></p>
+<p> </p>
+<p>在 Android 上进行测试</p>
+<p> </p>
+<p class="Sub_Heading">如果你想在 Android 上进行快速试玩，只需将设备连接到你的计算机，并确保它保持解锁/激活状态。 确保在设备上启用了开发者模式。 检查 Android 设备上的“设置”应用程序以启用开发者模式和执行未签名 APK。</p>
+<p> </p>
+<p>然后从菜单栏选择“构建为 &gt; Android (Cordova)”来构建你的 Android 游戏。 构建过程将需要几分钟时间。 构建过程完成后，通过“工具 &gt; 调试控制台”打开调试控制台，并检查任何错误。</p>
+<p> </p>
+<p>如果你想手动安装，可以在项目的 build-folder 中找到</p>
+<p> </p>
+<p>.apk<span style="font-weight: bold;">文件：</span>&lt;project-folder&gt;/build/&lt;project-name&gt;/&lt;project-name&gt;/platforms/android/build/outputs/apk/&lt;project-name&gt;.apk</p>
+<p> </p>
+<p><span style="font-style: italic;">现在，你可以通过从菜单栏选择“在...上播放 &gt; Android (Cordova)”来在已连接的设备上播放你的游戏。 你的游戏构建将被传输并安装到已连接的设备上，这可能需要几分钟时间，然后会自动启动。 检查调试控制台以获取任何错误。 如果你的游戏没有自动启动，你必须手动启动它。</span></p>
+<p> </p>
+<p>部署到 Android</p>
+<p> </p>
+<p>默认情况下，VN Maker 支持导出单个 APK 以供自发布或其他商店使用，也支持导出供 Play 商店使用。</p>
+<p> </p>
+<p class="Sub_Heading">部署用于自发布的 APK</p>
+<p>你可以使用</p>
+<p> </p>
+<p class="SubSubHeading">创建游戏包</p>
+<p>向导来部署你的 Android 游戏。 只需从平台列表中选择“Android (Cordova)”即可。 打开调试控制台以检查错误。 包创建可能需要一段时间。 你可以在以下位置找到 .apk 文件：<a href="Create_Game_Package.htm">&lt;output-location&gt;/&lt;project-name&gt;/&lt;project-name&gt;/platforms/android/build/outputs/apk/&lt;project-name&gt;.apk</a>部署用于 Play 商店的 APK</p>
+<p> </p>
+<p style="font-style: italic;">你可以使用</p>
+<p> </p>
+<p class="SubSubHeading">创建游戏包</p>
+<p>向导来部署你的 Android Play 商店游戏。 只需从平台列表中选择“Android (Cordova, Play Store)”。 确保你在<a href="Create_Game_Package.htm">项目偏好设置</a>的 Android 部署选项卡中输入了所有必要的信息。 打开调试控制台以检查错误。 包创建可能需要一段时间。 你可以在以下位置找到 .apk 文件：<a href="Project_Preferences.htm">&lt;output-location&gt;/&lt;project-name&gt;/&lt;project-name&gt;/platforms/android/build/outputs/apk/&lt;project-name&gt;.apk</a>有关如何将你的应用程序提交到 Play 商店的更多信息，请遵循 Google Play 商店网站上的指南。</p>
+<p> </p>
+<p style="font-style: italic;">故障排除</p>
+<p> </p>
+<p>如果你没有遇到任何错误地完成了以上所有步骤，那么恭喜你！ 但这并不是常规情况，尤其不是你第一次这样做的时候。 因此，如果你遇到困难或收到任何错误消息，请不要担心，因为它们通常与错误的配置有关，并且可以轻松解决。</p>
+<p> </p>
+<p class="Sub_Heading">你应该尝试做的第一件事是通过检查错误日志来弄清楚错误消息。 有时错误消息即使对非程序员来说也是可以理解的。 常见错误包括：</p>
+<p> </p>
+<p>你的设备未连接或处于锁定屏幕状态</p>
+<p> </p>
+<p>你的设备已连接，但你的计算机无法访问它。</p>
+<p> </p>
 <ul style="list-style: disc;">
-	<li>Your device is not connected or on lock-screen</li>
-	<li>Your device is connected but your computer has no access to it.</li>
-	<li>JDK 7+ is not installed</li>
-	<li>Android SDK Tools are not installed</li>
-	<li>Cordova has not been installed</li>
-	<li>Audio and/or Video files have the wrong format</li>
-	<li>You try to install and play and APK, which has been exported for 
-	 Play Store, directly on the device.</li>
+<li>未安装 JDK 7+</li>
+<li>未安装 Android SDK Tools</li>
+<li>Cordova 未安装</li>
+<li>音频和/或视频文件的格式不正确</li>
+<li>你尝试安装和运行一个 APK，该 APK 是为 Play 商店导出的，但直接在设备上运行。</li>
+<li>如果你遇到任何错误无法自行修复，请查看我们的支持论坛。</li>
+<li>HTML</li>
 </ul>
-<p>&#160;</p>
-<p>If you get stuck with any error and if you cannot fix them yourself, 
- just take a look at our support forums.</p>
-<p>&#160;</p>
+<p> </p>
+<p>适用于 iOS</p>
+<p> </p>
 </body>
 </html>

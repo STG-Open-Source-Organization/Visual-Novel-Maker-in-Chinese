@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+HTML
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="generator" content="Adobe RoboHelp 2015" />
-<title>Message</title>
-<link rel="StyleSheet" href="default.css" type="text/css" />
-<script type="text/javascript" language="JavaScript">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Adobe RoboHelp 2015" name="generator"/>
+<title>消息</title>
+<link href="default.css" rel="StyleSheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
 //<![CDATA[
 function reDo() {
   if (innerWidth != origWidth || innerHeight != origHeight)
@@ -29,837 +29,515 @@ visibility:hidden; }
 p.WebHelpNavBar { text-align:right; }
 -->
 </style>
-
-<script type="text/javascript" src="template/scripts/rh.min.js"></script>
-<script type="text/javascript" src="template/scripts/common.min.js"></script>
-<script type="text/javascript" src="template/scripts/topic.min.js"></script>
-<script type="text/javascript" src="template/scripts/constants.js"></script>
-<script type="text/javascript" src="template/scripts/utils.js"></script>
-<script type="text/javascript" src="template/scripts/mhutils.js"></script>
-<script type="text/javascript" src="template/scripts/mhlang.js"></script>
-<script type="text/javascript" src="template/scripts/mhver.js"></script>
-<script type="text/javascript" src="template/scripts/settings.js"></script>
-<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
-<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
-<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
-<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
-<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
- <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
-<script type="text/javascript" >
+<script src="template/scripts/rh.min.js" type="text/javascript"></script>
+<script src="template/scripts/common.min.js" type="text/javascript"></script>
+<script src="template/scripts/topic.min.js" type="text/javascript"></script>
+<script src="template/scripts/constants.js" type="text/javascript"></script>
+<script src="template/scripts/utils.js" type="text/javascript"></script>
+<script src="template/scripts/mhutils.js" type="text/javascript"></script>
+<script src="template/scripts/mhlang.js" type="text/javascript"></script>
+<script src="template/scripts/mhver.js" type="text/javascript"></script>
+<script src="template/scripts/settings.js" type="text/javascript"></script>
+<script src="template/scripts/XmlJsReader.js" type="text/javascript"></script>
+<script src="template/scripts/loadparentdata.js" type="text/javascript"></script>
+<script src="template/scripts/loadscreen.js" type="text/javascript"></script>
+<script src="template/scripts/loadprojdata.js" type="text/javascript"></script>
+<script src="template/scripts/mhtopic.js" type="text/javascript"></script>
+<link href="template/styles/topic.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
 gRootRelPath = ".";
 gCommonRootRelPath = ".";
 gTopicId = "2.3.1.0_9";
 </script>
- <meta name="topic-breadcrumbs" content="Exploring the Editor > Scene Editor > Scene Content Commands" />
+<meta content="Exploring the Editor &gt; Scene Editor &gt; Scene Content Commands" name="topic-breadcrumbs"/>
 </head>
-
 <body>
-<script type="text/javascript" src="./ehlpdhtm.js"></script>
-
-<div style="width: 100%; position: relative;" id="header">
-	<p class="Topic_Heading">Message</p>
+<script src="./ehlpdhtm.js" type="text/javascript"></script>
+<div id="header" style="width: 100%; position: relative;">
+<p class="Topic_Heading">消息</p>
 </div>
-<p style="font-family: Arial, sans-serif;">&#160;</p>
+<p style="font-family: Arial, sans-serif;"> </p>
 <p style="font-family: Arial, sans-serif;"><span style="font-family: 'Book Antiqua', serif; 
 												 font-weight: bold; font-size: 18pt;">T</span>he 
- Message commands allows you to input dialogue-related events to Scenes.</p>
-<p style="font-family: Arial, sans-serif;">&#160;</p>
-<p class="Sub_Heading"><a name="Message_Box_Visibility" id="Message_Box_Visibility"></a>Message 
- Box Visibility</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">The Message 
- box is where all dialogue from a message box is displayed. However, the 
- message box is independent from the message text. So even if the message 
- box is hidden, the message text will be still visible. Use [Message Visibility] 
- command to show/hide the actual message text.</p>
+ 消息命令允许您在场景中输入与对话相关的事件。</p>
+<p style="font-family: Arial, sans-serif;"> </p>
+<p class="Sub_Heading"><a id="Message_Box_Visibility" name="Message_Box_Visibility"></a>消息框可见性</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">消息框是显示消息框中所有对话的地方。然而，消息框独立于消息文本。所以即使消息框隐藏了，消息文本仍然是可见的。使用 [消息可见性] 命令来显示/隐藏实际的消息文本。</p>
 <ul style="list-style: disc;">
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">ID</span> - The ID of the message box UI 
-	 object to show. By default this is &quot;messageBox&quot; unless you 
-	 define additional message boxes in Layouts &gt; Layout_Game in <a 
-	 href="GameScript_Getting_Started.htm">Script Editor.</a></p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Visible</span> - Changes the visibility 
-	 of the message box. If yes, it will be visible. If no, it will be 
-	 hidden.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Duration</span> - The duration of the message 
-	 box visibility in milliseconds.</p></li>
-	<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Continue</span> will make the scene 
-		 immediately continue.</p></li>
-		<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span 
-		 style="font-weight: bold;">Wait</span> will make the scene wait 
-		 until the message box visibility animation is done.</p></li>
-	</ul></li>
-	<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span 
-	 style="font-weight: bold;">Effects</span> - These options affect how 
-	 the Message Box will appear.</p></li>
-	<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-		<li><p style="font-family: Arial, sans-serif; font-weight: bold;">Easing 
-		 <span style="font-weight: normal;">sets the tween movement of 
-		 the message box. More information can be seen in <a href="Easing_Effects.htm">Easing 
-		 Effects</a> page.</span></p></li>
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Animation</span> sets the movement 
-		 of the message box.</p></li>
-		<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-			<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-			 style="font-weight: bold;">Movement</span> is the origin point 
-			 of the message box where it will appear from Left/Top/Right/Bottom.</p></li>
-			<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-			 style="font-weight: bold;">Blending</span> allows you to fade 
-			 in/fade out the message box. &#160;This has <span style="font-weight: bold;">no 
-			 effect</span> for the default implementation of the message 
-			 box.</p></li>
-			<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
-												 font-weight: bold;">Masking 
-			 <span style="font-weight: normal;">allows you to mask the 
-			 message box to a Masks file. This has</span> no effect <span 
-			 style="font-weight: normal;">for the default implementation 
-			 of the message box.</span></p></li>
-			<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-				<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
-													 font-weight: bold;">Vague 
-				 <span style="font-weight: normal;">the smoothness of the 
-				 mask edges.</span></p></li>
-			</ul>
-			<p style="font-family: Arial, sans-serif; font-weight: bold;">&#160;</p></li>
-		</ul></li>
-	</ul></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">ID</span>- 要显示的对话框 UI 对象的 ID。默认情况下，它是“messageBox”，除非您在 Layouts &gt; Layout_Game 中定义了其他消息框。<a href="GameScript_Getting_Started.htm">可见</a></p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 更改消息框的可见性。如果为“是”，则可见。如果为“否”，则隐藏。</span>持续时间</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 消息框可见性的持续时间（毫秒）。</span>继续</p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">将立即使场景继续。</span>等待</p></li>
+<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span style="font-weight: bold;">将使场景等待直到消息框可见性动画完成。</span>效果</p></li>
+</ul></li>
+<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span style="font-weight: bold;">- 这些选项会影响消息框如何出现。</span>缓动</p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li><p style="font-family: Arial, sans-serif; font-weight: bold;">设置消息框的缓动移动。更多信息请参阅<span style="font-weight: normal;">缓动效果<a href="Easing_Effects.htm">页面。</a>动画</span></p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">设置消息框的移动。</span>移动</p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">是消息框出现的起始点，它可以从左/上/右/下出现。</span>混合</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">允许您淡入/淡出消息框。对于消息框的默认实现，这**没有效果**。</span>遮罩<span style="font-weight: bold;">允许您将消息框遮罩到遮罩文件。对于消息框的默认实现，这**没有效果**。</span>模糊</p></li>
+<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
+												 font-weight: bold;">遮罩边缘的平滑度。<span style="font-weight: normal;">消息 
+ 可见性</span>控制实际消息/对话的可见性。然而，消息文本独立于消息框。所以即使消息文本隐藏了，消息框仍然是可见的。使用 [消息框可见性] 命令来显示/隐藏消息框。<span style="font-weight: normal;">可见</span></p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
+													 font-weight: bold;">- 更改消息文本的可见性。如果为“是”，则可见。如果为“否”，则隐藏。<span style="font-weight: normal;">持续时间</span></p></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">&#160;</p>
-<p class="Sub_Heading"><a name="Message_Visibility" id="Message_Visibility"></a>Message 
- Visibility</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">Controls 
- visibility of the actual message/dialogue. However, the message text independent 
- from the message box. So even if the message text is hidden, the message 
- box will be still visible. Use [Message Box Visibility] command to show/hide 
- the message box.</p>
+<p style="font-family: Arial, sans-serif; font-weight: bold;"> </p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p style="font-family: Arial, sans-serif; font-weight: normal;"> </p>
+<p class="Sub_Heading"><a id="Message_Visibility" name="Message_Visibility"></a>- 消息文本可见性的持续时间（毫秒）。</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">继续</p>
 <ul style="list-style: disc;">
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Visible</span> - Changes the visibility 
-	 of the message text. If yes, it will be visible. If no, it will be 
-	 hidden.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Duration</span> - The duration of the message 
-	 text visibility in milliseconds.</p></li>
-	<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Continue</span> will make the scene 
-		 immediately continue.</p></li>
-		<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span 
-		 style="font-weight: bold;">Wait</span> will make the scene wait 
-		 until the message text visibility animation is done.</p></li>
-	</ul></li>
-	<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span 
-	 style="font-weight: bold;">Effects</span> - These options affect how 
-	 the Message Text will appear.</p></li>
-	<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-		<li><p style="font-family: Arial, sans-serif; font-weight: bold;">Easing 
-		 <span style="font-weight: normal;">sets the tween movement of 
-		 the message text. More information can be seen in <a href="Easing_Effects.htm">Easing 
-		 Effects</a> page.</span></p></li>
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Animation</span> sets the movement 
-		 of the message text.</p></li>
-		<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-			<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-			 style="font-weight: bold;">Movement</span> is the origin point 
-			 of the message text where it will appear from Left/Top/Right/Bottom.</p></li>
-			<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-			 style="font-weight: bold;">Blending</span> allows you to fade 
-			 in/fade out the message text.</p></li>
-			<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
-												 font-weight: bold;">Masking 
-			 <span style="font-weight: normal;">allows you to mask the 
-			 message text to a Masks file.</span></p></li>
-			<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-				<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
-													 font-weight: bold;">Vague 
-				 <span style="font-weight: normal;">the smoothness of the 
-				 mask edges.</span></p></li>
-			</ul>
-			<p style="font-family: Arial, sans-serif; font-weight: bold;">&#160;</p></li>
-		</ul></li>
-	</ul></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">将立即使场景继续。</span>等待</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">将使场景等待直到消息文本可见性动画完成。</span>效果</p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 这些选项会影响消息文本如何出现。</span>缓动</p></li>
+<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span style="font-weight: bold;">设置消息文本的缓动移动。更多信息请参阅</span>缓动效果</p></li>
+</ul></li>
+<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span style="font-weight: bold;">页面。</span>动画</p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li><p style="font-family: Arial, sans-serif; font-weight: bold;">设置消息文本的移动。<span style="font-weight: normal;">移动<a href="Easing_Effects.htm">是消息文本出现的起始点，它可以从左/上/右/下出现。</a>混合</span></p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">允许您淡入/淡出消息文本。</span>遮罩</p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">允许您将消息文本遮罩到遮罩文件。</span>模糊</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">遮罩边缘的平滑度。</span>消息 
+ 淡入/淡出</p></li>
+<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
+												 font-weight: bold;">此命令影响消息的擦除速度。<span style="font-weight: normal;">如果 [消息设置] 中的自动擦除关闭，则此命令无效。</span></p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
+													 font-weight: bold;">持续时间<span style="font-weight: normal;">- 消息结束的速度（毫秒）。</span></p></li>
 </ul>
-<p class="Sub_Heading"><a name="Message_Fading" id="Message_Fading"></a>Message 
- Fading</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">This command 
- affects how fast messages are erased. <span style="font-family: Arial, sans-serif; 
-											 font-weight: normal;">This 
- doesn't work if Auto Erase in [Message Settings] is turned off.</span></p>
+<p style="font-family: Arial, sans-serif; font-weight: bold;"> </p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p class="Sub_Heading"><a id="Message_Fading" name="Message_Fading"></a>效果</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">- 这些选项会影响消息如何淡出。<span style="font-family: Arial, sans-serif; 
+											 font-weight: normal;">缓动</span></p>
 <ul style="list-style: disc;">
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Duration</span> - The speed of the message 
-	 end in milliseconds.</p></li>
-	<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span 
-	 style="font-weight: bold;">Effects</span> - These options affect how 
-	 the Message will fade out.</p></li>
-	<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Easing</span> sets the tween movement 
-		 of the message box. More information can be seen in <a href="Easing_Effects.htm">Easing 
-		 Effects</a> page.</p></li>
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Animation</span> sets the movement 
-		 of the message box.</p></li>
-		<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-			<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-			 style="font-weight: bold;">Movement</span> is the origin point 
-			 of the message box where it will appear from Left/Top/Right/Bottom.</p></li>
-			<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-			 style="font-weight: bold;">Blending</span> allows you to fade 
-			 in/fade out the message box.</p></li>
-			<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
-												 font-weight: bold;">Masking 
-			 <span style="font-weight: normal;">allows you to mask the 
-			 message box to a Masks file.</span></p></li>
-			<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-				<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
-													 font-weight: bold;">Vague 
-				 <span style="font-weight: normal;">the smoothness of the 
-				 mask edges.</span></p></li>
-			</ul></li>
-		</ul></li>
-	</ul></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">设置消息框的缓动移动。更多信息请参阅</span>缓动效果</p></li>
+<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span style="font-weight: bold;">页面。</span>动画</p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">设置消息框的移动。</span>移动<a href="Easing_Effects.htm">是消息框出现的起始点，它可以从左/上/右/下出现。</a>混合</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">允许您淡入/淡出消息框。</span></p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;"></span></p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;"></span></p></li>
+<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
+												 font-weight: bold;">Masking<span style="font-weight: normal;">允许您将消息框遮罩到“Masks”文件。</span></p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
+													 font-weight: bold;">Vague<span style="font-weight: normal;">遮罩边缘的平滑度。</span></p></li>
+</ul></li>
+</ul></li>
+</ul></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: bold;">&#160;</p>
-<p class="Sub_Heading"><a name="Message_Settings" id="Message_Settings"></a>Message 
+<p style="font-family: Arial, sans-serif; font-weight: bold;"> </p>
+<p class="Sub_Heading"><a id="Message_Settings" name="Message_Settings"></a>Message 
  Settings</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">This command 
- changes the default options of the Message Box display.</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">此命令更改消息框显示器的默认选项。</p>
 <ul style="list-style: disc;">
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Auto Erase</span> - By default, it is turned 
-	 ON. If it is turned off, the text from the previous message box will 
-	 not be cleared out. But you can use [Clear Message] command to clear 
-	 the current message text manually.<br />
-	<img src="autoerase.jpg" alt="" style=" border:none; width:100%; max-width:756px;" border="0" /></p></li>
-	<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span 
-	 style="font-weight: bold;">Wait at End</span> - By default it is ON. 
-	 It waits for user input before displaying the next set of messages.<br />
-	If it's turned off, will ignore input and display the next set.</p></li>
-	<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span 
-	 style="font-weight: bold;">Backlog</span> - Indicates if messages 
-	 are added to the backlog.</p></li>
-	<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span 
-	 style="font-weight: bold;">Font</span> - Change the font displayed. 
-	 The font must be in .WOFF format or a system-installed font.</p></li>
-	<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span 
-	 style="font-weight: bold;">Size</span> - The size of the font.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Style</span> - Sets the message text style.</p></li>
-	<ul style="list-style: disc;">
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Color </span>- The color of the text.</p></li>
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Bold</span> - Makes the text bolder.</p></li>
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Italic </span>- Makes the text oblique.</p></li>
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Small Caps</span>&#160;- Makes lower-case 
-		 letters appear as small upper-case/capitalized letters.</p></li>
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Underline</span> - Draws a horizontal 
-		 line under the text to make it look underlined.</p></li>
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Strikethrough</span> - Draws a horizontal 
-		 centered line over the text to make it look strike-through.</p></li>
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Line Height </span>&#160;- The minimum 
-		 height of a single message text line in pixels. You can specify 
-		 0 to use the automatically calculated height of the text.</p></li>
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Line Spacing</span> - The spacing between 
-		 message text lines in pixels.</p></li>
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Line Padding</span>&#160;- The left 
-		 and right padding of a single message text line in pixels.</p></li>
-	</ul>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Outline</span> - Add an outline to the 
-	 message text.</p></li>
-	<ul style="list-style: disc;">
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Outline </span>- Add an outline to 
-		 the font. Set Yes for an outline, and No to leave it turned off.</p></li>
-	</ul>
-	<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-		<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
-														 font-weight: normal;"><span 
-		 style="font-weight: bold;">Color</span> - Controls the outline 
-		 color. Use the Red, Green, and Blue slider bars (0 to 255) to 
-		 specify the color to flash.<br />
-		You can check the color you specified in the preview area on the 
-		 top side of the dialog box. Use Power to specify the color's opacity 
-		 (0 to 255).Setting Power to &quot;0&quot; makes the color completely 
-		 transparent, rendering it invisible on screen.</p></li>
-		<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
-														 font-weight: normal;"><span 
-		 style="font-weight: bold;">Size</span><span> - The thickness of 
-		 the outline in pixels.</span></p></li>
-	</ul></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Shadow</span><span> - Add a shadow to the 
-	 message text.</span></p></li>
-	<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-		<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
-														 font-weight: normal;"><span 
-		 style="font-weight: bold;">Shadow</span> - Set Yes to turn shadows 
-		 on, No to leave it turned off.</p></li>
-		<li style="list-style: none; display: inline; margin-left: -20px;"><ul 
-				 style="list-style: disc;">
-			<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Auto Erase</span>- 默认情况下，它是打开的。如果关闭，则不会清除前一个消息框中的文本。但是，您可以使用 [Clear Message] 命令手动清除当前消息文本。<br/>
+<img alt="" border="0" src="autoerase.jpg" style=" border:none; width:100%; max-width:756px;"/></p></li>
+<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span style="font-weight: bold;">Wait at End</span>- 默认情况下，它是打开的。它在显示下一组消息之前等待用户输入。<br/>如果将其关闭，将忽略输入并显示下一组。</p></li>
+<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span style="font-weight: bold;">Backlog</span>- 指示是否将消息添加到日志中。</p></li>
+<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span style="font-weight: bold;">Font</span>- 更改显示的字体。字体必须是 .WOFF 格式或系统中安装的字体。</p></li>
+<li><p style="font-weight: normal; font-family: Arial, sans-serif;"><span style="font-weight: bold;">Size</span>- 字体大小。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Style</span>- 设置消息文本样式。</p></li>
+<ul style="list-style: disc;">
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Color</span>- 文本颜色。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Bold</span>- 使文本更粗。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Italic</span>- 使文本倾斜。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Small Caps</span>- 使小写字母显示为小写/大写字母。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Underline</span>- 在文本下方绘制一条水平线，使其看起来带下划线。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Strikethrough</span>- 在文本上方绘制一条水平居中线，使其看起来带删除线。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Line Height</span>- 单条消息文本行的最小高度（以像素为单位）。您可以指定 0 以使用文本的自动计算高度。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Line Spacing</span>- 消息文本行之间的间距（以像素为单位）。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Line Padding</span>- 单条消息文本行的左侧和右侧内边距（以像素为单位）。</p></li>
+</ul>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Outline</span>- 为消息文本添加轮廓。</p></li>
+<ul style="list-style: disc;">
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Outline</span>- 为字体添加轮廓。设置为“是”表示有轮廓，设置为“否”则禁用。</p></li>
+</ul>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
+														 font-weight: normal;"><span style="font-weight: bold;">Color</span>- 控制轮廓颜色。使用红色、绿色和蓝色滑块（0 到 255）指定要闪烁的颜色。<br/>您可以在对话框顶部预览区域中检查指定的颜色。使用“Power”指定颜色的不透明度（0 到 255）。将“Power”设置为“0”将使颜色完全透明，从而在屏幕上不可见。</p></li>
+<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
+														 font-weight: normal;"><span style="font-weight: bold;">Size</span><span>- 轮廓的厚度（以像素为单位）。</span></p></li>
+</ul></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Shadow</span><span>- 为消息文本添加阴影。</span></p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
+														 font-weight: normal;"><span style="font-weight: bold;">Shadow</span>- 设置为“是”表示打开阴影，设置为“否”则关闭。</p></li>
+<li style="list-style: none; display: inline; margin-left: -20px;"><ul style="list-style: disc;">
+<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
 															 font-weight: bold;">Color 
-			 - <span style="font-weight: normal;">Controls the shadow color. 
-			 Use the Red, Green, and Blue slider bars (0 to 255) to specify 
-			 the color to flash.<br />
-			You can check the color you specified in the preview area on 
-			 the top side of the dialog box. Use Power to specify the color's 
-			 opacity (0 to 255).<br />
-			Setting Power to &quot;0&quot; makes the color completely transparent, 
-			 rendering it invisible on screen.</span></p></li>
-			<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
-															 font-weight: bold;">Offset-X 
-			 <span style="font-weight: normal;">- The horizontal offset 
-			 of the shadow in pixels. The higher the value, the more the 
-			 shadow is moved to the right.</span></p></li>
-			<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
-															 font-weight: bold;"><span>Offset-Y</span><span 
-			 style="font-weight: normal;"> - The vertical offset of the 
-			 shadow in pixels. The higher the value, the more the shadow 
-			 is moved to the bottom.</span></p></li>
-		</ul>
-		<p style="font-family: Arial, sans-serif; font-weight: bold;">&#160;</p>
-		<p style="font-family: Arial, sans-serif; font-weight: bold;">&#160;</p></li>
-	</ul></li>
+			 -<span style="font-weight: normal;">控制阴影颜色。使用红色、绿色和蓝色滑块（0 到 255）指定要闪烁的颜色。<br/>您可以在对话框顶部预览区域中检查指定的颜色。使用“Power”指定颜色的不透明度（0 到 255）。<br/>将“Power”设置为“0”将使颜色完全透明，从而在屏幕上不可见。</span></p></li>
+<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
+															 font-weight: bold;">Offset-X<span style="font-weight: normal;">- 阴影的水平偏移量（以像素为单位）。值越高，阴影向右移动的距离越大。</span></p></li>
+<li style="font-family: Arial, sans-serif;"><p style="font-family: Arial, sans-serif; 
+															 font-weight: bold;"><span>Offset-Y</span><span style="font-weight: normal;">- 阴影的垂直偏移量（以像素为单位）。值越高，阴影向下移动的距离越大。</span></p></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: bold;">&#160;</p>
-<p class="Sub_Heading"><a name="Show_Message" id="Show_Message"></a>Show 
+<p style="font-family: Arial, sans-serif; font-weight: bold;"> </p>
+<p style="font-family: Arial, sans-serif; font-weight: bold;"> </p></li>
+</ul></li>
+</ul>
+<p style="font-family: Arial, sans-serif; font-weight: bold;"> </p>
+<p class="Sub_Heading"><a id="Show_Message" name="Show_Message"></a>Show 
  Message</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">This command 
- displays text in Adventure (ADV) game style. If the arrow (<img src="command-expander-arrow.png" alt="" style=" border:none; width:100%; max-width:13px;" border="0" />) is down, you can view 
- and input the text to display.</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">此命令以冒险（ADV）游戏风格显示文本。如果箭头（<img alt="" border="0" src="command-expander-arrow.png" style=" border:none; width:100%; max-width:13px;"/>）向下，则可以查看并输入要显示的文本。</p>
 <ul style="list-style: disc;">
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Character</span> - The character you want 
-	 to be speaking in the scene.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Voice</span>&#160;- The voice file to be 
-	 played for the message.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Partial</span> - If enabled, it will allow 
-	 other Scene commands to be activated while the message is being displayed.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Expression Change</span> - The character's 
-	 expression for the message.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: bold;">Duration 
-	 <span style="font-weight: normal;">- The duration of the expression-change 
-	 in milliseconds.</span></p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Character</span>- 您希望在场景中说话的角色。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Voice</span>- 要为消息播放的语音文件。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Partial</span>- 如果启用，它将允许在消息显示时激活其他场景命令。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Expression Change</span>- 消息的角色表情。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: bold;">Duration<span style="font-weight: normal;">- 表情变化持续时间（以毫秒为单位）。</span></p></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: bold;">&#160;</p>
-<p class="Sub_Heading"><a name="Add_Choice" id="Add_Choice"></a>Add Choice</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">This command 
- adds a choice option to the scene.</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">All added 
- choices are not displayed on screen until [Show Choices] command is called. 
- So it can be combined with the [<a href="Basic.htm#Condition">Condition</a>] 
- command to create a dynamic choice selection.</p>
+<p style="font-family: Arial, sans-serif; font-weight: bold;"> </p>
+<p class="Sub_Heading"><a id="Add_Choice" name="Add_Choice"></a>Add Choice</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">此命令向场景添加一个选择选项。</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">所有添加的选择在调用 [Show Choices] 命令之前都不会显示在屏幕上。因此，它可以与 [<a href="Basic.htm#Condition">Condition</a>] 命令结合使用以创建动态选择。</p>
 <ul style="list-style: disc;">
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Description</span> - The content of the 
-	 choice.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">On Select</span> - Defined what should 
-	 happen if the choice is selected/clicked by the user.</p></li>
-	<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Jump To</span> - When selected, go 
-		 to the Label that is specified.</p></li>
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Call Common Even</span>t - When selected, 
-		 call the specified common event.</p></li>
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Bind To</span> - When selected, sets 
-		 the specified switch to ON.</p></li>
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-		 style="font-weight: bold;">Call Scene</span> - When selected, 
-		 calls the specified (sub)-scene. See [Call Scene] command.</p></li>
-	</ul></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Position</span> - The position of the choice.</p></li>
-	<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;">Auto 
-		 is the default option for choice position. It is always displayed 
-		 centered and from top to bottom.</p></li>
-		<li><p style="font-family: Arial, sans-serif; font-weight: normal;">Direct 
-		 allows the user to position it freely in the screen.</p></li>
-	</ul></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Default</span> - If [Choice Timer] is active 
-	 or the game is in skip-mode, the choice that will be selected is the 
-	 one with this command enabled.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Enabled</span> - Indicates if the choice 
-	 is enabled. A disabled choice is still displayed but cannot be selected 
-	 by the user.</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Description</span>- 选择的内容。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">On Select</span>- 定义如果用户选择/单击该选项，应该发生什么。</p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Jump To</span>- 选择后，跳转到指定的标签。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Call Common Even</span>t - 选择后，调用指定的通用事件。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Bind To</span>- 选择后，将指定的开关设置为 ON。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Call Scene</span>- 选择后，调用指定的（子）场景。请参阅 [Call Scene] 命令。</p></li>
+</ul></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Position</span>- 选择的位置。</p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;">Auto 是选择位置的默认选项。它始终居中显示，并从上到下排列。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;">Direct 允许用户自由地在屏幕上定位。</p></li>
+</ul></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Default</span>- 如果 [Choice Timer] 处于活动状态或游戏处于跳过模式，则将选择此命令已启用的选项。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Enabled</span>- 指示选择是否启用。禁用的选择仍会显示，但用户无法选择。</p></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">&#160;</p>
-<p class="Sub_Heading"><a name="Show_Choices" id="Show_Choices"></a>Show 
+<p style="font-family: Arial, sans-serif; font-weight: normal;"> </p>
+<p class="Sub_Heading"><a id="Show_Choices" name="Show_Choices"></a>Show 
  Choices</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">This command 
- displays all the choices you set.</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">&#160;</p>
-<p class="Sub_Heading">.<a name="ShowNVLMessage" id="ShowNVLMessage"></a><span 
-	 style="font-family: 'Book Antiqua', serif; font-size: 18pt; font-weight: bold;">Show 
+<p style="font-family: Arial, sans-serif; font-weight: normal;">此命令显示您设置的所有选项。</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;"> </p>
+<p class="Sub_Heading">.<a id="ShowNVLMessage" name="ShowNVLMessage"></a><span style="font-family: 'Book Antiqua', serif; font-size: 18pt; font-weight: bold;">Show 
  NVL Message</span></p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">This command 
- displays text in Novel (NVL) game style. If the arrow (<img src="command-expander-arrow.png" alt="" style=" border:none; width:100%; max-width:13px;" border="0" />) 
- is down, you can view and input the text to display.</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">此命令以小说（NVL）游戏风格显示文本。如果箭头（<img alt="" border="0" src="command-expander-arrow.png" style=" border:none; width:100%; max-width:13px;"/>）向下，则可以查看并输入要显示的文本。</p>
 <ul style="list-style: disc;">
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Character</span> - The character you want 
-	 to be speaking in the scene.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Voice</span>&#160;- The voice file to be 
-	 played for the message.</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Character</span>- 您希望在场景中说话的角色。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Voice</span>- 要为消息播放的语音文件。</p></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">&#160;</p>
-<p class="Sub_Heading"><a name="Close_NVL_Page" id="Close_NVL_Page"></a>Close 
+<p style="font-family: Arial, sans-serif; font-weight: normal;"> </p>
+<p class="Sub_Heading"><a id="Close_NVL_Page" name="Close_NVL_Page"></a>Close 
  NVL Page</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">Closes 
- the NVL Message display.</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">&#160;</p>
-<p class="Sub_Heading"><a name="Clear_Message" id="Clear_Message"></a>Clear 
+<p style="font-family: Arial, sans-serif; font-weight: normal;">关闭 NVL 消息显示。</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;"> </p>
+<p class="Sub_Heading"><a id="Clear_Message" name="Clear_Message"></a>Clear 
  Message</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">This command 
- clears all messaged displayed. This affects both ADV and NVL mode.</p>
-<p style="font-family: Arial, sans-serif; font-weight: bold;">&#160;</p>
-<p class="Sub_Heading"><a name="Input_Number" id="Input_Number"></a>Input 
+<p style="font-family: Arial, sans-serif; font-weight: normal;">此命令清除所有显示的消息。这会影响 ADV 和 NVL 模式。</p>
+<p style="font-family: Arial, sans-serif; font-weight: bold;"> </p>
+<p class="Sub_Heading"><a id="Input_Number" name="Input_Number"></a>Input 
  Number</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">Displays 
- a window for entering a value. It then assigns the value that the player 
- entered to a variable.</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">显示一个窗口以输入值。然后将玩家输入的值分配给一个变量。</p>
 <ul style="list-style: disc;">
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Digits</span> - The amount of digits to 
-	 be displayed and/or inputted by the player. The maximum is 8 digits.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Store in Variable</span> - Stores the player 
-	 defined input to a number variable.</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Digits</span>- 要由玩家显示和/或输入的数字位数。最大为 8 位。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Store in Variable</span>- 将玩家定义的输入存储到数字变量中。</p></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">&#160;</p>
-<p class="Sub_Heading"><a name="Input_Text" id="Input_Text"></a>Input Text</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">Displays 
- a window for entering a value. It then assigns the value that the player 
- entered to a variable. You can change the available letters in Database 
- &gt; System &gt; Text-Input Letter-Set.</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;"> </p>
+<p class="Sub_Heading"><a id="Input_Text" name="Input_Text"></a>Input Text</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">显示一个窗口以输入值。然后将玩家输入的值分配给一个变量。您可以在 Database &gt; System &gt; Text-Input Letter-Set 中更改可用字母。</p>
 <ul style="list-style: disc;">
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Letters</span> - The amount of letters 
-	 to be displayed and/or inputted by the player. The maximum is 12 letters.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Store in Variable</span> - Stores the player 
-	 defined input to a text variable.</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Letters</span>- 要由玩家显示和/或输入的字母数量。最多为 12 个字母。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Store in Variable</span>- 将玩家定义的输入存储到文本变量中。</p></li>
 </ul>
-<p style="font-weight: bold; font-size: 18pt; font-family: 'Book Antiqua', serif;">&#160;</p>
-<p class="Sub_Heading"><a name="Create_Message_Area" id="Create_Message_Area"></a>Create 
+<p style="font-weight: bold; font-size: 18pt; font-family: 'Book Antiqua', serif;"> </p>
+<p class="Sub_Heading"><a id="Create_Message_Area" name="Create_Message_Area"></a>Create 
  Message Area</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">Creates 
- additional area(s) where messages can be displayed. If more than one message 
- box is needed to be displayed at the same time, this command can be used 
- to do so. Such examples are comic book bubbles.</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">创建消息可以显示的附加区域。如果需要同时显示多个消息框，可以使用此命令。例如漫画气泡。</p>
 <ul style="list-style: disc;">
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Number</span> - The message area's index 
-	 (ID). This allows you to determine which area to manipulate.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Position</span> - The message area's position 
-	 &amp; size on screen.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Template</span> - The UI template used 
-	 for this area. The default is <span style="font-weight: bold;">ui.CustomGameMessage</span> 
-	 which can be found in Layouts/Templates/Template_MessageBox in Script 
-	 Editor.</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Number</span>- 消息区域的索引（ID）。这允许您确定要操作的区域。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Position</span>- 屏幕上的消息区域位置和大小。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Template</span>- 此区域使用的 UI 模板。默认是<span style="font-weight: bold;">ui.CustomGameMessage</span>，可以在 Script Editor 的 Layouts/Templates/Template_MessageBox 中找到。</p></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">&#160;</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">See [<a 
-	 href="#Set_Message_Area">Set Message Target</a>] to check how to display 
- messages in the message area.</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">&#160;</p>
-<p class="Sub_Heading"><a name="Set_Message_Area" id="Set_Message_Area"></a>Set 
+<p style="font-family: Arial, sans-serif; font-weight: normal;"> </p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">请参阅 [<a href="#Set_Message_Area">Set Message Target</a>] 以了解如何在消息区域显示消息。</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;"> </p>
+<p class="Sub_Heading"><a id="Set_Message_Area" name="Set_Message_Area"></a>Set 
  Message Area</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">Changes 
- the position and size of a message area.</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">更改消息区域的位置和大小。</p>
 <ul style="list-style: disc;">
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Number</span>- The message area's index 
-	 (ID). This allows you to determine which area to manipulate.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Position</span> - The message area's position 
-	 &amp; size on screen.</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Number</span>- 消息区域的索引（ID）。这允许您确定要操作的区域。</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">Position</span>- 屏幕上的消息区域位置和大小。</p></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">&#160;</p>
-<p class="Sub_Heading"><a name="Set_Message_Target" id="Set_Message_Target"></a>Set 
+<p style="font-family: Arial, sans-serif; font-weight: normal;"> </p>
+<p class="Sub_Heading"><a id="Set_Message_Target" name="Set_Message_Target"></a>Set 
  Message Target</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">This allows 
- you to set the target area for the message commands (ex. <a href="#Show_Message">Show 
- Message</a>) that follow it. &#160;</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">You can 
- display the contents through an area made with <span style="font-family: Arial, sans-serif; 
-														 font-weight: normal;">[<a 
-	 href="#Create_Message_Area">Create Message Area</a>] command or a 
- layout-based message area that can be found in the In-Game UI System.</span></p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">这允许您设置后续消息命令（例如 <a href="#Show_Message">Show 
+ Message</a>）的目标区域。</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">您可以通过使用 [<span style="font-family: Arial, sans-serif; 
+														 font-weight: normal;">Create Message Area<a href="#Create_Message_Area">] 命令创建的区域或 In-Game UI System 中的基于布局的消息区域来显示内容。</a>Type</span></p>
 <ul style="list-style: disc;">
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Type</span> - The target type.</p></li>
-	<li><p style="font-family: Arial, sans-serif; margin-left: 40px;"><span 
-	 style="font-weight: bold;">Area</span> - Display the text in an area 
-	 made with the [<a href="#Create_Message_Area">Create Message Area</a>] 
-	 command.</p></li>
-	<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-		<li><p style="font-family: Arial, sans-serif; margin-left: 40px;"><span 
-		 style="font-weight: bold;">Number</span> - The message area's 
-		 index (ID) that you want to manipulate.</p></li>
-	</ul></li>
-	<li><p style="margin-left: 40px; font-family: Arial, sans-serif;"><span 
-	 style="font-weight: bold;">Layout-Based</span> - A message area configured 
-	 through the In-Game UI System.</p></li>
-	<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-		<li><p style="font-family: Arial, sans-serif; margin-left: 40px;"><span 
-		 style="font-family: Arial, sans-serif; font-weight: bold;">ID</span> 
-		 <span style="font-family: Arial, sans-serif; font-weight: normal;">- 
-		 The ID of an</span> <span style="font-family: Arial, sans-serif; 
-									 font-weight: bold;">ui.Message</span> 
-		 <span style="font-family: Arial, sans-serif; font-weight: normal;">object 
-		 configured through the In Game UI System.</span></p></li>
-	</ul></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Clear</span>- Indicates if the new target 
-	 message area should be cleared.</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 目标类型。</span>Area</p></li>
+<li><p style="font-family: Arial, sans-serif; margin-left: 40px;"><span style="font-weight: bold;">- 在使用 [</span>Create Message Area<a href="#Create_Message_Area">] 命令创建的区域中显示文本。</a>Number</p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li><p style="font-family: Arial, sans-serif; margin-left: 40px;"><span style="font-weight: bold;">- 您要操作的消息区域的索引（ID）。</span>Layout-Based</p></li>
+</ul></li>
+<li><p style="margin-left: 40px; font-family: Arial, sans-serif;"><span style="font-weight: bold;">- 通过 In-Game UI System 配置的消息区域。</span>ID</p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li><p style="font-family: Arial, sans-serif; margin-left: 40px;"><span style="font-family: Arial, sans-serif; font-weight: bold;">- 通过 In Game UI System 配置的 </span>
+<span style="font-family: Arial, sans-serif; font-weight: normal;">ui.Message</span> <span style="font-family: Arial, sans-serif; 
+									 font-weight: bold;">对象的 ID。</span>
+<span style="font-family: Arial, sans-serif; font-weight: normal;">Clear</span></p></li>
+</ul></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 指示新的目标消息区域是否应被清除。</span>Erase 
+ Message Area</p></li>
 </ul>
 <ol style="list-style: disc;">
-	<li style="list-style: none; display: inline;">&#160;</li>
+<li style="list-style: none; display: inline;"> </li>
 </ol>
-<p class="Sub_Heading"><a name="Erase_Message_Area" id="Erase_Message_Area"></a>Erase 
- Message Area</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">Erase a 
- message area. After that the message area can no longer be used an all 
- message commands pointing to that area are automatically forwarded to 
- the default message area.</p>
+<p class="Sub_Heading"><a id="Erase_Message_Area" name="Erase_Message_Area"></a>擦除一个消息区域。之后，该消息区域将无法再使用，所有指向该区域的消息命令将自动转发到默认消息区域。</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">Number</p>
 <ul style="list-style: disc;">
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Number</span>- The index (ID) of the message 
-	 area you want to erase.</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">- 您要擦除的消息区域的索引（ID）。</span>Choice 
+ Timer</p></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">&#160;</p>
-<p class="Sub_Heading"><a name="Choice_Timer" id="Choice_Timer"></a>Choice 
- Timer</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">Put a time 
- limit on player choices. The choice with the Default as yes will be automatically 
- picked if the player runs out of time.</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;"> </p>
+<p class="Sub_Heading"><a id="Choice_Timer" name="Choice_Timer"></a>为玩家的选择设置时间限制。如果玩家超时，将自动选择“Default”为“yes”的选项。</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">Min</p>
 <ul style="list-style: disc;">
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Min</span> means minutes.</p></li>
-	<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Sec</span> 
-	 means seconds.</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">表示分钟。</span>Sec</p></li>
+<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">表示秒。</span>Backlog 
+ Visibility</p></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">&#160;</p>
-<p class="Sub_Heading"><a name="Backlog_Visibility" id="Backlog_Visibility"></a>Backlog 
- Visibility</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">This command 
- calls and affects the log window.</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;"> </p>
+<p class="Sub_Heading"><a id="Backlog_Visibility" name="Backlog_Visibility"></a>此命令调用并影响日志窗口。</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">Visible</p>
 <ul style="list-style: disc;">
-	<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Visible</span> 
-	 - If enabled, it will display the Log Window.</p></li>
-	<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Background 
-	 Visible</span> - If disabled, it will hide the Log Window background 
-	 image. So you can use a custom background image.</p></li>
+<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">- 如果启用，它将显示日志窗口。</span>Background 
+	 Visible</p></li>
+<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">- 如果禁用，它将隐藏日志窗口背景图像。因此，您可以使用自定义背景图像。</span>Message Box Defaults</p></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">&#160;</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;"> </p>
 <p class="Sub_Heading"><span style="font-weight: bold; font-size: 18pt; 
-							 font-family: 'Book Antiqua', serif;"><a name="Message_Box_Defaults" 
-	 id="Message_Box_Defaults"></a>Message Box Defaults</span></p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">This command 
- changes how the default movement of the Message Box works</p>
+							 font-family: 'Book Antiqua', serif;"><a id="Message_Box_Defaults" name="Message_Box_Defaults"></a>此命令更改消息框默认移动方式</span></p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">Appear 
+	 Duration</p>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Appear 
-	 Duration</span> is the duration of the join-animation in milliseconds.</p></li>
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Disappear 
-	 Duration</span> is the duration of the exit-animation in milliseconds.</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">是入场动画的持续时间（以毫秒为单位）。</span>Disappear 
+	 Duration</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">是退场动画的持续时间（以毫秒为单位）。</span>Appear 
+	 Effects</p></li>
 </ul>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Appear 
-	 Effects</span></p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Appear Effects - Easing</span> is the easing 
-	 settings used for the show-animation.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Appear Effects - Animation</span> is the 
-	 animation settings for the show-animation.</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">Appear Effects - Easing</span></p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">是入场动画使用的缓动设置。</span>Appear Effects - Animation</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">是入场动画的动画设置。</span>Disappear 
+	 Effects</p></li>
 </ul>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Disappear 
-	 Effects</span></p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Disappear Effects - Easing</span> is the 
-	 easing settings used for the hide-animation.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Disappear Effects - Animation</span> is 
-	 the animation settings for the hide-animation.</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">Disappear Effects - Easing</span></p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">是退场动画使用的缓动设置。</span>Disappear Effects - Animation</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">是退场动画的动画设置。</span>Easing</p></li>
 </ul>
 <ul style="list-style: disc;">
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Easing</span> 
-	 sets the tween movement of the message box. More information can be 
-	 seen in <a href="Easing_Effects.htm">Easing Effects</a> page.</p></li>
-	<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: normal;"><span style="font-weight: bold;">Animation</span> 
-	 sets the movement of the message box.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Movement</span> is the origin point of 
-	 the message box where it will appear from Left/Top/Right/Bottom.</p></li>
-	<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span 
-	 style="font-weight: bold;">Blending</span> allows you to fade in/fade 
-	 out the message box.</p></li>
-	<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
-										 font-weight: bold;">Masking <span 
-	 style="font-weight: normal;">allows you to mask the message box to 
-	 a Masks file.</span></p></li>
-	<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
-		<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
-											 font-weight: bold;">Vague 
-		 <span style="font-weight: normal;">the smoothness of the mask 
-		 edges.</span></p></li>
-	</ul></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">设置消息框的缓动移动。有关更多信息，请参阅 </span>Easing Effects<a href="Easing_Effects.htm">页面。</a>Animation</p></li>
+<li style="margin-left: -20px;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: normal;"><span style="font-weight: bold;">设置消息框的移动。</span>Movement</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">是消息框的起点，它将从左/上/右/下出现。</span>Blending</p></li>
+<li><p style="font-family: Arial, sans-serif; font-weight: normal;"><span style="font-weight: bold;">允许您淡入/淡出消息框。</span>Masking</p></li>
+<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
+										 font-weight: bold;">允许您将消息框遮罩到 Masks 文件。<span style="font-weight: normal;">Vague</span></p></li>
+<li style="list-style: none; display: inline;"><ul style="list-style: disc;">
+<li style="font-weight: bold;"><p style="font-family: Arial, sans-serif; 
+											 font-weight: bold;">遮罩边缘的平滑度。<span style="font-weight: normal;">Text Codes</span></p></li>
+</ul></li>
 </ul>
-<p style="font-family: Arial, sans-serif; font-weight: bold;">&#160;</p>
-<p class="Sub_Heading"><a name="Text_Codes" id="Text_Codes"></a>Text Codes</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">Text codes 
- are message commands that applies a function during the message text processing 
- like changing the style of the text or showing the content of a variable 
- in the message. Elements in &lt;name&gt; are optional.</p>
-<p style="font-family: Arial, sans-serif; font-weight: normal;">&#160;</p>
-<table style=" border-collapse:separate; width:100%; max-width:62.219%;" cellspacing="0" border="1">
-	<col style="width: 37.992%;" />
-	<col style="width: 62.008%;" />
-	<tr>
-		<td><p style="text-align: center;"><span style="font-weight: bold;">Text 
-		 Code</span></p></td>
-		<td><p style="text-align: center;"><span style="font-weight: bold;">Function</span></p></td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{N:index}</p></td>
-		<td>Displays the Character Name.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{C:index}</p></td>
-		<td>Displays the text based on the Color code specified.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{SP:index}</p></td>
-		<td>Plays a Sound effect during message.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{SZ:size}</p></td>
-		<td>Changes text size.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{Y:I}</p></td>
-		<td>Applies Italic style to text.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{Y:B}</p></td>
-		<td>Applies Bold style to text.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{Y:C}</p></td>
-		<td>Applies small-caps &#160;to text.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{Y:U}</p></td>
-		<td>Applies underline style to text</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{Y:S}</p></td>
-		<td>Applies strike-through style to text</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{Y:N}</p></td>
-		<td>Erase all styles applied in the message.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{GN:&lt;group&gt;.index/name}</p></td>
-		<td>Displays the value of Global Number Variable.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{GT:&lt;group&gt;.index/name}</p></td>
-		<td>Displays the value of Global Text Variable.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{GS:&lt;group&gt;.index/name}</p></td>
-		<td>Displays the value of Global Switch.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{GL:&lt;group&gt;.index/name,elm}</p></td>
-		<td>Displays the value of Global List. 
-		<br />For example, {GL:1,0} &lt;- Global List Variable 
-		 1, Element at Index 0.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{LN:index}</p></td>
-		<td>Displays the value of Local Number Variable.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{LT:index}</p></td>
-		<td>Displays the value of Local Text Variable.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{LS:index}</p></td>
-		<td>Displays the value of Local Switch.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{LL:index,elm}</p></td>
-		<td>Displays the value of Local List. 
-		<br />For example, {LL:1,0} &lt;- Local List Variable 
-		 1, Element at Index 0.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{PN:&lt;group&gt;.index/name}</p></td>
-		<td>Displays the value of Persistent Number Variable.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{PT:&lt;group&gt;.index/name}</p></td>
-		<td>Displays the value of Persistent Text Variable.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{PS:&lt;group&gt;.index/name}</p></td>
-		<td>Displays the value of Persistent Switch.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{PL:&lt;group&gt;.index/name,elm}</p></td>
-		<td>Displays the value of Persistent List. 
-		<br />For example, {PL:1,0} &lt;- Persistent List Variable 
-		 1, Element at Index 0.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{S:speed}</p></td>
-		<td>Adjust the message speed based on the value set. By default, 
-		 you can put the following values: 
-		<br />0 - Slowest 
-		<br />1 - Slow 
-		<br />2 - Normal 
-		<br />3 - Fast 
-		<br />4 - Fastest 
-		<br />5 - Instant 
-		<br />&#160; 
-		<br />You can also use negative values to make the 
-		 text even more slow.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{W:ms}</p></td>
-		<td>Wait for a few milliseconds before the rest of the message 
-		 continues.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{WE:Y}</p></td>
-		<td>Wait at End YES.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{WE:N}</p></td>
-		<td>Wait at End NO.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{W:A}</p></td>
-		<td>Wait for input like a key or button press.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{DI:Y/N}</p></td>
-		<td>Displays a text immediately.<br />
-		Y = Draw Immediately, N = Stop Draw Immediately.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{A:index}</p></td>
-		<td>Display an animation inside the message box.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{LK:index}</p></td>
-		<td>Displays the text as a clickable link and calls the common 
-		 event with the specified index or name.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{LK:E}</p></td>
-		<td>Ends clickable link formatting.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{E:index/name}</p></td>
-		<td>Change the expression of the character based on the Show Message's 
-		 set character.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{M:name}</p></td>
-		<td>Executes the user defined command in <a href="System.htm#Text_Macro">Text 
-		 Macro</a>.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{RT:rb/rt/id}</p></td>
-		<td>Displays a ruby-text. 
-		<br />&#160;&#160; 
-		<br />The &quot;rb&quot; value is the ruby-base text. 
-		 
-		<br />The &quot;rt&quot; is the ruby-text placed above 
-		 the ruby-base text. 
-		<br />The &quot;id&quot; is optional and specifies 
-		 the index of the style to use for the ruby-text. By default, the 
-		 style &quot;rubyText&quot; defined in script &quot;Style_Default&quot; 
-		 is used. If the id is set to a value, that value is added as a 
-		 suffix to the style-name like &quot;rubyText-2&quot; if the id 
-		 is 2.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{SLK:index/name,id}</p></td>
-		<td>Displays the text as a styleable clickable link and calls the 
-		 common event with the specified index or name. Unlink LK, it allows 
-		 you to apply a custom style to the link defined in a script. 
-		<br />&#160;&#160; 
-		<br />The id is optional and specifies the index of 
-		 the style to use. By default, the style &quot;hyperlink&quot; 
-		 defined in script &quot;Style_Default&quot; is used. If the id 
-		 is set to a value, that value is added as suffix to the style-name 
-		 like &quot;hyperlink-2&quot; if the id is 2. 
-		<br />&#160;&#160; 
-		<br />However, a styleable link costs more performance 
-		 than a regular link. Also, it is not possible to add any other 
-		 style text-codes to a styleable link since the style comes from 
-		 a style-definition in script.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{SLK:E}</p></td>
-		<td>Ends styleable link formatting.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{CR:name}</p></td>
-		<td>Changes the current speaking character.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{P}</p></td>
-		<td>Erases the current message if Auto Erase is ON &#160;and starts 
-		 a new paragraph.</td>
-	</tr>
-	<tr>
-		<td><p style="text-align: center;">{CP}</p></td>
-		<td>Erases the current message independent from Auto Erase and 
-		 starts a new message. This is useful in NVL mode.</td>
-	</tr>
+<p style="font-family: Arial, sans-serif; font-weight: bold;"> </p>
+<p class="Sub_Heading"><a id="Text_Codes" name="Text_Codes"></a>文本代码是消息命令，它们在消息文本处理过程中应用函数，例如更改文本样式或显示变量的内容。&lt;name&gt; 中的元素是可选的。</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;">Text 
+		 Code</p>
+<p style="font-family: Arial, sans-serif; font-weight: normal;"> </p>
+<table border="1" cellspacing="0" style=" border-collapse:separate; width:100%; max-width:62.219%;">
+<col style="width: 37.992%;"/>
+<col style="width: 62.008%;"/>
+<tr>
+<td><p style="text-align: center;"><span style="font-weight: bold;">Function</span></p></td>
+<td><p style="text-align: center;"><span style="font-weight: bold;">{N:index}</span></p></td>
+</tr>
+<tr>
+<td><p style="text-align: center;">显示角色名称。</p></td>
+<td>{C:index}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">根据指定的颜色代码显示文本。</p></td>
+<td>{SP:index}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">在消息期间播放音效。</p></td>
+<td>{SZ:size}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">更改文本大小。</p></td>
+<td>{Y:I}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">应用斜体文本样式。</p></td>
+<td>{Y:B}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">应用粗体文本样式。</p></td>
+<td>{Y:C}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">应用小写大写文本样式。</p></td>
+<td>{Y:U}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">应用下划线文本样式。</p></td>
+<td>{Y:S}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">应用删除线文本样式。</p></td>
+<td>{Y:N}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">擦除消息中应用的所有样式。</p></td>
+<td>{GN:&lt;group&gt;.index/name}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">显示全局数字变量的值。</p></td>
+<td>{GT:&lt;group&gt;.index/name}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">显示全局文本变量的值。</p></td>
+<td>{GS:&lt;group&gt;.index/name}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">显示全局开关的值。</p></td>
+<td>{GL:&lt;group&gt;.index/name,elm}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">显示全局列表的值。</p></td>
+<td>例如，{GL:1,0} &lt;- 全局列表变量 1，索引为 0 的元素。<br/>{LN:index}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">显示本地数字变量的值。</p></td>
+<td>{LT:index}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">显示本地文本变量的值。</p></td>
+<td>{LS:index}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">显示本地开关的值。</p></td>
+<td>{LL:index,elm}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">显示本地列表的值。</p></td>
+<td>例如，{LL:1,0} &lt;- 本地列表变量 1，索引为 0 的元素。<br/>{PN:&lt;group&gt;.index/name}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">显示持久化数字变量的值。</p></td>
+<td>{PT:&lt;group&gt;.index/name}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">显示持久化文本变量的值。</p></td>
+<td>{PS:&lt;group&gt;.index/name}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">显示持久化开关的值。</p></td>
+<td>{PL:&lt;group&gt;.index/name,elm}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">显示持久化列表的值。</p></td>
+<td>例如，{PL:1,0} &lt;- 持久化列表变量 1，索引为 0 的元素。<br/>{S:speed}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">根据设置的值调整消息速度。默认情况下，您可以输入以下值：</p></td>
+<td>0 - 最慢<br/>1 - 慢<br/>2 - 普通<br/>3 - 快<br/>4 - 最快<br/>5 - 即时<br/>您也可以使用负值使文本更慢。<br/>  
+		<br/>{W:ms}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">等待几毫秒，然后继续其余的消息。</p></td>
+<td>{WE:Y}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">Wait at End YES。</p></td>
+<td>{WE:N}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">Wait at End NO。</p></td>
+<td>{W:A}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">等待输入，如按键或按钮。</p></td>
+<td>{DI:Y/N}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">立即显示文本。</p></td>
+<td>Y = 立即绘制，N = 停止立即绘制。<br/>{A:index}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">在消息框内显示动画。</p></td>
+<td>{LK:index}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">将文本显示为可点击链接，并调用指定索引或名称的通用事件。</p></td>
+<td>{LK:E}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">结束可点击链接格式。</p></td>
+<td>{E:index/name}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">根据 Show Message 的设置角色更改角色的表情。</p></td>
+<td>{M:name}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">执行用户定义的命令（在 </p></td>
+<td>Text 
+		 Macro<a href="System.htm#Text_Macro">中）。</a>{RT:rb/rt/id}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">显示 Ruby 文本。</p></td>
+<td>"rb" 值是 Ruby 基本文本。<br/>   
+		<br/>"rt" 是放置在 Ruby 基本文本上方的 Ruby 文本。<br/>"id" 是可选的，指定 Ruby 文本使用的样式索引。默认情况下，使用脚本 "Style_Default" 中定义的样式 "rubyText"。如果 id 设置为某个值，该值将作为后缀添加到样式名称中，例如，如果 id 为 2，则为 "rubyText-2"。<br/>{SLK:index/name,id}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">将文本显示为可样式化链接，并调用指定索引或名称的通用事件。与 LK 不同，它允许您为脚本中定义的链接应用自定义样式。</p></td>
+<td>id 是可选的，指定要使用的样式索引。默认情况下，使用脚本 "Style_Default" 中定义的样式 "hyperlink"。如果 id 设置为某个值，该值将作为后缀添加到样式名称中，例如，如果 id 为 2，则为 "hyperlink-2"。<br/>   
+		<br/>但是，可样式化链接的性能成本高于常规链接。此外，由于样式来自脚本中的样式定义，因此无法向可样式化链接添加其他任何样式文本代码。<br/>   
+		<br/>{SLK:E}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">结束可样式化链接格式。</p></td>
+<td>{CR:name}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">更改当前发言角色。</p></td>
+<td>{P}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">如果 Auto Erase 为 ON，则擦除当前消息并开始一个新段落。</p></td>
+<td>{CP}</td>
+</tr>
+<tr>
+<td><p style="text-align: center;">独立于 Auto Erase 清除当前消息并开始新消息。这在 NVL 模式下很有用。</p></td>
+<td>HTML</td>
+</tr>
 </table>
 </body>
 </html>

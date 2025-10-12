@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+It can be scrolled endless and animated
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="generator" content="Adobe RoboHelp 2015" />
-<title>Staff Credits</title>
-<link rel="StyleSheet" href="default.css" type="text/css" />
-<script type="text/javascript" language="JavaScript">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Adobe RoboHelp 2015" name="generator"/>
+<title>So a tiling plane is useful for parallax scrolling, animated backgrounds, etc.</title>
+<link href="default.css" rel="StyleSheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
 //<![CDATA[
 function reDo() {
   if (innerWidth != origWidth || innerHeight != origHeight)
@@ -29,87 +29,227 @@ visibility:hidden; }
 p.WebHelpNavBar { text-align:right; }
 -->
 </style>
-
-<script type="text/javascript" src="template/scripts/rh.min.js"></script>
-<script type="text/javascript" src="template/scripts/common.min.js"></script>
-<script type="text/javascript" src="template/scripts/topic.min.js"></script>
-<script type="text/javascript" src="template/scripts/constants.js"></script>
-<script type="text/javascript" src="template/scripts/utils.js"></script>
-<script type="text/javascript" src="template/scripts/mhutils.js"></script>
-<script type="text/javascript" src="template/scripts/mhlang.js"></script>
-<script type="text/javascript" src="template/scripts/mhver.js"></script>
-<script type="text/javascript" src="template/scripts/settings.js"></script>
-<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
-<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
-<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
-<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
-<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
- <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
-<script type="text/javascript" >
+<script src="template/scripts/rh.min.js" type="text/javascript"></script>
+<script src="template/scripts/common.min.js" type="text/javascript"></script>
+<script src="template/scripts/topic.min.js" type="text/javascript"></script>
+<script src="template/scripts/constants.js" type="text/javascript"></script>
+<script src="template/scripts/utils.js" type="text/javascript"></script>
+<script src="template/scripts/mhutils.js" type="text/javascript"></script>
+<script src="template/scripts/mhlang.js" type="text/javascript"></script>
+<script src="template/scripts/mhver.js" type="text/javascript"></script>
+<script src="template/scripts/settings.js" type="text/javascript"></script>
+<script src="template/scripts/XmlJsReader.js" type="text/javascript"></script>
+<script src="template/scripts/loadparentdata.js" type="text/javascript"></script>
+<script src="template/scripts/loadscreen.js" type="text/javascript"></script>
+<script src="template/scripts/loadprojdata.js" type="text/javascript"></script>
+<script src="template/scripts/mhtopic.js" type="text/javascript"></script>
+<link href="template/styles/topic.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
 gRootRelPath = ".";
 gCommonRootRelPath = ".";
 gTopicId = "6.0_4";
 </script>
- <meta name="topic-breadcrumbs" content="License and Credits" />
+<meta content="License and Credits" name="topic-breadcrumbs"/>
 </head>
-
 <body>
-<script type="text/javascript" src="./ehlpdhtm.js"></script>
-
-<div style="width: 100%; position: relative;" id="header">
-	<p class="Topic_Heading"><span style="font-family: 'Book Antiqua', serif; 
-									 font-size: 24pt;">Credits</span></p>
+<script src="./ehlpdhtm.js" type="text/javascript"></script>
+<div id="header" style="width: 100%; position: relative;">
+<p class="Topic_Heading"><span style="font-family: 'Book Antiqua', serif; 
+									 font-size: 24pt;">Frames</span></p>
 </div>
-<p>&#160;</p>
+<p> </p>
 <p><span style="font-family: 'Book Antiqua', serif; font-weight: bold; 
-		 font-size: 18pt;">T</span><span style="font-family: Arial, sans-serif;">hank 
- you for buying Visual Novel Maker! We hope that you will be able to create 
- the Visual Novel of your dreams.</span></p>
-<p>&#160;</p>
-<p class="Sub_Heading"><span>Developer and Publisher</span></p>
-<p><a href="https://degica.com/">Degica</a></p>
-<p>&#160;</p>
-<p class="Sub_Heading"><span>Project Managers</span></p>
-<p>Nicola Dufer</p>
-<p>James Wragg</p>
-<p>Mitchell Scott</p>
-<p>&#160;</p>
-<p class="Sub_Heading"><span>System Design and Programming</span></p>
-<p>André Radomski</p>
-<p>&#160;</p>
-<p class="Sub_Heading"><span>UI Graphics and Design</span></p>
-<p style="font-family: Arial, sans-serif;"><a href="https://twitter.com/fireflyrhyme">firefly 
- rhyme</a></p>
-<p style="font-family: Arial, sans-serif;"><a href="http://archeia.moe">Jasmin 
- Toral</a></p>
-<p style="font-family: Arial, sans-serif;">André Radomski</p>
-<p style="font-family: Arial, sans-serif;">&#160;</p>
-<p class="Sub_Heading"><span>Manual</span></p>
-<p style="font-family: Arial, sans-serif;"><a href="http://archeia.moe">Jasmin 
- Toral</a></p>
-<p style="font-family: Arial, sans-serif;">André Radomski</p>
-<p style="font-family: Arial, sans-serif;">&#160;</p>
-<p class="Sub_Heading">Standard Asset Resources -- Character Art, Backgrounds, 
- Illustrations</p>
+		 font-size: 18pt;">A frame, represented by gs.Frame class, displays a graphical frame on screen which is useful for In-Game UI decorations such as In-Game Windows, Cursors, etc.</span><span style="font-family: Arial, sans-serif;">The actual look depends on the assigned bitmap, also called skin. Of course it looks much better with a proper window background in addition to the frame. In the above example, the assigned skin-bitmap looks like this:</span></p>
+<p> </p>
+<p class="Sub_Heading"><span>So a frame does not just display the assigned bitmap at once, it only displays multiple pieces of it and connects them together to form a frame.</span></p>
+<p><a href="https://degica.com/">The yellow marked areas are the corners and the red marked areas are the sides which are stretched to fit the size of the frame. The size of the corners and sides can be configured via properties of the frame object. Let´s take a look at the following example. Please import the following skin-graphic into your Graphics/Pictures folder and call it "WindowFrame":</a></p>
+<p> </p>
+<p class="Sub_Heading"><span># ===================================================================
+#
+#   Script: Component_TestBedBehavior
+#
+#   Put your name here
+#
+# ===================================================================
+class Component_TestBedBehavior extends gs.Component_SceneBehavior
+    ###*
+    * A test bed scene behavior. Here you can play around with Visual Novel Maker's 
+    * game engine to get a better feeling for everything.
+    ###
+    constructor: -&gt;
+        super
+        
+        # Define resource context property
+        @resourceContext = null
+    
+    ###*
+    * Initializes the scene. 
+    ###
+    initialize: -&gt;
+        super
+        
+        # Create a new resource context
+        @resourceContext = ResourceManager.createContext()
+        # Set current object manager
+        gs.ObjectManager.current = SceneManager
+        # Set it as the current resource context
+        ResourceManager.context = @resourceContext
+        # Load all scene documents
+        @scenes = DataManager.getDocumentsByType("vn.scene")
+        
+    ###*
+    * Disposes the scene.
+    ###  
+    dispose: -&gt;
+        super
+    
+    ###*
+    * Prepares all visual game object for the scene.
+    ###  
+    prepareVisual: -&gt;
+        # Create a frame
+        @frame = new gs.Frame(Graphics.viewport)
+        # Assign skin bitmap
+        @frame.skin = ResourceManager.getBitmap("Graphics/Pictures/WindowFrame")
+        # Set thickness of the frame
+        @frame.thickness = 16
+        # Set corner-size of the frame
+        @frame.cornerSize = 16
+        # Set width of the frame
+        @frame.width = 250
+        # Set height of the frame
+        @frame.height = 250
+        # Set position of the frame. Center it on screen
+        @frame.x = (Graphics.width - @frame.width) / 2
+        @frame.y = (Graphics.height - @frame.height) / 2
+        
+        # Start Screen Transition
+        @transition()
+        
+    ###*
+    * Prepares all data for the scene and loads the necessary graphic and audio resources.
+    ### 
+    prepareData: -&gt;
+        # Load skin bitmap
+        ResourceManager.getBitmap("Graphics/Pictures/WindowFrame")
+        
+    ###*
+    * Update the scene's content.
+    ###         
+    updateContent: -&gt;
+        
+gs.Component_LayoutSceneBehavior = Component_TestBedBehavior</span></p>
+<p>As we can see, we are using gs.Frame to create a new frame-object. The skin-property expects the bitmap object which should be used to construct the frame. With thickness and cornerSize we can freely configure the size of the sides and corners. That's it.</p>
+<p>Three-Part Image</p>
+<p>A three-part image, represented through the gs.ThreePartImage class, splits up the assigned skin-bitmap into three different parts which are displayed differently. It is a more simple form of a gs.Frame object.</p>
+<p> </p>
+<p class="Sub_Heading"><span>The yellow marked left and right parts are fixed where the middle red-marked part is stretched. The actual bitmap looks like this:</span></p>
+<p>It is scaled-up of course and has a light-green background to make it more visible in the help-file. The original bitmap has a transparent background. The size of the left, right and middle part can be configured and also the orientation can be changed to vertical instead.</p>
+<p> </p>
+<p class="Sub_Heading"><span>A three-part image is useful for In-Game UI related things such as simple buttons, scroll-bars, etc. If you look at the scroll-bar of the default In-Game UI:</span></p>
+<p style="font-family: Arial, sans-serif;"><a href="https://twitter.com/fireflyrhyme">That scroll-bar on the right is done using a three-part image.</a></p>
+<p style="font-family: Arial, sans-serif;"><a href="http://archeia.moe">Let's see a three-part image in action:</a></p>
+<p style="font-family: Arial, sans-serif;"># ===================================================================
+#
+#   Script: Component_TestBedBehavior
+#
+#   Put your name here
+#
+# ===================================================================
+class Component_TestBedBehavior extends gs.Component_SceneBehavior
+    ###*
+    * A test bed scene behavior. Here you can play around with Visual Novel Maker's 
+    * game engine to get a better feeling for everything.
+    ###
+    constructor: -&gt;
+        super
+        
+        # Define resource context property
+        @resourceContext = null
+    
+    ###*
+    * Initializes the scene. 
+    ###
+    initialize: -&gt;
+        super
+        
+        # Create a new resource context
+        @resourceContext = ResourceManager.createContext()
+        # Set current object manager
+        gs.ObjectManager.current = SceneManager
+        # Set it as the current resource context
+        ResourceManager.context = @resourceContext
+        # Load all scene documents
+        @scenes = DataManager.getDocumentsByType("vn.scene")
+        
+    ###*
+    * Disposes the scene.
+    ###  
+    dispose: -&gt;
+        super
+    
+    ###*
+    * Prepares all visual game object for the scene.
+    ###  
+    prepareVisual: -&gt;
+        # Create a frame
+        @threePartImage = new gs.ThreePartImage(Graphics.viewport)
+        # Assign skin bitmap
+        @threePartImage.skin = ResourceManager.getBitmap("Graphics/Pictures/scrollbar")
+        # Set size of the first fixed part.
+        @threePartImage.firstPartSize = 7
+        # Set size of the middle streched part.
+        @threePartImage.middlePartSize = 1
+        # Set size of the last fixed part.
+        @threePartImage.lastPartSize = 7
+        # Set orientation
+        @threePartImage.orientation = 0
+        
+        # Set width of the frame
+        @threePartImage.width = 450
+        # Set height of the frame
+        @threePartImage.height = 15
+        # Set position of the frame. Center it on screen
+        @threePartImage.x = (Graphics.width - @threePartImage.width) / 2
+        @threePartImage.y = (Graphics.height - @threePartImage.height) / 2
+        
+        # Start Screen Transition
+        @transition()
+        
+    ###*
+    * Prepares all data for the scene and loads the necessary graphic and audio resources.
+    ### 
+    prepareData: -&gt;
+        # Load skin bitmap
+        ResourceManager.getBitmap("Graphics/Pictures/scrollbar")
+        
+    ###*
+    * Update the scene's content.
+    ###         
+    updateContent: -&gt;
+        
+gs.Component_LayoutSceneBehavior = Component_TestBedBehavior</p>
+<p style="font-family: Arial, sans-serif;"> </p>
+<p class="Sub_Heading"><span>As we can see, we just need to create an instance of gs.ThreePartImage class and setup the part-sizes and orientation and that's it.</span></p>
+<p style="font-family: Arial, sans-serif;"><a href="http://archeia.moe">HTML</a></p>
+<p style="font-family: Arial, sans-serif;">Staff Credits</p>
+<p style="font-family: Arial, sans-serif;"> </p>
+<p class="Sub_Heading">标准资源素材 -- 角色美术、背景、插画</p>
 <p><a href="http://sanuksoft.com/">Sanuksoft</a></p>
-<p>&#160;</p>
+<p> </p>
 <p class="Sub_Heading"><span style="font-weight: bold; font-size: 18pt; 
-							 font-family: 'Book Antiqua', serif;">Standard 
- Asset Resources -- Music and SE</span></p>
+							 font-family: 'Book Antiqua', serif;">标准资源素材 -- 音乐与音效</span></p>
 <p><a href="http://joelsteudler.com/">Joel Steudler</a></p>
-<p>&#160;</p>
-<p class="Sub_Heading"><span style="font-family: 'Book Antiqua', serif;">Standard 
- Asset Resources --</span>Weather and Particle Effects</p>
-<p style="font-family: Arial, sans-serif;"><span style="font-family: Arial, sans-serif;"><a 
-	 href="https://twitter.com/fireflyrhyme">firefly rhyme</a></span></p>
-<p style="font-family: Arial, sans-serif;"><a href="http://archeia.moe">Jasmin 
- Toral</a></p>
-<p>&#160;</p>
-<p class="Sub_Heading"><span>Mask/Transition Graphics</span></p>
+<p> </p>
+<p class="Sub_Heading"><span style="font-family: 'Book Antiqua', serif;">标准资源素材 --</span>天气与粒子效果</p>
+<p style="font-family: Arial, sans-serif;"><span style="font-family: Arial, sans-serif;"><a href="https://twitter.com/fireflyrhyme">firefly rhyme</a></span></p>
+<p style="font-family: Arial, sans-serif;"><a href="http://archeia.moe">Jasmin Toral</a></p>
+<p> </p>
+<p class="Sub_Heading"><span>遮罩/转场图像</span></p>
 <p><a href="http://kiaazad.deviantart.com/">Kia Azad</a></p>
-<p>(under CC - Free for All Uses, No Credits Required)</p>
-<p>&#160;</p>
-<p class="Sub_Heading"><span>Beta Testers</span></p>
+<p>(根据 CC 协议 - 免费使用，无需署名)</p>
+<p> </p>
+<p class="Sub_Heading"><span>Beta 测试人员</span></p>
 <p><a href="http://archeia.moe" target="_blank">Jasmin Toral</a></p>
 <p><a href="http://mari.moe/" target="_blank">Marimo</a></p>
 <p><a href="http://yami.moe" target="_blank">Cuong Nguyen (Dr. Yami)</a></p>
@@ -123,8 +263,7 @@ gTopicId = "6.0_4";
 <p>Alistar Hamish MacDonald</p>
 <p><a href="https://twitter.com/QuirkiDigital" target="_blank">Lylee</a></p>
 <p>CJ Anderiessen</p>
-<p><a href="http://crowgurl.tumblr.com" target="_blank">Patricia Senior 
- / PatySen / Crowgurl</a></p>
+<p><a href="http://crowgurl.tumblr.com" target="_blank">Patricia Senior / PatySen / Crowgurl</a></p>
 <p><a href="https://twitter.com/chrysoula" target="_blank">Chrysoula Tzavelas</a></p>
 <p><a href="https://twitter.com/Palladinthug" target="_blank">John Haeser</a></p>
 <p>Omar Hill</p>
@@ -133,19 +272,18 @@ gTopicId = "6.0_4";
 <p>Brett Maverick Wheeler</p>
 <p>DVD</p>
 <p><a href="https://twitter.com/braverockgames">Brave Rock Games</a></p>
-<p><a href="http://www.secretsof.moe" target="_blank">ANGEL D. IGNACIO 
- II (Angel / Infinite Angel)</a></p>
+<p><a href="http://www.secretsof.moe" target="_blank">ANGEL D. IGNACIO II (Angel / Infinite Angel)</a></p>
 <p><a href="https://metavar.deviantart.com" target="_blank">metavar</a></p>
 <p>Aarogoth</p>
 <p>Star*Cadets</p>
 <p>Bree</p>
-<p>&#160;</p>
-<p class="Sub_Heading">&#160;</p>
+<p> </p>
+<p class="Sub_Heading"> </p>
 <ul style="list-style: disc;">
-	<li>&#160;</li>
-	<li>&#160;</li>
-	<li>&#160;</li>
+<li> </li>
+<li> </li>
+<li> </li>
 </ul>
-<p>&#160;</p>
+<p> </p>
 </body>
 </html>

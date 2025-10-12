@@ -1,3401 +1,2184 @@
-<!DOCTYPE html>
+html
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Component_Animator</title>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
-    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
-    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
-    <link rel="icon" href="../assets/favicon.ico">
-    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+<meta charset="utf-8"/>
+<title>Component_Animator（组件动画器）</title>
+<link href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css" rel="stylesheet"/>
+<link href="../assets/vendor/prettify/prettify-min.css" rel="stylesheet"/>
+<link href="../assets/css/main.css" id="site_styles" rel="stylesheet"/>
+<link href="../assets/favicon.ico" rel="icon"/>
+<script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
 </head>
 <body class="yui3-skin-sam">
-
 <div id="doc">
-    <div id="hd" class="yui3-g header">
-        <div class="yui3-u-3-4">
-                <h1><img src="../assets/css/logo.png" title="" width="117" height="52"></h1>
-        </div>
-        <div class="yui3-u-1-4 version">
-            <em>API Docs for: </em>
-        </div>
-    </div>
-    <div id="bd" class="yui3-g">
-
-        <div class="yui3-u-1-4">
-            <div id="docs-sidebar" class="sidebar apidocs">
-                <div id="api-list">
-                    <h2 class="off-left">APIs</h2>
-                    <div id="api-tabview" class="tabview">
-                        <ul class="tabs">
-                            <li><a href="#api-classes">Classes</a></li>
-                            <li><a href="#api-modules">Modules</a></li>
-                        </ul>
-                
-                        <div id="api-tabview-filter">
-                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
-                        </div>
-                
-                        <div id="api-tabview-panel">
-                            <ul id="api-classes" class="apis classes">
-                                <li><a href="../classes/AnimationLoopType.html">AnimationLoopType</a></li>
-                                <li><a href="../classes/AnimationTypes.html">AnimationTypes</a></li>
-                                <li><a href="../classes/AudioManager.html">AudioManager</a></li>
-                                <li><a href="../classes/CircularDistortionEffect.html">CircularDistortionEffect</a></li>
-                                <li><a href="../classes/Colors.html">Colors</a></li>
-                                <li><a href="../classes/CommandFieldFlags.html">CommandFieldFlags</a></li>
-                                <li><a href="../classes/Component.html">Component</a></li>
-                                <li><a href="../classes/Component_ActionHandler.html">Component_ActionHandler</a></li>
-                                <li><a href="../classes/Component_Animation.html">Component_Animation</a></li>
-                                <li><a href="../classes/Component_AnimationExecutor.html">Component_AnimationExecutor</a></li>
-                                <li><a href="../classes/Component_AnimationHandler.html">Component_AnimationHandler</a></li>
-                                <li><a href="../classes/Component_Animator.html">Component_Animator</a></li>
-                                <li><a href="../classes/Component_BindingHandler.html">Component_BindingHandler</a></li>
-                                <li><a href="../classes/Component_BlendAnimation.html">Component_BlendAnimation</a></li>
-                                <li><a href="../classes/Component_BlurAnimation.html">Component_BlurAnimation</a></li>
-                                <li><a href="../classes/Component_CallSceneInterpreter.html">Component_CallSceneInterpreter</a></li>
-                                <li><a href="../classes/Component_CharacterBehavior.html">Component_CharacterBehavior</a></li>
-                                <li><a href="../classes/Component_CommandInterpreter.html">Component_CommandInterpreter</a></li>
-                                <li><a href="../classes/Component_CommonEventBehavior.html">Component_CommonEventBehavior</a></li>
-                                <li><a href="../classes/Component_Container.html">Component_Container</a></li>
-                                <li><a href="../classes/Component_DataGridBehavior.html">Component_DataGridBehavior</a></li>
-                                <li><a href="../classes/Component_DomainContainer.html">Component_DomainContainer</a></li>
-                                <li><a href="../classes/Component_Draggable.html">Component_Draggable</a></li>
-                                <li><a href="../classes/Component_EventEmitter.html">Component_EventEmitter</a></li>
-                                <li><a href="../classes/Component_FieldAnimation.html">Component_FieldAnimation</a></li>
-                                <li><a href="../classes/Component_Frame.html">Component_Frame</a></li>
-                                <li><a href="../classes/Component_FrameAnimation.html">Component_FrameAnimation</a></li>
-                                <li><a href="../classes/Component_FreeLayoutBehavior.html">Component_FreeLayoutBehavior</a></li>
-                                <li><a href="../classes/Component_GameSceneBehavior.html">Component_GameSceneBehavior</a></li>
-                                <li><a href="../classes/Component_GridLayoutBehavior.html">Component_GridLayoutBehavior</a></li>
-                                <li><a href="../classes/Component_Handler.html">Component_Handler</a></li>
-                                <li><a href="../classes/Component_HotspotBehavior.html">Component_HotspotBehavior</a></li>
-                                <li><a href="../classes/Component_ImageAnimation.html">Component_ImageAnimation</a></li>
-                                <li><a href="../classes/Component_ImageMap.html">Component_ImageMap</a></li>
-                                <li><a href="../classes/Component_InputHandler.html">Component_InputHandler</a></li>
-                                <li><a href="../classes/Component_IntervalTimer.html">Component_IntervalTimer</a></li>
-                                <li><a href="../classes/Component_LayoutBehavior.html">Component_LayoutBehavior</a></li>
-                                <li><a href="../classes/Component_LayoutSceneBehavior.html">Component_LayoutSceneBehavior</a></li>
-                                <li><a href="../classes/Component_Live2D.html">Component_Live2D</a></li>
-                                <li><a href="../classes/Component_Live2DAnimation.html">Component_Live2DAnimation</a></li>
-                                <li><a href="../classes/Component_MaskAnimation.html">Component_MaskAnimation</a></li>
-                                <li><a href="../classes/Component_MessageBehavior.html">Component_MessageBehavior</a></li>
-                                <li><a href="../classes/Component_MessageTextRenderer.html">Component_MessageTextRenderer</a></li>
-                                <li><a href="../classes/Component_MoveAnimation.html">Component_MoveAnimation</a></li>
-                                <li><a href="../classes/Component_NumberInput.html">Component_NumberInput</a></li>
-                                <li><a href="../classes/Component_PanelBehavior.html">Component_PanelBehavior</a></li>
-                                <li><a href="../classes/Component_PathAnimation.html">Component_PathAnimation</a></li>
-                                <li><a href="../classes/Component_PixelateAnimation.html">Component_PixelateAnimation</a></li>
-                                <li><a href="../classes/Component_Quad.html">Component_Quad</a></li>
-                                <li><a href="../classes/Component_RotateAnimation.html">Component_RotateAnimation</a></li>
-                                <li><a href="../classes/Component_SceneBehavior.html">Component_SceneBehavior</a></li>
-                                <li><a href="../classes/Component_ShakeAnimation.html">Component_ShakeAnimation</a></li>
-                                <li><a href="../classes/Component_SpreadLayoutBehavior.html">Component_SpreadLayoutBehavior</a></li>
-                                <li><a href="../classes/Component_Sprite.html">Component_Sprite</a></li>
-                                <li><a href="../classes/Component_StackLayoutBehavior.html">Component_StackLayoutBehavior</a></li>
-                                <li><a href="../classes/Component_TextBehavior.html">Component_TextBehavior</a></li>
-                                <li><a href="../classes/Component_TextInput.html">Component_TextInput</a></li>
-                                <li><a href="../classes/Component_TextRenderer.html">Component_TextRenderer</a></li>
-                                <li><a href="../classes/Component_ThreePartImage.html">Component_ThreePartImage</a></li>
-                                <li><a href="../classes/Component_TilingPlane.html">Component_TilingPlane</a></li>
-                                <li><a href="../classes/Component_TilingSprite.html">Component_TilingSprite</a></li>
-                                <li><a href="../classes/Component_Timer.html">Component_Timer</a></li>
-                                <li><a href="../classes/Component_TintAnimation.html">Component_TintAnimation</a></li>
-                                <li><a href="../classes/Component_UIBehavior.html">Component_UIBehavior</a></li>
-                                <li><a href="../classes/Component_Viewport.html">Component_Viewport</a></li>
-                                <li><a href="../classes/Component_Visual.html">Component_Visual</a></li>
-                                <li><a href="../classes/Component_WebStartBehavior.html">Component_WebStartBehavior</a></li>
-                                <li><a href="../classes/Component_WobbleAnimation.html">Component_WobbleAnimation</a></li>
-                                <li><a href="../classes/Component_ZoomAnimation.html">Component_ZoomAnimation</a></li>
-                                <li><a href="../classes/ContainerDisposeBehavior.html">ContainerDisposeBehavior</a></li>
-                                <li><a href="../classes/DataManager.html">DataManager</a></li>
-                                <li><a href="../classes/DataOptimizer.html">DataOptimizer</a></li>
-                                <li><a href="../classes/Easing.html">Easing</a></li>
-                                <li><a href="../classes/Easings.html">Easings</a></li>
-                                <li><a href="../classes/EasingTypes.html">EasingTypes</a></li>
-                                <li><a href="../classes/Fonts.html">Fonts</a></li>
-                                <li><a href="../classes/Formula.html">Formula</a></li>
-                                <li><a href="../classes/GameManager.html">GameManager</a></li>
-                                <li><a href="../classes/GameTemp.html">GameTemp</a></li>
-                                <li><a href="../classes/Helper.html">Helper</a></li>
-                                <li><a href="../classes/ImageHandling.html">ImageHandling</a></li>
-                                <li><a href="../classes/InterpreterContext.html">InterpreterContext</a></li>
-                                <li><a href="../classes/LanguageManager.html">LanguageManager</a></li>
-                                <li><a href="../classes/LayoutManagementMode.html">LayoutManagementMode</a></li>
-                                <li><a href="../classes/LivePreviewInfo.html">LivePreviewInfo</a></li>
-                                <li><a href="../classes/Main.html">Main</a></li>
-                                <li><a href="../classes/MessageSettings.html">MessageSettings</a></li>
-                                <li><a href="../classes/Object_Animation.html">Object_Animation</a></li>
-                                <li><a href="../classes/Object_Background.html">Object_Background</a></li>
-                                <li><a href="../classes/Object_Base.html">Object_Base</a></li>
-                                <li><a href="../classes/Object_Character.html">Object_Character</a></li>
-                                <li><a href="../classes/Object_CommonEvent.html">Object_CommonEvent</a></li>
-                                <li><a href="../classes/Object_Container.html">Object_Container</a></li>
-                                <li><a href="../classes/Object_DataGrid.html">Object_DataGrid</a></li>
-                                <li><a href="../classes/Object_DomainContainer.html">Object_DomainContainer</a></li>
-                                <li><a href="../classes/Object_Frame.html">Object_Frame</a></li>
-                                <li><a href="../classes/Object_FreeLayout.html">Object_FreeLayout</a></li>
-                                <li><a href="../classes/Object_GridLayout.html">Object_GridLayout</a></li>
-                                <li><a href="../classes/Object_Hotspot.html">Object_Hotspot</a></li>
-                                <li><a href="../classes/Object_Image.html">Object_Image</a></li>
-                                <li><a href="../classes/Object_ImageMap.html">Object_ImageMap</a></li>
-                                <li><a href="../classes/Object_IntervalTimer.html">Object_IntervalTimer</a></li>
-                                <li><a href="../classes/Object_Layout.html">Object_Layout</a></li>
-                                <li><a href="../classes/Object_Live2DCharacter.html">Object_Live2DCharacter</a></li>
-                                <li><a href="../classes/Object_Message.html">Object_Message</a></li>
-                                <li><a href="../classes/Object_MessageArea.html">Object_MessageArea</a></li>
-                                <li><a href="../classes/Object_Panel.html">Object_Panel</a></li>
-                                <li><a href="../classes/Object_Picture.html">Object_Picture</a></li>
-                                <li><a href="../classes/Object_Scene.html">Object_Scene</a></li>
-                                <li><a href="../classes/Object_SpreadLayout.html">Object_SpreadLayout</a></li>
-                                <li><a href="../classes/Object_StackLayout.html">Object_StackLayout</a></li>
-                                <li><a href="../classes/Object_Text.html">Object_Text</a></li>
-                                <li><a href="../classes/Object_ThreePartImage.html">Object_ThreePartImage</a></li>
-                                <li><a href="../classes/Object_Timer.html">Object_Timer</a></li>
-                                <li><a href="../classes/Object_UIElement.html">Object_UIElement</a></li>
-                                <li><a href="../classes/Object_Video.html">Object_Video</a></li>
-                                <li><a href="../classes/Object_Viewport.html">Object_Viewport</a></li>
-                                <li><a href="../classes/Object_Visual.html">Object_Visual</a></li>
-                                <li><a href="../classes/ObjectManager.html">ObjectManager</a></li>
-                                <li><a href="../classes/RecordManager.html">RecordManager</a></li>
-                                <li><a href="../classes/RendererTextLine.html">RendererTextLine</a></li>
-                                <li><a href="../classes/RendererToken.html">RendererToken</a></li>
-                                <li><a href="../classes/ResourceLoader.html">ResourceLoader</a></li>
-                                <li><a href="../classes/ResourceManager.html">ResourceManager</a></li>
-                                <li><a href="../classes/SceneManager.html">SceneManager</a></li>
-                                <li><a href="../classes/Space.html">Space</a></li>
-                                <li><a href="../classes/Sprite_Debug.html">Sprite_Debug</a></li>
-                                <li><a href="../classes/Style.html">Style</a></li>
-                                <li><a href="../classes/UIElementPoint.html">UIElementPoint</a></li>
-                                <li><a href="../classes/UIElementRectangle.html">UIElementRectangle</a></li>
-                                <li><a href="../classes/UIManager.html">UIManager</a></li>
-                                <li><a href="../classes/UpdateBehavior.html">UpdateBehavior</a></li>
-                                <li><a href="../classes/VariableStore.html">VariableStore</a></li>
-                            </ul>
-                
-                
-                            <ul id="api-modules" class="apis modules">
-                                <li><a href="../modules/gs.html">gs</a></li>
-                                <li><a href="../modules/gs.RendererTextLine.html">gs.RendererTextLine</a></li>
-                                <li><a href="../modules/ui.html">ui</a></li>
-                                <li><a href="../modules/vn.html">vn</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="yui3-u-3-4">
-                <div id="api-options">
-                    Show:
-                    <label for="api-show-inherited">
-                        <input type="checkbox" id="api-show-inherited" checked>
-                        Inherited
-                    </label>
-            
-                    <label for="api-show-protected">
-                        <input type="checkbox" id="api-show-protected">
-                        Protected
-                    </label>
-            
-                    <label for="api-show-private">
-                        <input type="checkbox" id="api-show-private">
-                        Private
-                    </label>
-                    <label for="api-show-deprecated">
-                        <input type="checkbox" id="api-show-deprecated">
-                        Deprecated
-                    </label>
-            
-                </div>
-            
-            <div class="apidocs">
-                <div id="docs-main">
-                    <div class="content">
-<h1>Component_Animator Class</h1>
-<div class="box meta">
-
-
-
-            Module: <a href="../modules/gs.html">gs</a>
-
+<div class="yui3-g header" id="hd">
+<div class="yui3-u-3-4">
+<h1><img height="52" src="../assets/css/logo.png" title="" width="117"/></h1>
 </div>
-
-
+<div class="yui3-u-1-4 version">
+<em>API 文档，适用于：</em>
+</div>
+</div>
+<div class="yui3-g" id="bd">
+<div class="yui3-u-1-4">
+<div class="sidebar apidocs" id="docs-sidebar">
+<div id="api-list">
+<h2 class="off-left">API</h2>
+<div class="tabview" id="api-tabview">
+<ul class="tabs">
+<li><a href="#api-classes">类</a></li>
+<li><a href="#api-modules">模块</a></li>
+</ul>
+<div id="api-tabview-filter">
+<input id="api-filter" placeholder="Type to filter APIs" type="search"/>
+</div>
+<div id="api-tabview-panel">
+<ul class="apis classes" id="api-classes">
+<li><a href="../classes/AnimationLoopType.html">AnimationLoopType（动画循环类型）</a></li>
+<li><a href="../classes/AnimationTypes.html">AnimationTypes（动画类型）</a></li>
+<li><a href="../classes/AudioManager.html">AudioManager（音频管理器）</a></li>
+<li><a href="../classes/CircularDistortionEffect.html">CircularDistortionEffect（圆形扭曲特效）</a></li>
+<li><a href="../classes/Colors.html">Colors（颜色）</a></li>
+<li><a href="../classes/CommandFieldFlags.html">CommandFieldFlags（命令字段标志）</a></li>
+<li><a href="../classes/Component.html">Component（组件）</a></li>
+<li><a href="../classes/Component_ActionHandler.html">Component_ActionHandler（组件动作处理器）</a></li>
+<li><a href="../classes/Component_Animation.html">Component_Animation（组件动画）</a></li>
+<li><a href="../classes/Component_AnimationExecutor.html">Component_AnimationExecutor（组件动画执行器）</a></li>
+<li><a href="../classes/Component_AnimationHandler.html">Component_AnimationHandler（组件动画处理器）</a></li>
+<li><a href="../classes/Component_Animator.html">Component_Animator（组件动画器）</a></li>
+<li><a href="../classes/Component_BindingHandler.html">Component_BindingHandler（组件绑定处理器）</a></li>
+<li><a href="../classes/Component_BlendAnimation.html">Component_BlendAnimation（组件混合动画）</a></li>
+<li><a href="../classes/Component_BlurAnimation.html">Component_BlurAnimation（组件模糊动画）</a></li>
+<li><a href="../classes/Component_CallSceneInterpreter.html">Component_CallSceneInterpreter（组件调用场景解释器）</a></li>
+<li><a href="../classes/Component_CharacterBehavior.html">Component_CharacterBehavior（组件角色行为）</a></li>
+<li><a href="../classes/Component_CommandInterpreter.html">Component_CommandInterpreter（组件命令解释器）</a></li>
+<li><a href="../classes/Component_CommonEventBehavior.html">Component_CommonEventBehavior（组件公共事件行为）</a></li>
+<li><a href="../classes/Component_Container.html">Component_Container（组件容器）</a></li>
+<li><a href="../classes/Component_DataGridBehavior.html">Component_DataGridBehavior（组件数据网格行为）</a></li>
+<li><a href="../classes/Component_DomainContainer.html">Component_DomainContainer（组件域容器）</a></li>
+<li><a href="../classes/Component_Draggable.html">Component_Draggable（组件可拖拽）</a></li>
+<li><a href="../classes/Component_EventEmitter.html">Component_EventEmitter（组件事件发射器）</a></li>
+<li><a href="../classes/Component_FieldAnimation.html">Component_FieldAnimation（组件字段动画）</a></li>
+<li><a href="../classes/Component_Frame.html">Component_Frame（组件帧）</a></li>
+<li><a href="../classes/Component_FrameAnimation.html">Component_FrameAnimation（组件帧动画）</a></li>
+<li><a href="../classes/Component_FreeLayoutBehavior.html">Component_FreeLayoutBehavior（组件自由布局行为）</a></li>
+<li><a href="../classes/Component_GameSceneBehavior.html">Component_GameSceneBehavior（组件游戏场景行为）</a></li>
+<li><a href="../classes/Component_GridLayoutBehavior.html">Component_GridLayoutBehavior（组件网格布局行为）</a></li>
+<li><a href="../classes/Component_Handler.html">Component_Handler（组件处理器）</a></li>
+<li><a href="../classes/Component_HotspotBehavior.html">Component_HotspotBehavior（组件热点行为）</a></li>
+<li><a href="../classes/Component_ImageAnimation.html">Component_ImageAnimation（组件图像动画）</a></li>
+<li><a href="../classes/Component_ImageMap.html">Component_ImageMap（组件图像映射）</a></li>
+<li><a href="../classes/Component_InputHandler.html">Component_InputHandler（组件输入处理器）</a></li>
+<li><a href="../classes/Component_IntervalTimer.html">Component_IntervalTimer（组件间隔定时器）</a></li>
+<li><a href="../classes/Component_LayoutBehavior.html">Component_LayoutBehavior（组件布局行为）</a></li>
+<li><a href="../classes/Component_LayoutSceneBehavior.html">Component_LayoutSceneBehavior（组件布局场景行为）</a></li>
+<li><a href="../classes/Component_Live2D.html">Component_Live2D（组件Live2D）</a></li>
+<li><a href="../classes/Component_Live2DAnimation.html">Component_Live2DAnimation（组件Live2D动画）</a></li>
+<li><a href="../classes/Component_MaskAnimation.html">Component_MaskAnimation（组件遮罩动画）</a></li>
+<li><a href="../classes/Component_MessageBehavior.html">Component_MessageBehavior（组件消息行为）</a></li>
+<li><a href="../classes/Component_MessageTextRenderer.html">Component_MessageTextRenderer（组件消息文本渲染器）</a></li>
+<li><a href="../classes/Component_MoveAnimation.html">Component_MoveAnimation（组件移动动画）</a></li>
+<li><a href="../classes/Component_NumberInput.html">Component_NumberInput（组件数字输入）</a></li>
+<li><a href="../classes/Component_PanelBehavior.html">Component_PanelBehavior（组件面板行为）</a></li>
+<li><a href="../classes/Component_PathAnimation.html">Component_PathAnimation（组件路径动画）</a></li>
+<li><a href="../classes/Component_PixelateAnimation.html">Component_PixelateAnimation（组件像素化动画）</a></li>
+<li><a href="../classes/Component_Quad.html">Component_Quad（组件四边形）</a></li>
+<li><a href="../classes/Component_RotateAnimation.html">Component_RotateAnimation（组件旋转动画）</a></li>
+<li><a href="../classes/Component_SceneBehavior.html">Component_SceneBehavior（组件场景行为）</a></li>
+<li><a href="../classes/Component_ShakeAnimation.html">Component_ShakeAnimation（组件震动动画）</a></li>
+<li><a href="../classes/Component_SpreadLayoutBehavior.html">Component_SpreadLayoutBehavior（组件展开布局行为）</a></li>
+<li><a href="../classes/Component_Sprite.html">Component_Sprite（组件精灵）</a></li>
+<li><a href="../classes/Component_StackLayoutBehavior.html">Component_StackLayoutBehavior（组件堆叠布局行为）</a></li>
+<li><a href="../classes/Component_TextBehavior.html">Component_TextBehavior（组件文本行为）</a></li>
+<li><a href="../classes/Component_TextInput.html">Component_TextInput（组件文本输入）</a></li>
+<li><a href="../classes/Component_TextRenderer.html">Component_TextRenderer（组件文本渲染器）</a></li>
+<li><a href="../classes/Component_ThreePartImage.html">Component_ThreePartImage（组件三段图像）</a></li>
+<li><a href="../classes/Component_TilingPlane.html">Component_TilingPlane（组件平铺平面）</a></li>
+<li><a href="../classes/Component_TilingSprite.html">Component_TilingSprite（组件平铺精灵）</a></li>
+<li><a href="../classes/Component_Timer.html">Component_Timer（组件定时器）</a></li>
+<li><a href="../classes/Component_TintAnimation.html">Component_TintAnimation（组件着色动画）</a></li>
+<li><a href="../classes/Component_UIBehavior.html">Component_UIBehavior（组件UI行为）</a></li>
+<li><a href="../classes/Component_Viewport.html">Component_Viewport（组件视口）</a></li>
+<li><a href="../classes/Component_Visual.html">Component_Visual（组件视觉）</a></li>
+<li><a href="../classes/Component_WebStartBehavior.html">Component_WebStartBehavior（组件Web启动行为）</a></li>
+<li><a href="../classes/Component_WobbleAnimation.html">Component_WobbleAnimation（组件摆动动画）</a></li>
+<li><a href="../classes/Component_ZoomAnimation.html">Component_ZoomAnimation（组件缩放动画）</a></li>
+<li><a href="../classes/ContainerDisposeBehavior.html">ContainerDisposeBehavior（容器销毁行为）</a></li>
+<li><a href="../classes/DataManager.html">DataManager（数据管理器）</a></li>
+<li><a href="../classes/DataOptimizer.html">DataOptimizer（数据优化器）</a></li>
+<li><a href="../classes/Easing.html">Easing（缓动）</a></li>
+<li><a href="../classes/Easings.html">Easings（缓动效果）</a></li>
+<li><a href="../classes/EasingTypes.html">EasingTypes（缓动类型）</a></li>
+<li><a href="../classes/Fonts.html">Fonts（字体）</a></li>
+<li><a href="../classes/Formula.html">Formula（公式）</a></li>
+<li><a href="../classes/GameManager.html">GameManager（游戏管理器）</a></li>
+<li><a href="../classes/GameTemp.html">GameTemp（游戏临时数据）</a></li>
+<li><a href="../classes/Helper.html">Helper（助手类）</a></li>
+<li><a href="../classes/ImageHandling.html">ImageHandling（图像处理）</a></li>
+<li><a href="../classes/InterpreterContext.html">InterpreterContext（解释器上下文）</a></li>
+<li><a href="../classes/LanguageManager.html">LanguageManager（语言管理器）</a></li>
+<li><a href="../classes/LayoutManagementMode.html">LayoutManagementMode（布局管理模式）</a></li>
+<li><a href="../classes/LivePreviewInfo.html">LivePreviewInfo（实时预览信息）</a></li>
+<li><a href="../classes/Main.html">Main（主程序）</a></li>
+<li><a href="../classes/MessageSettings.html">MessageSettings（消息设置）</a></li>
+<li><a href="../classes/Object_Animation.html">Object_Animation（对象动画）</a></li>
+<li><a href="../classes/Object_Background.html">Object_Background（对象背景）</a></li>
+<li><a href="../classes/Object_Base.html">Object_Base（对象基类）</a></li>
+<li><a href="../classes/Object_Character.html">Object_Character（对象角色）</a></li>
+<li><a href="../classes/Object_CommonEvent.html">Object_CommonEvent（对象公共事件）</a></li>
+<li><a href="../classes/Object_Container.html">Object_Container（对象容器）</a></li>
+<li><a href="../classes/Object_DataGrid.html">Object_DataGrid（对象数据网格）</a></li>
+<li><a href="../classes/Object_DomainContainer.html">Object_DomainContainer（对象域容器）</a></li>
+<li><a href="../classes/Object_Frame.html">Object_Frame（对象帧）</a></li>
+<li><a href="../classes/Object_FreeLayout.html">Object_FreeLayout（对象自由布局）</a></li>
+<li><a href="../classes/Object_GridLayout.html">Object_GridLayout（对象网格布局）</a></li>
+<li><a href="../classes/Object_Hotspot.html">Object_Hotspot（对象热点）</a></li>
+<li><a href="../classes/Object_Image.html">Object_Image（对象图像）</a></li>
+<li><a href="../classes/Object_ImageMap.html">Object_ImageMap（对象图像映射）</a></li>
+<li><a href="../classes/Object_IntervalTimer.html">Object_IntervalTimer（对象间隔定时器）</a></li>
+<li><a href="../classes/Object_Layout.html">Object_Layout（对象布局）</a></li>
+<li><a href="../classes/Object_Live2DCharacter.html">Object_Live2DCharacter（对象Live2D角色）</a></li>
+<li><a href="../classes/Object_Message.html">Object_Message（对象消息）</a></li>
+<li><a href="../classes/Object_MessageArea.html">Object_MessageArea（对象消息区域）</a></li>
+<li><a href="../classes/Object_Panel.html">Object_Panel（对象面板）</a></li>
+<li><a href="../classes/Object_Picture.html">Object_Picture（对象图片）</a></li>
+<li><a href="../classes/Object_Scene.html">Object_Scene（对象场景）</a></li>
+<li><a href="../classes/Object_SpreadLayout.html">Object_SpreadLayout（对象展开布局）</a></li>
+<li><a href="../classes/Object_StackLayout.html">Object_StackLayout（对象堆叠布局）</a></li>
+<li><a href="../classes/Object_Text.html">Object_Text（对象文本）</a></li>
+<li><a href="../classes/Object_ThreePartImage.html">Object_ThreePartImage（对象三段图像）</a></li>
+<li><a href="../classes/Object_Timer.html">Object_Timer（对象定时器）</a></li>
+<li><a href="../classes/Object_UIElement.html">Object_UIElement（对象UI元素）</a></li>
+<li><a href="../classes/Object_Video.html">Object_Video（对象视频）</a></li>
+<li><a href="../classes/Object_Viewport.html">Object_Viewport（对象视口）</a></li>
+<li><a href="../classes/Object_Visual.html">Object_Visual（对象视觉）</a></li>
+<li><a href="../classes/ObjectManager.html">ObjectManager（对象管理器）</a></li>
+<li><a href="../classes/RecordManager.html">RecordManager（记录管理器）</a></li>
+<li><a href="../classes/RendererTextLine.html">RendererTextLine（渲染文本行）</a></li>
+<li><a href="../classes/RendererToken.html">RendererToken（渲染令牌）</a></li>
+<li><a href="../classes/ResourceLoader.html">ResourceLoader（资源加载器）</a></li>
+<li><a href="../classes/ResourceManager.html">ResourceManager（资源管理器）</a></li>
+<li><a href="../classes/SceneManager.html">SceneManager（场景管理器）</a></li>
+<li><a href="../classes/Space.html">Space（空间）</a></li>
+<li><a href="../classes/Sprite_Debug.html">Sprite_Debug（调试精灵）</a></li>
+<li><a href="../classes/Style.html">Style（样式）</a></li>
+<li><a href="../classes/UIElementPoint.html">UIElementPoint（UI元素点）</a></li>
+<li><a href="../classes/UIElementRectangle.html">UIElementRectangle（UI元素矩形）</a></li>
+<li><a href="../classes/UIManager.html">UIManager（UI管理器）</a></li>
+<li><a href="../classes/UpdateBehavior.html">UpdateBehavior（更新行为）</a></li>
+<li><a href="../classes/VariableStore.html">VariableStore（变量存储）</a></li>
+</ul>
+<ul class="apis modules" id="api-modules">
+<li><a href="../modules/gs.html">gs</a></li>
+<li><a href="../modules/gs.RendererTextLine.html">gs.RendererTextLine（gs.渲染文本行）</a></li>
+<li><a href="../modules/ui.html">ui</a></li>
+<li><a href="../modules/vn.html">vn</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="yui3-u-3-4">
+<div id="api-options">显示：<label for="api-show-inherited">
+<input checked="" id="api-show-inherited" type="checkbox"/>继承的</label>
+<label for="api-show-protected">
+<input id="api-show-protected" type="checkbox"/>受保护的</label>
+<label for="api-show-private">
+<input id="api-show-private" type="checkbox"/>私有的</label>
+<label for="api-show-deprecated">
+<input id="api-show-deprecated" type="checkbox"/>已弃用的</label>
+</div>
+<div class="apidocs">
+<div id="docs-main">
+<div class="content">
+<h1>Component_Animator 类</h1>
+<div class="box meta">模块：<a href="../modules/gs.html">gs</a>
+</div>
 <div class="box intro">
-    <p>An animator-component allows to execute different kind of animations
-on a game object. The animations are using the game object's
-dstRect &amp; offset-property to execute.</p>
-
+<p>动画器组件允许在游戏对象上执行不同类型的动画。 这些动画使用游戏对象的 dstRect 和 offset 属性来执行。</p>
 </div>
-
-
-<div id="classdocs" class="tabview">
-    <ul class="api-class-tabs">
-        <li class="api-class-tab index"><a href="#index">Index</a></li>
-
-            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
-            <li class="api-class-tab properties"><a href="#properties">Properties</a></li>
-    </ul>
-
-    <div>
-        <div id="index" class="api-class-tabpanel index">
-            <h2 class="off-left">Item Index</h2>
-
-                <div class="index-section methods">
-                    <h3>Methods</h3>
-
-                    <ul class="index-list methods">
-                            <li class="index-item method">
-                                <a href="#method_appear">appear</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_blendTo">blendTo</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_blendTo">blendTo</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_blurTo">blurTo</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_change">change</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_changeFrames">changeFrames</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_changeImages">changeImages</a>
-
-                            </li>
-                            <li class="index-item method deprecated">
-                                <a href="#method_close">close</a>
-
-                                    <span class="flag deprecated">deprecated</span>
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_colorTo">colorTo</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_disappear">disappear</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_flash">flash</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_hide">hide</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_maskIn">maskIn</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_maskOut">maskOut</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_maskTo">maskTo</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_move">move</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_moveIn">moveIn</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_moveOut">moveOut</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_movePath">movePath</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_moveTo">moveTo</a>
-
-                            </li>
-                            <li class="index-item method deprecated">
-                                <a href="#method_open">open</a>
-
-                                    <span class="flag deprecated">deprecated</span>
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_pixelateTo">pixelateTo</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_playAnimation">playAnimation</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_rotate">rotate</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_rotateTo">rotateTo</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_scroll">scroll</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_scrollPath">scrollPath</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_scrollTo">scrollTo</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_shake">shake</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_show">show</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_tintTo">tintTo</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_update">update</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_wobbleTo">wobbleTo</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_zoomTo">zoomTo</a>
-
-                            </li>
-                    </ul>
-                </div>
-
-                <div class="index-section properties">
-                    <h3>Properties</h3>
-
-                    <ul class="index-list properties">
-                            <li class="index-item property private">
-                                <a href="#property_callback">callback</a>
-
-                            </li>
-                    </ul>
-                </div>
-
-
-        </div>
-
-            <div id="methods" class="api-class-tabpanel">
-                <h2 class="off-left">Methods</h2>
-
-<div id="method_appear" class="method item">
-    <h3 class="name"><code>appear</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>x</code>
-                </li>
-                <li class="arg">
-                        <code>y</code>
-                </li>
-                <li class="arg">
-                        <code>animation</code>
-                </li>
-                <li class="arg">
-                        <code>easing</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code class="optional">[callback]</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Lets a game object appear on screen using a specified animation.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">x</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The x-coordinate of the target-position.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">y</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The y-coordinate of the target-position.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">animation</code>
-                        <span class="type">gs.AppearAnimationInfo</span>
-
-
-                    <div class="param-description">
-                        <p>The animation info-object.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easing</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name optional">[callback]</code>
-                        <span class="type">Function</span>
-                        <span class="flag optional" title="This parameter is optional.">optional</span>
-
-
-                    <div class="param-description">
-                        <p>An optional callback-function called when the animation is finished.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_blendTo" class="method item">
-    <h3 class="name"><code>blendTo</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>opacity</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-                <li class="arg">
-                        <code class="optional">[callback]</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Blends a game object to specified opacity.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">opacity</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The target opacity.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name optional">[callback]</code>
-                        <span class="type">Function</span>
-                        <span class="flag optional" title="This parameter is optional.">optional</span>
-
-
-                    <div class="param-description">
-                        <p>An optional callback called if blending is finished.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_blendTo" class="method item">
-    <h3 class="name"><code>blendTo</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>param</code>
-                </li>
-                <li class="arg">
-                        <code>value</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-                <li class="arg">
-                        <code class="optional">[callback]</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Animates a Live2D model parameter of a Live2D game object to a specified value.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">param</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <p>The name of the parameter to animate.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">value</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The target value.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name optional">[callback]</code>
-                        <span class="type">Function</span>
-                        <span class="flag optional" title="This parameter is optional.">optional</span>
-
-
-                    <div class="param-description">
-                        <p>An optional callback called if blending is finished.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_blurTo" class="method item">
-    <h3 class="name"><code>blurTo</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>power</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Blurs a game object to specified blur-power.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">power</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The target blur-power.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_change" class="method item">
-    <h3 class="name"><code>change</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>Value</code>
-                </li>
-                <li class="arg">
-                        <code>field</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Changes a field of the game object to a specified value.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">Value</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The target value.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">field</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <p>The name of the field/property.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_changeFrames" class="method item">
-    <h3 class="name"><code>changeFrames</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>frames</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>A frame animation which modifies the game object's srcRect property
-a play an animation.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">frames</code>
-                        <span class="type">gs.Rect</span>
-
-
-                    <div class="param-description">
-                        <p>An array of source rectangles (frames).</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_changeImages" class="method item">
-    <h3 class="name"><code>changeImages</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>images</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>An image animation runs from left to right using the game object's
-image-property.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">images</code>
-                        <span class="type">Array</span>
-
-
-                    <div class="param-description">
-                        <p>An array of image names.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_close" class="method item deprecated">
-    <h3 class="name"><code>close</code></h3>
-
-        <span class="paren">()</span>
-
-
-        <span class="flag deprecated">deprecated</span>
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Changes visible-property to false. This method is deprecated.</p>
-
-    </div>
-
-
-
-
-</div>
-<div id="method_colorTo" class="method item">
-    <h3 class="name"><code>colorTo</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>color</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Colors a game object to a specified target color.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">color</code>
-                        <span class="type">Color</span>
-
-
-                    <div class="param-description">
-                        <p>The target color.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_disappear" class="method item">
-    <h3 class="name"><code>disappear</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>animation</code>
-                </li>
-                <li class="arg">
-                        <code>easing</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code class="optional">[callback]</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Lets a game object disappear from screen using a specified animation.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">animation</code>
-                        <span class="type">gs.AppearAnimationInfo</span>
-
-
-                    <div class="param-description">
-                        <p>The animation info-object.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easing</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name optional">[callback]</code>
-                        <span class="type">Function</span>
-                        <span class="flag optional" title="This parameter is optional.">optional</span>
-
-
-                    <div class="param-description">
-                        <p>An optional callback-function called when the animation is finished.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_flash" class="method item">
-    <h3 class="name"><code>flash</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>color</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Flashes the game object.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">color</code>
-                        <span class="type">Color</span>
-
-
-                    <div class="param-description">
-                        <p>The flash-color.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_hide" class="method item">
-    <h3 class="name"><code>hide</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easing</code>
-                </li>
-                <li class="arg">
-                        <code class="optional">[callback]</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Lets a game object disappear from screen using blending.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easing</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name optional">[callback]</code>
-                        <span class="type">Function</span>
-                        <span class="flag optional" title="This parameter is optional.">optional</span>
-
-
-                    <div class="param-description">
-                        <p>An optional callback-function called when the animation is finished.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_maskIn" class="method item">
-    <h3 class="name"><code>maskIn</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>mask</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-                <li class="arg">
-                        <code class="optional">[callback]</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Lets a game object appear on screen using a masking-effect.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">mask</code>
-                        <span class="type">gs.Mask</span>
-
-
-                    <div class="param-description">
-                        <p>The mask used for the animation.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name optional">[callback]</code>
-                        <span class="type">Function</span>
-                        <span class="flag optional" title="This parameter is optional.">optional</span>
-
-
-                    <div class="param-description">
-                        <p>An optional callback-function called when the animation is finished.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_maskOut" class="method item">
-    <h3 class="name"><code>maskOut</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>mask</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-                <li class="arg">
-                        <code class="optional">[callback]</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Lets a game object disappear from screen using a masking-effect.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">mask</code>
-                        <span class="type">gs.Mask</span>
-
-
-                    <div class="param-description">
-                        <p>The mask used for the animation.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name optional">[callback]</code>
-                        <span class="type">Function</span>
-                        <span class="flag optional" title="This parameter is optional.">optional</span>
-
-
-                    <div class="param-description">
-                        <p>An optional callback-function called when the animation is finished.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_maskTo" class="method item">
-    <h3 class="name"><code>maskTo</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>mask</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-                <li class="arg">
-                        <code class="optional">[callback]</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Description follows...</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">mask</code>
-                        <span class="type">gs.Mask</span>
-
-
-                    <div class="param-description">
-                        <p>The mask used for the animation.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name optional">[callback]</code>
-                        <span class="type">Function</span>
-                        <span class="flag optional" title="This parameter is optional.">optional</span>
-
-
-                    <div class="param-description">
-                        <p>An optional callback-function called when the animation is finished.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_move" class="method item">
-    <h3 class="name"><code>move</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>speedX</code>
-                </li>
-                <li class="arg">
-                        <code>speedY</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Moves the game object with a specified speed.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">speedX</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The speed on x-axis in pixels per frame.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">speedY</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The speed on y-axis in pixels per frame.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type used for the animation.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_moveIn" class="method item">
-    <h3 class="name"><code>moveIn</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>x</code>
-                </li>
-                <li class="arg">
-                        <code>y</code>
-                </li>
-                <li class="arg">
-                        <code>type</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-                <li class="arg">
-                        <code class="optional">[callback]</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Lets a game object appear on screen from left, top, right or bottom using
-a move-animation</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">x</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The x-coordinate of the target-position.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">y</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The y-coordinate of the target-position.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">type</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The movement-direction from where the game object should move-in.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name optional">[callback]</code>
-                        <span class="type">Function</span>
-                        <span class="flag optional" title="This parameter is optional.">optional</span>
-
-
-                    <div class="param-description">
-                        <p>An optional callback-function called when the animation is finished.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_moveOut" class="method item">
-    <h3 class="name"><code>moveOut</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>type</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-                <li class="arg">
-                        <code class="optional">[callback]</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Lets a game object disappear from screen to the left, top, right or bottom using
-a move-animation</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">type</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The movement-direction in which the game object should move-out.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name optional">[callback]</code>
-                        <span class="type">Function</span>
-                        <span class="flag optional" title="This parameter is optional.">optional</span>
-
-
-                    <div class="param-description">
-                        <p>An optional callback-function called when the animation is finished.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_movePath" class="method item">
-    <h3 class="name"><code>movePath</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>path</code>
-                </li>
-                <li class="arg">
-                        <code>loopType</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-                <li class="arg">
-                        <code>effects</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Moves the game object along a path.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">path</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The path to follow.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">loopType</code>
-                        <span class="type">gs.AnimationLoopType</span>
-
-
-                    <div class="param-description">
-                        <p>The loop-Type.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">effects</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>Optional array of effects executed during the path-movement like playing a sound.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_moveTo" class="method item">
-    <h3 class="name"><code>moveTo</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>x</code>
-                </li>
-                <li class="arg">
-                        <code>y</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Moves the game object to a specified position.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">x</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The x-coordinate of the position.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">y</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The y-coordinate of the position.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
-</div>
-<div id="method_open" class="method item deprecated">
-    <h3 class="name"><code>open</code></h3>
-
-        <span class="paren">()</span>
-
-
-        <span class="flag deprecated">deprecated</span>
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Changes visible-property to true. This method is deprecated.</p>
-
-    </div>
-
-
-
-
-</div>
-<div id="method_pixelateTo" class="method item">
-    <h3 class="name"><code>pixelateTo</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>width</code>
-                </li>
-                <li class="arg">
-                        <code>height</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Pixelates a game object to specified pixel-size/block-size</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">width</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The target block-width</li>
+<div class="tabview" id="classdocs">
+<ul class="api-class-tabs">
+<li class="api-class-tab index"><a href="#index">索引</a></li>
+<li class="api-class-tab methods"><a href="#methods">方法</a></li>
+<li class="api-class-tab properties"><a href="#properties">属性</a></li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">height</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The target block-height</li>
+<div>
+<div class="api-class-tabpanel index" id="index">
+<h2 class="off-left">条目索引</h2>
+<div class="index-section methods">
+<h3>方法</h3>
+<ul class="index-list methods">
+<li class="index-item method">
+<a href="#method_appear">appear（出现）</a>
+</li>
+<li class="index-item method">
+<a href="#method_blendTo">blendTo（混合到）</a>
+</li>
+<li class="index-item method">
+<a href="#method_blendTo">blendTo（混合到）</a>
+</li>
+<li class="index-item method">
+<a href="#method_blurTo">blurTo（模糊到）</a>
+</li>
+<li class="index-item method">
+<a href="#method_change">change（更改）</a>
+</li>
+<li class="index-item method">
+<a href="#method_changeFrames">changeFrames（更改帧）</a>
+</li>
+<li class="index-item method">
+<a href="#method_changeImages">changeImages（更改图像）</a>
+</li>
+<li class="index-item method deprecated">
+<a href="#method_close">close（关闭）</a>
+<span class="flag deprecated">deprecated（已弃用）</span>
+</li>
+<li class="index-item method">
+<a href="#method_colorTo">colorTo（颜色到）</a>
+</li>
+<li class="index-item method">
+<a href="#method_disappear">disappear（消失）</a>
+</li>
+<li class="index-item method">
+<a href="#method_flash">flash（闪烁）</a>
+</li>
+<li class="index-item method">
+<a href="#method_hide">hide（隐藏）</a>
+</li>
+<li class="index-item method">
+<a href="#method_maskIn">maskIn（遮罩进入）</a>
+</li>
+<li class="index-item method">
+<a href="#method_maskOut">maskOut（遮罩退出）</a>
+</li>
+<li class="index-item method">
+<a href="#method_maskTo">maskTo（遮罩到）</a>
+</li>
+<li class="index-item method">
+<a href="#method_move">move（移动）</a>
+</li>
+<li class="index-item method">
+<a href="#method_moveIn">moveIn（移动进入）</a>
+</li>
+<li class="index-item method">
+<a href="#method_moveOut">moveOut（移动退出）</a>
+</li>
+<li class="index-item method">
+<a href="#method_movePath">movePath（路径移动）</a>
+</li>
+<li class="index-item method">
+<a href="#method_moveTo">moveTo（移动到）</a>
+</li>
+<li class="index-item method deprecated">
+<a href="#method_open">open（打开）</a>
+<span class="flag deprecated">deprecated（已弃用）</span>
+</li>
+<li class="index-item method">
+<a href="#method_pixelateTo">pixelateTo（像素化到）</a>
+</li>
+<li class="index-item method">
+<a href="#method_playAnimation">playAnimation（播放动画）</a>
+</li>
+<li class="index-item method">
+<a href="#method_rotate">rotate（旋转）</a>
+</li>
+<li class="index-item method">
+<a href="#method_rotateTo">rotateTo（旋转到）</a>
+</li>
+<li class="index-item method">
+<a href="#method_scroll">scroll（滚动）</a>
+</li>
+<li class="index-item method">
+<a href="#method_scrollPath">scrollPath（路径滚动）</a>
+</li>
+<li class="index-item method">
+<a href="#method_scrollTo">scrollTo（滚动到）</a>
+</li>
+<li class="index-item method">
+<a href="#method_shake">shake（震动）</a>
+</li>
+<li class="index-item method">
+<a href="#method_show">show（显示）</a>
+</li>
+<li class="index-item method">
+<a href="#method_tintTo">tintTo（着色到）</a>
+</li>
+<li class="index-item method">
+<a href="#method_update">update（更新）</a>
+</li>
+<li class="index-item method">
+<a href="#method_wobbleTo">wobbleTo（摆动到）</a>
+</li>
+<li class="index-item method">
+<a href="#method_zoomTo">zoomTo（缩放到）</a>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_playAnimation" class="method item">
-    <h3 class="name"><code>playAnimation</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>frames</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>A frame animation which modifies the game object's srcRect property
-a play an animation.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">frames</code>
-                        <span class="type">gs.Rect</span>
-
-
-                    <div class="param-description">
-                        <p>An array of source rectangles (frames).</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+<div class="index-section properties">
+<h3>属性</h3>
+<ul class="index-list properties">
+<li class="index-item property private">
+<a href="#property_callback">callback（回调）</a>
+</li>
+</ul>
 </div>
-<div id="method_rotate" class="method item">
-    <h3 class="name"><code>rotate</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>direction</code>
-                </li>
-                <li class="arg">
-                        <code>speed</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Rotates the game object around its anchor-point.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">direction</code>
-                        <span class="type">gs.RotationDirection</span>
-
-
-                    <div class="param-description">
-                        <p>The rotation-direction.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">speed</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The rotation speed in degrees per frame.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_rotateTo" class="method item">
-    <h3 class="name"><code>rotateTo</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>angle</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Rotates the game object around its anchor-point to a specified angle.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">angle</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The target angle.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+<div class="api-class-tabpanel" id="methods">
+<h2 class="off-left">方法</h2>
+<div class="method item" id="method_appear">
+<h3 class="name"><code>appear（出现）</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>x</code>
+</li>
+<li class="arg">
+<code>y</code>
+</li>
+<li class="arg">
+<code>animation（动画）</code>
+</li>
+<li class="arg">
+<code>easing（缓动）</code>
+</li>
+<li class="arg">
+<code>duration（持续时间）</code>
+</li>
+<li class="arg">
+<code class="optional">[callback]（[回调]）</code>
+</li>
+</ul><span class="paren">)</span>
 </div>
-<div id="method_scroll" class="method item">
-    <h3 class="name"><code>scroll</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>speedX</code>
-                </li>
-                <li class="arg">
-                        <code>speedY</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Scrolls the game object with a specified speed.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">speedX</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The speed on x-axis in pixels per frame.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">speedY</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The speed on y-axis in pixels per frame.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type used for the animation.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+<div class="meta">
+<p>
+</p>
 </div>
-<div id="method_scrollPath" class="method item">
-    <h3 class="name"><code>scrollPath</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>path</code>
-                </li>
-                <li class="arg">
-                        <code>loopType</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Scrolls the game object along a path.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">path</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The path to follow.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">loopType</code>
-                        <span class="type">gs.AnimationLoopType</span>
-
-
-                    <div class="param-description">
-                        <p>The loop-Type.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+<div class="description">
+<p>让游戏对象使用指定的动画出现在屏幕上。</p>
 </div>
-<div id="method_scrollTo" class="method item">
-    <h3 class="name"><code>scrollTo</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>x</code>
-                </li>
-                <li class="arg">
-                        <code>y</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Scrolls the game object to a specified position.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">x</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The x-coordinate of the position.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">y</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The y-coordinate of the position.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">x</code>
+<span class="type">Number</span>
+<div class="param-description">
+<p>目标位置的 x 坐标。</p>
 </div>
-<div id="method_shake" class="method item">
-    <h3 class="name"><code>shake</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>range</code>
-                </li>
-                <li class="arg">
-                        <code>speed</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Shakes the game object horizontally using the game object's offset-property.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">range</code>
-                        <span class="type">gs.Range</span>
-
-
-                    <div class="param-description">
-                        <p>The horizontal shake-range.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">speed</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The shake speed.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+</li>
+<li class="param">
+<code class="param-name">y</code>
+<span class="type">Number</span>
+<div class="param-description">
+<p>目标位置的 y 坐标。</p>
 </div>
-<div id="method_show" class="method item">
-    <h3 class="name"><code>show</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easing</code>
-                </li>
-                <li class="arg">
-                        <code class="optional">[callback]</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Lets a game object appear on screen using blending.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easing</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name optional">[callback]</code>
-                        <span class="type">Function</span>
-                        <span class="flag optional" title="This parameter is optional.">optional</span>
-
-
-                    <div class="param-description">
-                        <p>An optional callback-function called when the animation is finished.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+</li>
+<li class="param">
+<code class="param-name">animation（动画）</code>
+<span class="type">gs.AppearAnimationInfo</span>
+<div class="param-description">
+<p>动画信息对象。</p>
 </div>
-<div id="method_tintTo" class="method item">
-    <h3 class="name"><code>tintTo</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>tone</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Tints the game object to a specified tone.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">tone</code>
-                        <span class="type">Tone</span>
-
-
-                    <div class="param-description">
-                        <p>The target tone.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+</li>
+<li class="param">
+<code class="param-name">easing（缓动）</code>
+<span class="type">Object</span>
+<div class="param-description">
+<p>缓动类型。</p>
 </div>
-<div id="method_update" class="method item">
-    <h3 class="name"><code>update</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Updates the animator.</p>
-
-    </div>
-
-
-
-
+</li>
+<li class="param">
+<code class="param-name">duration（持续时间）</code>
+<span class="type">Number</span>
+<div class="param-description">
+<p>持续时间，以帧为单位。</p>
 </div>
-<div id="method_wobbleTo" class="method item">
-    <h3 class="name"><code>wobbleTo</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>power</code>
-                </li>
-                <li class="arg">
-                        <code>speed</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Wobbles a game object to specified wobble-power and wobble-speed.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">power</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The target wobble-power.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">speed</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The target wobble-speed.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+</li>
+<li class="param">
+<code class="param-name optional">[callback]（[回调]）</code>
+<span class="type">Function</span>
+<span class="flag optional" title="This parameter is optional.">可选</span>
+<div class="param-description">
+<p>动画完成时调用的可选回调函数。</p>
 </div>
-<div id="method_zoomTo" class="method item">
-    <h3 class="name"><code>zoomTo</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>x</code>
-                </li>
-                <li class="arg">
-                        <code>y</code>
-                </li>
-                <li class="arg">
-                        <code>duration</code>
-                </li>
-                <li class="arg">
-                        <code>easingType</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Zooms a game object to specified size.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">x</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The x-axis zoom-factor.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">y</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The y-axis zoom-factor.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">duration</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <p>The duration in frames.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">easingType</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The easing-type.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+</li>
+</ul>
 </div>
-            </div>
-
-            <div id="properties" class="api-class-tabpanel">
-                <h2 class="off-left">Properties</h2>
-
-<div id="property_callback" class="property item private">
-    <h3 class="name"><code>callback</code></h3>
-    <span class="type">Function</span>
-
-
-        <span class="flag private">private</span>
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Standard Callback Routine</p>
-
-    </div>
-
-
-
 </div>
-            </div>
-
-
-    </div>
+<div class="method item" id="method_blendTo">
+<h3 class="name"><code>blendTo（混合到）</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>opacity（透明度）</code>
+</li>
+<li class="arg">
+<code>duration（持续时间）</code>
+</li>
+<li class="arg">
+<code>easingType（缓动类型）</code>
+</li>
+<li class="arg">
+<code class="optional">[callback]（[回调]）</code>
+</li>
+</ul><span class="paren">)</span>
 </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>将游戏对象混合到指定的透明度。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">opacity（透明度）</code>
+<span class="type">Number</span>
+<div class="param-description">
+<p>目标透明度。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration（持续时间）</code>
+<span class="type">Number</span>
+<div class="param-description">
+<p>持续时间，以帧为单位。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType（缓动类型）</code>
+<span class="type">Object</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name optional">[callback]（[回调]）</code>
+<span class="type">Function</span>
+<span class="flag optional" title="This parameter is optional.">可选</span>
+<div class="param-description">
+<p>混合完成后调用的可选回调。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_blendTo">
+<h3 class="name"><code>blendTo（混合到）</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>param（参数）</code>
+</li>
+<li class="arg">
+<code>value（值）</code>
+</li>
+<li class="arg">
+<code>duration（持续时间）</code>
+</li>
+<li class="arg">
+<code>easingType（缓动类型）</code>
+</li>
+<li class="arg">
+<code class="optional">[callback]（[回调]）</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>将 Live2D 游戏对象的 Live2D 模型参数动画化为指定值。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">param（参数）</code>
+<span class="type">String</span>
+<div class="param-description">
+<p>要动画化的参数名称。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">value（值）</code>
+<span class="type">Number</span>
+<div class="param-description">
+<p>目标值。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration（持续时间）</code>
+<span class="type">Number</span>
+<div class="param-description">
+<p>持续时间，以帧为单位。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType（缓动类型）</code>
+<span class="type">Object</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name optional">[callback]（[回调]）</code>
+<span class="type">Function</span>
+<span class="flag optional" title="This parameter is optional.">可选</span>
+<div class="param-description">
+<p>混合完成后调用的可选回调。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_blurTo">
+<h3 class="name"><code>blurTo（模糊到）</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>power（强度）</code>
+</li>
+<li class="arg">
+<code>duration（持续时间）</code>
+</li>
+<li class="arg">
+<code>easingType（缓动类型）</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>将游戏对象模糊到指定的模糊强度。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">power（强度）</code>
+<span class="type">Number</span>
+<div class="param-description">
+<p>目标模糊强度。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration（持续时间）</code>
+<span class="type">Number</span>
+<div class="param-description">
+<p>持续时间，以帧为单位。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType（缓动类型）</code>
+<span class="type">Object</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_change">
+<h3 class="name"><code>change（更改）</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>Value（值）</code>
+</li>
+<li class="arg">
+<code>field（字段）</code>
+</li>
+<li class="arg">
+<code>duration（持续时间）</code>
+</li>
+<li class="arg">
+<code>easingType（缓动类型）</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>将游戏对象的字段更改为指定值。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">Value（值）</code>
+<span class="type">Number</span>
+<div class="param-description">
+<p>目标值。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">field（字段）</code>
+<span class="type">String</span>
+<div class="param-description">
+<p>字段/属性的名称。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration（持续时间）</code>
+<span class="type">Number</span>
+<div class="param-description">
+<p>持续时间，以帧为单位。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType（缓动类型）</code>
+<span class="type">Object</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_changeFrames">
+<h3 class="name"><code>changeFrames（更改帧）</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>frames（帧）</code>
+</li>
+<li class="arg">
+<code>duration（持续时间）</code>
+</li>
+<li class="arg">
+<code>easingType（缓动类型）</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>一个帧动画，它修改游戏对象的 srcRect 属性并播放动画。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">frames（帧）</code>
+<span class="type">gs.Rect</span>
+<div class="param-description">
+<p>源矩形（帧）数组。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration（持续时间）</code>
+<span class="type">Number</span>
+<div class="param-description">
+<p>持续时间，以帧为单位。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType（缓动类型）</code>
+<span class="type">Object</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_changeImages">
+<h3 class="name"><code>changeImages（更改图像）</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>images（图像）</code>
+</li>
+<li class="arg">
+<code>duration（持续时间）</code>
+</li>
+<li class="arg">
+<code>easingType（缓动类型）</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>一个图像动画，它使用游戏对象的 image 属性从左向右运行。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">images（图像）</code>
+<span class="type">Array</span>
+<div class="param-description">
+<p>图像名称数组。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration（持续时间）</code>
+<span class="type">Number</span>
+<div class="param-description">
+<p>持续时间，以帧为单位。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType（缓动类型）</code>
+<span class="type">Object</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item deprecated" id="method_close">
+<h3 class="name"><code>close（关闭）</code></h3>
+<span class="paren">()</span>
+<span class="flag deprecated">已弃用</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>将 visible 属性更改为 false。此方法已弃用。</p>
+</div>
+</div>
+<div class="method item" id="method_colorTo">
+<h3 class="name"><code>colorTo（颜色到）</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>color（颜色）</code>
+</li>
+<li class="arg">
+<code>duration（持续时间）</code>
+</li>
+<li class="arg">
+<code>easingType（缓动类型）</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>将游戏对象着色为指定的颜色。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">color（颜色）</code>
+<span class="type">Color</span>
+<div class="param-description">
+<p>目标颜色。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration（持续时间）</code>
+<span class="type">Number</span>
+<div class="param-description">
+<p>持续时间，以帧为单位。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType（缓动类型）</code>
+<span class="type">Object</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_disappear">
+<h3 class="name"><code>disappear（消失）</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>animation（动画）</code>
+</li>
+<li class="arg">
+<code>easing（缓动）</code>
+</li>
+<li class="arg">
+<code>duration（持续时间）</code>
+</li>
+<li class="arg">
+<code class="optional">[callback]（[回调]）</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>让游戏对象使用指定的动画从屏幕上消失。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">animation（动画）</code>
+<span class="type">gs.AppearAnimationInfo</span>
+<div class="param-description">
+<p>动画信息对象。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easing（缓动）</code>
+<span class="type">Object</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration（持续时间）</code>
+<span class="type">Number</span>
+<div class="param-description">
+<p>持续时间，以帧为单位。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name optional">[callback]（[回调]）</code>
+<span class="type">Function</span>
+<span class="flag optional" title="This parameter is optional.">可选</span>
+<div class="param-description">
+<p>动画完成时调用的可选回调函数。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_flash">
+<h3 class="name"><code>flash（闪烁）</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>color（颜色）</code>
+</li>
+<li class="arg">
+<code>duration（持续时间）</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>闪烁游戏对象。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">color（颜色）</code>
+<span class="type">Color</span>
+<div class="param-description">
+<p>闪烁颜色。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration（持续时间）</code>
+<span class="type">Number</span>
+<div class="param-description">
+<p>持续时间，以帧为单位。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_hide">
+<h3 class="name"><code>hide（隐藏）</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>duration（持续时间）</code>
+</li>
+<li class="arg">
+<code>easing（缓动）</code>
+</li>
+<li class="arg">
+<code class="optional">[callback]（[回调]）</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>让游戏对象使用混合从屏幕上消失。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">duration（持续时间）</code>
+<span class="type">Number</span>
+<div class="param-description">
+<p>持续时间，以帧为单位。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easing（缓动）</code>
+<span class="type">Object</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name optional">[callback]（[回调]）</code>
+<span class="type">Function</span>
+<span class="flag optional" title="This parameter is optional.">可选</span>
+<div class="param-description">
+<p>动画完成时调用的可选回调函数。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_maskIn">
+<h3 class="name"><code>maskIn（遮罩进入）</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>mask（遮罩）</code>
+</li>
+<li class="arg">
+<code>duration（持续时间）</code>
+</li>
+<li class="arg">
+<code>easingType（缓动类型）</code>
+</li>
+<li class="arg">
+<code class="optional">[callback]（[回调]）</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>让游戏对象使用遮罩效果出现在屏幕上。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">mask（遮罩）</code>
+<span class="type">gs.Mask</span>
+<div class="param-description">
+<p>用于动画的遮罩。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration（持续时间）</code>
+<span class="type">Number</span>
+<div class="param-description">
+<p>持续时间，以帧为单位。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType（缓动类型）</code>
+<span class="type">Object</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name optional">[callback]（[回调]）</code>
+<span class="type">Function</span>
+<span class="flag optional" title="This parameter is optional.">可选</span>
+<div class="param-description">
+<p>动画完成时调用的可选回调函数。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_maskOut">
+<h3 class="name"><code>maskOut（遮罩退出）</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>mask（遮罩）</code>
+</li>
+<li class="arg">
+<code>duration（持续时间）</code>
+</li>
+<li class="arg">
+<code>easingType（缓动类型）</code>
+</li>
+<li class="arg">
+<code class="optional">[callback]（[回调]）</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>让游戏对象使用遮罩效果从屏幕上消失。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">mask（遮罩）</code>
+<span class="type">gs.Mask</span>
+<div class="param-description">
+<p>用于动画的遮罩。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration（持续时间）</code>
+<span class="type">Number</span>
+<div class="param-description">
+<p>持续时间，以帧为单位。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType（缓动类型）</code>
+<span class="type">Object</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name optional">[callback]（[回调]）</code>
+<span class="type">Function</span>
+<span class="flag optional" title="This parameter is optional.">可选</span>
+<div class="param-description">
+<p>动画完成时调用的可选回调函数。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_maskTo">
+<h3 class="name"><code>maskTo（遮罩到）</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>mask（遮罩）</code>
+</li>
+<li class="arg">
+<code>duration（持续时间）</code>
+</li>
+<li class="arg">
+<code>easingType（缓动类型）</code>
+</li>
+<li class="arg">
+<code class="optional">[callback]（[回调]）</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>描述如下...</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">mask（遮罩）</code>
+<span class="type">gs.Mask</span>
+<div class="param-description">
+<p>用于动画的遮罩。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration（持续时间）</code>
+<span class="type">Number</span>
+<div class="param-description">
+<p>持续时间，以帧为单位。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType（缓动类型）</code>
+<span class="type">Object</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name optional">[callback]（[回调]）</code>
+<span class="type">Function</span>
+<span class="flag optional" title="This parameter is optional.">可选</span>
+<div class="param-description">
+<p>动画完成时调用的可选回调函数。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_move">
+<h3 class="name"><code>move（移动）</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>speedX（X轴速度）</code>
+</li>
+<li class="arg">
+<code>speedY（Y轴速度）</code>
+</li>
+<li class="arg">
+<code>duration（持续时间）</code>
+</li>
+<li class="arg">
+<code>easingType（缓动类型）</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>以指定的速度移动游戏对象。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">speedX（X轴速度）</code>
+<span class="type">Number</span>
+<div class="param-description">
+<p>每帧在 x 轴上的像素速度。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">speedY（Y轴速度）</code>
+<span class="type">Number</span>
+<div class="param-description">
+<p>y轴方向的速度，单位为像素/帧。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>动画持续时间，单位为帧。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType</code>
+<span class="type">对象</span>
+<div class="param-description">
+<p>用于动画的缓动类型。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_moveIn">
+<h3 class="name"><code>moveIn</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>x</code>
+</li>
+<li class="arg">
+<code>y</code>
+</li>
+<li class="arg">
+<code>type</code>
+</li>
+<li class="arg">
+<code>duration</code>
+</li>
+<li class="arg">
+<code>easingType</code>
+</li>
+<li class="arg">
+<code class="optional">[callback]</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>通过移动动画让游戏对象从左、上、右或底部进入屏幕。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">x</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>目标位置的 x 坐标。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">y</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>目标位置的 y 坐标。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">type</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>游戏对象从哪个方向移入屏幕。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>动画持续时间，单位为帧。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType</code>
+<span class="type">对象</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name optional">[callback]</code>
+<span class="type">函数</span>
+<span class="flag optional" title="This parameter is optional.">可选</span>
+<div class="param-description">
+<p>动画完成时调用的可选回调函数。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_moveOut">
+<h3 class="name"><code>moveOut</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>type</code>
+</li>
+<li class="arg">
+<code>duration</code>
+</li>
+<li class="arg">
+<code>easingType</code>
+</li>
+<li class="arg">
+<code class="optional">[callback]</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>通过移动动画让游戏对象从屏幕向左、上、右或底部移出。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">type</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>游戏对象应该向哪个方向移出屏幕。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>动画持续时间，单位为帧。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType</code>
+<span class="type">对象</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name optional">[callback]</code>
+<span class="type">函数</span>
+<span class="flag optional" title="This parameter is optional.">可选</span>
+<div class="param-description">
+<p>动画完成时调用的可选回调函数。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_movePath">
+<h3 class="name"><code>movePath</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>path</code>
+</li>
+<li class="arg">
+<code>loopType</code>
+</li>
+<li class="arg">
+<code>duration</code>
+</li>
+<li class="arg">
+<code>easingType</code>
+</li>
+<li class="arg">
+<code>effects</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>使游戏对象沿路径移动。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">path</code>
+<span class="type">对象</span>
+<div class="param-description">
+<p>要跟随的路径。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">loopType</code>
+<span class="type">gs.AnimationLoopType</span>
+<div class="param-description">
+<p>循环类型。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>动画持续时间，单位为帧。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType</code>
+<span class="type">对象</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">effects</code>
+<span class="type">对象</span>
+<div class="param-description">
+<p>可选的效果数组，在路径移动期间执行，例如播放声音。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_moveTo">
+<h3 class="name"><code>moveTo</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>x</code>
+</li>
+<li class="arg">
+<code>y</code>
+</li>
+<li class="arg">
+<code>duration</code>
+</li>
+<li class="arg">
+<code>easingType</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>将游戏对象移动到指定位置。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">x</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>位置的 x 坐标。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">y</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>位置的 y 坐标。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>动画持续时间，单位为帧。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType</code>
+<span class="type">对象</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item deprecated" id="method_open">
+<h3 class="name"><code>open</code></h3>
+<span class="paren">()</span>
+<span class="flag deprecated">已弃用</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>将 visible 属性更改为 true。此方法已弃用。</p>
+</div>
+</div>
+<div class="method item" id="method_pixelateTo">
+<h3 class="name"><code>pixelateTo</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>width</code>
+</li>
+<li class="arg">
+<code>height</code>
+</li>
+<li class="arg">
+<code>duration</code>
+</li>
+<li class="arg">
+<code>easingType</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>将游戏对象像素化为指定的像素大小/块大小。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">width</code>
+<span class="type">数字</span>
+<div class="param-description">
+<ul>
+<li>目标块宽度。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">height</code>
+<span class="type">数字</span>
+<div class="param-description">
+<ul>
+<li>目标块高度。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>动画持续时间，单位为帧。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType</code>
+<span class="type">对象</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_playAnimation">
+<h3 class="name"><code>playAnimation</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>frames</code>
+</li>
+<li class="arg">
+<code>duration</code>
+</li>
+<li class="arg">
+<code>easingType</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>修改游戏对象的 srcRect 属性以播放动画的帧动画。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">frames</code>
+<span class="type">gs.Rect</span>
+<div class="param-description">
+<p>源矩形（帧）数组。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>动画持续时间，单位为帧。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType</code>
+<span class="type">对象</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_rotate">
+<h3 class="name"><code>rotate</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>direction</code>
+</li>
+<li class="arg">
+<code>speed</code>
+</li>
+<li class="arg">
+<code>duration</code>
+</li>
+<li class="arg">
+<code>easingType</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>使游戏对象绕其锚点旋转。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">direction</code>
+<span class="type">gs.RotationDirection</span>
+<div class="param-description">
+<p>旋转方向。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">speed</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>旋转速度，单位为度/帧。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>动画持续时间，单位为帧。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType</code>
+<span class="type">对象</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_rotateTo">
+<h3 class="name"><code>rotateTo</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>angle</code>
+</li>
+<li class="arg">
+<code>duration</code>
+</li>
+<li class="arg">
+<code>easingType</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>使游戏对象绕其锚点旋转到指定角度。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">angle</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>目标角度。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>动画持续时间，单位为帧。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType</code>
+<span class="type">对象</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_scroll">
+<h3 class="name"><code>scroll</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>speedX</code>
+</li>
+<li class="arg">
+<code>speedY</code>
+</li>
+<li class="arg">
+<code>duration</code>
+</li>
+<li class="arg">
+<code>easingType</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>以指定速度滚动游戏对象。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">speedX</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>x 轴方向的速度，单位为像素/帧。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">speedY</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>y 轴方向的速度，单位为像素/帧。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>动画持续时间，单位为帧。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType</code>
+<span class="type">对象</span>
+<div class="param-description">
+<p>用于动画的缓动类型。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_scrollPath">
+<h3 class="name"><code>scrollPath</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>path</code>
+</li>
+<li class="arg">
+<code>loopType</code>
+</li>
+<li class="arg">
+<code>duration</code>
+</li>
+<li class="arg">
+<code>easingType</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>使游戏对象沿路径滚动。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">path</code>
+<span class="type">对象</span>
+<div class="param-description">
+<p>要跟随的路径。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">loopType</code>
+<span class="type">gs.AnimationLoopType</span>
+<div class="param-description">
+<p>循环类型。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>动画持续时间，单位为帧。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType</code>
+<span class="type">对象</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_scrollTo">
+<h3 class="name"><code>scrollTo</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>x</code>
+</li>
+<li class="arg">
+<code>y</code>
+</li>
+<li class="arg">
+<code>duration</code>
+</li>
+<li class="arg">
+<code>easingType</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>将游戏对象滚动到指定位置。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">x</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>位置的 x 坐标。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">y</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>位置的 y 坐标。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>动画持续时间，单位为帧。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType</code>
+<span class="type">对象</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_shake">
+<h3 class="name"><code>shake</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>range</code>
+</li>
+<li class="arg">
+<code>speed</code>
+</li>
+<li class="arg">
+<code>duration</code>
+</li>
+<li class="arg">
+<code>easingType</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>使用游戏对象的 offset 属性水平摇晃游戏对象。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">range</code>
+<span class="type">gs.Range</span>
+<div class="param-description">
+<p>水平摇晃范围。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">speed</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>摇晃速度。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>动画持续时间，单位为帧。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType</code>
+<span class="type">对象</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_show">
+<h3 class="name"><code>show</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>duration</code>
+</li>
+<li class="arg">
+<code>easing</code>
+</li>
+<li class="arg">
+<code class="optional">[callback]</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>通过混合效果使游戏对象出现在屏幕上。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">duration</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>动画持续时间，单位为帧。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easing</code>
+<span class="type">对象</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name optional">[callback]</code>
+<span class="type">函数</span>
+<span class="flag optional" title="This parameter is optional.">可选</span>
+<div class="param-description">
+<p>动画完成时调用的可选回调函数。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_tintTo">
+<h3 class="name"><code>tintTo</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>tone</code>
+</li>
+<li class="arg">
+<code>duration</code>
+</li>
+<li class="arg">
+<code>easingType</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>将游戏对象着色为指定的色调。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">tone</code>
+<span class="type">Tone</span>
+<div class="param-description">
+<p>目标色调。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>动画持续时间，单位为帧。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType</code>
+<span class="type">对象</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_update">
+<h3 class="name"><code>update</code></h3>
+<span class="paren">()</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>更新动画器。</p>
+</div>
+</div>
+<div class="method item" id="method_wobbleTo">
+<h3 class="name"><code>wobbleTo</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>power</code>
+</li>
+<li class="arg">
+<code>speed</code>
+</li>
+<li class="arg">
+<code>duration</code>
+</li>
+<li class="arg">
+<code>easingType</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>将游戏对象摆动到指定的摆动强度和摆动速度。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">power</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>目标摆动强度。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">speed</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>目标摆动速度。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>动画持续时间，单位为帧。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType</code>
+<span class="type">对象</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_zoomTo">
+<h3 class="name"><code>zoomTo</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>x</code>
+</li>
+<li class="arg">
+<code>y</code>
+</li>
+<li class="arg">
+<code>duration</code>
+</li>
+<li class="arg">
+<code>easingType</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>将游戏对象缩放到指定大小。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">x</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>x 轴缩放因子。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">y</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>y 轴缩放因子。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">duration</code>
+<span class="type">数字</span>
+<div class="param-description">
+<p>动画持续时间，单位为帧。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">easingType</code>
+<span class="type">对象</span>
+<div class="param-description">
+<p>缓动类型。</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="api-class-tabpanel" id="properties">
+<h2 class="off-left">Properties</h2>
+<div class="property item private" id="property_callback">
+<h3 class="name"><code>callback</code></h3>
+<span class="type">函数</span>
+<span class="flag private">私有</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>标准回调例程</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <script src="../assets/vendor/prettify/prettify-min.js"></script>
 <script>prettyPrint();</script>

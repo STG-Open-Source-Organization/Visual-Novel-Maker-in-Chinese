@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+Visual Novel Maker 配备了一个强大的游戏内 UI 系统，允许你使用 JSON（JavaScript 对象表示法）定义创建出色的 UI，而无需实际编程。 以下分步指南为你提供了关于游戏内 UI 系统可能实现的功能的粗略概述和一些示例。
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="generator" content="Adobe RoboHelp 2015" />
-<title>IGUI Getting Started</title>
-<link rel="StyleSheet" href="default.css" type="text/css" />
-<script type="text/javascript" language="JavaScript">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Adobe RoboHelp 2015" name="generator"/>
+<title>但是，由于其复杂性，本指南无法涵盖所有功能。 因此，请查看</title>
+<link href="default.css" rel="StyleSheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
 //<![CDATA[
 function reDo() {
   if (innerWidth != origWidth || innerHeight != origHeight)
@@ -29,85 +29,83 @@ visibility:hidden; }
 p.WebHelpNavBar { text-align:right; }
 -->
 </style>
-
-<script type="text/javascript" src="template/scripts/rh.min.js"></script>
-<script type="text/javascript" src="template/scripts/common.min.js"></script>
-<script type="text/javascript" src="template/scripts/topic.min.js"></script>
-<script type="text/javascript" src="template/scripts/constants.js"></script>
-<script type="text/javascript" src="template/scripts/utils.js"></script>
-<script type="text/javascript" src="template/scripts/mhutils.js"></script>
-<script type="text/javascript" src="template/scripts/mhlang.js"></script>
-<script type="text/javascript" src="template/scripts/mhver.js"></script>
-<script type="text/javascript" src="template/scripts/settings.js"></script>
-<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
-<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
-<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
-<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
-<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
- <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
-<script type="text/javascript" >
+<script src="template/scripts/rh.min.js" type="text/javascript"></script>
+<script src="template/scripts/common.min.js" type="text/javascript"></script>
+<script src="template/scripts/topic.min.js" type="text/javascript"></script>
+<script src="template/scripts/constants.js" type="text/javascript"></script>
+<script src="template/scripts/utils.js" type="text/javascript"></script>
+<script src="template/scripts/mhutils.js" type="text/javascript"></script>
+<script src="template/scripts/mhlang.js" type="text/javascript"></script>
+<script src="template/scripts/mhver.js" type="text/javascript"></script>
+<script src="template/scripts/settings.js" type="text/javascript"></script>
+<script src="template/scripts/XmlJsReader.js" type="text/javascript"></script>
+<script src="template/scripts/loadparentdata.js" type="text/javascript"></script>
+<script src="template/scripts/loadscreen.js" type="text/javascript"></script>
+<script src="template/scripts/loadprojdata.js" type="text/javascript"></script>
+<script src="template/scripts/mhtopic.js" type="text/javascript"></script>
+<link href="template/styles/topic.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
 gRootRelPath = ".";
 gCommonRootRelPath = ".";
 gTopicId = "5.3.1";
 </script>
- <meta name="topic-breadcrumbs" content="Script and Plugin Reference > In-Game UI Documentation" />
+<meta content="Script and Plugin Reference &gt; In-Game UI Documentation" name="topic-breadcrumbs"/>
 </head>
 <body>
-<script type="text/javascript" src="./ehlpdhtm.js"></script>
-
-<div style="width: 100%; position: relative;" id="header">
- <p class="Topic_Heading" style="font-family: 'Book Antiqua', serif;">Getting Started: In-Game User Interface</p>
+<script src="./ehlpdhtm.js" type="text/javascript"></script>
+<div id="header" style="width: 100%; position: relative;">
+<p class="Topic_Heading" style="font-family: 'Book Antiqua', serif;">游戏内 UI API 参考</p>
 </div>
-<p>&#160;</p>
-<p>Visual Novel Maker comes with a powerful In-Game UI System allowing you to create amazing UIs without real programming using JSON (JavaScript Object Notation) definitions. The following step-by-step guide gives you a rough overview plus a few examples about what is possible with the In-Game UI System.</p>
-<p>&#160;</p>
-<p>But because of complexity this guide cannot cover all features. So please check the <a href="igui_doc/index.html">In-Game UI API Reference</a> for details and don't hesitate to ask for help in the Visual Novel Maker forums.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Layouts</p>
-<p>In-Game UIs are defined using layouts. You can find all default layouts for your Game in Script Editor &gt; Layouts folder.</p>
-<p>&#160;</p>
-<p><img src="image5.gif" alt="" style=" border:none; width:100%; max-width:193px;" border="0" /></p>
-<p>&#160;</p>
-<p>A layout contains a set of controls, like images, buttons, texts, etc. and manages the position and size of each depending on the layout-type. For example: A grid-layout shows its items in a grid of rows and columns:</p>
-<p>&#160;</p>
-<p><img src="image6.gif" alt="" style=" border:none; width:100%; max-width:369px;" border="0" /></p>
-<p>(Grid Layout Example)</p>
-<p>A layout can contain other layouts as well to build more complex layouts.</p>
-<p>&#160;</p>
-<p class="Sub_Heading"><span>Controls</span></p>
-<p>A control covers a piece of UI logic like displaying an image, a button, a text, etc. &#160;Technically, there is not much difference between a control and a layout. But a control cannot contain other controls in regular.</p>
-<p>&#160;</p>
-<p><img src="image8.gif" alt="" style=" border:none; width:100%; max-width:156px;" border="0" /></p>
-<p>(Control Example)</p>
-<p>&#160;</p>
-<p class="Sub_Heading"><span style="font-weight: bold; font-size: 18pt; font-family: 'Book Antiqua', serif;">Case Examples</span></p>
-<p>Please check our In Game UI Examples to learn more about how to modify or make your own User Interface (In-Game UI)!</p>
-<p>&#160;</p>
-<p class="SubSubHeading"><a href="Example__Custom_Title-Screen.htm">Example 1: Custom Title-Screen</a></p>
-<p>In this example, we will make our own title-screen using Visual Novel Maker’s In-Game UI-System!</p>
-<p>&#160;</p>
-<p class="SubSubHeading"><a href="Example__Styles.htm">Example 2: Styles</a></p>
-<p>In this example, we will be teaching how to use styles to avoid redundant code and make it easier to modify your layout.</p>
-<p>&#160;</p>
-<p class="SubSubHeading"><a href="Example__Animations.htm">Example 3: Animations</a></p>
-<p>In this example, we will be teaching how to add animations to your UI!</p>
-<p>&#160;</p>
-<p class="SubSubHeading"><a href="Templates.htm">Example 4: Templates</a></p>
-<p>We learned how styles can help us to avoid redundant data in our layouts. But since styles are limited, we are teaching you how to make and use Templates to overcome them!</p>
-<p>&#160;</p>
-<p class="SubSubHeading"><a href="Example__Actions.htm">Example 5: Actions</a></p>
-<p>In this example, we will be teaching you how to use actions for cases such as switching scenes or layouts!</p>
-<p>&#160;</p>
-<p class="SubSubHeading"><a href="Example__Data_Bindings.htm">Example 6: Data Bindings</a></p>
-<p>Now that you know the basics, we will now teach you about this complex function. Data Binding allows us to display or change background-data (ex. In-Game settings)</p>
-<p>&#160;</p>
-<p class="SubSubHeading"><a href="Example__Formulas.htm">Example 7: Formulas</a></p>
-<p>In this example, we'll teach you another complex function called, Formulas. They are defined functions under a control and is executed under specific conditions.</p>
-<p>&#160;</p>
-<p class="SubSubHeading"><a href="Example__Using_Components.htm">Example 8: Using Components</a></p>
-<p>In this example, we'll teach you another complex function called, Components. This allows you to specify a specific condition to a control.</p>
-<p>&#160;</p>
-<p class="SubSubHeading">Useful Tips</p>
-<p>Don't make layouts more complex then actually needed. Think twice if maybe just a few simple images can solve a case more efficient instead of building up a huge complex layout structure. The more complex a layout is, the more performance it will cost. That is especially the case if you plan to publish your game on weaker mobile devices.</p>
+<p> </p>
+<p>了解详细信息，并且不要犹豫在 Visual Novel Maker 论坛中寻求帮助。</p>
+<p> </p>
+<p>布局<a href="igui_doc/index.html">游戏内 UI 是使用布局定义的。 你可以在 Script Editor &gt; Layouts 文件夹中找到游戏的所有默认布局。</a>布局包含一组控件，如图像、按钮、文本等，并根据布局类型管理每个控件的位置和大小。 例如：网格布局在其行和列的网格中显示其项目：</p>
+<p> </p>
+<p class="Sub_Heading">（网格布局示例）</p>
+<p>布局还可以包含其他布局，以构建更复杂的布局。</p>
+<p> </p>
+<p><img alt="" border="0" src="image5.gif" style=" border:none; width:100%; max-width:193px;"/></p>
+<p> </p>
+<p>控件</p>
+<p> </p>
+<p><img alt="" border="0" src="image6.gif" style=" border:none; width:100%; max-width:369px;"/></p>
+<p>控件涵盖了一部分 UI 逻辑，例如显示图像、按钮、文本等。 技术上，控件和布局之间没有太大区别。 但控件通常不能包含其他控件。</p>
+<p>（控件示例）</p>
+<p> </p>
+<p class="Sub_Heading"><span>案例示例</span></p>
+<p>请查看我们的游戏内 UI 示例，以了解更多关于如何修改或制作自己的用户界面（游戏内 UI）的信息！</p>
+<p> </p>
+<p><img alt="" border="0" src="image8.gif" style=" border:none; width:100%; max-width:156px;"/></p>
+<p>示例 1：自定义标题屏幕</p>
+<p> </p>
+<p class="Sub_Heading"><span style="font-weight: bold; font-size: 18pt; font-family: 'Book Antiqua', serif;">在此示例中，我们将使用 Visual Novel Maker 的游戏内 UI 系统来制作我们自己的标题屏幕！</span></p>
+<p>示例 2：样式</p>
+<p> </p>
+<p class="SubSubHeading"><a href="Example__Custom_Title-Screen.htm">在此示例中，我们将教授如何使用样式来避免冗余代码，并使修改布局更加容易。</a></p>
+<p>示例 3：动画</p>
+<p> </p>
+<p class="SubSubHeading"><a href="Example__Styles.htm">在此示例中，我们将教授如何为你的 UI 添加动画！</a></p>
+<p>示例 4：模板</p>
+<p> </p>
+<p class="SubSubHeading"><a href="Example__Animations.htm">我们已经学会了样式如何帮助我们避免布局中的冗余数据。 但由于样式是有限的，我们将教你如何制作和使用模板来克服它们！</a></p>
+<p>示例 5：操作</p>
+<p> </p>
+<p class="SubSubHeading"><a href="Templates.htm">在此示例中，我们将教你如何为切换场景或布局等情况使用操作！</a></p>
+<p>示例 6：数据绑定</p>
+<p> </p>
+<p class="SubSubHeading"><a href="Example__Actions.htm">现在你已经掌握了基础知识，我们将教你这项复杂的功能。 数据绑定允许我们显示或更改后台数据（例如，游戏内设置）。</a></p>
+<p>示例 7：公式</p>
+<p> </p>
+<p class="SubSubHeading"><a href="Example__Data_Bindings.htm">在此示例中，我们将教你另一项复杂的功能，称为公式。 它们是定义在控件下的函数，并在特定条件下执行。</a></p>
+<p>示例 8：使用组件</p>
+<p> </p>
+<p class="SubSubHeading"><a href="Example__Formulas.htm">在此示例中，我们将教你另一项复杂的功能，称为组件。 这允许你为控件指定一个特定条件。</a></p>
+<p>有用提示</p>
+<p> </p>
+<p class="SubSubHeading"><a href="Example__Using_Components.htm">不要使布局比实际需要的更复杂。 仔细想想，也许几个简单的图像比构建一个庞大复杂的布局结构能更有效地解决问题。 布局越复杂，性能消耗越大。 特别是如果你计划在性能较弱的移动设备上发布游戏。</a></p>
+<p>HTML</p>
+<p> </p>
+<p class="SubSubHeading">图像地图和热点教程</p>
+<p>图像地图和热点教程</p>
 </body>
 </html>

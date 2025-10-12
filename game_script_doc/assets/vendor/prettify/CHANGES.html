@@ -1,130 +1,62 @@
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Change Log</title>
-  </head>
-  <body bgcolor="white">
-    <a style="float:right" href="README.html">README</a>
-
-    <h1>Known Issues</h1>
-    <ul>
-      <li>Perl formatting is really crappy.  Partly because the author is lazy and
-      partly because Perl is
-      <a href="http://www.perlmonks.org/?node_id=663393">hard</a> to parse.
-      <li>On some browsers, <code>&lt;code&gt;</code> elements with newlines in the text
-      which use CSS to specify <code>white-space:pre</code> will have the newlines
-      improperly stripped if the element is not attached to the document at the time
-      the stripping is done.  Also, on IE 6, all newlines will be stripped from
-      <code>&lt;code&gt;</code> elements because of the way IE6 produces
-      <code>innerHTML</code>.  Workaround: use <code>&lt;pre&gt;</code> for code with
-      newlines.
-    </ul>
-
-    <h1>Change Log</h1>
-    <h2>29 March 2007</h2>
-    <ul>
-      <li>Added <a href="tests/prettify_test.html#PHP">tests</a> for PHP support
-        to address 
-      <a href="http://code.google.com/p/google-code-prettify/issues/detail?id=3"
-       >issue 3</a>.
-      <li>Fixed
-      <a href="http://code.google.com/p/google-code-prettify/issues/detail?id=6"
-       >bug</a>: <code>prettyPrintOne</code> was not halting.  This was not
-        reachable through the normal entry point.
-      <li>Fixed
-      <a href="http://code.google.com/p/google-code-prettify/issues/detail?id=4"
-       >bug</a>: recursing into a script block or PHP tag that was not properly
-        closed would not silently drop the content.
-        (<a href="tests/prettify_test.html#issue4">test</a>)
-      <li>Fixed
-      <a href="http://code.google.com/p/google-code-prettify/issues/detail?id=8"
-       >bug</a>: was eating tabs
-        (<a href="tests/prettify_test.html#issue8">test</a>)
-      <li>Fixed entity handling so that the caveat
-        <blockquote>
-          <p>Caveats: please properly escape less-thans.  <tt>x&amp;lt;y</tt>
-          instead of <tt>x&lt;y</tt>, and use <tt>&quot;</tt> instead of 
-          <tt>&amp;quot;</tt> for string delimiters.</p>
-        </blockquote>
-        is no longer applicable.
-      <li>Added noisefree's C#
-      <a href="http://code.google.com/p/google-code-prettify/issues/detail?id=4"
-       >patch</a>
-      <li>Added a <a href="http://google-code-prettify.googlecode.com/files/prettify-small.zip">distribution</a> that has comments and
-        whitespace removed to reduce download size from 45.5kB to 12.8kB.
-    </ul>
-    <h2>4 Jul 2008</h2>
-    <ul>
-      <li>Added <a href="http://code.google.com/p/google-code-prettify/issues/detail?id=17">language specific formatters</a> that are triggered by the presence
-      of a <code>lang-&lt;language-file-extension&gt;</code></li>
-      <li>Fixed <a href="http://code.google.com/p/google-code-prettify/issues/detail?id=29">bug</a>: python handling of <code>'''string'''</code>
-      <li>Fixed bug: <code>/</code> in regex <code>[charsets] should not end regex</code>
-    </ul>
-    <h2>5 Jul 2008</h2>
-    <ul>
-      <li>Defined language extensions for Lisp and Lua</code>
-    </ul>
-    <h2>14 Jul 2008</h2>
-    <ul>
-      <li>Language handlers for F#, OCAML, SQL</code>
-      <li>Support for <code>nocode</code> spans to allow embedding of line
-      numbers and code annotations which should not be styled or otherwise
-      affect the tokenization of prettified code.
-      See the issue 22
-      <a href="tests/prettify_test.html#issue22">testcase</a>.</code>
-    </ul>
-    <h2>6 Jan 2009</h2>
-    <ul>
-      <li>Language handlers for Visual Basic, Haskell, CSS, and WikiText</li>
-      <li>Added <tt>.mxml</tt> extension to the markup style handler for
-        Flex <a href="http://en.wikipedia.org/wiki/MXML">MXML files</a>.  See
-        <a
-        href="http://code.google.com/p/google-code-prettify/issues/detail?id=37"
-        >issue 37</a>.
-      <li>Added <tt>.m</tt> extension to the C style handler so that Objective
-        C source files properly highlight.  See
-        <a
-        href="http://code.google.com/p/google-code-prettify/issues/detail?id=58"
-       >issue 58</a>.
-      <li>Changed HTML lexer to use the same embedded source mechanism as the
-        wiki language handler, and changed to use the registered
-        CSS handler for STYLE element content.
-    </ul>
-    <h2>21 May 2009</h2>
-    <ul>
-      <li>Rewrote to improve performance on large files.
-        See <a href="http://mikesamuel.blogspot.com/2009/05/efficient-parsing-in-javascript.html">benchmarks</a>.</li>
-      <li>Fixed bugs with highlighting of Haskell line comments, Lisp
-        number literals, Lua strings, C preprocessor directives,
-        newlines in Wiki code on Windows, and newlines in IE6.</li>
-    </ul>
-    <h2>14 August 2009</h2>
-    <ul>
-      <li>Fixed prettifying of <code>&lt;code&gt;</code> blocks with embedded newlines.
-    </ul>
-    <h2>3 October 2009</h2>
-    <ul>
-      <li>Fixed prettifying of XML/HTML tags that contain uppercase letters.
-    </ul>
-    <h2>19 July 2010</h2>
-    <ul>
-      <li>Added support for line numbers.  Bug
-        <a href="http://code.google.com/p/google-code-prettify/issues/detail?id=22"
-         >22</a></li>
-      <li>Added YAML support.  Bug
-        <a href="http://code.google.com/p/google-code-prettify/issues/detail?id=123"
-         >123</a></li>
-      <li>Added VHDL support courtesy Le Poussin.</li>
-      <li>IE performance improvements.  Bug
-        <a href="http://code.google.com/p/google-code-prettify/issues/detail?id=102"
-         >102</a> courtesy jacobly.</li>
-      <li>A variety of markup formatting fixes courtesy smain and thezbyg.</li>
-      <li>Fixed copy and paste in IE[678].
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<title>变更日志</title>
+</head>
+<body bgcolor="white">
+<a href="README.html" style="float:right">自述文件</a>
+<h1>已知问题</h1>
+<ul>
+<li>Perl 格式化非常糟糕。一部分原因是作者比较懒，另一部分原因是<a href="http://www.perlmonks.org/?node_id=663393">难以</a>解析 Perl。<li>在某些浏览器中，<code>文本中包含换行符的&lt;code&gt;元素，如果使用 CSS 指定了</code>white-space:pre<code>，并且该元素在执行去除操作时没有附加到文档，那么这些换行符将被错误地去除。此外，在 IE 6 上，所有换行符都将从</code>&lt;code&gt;<code>元素中去除，因为 IE6 生成</code>innerHTML<code>的方式所致。解决方法：对于包含换行符的代码，使用</code>&lt;pre&gt;<code>。</code>变更日志</li></li></ul>
+<h1>2007 年 3 月 29 日</h1>
+<h2>为 PHP 支持添加了</h2>
+<ul>
+<li>测试<a href="tests/prettify_test.html#PHP">，以解决</a>问题 3<a href="http://code.google.com/p/google-code-prettify/issues/detail?id=3">。</a>修复了<li>bug<a href="http://code.google.com/p/google-code-prettify/issues/detail?id=6">：</a>prettyPrintOne<code>没有停止。这无法通过正常的入口点访问。</code>修复了<li>bug<a href="http://code.google.com/p/google-code-prettify/issues/detail?id=4">：递归进入未正确关闭的 script 块或 PHP 标记不会静默地删除内容。 (</a>测试<a href="tests/prettify_test.html#issue4">)</a>修复了<li>bug<a href="http://code.google.com/p/google-code-prettify/issues/detail?id=8">：吞噬制表符 (</a>测试<a href="tests/prettify_test.html#issue8">)</a>修复了实体处理，因此警告<li>警告：请正确转义小于号。<blockquote>
+<p>x&amp;lt;y<tt>而不是</tt>x&lt;y<tt>，并使用</tt>"<tt>而不是</tt>&amp;quot;<tt>作为字符串分隔符，不再适用。</tt>添加了 noisefree 的 C#</p>
+</blockquote>补丁<li>添加了一个<a href="http://code.google.com/p/google-code-prettify/issues/detail?id=4">发行版</a>
+<li>，其中删除了注释和空格，以将下载大小从 45.5kB 减小到 12.8kB。<a href="http://google-code-prettify.googlecode.com/files/prettify-small.zip">2008 年 7 月 4 日</a>添加了</li></li></li></li></li></li></li></ul>
+<h2>语言特定的格式化程序</h2>
+<ul>
+<li>，这些格式化程序由<a href="http://code.google.com/p/google-code-prettify/issues/detail?id=17">lang-&lt;语言文件扩展名&gt;</a>的存在触发。<code>修复了</code></li>
+<li>bug<a href="http://code.google.com/p/google-code-prettify/issues/detail?id=29">：python 处理</a>'''string'''<code>修复了 bug：</code>
+<li>/<code>在正则表达式</code>[字符集] 中不应结束正则表达式<code>2008 年 7 月 5 日</code>
+</li></li></ul>
+<h2>为 Lisp 和 Lua 定义了语言扩展</h2>
+<ul>
+<li>2008 年 7 月 14 日
+</li></ul>
+<h2>F#、OCAML、SQL 的语言处理程序</h2>
+<ul>
+<li>支持
+<li>nocode<code>跨度，以允许嵌入行号和代码注释，这些行号和代码注释不应被样式化，也不应影响美化代码的标记化。请参阅问题 22</code>测试用例<a href="tests/prettify_test.html#issue22">。</a>2009 年 1 月 6 日
+</li></li></ul>
+<h2>Visual Basic、Haskell、CSS 和 WikiText 的语言处理程序</h2>
+<ul>
+<li>将</li>
+<li>.mxml<tt>扩展名添加到 Flex</tt>MXML 文件的标记样式处理程序。请参阅问题 37<a href="http://en.wikipedia.org/wiki/MXML">。将</a>.m<a href="http://code.google.com/p/google-code-prettify/issues/detail?id=37">扩展名添加到 C 样式处理程序，以便 Objective C 源文件正确突出显示。请参阅问题 58</a>。更改了 HTML 词法分析器以使用与 wiki 语言处理程序相同的嵌入式源机制，并更改为使用注册的 CSS 处理程序来处理 STYLE 元素的内容。<li>2009 年 5 月 21 日<tt>重写以提高处理大型文件的性能。请参阅</tt>基准测试<a href="http://code.google.com/p/google-code-prettify/issues/detail?id=58">。修复了 Haskell 行注释、Lisp 数字字面量、Lua 字符串、C 预处理器指令、Windows 上 Wiki 代码中的换行符以及 IE6 中的换行符的突出显示问题。</a>2009 年 8 月 14 日<li>修复了嵌入换行符的&lt;code&gt;块的美化。</li></li></li></ul>
+<h2>2009 年 10 月 3 日</h2>
+<ul>
+<li>修复了包含大写字母的 XML/HTML 标记的美化。<a href="http://mikesamuel.blogspot.com/2009/05/efficient-parsing-in-javascript.html">2010 年 7 月 19 日</a>增加了对行号的支持。Bug</li>
+<li>22</li>
+</ul>
+<h2>增加了 YAML 支持。Bug</h2>
+<ul>
+<li>123<code>增加了 VHDL 支持，感谢 Le Poussin。</code>IE 性能改进。Bug</li></ul>
+<h2>102</h2>
+<ul>
+<li>，感谢 jacobly。</li></ul>
+<h2>各种标记格式修复，感谢 smain 和 thezbyg。</h2>
+<ul>
+<li>修复了 IE[678] 中的复制和粘贴问题。<a href="http://code.google.com/p/google-code-prettify/issues/detail?id=22">更改了输出以使用</a></li>
+<li>&amp;#160;<a href="http://code.google.com/p/google-code-prettify/issues/detail?id=123">而不是</a></li>
+<li>&amp;nbsp;</li>
+<li>，以便输出在嵌入到 XML 中时能够正常工作。Bug<a href="http://code.google.com/p/google-code-prettify/issues/detail?id=102">108</a>。</li>
+<li>A variety of markup formatting fixes courtesy smain and thezbyg.</li>
+<li>Fixed copy and paste in IE[678].
       <li>Changed output to use <code>&amp;#160;</code> instead of
         <code>&amp;nbsp;</code> so that the output works when embedded in XML.
         Bug
-        <a href="http://code.google.com/p/google-code-prettify/issues/detail?id=108"
-         >108</a>.</li>
-    </ul>
-  </body>
+        <a href="http://code.google.com/p/google-code-prettify/issues/detail?id=108">108</a>.</li>
+</li></ul>
+</body>
 </html>

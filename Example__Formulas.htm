@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+HTML
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="generator" content="Adobe RoboHelp 2015" />
-<title>Example: Formulas</title>
-<link rel="StyleSheet" href="default.css" type="text/css" />
-<script type="text/javascript" language="JavaScript">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Adobe RoboHelp 2015" name="generator"/>
+<title>示例：公式</title>
+<link href="default.css" rel="StyleSheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
 //<![CDATA[
 function reDo() {
   if (innerWidth != origWidth || innerHeight != origHeight)
@@ -29,77 +29,75 @@ visibility:hidden; }
 p.WebHelpNavBar { text-align:right; }
 -->
 </style>
-
-<script type="text/javascript" src="template/scripts/rh.min.js"></script>
-<script type="text/javascript" src="template/scripts/common.min.js"></script>
-<script type="text/javascript" src="template/scripts/topic.min.js"></script>
-<script type="text/javascript" src="template/scripts/constants.js"></script>
-<script type="text/javascript" src="template/scripts/utils.js"></script>
-<script type="text/javascript" src="template/scripts/mhutils.js"></script>
-<script type="text/javascript" src="template/scripts/mhlang.js"></script>
-<script type="text/javascript" src="template/scripts/mhver.js"></script>
-<script type="text/javascript" src="template/scripts/settings.js"></script>
-<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
-<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
-<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
-<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
-<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
- <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
-<script type="text/javascript" >
+<script src="template/scripts/rh.min.js" type="text/javascript"></script>
+<script src="template/scripts/common.min.js" type="text/javascript"></script>
+<script src="template/scripts/topic.min.js" type="text/javascript"></script>
+<script src="template/scripts/constants.js" type="text/javascript"></script>
+<script src="template/scripts/utils.js" type="text/javascript"></script>
+<script src="template/scripts/mhutils.js" type="text/javascript"></script>
+<script src="template/scripts/mhlang.js" type="text/javascript"></script>
+<script src="template/scripts/mhver.js" type="text/javascript"></script>
+<script src="template/scripts/settings.js" type="text/javascript"></script>
+<script src="template/scripts/XmlJsReader.js" type="text/javascript"></script>
+<script src="template/scripts/loadparentdata.js" type="text/javascript"></script>
+<script src="template/scripts/loadscreen.js" type="text/javascript"></script>
+<script src="template/scripts/loadprojdata.js" type="text/javascript"></script>
+<script src="template/scripts/mhtopic.js" type="text/javascript"></script>
+<link href="template/styles/topic.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
 gRootRelPath = ".";
 gCommonRootRelPath = ".";
 gTopicId = "5.3.1.0_7";
 </script>
- <meta name="topic-breadcrumbs" content="Script and Plugin Reference > In-Game UI Documentation > Getting Started" />
+<meta content="Script and Plugin Reference &gt; In-Game UI Documentation &gt; Getting Started" name="topic-breadcrumbs"/>
 </head>
 <body>
-<script type="text/javascript" src="./ehlpdhtm.js"></script>
-
-<div style="width: 100%; position: relative;" id="header">
- <p class="Topic_Heading"><span style="font-family: 'Book Antiqua', serif; font-size: 24pt;">Example: Formulas</span></p>
+<script src="./ehlpdhtm.js" type="text/javascript"></script>
+<div id="header" style="width: 100%; position: relative;">
+<p class="Topic_Heading"><span style="font-family: 'Book Antiqua', serif; font-size: 24pt;">示例：公式</span></p>
 </div>
-<p>&#160;</p>
-<p><span class="Topic_Start">W</span>ith formulas you are getting a lot more control about data compared to regular data-bindings. Basically, formulas are just anonymous functions defined for a control and executed under specific conditions. Let's take a look at Layout_CGGalleryEntry:</p>
-<p>&#160;</p>
+<p> </p>
+<p><span class="Topic_Start">W</span>与常规数据绑定相比，公式为您提供了更多关于数据的控制。基本上，公式只是为控件定义的匿名函数，并在特定条件下执行。让我们来看看 Layout_CGGalleryEntry：</p>
+<p> </p>
 <p><span class="Code">{</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"type": "ui.FreeLayout",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"orientation": "vertical",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"preload": {</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"graphics": [</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{ "path": ($ -&gt; [$tempFields.selectedImage]), "image": ($ -&gt; o)},</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{ "path": ["locked"], "image": ($ -&gt; o)}</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;]</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;},</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"frame": [0, 0, Graphics.width, Graphics.height],</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"controls": [</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "ui.Image",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"frame": [0, 0],</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</span><span class="Code" style="font-weight: bold;">"formulas": [$ -&gt; o.image = $tempFields.selectedImage],</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"action": { "name": "executeFormulas", "params": [$ -&gt; $backButton.visible = !$backButton.visible] }</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "ui.Button",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"id": "backButton",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"params": { "text": { "lcId": "B0FD4BF121D9E44E7589CDD35869F86F2227", "defaultText": "Back" }, "action": { "name": "previousLayout" } },</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"frame": [Graphics.width - 170, Graphics.height - 65, 150, 45],</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"order": 1</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;]</span></p>
+<p><span class="Code">"类型": "ui.FreeLayout",</span></p>
+<p><span class="Code">"方向": "vertical",</span></p>
+<p><span class="Code">"预加载": {</span></p>
+<p><span class="Code">"graphics": [</span></p>
+<p><span class="Code">{ "路径": ($ -&gt; [$tempFields.selectedImage]), "图像": ($ -&gt; o)},</span></p>
+<p><span class="Code">{ "路径": ["locked"], "图像": ($ -&gt; o)}</span></p>
+<p><span class="Code">]</span></p>
+<p><span class="Code">},</span></p>
+<p><span class="Code">"框架": [0, 0, Graphics.width, Graphics.height],</span></p>
+<p><span class="Code">"控件": [</span></p>
+<p><span class="Code">{</span></p>
+<p><span class="Code">"类型": "ui.Image",</span></p>
+<p><span class="Code">"框架": [0, 0],</span></p>
+<p><span class="Code">            </span><span class="Code" style="font-weight: bold;">"公式": [$ -&gt; o.image = $tempFields.selectedImage],</span></p>
+<p><span class="Code">"动作": { "名称": "executeFormulas", "参数": [$ -&gt; $backButton.visible = !$backButton.visible] }</span></p>
+<p><span class="Code">},</span></p>
+<p><span class="Code">{</span></p>
+<p><span class="Code">"类型": "ui.Button",</span></p>
+<p><span class="Code">"id": "backButton",</span></p>
+<p><span class="Code">"参数": { "文本": { "lcId": "B0FD4BF121D9E44E7589CDD35869F86F2227", "defaultText": "返回" }, "动作": { "名称": "previousLayout" } },</span></p>
+<p><span class="Code">"框架": [Graphics.width - 170, Graphics.height - 65, 150, 45],</span></p>
+<p><span class="Code">"order": 1</span></p>
 <p><span class="Code">}</span></p>
-<p>&#160;</p>
-<p>As we can see, formulas are defined using the formulas-property, which is an array taking multiple formulas an executes then synchronously one after another. In this example, the formula set the object's image property to $tempFields.selectedImage which contains the name of the image selected in CGGallery to display it full-size. While this case could also be solved with a regular data bindings, more complex cases cannot. Also, formulas a faster then regular data bindings.</p>
-<p>&#160;</p>
-<p>A formula is defined using the $ symbol which is actually nothing more than a shortcut for:</p>
-<p>&#160;</p>
+<p><span class="Code">]</span></p>
+<p><span class="Code">}</span></p>
+<p> </p>
+<p>正如我们所见，公式使用 formulas 属性定义，它是一个数组，接受多个公式并同步地逐个执行。在此示例中，公式将对象的 image 属性设置为 $tempFields.selectedImage，其中包含 CGGallery 中选择的图像的名称，以便全屏显示。虽然这种情况也可以通过常规数据绑定解决，但更复杂的情况则不能。此外，公式比常规数据绑定更快。</p>
+<p> </p>
+<p>公式使用 $ 符号定义，它实际上只是一个快捷方式：</p>
+<p> </p>
 <p><span class="Code">new ui.Formula( &lt;function&gt; )</span></p>
-<p>&#160;</p>
-<p>However, its recommended using the $-function which is defines as:</p>
-<p>&#160;</p>
+<p> </p>
+<p>但是，建议使用定义的 $ 函数：</p>
+<p> </p>
 <p>window.$ = (f, data, event) -&gt; new ui.Formula(f, data || null, event || null)</p>
-<p>&#160;</p>
-<p>While f-parameter is the function executed, the other two parameters are optional. Check out the <a href="igui_doc/index.html">In Game UI API Reference</a> for more information. You will also see that formulas can used in other places than the formulas-property.</p>
-<p>&#160;</p>
-<p>However, one question now is why data-bindings still exist if formulas are more powerful and faster? Well, data bindings are easier to understand for a beginner and there are cases which cannot be solved in a comfortable way using formulas. One example is the basic-animation "changeTo" we have used in the animations example. It takes a binding-expression instead of a formula and the animation is able to read and write to that field(check out ui.Component_BindingHandler). If we specify a formula here, it would be necessary to define two formulas: One for reading the value, one for writing the value. With a data-binding, we can just specify a field-name and done, which makes it more easy to use especially for beginners.</p>
+<p> </p>
+<p>虽然 f 参数是要执行的函数，但其他两个参数是可选的。查看<a href="igui_doc/index.html">游戏内 UI API 参考</a>了解更多信息。您还会看到公式可以在 formulas 属性之外的其他地方使用。</p>
+<p> </p>
+<p>然而，现在一个问题是，如果公式比数据绑定更强大和更快，为什么数据绑定仍然存在？嗯，数据绑定对初学者来说更容易理解，而且有些情况用公式不容易解决。一个例子是我们之前在动画示例中使用的基本动画“changeTo”。它接受一个绑定表达式而不是一个公式，动画能够读写该字段（查看 ui.Component_BindingHandler）。如果我们在这里指定一个公式，则需要定义两个公式：一个用于读取值，一个用于写入值。使用数据绑定，我们可以只指定一个字段名即可完成，这使得它更容易使用，特别是对初学者而言。</p>
 </body>
 </html>

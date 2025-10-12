@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+B
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="generator" content="Adobe RoboHelp 2015" />
-<title>Image Map and Hotspot Tutorial</title>
-<link rel="StyleSheet" href="default.css" type="text/css" />
-<script type="text/javascript" language="JavaScript">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Adobe RoboHelp 2015" name="generator"/>
+<title>efore we move to the Evented UI series, we will need to understand</title>
+<link href="default.css" rel="StyleSheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
 //<![CDATA[
 function reDo() {
   if (innerWidth != origWidth || innerHeight != origHeight)
@@ -29,116 +29,114 @@ visibility:hidden; }
 p.WebHelpNavBar { text-align:right; }
 -->
 </style>
-
-<script type="text/javascript" src="template/scripts/rh.min.js"></script>
-<script type="text/javascript" src="template/scripts/common.min.js"></script>
-<script type="text/javascript" src="template/scripts/topic.min.js"></script>
-<script type="text/javascript" src="template/scripts/constants.js"></script>
-<script type="text/javascript" src="template/scripts/utils.js"></script>
-<script type="text/javascript" src="template/scripts/mhutils.js"></script>
-<script type="text/javascript" src="template/scripts/mhlang.js"></script>
-<script type="text/javascript" src="template/scripts/mhver.js"></script>
-<script type="text/javascript" src="template/scripts/settings.js"></script>
-<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
-<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
-<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
-<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
-<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
- <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
-<script type="text/javascript" >
+<script src="template/scripts/rh.min.js" type="text/javascript"></script>
+<script src="template/scripts/common.min.js" type="text/javascript"></script>
+<script src="template/scripts/topic.min.js" type="text/javascript"></script>
+<script src="template/scripts/constants.js" type="text/javascript"></script>
+<script src="template/scripts/utils.js" type="text/javascript"></script>
+<script src="template/scripts/mhutils.js" type="text/javascript"></script>
+<script src="template/scripts/mhlang.js" type="text/javascript"></script>
+<script src="template/scripts/mhver.js" type="text/javascript"></script>
+<script src="template/scripts/settings.js" type="text/javascript"></script>
+<script src="template/scripts/XmlJsReader.js" type="text/javascript"></script>
+<script src="template/scripts/loadparentdata.js" type="text/javascript"></script>
+<script src="template/scripts/loadscreen.js" type="text/javascript"></script>
+<script src="template/scripts/loadprojdata.js" type="text/javascript"></script>
+<script src="template/scripts/mhtopic.js" type="text/javascript"></script>
+<link href="template/styles/topic.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
 gRootRelPath = ".";
 gCommonRootRelPath = ".";
 gTopicId = "3.2.6.0_1";
 </script>
- <meta name="topic-breadcrumbs" content="Beginner's Guide > Customizing your Game > UI Series" />
+<meta content="Beginner's Guide &gt; Customizing your Game &gt; UI Series" name="topic-breadcrumbs"/>
 </head>
 <body>
-<script type="text/javascript" src="./ehlpdhtm.js"></script>
-
-<div style="width: 100%; position: relative;" id="header">
- <p class="Topic_Heading">Image Map and Hotspot Tutorial</p>
+<script src="./ehlpdhtm.js" type="text/javascript"></script>
+<div id="header" style="width: 100%; position: relative;">
+<p class="Topic_Heading">Image Maps</p>
 </div>
-<p>&#160;</p>
-<p><span class="Topic_Start">B</span>efore we move to the Evented UI series, we will need to understand <a href="Picture.htm#Show_Image_Map">Image Maps</a> and <a href="Picture.htm#Add_Hotspot">Hotspots</a>. They are one of the ways for you to create your own customized GUI.</p>
-<p>&#160;</p>
+<p> </p>
+<p><span class="Topic_Start">and</span>Hotspots<a href="Picture.htm#Show_Image_Map">. They are one of the ways for you to create your own customized GUI.</a>什么是图像地图？<a href="Picture.htm#Add_Hotspot">一个</a>图像地图</p>
+<p> </p>
 <p style="text-align: center;"><script>
 	if(supports_mp4_video()) 
 		document.write("<video  controls=\"controls\"    style=\"border: none;; max-width: 100%\"><source src=\"ImageMapHotspotTutorial.mp4\" type=\"video/mp4\" />");
-</script><object type="video/quicktime" data="ImageMapHotspotTutorial.mp4" style="border: none;" height="300px" width="400px"><param name="autoplay" value="false" /><param name="autostart" value="false" /><param name="ShowControls" value="1" /><param name="controller" value="true" /></object><script>
+</script><object data="ImageMapHotspotTutorial.mp4" height="300px" style="border: none;" type="video/quicktime" width="400px"><param name="autoplay" value="false"/><param name="autostart" value="false"/><param name="ShowControls" value="1"/><param name="controller" value="true"/></object><script>
 if(supports_mp4_video()) document.write("</video>");</script></p>
-<p style="text-align: center;">&#160;</p>
-<p style="text-align: center;">&#160;</p>
-<p class="Sub_Heading">What is an Image Map?</p>
-<p>An <a href="Picture.htm#Show_Image_Map">Image Map</a> is an image with clickable areas, known as <a href="Picture.htm#Add_Hotspot">Hotspots</a>, that are triggered depending on the assigned state. To learn of the function of its each specific command, the link provides a quick overview of their functions.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Preparing your Graphics</p>
-<p>We need to prepare two instances of our image map. <span style="font-weight: bold;">It's important to remember that both versions of the image must be at the same size.</span></p>
-<p><img src="ImageMapHotspotTutorial_en.jpg" alt="" style=" border:none; width:100%; max-width:640px;" border="0" /></p>
-<p>&#160;</p>
+<p style="text-align: center;"> </p>
+<p style="text-align: center;"> </p>
+<p class="Sub_Heading">是一个带有可点击区域的图像，称为</p>
+<p>热点<a href="Picture.htm#Show_Image_Map">，它们根据指定的**状态**被触发。 要了解其每个特定命令的功能，链接提供了对其功能的快速概述。</a>准备你的 Graphics<a href="Picture.htm#Add_Hotspot">我们需要准备图像地图的两个实例。</a>记住，图像的两个版本必须是相同的大小。</p>
+<p> </p>
+<p class="Sub_Heading">Ground</p>
+<p>- 此图像是图像地图的“空闲”状态。<span style="font-weight: bold;">Hover</span></p>
+<p><img alt="" border="0" src="ImageMapHotspotTutorial_en.jpg" style=" border:none; width:100%; max-width:640px;"/></p>
+<p> </p>
 <ul style="list-style: disc;">
 <li style="margin-left: -20px;">
-<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Ground</b> - This image is the 'idle' state of your image map.</p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">- 此图像是图像地图的“激活”状态。 这将是当你将鼠标悬停或点击其</b>热点</p>
 </li>
 <li style="margin-left: -20px;">
-<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">Hover</b> - This image is the 'activated' state of your image map. This is what the image would look like if you hover or click one of its <a href="Picture.htm#Add_Hotspot">Hotspots</a>.</p>
+<p class="MsoNormal"><b style="mso-bidi-font-weight: normal;">之一时图像的样子。</b>完成后，<a href="Picture.htm#Add_Hotspot">让我们将图像导入我们的游戏</a>。 只需将它们放在 Pictures 文件夹中。 我是这样做的：</p>
 </li>
 </ul>
-<p>&#160;</p>
-<p>After we're done, <a href="Importing_Resources.htm">let's import the images into our game</a>. Just put them in the Pictures Folder. This is how I made mine:</p>
-<p><img src="ImageMapTut2.jpg" alt="" style=" border:none; width:100%; max-width:522px;" border="0" /></p>
-<p>&#160;</p>
-<p class="Sub_Heading">Setting up the Image Map</p>
-<p>Now that we have prepared the resources, it's time to add them in the Scene Content!</p>
-<p>&#160;</p>
+<p> </p>
+<p>设置图像地图<a href="Importing_Resources.htm">现在我们已经准备好了资源，是时候将它们添加到 Scene Content 中了！</a>创建一个新场景。</p>
+<p><img alt="" border="0" src="ImageMapTut2.jpg" style=" border:none; width:100%; max-width:522px;"/></p>
+<p> </p>
+<p class="Sub_Heading">Click the</p>
+<p>Picture -&gt; Show Image Map.</p>
+<p> </p>
 <ul style="list-style: disc;">
-<li>Create a new Scene.</li>
-<li>Click the <img src="PicCmd.png" alt="" style=" border:none; width:100%; max-width:22px;" border="0" /><span style="font-weight: bold;">Picture -&gt; Show Image Map.</span></li>
+<li>如前所述，只需设置图像在各自的 Ground 和 Hover 位置。</li>
+<li>OPTIONAL:<img alt="" border="0" src="PicCmd.png" style=" border:none; width:100%; max-width:22px;"/><span style="font-weight: bold;">Click the arrow and select</span></li>
 </ul>
-<p style="text-align: center; font-weight: bold;"><img src="ImageMapTut1.jpg" alt="" style=" border:none; width:100%; max-width:902px;" border="0" /></p>
-<p style="text-align: center; font-weight: normal;">&#160;</p>
+<p style="text-align: center; font-weight: bold;"><img alt="" border="0" src="ImageMapTut1.jpg" style=" border:none; width:100%; max-width:902px;"/></p>
+<p style="text-align: center; font-weight: normal;"> </p>
 <ul style="list-style: disc;">
-<li>As stated earlier, just set the images on their respective Ground and Hover locations.</li>
-<li><span style="font-weight: bold;">OPTIONAL:</span> <span>Click the arrow and select</span> <span style="font-weight: bold;">Animation -&gt; Blending</span> <span>so the image map fades in.</span></li>
+<li>Animation -&gt; Blending</li>
+<li><span style="font-weight: bold;">so the image map fades in.</span> <span>设置热点</span> <span style="font-weight: bold;">Click the</span> <span>Hotspots</span></li>
 </ul>
-<p>&#160;</p>
-<p class="Sub_Heading"><a name="Setting_up_the_Hotspots" id="Setting_up_the_Hotspots"></a>Setting up the Hotspots</p>
+<p> </p>
+<p class="Sub_Heading"><a id="Setting_up_the_Hotspots" name="Setting_up_the_Hotspots"></a>button.</p>
 <ul style="list-style: disc;">
-<li>Click the <span style="font-weight: bold;">Hotspots</span> button.</li>
-<li>A window will appear. Press <span style="font-weight: bold;">Add Hotspot</span>. You will notice that a small box will appear. If your background is too dark, just remember that a Hotspot will always spawn at the top left.<br />
-<img src="ImageMapTut3.jpg" alt="" style=" border:none; width:100%; max-width:260px;" border="0" /></li>
-<li>Now just set your Hotspots. Afterwards, either <span style="font-weight: bold;">Double Click</span> or <span style="font-weight: bold;">Right Click -&gt; Properties</span> the box<span>. You will see a small window called</span> <span style="font-weight: bold;">Hotspot Properties</span>. Here's a video to show how to do so:</li>
+<li>将出现一个窗口。 按<span style="font-weight: bold;">Add Hotspot</span>。 你会注意到出现一个小框。 如果你的背景太暗，请记住热点将始终出现在左上角。</li>
+<li>现在只需设置你的热点。 之后，要么<span style="font-weight: bold;">双击</span>，要么<br/>
+<img alt="" border="0" src="ImageMapTut3.jpg" style=" border:none; width:100%; max-width:260px;"/></li>
+<li>右键单击 -&gt; 属性<span style="font-weight: bold;">该框。 你会看到一个名为</span>Hotspot Properties<span style="font-weight: bold;">的小窗口。 以下视频将展示如何操作：</span>单击<span>Jump To</span> <span style="font-weight: bold;">按钮并设置一个标签。 对我来说，我分别使用了“ask”和“leave”。 它看起来会是这样的：</span>继续执行此操作，直到所有选项都有热点。</li>
 </ul>
 <p style="text-align: center;"><script>
 	if(supports_mp4_video()) 
 		document.write("<video  controls=\"controls\"    style=\"border: none;; max-width: 100%\"><source src=\"ImageMapHotspotTutorial2.mp4\" type=\"video/mp4\" />");
-</script><object type="video/quicktime" data="ImageMapHotspotTutorial2.mp4" style="border: none;" height="300px" width="400px"><param name="autoplay" value="false" /><param name="autostart" value="false" /><param name="ShowControls" value="1" /><param name="controller" value="true" /></object><script>
+</script><object data="ImageMapHotspotTutorial2.mp4" height="300px" style="border: none;" type="video/quicktime" width="400px"><param name="autoplay" value="false"/><param name="autostart" value="false"/><param name="ShowControls" value="1"/><param name="controller" value="true"/></object><script>
 if(supports_mp4_video()) document.write("</video>");</script></p>
 <ul style="list-style: disc;">
 <li>
-<p>Click the button for <span style="font-weight: bold;">Jump To</span> and set a label. For mine, I used "ask" and "leave" respectively. It would look like this:<br />
-<img src="ImageMapTut4.jpg" alt="" style=" border:none; width:100%; max-width:203px;" border="0" /></p>
+<p>设置场景<span style="font-weight: bold;">现在是时候为热点设置响应了。 最简洁的形式看起来是这样的：</span>你必须在<br/>
+<img alt="" border="0" src="ImageMapTut4.jpg" style=" border:none; width:100%; max-width:203px;"/></p>
 </li>
 <li>
-<p>Keep doing this until all the options have a hotspot.</p>
+<p>Image Map</p>
 </li>
 </ul>
-<p>&#160;</p>
-<p class="Sub_Heading">Setting up the Scene</p>
-<p>Now it's time to set up the responses for the hotspots. In its most condensed form, it will look like this:</p>
-<p><img src="ImageMapTut5.jpg" alt="" style=" border:none; width:100%; max-width:938px;" border="0" /></p>
+<p> </p>
+<p class="Sub_Heading">之后和</p>
+<p>Labels</p>
+<p><img alt="" border="0" src="ImageMapTut5.jpg" style=" border:none; width:100%; max-width:938px;"/></p>
 <ul style="list-style: disc;">
-<li>You must add the <a href="Basic.htm#Idle">Idle</a> command after the <a href="Picture.htm#Show_Image_Map">Image Map</a> and before the <a href="Basic.htm#Label">Labels</a>. This prevents the Labels from triggering before you picked <span style="font-style: italic;">or</span> <span>executing a label that isn't supposed to be activated after the correct one was finished.</span></li>
-<li>In order to avoid the user to trigger the hotspot again, especially whenever a response is still being executed, we must <a href="Picture.htm#Erase_Image_Map">erase the image map.</a> However, make sure to add a background if you don't want to leave the user on a black screen.</li>
-<li>Just enter the response to your image maps. This is how mine looked like:<br />
-<img src="ImageMapTut6.jpg" alt="" style=" border:none; width:100%; max-width:928px;" border="0" /></li>
+<li>之前添加<a href="Basic.htm#Idle">Idle</a>命令。 这可以防止标签在你选择之前被触发<a href="Picture.htm#Show_Image_Map">或</a>执行了一个不应该在正确标签完成后被激活的标签。<a href="Basic.htm#Label">为了避免用户在响应执行时再次触发热点，我们必须</a>擦除图像地图。<span style="font-style: italic;">但是，如果你不想让用户看到黑色屏幕，请确保添加背景。</span> <span>只需输入你图像地图的响应。 我的看起来是这样的：</span></li>
+<li>就这样！ 现在你已准备好进入 Evented UI 系列。<a href="Picture.htm#Erase_Image_Map">使用的可爱动物贴纸由</a>Designed by Freepik</li>
+<li>设计。<br/>
+<img alt="" border="0" src="ImageMapTut6.jpg" style=" border:none; width:100%; max-width:928px;"/></li>
 </ul>
-<p>&#160;</p>
-<p>And that's about it! Now you're ready to tackle the Evented UI series.</p>
-<p>&#160;</p>
-<p style="text-align: center;"><img src="Metisnotes8_en.png" alt="" style=" border:none; width:100%; max-width:465px;" border="0" /></p>
-<p style="text-align: center;">&#160;</p>
-<div style="width: 100%; position: relative;" id="footer">
- <p>The cute animal stickers used are <a href="http://www.freepik.com">Designed by Freepik</a>.</p>
+<p> </p>
+<p>HTML</p>
+<p> </p>
+<p style="text-align: center;"><img alt="" border="0" src="Metisnotes8_en.png" style=" border:none; width:100%; max-width:465px;"/></p>
+<p style="text-align: center;"> </p>
+<div id="footer" style="width: 100%; position: relative;">
+<p>导入资源<a href="http://www.freepik.com">导入资源</a>现在我们开始准备制作我们的游戏，一个非常重要的步骤是通过资源管理器</p>
 </div>
 </body>
 </html>

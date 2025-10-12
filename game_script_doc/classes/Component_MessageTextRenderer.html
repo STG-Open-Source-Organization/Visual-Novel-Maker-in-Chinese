@@ -1,3209 +1,1845 @@
-<!DOCTYPE html>
+html
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Component_MessageTextRenderer</title>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
-    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
-    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
-    <link rel="icon" href="../assets/favicon.ico">
-    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+<meta charset="utf-8"/>
+<title>Component_MessageTextRenderer</title>
+<link href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css" rel="stylesheet"/>
+<link href="../assets/vendor/prettify/prettify-min.css" rel="stylesheet"/>
+<link href="../assets/css/main.css" id="site_styles" rel="stylesheet"/>
+<link href="../assets/favicon.ico" rel="icon"/>
+<script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
 </head>
 <body class="yui3-skin-sam">
-
 <div id="doc">
-    <div id="hd" class="yui3-g header">
-        <div class="yui3-u-3-4">
-                <h1><img src="../assets/css/logo.png" title="" width="117" height="52"></h1>
-        </div>
-        <div class="yui3-u-1-4 version">
-            <em>API Docs for: </em>
-        </div>
-    </div>
-    <div id="bd" class="yui3-g">
-
-        <div class="yui3-u-1-4">
-            <div id="docs-sidebar" class="sidebar apidocs">
-                <div id="api-list">
-                    <h2 class="off-left">APIs</h2>
-                    <div id="api-tabview" class="tabview">
-                        <ul class="tabs">
-                            <li><a href="#api-classes">Classes</a></li>
-                            <li><a href="#api-modules">Modules</a></li>
-                        </ul>
-                
-                        <div id="api-tabview-filter">
-                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
-                        </div>
-                
-                        <div id="api-tabview-panel">
-                            <ul id="api-classes" class="apis classes">
-                                <li><a href="../classes/AnimationLoopType.html">AnimationLoopType</a></li>
-                                <li><a href="../classes/AnimationTypes.html">AnimationTypes</a></li>
-                                <li><a href="../classes/AudioManager.html">AudioManager</a></li>
-                                <li><a href="../classes/CircularDistortionEffect.html">CircularDistortionEffect</a></li>
-                                <li><a href="../classes/Colors.html">Colors</a></li>
-                                <li><a href="../classes/CommandFieldFlags.html">CommandFieldFlags</a></li>
-                                <li><a href="../classes/Component.html">Component</a></li>
-                                <li><a href="../classes/Component_ActionHandler.html">Component_ActionHandler</a></li>
-                                <li><a href="../classes/Component_Animation.html">Component_Animation</a></li>
-                                <li><a href="../classes/Component_AnimationExecutor.html">Component_AnimationExecutor</a></li>
-                                <li><a href="../classes/Component_AnimationHandler.html">Component_AnimationHandler</a></li>
-                                <li><a href="../classes/Component_Animator.html">Component_Animator</a></li>
-                                <li><a href="../classes/Component_BindingHandler.html">Component_BindingHandler</a></li>
-                                <li><a href="../classes/Component_BlendAnimation.html">Component_BlendAnimation</a></li>
-                                <li><a href="../classes/Component_BlurAnimation.html">Component_BlurAnimation</a></li>
-                                <li><a href="../classes/Component_CallSceneInterpreter.html">Component_CallSceneInterpreter</a></li>
-                                <li><a href="../classes/Component_CharacterBehavior.html">Component_CharacterBehavior</a></li>
-                                <li><a href="../classes/Component_CommandInterpreter.html">Component_CommandInterpreter</a></li>
-                                <li><a href="../classes/Component_CommonEventBehavior.html">Component_CommonEventBehavior</a></li>
-                                <li><a href="../classes/Component_Container.html">Component_Container</a></li>
-                                <li><a href="../classes/Component_DataGridBehavior.html">Component_DataGridBehavior</a></li>
-                                <li><a href="../classes/Component_DomainContainer.html">Component_DomainContainer</a></li>
-                                <li><a href="../classes/Component_Draggable.html">Component_Draggable</a></li>
-                                <li><a href="../classes/Component_EventEmitter.html">Component_EventEmitter</a></li>
-                                <li><a href="../classes/Component_FieldAnimation.html">Component_FieldAnimation</a></li>
-                                <li><a href="../classes/Component_Frame.html">Component_Frame</a></li>
-                                <li><a href="../classes/Component_FrameAnimation.html">Component_FrameAnimation</a></li>
-                                <li><a href="../classes/Component_FreeLayoutBehavior.html">Component_FreeLayoutBehavior</a></li>
-                                <li><a href="../classes/Component_GameSceneBehavior.html">Component_GameSceneBehavior</a></li>
-                                <li><a href="../classes/Component_GridLayoutBehavior.html">Component_GridLayoutBehavior</a></li>
-                                <li><a href="../classes/Component_Handler.html">Component_Handler</a></li>
-                                <li><a href="../classes/Component_HotspotBehavior.html">Component_HotspotBehavior</a></li>
-                                <li><a href="../classes/Component_ImageAnimation.html">Component_ImageAnimation</a></li>
-                                <li><a href="../classes/Component_ImageMap.html">Component_ImageMap</a></li>
-                                <li><a href="../classes/Component_InputHandler.html">Component_InputHandler</a></li>
-                                <li><a href="../classes/Component_IntervalTimer.html">Component_IntervalTimer</a></li>
-                                <li><a href="../classes/Component_LayoutBehavior.html">Component_LayoutBehavior</a></li>
-                                <li><a href="../classes/Component_LayoutSceneBehavior.html">Component_LayoutSceneBehavior</a></li>
-                                <li><a href="../classes/Component_Live2D.html">Component_Live2D</a></li>
-                                <li><a href="../classes/Component_Live2DAnimation.html">Component_Live2DAnimation</a></li>
-                                <li><a href="../classes/Component_MaskAnimation.html">Component_MaskAnimation</a></li>
-                                <li><a href="../classes/Component_MessageBehavior.html">Component_MessageBehavior</a></li>
-                                <li><a href="../classes/Component_MessageTextRenderer.html">Component_MessageTextRenderer</a></li>
-                                <li><a href="../classes/Component_MoveAnimation.html">Component_MoveAnimation</a></li>
-                                <li><a href="../classes/Component_NumberInput.html">Component_NumberInput</a></li>
-                                <li><a href="../classes/Component_PanelBehavior.html">Component_PanelBehavior</a></li>
-                                <li><a href="../classes/Component_PathAnimation.html">Component_PathAnimation</a></li>
-                                <li><a href="../classes/Component_PixelateAnimation.html">Component_PixelateAnimation</a></li>
-                                <li><a href="../classes/Component_Quad.html">Component_Quad</a></li>
-                                <li><a href="../classes/Component_RotateAnimation.html">Component_RotateAnimation</a></li>
-                                <li><a href="../classes/Component_SceneBehavior.html">Component_SceneBehavior</a></li>
-                                <li><a href="../classes/Component_ShakeAnimation.html">Component_ShakeAnimation</a></li>
-                                <li><a href="../classes/Component_SpreadLayoutBehavior.html">Component_SpreadLayoutBehavior</a></li>
-                                <li><a href="../classes/Component_Sprite.html">Component_Sprite</a></li>
-                                <li><a href="../classes/Component_StackLayoutBehavior.html">Component_StackLayoutBehavior</a></li>
-                                <li><a href="../classes/Component_TextBehavior.html">Component_TextBehavior</a></li>
-                                <li><a href="../classes/Component_TextInput.html">Component_TextInput</a></li>
-                                <li><a href="../classes/Component_TextRenderer.html">Component_TextRenderer</a></li>
-                                <li><a href="../classes/Component_ThreePartImage.html">Component_ThreePartImage</a></li>
-                                <li><a href="../classes/Component_TilingPlane.html">Component_TilingPlane</a></li>
-                                <li><a href="../classes/Component_TilingSprite.html">Component_TilingSprite</a></li>
-                                <li><a href="../classes/Component_Timer.html">Component_Timer</a></li>
-                                <li><a href="../classes/Component_TintAnimation.html">Component_TintAnimation</a></li>
-                                <li><a href="../classes/Component_UIBehavior.html">Component_UIBehavior</a></li>
-                                <li><a href="../classes/Component_Viewport.html">Component_Viewport</a></li>
-                                <li><a href="../classes/Component_Visual.html">Component_Visual</a></li>
-                                <li><a href="../classes/Component_WebStartBehavior.html">Component_WebStartBehavior</a></li>
-                                <li><a href="../classes/Component_WobbleAnimation.html">Component_WobbleAnimation</a></li>
-                                <li><a href="../classes/Component_ZoomAnimation.html">Component_ZoomAnimation</a></li>
-                                <li><a href="../classes/ContainerDisposeBehavior.html">ContainerDisposeBehavior</a></li>
-                                <li><a href="../classes/DataManager.html">DataManager</a></li>
-                                <li><a href="../classes/DataOptimizer.html">DataOptimizer</a></li>
-                                <li><a href="../classes/Easing.html">Easing</a></li>
-                                <li><a href="../classes/Easings.html">Easings</a></li>
-                                <li><a href="../classes/EasingTypes.html">EasingTypes</a></li>
-                                <li><a href="../classes/Fonts.html">Fonts</a></li>
-                                <li><a href="../classes/Formula.html">Formula</a></li>
-                                <li><a href="../classes/GameManager.html">GameManager</a></li>
-                                <li><a href="../classes/GameTemp.html">GameTemp</a></li>
-                                <li><a href="../classes/Helper.html">Helper</a></li>
-                                <li><a href="../classes/ImageHandling.html">ImageHandling</a></li>
-                                <li><a href="../classes/InterpreterContext.html">InterpreterContext</a></li>
-                                <li><a href="../classes/LanguageManager.html">LanguageManager</a></li>
-                                <li><a href="../classes/LayoutManagementMode.html">LayoutManagementMode</a></li>
-                                <li><a href="../classes/LivePreviewInfo.html">LivePreviewInfo</a></li>
-                                <li><a href="../classes/Main.html">Main</a></li>
-                                <li><a href="../classes/MessageSettings.html">MessageSettings</a></li>
-                                <li><a href="../classes/Object_Animation.html">Object_Animation</a></li>
-                                <li><a href="../classes/Object_Background.html">Object_Background</a></li>
-                                <li><a href="../classes/Object_Base.html">Object_Base</a></li>
-                                <li><a href="../classes/Object_Character.html">Object_Character</a></li>
-                                <li><a href="../classes/Object_CommonEvent.html">Object_CommonEvent</a></li>
-                                <li><a href="../classes/Object_Container.html">Object_Container</a></li>
-                                <li><a href="../classes/Object_DataGrid.html">Object_DataGrid</a></li>
-                                <li><a href="../classes/Object_DomainContainer.html">Object_DomainContainer</a></li>
-                                <li><a href="../classes/Object_Frame.html">Object_Frame</a></li>
-                                <li><a href="../classes/Object_FreeLayout.html">Object_FreeLayout</a></li>
-                                <li><a href="../classes/Object_GridLayout.html">Object_GridLayout</a></li>
-                                <li><a href="../classes/Object_Hotspot.html">Object_Hotspot</a></li>
-                                <li><a href="../classes/Object_Image.html">Object_Image</a></li>
-                                <li><a href="../classes/Object_ImageMap.html">Object_ImageMap</a></li>
-                                <li><a href="../classes/Object_IntervalTimer.html">Object_IntervalTimer</a></li>
-                                <li><a href="../classes/Object_Layout.html">Object_Layout</a></li>
-                                <li><a href="../classes/Object_Live2DCharacter.html">Object_Live2DCharacter</a></li>
-                                <li><a href="../classes/Object_Message.html">Object_Message</a></li>
-                                <li><a href="../classes/Object_MessageArea.html">Object_MessageArea</a></li>
-                                <li><a href="../classes/Object_Panel.html">Object_Panel</a></li>
-                                <li><a href="../classes/Object_Picture.html">Object_Picture</a></li>
-                                <li><a href="../classes/Object_Scene.html">Object_Scene</a></li>
-                                <li><a href="../classes/Object_SpreadLayout.html">Object_SpreadLayout</a></li>
-                                <li><a href="../classes/Object_StackLayout.html">Object_StackLayout</a></li>
-                                <li><a href="../classes/Object_Text.html">Object_Text</a></li>
-                                <li><a href="../classes/Object_ThreePartImage.html">Object_ThreePartImage</a></li>
-                                <li><a href="../classes/Object_Timer.html">Object_Timer</a></li>
-                                <li><a href="../classes/Object_UIElement.html">Object_UIElement</a></li>
-                                <li><a href="../classes/Object_Video.html">Object_Video</a></li>
-                                <li><a href="../classes/Object_Viewport.html">Object_Viewport</a></li>
-                                <li><a href="../classes/Object_Visual.html">Object_Visual</a></li>
-                                <li><a href="../classes/ObjectManager.html">ObjectManager</a></li>
-                                <li><a href="../classes/RecordManager.html">RecordManager</a></li>
-                                <li><a href="../classes/RendererTextLine.html">RendererTextLine</a></li>
-                                <li><a href="../classes/RendererToken.html">RendererToken</a></li>
-                                <li><a href="../classes/ResourceLoader.html">ResourceLoader</a></li>
-                                <li><a href="../classes/ResourceManager.html">ResourceManager</a></li>
-                                <li><a href="../classes/SceneManager.html">SceneManager</a></li>
-                                <li><a href="../classes/Space.html">Space</a></li>
-                                <li><a href="../classes/Sprite_Debug.html">Sprite_Debug</a></li>
-                                <li><a href="../classes/Style.html">Style</a></li>
-                                <li><a href="../classes/UIElementPoint.html">UIElementPoint</a></li>
-                                <li><a href="../classes/UIElementRectangle.html">UIElementRectangle</a></li>
-                                <li><a href="../classes/UIManager.html">UIManager</a></li>
-                                <li><a href="../classes/UpdateBehavior.html">UpdateBehavior</a></li>
-                                <li><a href="../classes/VariableStore.html">VariableStore</a></li>
-                            </ul>
-                
-                
-                            <ul id="api-modules" class="apis modules">
-                                <li><a href="../modules/gs.html">gs</a></li>
-                                <li><a href="../modules/gs.RendererTextLine.html">gs.RendererTextLine</a></li>
-                                <li><a href="../modules/ui.html">ui</a></li>
-                                <li><a href="../modules/vn.html">vn</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="yui3-u-3-4">
-                <div id="api-options">
-                    Show:
-                    <label for="api-show-inherited">
-                        <input type="checkbox" id="api-show-inherited" checked>
-                        Inherited
-                    </label>
-            
-                    <label for="api-show-protected">
-                        <input type="checkbox" id="api-show-protected">
-                        Protected
-                    </label>
-            
-                    <label for="api-show-private">
-                        <input type="checkbox" id="api-show-private">
-                        Private
-                    </label>
-                    <label for="api-show-deprecated">
-                        <input type="checkbox" id="api-show-deprecated">
-                        Deprecated
-                    </label>
-            
-                </div>
-            
-            <div class="apidocs">
-                <div id="docs-main">
-                    <div class="content">
-<h1>Component_MessageTextRenderer Class</h1>
-<div class="box meta">
-
-
-
-            Module: <a href="../modules/gs.html">gs</a>
-
+<div class="yui3-g header" id="hd">
+<div class="yui3-u-3-4">
+<h1><img height="52" src="../assets/css/logo.png" title="" width="117"/></h1>
 </div>
-
-
+<div class="yui3-u-1-4 version">
+<em>API 文档：</em>
+</div>
+</div>
+<div class="yui3-g" id="bd">
+<div class="yui3-u-1-4">
+<div class="sidebar apidocs" id="docs-sidebar">
+<div id="api-list">
+<h2 class="off-left">API</h2>
+<div class="tabview" id="api-tabview">
+<ul class="tabs">
+<li><a href="#api-classes">类</a></li>
+<li><a href="#api-modules">模块</a></li>
+</ul>
+<div id="api-tabview-filter">
+<input id="api-filter" placeholder="Type to filter APIs" type="search"/>
+</div>
+<div id="api-tabview-panel">
+<ul class="apis classes" id="api-classes">
+<li><a href="../classes/AnimationLoopType.html">AnimationLoopType (动画循环类型)</a></li>
+<li><a href="../classes/AnimationTypes.html">AnimationTypes (动画类型)</a></li>
+<li><a href="../classes/AudioManager.html">AudioManager (音频管理器)</a></li>
+<li><a href="../classes/CircularDistortionEffect.html">CircularDistortionEffect (圆形扭曲效果)</a></li>
+<li><a href="../classes/Colors.html">Colors (颜色)</a></li>
+<li><a href="../classes/CommandFieldFlags.html">CommandFieldFlags (命令字段标志)</a></li>
+<li><a href="../classes/Component.html">Component (组件)</a></li>
+<li><a href="../classes/Component_ActionHandler.html">Component_ActionHandler (组件_动作处理器)</a></li>
+<li><a href="../classes/Component_Animation.html">Component_Animation (组件_动画)</a></li>
+<li><a href="../classes/Component_AnimationExecutor.html">Component_AnimationExecutor (组件_动画执行器)</a></li>
+<li><a href="../classes/Component_AnimationHandler.html">Component_AnimationHandler (组件_动画处理器)</a></li>
+<li><a href="../classes/Component_Animator.html">Component_Animator (组件_动画器)</a></li>
+<li><a href="../classes/Component_BindingHandler.html">Component_BindingHandler (组件_绑定处理器)</a></li>
+<li><a href="../classes/Component_BlendAnimation.html">Component_BlendAnimation (组件_混合动画)</a></li>
+<li><a href="../classes/Component_BlurAnimation.html">Component_BlurAnimation (组件_模糊动画)</a></li>
+<li><a href="../classes/Component_CallSceneInterpreter.html">Component_CallSceneInterpreter (组件_调用场景解释器)</a></li>
+<li><a href="../classes/Component_CharacterBehavior.html">Component_CharacterBehavior (组件_角色行为)</a></li>
+<li><a href="../classes/Component_CommandInterpreter.html">Component_CommandInterpreter (组件_命令解释器)</a></li>
+<li><a href="../classes/Component_CommonEventBehavior.html">Component_CommonEventBehavior (组件_通用事件行为)</a></li>
+<li><a href="../classes/Component_Container.html">Component_Container (组件_容器)</a></li>
+<li><a href="../classes/Component_DataGridBehavior.html">Component_DataGridBehavior (组件_数据网格行为)</a></li>
+<li><a href="../classes/Component_DomainContainer.html">Component_DomainContainer (组件_域容器)</a></li>
+<li><a href="../classes/Component_Draggable.html">Component_Draggable (组件_可拖拽)</a></li>
+<li><a href="../classes/Component_EventEmitter.html">Component_EventEmitter (组件_事件发射器)</a></li>
+<li><a href="../classes/Component_FieldAnimation.html">Component_FieldAnimation (组件_字段动画)</a></li>
+<li><a href="../classes/Component_Frame.html">Component_Frame (组件_帧)</a></li>
+<li><a href="../classes/Component_FrameAnimation.html">Component_FrameAnimation (组件_帧动画)</a></li>
+<li><a href="../classes/Component_FreeLayoutBehavior.html">Component_FreeLayoutBehavior (组件_自由布局行为)</a></li>
+<li><a href="../classes/Component_GameSceneBehavior.html">Component_GameSceneBehavior (组件_游戏场景行为)</a></li>
+<li><a href="../classes/Component_GridLayoutBehavior.html">Component_GridLayoutBehavior (组件_网格布局行为)</a></li>
+<li><a href="../classes/Component_Handler.html">Component_Handler (组件_处理器)</a></li>
+<li><a href="../classes/Component_HotspotBehavior.html">Component_HotspotBehavior (组件_热点行为)</a></li>
+<li><a href="../classes/Component_ImageAnimation.html">Component_ImageAnimation (组件_图像动画)</a></li>
+<li><a href="../classes/Component_ImageMap.html">Component_ImageMap (组件_图像地图)</a></li>
+<li><a href="../classes/Component_InputHandler.html">Component_InputHandler (组件_输入处理器)</a></li>
+<li><a href="../classes/Component_IntervalTimer.html">Component_IntervalTimer (组件_间隔定时器)</a></li>
+<li><a href="../classes/Component_LayoutBehavior.html">Component_LayoutBehavior (组件_布局行为)</a></li>
+<li><a href="../classes/Component_LayoutSceneBehavior.html">Component_LayoutSceneBehavior (组件_布局场景行为)</a></li>
+<li><a href="../classes/Component_Live2D.html">Component_Live2D (组件_Live2D)</a></li>
+<li><a href="../classes/Component_Live2DAnimation.html">Component_Live2DAnimation (组件_Live2D动画)</a></li>
+<li><a href="../classes/Component_MaskAnimation.html">Component_MaskAnimation (组件_遮罩动画)</a></li>
+<li><a href="../classes/Component_MessageBehavior.html">Component_MessageBehavior (组件_消息行为)</a></li>
+<li><a href="../classes/Component_MessageTextRenderer.html">Component_MessageTextRenderer (组件_消息文本渲染器)</a></li>
+<li><a href="../classes/Component_MoveAnimation.html">Component_MoveAnimation (组件_移动动画)</a></li>
+<li><a href="../classes/Component_NumberInput.html">Component_NumberInput (组件_数字输入)</a></li>
+<li><a href="../classes/Component_PanelBehavior.html">Component_PanelBehavior (组件_面板行为)</a></li>
+<li><a href="../classes/Component_PathAnimation.html">Component_PathAnimation (组件_路径动画)</a></li>
+<li><a href="../classes/Component_PixelateAnimation.html">Component_PixelateAnimation (组件_像素化动画)</a></li>
+<li><a href="../classes/Component_Quad.html">Component_Quad (组件_四边形)</a></li>
+<li><a href="../classes/Component_RotateAnimation.html">Component_RotateAnimation (组件_旋转动画)</a></li>
+<li><a href="../classes/Component_SceneBehavior.html">Component_SceneBehavior (组件_场景行为)</a></li>
+<li><a href="../classes/Component_ShakeAnimation.html">Component_ShakeAnimation (组件_震动动画)</a></li>
+<li><a href="../classes/Component_SpreadLayoutBehavior.html">Component_SpreadLayoutBehavior (组件_扩散布局行为)</a></li>
+<li><a href="../classes/Component_Sprite.html">Component_Sprite (组件_精灵)</a></li>
+<li><a href="../classes/Component_StackLayoutBehavior.html">Component_StackLayoutBehavior (组件_堆叠布局行为)</a></li>
+<li><a href="../classes/Component_TextBehavior.html">Component_TextBehavior (组件_文本行为)</a></li>
+<li><a href="../classes/Component_TextInput.html">Component_TextInput (组件_文本输入)</a></li>
+<li><a href="../classes/Component_TextRenderer.html">Component_TextRenderer (组件_文本渲染器)</a></li>
+<li><a href="../classes/Component_ThreePartImage.html">Component_ThreePartImage (组件_三段式图像)</a></li>
+<li><a href="../classes/Component_TilingPlane.html">Component_TilingPlane (组件_平铺平面)</a></li>
+<li><a href="../classes/Component_TilingSprite.html">Component_TilingSprite (组件_平铺精灵)</a></li>
+<li><a href="../classes/Component_Timer.html">Component_Timer (组件_定时器)</a></li>
+<li><a href="../classes/Component_TintAnimation.html">Component_TintAnimation (组件_着色动画)</a></li>
+<li><a href="../classes/Component_UIBehavior.html">Component_UIBehavior (组件_UI行为)</a></li>
+<li><a href="../classes/Component_Viewport.html">Component_Viewport (组件_视口)</a></li>
+<li><a href="../classes/Component_Visual.html">Component_Visual (组件_视觉)</a></li>
+<li><a href="../classes/Component_WebStartBehavior.html">Component_WebStartBehavior (组件_Web启动行为)</a></li>
+<li><a href="../classes/Component_WobbleAnimation.html">Component_WobbleAnimation (组件_摆动动画)</a></li>
+<li><a href="../classes/Component_ZoomAnimation.html">Component_ZoomAnimation (组件_缩放动画)</a></li>
+<li><a href="../classes/ContainerDisposeBehavior.html">ContainerDisposeBehavior (容器销毁行为)</a></li>
+<li><a href="../classes/DataManager.html">DataManager (数据管理器)</a></li>
+<li><a href="../classes/DataOptimizer.html">DataOptimizer (数据优化器)</a></li>
+<li><a href="../classes/Easing.html">Easing (缓动)</a></li>
+<li><a href="../classes/Easings.html">Easings (缓动函数)</a></li>
+<li><a href="../classes/EasingTypes.html">EasingTypes (缓动类型)</a></li>
+<li><a href="../classes/Fonts.html">Fonts (字体)</a></li>
+<li><a href="../classes/Formula.html">Formula (公式)</a></li>
+<li><a href="../classes/GameManager.html">GameManager (游戏管理器)</a></li>
+<li><a href="../classes/GameTemp.html">GameTemp (游戏临时数据)</a></li>
+<li><a href="../classes/Helper.html">Helper (助手)</a></li>
+<li><a href="../classes/ImageHandling.html">ImageHandling (图像处理)</a></li>
+<li><a href="../classes/InterpreterContext.html">InterpreterContext (解释器上下文)</a></li>
+<li><a href="../classes/LanguageManager.html">LanguageManager (语言管理器)</a></li>
+<li><a href="../classes/LayoutManagementMode.html">LayoutManagementMode (布局管理模式)</a></li>
+<li><a href="../classes/LivePreviewInfo.html">LivePreviewInfo (实时预览信息)</a></li>
+<li><a href="../classes/Main.html">Main (主程序)</a></li>
+<li><a href="../classes/MessageSettings.html">MessageSettings (消息设置)</a></li>
+<li><a href="../classes/Object_Animation.html">Object_Animation (对象_动画)</a></li>
+<li><a href="../classes/Object_Background.html">Object_Background (对象_背景)</a></li>
+<li><a href="../classes/Object_Base.html">Object_Base (对象_基类)</a></li>
+<li><a href="../classes/Object_Character.html">Object_Character (对象_角色)</a></li>
+<li><a href="../classes/Object_CommonEvent.html">Object_CommonEvent (对象_通用事件)</a></li>
+<li><a href="../classes/Object_Container.html">Object_Container (对象_容器)</a></li>
+<li><a href="../classes/Object_DataGrid.html">Object_DataGrid (对象_数据网格)</a></li>
+<li><a href="../classes/Object_DomainContainer.html">Object_DomainContainer (对象_域容器)</a></li>
+<li><a href="../classes/Object_Frame.html">Object_Frame (对象_帧)</a></li>
+<li><a href="../classes/Object_FreeLayout.html">Object_FreeLayout (对象_自由布局)</a></li>
+<li><a href="../classes/Object_GridLayout.html">Object_GridLayout (对象_网格布局)</a></li>
+<li><a href="../classes/Object_Hotspot.html">Object_Hotspot (对象_热点)</a></li>
+<li><a href="../classes/Object_Image.html">Object_Image (对象_图像)</a></li>
+<li><a href="../classes/Object_ImageMap.html">Object_ImageMap (对象_图像地图)</a></li>
+<li><a href="../classes/Object_IntervalTimer.html">Object_IntervalTimer (对象_间隔定时器)</a></li>
+<li><a href="../classes/Object_Layout.html">Object_Layout (对象_布局)</a></li>
+<li><a href="../classes/Object_Live2DCharacter.html">Object_Live2DCharacter (对象_Live2D角色)</a></li>
+<li><a href="../classes/Object_Message.html">Object_Message (对象_消息)</a></li>
+<li><a href="../classes/Object_MessageArea.html">Object_MessageArea (对象_消息区域)</a></li>
+<li><a href="../classes/Object_Panel.html">Object_Panel (对象_面板)</a></li>
+<li><a href="../classes/Object_Picture.html">Object_Picture (对象_图片)</a></li>
+<li><a href="../classes/Object_Scene.html">Object_Scene (对象_场景)</a></li>
+<li><a href="../classes/Object_SpreadLayout.html">Object_SpreadLayout (对象_扩散布局)</a></li>
+<li><a href="../classes/Object_StackLayout.html">Object_StackLayout (对象_堆叠布局)</a></li>
+<li><a href="../classes/Object_Text.html">Object_Text (对象_文本)</a></li>
+<li><a href="../classes/Object_ThreePartImage.html">Object_ThreePartImage (对象_三段式图像)</a></li>
+<li><a href="../classes/Object_Timer.html">Object_Timer (对象_定时器)</a></li>
+<li><a href="../classes/Object_UIElement.html">Object_UIElement (对象_UI元素)</a></li>
+<li><a href="../classes/Object_Video.html">Object_Video (对象_视频)</a></li>
+<li><a href="../classes/Object_Viewport.html">Object_Viewport (对象_视口)</a></li>
+<li><a href="../classes/Object_Visual.html">Object_Visual (对象_视觉)</a></li>
+<li><a href="../classes/ObjectManager.html">ObjectManager (对象管理器)</a></li>
+<li><a href="../classes/RecordManager.html">RecordManager (记录管理器)</a></li>
+<li><a href="../classes/RendererTextLine.html">RendererTextLine (渲染器文本行)</a></li>
+<li><a href="../classes/RendererToken.html">RendererToken (渲染器令牌)</a></li>
+<li><a href="../classes/ResourceLoader.html">ResourceLoader (资源加载器)</a></li>
+<li><a href="../classes/ResourceManager.html">ResourceManager (资源管理器)</a></li>
+<li><a href="../classes/SceneManager.html">SceneManager (场景管理器)</a></li>
+<li><a href="../classes/Space.html">Space (空间)</a></li>
+<li><a href="../classes/Sprite_Debug.html">Sprite_Debug (精灵_调试)</a></li>
+<li><a href="../classes/Style.html">Style (样式)</a></li>
+<li><a href="../classes/UIElementPoint.html">UIElementPoint (UI元素点)</a></li>
+<li><a href="../classes/UIElementRectangle.html">UIElementRectangle (UI元素矩形)</a></li>
+<li><a href="../classes/UIManager.html">UIManager (UI管理器)</a></li>
+<li><a href="../classes/UpdateBehavior.html">UpdateBehavior (更新行为)</a></li>
+<li><a href="../classes/VariableStore.html">VariableStore (变量存储)</a></li>
+</ul>
+<ul class="apis modules" id="api-modules">
+<li><a href="../modules/gs.html">gs</a></li>
+<li><a href="../modules/gs.RendererTextLine.html">gs.RendererTextLine (gs.渲染器文本行)</a></li>
+<li><a href="../modules/ui.html">ui</a></li>
+<li><a href="../modules/vn.html">vn</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="yui3-u-3-4">
+<div id="api-options">显示:<label for="api-show-inherited">
+<input checked="" id="api-show-inherited" type="checkbox"/>继承的</label>
+<label for="api-show-protected">
+<input id="api-show-protected" type="checkbox"/>受保护的</label>
+<label for="api-show-private">
+<input id="api-show-private" type="checkbox"/>私有的</label>
+<label for="api-show-deprecated">
+<input id="api-show-deprecated" type="checkbox"/>已弃用的</label>
+</div>
+<div class="apidocs">
+<div id="docs-main">
+<div class="content">
+<h1>Component_MessageTextRenderer 类</h1>
+<div class="box meta">模块:<a href="../modules/gs.html">gs</a>
+</div>
 <div class="box intro">
-    <p>A text-renderer component to render an animated and interactive message text using
-dimensions of the game object's destination-rectangle. The message is displayed
-using a sprite for each line instead of drawing to the game object's bitmap object.</p>
-
+<p>文本渲染器组件，用于渲染使用游戏对象目标矩形的尺寸进行动画和交互的消息文本。消息使用每个文本行的精灵来显示，而不是绘制到游戏对象的位图对象。</p>
 </div>
-
-
-<div id="classdocs" class="tabview">
-    <ul class="api-class-tabs">
-        <li class="api-class-tab index"><a href="#index">Index</a></li>
-
-            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
-            <li class="api-class-tab properties"><a href="#properties">Properties</a></li>
-    </ul>
-
-    <div>
-        <div id="index" class="api-class-tabpanel index">
-            <h2 class="off-left">Item Index</h2>
-
-                <div class="index-section methods">
-                    <h3>Methods</h3>
-
-                    <ul class="index-list methods">
-                            <li class="index-item method">
-                                <a href="#method_addCustomObject">addCustomObject</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_addCustomObject">addCustomObject</a>
-
-                            </li>
-                            <li class="index-item method protected">
-                                <a href="#method_analyzeControlToken">analyzeControlToken</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_calculateDuration">calculateDuration</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_calculateDurationForLine">calculateDurationForLine</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_calculateDurationForToken">calculateDurationForToken</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_calculateMaxLines">calculateMaxLines</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_clear">clear</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_clearAllSprites">clearAllSprites</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_clearSprites">clearSprites</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_continue">continue</a>
-
-                            </li>
-                            <li class="index-item method private">
-                                <a href="#method_createBitmap">createBitmap</a>
-
-                            </li>
-                            <li class="index-item method private">
-                                <a href="#method_createSprite">createSprite</a>
-
-                            </li>
-                            <li class="index-item method private">
-                                <a href="#method_createSprites">createSprites</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_createToken">createToken</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_dispose">dispose</a>
-
-                            </li>
-                            <li class="index-item method protected">
-                                <a href="#method_drawControlToken">drawControlToken</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_drawFormattedText">drawFormattedText</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_drawFormattedTextImmediately">drawFormattedTextImmediately</a>
-
-                            </li>
-                            <li class="index-item method protected">
-                                <a href="#method_drawLineContent">drawLineContent</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_drawNext">drawNext</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_executeBatch">executeBatch</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_finish">finish</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_instantSkip">instantSkip</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_isBatched">isBatched</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_isBatchInProgress">isBatchInProgress</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_newLine">newLine</a>
-
-                            </li>
-                            <li class="index-item method private">
-                                <a href="#method_nextChar">nextChar</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_onDataBundleRestore.">onDataBundleRestore.</a>
-
-                            </li>
-                            <li class="index-item method protected">
-                                <a href="#method_processControlToken">processControlToken</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_processToken">processToken</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_restore">restore</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_setup">setup</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_setupEventHandlers">setupEventHandlers</a>
-
-                            </li>
-                            <li class="index-item method protected">
-                                <a href="#method_start">start</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_toDataBundle">toDataBundle</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_update">update</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_updateCaretPosition">updateCaretPosition</a>
-
-                            </li>
-                            <li class="index-item method private">
-                                <a href="#method_updateLineWriting">updateLineWriting</a>
-
-                            </li>
-                    </ul>
-                </div>
-
-                <div class="index-section properties">
-                    <h3>Properties</h3>
-
-                    <ul class="index-list properties">
-                            <li class="index-item property protected">
-                                <a href="#property_allSprites">allSprites</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_caretPosition">caretPosition</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_charIndex">charIndex</a>
-
-                            </li>
-                            <li class="index-item property protected">
-                                <a href="#property_currentLine">currentLine</a>
-
-                            </li>
-                            <li class="index-item property protected">
-                                <a href="#property_currentLineHeight">currentLineHeight</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_currentSprite">currentSprite</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_currentX">currentX</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_currentY">currentY</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_customObjects">customObjects</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_customObjects">customObjects</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_drawImmediately">drawImmediately</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_isRunning">isRunning</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_isWaiting">isWaiting</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_line">line</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_lines">lines</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_lineSpacing">lineSpacing</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_minLineHeight">minLineHeight</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_onBatchDisappear">onBatchDisappear</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_onLinkClick">onLinkClick</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_padding">padding</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_speed">speed</a>
-
-                            </li>
-                            <li class="index-item property protected">
-                                <a href="#property_sprites">sprites</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_waitAtEnd">waitAtEnd</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_waitAtEndTime">waitAtEndTime</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_waitCounter">waitCounter</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_waitForKey">waitForKey</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_wordWrap">wordWrap</a>
-
-                            </li>
-                    </ul>
-                </div>
-
-
-        </div>
-
-            <div id="methods" class="api-class-tabpanel">
-                <h2 class="off-left">Methods</h2>
-
-<div id="method_addCustomObject" class="method item">
-    <h3 class="name"><code>addCustomObject</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>object</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Clears the list of custom game objects. All game objects are disposed and removed
-from the scene.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">object</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The game object to add.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+<div class="tabview" id="classdocs">
+<ul class="api-class-tabs">
+<li class="api-class-tab index"><a href="#index">索引</a></li>
+<li class="api-class-tab methods"><a href="#methods">方法</a></li>
+<li class="api-class-tab properties"><a href="#properties">属性</a></li>
+</ul>
+<div>
+<div class="api-class-tabpanel index" id="index">
+<h2 class="off-left">条目索引</h2>
+<div class="index-section methods">
+<h3>方法</h3>
+<ul class="index-list methods">
+<li class="index-item method">
+<a href="#method_addCustomObject">addCustomObject (添加自定义对象)</a>
+</li>
+<li class="index-item method">
+<a href="#method_addCustomObject">addCustomObject (添加自定义对象)</a>
+</li>
+<li class="index-item method protected">
+<a href="#method_analyzeControlToken">analyzeControlToken (分析控制令牌)</a>
+</li>
+<li class="index-item method">
+<a href="#method_calculateDuration">calculateDuration (计算持续时间)</a>
+</li>
+<li class="index-item method">
+<a href="#method_calculateDurationForLine">calculateDurationForLine (计算行的持续时间)</a>
+</li>
+<li class="index-item method">
+<a href="#method_calculateDurationForToken">calculateDurationForToken (计算令牌的持续时间)</a>
+</li>
+<li class="index-item method">
+<a href="#method_calculateMaxLines">calculateMaxLines (计算最大行数)</a>
+</li>
+<li class="index-item method">
+<a href="#method_clear">clear (清除)</a>
+</li>
+<li class="index-item method">
+<a href="#method_clearAllSprites">clearAllSprites (清除所有精灵)</a>
+</li>
+<li class="index-item method">
+<a href="#method_clearSprites">clearSprites (清除精灵)</a>
+</li>
+<li class="index-item method">
+<a href="#method_continue">continue (继续)</a>
+</li>
+<li class="index-item method private">
+<a href="#method_createBitmap">createBitmap (创建位图)</a>
+</li>
+<li class="index-item method private">
+<a href="#method_createSprite">createSprite (创建精灵)</a>
+</li>
+<li class="index-item method private">
+<a href="#method_createSprites">createSprites (创建精灵)</a>
+</li>
+<li class="index-item method">
+<a href="#method_createToken">createToken (创建令牌)</a>
+</li>
+<li class="index-item method">
+<a href="#method_dispose">dispose (销毁)</a>
+</li>
+<li class="index-item method protected">
+<a href="#method_drawControlToken">drawControlToken (绘制控制令牌)</a>
+</li>
+<li class="index-item method">
+<a href="#method_drawFormattedText">drawFormattedText (绘制格式化文本)</a>
+</li>
+<li class="index-item method">
+<a href="#method_drawFormattedTextImmediately">drawFormattedTextImmediately (立即绘制格式化文本)</a>
+</li>
+<li class="index-item method protected">
+<a href="#method_drawLineContent">drawLineContent (绘制行内容)</a>
+</li>
+<li class="index-item method">
+<a href="#method_drawNext">drawNext (绘制下一个)</a>
+</li>
+<li class="index-item method">
+<a href="#method_executeBatch">executeBatch (执行批处理)</a>
+</li>
+<li class="index-item method">
+<a href="#method_finish">finish (完成)</a>
+</li>
+<li class="index-item method">
+<a href="#method_instantSkip">instantSkip (立即跳过)</a>
+</li>
+<li class="index-item method">
+<a href="#method_isBatched">isBatched (已批处理)</a>
+</li>
+<li class="index-item method">
+<a href="#method_isBatchInProgress">isBatchInProgress (批处理进行中)</a>
+</li>
+<li class="index-item method">
+<a href="#method_newLine">newLine (新行)</a>
+</li>
+<li class="index-item method private">
+<a href="#method_nextChar">nextChar (下一个字符)</a>
+</li>
+<li class="index-item method">
+<a href="#method_onDataBundleRestore.">onDataBundleRestore (数据包恢复时)</a>
+</li>
+<li class="index-item method protected">
+<a href="#method_processControlToken">processControlToken (处理控制令牌)</a>
+</li>
+<li class="index-item method">
+<a href="#method_processToken">processToken (处理令牌)</a>
+</li>
+<li class="index-item method">
+<a href="#method_restore">restore (恢复)</a>
+</li>
+<li class="index-item method">
+<a href="#method_setup">setup (设置)</a>
+</li>
+<li class="index-item method">
+<a href="#method_setupEventHandlers">setupEventHandlers (设置事件处理器)</a>
+</li>
+<li class="index-item method protected">
+<a href="#method_start">start (开始)</a>
+</li>
+<li class="index-item method">
+<a href="#method_toDataBundle">toDataBundle (到数据包)</a>
+</li>
+<li class="index-item method">
+<a href="#method_update">update (更新)</a>
+</li>
+<li class="index-item method">
+<a href="#method_updateCaretPosition">updateCaretPosition (更新光标位置)</a>
+</li>
+<li class="index-item method private">
+<a href="#method_updateLineWriting">updateLineWriting (更新行写入)</a>
+</li>
+</ul>
 </div>
-<div id="method_addCustomObject" class="method item">
-    <h3 class="name"><code>addCustomObject</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>object</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Adds a game object to the message which is alive until the message is
-erased. Can be used to display animationed-icons, etc. in a message.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">object</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>The game object to add.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+<div class="index-section properties">
+<h3>属性</h3>
+<ul class="index-list properties">
+<li class="index-item property protected">
+<a href="#property_allSprites">allSprites (所有精灵)</a>
+</li>
+<li class="index-item property">
+<a href="#property_caretPosition">caretPosition (光标位置)</a>
+</li>
+<li class="index-item property">
+<a href="#property_charIndex">charIndex (字符索引)</a>
+</li>
+<li class="index-item property protected">
+<a href="#property_currentLine">currentLine (当前行)</a>
+</li>
+<li class="index-item property protected">
+<a href="#property_currentLineHeight">currentLineHeight (当前行高)</a>
+</li>
+<li class="index-item property">
+<a href="#property_currentSprite">currentSprite (当前精灵)</a>
+</li>
+<li class="index-item property">
+<a href="#property_currentX">currentX (当前X)</a>
+</li>
+<li class="index-item property">
+<a href="#property_currentY">currentY (当前Y)</a>
+</li>
+<li class="index-item property">
+<a href="#property_customObjects">customObjects (自定义对象)</a>
+</li>
+<li class="index-item property">
+<a href="#property_customObjects">customObjects (自定义对象)</a>
+</li>
+<li class="index-item property">
+<a href="#property_drawImmediately">drawImmediately (立即绘制)</a>
+</li>
+<li class="index-item property">
+<a href="#property_isRunning">isRunning (正在运行)</a>
+</li>
+<li class="index-item property">
+<a href="#property_isWaiting">isWaiting (正在等待)</a>
+</li>
+<li class="index-item property">
+<a href="#property_line">line (行)</a>
+</li>
+<li class="index-item property">
+<a href="#property_lines">lines (行)</a>
+</li>
+<li class="index-item property">
+<a href="#property_lineSpacing">lineSpacing (行距)</a>
+</li>
+<li class="index-item property">
+<a href="#property_minLineHeight">minLineHeight (最小行高)</a>
+</li>
+<li class="index-item property">
+<a href="#property_onBatchDisappear">onBatchDisappear (批处理消失时)</a>
+</li>
+<li class="index-item property">
+<a href="#property_onLinkClick">onLinkClick (链接点击时)</a>
+</li>
+<li class="index-item property">
+<a href="#property_padding">padding (内边距)</a>
+</li>
+<li class="index-item property">
+<a href="#property_speed">speed (速度)</a>
+</li>
+<li class="index-item property protected">
+<a href="#property_sprites">sprites (精灵)</a>
+</li>
+<li class="index-item property">
+<a href="#property_waitAtEnd">waitAtEnd (结束时等待)</a>
+</li>
+<li class="index-item property">
+<a href="#property_waitAtEndTime">waitAtEndTime (结束等待时间)</a>
+</li>
+<li class="index-item property">
+<a href="#property_waitCounter">waitCounter (等待计数器)</a>
+</li>
+<li class="index-item property">
+<a href="#property_waitForKey">waitForKey (等待按键)</a>
+</li>
+<li class="index-item property">
+<a href="#property_wordWrap">wordWrap (自动换行)</a>
+</li>
+</ul>
 </div>
-<div id="method_analyzeControlToken" class="method item protected">
-    <h3 class="name"><code>analyzeControlToken</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>token</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">gs.Size</span>
-        </span>
-
-
-        <span class="flag protected">protected</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Measures a control-token. If a token produces a visual result like displaying an icon then it must return the size taken by
-the visual result. If the token has no visual result, <b>null</b> must be returned. This method is called for every token when the message is initialized.</p> 
-<p>This method is not called while the message is running. For that case, see <i>processControlToken</i> method which is called
-for every token while the message is running.</p>
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">token</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>A control-token.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">gs.Size</span>:
-                    <p>The size of the area taken by the visual result of the token or <b>null</b> if the token has no visual result.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_calculateDuration" class="method item">
-    <h3 class="name"><code>calculateDuration</code></h3>
-
-        <span class="paren">()</span>
-
-        <span class="returns-inline">
-            <span class="type">Number</span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Calculates the duration(in frames) the message-renderer needs to display
-the message.</p>
-
-    </div>
-
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">Number</span>:
-                    <p>The duration in frames.</p>
-
-            </div>
-        </div>
-
-
+<div class="api-class-tabpanel" id="methods">
+<h2 class="off-left">方法</h2>
+<div class="method item" id="method_addCustomObject">
+<h3 class="name"><code>addCustomObject</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>object</code>
+</li>
+</ul><span class="paren">)</span>
 </div>
-<div id="method_calculateDurationForLine" class="method item">
-    <h3 class="name"><code>calculateDurationForLine</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>line</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">Number</span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Calculates the duration(in frames) the message-renderer needs to display
-the specified line.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">line</code>
-                        <span class="type">gs.RendererTextLine</span>
-
-
-                    <div class="param-description">
-                        <p>The line to calculate the duration for.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">Number</span>:
-                    <p>The duration in frames.</p>
-
-            </div>
-        </div>
-
-
+<div class="meta">
+<p>
+</p>
 </div>
-<div id="method_calculateDurationForToken" class="method item">
-    <h3 class="name"><code>calculateDurationForToken</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>token</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">Number</span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Calculates the duration(in frames) the message-renderer needs to process
-the specified token.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">token</code>
-                        <span class="type">String | Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The token.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">Number</span>:
-                    <p>The duration in frames.</p>
-
-            </div>
-        </div>
-
-
+<div class="description">
+<p>清除自定义游戏对象的列表。所有游戏对象都会被销毁并从场景中移除。</p>
 </div>
-<div id="method_calculateMaxLines" class="method item">
-    <h3 class="name"><code>calculateMaxLines</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>lines</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">Number</span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Calculates the maximum of lines which can be displayed in one message.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">lines</code>
-                        <span class="type">Array</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>An array of line-objects.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">Number</span>:
-                    <p>The number of displayable lines.</p>
-
-            </div>
-        </div>
-
-
+<div class="params">
+<h4>参数:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">object</code>
+<span class="type">Object</span>
+<div class="param-description">
+<p>要添加的游戏对象。</p>
 </div>
-<div id="method_clear" class="method item">
-    <h3 class="name"><code>clear</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Clears/Resets the text-renderer.</p>
-
-    </div>
-
-
-
-
+</li>
+</ul>
 </div>
-<div id="method_clearAllSprites" class="method item">
-    <h3 class="name"><code>clearAllSprites</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Clears/Disposes all sprites used to display the text-lines/parts.</p>
-
-    </div>
-
-
-
-
 </div>
-<div id="method_clearSprites" class="method item">
-    <h3 class="name"><code>clearSprites</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Clears/Disposes the sprites used to display the text-lines/parts of the current/last message.</p>
-
-    </div>
-
-
-
-
+<div class="method item" id="method_addCustomObject">
+<h3 class="name"><code>addCustomObject</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>object</code>
+</li>
+</ul><span class="paren">)</span>
 </div>
-<div id="method_continue" class="method item">
-    <h3 class="name"><code>continue</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Continues message-processing if currently waiting.</p>
-
-    </div>
-
-
-
-
+<div class="meta">
+<p>
+</p>
 </div>
-<div id="method_createBitmap" class="method item private">
-    <h3 class="name"><code>createBitmap</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>line</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">Bitmap</span>
-        </span>
-
-
-        <span class="flag private">private</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates the bitmap for a specified line-object.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">line</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>A line-object.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">Bitmap</span>:
-                    <p>A newly created bitmap containing the line-text.</p>
-
-            </div>
-        </div>
-
-
+<div class="description">
+<p>添加一个游戏对象到消息中，该对象在消息擦除之前一直存在。可以用来在消息中显示动画图标等。</p>
 </div>
-<div id="method_createSprite" class="method item private">
-    <h3 class="name"><code>createSprite</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>line</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">Sprite</span>
-        </span>
-
-
-        <span class="flag private">private</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates the sprite for a specified line-object.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">line</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>A line-object.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">Sprite</span>:
-                    <p>A newly created sprite object containing the line-text as bitmap.</p>
-
-            </div>
-        </div>
-
-
+<div class="params">
+<h4>参数:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">object</code>
+<span class="type">Object</span>
+<div class="param-description">
+<p>要添加的游戏对象。</p>
 </div>
-<div id="method_createSprites" class="method item private">
-    <h3 class="name"><code>createSprites</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>lines</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">Array</span>
-        </span>
-
-
-        <span class="flag private">private</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates the sprites for a specified array of line-objects.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">lines</code>
-                        <span class="type">Array</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>An array of line-objects.</li>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">Array</span>:
-                    <p>An array of sprites.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_createToken" class="method item">
-    <h3 class="name"><code>createToken</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>code</code>
-                </li>
-                <li class="arg">
-                        <code>value</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">Object</span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Creates a token-object for a specified text-code.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">code</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The code/type of the text-code.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">value</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The value of the text-code.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">Object</span>:
-                    <p>The token-object.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_dispose" class="method item">
-    <h3 class="name"><code>dispose</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Disposes the message text-renderer and all sprites used to display
-the message.</p>
-
-    </div>
-
-
-
-
+<div class="method item protected" id="method_analyzeControlToken">
+<h3 class="name"><code>analyzeControlToken</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>token</code>
+</li>
+</ul><span class="paren">)</span>
 </div>
-<div id="method_drawControlToken" class="method item protected">
-    <h3 class="name"><code>drawControlToken</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>token</code>
-                </li>
-                <li class="arg">
-                        <code>bitmap</code>
-                </li>
-                <li class="arg">
-                        <code>offset</code>
-                </li>
-                <li class="arg">
-                        <code>length</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-        <span class="flag protected">protected</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Draws the visual result of a token, like an icon for example, to the specified bitmap. This method is called for every token when the message is initialized and the sprites for each
-text-line are created.</p> 
-<p>This method is not called while the message is running. For that case, see <i>processControlToken</i> method which is called
-for every token while the message is running.</p>
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">token</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>A control-token.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">bitmap</code>
-                        <span class="type">gs.Bitmap</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The bitmap used for the current text-line. Can be used to draw something on it like an icon, etc.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">offset</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>An x-offset for the draw-routine.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">length</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Determines how many characters of the token should be drawn. Can be ignored for tokens
-not drawing any characters.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+<span class="returns-inline">
+<span class="type">gs.Size</span>
+</span>
+<span class="flag protected">protected</span>
+<div class="meta">
+<p>
+</p>
 </div>
-<div id="method_drawFormattedText" class="method item">
-    <h3 class="name"><code>drawFormattedText</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>x</code>
-                </li>
-                <li class="arg">
-                        <code>y</code>
-                </li>
-                <li class="arg">
-                        <code>width</code>
-                </li>
-                <li class="arg">
-                        <code>height</code>
-                </li>
-                <li class="arg">
-                        <code>text</code>
-                </li>
-                <li class="arg">
-                        <code>wordWrap</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Starts the rendering-process for the message.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">x</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The x-coordinate of the text's position.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">y</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The y-coordinate of the text's position.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">width</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Deprecated. Can be null.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">height</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Deprecated. Can be null.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">text</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The text to draw.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">wordWrap</code>
-                        <span class="type">Boolean</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>If wordWrap is set to true, line-breaks are automatically created.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+<div class="description">
+<p>测量一个控制令牌。如果一个令牌产生视觉结果，比如显示一个图标，那么它必须返回视觉结果所占的大小。如果令牌没有视觉结果，则必须返回 null。此方法在消息初始化时为每个令牌调用。<b>此方法在消息运行时不会被调用。对于这种情况，请参见 processControlToken 方法，该方法在消息运行时为每个令牌调用。</b>参数:</p>
+<p>token<i>Object</i>一个控制令牌。</p>
 </div>
-<div id="method_drawFormattedTextImmediately" class="method item">
-    <h3 class="name"><code>drawFormattedTextImmediately</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>x</code>
-                </li>
-                <li class="arg">
-                        <code>y</code>
-                </li>
-                <li class="arg">
-                        <code>width</code>
-                </li>
-                <li class="arg">
-                        <code>height</code>
-                </li>
-                <li class="arg">
-                        <code>text</code>
-                </li>
-                <li class="arg">
-                        <code>wordWrap</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Displays a formatted text immediately without any delays or animations. The
-Component_TextRenderer.drawFormattedText method from the base-class cannot
-be used here because it would render to the game object's bitmap object while
-this method is rendering to the sprites.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">x</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The x-coordinate of the text's position.</li>
+<div class="params">
+<h4>返回:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">gs.Size</code>
+<span class="type">:</span>
+<div class="param-description">
+<ul>
+<li>令牌的视觉结果所占区域的大小，如果令牌没有视觉结果，则返回 null。</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">y</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The y-coordinate of the text's position.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">width</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Deprecated. Can be null.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">height</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>Deprecated. Can be null.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">text</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The text to draw.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">wordWrap</code>
-                        <span class="type">Boolean</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>If wordWrap is set to true, line-breaks are automatically created.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_drawLineContent" class="method item protected">
-    <h3 class="name"><code>drawLineContent</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>line</code>
-                </li>
-                <li class="arg">
-                        <code>bitmap</code>
-                </li>
-                <li class="arg">
-                        <code>length</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-        <span class="flag protected">protected</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Draws the line's content on the specified bitmap.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">line</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>A line-object which should be drawn on the bitmap.</li>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">bitmap</code>
-                        <span class="type">gs.Bitmap</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The bitmap to draw the line's content on.</li>
+</div>
+<div class="returns">
+<h4>calculateDuration</h4>
+<div class="returns-description">
+<span class="type">()</span>Number<p>计算消息渲染器显示消息所需的持续时间（以帧为单位）。<b>返回:</b>Number</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_calculateDuration">
+<h3 class="name"><code>:</code></h3>
+<span class="paren">以帧为单位的持续时间。</span>
+<span class="returns-inline">
+<span class="type">calculateDurationForLine</span>
+</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>(</p>
+</div>
+<div class="returns">
+<h4>line</h4>
+<div class="returns-description">
+<span class="type">)</span>Number<p>计算消息渲染器显示指定行所需的持续时间（以帧为单位）。</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_calculateDurationForLine">
+<h3 class="name"><code>参数:</code></h3>
+<div class="args">
+<span class="paren">line</span><ul class="args-list inline commas">
+<li class="arg">
+<code>gs.RendererTextLine</code>
+</li>
+</ul><span class="paren">要计算持续时间的行。</span>
+</div>
+<span class="returns-inline">
+<span class="type">返回:</span>
+</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>Number</p>
+</div>
+<div class="params">
+<h4>:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">以帧为单位的持续时间。</code>
+<span class="type">calculateDurationForToken</span>
+<div class="param-description">
+<p>(</p>
+</div>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">length</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
+</div>
+<div class="returns">
+<h4>token</h4>
+<div class="returns-description">
+<span class="type">)</span>Number<p>计算消息渲染器处理指定令牌所需的持续时间（以帧为单位）。</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_calculateDurationForToken">
+<h3 class="name"><code>参数:</code></h3>
+<div class="args">
+<span class="paren">token</span><ul class="args-list inline commas">
+<li class="arg">
+<code>String | Object</code>
+</li>
+</ul><span class="paren">令牌。</span>
+</div>
+<span class="returns-inline">
+<span class="type">返回:</span>
+</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>Number</p>
+</div>
+<div class="params">
+<h4>:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">以帧为单位的持续时间。</code>
+<span class="type">calculateMaxLines</span>
+<div class="param-description">
+<ul>
+<li>(</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="returns">
+<h4>lines</h4>
+<div class="returns-description">
+<span class="type">)</span>Number<p>计算一条消息中可以显示的最大行数。</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_calculateMaxLines">
+<h3 class="name"><code>参数:</code></h3>
+<div class="args">
+<span class="paren">lines</span><ul class="args-list inline commas">
+<li class="arg">
+<code>Array</code>
+</li>
+</ul><span class="paren">行对象数组。</span>
+</div>
+<span class="returns-inline">
+<span class="type">返回:</span>
+</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>Number</p>
+</div>
+<div class="params">
+<h4>:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">可显示的行数。</code>
+<span class="type">clear</span>
+<div class="param-description">
+<ul>
+<li>()</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="returns">
+<h4>清除/重置文本渲染器。</h4>
+<div class="returns-description">
+<span class="type">clearAllSprites</span>()<p>清除/销毁用于显示文本行/部分的所有精灵。</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_clear">
+<h3 class="name"><code>clearSprites</code></h3>
+<span class="paren">()</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>清除/销毁用于显示当前/最后消息的文本行/部分的精灵。</p>
+</div>
+</div>
+<div class="method item" id="method_clearAllSprites">
+<h3 class="name"><code>continue</code></h3>
+<span class="paren">()</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>如果当前正在等待，则继续消息处理。</p>
+</div>
+</div>
+<div class="method item" id="method_clearSprites">
+<h3 class="name"><code>createBitmap</code></h3>
+<span class="paren">(</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>line</p>
+</div>
+</div>
+<div class="method item" id="method_continue">
+<h3 class="name"><code>)</code></h3>
+<span class="paren">Bitmap</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>private</p>
+</div>
+</div>
+<div class="method item private" id="method_createBitmap">
+<h3 class="name"><code>为指定的行对象创建位图。</code></h3>
+<div class="args">
+<span class="paren">参数:</span><ul class="args-list inline commas">
+<li class="arg">
+<code>line</code>
+</li>
+</ul><span class="paren">Object</span>
+</div>
+<span class="returns-inline">
+<span class="type">一个行对象。</span>
+</span>
+<span class="flag private">返回:</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>Bitmap</p>
+</div>
+<div class="params">
+<h4>:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">一个包含行文本的新建位图。</code>
+<span class="type">createSprite</span>
+<div class="param-description">
+<ul>
+<li>(</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="returns">
+<h4>line</h4>
+<div class="returns-description">
+<span class="type">)</span>Sprite<p>private</p>
+</div>
+</div>
+</div>
+<div class="method item private" id="method_createSprite">
+<h3 class="name"><code>为指定的行对象创建精灵。</code></h3>
+<div class="args">
+<span class="paren">参数:</span><ul class="args-list inline commas">
+<li class="arg">
+<code>line</code>
+</li>
+</ul><span class="paren">Object</span>
+</div>
+<span class="returns-inline">
+<span class="type">一个行对象。</span>
+</span>
+<span class="flag private">返回:</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>Sprite</p>
+</div>
+<div class="params">
+<h4>:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">一个包含行文本作为位图的新建精灵对象。</code>
+<span class="type">createSprites</span>
+<div class="param-description">
+<ul>
+<li>(</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="returns">
+<h4>lines</h4>
+<div class="returns-description">
+<span class="type">)</span>Array<p>private</p>
+</div>
+</div>
+</div>
+<div class="method item private" id="method_createSprites">
+<h3 class="name"><code>为指定的行对象数组创建精灵。</code></h3>
+<div class="args">
+<span class="paren">参数:</span><ul class="args-list inline commas">
+<li class="arg">
+<code>lines</code>
+</li>
+</ul><span class="paren">Array</span>
+</div>
+<span class="returns-inline">
+<span class="type">行对象数组。</span>
+</span>
+<span class="flag private">返回:</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>Array</p>
+</div>
+<div class="params">
+<h4>:</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">一个精灵数组。</code>
+<span class="type">createToken</span>
+<div class="param-description">
+<ul>
+<li>(</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="returns">
+<h4>code</h4>
+<div class="returns-description">
+<span class="type">value</span>)<p>Object</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_createToken">
+<h3 class="name"><code>为指定的文本代码创建一个令牌对象。</code></h3>
+<div class="args">
+<span class="paren">参数:</span><ul class="args-list inline commas">
+<li class="arg">
+<code>code</code>
+</li>
+<li class="arg">
+<code>String</code>
+</li>
+</ul><span class="paren">文本代码的代码/类型。</span>
+</div>
+<span class="returns-inline">
+<span class="type">value</span>
+</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>String</p>
+</div>
+<div class="params">
+<h4>文本代码的值。</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">返回:</code>
+<span class="type">Object</span>
+<div class="param-description">
+<ul>
+<li>:</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">令牌对象。</code>
+<span class="type">dispose</span>
+<div class="param-description">
+<ul>
+<li>()</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="returns">
+<h4>销毁消息文本渲染器和用于显示消息的所有精灵。</h4>
+<div class="returns-description">
+<span class="type">drawControlToken</span>(<p>token</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_dispose">
+<h3 class="name"><code>bitmap</code></h3>
+<span class="paren">offset</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>length</p>
+</div>
+</div>
+<div class="method item protected" id="method_drawControlToken">
+<h3 class="name"><code>)</code></h3>
+<div class="args">
+<span class="paren">protected</span><ul class="args-list inline commas">
+<li class="arg">
+<code>将令牌的视觉结果（例如图标）绘制到指定的位图。当消息初始化并且创建每个文本行的精灵时，会为每个令牌调用此方法。</code>
+</li>
+<li class="arg">
+<code>此方法在消息运行时不会被调用。对于这种情况，请参见 processControlToken 方法，该方法在消息运行时为每个令牌调用。</code>
+</li>
+<li class="arg">
+<code>参数:</code>
+</li>
+<li class="arg">
+<code>token</code>
+</li>
+</ul><span class="paren">Object</span>
+</div>
+<span class="flag protected">一个控制令牌。</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>bitmap</p>
+<p>gs.Bitmap<i>用于当前文本行的位图。可以用来在其上绘制一些东西，比如图标等。</i>offset</p>
+</div>
+<div class="params">
+<h4>Number</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">绘制例程的 x 偏移量。</code>
+<span class="type">length</span>
+<div class="param-description">
+<ul>
+<li>Number</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">确定应绘制令牌的多少个字符。对于不绘制任何字符的令牌可以忽略。</code>
+<span class="type">drawFormattedText</span>
+<div class="param-description">
+<ul>
+<li>(</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">x</code>
+<span class="type">y</span>
+<div class="param-description">
+<ul>
+<li>width</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">height</code>
+<span class="type">text</span>
+<div class="param-description">
+<ul>
+<li>wordWrap</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_drawFormattedText">
+<h3 class="name"><code>)</code></h3>
+<div class="args">
+<span class="paren">启动消息的渲染过程。</span><ul class="args-list inline commas">
+<li class="arg">
+<code>参数:</code>
+</li>
+<li class="arg">
+<code>x</code>
+</li>
+<li class="arg">
+<code>Number</code>
+</li>
+<li class="arg">
+<code>文本位置的 x 坐标。</code>
+</li>
+<li class="arg">
+<code>y</code>
+</li>
+<li class="arg">
+<code>Number</code>
+</li>
+</ul><span class="paren">文本位置的 y 坐标。</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>width</p>
+</div>
+<div class="params">
+<h4>Number</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">已弃用。可以为 null。</code>
+<span class="type">height</span>
+<div class="param-description">
+<ul>
+<li>Number</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">已弃用。可以为 null。</code>
+<span class="type">text</span>
+<div class="param-description">
+<ul>
+<li>String</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">要绘制的文本。</code>
+<span class="type">wordWrap</span>
+<div class="param-description">
+<ul>
+<li>Boolean</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">如果 wordWrap 设置为 true，则会自动创建换行符。</code>
+<span class="type">drawFormattedTextImmediately</span>
+<div class="param-description">
+<ul>
+<li>(</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">x</code>
+<span class="type">y</span>
+<div class="param-description">
+<ul>
+<li>width</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">height</code>
+<span class="type">text</span>
+<div class="param-description">
+<ul>
+<li>wordWrap</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_drawFormattedTextImmediately">
+<h3 class="name"><code>)</code></h3>
+<div class="args">
+<span class="paren">立即显示格式化文本，没有任何延迟或动画。基类 Component_TextRenderer 的 drawFormattedText 方法不能在这里使用，因为它会将文本渲染到游戏对象的位图对象，而此方法将文本渲染到精灵。</span><ul class="args-list inline commas">
+<li class="arg">
+<code>参数:</code>
+</li>
+<li class="arg">
+<code>x</code>
+</li>
+<li class="arg">
+<code>Number</code>
+</li>
+<li class="arg">
+<code>文本位置的 x 坐标。</code>
+</li>
+<li class="arg">
+<code>y</code>
+</li>
+<li class="arg">
+<code>Number</code>
+</li>
+</ul><span class="paren">文本位置的 y 坐标。</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>width</p>
+</div>
+<div class="params">
+<h4>Number</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">已弃用。可以为 null。</code>
+<span class="type">height</span>
+<div class="param-description">
+<ul>
+<li>Number</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">已弃用。可以为 null。</code>
+<span class="type">text</span>
+<div class="param-description">
+<ul>
+<li>String</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">要绘制的文本。</code>
+<span class="type">wordWrap</span>
+<div class="param-description">
+<ul>
+<li>Boolean</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">如果 wordWrap 设置为 true，则会自动创建换行符。</code>
+<span class="type">drawLineContent</span>
+<div class="param-description">
+<ul>
+<li>(</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">line</code>
+<span class="type">bitmap</span>
+<div class="param-description">
+<ul>
+<li>length</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">)</code>
+<span class="type">protected</span>
+<div class="param-description">
+<ul>
+<li>在指定的位图上绘制行的内容。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item protected" id="method_drawLineContent">
+<h3 class="name"><code>参数:</code></h3>
+<div class="args">
+<span class="paren">line</span><ul class="args-list inline commas">
+<li class="arg">
+<code>Object</code>
+</li>
+<li class="arg">
+<code>应该在位图上绘制的行对象。</code>
+</li>
+<li class="arg">
+<code>bitmap</code>
+</li>
+</ul><span class="paren">gs.Bitmap</span>
+</div>
+<span class="flag protected">要在其上绘制行内容的位图。</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>length</p>
+</div>
+<div class="params">
+<h4>Number</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">确定应该绘制指定行的多少个字符。您可以指定 -1 来绘制所有字符。</code>
+<span class="type">drawNext</span>
+<div class="param-description">
+<ul>
+<li>()</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">显示字符或处理下一个控制令牌。</code>
+<span class="type">executeBatch</span>
+<div class="param-description">
+<ul>
+<li>()</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">如果消息太长而无法放入一个消息框，则开始显示下一页文本。</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
 <li>Determines how many characters of the specified line should be drawn. You can
 specify -1 to draw all characters.</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_drawNext" class="method item">
-    <h3 class="name"><code>drawNext</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Displays the character or processes the next control-token.</p>
-
-    </div>
-
-
-
-
+</li>
+</ul>
 </div>
-<div id="method_executeBatch" class="method item">
-    <h3 class="name"><code>executeBatch</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Starts displaying the next page of text if a message is too long to fit
+</div>
+<div class="method item" id="method_drawNext">
+<h3 class="name"><code>drawNext</code></h3>
+<span class="paren">()</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>Displays the character or processes the next control-token.</p>
+</div>
+</div>
+<div class="method item" id="method_executeBatch">
+<h3 class="name"><code>executeBatch</code></h3>
+<span class="paren">()</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>Starts displaying the next page of text if a message is too long to fit
 into one message box.</p>
-
-    </div>
-
-
-
-
 </div>
-<div id="method_finish" class="method item">
-    <h3 class="name"><code>finish</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Finishes the message. Depending on the message configuration, the
-message text-renderer will now wait for a user-action or a certain amount
-of time.</p>
-
-    </div>
-
-
-
-
 </div>
-<div id="method_instantSkip" class="method item">
-    <h3 class="name"><code>instantSkip</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Skips the current message and finishes the message-processing immediately. The message
-tokens are processed but not rendered.</p>
-
-    </div>
-
-
-
-
+<div class="method item" id="method_finish">
+<h3 class="name"><code>完成消息。</code></h3>
+<span class="paren">()</span>
+<div class="meta">
+<p>
+</p>
 </div>
-<div id="method_isBatched" class="method item">
-    <h3 class="name"><code>isBatched</code></h3>
-
-        <span class="paren">()</span>
-
-        <span class="returns-inline">
-            <span class="type"></span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Indicates if its a batched messages.</p>
-
-    </div>
-
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                    <p>If <b>true</b> it is a batched message. Otherwise <b>false</b>.</p>
-
-            </div>
-        </div>
-
-
+<div class="description">
+<p>完成消息。 根据消息配置，消息文本渲染器现在将等待用户操作或一定的时间。</p>
 </div>
-<div id="method_isBatchInProgress" class="method item">
-    <h3 class="name"><code>isBatchInProgress</code></h3>
-
-        <span class="paren">()</span>
-
-        <span class="returns-inline">
-            <span class="type"></span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Indicates if the batch is still in progress and not done.</p>
-
-    </div>
-
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                    <p>If <b>true</b> the batched message is still not done. Otherwise <b>false</b></p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_newLine" class="method item">
-    <h3 class="name"><code>newLine</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Starts a new line.</p>
-
-    </div>
-
-
-
-
+<div class="method item" id="method_instantSkip">
+<h3 class="name"><code>立即跳过</code></h3>
+<span class="paren">()</span>
+<div class="meta">
+<p>
+</p>
 </div>
-<div id="method_nextChar" class="method item private">
-    <h3 class="name"><code>nextChar</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-        <span class="flag private">private</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Processes the next character/token of the message.</p>
-
-    </div>
-
-
-
-
+<div class="description">
+<p>跳过当前消息并立即完成消息处理。 消息令牌被处理但不会被渲染。</p>
 </div>
-<div id="method_onDataBundleRestore." class="method item">
-    <h3 class="name"><code>onDataBundleRestore.</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>Object</code>
-                </li>
-                <li class="arg">
-                        <code>gs.ObjectCodecContext</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                    <p>Provided by the <a href="../modules/vn.html">vn</a> module.</p>
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Called if this object instance is restored from a data-bundle. It can be used
-re-assign event-handler, anonymous functions, etc.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">Object</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>data - The data-bundle</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">gs.ObjectCodecContext</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <p>context - The codec-context.</p>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_processControlToken" class="method item protected">
-    <h3 class="name"><code>processControlToken</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>token</code>
-                </li>
-                <li class="arg">
-                        <code>formattingOnly</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">Object</span>
-        </span>
-
-
-        <span class="flag protected">protected</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Processes a control-token. A control-token is a token which influences
-the text-rendering like changing the fonts color, size or style. Changes
-will be automatically applied to the game object's font.</p>
-<p>For message text-renderer, a few additional control-tokens like
-speed-change, waiting, etc. needs to be processed here.</p>
-<p>This method is called for each token while the message is initialized and
-also while the message is running. See <i>formattingOnly</i> parameter.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">token</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>A control-token.</li>
+<div class="method item" id="method_isBatched">
+<h3 class="name"><code>是否批量处理</code></h3>
+<span class="paren">()</span>
+<span class="returns-inline">
+<span class="type"></span>
+</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>指示是否为批量消息。</p>
+</div>
+<div class="returns">
+<h4>返回值：</h4>
+<div class="returns-description">
+<p>如果<b>true</b>是批量消息。 否则<b>false</b>。</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_isBatchInProgress">
+<h3 class="name"><code>批量处理是否进行中</code></h3>
+<span class="paren">()</span>
+<span class="returns-inline">
+<span class="type"></span>
+</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>指示批量处理是否仍在进行中尚未完成。</p>
+</div>
+<div class="returns">
+<h4>返回值：</h4>
+<div class="returns-description">
+<p>如果<b>true</b>批量消息仍未完成。 否则<b>false</b></p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_newLine">
+<h3 class="name"><code>。</code></h3>
+<span class="paren">换行</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>()</p>
+</div>
+</div>
+<div class="method item private" id="method_nextChar">
+<h3 class="name"><code>开始新的一行。</code></h3>
+<span class="paren">下一个字符</span>
+<span class="flag private">()</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>私有</p>
+</div>
+</div>
+<div class="method item" id="method_onDataBundleRestore.">
+<h3 class="name"><code>处理消息的下一个字符/令牌。</code></h3>
+<div class="args">
+<span class="paren">onDataBundleRestore.</span><ul class="args-list inline commas">
+<li class="arg">
+<code>(</code>
+</li>
+<li class="arg">
+<code>对象</code>
+</li>
+</ul><span class="paren">gs.ObjectCodecContext</span>
+</div>
+<div class="meta">
+<p>)<a href="../modules/vn.html">由</a>vn</p>
+<p>
+</p>
+</div>
+<div class="description">
+<p>模块提供。</p>
+</div>
+<div class="params">
+<h4>如果此对象实例是从数据包中恢复的，则调用。 它可以用于重新分配事件处理程序，匿名函数等。</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">参数：</code>
+<span class="type">对象</span>
+<div class="param-description">
+<p>对象</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">data - 数据包</code>
+<span class="type">gs.ObjectCodecContext</span>
+<div class="param-description">
+<p>对象</p>
+</div>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">formattingOnly</code>
-                        <span class="type">Boolean</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>If <b>true</b> the message is initializing right now and only
-format-tokens should be processed which is necessary for the message to calculated sizes correctly.</li>
+</div>
+</div>
+<div class="method item protected" id="method_processControlToken">
+<h3 class="name"><code>context - 编解码器上下文。</code></h3>
+<div class="args">
+<span class="paren">处理控制令牌</span><ul class="args-list inline commas">
+<li class="arg">
+<code>(</code>
+</li>
+<li class="arg">
+<code>令牌</code>
+</li>
+</ul><span class="paren">仅格式化</span>
+</div>
+<span class="returns-inline">
+<span class="type">)</span>
+</span>
+<span class="flag protected">对象</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>受保护</p>
+<p>处理控制令牌。 控制令牌是影响文本渲染的令牌，例如更改字体颜色、大小或样式。 更改将自动应用于游戏对象的字体。</p>
+<p>对于消息文本渲染器，一些额外的控制令牌，例如速度更改、等待等，需要在此处处理。<i>在初始化消息时和消息运行时都会调用此方法。 请参见</i>formattingOnly</p>
+</div>
+<div class="params">
+<h4>参数。</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">参数：</code>
+<span class="type">令牌</span>
+<div class="param-description">
+<ul>
+<li>对象</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">Object</span>:
-                    <p>A new token which is processed next or <b>null</b>.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_processToken" class="method item">
-    <h3 class="name"><code>processToken</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Processes the current token.</p>
-
-    </div>
-
-
-
-
-</div>
-<div id="method_restore" class="method item">
-    <h3 class="name"><code>restore</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>bundle</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Restores the message text-renderer's state from a data-bundle.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">bundle</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>A data-bundle containing message text-renderer state.</li>
+</li>
+<li class="param">
+<code class="param-name">一个控制令牌。</code>
+<span class="type">formattingOnly</span>
+<div class="param-description">
+<ul>
+<li>布尔值<b>如果</b>true</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_setup" class="method item">
-    <h3 class="name"><code>setup</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Sets up the renderer. Registers necessary event handlers.</p>
-
-    </div>
-
-
-
-
+</li>
+</ul>
 </div>
-<div id="method_setupEventHandlers" class="method item">
-    <h3 class="name"><code>setupEventHandlers</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Adds event-handlers for mouse/touch events</p>
-
-    </div>
-
-
-
-
+<div class="returns">
+<h4>消息当前正在初始化，并且仅应处理格式令牌，这对于消息正确计算大小是必需的。</h4>
+<div class="returns-description">
+<span class="type">返回值：</span>对象<p>：<b>一个接下来要处理的新令牌，或者</b>null</p>
 </div>
-<div id="method_start" class="method item protected">
-    <h3 class="name"><code>start</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-        <span class="flag protected">protected</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Starts the message-rendering process.</p>
-
-    </div>
-
-
-
-
 </div>
-<div id="method_toDataBundle" class="method item">
-    <h3 class="name"><code>toDataBundle</code></h3>
-
-        <span class="paren">()</span>
-
-        <span class="returns-inline">
-            <span class="type">Object</span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Serializes the message text-renderer into a data-bundle.</p>
-
-    </div>
-
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">Object</span>:
-                    <p>A data-bundle.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_update" class="method item">
-    <h3 class="name"><code>update</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Updates the text-renderer.</p>
-
-    </div>
-
-
-
-
+<div class="method item" id="method_processToken">
+<h3 class="name"><code>。</code></h3>
+<span class="paren">处理令牌</span>
+<div class="meta">
+<p>
+</p>
 </div>
-<div id="method_updateCaretPosition" class="method item">
-    <h3 class="name"><code>updateCaretPosition</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Returns the position of the caret in pixels. The caret is like an invisible
-cursor pointing to the x/y coordinates of the last rendered character of
-the message. That position can be used to display a waiting- or processing-animation for example.</p>
-
-    </div>
-
-
-
-
+<div class="description">
+<p>()</p>
 </div>
-<div id="method_updateLineWriting" class="method item private">
-    <h3 class="name"><code>updateLineWriting</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-        <span class="flag private">private</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Updates the line writing.</p>
-
-    </div>
-
-
-
-
 </div>
-            </div>
-
-            <div id="properties" class="api-class-tabpanel">
-                <h2 class="off-left">Properties</h2>
-
-<div id="property_allSprites" class="property item protected">
-    <h3 class="name"><code>allSprites</code></h3>
-    <span class="type">gs.Sprite</span>
-
-
-        <span class="flag protected">protected</span>
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>An array containing all sprites of all messages. In NVL mode
-a page can contain multiple messages.</p>
-
-    </div>
-
-
-
+<div class="method item" id="method_restore">
+<h3 class="name"><code>处理当前令牌。</code></h3>
+<div class="args">
+<span class="paren">恢复</span><ul class="args-list inline commas">
+<li class="arg">
+<code>(</code>
+</li>
+</ul><span class="paren">bundle</span>
 </div>
-<div id="property_caretPosition" class="property item">
-    <h3 class="name"><code>caretPosition</code></h3>
-    <span class="type">gs.Point</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Position of the message caret. The caret is like an invisible
-cursor pointing to the x/y coordinates of the last rendered character of
-the message. That position can be used to display a waiting- or processing-animation for example.</p>
-
-    </div>
-
-
-
+<div class="meta">
+<p>
+</p>
 </div>
-<div id="property_charIndex" class="property item">
-    <h3 class="name"><code>charIndex</code></h3>
-    <span class="type">Number</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Index of the current character to draw.</p>
-
-    </div>
-
-
-
+<div class="description">
+<p>)</p>
 </div>
-<div id="property_currentLine" class="property item protected">
-    <h3 class="name"><code>currentLine</code></h3>
-    <span class="type">Number</span>
-
-
-        <span class="flag protected">protected</span>
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The line currently rendered.</p>
-
-    </div>
-
-
-
+<div class="params">
+<h4>从数据包中恢复消息文本渲染器的状态。</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">参数：</code>
+<span class="type">bundle</span>
+<div class="param-description">
+<ul>
+<li>对象</li>
+</ul>
 </div>
-<div id="property_currentLineHeight" class="property item protected">
-    <h3 class="name"><code>currentLineHeight</code></h3>
-    <span class="type">Number</span>
-
-
-        <span class="flag protected">protected</span>
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The height of the line currently rendered.</p>
-
-    </div>
-
-
-
+</li>
+</ul>
 </div>
-<div id="property_currentSprite" class="property item">
-    <h3 class="name"><code>currentSprite</code></h3>
-    <span class="type">gs.Sprite</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The current sprites used to display the current text-line/part.</p>
-
-    </div>
-
-
-
 </div>
-<div id="property_currentX" class="property item">
-    <h3 class="name"><code>currentX</code></h3>
-    <span class="type">Number</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The current x-coordinate of the caret/cursor.</p>
-
-    </div>
-
-
-
+<div class="method item" id="method_setup">
+<h3 class="name"><code>一个包含消息文本渲染器状态的数据包。</code></h3>
+<span class="paren">设置</span>
+<div class="meta">
+<p>
+</p>
 </div>
-<div id="property_currentY" class="property item">
-    <h3 class="name"><code>currentY</code></h3>
-    <span class="type">Number</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The current y-coordinate of the caret/cursor.</p>
-
-    </div>
-
-
-
+<div class="description">
+<p>()</p>
 </div>
-<div id="property_customObjects" class="property item">
-    <h3 class="name"><code>customObjects</code></h3>
-    <span class="type">Object</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>A hashtable/dictionary object to store custom-data useful like for token-processing. The data must be
-serializable.</p>
-
-    </div>
-
-
-
 </div>
-<div id="property_customObjects" class="property item">
-    <h3 class="name"><code>customObjects</code></h3>
-    <span class="type">gs.Object_Base</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Custom game objects which are alive until the current message is erased. Can be used to display
-animated icons, etc.</p>
-
-    </div>
-
-
-
+<div class="method item" id="method_setupEventHandlers">
+<h3 class="name"><code>设置渲染器。 注册必要的事件处理程序。</code></h3>
+<span class="paren">设置事件处理程序</span>
+<div class="meta">
+<p>
+</p>
 </div>
-<div id="property_drawImmediately" class="property item">
-    <h3 class="name"><code>drawImmediately</code></h3>
-    <span class="type">Boolean</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Indicates if the message should be rendered immedialtely without any animation or delay.</p>
-
-    </div>
-
-
-
+<div class="description">
+<p>()</p>
 </div>
-<div id="property_isRunning" class="property item">
-    <h3 class="name"><code>isRunning</code></h3>
-    <span class="type">Boolean</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Indicates that the a message is currently in progress.</p>
-
-    </div>
-
-
-
 </div>
-<div id="property_isWaiting" class="property item">
-    <h3 class="name"><code>isWaiting</code></h3>
-    <span class="type">Boolean</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Indicates if the message-renderer is currently waiting like for a user-action.</p>
-
-    </div>
-
-
-
+<div class="method item protected" id="method_start">
+<h3 class="name"><code>为鼠标/触摸事件添加事件处理程序。</code></h3>
+<span class="paren">开始</span>
+<span class="flag protected">()</span>
+<div class="meta">
+<p>
+</p>
 </div>
-<div id="property_line" class="property item">
-    <h3 class="name"><code>line</code></h3>
-    <span class="type">Number</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The line currently rendered.</p>
-
-    </div>
-
-
-
+<div class="description">
+<p>受保护</p>
 </div>
-<div id="property_lines" class="property item">
-    <h3 class="name"><code>lines</code></h3>
-    <span class="type">gs.TextRendererLine</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>An array containing all line-objects of the current message.</p>
-
-    </div>
-
-
-
 </div>
-<div id="property_lineSpacing" class="property item">
-    <h3 class="name"><code>lineSpacing</code></h3>
-    <span class="type">Number</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The spacing between text lines in pixels.</p>
-
-    </div>
-
-
-
+<div class="method item" id="method_toDataBundle">
+<h3 class="name"><code>开始消息渲染过程。</code></h3>
+<span class="paren">转换为数据包</span>
+<span class="returns-inline">
+<span class="type">()</span>
+</span>
+<div class="meta">
+<p>
+</p>
 </div>
-<div id="property_minLineHeight" class="property item">
-    <h3 class="name"><code>minLineHeight</code></h3>
-    <span class="type">Number</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The minimum height of the line currently rendered. If 0, the measured
-height of the line will be used.</p>
-
-    </div>
-
-
-
+<div class="description">
+<p>对象</p>
 </div>
-<div id="property_onBatchDisappear" class="property item">
-    <h3 class="name"><code>onBatchDisappear</code></h3>
-    <span class="type">Function</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>A callback function called if a batched messsage has been faded out. It triggers the execution of
-the next message.</p>
-
-    </div>
-
-
-
+<div class="returns">
+<h4>将消息文本渲染器序列化为数据包。</h4>
+<div class="returns-description">
+<span class="type">返回值：</span>对象<p>：</p>
 </div>
-<div id="property_onLinkClick" class="property item">
-    <h3 class="name"><code>onLinkClick</code></h3>
-    <span class="type">Function</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>A callback function called if the player clicks on a non-stylable link (LK text-code) to trigger
-the specified common event.</p>
-
-    </div>
-
-
-
 </div>
-<div id="property_padding" class="property item">
-    <h3 class="name"><code>padding</code></h3>
-    <span class="type">Number</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The left and right padding per line.</p>
-
-    </div>
-
-
-
 </div>
-<div id="property_speed" class="property item">
-    <h3 class="name"><code>speed</code></h3>
-    <span class="type">Number</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Speed of the message-drawing. The smaller the value, the faster the message is displayed.</p>
-
-    </div>
-
-
-
+<div class="method item" id="method_update">
+<h3 class="name"><code>一个数据包。</code></h3>
+<span class="paren">更新</span>
+<div class="meta">
+<p>
+</p>
 </div>
-<div id="property_sprites" class="property item protected">
-    <h3 class="name"><code>sprites</code></h3>
-    <span class="type">gs.Sprite</span>
-
-
-        <span class="flag protected">protected</span>
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>An array containing all sprites of the current message.</p>
-
-    </div>
-
-
-
+<div class="description">
+<p>()</p>
 </div>
-<div id="property_waitAtEnd" class="property item">
-    <h3 class="name"><code>waitAtEnd</code></h3>
-    <span class="type">Boolean</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Indicates if the message should wait for a user-action or a certain amount of time
-before finishing.</p>
-
-    </div>
-
-
-
 </div>
-<div id="property_waitAtEndTime" class="property item">
-    <h3 class="name"><code>waitAtEndTime</code></h3>
-    <span class="type">Number</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The number of frames to wait before finishing a message.
-before finishing.</p>
-
-    </div>
-
-
-
+<div class="method item" id="method_updateCaretPosition">
+<h3 class="name"><code>更新文本渲染器。</code></h3>
+<span class="paren">更新插入符位置</span>
+<div class="meta">
+<p>
+</p>
 </div>
-<div id="property_waitCounter" class="property item">
-    <h3 class="name"><code>waitCounter</code></h3>
-    <span class="type">Number</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Number of frames the message-renderer should wait before continue.</p>
-
-    </div>
-
-
-
+<div class="description">
+<p>()</p>
 </div>
-<div id="property_waitForKey" class="property item">
-    <h3 class="name"><code>waitForKey</code></h3>
-    <span class="type">Boolean</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Indicates if the message-renderer is currently waiting for a key-press or mouse/touch action.</p>
-
-    </div>
-
-
-
 </div>
-<div id="property_wordWrap" class="property item">
-    <h3 class="name"><code>wordWrap</code></h3>
-    <span class="type">Boolean</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Indicates if auto word-wrap should be used. Default is <b>true</b></p>
-
-    </div>
-
-
-
+<div class="method item private" id="method_updateLineWriting">
+<h3 class="name"><code>返回插入符的像素位置。 插入符就像一个不可见的游标，指向消息最后一个渲染字符的 x/y 坐标。 该位置可用于显示等待或处理动画。</code></h3>
+<span class="paren">更新行写入</span>
+<span class="flag private">()</span>
+<div class="meta">
+<p>
+</p>
 </div>
-            </div>
-
-
-    </div>
+<div class="description">
+<p>私有</p>
 </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+</div>
+</div>
+<div class="api-class-tabpanel" id="properties">
+<h2 class="off-left">更新行写入。</h2>
+<div class="property item protected" id="property_allSprites">
+<h3 class="name"><code>属性</code></h3>
+<span class="type">所有精灵</span>
+<span class="flag protected">gs.Sprite</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>受保护</p>
+</div>
+</div>
+<div class="property item" id="property_caretPosition">
+<h3 class="name"><code>一个包含所有消息的全部精灵的数组。 在 NVL 模式下，一个页面可以包含多条消息。</code></h3>
+<span class="type">插入符位置</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>gs.Point</p>
+</div>
+</div>
+<div class="property item" id="property_charIndex">
+<h3 class="name"><code>消息插入符的位置。 插入符就像一个不可见的游标，指向消息最后一个渲染字符的 x/y 坐标。 该位置可用于显示等待或处理动画。</code></h3>
+<span class="type">字符索引</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>数字</p>
+</div>
+</div>
+<div class="property item protected" id="property_currentLine">
+<h3 class="name"><code>要绘制的当前字符的索引。</code></h3>
+<span class="type">当前行</span>
+<span class="flag protected">数字</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>受保护</p>
+</div>
+</div>
+<div class="property item protected" id="property_currentLineHeight">
+<h3 class="name"><code>当前渲染的行。</code></h3>
+<span class="type">当前行高</span>
+<span class="flag protected">数字</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>受保护</p>
+</div>
+</div>
+<div class="property item" id="property_currentSprite">
+<h3 class="name"><code>当前渲染行的行高。</code></h3>
+<span class="type">当前精灵</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>gs.Sprite</p>
+</div>
+</div>
+<div class="property item" id="property_currentX">
+<h3 class="name"><code>用于显示当前文本行/部分的当前精灵。</code></h3>
+<span class="type">当前X</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>数字</p>
+</div>
+</div>
+<div class="property item" id="property_currentY">
+<h3 class="name"><code>插入符/光标的当前 x 坐标。</code></h3>
+<span class="type">当前Y</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>数字</p>
+</div>
+</div>
+<div class="property item" id="property_customObjects">
+<h3 class="name"><code>插入符/光标的当前 y 坐标。</code></h3>
+<span class="type">自定义对象</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>对象</p>
+</div>
+</div>
+<div class="property item" id="property_customObjects">
+<h3 class="name"><code>一个哈希表/字典对象，用于存储自定义数据，例如令牌处理。 数据必须是可序列化的。</code></h3>
+<span class="type">自定义对象</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>gs.Object_Base</p>
+</div>
+</div>
+<div class="property item" id="property_drawImmediately">
+<h3 class="name"><code>在当前消息被擦除之前一直存在的自定义游戏对象。 可用于显示动画图标等。</code></h3>
+<span class="type">立即绘制</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>布尔值</p>
+</div>
+</div>
+<div class="property item" id="property_isRunning">
+<h3 class="name"><code>指示消息是否应立即渲染，而无需任何动画或延迟。</code></h3>
+<span class="type">正在运行</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>布尔值</p>
+</div>
+</div>
+<div class="property item" id="property_isWaiting">
+<h3 class="name"><code>指示当前是否正在进行消息处理。</code></h3>
+<span class="type">正在等待</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>布尔值</p>
+</div>
+</div>
+<div class="property item" id="property_line">
+<h3 class="name"><code>指示消息渲染器当前是否正在等待用户操作等。</code></h3>
+<span class="type">行</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>数字</p>
+</div>
+</div>
+<div class="property item" id="property_lines">
+<h3 class="name"><code>当前渲染的行。</code></h3>
+<span class="type">行</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>gs.TextRendererLine</p>
+</div>
+</div>
+<div class="property item" id="property_lineSpacing">
+<h3 class="name"><code>一个包含当前消息的所有行对象的数组。</code></h3>
+<span class="type">行间距</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>数字</p>
+</div>
+</div>
+<div class="property item" id="property_minLineHeight">
+<h3 class="name"><code>文本行之间的间距，以像素为单位。</code></h3>
+<span class="type">最小行高</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>数字</p>
+</div>
+</div>
+<div class="property item" id="property_onBatchDisappear">
+<h3 class="name"><code>当前渲染行的最小高度。 如果为 0，将使用该行的测量高度。</code></h3>
+<span class="type">批量消失时</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>函数</p>
+</div>
+</div>
+<div class="property item" id="property_onLinkClick">
+<h3 class="name"><code>如果批量消息已淡出，则调用回调函数。 它触发下一条消息的执行。</code></h3>
+<span class="type">链接点击时</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>函数</p>
+</div>
+</div>
+<div class="property item" id="property_padding">
+<h3 class="name"><code>如果玩家点击非样式链接（LK 文本代码）以触发指定的公共事件，则调用回调函数。</code></h3>
+<span class="type">填充</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>数字</p>
+</div>
+</div>
+<div class="property item" id="property_speed">
+<h3 class="name"><code>每行的左右填充。</code></h3>
+<span class="type">速度</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>数字</p>
+</div>
+</div>
+<div class="property item protected" id="property_sprites">
+<h3 class="name"><code>消息绘制的速度。 值越小，消息显示越快。</code></h3>
+<span class="type">精灵</span>
+<span class="flag protected">gs.Sprite</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>受保护</p>
+</div>
+</div>
+<div class="property item" id="property_waitAtEnd">
+<h3 class="name"><code>包含当前消息的所有精灵的数组。</code></h3>
+<span class="type">结束时等待</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>布尔值</p>
+</div>
+</div>
+<div class="property item" id="property_waitAtEndTime">
+<h3 class="name"><code>指示消息在完成之前是否应等待用户操作或一定的时间量。</code></h3>
+<span class="type">结束时等待时间</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>数字</p>
+</div>
+</div>
+<div class="property item" id="property_waitCounter">
+<h3 class="name"><code>完成消息之前要等待的帧数。
+在完成之前。</code></h3>
+<span class="type">等待计数器</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>数字</p>
+</div>
+</div>
+<div class="property item" id="property_waitForKey">
+<h3 class="name"><code>消息渲染器在继续之前应等待的帧数。</code></h3>
+<span class="type">等待按键</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>布尔值</p>
+</div>
+</div>
+<div class="property item" id="property_wordWrap">
+<h3 class="name"><code>指示消息渲染器当前是否正在等待按键或鼠标/触摸操作。</code></h3>
+<span class="type">自动换行</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>布尔值<b>指示是否应使用自动换行。 默认为</b></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <script src="../assets/vendor/prettify/prettify-min.js"></script>
 <script>prettyPrint();</script>

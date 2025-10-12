@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+在此键入话题文本。
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="generator" content="Adobe RoboHelp 2015" />
-<title>Object Component System</title>
-<link rel="StyleSheet" href="default.css" type="text/css" />
-<link rel="stylesheet" href="highlight/styles/default.css" type="text/css" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Adobe RoboHelp 2015" name="generator"/>
+<title>HTML</title>
+<link href="default.css" rel="StyleSheet" type="text/css"/>
+<link href="highlight/styles/default.css" rel="stylesheet" type="text/css"/>
 <script src="highlight/highlight.pack.js" type="text/javascript">
 </script>
 <script type="text/javascript">
@@ -13,7 +13,7 @@
 hljs.initHighlightingOnLoad();
 //]]>
 </script>
-<script type="text/javascript" language="JavaScript">
+<script language="JavaScript" type="text/javascript">
 //<![CDATA[
 function reDo() {
   if (innerWidth != origWidth || innerHeight != origHeight)
@@ -37,295 +37,287 @@ visibility:hidden; }
 p.WebHelpNavBar { text-align:right; }
 -->
 </style>
-
-<script type="text/javascript" src="template/scripts/rh.min.js"></script>
-<script type="text/javascript" src="template/scripts/common.min.js"></script>
-<script type="text/javascript" src="template/scripts/topic.min.js"></script>
-<script type="text/javascript" src="template/scripts/constants.js"></script>
-<script type="text/javascript" src="template/scripts/utils.js"></script>
-<script type="text/javascript" src="template/scripts/mhutils.js"></script>
-<script type="text/javascript" src="template/scripts/mhlang.js"></script>
-<script type="text/javascript" src="template/scripts/mhver.js"></script>
-<script type="text/javascript" src="template/scripts/settings.js"></script>
-<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
-<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
-<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
-<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
-<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
- <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
-<script type="text/javascript" >
+<script src="template/scripts/rh.min.js" type="text/javascript"></script>
+<script src="template/scripts/common.min.js" type="text/javascript"></script>
+<script src="template/scripts/topic.min.js" type="text/javascript"></script>
+<script src="template/scripts/constants.js" type="text/javascript"></script>
+<script src="template/scripts/utils.js" type="text/javascript"></script>
+<script src="template/scripts/mhutils.js" type="text/javascript"></script>
+<script src="template/scripts/mhlang.js" type="text/javascript"></script>
+<script src="template/scripts/mhver.js" type="text/javascript"></script>
+<script src="template/scripts/settings.js" type="text/javascript"></script>
+<script src="template/scripts/XmlJsReader.js" type="text/javascript"></script>
+<script src="template/scripts/loadparentdata.js" type="text/javascript"></script>
+<script src="template/scripts/loadscreen.js" type="text/javascript"></script>
+<script src="template/scripts/loadprojdata.js" type="text/javascript"></script>
+<script src="template/scripts/mhtopic.js" type="text/javascript"></script>
+<link href="template/styles/topic.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
 gRootRelPath = ".";
 gCommonRootRelPath = ".";
 gTopicId = "4.2.0_1";
 </script>
- <meta name="topic-breadcrumbs" content="Scripter's Guide > VN Engine" />
+<meta content="Scripter's Guide &gt; VN Engine" name="topic-breadcrumbs"/>
 </head>
 <body>
-<script type="text/javascript" src="./ehlpdhtm.js"></script>
-
-<p class="Topic_Heading">Object Component System</p>
-<p>&#160;</p>
-<p><span class="Topic_Start">V</span>N Maker's actual Visual Novel Engine, which is build on top of the Basic Engine, uses an Object Component System (OCS) design to keep things easier to extend and to maintain.</p>
-<p>&#160;</p>
-<p>For a beginner, it can be difficult to understand the actual advantages and disadvantages of VN Maker's OCS, that's why we will focus more on how to use VN Maker's OCS instead. Over the time you will get a much better feeling for it.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Game Objects</p>
-<p>&#160;</p>
-<p>In VN Maker's OCS, the entire game is separated into so called "Game Objects", maybe you heard that term before. Each game object represents a certain piece of the current game. For example: The background is a game object, the current character is game object, the message box is a game object, etc. A game object can also consists of other game objects.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Components</p>
-<p>&#160;</p>
-<p>A game object itself does not implement any game specific logic or behavior itself because that comes from the so called "Components" which are dynamically added to it. A component implements a specific piece of functionality such as: Rendering/Displaying an object on screen, the behavior of characters, etc. In most cases, components are created with the goal of independency and reusability.</p>
-<p>&#160;</p>
-<p>A game object knows all the components attached to it and a component knows its game object where it is attached to. A component can only be part of one concrete game object. If the game object is destroyed, all its attached components are destroyed too.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Properties</p>
-<p>&#160;</p>
-<p>Besides components, a game object can have a set of properties which can also be seen as kind of components. The big difference is that properties are passiv, just storing data in most of the cases and defining the current state of the game object. A property should be added to a game object if it makes sense to access or process that property from multiple independent components.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Creating a game object</p>
-<p>&#160;</p>
-<p>To create a new game object, we can just create a new instance of gs.Object_Base class and then we can add components and properties to it as we can see in the following example:</p>
+<script src="./ehlpdhtm.js" type="text/javascript"></script>
+<p class="Topic_Heading">对象组件系统</p>
+<p> </p>
+<p><span class="Topic_Start">对象组件系统</span>V</p>
+<p> </p>
+<p>N Maker 的实际视觉小说引擎构建在 Basic Engine 之上，它使用对象组件系统（OCS）设计，以保持事物更易于扩展和维护。</p>
+<p> </p>
+<p class="Sub_Heading">对于初学者来说，可能很难理解 VN Maker OCS 的实际优缺点，因此我们将更多地关注如何使用 VN Maker OCS。随着时间的推移，您将对其有更好的感觉。</p>
+<p> </p>
+<p>游戏对象</p>
+<p> </p>
+<p class="Sub_Heading">在 VN Maker 的 OCS 中，整个游戏被划分为所谓的“游戏对象”，您可能以前听说过这个术语。每个游戏对象都代表当前游戏的特定部分。例如：背景是一个游戏对象，当前角色是一个游戏对象，消息框是一个游戏对象，依此类推。一个游戏对象也可以包含其他游戏对象。</p>
+<p> </p>
+<p>组件</p>
+<p> </p>
+<p>游戏对象本身不实现任何游戏特定的逻辑或行为，因为这些来自动态添加到它的“组件”。组件实现特定的功能，例如：在屏幕上渲染/显示对象，角色的行为等。在大多数情况下，组件的创建目标是独立性和可重用性。</p>
+<p> </p>
+<p class="Sub_Heading">一个游戏对象知道它附加的所有组件，一个组件知道它所附加的游戏对象。一个组件只能是某个具体游戏对象的一部分。如果游戏对象被销毁，它附加的所有组件也会被销毁。</p>
+<p> </p>
+<p>属性</p>
+<p> </p>
+<p class="Sub_Heading">除了组件之外，游戏对象还可以有一组属性，这些属性也可以看作是一种组件。主要的区别在于属性是被动的，大多数情况下只是存储数据并定义游戏对象的当前状态。如果属性对多个独立组件有意义，则应将其添加到游戏对象。</p>
+<p> </p>
+<p>创建游戏对象</p>
 <pre>
-<code class="coffee">
-###*
-* Prepares all visual game object for the scene.
+<code class="coffee">要创建一个新的游戏对象，我们可以创建一个 gs.Object_Base 类的实例，然后我们可以添加组件和属性，如下例所示：</code>
+</pre>
+<p> </p>
+<p>###*
+* 准备场景的所有视觉游戏对象。
 ###  
 prepareVisual: -&gt;
-    # Create a new game object
+    # 创建一个新的游戏对象
     @gameObject = new gs.Object_Base()
-    # Make it visible
+    # 使其可见
     @gameObject.visible = yes
-    # No offset
+    # 无偏移
     @gameObject.offset = new gs.Point(0, 0)
-    # Upper-Left origin
+    # 左上角原点
     @gameObject.origin = new gs.Point(0, 0)
-    # Set the position and size of the square on screen.
+    # 设置屏幕上正方形的位置和大小。
     @gameObject.dstRect = new gs.Rect(0, 0, 100, 100)
-    # Set the color of the square.
+    # 设置正方形的颜色。
     @gameObject.color = new gs.Color(255, 0, 0, 255)
-    # Add a quad-component to the game object. A quad-component displays
-    # the game object as a square/quad on screen.
+    # 添加一个四边形组件到游戏对象。四边形组件在屏幕上显示
+    # 游戏对象为一个正方形/四边形。
     @gameObject.addComponent(new gs.Component_Quad())
     
-    # Add the game object to the scene
+    # 将游戏对象添加到场景
     @object.addObject(@gameObject)
-    # We are done with preparing our visual objects. So we can start
-    # the screen transition to fade in our new created objects smoothly.
-    @transition()</code>
-</pre>
-<p>&#160;</p>
-<p>If we test this example, we will see a red square at the top-left of the screen. That is only because we added a gs.Component_Quad component to our game object and also a color-property as well as some other necessary properties. The quad-component extends gs.Component_Visual and counts as a visualization component, means it adds functionality to the game object so that it can display itself on screen.</p>
-<p>&#160;</p>
-<p>To be more detailed: The quad-component accesses the color-property of the game object and displays it on screen by using a gs.Quad object from the Basic Engine. If you take a look at the gs.Component_Quad script you can see that yourself, it is a very simple component.</p>
-<p>&#160;</p>
-<p>With @object we are accessing the current scene, which is a game object itself. If we take a look at the class-definition of our test bed we see this:</p>
+    # 我们已经完成了准备视觉对象的工作。因此，我们可以开始
+    # 场景过渡，以便我们的新创建的对象能够平滑淡入。
+    @transition()</p>
+<p> </p>
+<p>如果我们测试这个示例，我们将看到屏幕左上角有一个红色的正方形。这仅仅是因为我们向游戏对象添加了一个 gs.Component_Quad 组件以及一个颜色属性和其他一些必要的属性。四边形组件扩展了 gs.Component_Visual 并被视为一个可视化组件，意味着它为游戏对象添加了显示自身的功能。</p>
+<p> </p>
+<p>更详细地说：四边形组件访问游戏对象的颜色属性，并使用 Basic Engine 的 gs.Quad 对象在屏幕上显示它。如果您查看 gs.Component_Quad 脚本，您会发现它是一个非常简单的组件。</p>
 <pre>
-<code class="coffee">class Component_TestBedBehavior extends gs.Component_SceneBehavior</code>
+<code class="coffee">通过 @object，我们访问了当前场景，它本身就是一个游戏对象。如果我们查看我们测试平台的类定义，我们会看到这个：</code>
 </pre>
-<p>as we can see, our test-bed is actually a component itself. That is because the scene is a game object too, the root game object of the game. All other game objects like characters, backgrounds, etc. are under it.</p>
-<p>&#160;</p>
-<p>Each component has a reference to it's game object called "@object". So with "@object.addObject" we are adding our new created game object to the root game object, the current scene. That is very important because otherwise, our game object wouldn't be part of the current game, it wouldn't be updated and so it wouldn't be visible on screen.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Define a game object template class</p>
-<p>&#160;</p>
-<p>Even if our last example worked fine so far, there are some problems with it: First of all, its is not very comfortable to add all these properties everytime we want to create a red square. Well maybe that could be solved with a factory-pattern, but there is another problem: gs.Object_Base actually does not define a color-property and all the other properties we set. We just dynamically added these properties to the game object which is no problem thanks to the nature of JavaScript / CoffeeScript.</p>
-<p>&#160;</p>
-<p>In other programming languages, something like that would not be possible as is and even in JavaScript / CoffeeScript that approach can block JIT optimizations and slow-down performance. It is recommended to make an own class which extends gs.Object_Base and defines all necessary properties and also optionally instantiates necessary components. You can imagine that class definition as a game object template.</p>
-<p>&#160;</p>
-<p>The above example was only to show that the behavior and visual representation is not implemented in the game object's class itself but in multiple independent components instead.</p>
-<p>&#160;</p>
-<p>So let's create an own game object template next to display squares on screen much easier. First we need to add a new script called "Object_Square" to the "Objects" folder. We put the following code in:</p>
+<p>class Component_TestBedBehavior extends gs.Component_SceneBehavior</p>
+<p> </p>
+<p>正如我们所见，我们的测试平台实际上是一个组件。这是因为场景也是一个游戏对象，是游戏的根游戏对象。所有其他游戏对象，如角色、背景等，都属于它。</p>
+<p> </p>
+<p class="Sub_Heading">每个组件都有一个指向其游戏对象的引用，称为“@object”。因此，通过“@object.addObject”，我们将新创建的游戏对象添加到根游戏对象，即当前场景。这非常重要，因为否则，我们的游戏对象将不属于当前游戏，它不会被更新，因此不会在屏幕上可见。</p>
+<p> </p>
+<p>定义一个游戏对象模板类</p>
+<p> </p>
+<p>即使我们最后的示例到目前为止运行良好，但它存在一些问题：首先，每次我们想创建一个红色正方形时添加所有这些属性并不方便。嗯，也许可以使用工厂模式来解决，但还有一个问题：gs.Object_Base 实际上没有定义颜色属性以及我们设置的所有其他属性。我们只是动态地将这些属性添加到游戏对象，这由于 JavaScript / CoffeeScript 的特性不成问题。</p>
+<p> </p>
+<p>在其他编程语言中，像这样的事情是不可能的，即使在 JavaScript / CoffeeScript 中，这种方法也会阻止 JIT 优化并降低性能。建议创建一个自己的类，该类扩展 gs.Object_Base 并定义所有必需的属性，还可以选择性地实例化必要的组件。您可以将该类定义想象成一个游戏对象模板。</p>
+<p> </p>
+<p>上面的示例只是为了说明行为和视觉表示本身并不在游戏对象的类中实现，而是分布在多个独立的组件中。</p>
 <pre>
-<code class="coffee">
-# Define a new class which inherits from gs.Object_Base and serves as a
-# game object template for squares.
+<code class="coffee">所以，接下来让我们创建一个自己的游戏对象模板，以便更容易地在屏幕上显示正方形。首先，我们需要在“Objects”文件夹中添加一个名为“Object_Square”的新脚本。我们将以下代码放在里面：</code>
+</pre>
+<p># 定义一个继承自 gs.Object_Base 并用作
+# 正方形游戏对象模板的新类。
 class Object_Square extends gs.Object_Base
     constructor: (color) -&gt;
         super
         
-        # Make it visible
+        # 使其可见
         @visible = yes
-        # No offset
+        # 无偏移
         @offset = new gs.Point(0, 0)
-        # Upper-Left origin
+        # 左上角原点
         @origin = new gs.Point(0, 0)
-        # Set the position and size of the square on screen.
+        # 设置屏幕上正方形的位置和大小。
         @dstRect = new gs.Rect(0, 0, 100, 100)
-        # Set the color of the square.
+        # 设置正方形的颜色。
         @color = color
-        # Add a quad-component to the game object. A quad-component displays
-        # the game object as a square/quad on screen.
+        # 添加一个四边形组件到游戏对象。四边形组件在屏幕上显示
+        # 游戏对象为一个正方形/四边形。
         @addComponent(new gs.Component_Quad())
-gs.Object_Square = Object_Square</code>
-</pre>
-<p>So we define a new class Object_Square and inherit from gs.Object_Base. In the constructor we are taking the square-color as a parameter and just defining all the necessary properties and also adding the quad-component. Now we go back to our test-bed component and change prepareVisual a bit:</p>
+gs.Object_Square = Object_Square</p>
 <pre>
-<code class="coffee">
-###*
-* Prepares all visual game object for the scene.
+<code class="coffee">因此，我们定义了一个新的类 Object_Square 并继承自 gs.Object_Base。在构造函数中，我们接受正方形颜色作为参数，并仅定义所有必需的属性，还添加了四边形组件。现在我们回到我们的测试平台组件并稍微更改 prepareVisual：</code>
+</pre>
+<p>###*
+* 准备场景的所有视觉游戏对象。
 ###  
 prepareVisual: -&gt;
-    # Create a new game object
+    # 创建一个新的游戏对象
     @gameObject = new gs.Object_Square(new gs.Color(255, 0, 0))
-    # Add the game object to the scene
+    # 将游戏对象添加到场景
     @object.addObject(@gameObject)
-    # We are done with preparing our visual objects. So we can start
-    # the screen transition to fade in our new created objects smoothly.
-    @transition()</code>
-</pre>
-<p>That looks much better and more comfortable now. We just need to create a new gs.Object_Square object, passing the color we want and then adding it to our scene and that's it.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Work with existing game object and component classes</p>
-<p>&#160;</p>
-<p>VN Maker comes with a set of game object and component classes forming the actual Visual Novel engine. It provides game object templates for backgrounds, characters, messages and much more. In the following example we will setup a very simple scene with a background, a character and a message in it.</p>
+    # 我们已经完成了准备视觉对象的工作。因此，我们可以开始
+    # 场景过渡，以便我们的新创建的对象能够平滑淡入。
+    @transition()</p>
+<p> </p>
+<p class="Sub_Heading">这样看起来好多了，也更舒适了。我们只需要创建一个新的 gs.Object_Square 对象，传入我们想要的颜色，然后将其添加到我们的场景中，就这样。</p>
+<p> </p>
+<p>使用现有的游戏对象和组件类</p>
 <pre>
-<code class="coffee">
-###*
-* Prepares all visual game object for the scene.
+<code class="coffee">VN Maker 提供了一系列游戏对象和组件类，构成了实际的视觉小说引擎。它为背景、角色、消息等提供了游戏对象模板。在下面的示例中，我们将设置一个非常简单的场景，其中包含一个背景、一个角色和一个消息。</code>
+</pre>
+<p>###*
+* 准备场景的所有视觉游戏对象。
 ###  
 prepareVisual: -&gt;
-    # Create a new background object
+    # 创建一个新的背景对象
     @backgroundObject = new vn.Object_Background()
-    # Set the background image
+    # 设置背景图像
     @backgroundObject.image = "Bench_Morning"
-    # Initialize the game object
+    # 初始化游戏对象
     @backgroundObject.setup()
     
-    # Get character data at 0006 in database
+    # 在数据库中获取 ID 为 0006 的角色数据
     characterData = RecordManager.characters[5]
-    # Create a new character object. We are passing the character data to it.
+    # 创建一个新的角色对象。我们将角色数据传递给它。
     @characterObject = new vn.Object_Character(characterData)
-    # We set the expression to the default expression of the character defined in database.
+    # 我们将表情设置为数据库中定义的角色的默认表情。
     @characterObject.expression = RecordManager.characterExpressions[characterData.defaultExpressionId]
-    # Initialize the game object.
+    # 初始化游戏对象。
     @characterObject.setup()
-    # Center the character on x-axis
+    # 将角色在 x 轴上居中
     @characterObject.dstRect.x = (Graphics.width - @characterObject.dstRect.width) / 2
-    # Update the character object manually to apply latest changes before the scene
-    # becomes visible.
+    # 手动更新角色对象，以便在场景
+    # 可见之前应用最新更改。
     @characterObject.update()
     
-    # Create black-transparent message background object
+    # 创建一个黑透明的消息背景对象
     @messageBackgroundObject = new gs.Object_Square(new gs.Color(0, 0, 0, 160))
-    # Set z-index to 800 to make sure it is displayed above the background + character
+    # 设置 z-index 为 800，以确保它显示在背景 + 角色的上方
     @messageBackgroundObject.zIndex = 800
-    # Set position and size. We place it at the bottom of the screen.
+    # 设置位置和大小。我们将其放置在屏幕底部。
     @messageBackgroundObject.dstRect.set(0, Graphics.height - 150, Graphics.width, 150)
-    # Initialize the message background object.
+    # 初始化消息背景对象。
     @messageBackgroundObject.setup()
    
-    # Create a message object to display a message on screen.
+    # 创建一个消息对象来在屏幕上显示消息。
     @messageObject = new ui.Object_Message()
-    # Set position and size of the message
+    # 设置消息的位置和大小
     @messageObject.dstRect.set(0, Graphics.height - 150, Graphics.width, 150)
-    # Initialize the message object.
+    # 初始化消息对象。
     @messageObject.setup()
-    # Add a single message to the message object
-    @messageObject.behavior.addMessage("Hey! How is it going?", null, no, yes)
+    # 向消息对象添加一条消息
+    @messageObject.behavior.addMessage("嘿！你好吗？", null, no, yes)
  
-    # Add the background object to the scene
+    # 将背景对象添加到场景
     @object.addObject(@backgroundObject)
-    # Add the character object to the scene
+    # 将角色对象添加到场景
     @object.addObject(@characterObject)
-    # Add the message background object to the scene
+    # 将消息背景对象添加到场景
     @object.addObject(@messageBackgroundObject)
-    # Add the message object to the scene
+    # 将消息对象添加到场景
     @object.addObject(@messageObject)
     
-    # We are done with preparing our visual objects. So we can start
-    # the screen transition to fade in our new created objects smoothly.
+    # 我们已经完成了准备视觉对象的工作。因此，我们可以开始
+    # 场景过渡，以便我们的新创建的对象能够平滑淡入。
     @transition()
     
 ###*
-* Prepares all data for the scene and loads the necessary graphic and audio resources.
+* 准备场景的所有数据并加载必要的图形和音频资源。
 ### 
 prepareData: -&gt;
-    # Load the background image
+    # 加载背景图像
     ResourceManager.getBitmap("Graphics/Backgrounds/Bench_Morning")
-    # Load the character expression image
-    ResourceManager.getBitmap("Graphics/Characters/JaneDate_Normal")</code>
-</pre>
-<p>As we can see above, a background can easily be created using vn.Object_Background and just setting the image-property to the name of the background. A character can be added using vn.Object_Character class and a message using ui.Object_Message. We also use our previously created own game object template gs.Object_Square to display a dark background for our message to improve readability.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Communication between game objects</p>
-<p>&#160;</p>
-<p>It is a common scenario that two or more game objects need to communicate with each other. For example, if the player clicks on a button object, the scene object needs to get informed about that click to trigger an action. In VN Maker, game objects can communicate with each other using the gs.Component_EventEmitter component. That component allows a game object to send messages and allows other game objects to register for those messages to get informed as we can see in the following example:</p>
+    # 加载角色表情图像
+    ResourceManager.getBitmap("Graphics/Characters/JaneDate_Normal")</p>
+<p> </p>
+<p class="Sub_Heading">如上所示，可以使用 vn.Object_Background 轻松创建背景，只需将 image 属性设置为背景名称即可。可以使用 vn.Object_Character 类添加角色，使用 ui.Object_Message 添加消息。我们还使用了我们之前创建的自定义游戏对象模板 gs.Object_Square 来显示消息的暗背景，以提高可读性。</p>
+<p> </p>
+<p>游戏对象之间的通信</p>
 <pre>
-<code class="coffee">
-###*
-* Prepares all visual game object for the scene.
+<code class="coffee">###*
+* 准备场景的所有视觉游戏对象。
 ###  
 prepareVisual: -&gt;
-    # Create a colored square object
+    # 创建一个彩色方块对象
     @squareObject = new gs.Object_Square(new gs.Color(255, 0, 0))
-    # Place it at the center of the game window
+    # 将其放置在游戏窗口的中心
     @squareObject.dstRect.set((Graphics.width - 100) / 2, (Graphics.height - 100) / 2, 100, 100)
-    # Initialize the game object.
+    # 初始化游戏对象。
     @squareObject.setup()
     
-    # Create a hotspot object to catch mouse-clicks from the user.
+    # 创建一个热点对象来捕获用户的鼠标点击。
     @hotspotObject = new ui.Object_Hotspot()
-    # Place the hotspot at the same location and same size as the square object.
+    # 将热点放置在与方块对象相同的位置和相同的大小。
     @hotspotObject.dstRect.set((Graphics.width - 100) / 2, (Graphics.height - 100) / 2, 100, 100)
-    # Register for the "click" message/event. The events-property is a quick-accessor to the event-emitter component.
+    # 注册“click”消息/事件。events属性是事件发射器组件的快速访问器。
     @hotspotObject.events.on "click", =&gt;
-        # If the hotspot gets clicked we change the color of the square to blue
+        # 如果热点被点击，我们将方块的颜色更改为蓝色
         @squareObject.color = new gs.Color(0, 0, 255)
-    # Initialize the hotspot object
+    # 初始化热点对象
     @hotspotObject.setup()
     
-    # Add the square object to the scene
+    # 将方块对象添加到场景
     @object.addObject(@squareObject)
-    # Add the htospot to the scene.
+    # 将热点添加到场景。
     @object.addObject(@hotspotObject)</code>
 </pre>
-<p>We display a red square on screen using our custom gs.Object_Square game object. Then we add a hotspot, an area which responds to mouse-activity, and place it above the red square. Our scene-object then registers for the "click" message of our hotspot object, so when the hotspot gets clicked the callback-function is called and will set the square color to blue. So if we test our game and click on the red square it will turn into blue.</p>
-<p>&#160;</p>
-<p>However, the above approach has the disadvantage that both game objects need to know each other. The hotspot object needs to be accessible for the scene-object so that it can register itself for the "click" message. That creates a dependency between those two game object, which is totally fine in some cases but in other cases we need to keep things more independent.</p>
-<p>&#160;</p>
-<p>That's where gs.GlobalEventManager comes into play, which is itself just a global gs.Component_EventEmitter object. The global event manager acts like a notification center between two or more game objects so that the game objects no longer need to know each other directly. For example: A game object wants to send a message that it was clicked by the user. But instead of informing a certain registered game object, it just tells the global event manager that it has been clicked and then the global event manager will inform all game objects which are interested in that kind of message.</p>
+<p>我们使用自定义的gs.Object_Square游戏对象在屏幕上显示一个红色的方块。然后我们添加一个热点，这是一个响应鼠标活动的区域，并将其放置在红色方块上方。我们的场景对象然后注册我们热点对象的“click”消息，因此当热点被点击时，回调函数将被调用，并将方块颜色设置为蓝色。因此，如果我们测试游戏并点击红色方块，它就会变成蓝色。</p>
+<p> </p>
+<p>然而，上述方法有一个缺点，就是两个游戏对象需要相互了解。场景对象需要能够访问热点对象，以便它能注册“click”消息。这会在这两个游戏对象之间产生依赖关系，在某些情况下这是完全可以的，但在其他情况下我们需要保持事物更独立。</p>
+<p> </p>
+<p>这时gs.GlobalEventManager就派上用场了，它本身就是一个全局的gs.Component_EventEmitter对象。全局事件管理器充当两个或多个游戏对象之间的通知中心，这样游戏对象就不再需要直接相互了解。例如：一个游戏对象想要发送一条消息，表明它被用户点击了。但它不会通知某个已注册的游戏对象，而是直接告诉全局事件管理器它已被点击，然后全局事件管理器将通知所有对此类消息感兴趣的游戏对象。</p>
 <pre>
-<code class="coffee">
-###*
-* Prepares all visual game object for the scene.
+<code class="coffee">###*
+* 准备场景的所有视觉游戏对象。
 ###  
 prepareVisual: -&gt;
-    # Create a colored square object
+    # 创建一个彩色方块对象
     @squareObject = new gs.Object_Square(new gs.Color(255, 0, 0))
-    # Place it at the center of the game window
+    # 将其放置在游戏窗口的中心
     @squareObject.dstRect.set((Graphics.width - 100) / 2, (Graphics.height - 100) / 2, 100, 100)
-    # Initialize the game object.
+    # 初始化游戏对象。
     @squareObject.setup()
     
-    # Create a hotspot object to catch mouse-clicks from the user.
+    # 创建一个热点对象来捕获用户的鼠标点击。
     @hotspotObject = new ui.Object_Hotspot()
     
-    # Place the hotspot at the same location and same size as the square object.
+    # 将热点放置在与方块对象相同的位置和相同的大小。
     @hotspotObject.dstRect.set((Graphics.width - 100) / 2, (Graphics.height - 100) / 2, 100, 100)
-    # Register for the "click" message/event. The events-property is a quick-accessor to the event-emitter component.
+    # 注册“click”消息/事件。events属性是事件发射器组件的快速访问器。
     @hotspotObject.events.on "click", (sender) =&gt;
-        # Fire an event through global event manager
+        # 通过全局事件管理器触发一个事件
         gs.GlobalEventManager.emit "hotspotClicked", sender
-    # Initialize the hotspot object
+    # 初始化热点对象
     @hotspotObject.setup()
     
-    # Register for "hotspotClicked" message
+    # 注册“hotspotClicked”消息
     gs.GlobalEventManager.on "hotspotClicked", (sender) =&gt;
-        # If the hotspot gets clicked we change the color of the square to blue
+        # 如果热点被点击，我们将方块的颜色更改为蓝色
         @squareObject.color = new gs.Color(0, 0, 255)
     
-    # Add the square object to the scene
+    # 将方块对象添加到场景
     @object.addObject(@squareObject)
-    # Add the hotspot to the scene.
+    # 将热点添加到场景。
     @object.addObject(@hotspotObject)
     
-    # We are done with preparing our visual objects. So we can start
-    # the screen transition to fade in our new created objects smoothly.
+    # 我们已经完成了准备视觉对象。因此，我们可以开始
+    # 场景过渡，以平滑地淡入我们新创建的对象。
     @transition()</code>
 </pre>
-<p>In the above example we can see that now our scene object gets informed without knowing the hotspot object directly because the communication goes over gs.GlobalEventManager. So both parties, the hotspot object and the scene object don't need to know each other. That way of communication is useful if the kind and amount of interested game objects is not clear and if those game objects are not accessible or have no knowledge about each other.</p>
-<p>&#160;</p>
-<p>However, the above approach should not be abused as the standard way of communication because the disadvantage is that a game object which registered for global event manager gets informed any time that message is sent no matter from what game object. In case of a simple "click" message, our scene object gets informed about every click message, not only from the panel object but from any game object which sends a "click" message via global event manager.</p>
+<p>在上面的例子中，我们可以看到现在我们的场景对象得到了通知，而无需直接了解热点对象，因为通信是通过gs.GlobalEventManager进行的。因此，热点对象和场景对象双方都不需要相互了解。当感兴趣的游戏对象的类型和数量不确定，并且这些游戏对象无法访问或彼此没有了解时，这种通信方式很有用。</p>
+<p> </p>
+<p>但是，不应该滥用上述方法作为标准的通信方式，因为其缺点是，无论消息来自哪个游戏对象，注册了全局事件管理器的一个游戏对象都会收到通知。对于一个简单的“click”消息，我们的场景对象会收到关于每次点击的消息通知，不仅来自面板对象，还来自任何通过全局事件管理器发送“click”消息的游戏对象。</p>
 </body>
 </html>

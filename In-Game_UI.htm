@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+指南，也请查看
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="generator" content="Adobe RoboHelp 2015" />
-<title>In-Game UI</title>
-<link rel="StyleSheet" href="default.css" type="text/css" />
-<script type="text/javascript" language="JavaScript">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Adobe RoboHelp 2015" name="generator"/>
+<title>初学者指南</title>
+<link href="default.css" rel="StyleSheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
 //<![CDATA[
 function reDo() {
   if (innerWidth != origWidth || innerHeight != origHeight)
@@ -29,59 +29,57 @@ visibility:hidden; }
 p.WebHelpNavBar { text-align:right; }
 -->
 </style>
-
-<script type="text/javascript" src="template/scripts/rh.min.js"></script>
-<script type="text/javascript" src="template/scripts/common.min.js"></script>
-<script type="text/javascript" src="template/scripts/topic.min.js"></script>
-<script type="text/javascript" src="template/scripts/constants.js"></script>
-<script type="text/javascript" src="template/scripts/utils.js"></script>
-<script type="text/javascript" src="template/scripts/mhutils.js"></script>
-<script type="text/javascript" src="template/scripts/mhlang.js"></script>
-<script type="text/javascript" src="template/scripts/mhver.js"></script>
-<script type="text/javascript" src="template/scripts/settings.js"></script>
-<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
-<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
-<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
-<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
-<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
- <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
-<script type="text/javascript" >
+<script src="template/scripts/rh.min.js" type="text/javascript"></script>
+<script src="template/scripts/common.min.js" type="text/javascript"></script>
+<script src="template/scripts/topic.min.js" type="text/javascript"></script>
+<script src="template/scripts/constants.js" type="text/javascript"></script>
+<script src="template/scripts/utils.js" type="text/javascript"></script>
+<script src="template/scripts/mhutils.js" type="text/javascript"></script>
+<script src="template/scripts/mhlang.js" type="text/javascript"></script>
+<script src="template/scripts/mhver.js" type="text/javascript"></script>
+<script src="template/scripts/settings.js" type="text/javascript"></script>
+<script src="template/scripts/XmlJsReader.js" type="text/javascript"></script>
+<script src="template/scripts/loadparentdata.js" type="text/javascript"></script>
+<script src="template/scripts/loadscreen.js" type="text/javascript"></script>
+<script src="template/scripts/loadprojdata.js" type="text/javascript"></script>
+<script src="template/scripts/mhtopic.js" type="text/javascript"></script>
+<link href="template/styles/topic.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
 gRootRelPath = ".";
 gCommonRootRelPath = ".";
 gTopicId = "4.2.0_4";
 </script>
- <meta name="topic-breadcrumbs" content="Scripter's Guide > VN Engine" />
+<meta content="Scripter's Guide &gt; VN Engine" name="topic-breadcrumbs"/>
 </head>
 <body>
-<script type="text/javascript" src="./ehlpdhtm.js"></script>
-
-<p class="Topic_Heading">In-Game UI</p>
-<p>&#160;</p>
-<p><span style="font-weight: bold;">NOTE:</span> This topic will not explain how to make your own In-Game UI or how to modify the existing one. If you are looking for a tutorial about that, please check out <a href="IGUI_Getting_Started.htm">IGUI Getting Started</a> guide and also take a look at the <a href="Beginner_s_Guide.htm">Beginner's Guide</a>.</p>
-<p>&#160;</p>
-<p>In this topic we will take a look at how VN Maker's In-Game UI was built from the technical side to give you the necessary information for in-depth modifcations.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">UI Objects</p>
-<p>&#160;</p>
-<p>VN Maker's In-Game UI is a collection of game objects in ui-namespace such as ui.Object_Text to display a text-label, ui.Object_Image to display an image or ui.Object_Frame to display a frame. It also contains a set of layout objects such as ui.Object_StackLayout or ui.Object_GridLayout. Such layout objects are used to make it easier to position UI elements on screen without using direct pixel coordinates.</p>
-<p>&#160;</p>
-<p>The UI game objects are very primitive objects, you will not find a ui.Object_Button object or anything like that. That's because VN Maker's UI system wants you to combine primitive UI elements to create more advanced ones. To make a button, you can just combine an ui.Object_Image with an ui.Object_Text for example. Of course, you can also just create your own custom UI objects and UI components. You can find the default set of UI objects in Objects &gt; UI folder and the components in Components &gt; UI folder.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">JSON Layouts, Templates and Styles</p>
-<p>&#160;</p>
-<p>In VN Maker, the default In-Game UI is created using JSON layouts, styles and templates instead of dealing with the the UI objects directly in code. The JSON based layouts are and additional system built on top of the basic In-Game UI System. The idea behind that is to create your In-Game UI more easy, with just some easy-to-use JSON descriptions. The JSON structure is parsed and processed by the ui.UIManager class to construct all necessary UI objects based on the information from the JSON structure.</p>
-<p>&#160;</p>
-<p>That makes it easier for beginner's to change the In-Game UI because they no longer have to deal with real programming, it feels more like designing a website. In most cases, the entire in-game UI design can be changed without programming. Only if you add additional features or want to change behavior very much, it may be necessary to do a little bit of programming.</p>
-<p>&#160;</p>
-<p>All layouts, templates and styles are stored under the "Layouts" folder in script-editor. The design can be easily changed by editing the Layout_XXX scripts or Template_XXX scripts. Fonts, Colors and Animations can be easily changed by editing the Style_Default script.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">The UIManager class</p>
-<p>&#160;</p>
-<p>The UIManager class is a helper to parse and process JSON layouts, templates and styles. It constructs the necessary UI objects, add the necessary components to them and applies the correct styles. We already saw that in our <a href="Example__Movable_Character.htm">Example: Movable Character</a> example where we first used a ui.Object_Text directly and then later moved to a JSON layout to create the character info display. We used the UIManager.createFromDescriptor method to create our layout from a parsed JSON description.</p>
-<p>&#160;</p>
-<p>There are a lot of different kind of methods in UIManager, but all are documented. Feel free to play around, create your own UI objects or asking questions in our forums. Also, just to mention it again, check out the <a href="IGUI_Getting_Started.htm">In-Game UI Documentation.</a></p>
-<p>&#160;</p>
-<p>&#160;</p>
-<p>&#160;</p>
+<script src="./ehlpdhtm.js" type="text/javascript"></script>
+<p class="Topic_Heading">。</p>
+<p> </p>
+<p><span style="font-weight: bold;">在本主题中，我们将从技术层面探讨 VN Maker 的游戏内 UI 是如何构建的，以提供深入修改所需的信息。</span>UI 对象<a href="IGUI_Getting_Started.htm">VN Maker 的游戏内 UI 是 ui 命名空间中的一组游戏对象，例如 ui.Object_Text 用于显示文本标签，ui.Object_Image 用于显示图像，或 ui.Object_Frame 用于显示框架。 它还包含一组布局对象，例如 ui.Object_StackLayout 或 ui.Object_GridLayout。 这些布局对象用于更轻松地在屏幕上定位 UI 元素，而无需使用直接像素坐标。</a>UI 游戏对象是非常原始的对象，你不会找到 ui.Object_Button 对象之类的东西。 这是因为 VN Maker 的 UI 系统希望你组合原始 UI 元素来创建更高级的元素。 要创建一个按钮，你可以将 ui.Object_Image 与 ui.Object_Text 结合起来，例如。 当然，你也可以创建自己的自定义 UI 对象和 UI 组件。 你可以在 Objects &gt; UI 文件夹中找到默认的 UI 对象集，在 Components &gt; UI 文件夹中找到组件。<a href="Beginner_s_Guide.htm">JSON 布局、模板和样式</a>在 VN Maker 中，默认的游戏内 UI 是使用 JSON 布局、样式和模板创建的，而不是直接在代码中处理 UI 对象。 基于 JSON 的布局是构建在基本游戏内 UI 系统之上的附加系统。 其理念是通过一些易于使用的 JSON 描述更轻松地创建你的游戏内 UI。 JSON 结构由 ui.UIManager 类解析和处理，以根据 JSON 结构的**信息**构建所有必需的 UI 对象。</p>
+<p> </p>
+<p>这使得初学者更容易更改游戏内 UI，因为他们不再需要处理实际编程，感觉更像是设计网站。 在大多数情况下，整个游戏内 UI 设计都可以在没有编程的情况下更改。 只有当你添加附加功能或想进行大量行为更改时，可能才需要进行一些编程。</p>
+<p> </p>
+<p class="Sub_Heading">所有布局、模板和样式都存储在脚本编辑器中的“Layouts”文件夹下。 可以通过编辑 Layout_XXX 脚本或 Template_XXX 脚本轻松更改设计。 字体、颜色和动画可以通过编辑 Style_Default 脚本轻松更改。</p>
+<p> </p>
+<p>UIManager 类</p>
+<p> </p>
+<p>UIManager 类是一个帮助解析和处理 JSON 布局、模板和样式的类。 它构建必要的 UI 对象，将必要的组件添加到它们，并应用正确的样式。 我们已经在我们的</p>
+<p> </p>
+<p class="Sub_Heading">示例：可移动角色</p>
+<p> </p>
+<p>示例中看到了这一点，我们在其中直接使用了一个 ui.Object_Text，然后后来改用 JSON 布局来创建角色信息显示。 我们使用 UIManager.createFromDescriptor 方法从解析的 JSON 描述创建我们的布局。</p>
+<p> </p>
+<p>UIManager 中有很多不同种类的**方法**，但都已**文档**化。 随意尝试，创建你自己的 UI 对象或在我们的论坛中提问。 另外，再说一遍，请查看</p>
+<p> </p>
+<p>游戏内 UI 文档。</p>
+<p> </p>
+<p class="Sub_Heading">HTML</p>
+<p> </p>
+<p>包含部分和项<a href="Example__Movable_Character.htm">包含部分和项</a>T</p>
+<p> </p>
+<p>o minimize redundant data, Visual Novel Maker offers advanced include mechanisms.<a href="IGUI_Getting_Started.htm">包含部分</a></p>
+<p> </p>
+<p> </p>
+<p> </p>
 </body>
 </html>

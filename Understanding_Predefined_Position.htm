@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+现在，我们从四个命令减少到两个！现在您可以随心所欲地使用它了！
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="generator" content="Adobe RoboHelp 2015" />
-<title>Understanding Predefined Position</title>
-<link rel="StyleSheet" href="default.css" type="text/css" />
-<script type="text/javascript" language="JavaScript">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Adobe RoboHelp 2015" name="generator"/>
+<title>HTML</title>
+<link href="default.css" rel="StyleSheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
 //<![CDATA[
 function reDo() {
   if (innerWidth != origWidth || innerHeight != origHeight)
@@ -29,118 +29,102 @@ visibility:hidden; }
 p.WebHelpNavBar { text-align:right; }
 -->
 </style>
-
-<script type="text/javascript" src="template/scripts/rh.min.js"></script>
-<script type="text/javascript" src="template/scripts/common.min.js"></script>
-<script type="text/javascript" src="template/scripts/topic.min.js"></script>
-<script type="text/javascript" src="template/scripts/constants.js"></script>
-<script type="text/javascript" src="template/scripts/utils.js"></script>
-<script type="text/javascript" src="template/scripts/mhutils.js"></script>
-<script type="text/javascript" src="template/scripts/mhlang.js"></script>
-<script type="text/javascript" src="template/scripts/mhver.js"></script>
-<script type="text/javascript" src="template/scripts/settings.js"></script>
-<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
-<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
-<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
-<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
-<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
- <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
-<script type="text/javascript" >
+<script src="template/scripts/rh.min.js" type="text/javascript"></script>
+<script src="template/scripts/common.min.js" type="text/javascript"></script>
+<script src="template/scripts/topic.min.js" type="text/javascript"></script>
+<script src="template/scripts/constants.js" type="text/javascript"></script>
+<script src="template/scripts/utils.js" type="text/javascript"></script>
+<script src="template/scripts/mhutils.js" type="text/javascript"></script>
+<script src="template/scripts/mhlang.js" type="text/javascript"></script>
+<script src="template/scripts/mhver.js" type="text/javascript"></script>
+<script src="template/scripts/settings.js" type="text/javascript"></script>
+<script src="template/scripts/XmlJsReader.js" type="text/javascript"></script>
+<script src="template/scripts/loadparentdata.js" type="text/javascript"></script>
+<script src="template/scripts/loadscreen.js" type="text/javascript"></script>
+<script src="template/scripts/loadprojdata.js" type="text/javascript"></script>
+<script src="template/scripts/mhtopic.js" type="text/javascript"></script>
+<link href="template/styles/topic.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
 gRootRelPath = ".";
 gCommonRootRelPath = ".";
 gTopicId = "3.2.2.0_1";
 </script>
- <meta name="topic-breadcrumbs" content="Beginner's Guide > Customizing your Game > How to Display a Bust Image" />
+<meta content="Beginner's Guide &gt; Customizing your Game &gt; How to Display a Bust Image" name="topic-breadcrumbs"/>
 </head>
 <body>
-<script type="text/javascript" src="./ehlpdhtm.js"></script>
-
-<div style="width: 100%; position: relative;" id="header">
- <p class="Topic_Heading">Understanding Predefined Object Positions</p>
+<script src="./ehlpdhtm.js" type="text/javascript"></script>
+<div id="header" style="width: 100%; position: relative;">
+<p class="Topic_Heading">理解预定义位置</p>
 </div>
-<p>&#160;</p>
-<p><span class="Topic_Start">P</span>redefined Position is a nifty feature that allows you to set formulas to position a character on the screen. One of its major benefits is that it allows you to change your work as needed. This is useful for cases such as if you need to change your assets with different file dimensions or you changed your mind on where to position the characters. You can normally find them at commands that requires coordinates. <a href="https://www.khanacademy.org/math/geometry-home/geometry-coordinate-plane">If you are unfamiliar or need a refresher towards Coordinate Planes, here are some videos.</a> For example, you can find it here in Join Scene:</p>
-<p>&#160;</p>
-<p><img src="PredefinedObjectPosition.jpg" alt="" style=" border:none; width:100%; max-width:841px;" border="0" /></p>
-<p>&#160;</p>
-<p>If you need a refresher for Geometry's Coordinate Plane, <a href="https://www.khanacademy.org/math/basic-geo/basic-geo-coord-plane">here are a few lessons from Khan Academy</a>.</p>
-<p>&#160;</p>
-<p>You can find, modify and/or create Predefined Object Positions in <span style="font-family: 'Book Antiqua', serif; font-size: 14pt; text-decoration: underline;"><img src="icon_database_view.png" alt="" style=" border:none; max-width:16px; width:100%;" border="0" /></span><span style="font-family: Arial, sans-serif; font-weight: bold;">Database -&gt; <img src="icon_database_system.png" alt="" style=" border:none; width:100%; max-width:16px;" border="0" />System</span><span style="font-family: Arial, sans-serif;">.</span></p>
-<p>&#160;</p>
-<p class="Sub_Heading">Understanding Objects</p>
-<p>When you see the Predefined Object Position for the first time, You will notice that there's Top Left, Top, Top Right, Bottom Left, Bottom, Bottom Right, Left and Center. The reason they're named this way is because of the target object's anchor point. Here's an image to explain:</p>
-<p>&#160;</p>
-<p style="text-align: center;"><img src="AnchorPoints.png" alt="" style=" border:none; width:100%; max-width:223px;" border="0" /></p>
-<p style="text-align: center;">&#160;</p>
-<p>You might wonder, what is the difference between Top, Bottom and Center because they essentially do the same function; center the character on the screen. To understand the difference, let's say you want to display Ace on the screen, then the proximity of his body will be displayed like this:</p>
-<p style="text-align: center;"><img src="topcenterbottomaceimage.jpg" alt="" style=" border:none; width:100%; max-width:198px;" border="0" /></p>
-<p style="text-align: center;">&#160;</p>
-<p>This means, if you want to show Ace's head, you will select the Top Left, Top and Top Right coordinates. If you want to focus on his body, then you will go with center and so forth. The proximity of the display also depends on the image's width and height; this means that you have take into consideration even the transparent areas of the image. So if you were wondering how it knows whether it should display top left, left or right of the screen.</p>
-<p>&#160;</p>
-<p class="Sub_Heading">Deconstructing the Formula</p>
-<p>So we know which part of the character is going to be displayed; but how about their position on this screen? Looking at the example formula might intimidate you at first, but don't worry! It's not as complicated as you might think. Let's break down the formula for Top.</p>
-<pre>
-return { x: (Graphics.width - object.dstRect.width * object.zoom.x) / 2, y: 0  }
-</pre>
-<p class="SubSubHeading">How does it work?</p>
-<p>First, we need to know the width of our screen. By default, the in-game resolution is 720p (1280x720).</p>
-<p>Now, let's divide that screen by two (2). We will be left with 640.</p>
-<p>&#160;</p>
-<p>But if you display the object (character), it wouldn't be immediately centered. &#160;It will look like something like this:</p>
-<p>&#160;<img src="ScreenExplain.png" alt="" style=" border:none; width:100%; max-width:640px;" border="0" /></p>
-<p>&#160;</p>
-<p>Now, we want to center the object, you need to divide the object by two (2) and then subtract it from other half of the screen.</p>
-<p>In pseudo-code form, it should look something like this:</p>
-<pre>
-x = (Screen Width / 2) - (Object Width / 2)
-</pre>
-<p>Assuming that you didn't zoom the object, this is how it will look like. Visually what the code does is this:</p>
-<p><img src="ScreenExplain2.png" alt="" style=" border:none; width:100%; max-width:640px;" border="0" /></p>
-<p>&#160;</p>
-<p>&#160;</p>
-<p class="SubSubHeading">Writing the Formula from scratch</p>
-<p>Now let's simplify it by starting from scratch. Remember the order of operations in Mathematics, PEMDAS (<span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 16px; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline ! important ; float: none; font-weight: bold;">P</span><span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 16px; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline ! important ; float: none;">arentheses,</span> <span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 16px; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline ! important ; float: none; font-weight: bold;">E</span><span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 16px; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline ! important ; float: none;">xponents,</span> <span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 16px; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline ! important ; float: none; font-weight: bold;">M</span><span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 16px; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline ! important ; float: none;">ultiplication,</span> <span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 16px; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline ! important ; float: none; font-weight: bold;">D</span><span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 16px; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline ! important ; float: none;">ivision,</span> <span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 16px; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline ! important ; float: none; font-weight: bold;">A</span><span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 16px; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline ! important ; float: none;">ddition,</span> <span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 16px; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline ! important ; float: none; font-weight: bold;">S</span><span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 16px; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline ! important ; float: none;">ubtraction). If you are unfamiliar or just need to brush up on your algebra, <a href="https://www.khanacademy.org/math/pre-algebra/pre-algebra-arith-prop/pre-algebra-order-of-operations/v/introduction-to-order-of-operations">Khan Academy has an awesome tutorial that you can watch here</a>.</span></p>
-<p>&#160;</p>
-<p>First, write the formula like this:</p>
-<pre>
-return {  }
-</pre>
+<p> </p>
+<p><span class="Topic_Start">理解预定义对象位置</span>P<a href="https://www.khanacademy.org/math/geometry-home/geometry-coordinate-plane">redefined Position is a nifty feature that allows you to set formulas to position a character on the screen. One of its major benefits is that it allows you to change your work as needed. This is useful for cases such as if you need to change your assets with different file dimensions or you changed your mind on where to position the characters. You can normally find them at commands that requires coordinates.</a>如果您不熟悉或需要复习坐标平面，这里有一些视频。</p>
+<p> </p>
+<p><img alt="" border="0" src="PredefinedObjectPosition.jpg" style=" border:none; width:100%; max-width:841px;"/></p>
+<p> </p>
+<p>例如，您可以在“加入场景”中找到它：<a href="https://www.khanacademy.org/math/basic-geo/basic-geo-coord-plane">如果您需要复习几何坐标平面，</a>这里有一些来自可汗学院的课程</p>
+<p> </p>
+<p>。<span style="font-family: 'Book Antiqua', serif; font-size: 14pt; text-decoration: underline;"><img alt="" border="0" src="icon_database_view.png" style=" border:none; max-width:16px; width:100%;"/></span><span style="font-family: Arial, sans-serif; font-weight: bold;">您可以在<img alt="" border="0" src="icon_database_system.png" style=" border:none; width:100%; max-width:16px;"/>数据库 -&gt;</span><span style="font-family: Arial, sans-serif;">系统</span></p>
+<p> </p>
+<p class="Sub_Heading">中找到、修改和/或创建预定义对象位置。</p>
+<p>理解对象</p>
+<p> </p>
+<p style="text-align: center;"><img alt="" border="0" src="AnchorPoints.png" style=" border:none; width:100%; max-width:223px;"/></p>
+<p style="text-align: center;"> </p>
+<p>当您第一次看到预定义对象位置时，您会注意到有左上、顶部、右上、左下、底部、右下、左侧和中心。它们之所以这样命名，是因为目标对象的锚点。这里有一张图片来解释：</p>
+<p style="text-align: center;"><img alt="" border="0" src="topcenterbottomaceimage.jpg" style=" border:none; width:100%; max-width:198px;"/></p>
+<p style="text-align: center;"> </p>
+<p>您可能会想，顶部、底部和中心有什么区别，因为它们本质上执行相同的功能；将角色置于屏幕中央。要理解区别，假设您想在屏幕上显示 Ace，然后他身体的邻近区域将显示如下：</p>
+<p> </p>
+<p class="Sub_Heading">这意味着，如果您想显示 Ace 的头部，您将选择左上、顶部和右上坐标。如果您想专注于他的身体，那么您将选择中心，以此类推。显示的邻近区域也取决于图像的宽度和高度；这意味着您甚至需要考虑图像的透明区域。所以，如果您想知道它是如何知道是显示在屏幕的左上角、左侧还是右侧的。</p>
+<p>分解公式</p>
+<pre>所以我们知道要显示角色的哪个部分；但屏幕上的位置呢？看示例公式可能会让您望而却步，但别担心！它并不像您想的那么复杂。让我们分解一下顶部的公式。</pre>
+<p class="SubSubHeading">return { x: (Graphics.width - object.dstRect.width * object.zoom.x) / 2, y: 0  }</p>
+<p>它是如何工作的？</p>
+<p>首先，我们需要知道屏幕的宽度。默认情况下，游戏内分辨率为 720p（1280x720）。</p>
+<p> </p>
+<p>现在，让我们将屏幕宽度除以二 (2)。我们将得到 640。</p>
+<p> <img alt="" border="0" src="ScreenExplain.png" style=" border:none; width:100%; max-width:640px;"/></p>
+<p> </p>
+<p>但如果您显示对象（角色），它不会立即居中。它看起来会像这样：</p>
+<p>现在，我们想居中对象，您需要将对象除以二 (2)，然后将其从屏幕的另一半中减去。</p>
+<pre>用伪代码表示，它应该看起来像这样：</pre>
+<p>x = (屏幕宽度 / 2) - (对象宽度 / 2)</p>
+<p><img alt="" border="0" src="ScreenExplain2.png" style=" border:none; width:100%; max-width:640px;"/></p>
+<p> </p>
+<p> </p>
+<p class="SubSubHeading">假设您没有缩放对象，它看起来会是这样。视觉上，代码的作用是：</p>
+<p>从头开始编写公式<span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 16px; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline ! important ; float: none; font-weight: bold;">现在让我们从头开始简化它。记住数学中的运算顺序，PEMDAS（</span><span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 16px; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline ! important ; float: none;">P</span> <span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 16px; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline ! important ; float: none; font-weight: bold;">arentheses（括号），</span><span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 16px; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline ! important ; float: none;">E</span> <span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 16px; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline ! important ; float: none; font-weight: bold;">xponents（指数），</span><span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 16px; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline ! important ; float: none;">M</span> <span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 16px; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline ! important ; float: none; font-weight: bold;">ultiplication（乘法），</span><span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 16px; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline ! important ; float: none;">D</span> <span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 16px; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline ! important ; float: none; font-weight: bold;">ivision（除法），</span><span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 16px; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline ! important ; float: none;">A</span> <span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 16px; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline ! important ; float: none; font-weight: bold;">ddition（加法），</span><span style="color: rgb(34, 34, 34); font-family: Arial, sans-serif; font-size: 16px; font-variant-ligatures: normal; font-variant-caps: normal; orphans: 2; widows: 2; -webkit-text-stroke-width: 0px; background-color: #ffffff; display: inline ! important ; float: none;">S<a href="https://www.khanacademy.org/math/pre-algebra/pre-algebra-arith-prop/pre-algebra-order-of-operations/v/introduction-to-order-of-operations">ubtraction（减法））。如果您不熟悉或只是需要复习代数，</a>可汗学院有一个很棒的教程，您可以观看</span></p>
+<p> </p>
+<p>。</p>
+<pre>首先，像这样写公式：</pre>
 <ul style="list-style: disc;">
-<li><span style="font-weight: bold;">return</span> - it means that it will put the results of the formula to the coordinate fields of the command.</li>
-<li><span style="font-weight: bold;">brackets</span> <span>({ }) - this is where you will insert the parameters and their formulas.</span></li>
+<li><span style="font-weight: bold;">return {  }</span>return</li>
+<li><span style="font-weight: bold;">- 意味着它将公式的结果放入命令的坐标字段。</span> <span>brackets</span></li>
 </ul>
-<pre>
-return { x:  }
-</pre>
+<pre>return { x:  }</pre>
 <ul style="list-style: disc;">
-<li><span style="font-weight: bold;">x:</span> - this is for the x-coordinate of the command. This is our first parameter.</li>
+<li><span style="font-weight: bold;">x:</span>- 这是命令的 x 坐标。这是我们的第一个参数。</li>
 </ul>
-<pre>
-return { x: (Graphics.width - object.dstRect.width) / 2 }
-</pre>
+<pre>return { x: (Graphics.width - object.dstRect.width) / 2 }</pre>
 <ul style="list-style: disc;">
-<li><span style="font-weight: bold;">Graphics.width</span> <span>- The In-Game's Screen width.</span></li>
-<li><span style="font-weight: bold;">object.dsRect.width</span> <span>- The Object's width.</span></li>
-<li style="font-weight: bold;">Division Operator (/) <span style="font-weight: normal;">- Divide the result to the number specified, in this case 2.</span></li>
+<li><span style="font-weight: bold;">Graphics.width</span> <span>- 游戏屏幕的宽度。</span></li>
+<li><span style="font-weight: bold;">object.dsRect.width</span> <span>- 物体的宽度。</span></li>
+<li style="font-weight: bold;">除法运算符（/）<span style="font-weight: normal;">- 将结果除以指定的数字，此处为 2。</span></li>
 </ul>
-<p>&#160;</p>
-<p>Now, let's say that you might want to zoom in/out the object later, we cannot use this formula. When an object is zoomed in/out, their positioning changes as well due to the changed width and height. So we would need to add another variable.</p>
-<pre>
-return { x: (Graphics.width - object.dstRect.width * object.zoom.x) / 2 }
-</pre>
+<p> </p>
+<p>现在，假设您以后可能想放大/缩小对象，我们就不能使用此公式。当对象被放大/缩小后，由于宽度和高度的变化，它们的位置也会随之改变。所以我们需要添加另一个变量。</p>
+<pre>return { x: (Graphics.width - object.dstRect.width * object.zoom.x) / 2 }</pre>
 <ul style="list-style: disc;">
-<li style="font-weight: bold;">object.zoom.x <span style="font-weight: normal;">- this will take into consideration the scale of your image from the X Axis.</span></li>
+<li style="font-weight: bold;">object.zoom.x<span style="font-weight: normal;">- 这将考虑图像在 X 轴上的缩放比例。</span></li>
 </ul>
-<p>&#160;</p>
-<p>Finally, we'll check the character's Y coordinate. Since this is for Top Center, we just need to input 0.</p>
-<pre>
-return { x: (Graphics.width - object.dstRect.width * object.zoom.x) / 2, y: 0  }
-</pre>
+<p> </p>
+<p>最后，我们将检查角色的 Y 坐标。由于这是顶部居中，我们只需要输入 0。</p>
+<pre>return { x: (Graphics.width - object.dstRect.width * object.zoom.x) / 2, y: 0  }</pre>
 <ul style="list-style: disc;">
-<li><span style="font-weight: bold;">y</span> <span>-</span>&#160;this is for the y-coordinate of the command. This is our second parameter.</li>
-<li><span style="font-weight: bold;">comma (,)</span> <span>- is to separate parameters. In this case, x and y.</span></li>
+<li><span style="font-weight: bold;">y</span> <span>-</span>这是命令的 y 坐标。这是我们的第二个参数。</li>
+<li><span style="font-weight: bold;">逗号（,）</span> <span>- 用于分隔参数。在此处，是 x 和 y。</span></li>
 </ul>
-<p>&#160;</p>
-<p>That's about it! If you want another example on how to use predefined position for your Visual Novel, go over <a href="Understanding_Predefined_Objects.htm">Displaying a Bust Image!</a></p>
+<p> </p>
+<p>就这些了！如果您想了解如何为您的视觉小说使用预定义位置的另一个示例，请前往<a href="Understanding_Predefined_Objects.htm">显示一个半身像！</a></p>
 </body>
 </html>

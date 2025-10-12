@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+HTML
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="generator" content="Adobe RoboHelp 2015" />
-<title>Example: Adding a new database category</title>
-<link rel="StyleSheet" href="default.css" type="text/css" />
-<script type="text/javascript" language="JavaScript">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Adobe RoboHelp 2015" name="generator"/>
+<title>示例：添加新的数据库类别</title>
+<link href="default.css" rel="StyleSheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
 //<![CDATA[
 function reDo() {
   if (innerWidth != origWidth || innerHeight != origHeight)
@@ -29,234 +29,232 @@ visibility:hidden; }
 p.WebHelpNavBar { text-align:right; }
 -->
 </style>
-
-<script type="text/javascript" src="template/scripts/rh.min.js"></script>
-<script type="text/javascript" src="template/scripts/common.min.js"></script>
-<script type="text/javascript" src="template/scripts/topic.min.js"></script>
-<script type="text/javascript" src="template/scripts/constants.js"></script>
-<script type="text/javascript" src="template/scripts/utils.js"></script>
-<script type="text/javascript" src="template/scripts/mhutils.js"></script>
-<script type="text/javascript" src="template/scripts/mhlang.js"></script>
-<script type="text/javascript" src="template/scripts/mhver.js"></script>
-<script type="text/javascript" src="template/scripts/settings.js"></script>
-<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
-<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
-<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
-<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
-<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
- <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
-<script type="text/javascript" >
+<script src="template/scripts/rh.min.js" type="text/javascript"></script>
+<script src="template/scripts/common.min.js" type="text/javascript"></script>
+<script src="template/scripts/topic.min.js" type="text/javascript"></script>
+<script src="template/scripts/constants.js" type="text/javascript"></script>
+<script src="template/scripts/utils.js" type="text/javascript"></script>
+<script src="template/scripts/mhutils.js" type="text/javascript"></script>
+<script src="template/scripts/mhlang.js" type="text/javascript"></script>
+<script src="template/scripts/mhver.js" type="text/javascript"></script>
+<script src="template/scripts/settings.js" type="text/javascript"></script>
+<script src="template/scripts/XmlJsReader.js" type="text/javascript"></script>
+<script src="template/scripts/loadparentdata.js" type="text/javascript"></script>
+<script src="template/scripts/loadscreen.js" type="text/javascript"></script>
+<script src="template/scripts/loadprojdata.js" type="text/javascript"></script>
+<script src="template/scripts/mhtopic.js" type="text/javascript"></script>
+<link href="template/styles/topic.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
 gRootRelPath = ".";
 gCommonRootRelPath = ".";
 gTopicId = "5.2.1.1.0_1";
 </script>
- <meta name="topic-breadcrumbs" content="Script and Plugin Reference > Extension Documentation > Getting Started > Examples" />
+<meta content="Script and Plugin Reference &gt; Extension Documentation &gt; Getting Started &gt; Examples" name="topic-breadcrumbs"/>
 </head>
 <body>
-<script type="text/javascript" src="./ehlpdhtm.js"></script>
-
-<div style="width: 100%; position: relative;" id="header">
- <p class="Topic_Heading">Example: Adding a new Database Category</p>
+<script src="./ehlpdhtm.js" type="text/javascript"></script>
+<div id="header" style="width: 100%; position: relative;">
+<p class="Topic_Heading">示例：添加新的数据库类别</p>
 </div>
-<p><br />
-<span class="Topic_Start">I</span>n the following example we want to add a new category to the editor’s database. To do that, we will first open the Extension Editor through the Menu under View &gt; Extension.</p>
-<p>&#160;</p>
-<p>Next we will make a right-click on the"Data Record Views " folder and select New &gt; Data Record View to create a new view for our new category. We will call it"Cards " since we want to create cards for a simple card game in our VN. It already contains some basic JSON which looks like this:</p>
-<p>&#160;</p>
+<p><br/>
+<span class="Topic_Start">I</span>在以下示例中，我们想向编辑器的数据库添加一个新类别。为此，我们将首先通过菜单下的“视图 &gt; 扩展”打开 Extension Editor。</p>
+<p> </p>
+<p>接下来，我们将右键单击“数据记录视图”文件夹，然后选择“新建 &gt; 数据记录视图”来为我们的新类别创建一个新视图。我们将它命名为“卡片”，因为我们想为我们的 VN 中的一个简单卡片游戏创建卡片。它已经包含了一些基本的 JSON，如下所示：</p>
+<p> </p>
 <p><span class="Code">{</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"category": "cards",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"descriptor": {</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "Cards",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"attribute": "cards",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"sections": []</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;}</span></p>
+<p><span class="Code">"category": "cards",</span></p>
+<p><span class="Code">"descriptor": {</span></p>
+<p><span class="Code">"name": "Cards",</span></p>
+<p><span class="Code">"attribute": "cards",</span></p>
+<p><span class="Code">"sections": []</span></p>
 <p><span class="Code">}</span></p>
-<p>&#160;</p>
-<p>Lets go through the different fields step by step.</p>
-<p>&#160;</p>
+<p><span class="Code">}</span></p>
+<p> </p>
+<p>让我们一步一步地介绍各个字段。</p>
+<p> </p>
 <ul style="list-style: disc;">
 <li style="margin-left: -20px;">
 <p style="font-weight: bold;">category</p>
 </li>
 </ul>
-<p>The backend field name of the category. It should be a unique name in camel-case notation.</p>
-<p>&#160;</p>
+<p>类别的后端字段名。它应该是一个唯一的驼峰式命名。</p>
+<p> </p>
 <ul style="list-style: disc;">
 <li style="margin-left: -20px;">
 <p style="font-weight: bold;">descriptor</p>
 </li>
 </ul>
-<p>Contains the details about the view used for each single record of the category.</p>
-<p>&#160;</p>
+<p>包含有关用于类别中每个单独记录的视图的详细信息。</p>
+<p> </p>
 <ul style="list-style: disc;">
 <li style="margin-left: -20px;">
 <p style="font-weight: bold;">descriptor.name</p>
 </li>
 </ul>
-<p>The name displayed in the category list in database.</p>
-<p>&#160;</p>
+<p>显示在数据库类别列表中的名称。</p>
+<p> </p>
 <ul style="list-style: disc;">
 <li style="margin-left: -20px;">
 <p style="font-weight: bold;">descriptor.attribute</p>
 </li>
 </ul>
-<p>The backend attribute name used to store the records. That name is used to access the data records through script. The name should be a unique name in camel-case. In most cases it is the same like category-field.</p>
-<p>&#160;</p>
+<p>用于存储记录的后端属性名。该名称用于通过脚本访问数据记录。该名称应该是唯一的驼峰式命名。在大多数情况下，它与 category-field 相同。</p>
+<p> </p>
 <ul style="list-style: disc;">
 <li style="margin-left: -20px;">
 <p style="font-weight: bold;">descriptor.sections</p>
 </li>
 </ul>
-<p>Contains all the sections used for the UI.</p>
-<p>&#160;</p>
-<p>Lets first think about what kind of data we need to store to describe a card in our game. We will keep it simple so a card has a name, a description and an image and that's it. Now lets design the UI for that.</p>
-<p>&#160;</p>
-<p>We will create two sections. One for the general data like the name and the description and one section for the image. So our JSON will look like this now:</p>
-<p>&#160;</p>
+<p>包含用于 UI 的所有部分。</p>
+<p> </p>
+<p>让我们先考虑一下我们需要存储什么样的数据来描述我们游戏中的一张卡片。我们将保持简单，所以一张卡片有一个名称、一个描述和一个图像，仅此而已。现在让我们为此设计 UI。</p>
+<p> </p>
+<p>我们将创建两个部分。一个用于一般数据，如名称和描述，另一个用于图像。所以我们的 JSON 现在看起来像这样：</p>
+<p> </p>
 <p><span class="Code">{</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"category": "cards",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"descriptor": {</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "Cards",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"attribute": "cards",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"sections": [</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "General",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"items": [</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;]</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"name": "Graphic",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"items": [</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;]</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;]</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;}</span></p>
-<p><span class="Code">}</span></p>
-<p>&#160;</p>
-<p>As we can see here, we added the two sections described above. Each section has a name which is displayed to the user and a list of items to let the user interact with the view.</p>
-<p>&#160;</p>
-<p>Lets start with the first section"General ". In our example we just need to add one text field for the card name and one multiline text-area for the card’s description plus two labels to describe that fields for the user. So our section will look like this now:</p>
-<p>&#160;</p>
+<p><span class="Code">"category": "cards",</span></p>
+<p><span class="Code">"descriptor": {</span></p>
+<p><span class="Code">"name": "Cards",</span></p>
+<p><span class="Code">"attribute": "cards",</span></p>
+<p><span class="Code">"sections": [</span></p>
 <p><span class="Code">{</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"name": "General",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"items": [</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "GSLabel",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"text": "Name:",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"group": "labels",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"frame": [0, 0]</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "GSTextField",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"attribute": "name",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"frame": [1, 0]</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "GSLabel",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"text": "Description:",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"frame": [0, 1]</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "GSTextField",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"multiline": true,</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"attribute": "description",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"defaultValue": "Enter description here...",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"frame": [0, 2, -1, 100]</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;]</span></p>
+<p><span class="Code">"name": "General",</span></p>
+<p><span class="Code">"items": [</span></p>
+<p><span class="Code">]</span></p>
+<p><span class="Code">},</span></p>
+<p><span class="Code">{</span></p>
+<p><span class="Code">"name": "Graphic",</span></p>
+<p><span class="Code">"items": [</span></p>
+<p><span class="Code">]</span></p>
 <p><span class="Code">}</span></p>
-<p>&#160;</p>
-<p>We added 4 items to our section. Lets take a deeper look to the fields of each item. Each item can have a few general fields which are available for each type of item but also some type specific fields. Lets start with the general fields used in that example:</p>
-<p>&#160;</p>
+<p><span class="Code">]</span></p>
+<p><span class="Code">}</span></p>
+<p><span class="Code">}</span></p>
+<p> </p>
+<p>正如我们在这里看到的，我们添加了上面描述的两个部分。每个部分都有一个名称，显示给用户，以及一个项目列表，让用户可以与视图进行交互。</p>
+<p> </p>
+<p>让我们从第一个部分“General”开始。在我们的例子中，我们只需要添加一个文本字段用于卡片名称和一个多行文本区域用于卡片的描述，再加上两个标签来为用户描述这些字段。所以我们的部分现在看起来像这样：</p>
+<p> </p>
+<p><span class="Code">{</span></p>
+<p><span class="Code">"name": "General",</span></p>
+<p><span class="Code">"items": [</span></p>
+<p><span class="Code">{</span></p>
+<p><span class="Code">"type": "GSLabel",</span></p>
+<p><span class="Code">"text": "Name:",</span></p>
+<p><span class="Code">"group": "labels",</span></p>
+<p><span class="Code">"frame": [0, 0]</span></p>
+<p><span class="Code">},</span></p>
+<p><span class="Code">{</span></p>
+<p><span class="Code">"type": "GSTextField",</span></p>
+<p><span class="Code">"attribute": "name",</span></p>
+<p><span class="Code">"frame": [1, 0]</span></p>
+<p><span class="Code">},</span></p>
+<p><span class="Code">{</span></p>
+<p><span class="Code">"type": "GSLabel",</span></p>
+<p><span class="Code">"text": "Description:",</span></p>
+<p><span class="Code">"frame": [0, 1]</span></p>
+<p><span class="Code">},</span></p>
+<p><span class="Code">{</span></p>
+<p><span class="Code">"type": "GSTextField",</span></p>
+<p><span class="Code">"multiline": true,</span></p>
+<p><span class="Code">"attribute": "description",</span></p>
+<p><span class="Code">"defaultValue": "Enter description here...",</span></p>
+<p><span class="Code">"frame": [0, 2, -1, 100]</span></p>
+<p><span class="Code">}</span></p>
+<p><span class="Code">]</span></p>
+<p><span class="Code">}</span></p>
+<p> </p>
+<p>我们在部分中添加了 4 个项目。让我们更深入地研究每个项目字段。每个项目都可以有一些通用字段，这些字段适用于每种项目类型，也可以有一些特定于类型的字段。让我们从本例中使用的通用字段开始：</p>
+<p> </p>
 <ul style="list-style: disc;">
 <li style="margin-left: -20px;">
 <p style="font-weight: bold;">type (Required)</p>
 </li>
 </ul>
-<p>Indicates the type of the item like if its a label, a text field, a check box, etc. The type must be present.</p>
-<p>&#160;</p>
+<p>指示项目的类型，例如它是标签、文本字段、复选框等。必须存在该类型。</p>
+<p> </p>
 <ul style="list-style: disc;">
 <li style="margin-left: -20px;">
 <p style="font-weight: bold;">attribute</p>
 </li>
 </ul>
-<p>The backend JavaScript attribute name where the item will store its data. You can access the data via script using that name. The name should be unique for the view to avoid collisions.</p>
-<p>&#160;</p>
+<p>项目将存储其数据的后端 JavaScript 属性名。您可以使用该名称通过脚本访问数据。该名称对于视图应该是唯一的，以避免冲突。</p>
+<p> </p>
 <ul style="list-style: disc;">
 <li style="margin-left: -20px;">
 <p style="font-weight: bold;">frame (Required)</p>
 </li>
 </ul>
-<p>The first two values are the position and the other two are the size of the item. For most items, the size is calculated automatically but for some items it is necessary to specify at least the height like for multiline text-fields, tables, etc. You can also use -1 for size-values to indicate that the value should be calculated automatically. The frame must be present for each item and must have at least and x and y value.</p>
-<p>&#160;</p>
+<p>前两个值是位置，后两个值是项目的大小。对于大多数项目，大小会自动计算，但对于某些项目，至少需要指定高度，例如多行文本字段、表格等。您也可以使用 -1 作为大小值，表示值将自动计算。框架必须存在于每个项目，并且至少必须有一个 x 和 y 值。</p>
+<p> </p>
 <ul style="list-style: disc;">
 <li style="margin-left: -20px;">
 <p style="font-weight: bold;">defaultValue</p>
 </li>
 </ul>
-<p>You can define a default value here used if a new record is created and there is no existing data to read from.</p>
-<p>Now lets take a look at item specific fields used in that example.</p>
-<p>&#160;</p>
+<p>您可以定义一个默认值，当创建新记录并且没有现有数据可读取时使用。</p>
+<p>现在让我们看看本例中使用的特定于类型的字段。</p>
+<p> </p>
 <ul style="list-style: disc;">
 <li style="margin-left: -20px;">
 <p style="font-weight: bold;">group</p>
 </li>
 </ul>
-<p>Assigns the label to a label group which automatically resizes the label to fit correctly depending on its text and the text of other labels in the same group. Like if you have multiple labels below each other like this:</p>
-<p>&#160;</p>
-<p><span class="Code">Label 1: &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&lt;Text-Field&gt;</span></p>
-<p><span class="Code">Other Label 2: &#160;&#160;&lt;Text-Field&gt;</span></p>
+<p>将标签分配给一个标签组，该组会自动调整标签大小以正确适应，具体取决于其文本和同一组中其他标签的文本。例如，如果您有多个标签如下排列：</p>
+<p> </p>
+<p><span class="Code">Label 1:         &lt;Text-Field&gt;</span></p>
+<p><span class="Code">Other Label 2:   &lt;Text-Field&gt;</span></p>
 <p><span class="Code">Another Label 3: &lt;Text-Field&gt;</span></p>
-<p>&#160;</p>
-<p>You probably want that the labels all have the same width depending on the label with the highest width value to avoid that your layout looks like this:</p>
-<p>&#160;</p>
+<p> </p>
+<p>您可能希望所有标签都具有相同的宽度，具体取决于具有最高宽度的标签，以避免您的布局看起来像这样：</p>
+<p> </p>
 <p><span class="Code">Label 1: &lt;Text-Field&gt;</span></p>
 <p><span class="Code">Other Label 2: &lt;Text-Field&gt;</span></p>
 <p><span class="Code">Another Label 3: &lt;Text-Field&gt;</span></p>
-<p>&#160;</p>
-<p>However, that can also be solved using different types of layouts but that is not covered by this tutorial. Take a look at the <a href="plugin_doc/index.html">Plugin API Reference</a> to learn more about different types of layouts.</p>
-<p>&#160;</p>
+<p> </p>
+<p>但是，这也可以通过使用不同类型的布局来解决，但这不在本教程的讨论范围内。查看<a href="plugin_doc/index.html">Plugin API Reference</a>以了解更多关于不同类型布局的信息。</p>
+<p> </p>
 <ul style="list-style: disc;">
 <li style="margin-left: -20px;">
 <p style="font-weight: bold;">multiline</p>
 </li>
 </ul>
-<p>Indicates that we want to have a multiline text-field. In that case we have to specify a height value for our text-field. We made it 100px in height in our example. After we are done setting up our first section we can click on the"Preview " button to see an interactive preview of our view so we can check if our elements look right. To close the preview for DataRecordViews, we just click on the"Preview " button again.</p>
-<p>&#160;</p>
-<p>Ok, lets move forward and implement the section for the card’s image.</p>
-<p>&#160;</p>
+<p>指示我们想要一个多行文本字段。在这种情况下，我们必须为我们的文本字段指定一个高度值。在我们的例子中，我们将它设置为 100px。设置完第一个部分后，我们可以单击“预览”按钮来查看视图的交互式预览，以便我们可以检查我们的元素是否看起来正确。要关闭 DataRecordViews 的预览，只需再次单击“预览”按钮。</p>
+<p> </p>
+<p>好的，让我们继续实现卡片图像的部分。</p>
+<p> </p>
 <p><span class="Code">{</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"name": "Graphic",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"items": [</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "GSImageView",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"attribute": "graphic",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"folder": "Graphics/Pictures",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"frame": [0, 0, 300, 450]</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;]</span></p>
+<p><span class="Code">"name": "Graphic",</span></p>
+<p><span class="Code">"items": [</span></p>
+<p><span class="Code">{</span></p>
+<p><span class="Code">"type": "GSImageView",</span></p>
+<p><span class="Code">"attribute": "graphic",</span></p>
+<p><span class="Code">"folder": "Graphics/Pictures",</span></p>
+<p><span class="Code">"frame": [0, 0, 300, 450]</span></p>
 <p><span class="Code">}</span></p>
-<p>&#160;</p>
-<p>We are using a"GSImageView " which allows the user to select a graphic and shows a preview at the same time. We are using a size of 300x450 since our card images have exactly that size. Lets take look at the fields:</p>
-<p>&#160;</p>
+<p><span class="Code">]</span></p>
+<p><span class="Code">}</span></p>
+<p> </p>
+<p>我们正在使用“GSImageView”，它允许用户选择一个图形并同时显示预览。我们使用 300x450 的尺寸，因为我们的卡片图像正好是那个尺寸。让我们看看字段：</p>
+<p> </p>
 <ul style="list-style: disc;">
 <li style="margin-left: -20px;">
 <p style="font-weight: bold;">folder</p>
 </li>
 </ul>
-<p>The folder to select an image from. In our case we will use the picture folder"Graphics/Pictures ".</p>
-<p>&#160;</p>
-<p>That’s it! We are done! Lets now save our project and restart Visual Novel Maker to see our changes. If we go now to database we will see our new category"Cards " there. We can now use that category to create different types of cards for our game.</p>
-<p>&#160;</p>
-<p style="font-weight: bold; font-size: 18pt; font-family: 'Book Antiqua', serif;"><span>Accessing Data via Script</span></p>
-<hr width="60%" align="left" />
-<p>In script we can use RecordManager class to access the database. The RecordManager automatically has a property with the name we specified for category/attribute field of our Data Record View. To access our cards in way like this:</p>
-<p>&#160;</p>
+<p>用于选择图像的文件夹。在我们的例子中，我们将使用图片文件夹“Graphics/Pictures”。</p>
+<p> </p>
+<p>就是这样！我们完成了！现在让我们保存我们的项目并重新启动 Visual Novel Maker 来查看我们的更改。如果我们现在进入数据库，我们将看到我们新的“卡片”类别。我们现在可以使用该类别为我们的游戏创建不同类型的卡片。</p>
+<p> </p>
+<p style="font-weight: bold; font-size: 18pt; font-family: 'Book Antiqua', serif;"><span>通过脚本访问数据</span></p>
+<hr align="left" width="60%"/>
+<p>在脚本中，我们可以使用 RecordManager 类来访问数据库。RecordManager 自动有一个属性，其名称与我们在数据记录视图的类别/属性字段中指定的名称相同。要以这种方式访问我们的卡片：</p>
+<p> </p>
 <p><span class="Code">cards = RecordManager.cards</span></p>
 <p><span class="Code">for card in cards</span></p>
-<p><span class="Code">&#160;&#160;if card?</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;console.log("Name: #{card.name}")</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;console.log("Description: #{card.description}")</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;console.log("Image: #{card.graphic?.name}")</span></p>
+<p><span class="Code">if card?</span></p>
+<p><span class="Code">console.log("Name: #{card.name}")</span></p>
+<p><span class="Code">console.log("Description: #{card.description}")</span></p>
+<p><span class="Code">console.log("Image: #{card.graphic?.name}")</span></p>
 </body>
 </html>

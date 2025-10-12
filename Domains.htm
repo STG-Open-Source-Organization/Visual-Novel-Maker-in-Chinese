@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+HTML
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="generator" content="Adobe RoboHelp 2015" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Adobe RoboHelp 2015" name="generator"/>
 <title>Domains</title>
-<link rel="StyleSheet" href="default.css" type="text/css" />
-<script type="text/javascript" language="JavaScript">
+<link href="default.css" rel="StyleSheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
 //<![CDATA[
 function reDo() {
   if (innerWidth != origWidth || innerHeight != origHeight)
@@ -29,96 +29,93 @@ visibility:hidden; }
 p.WebHelpNavBar { text-align:right; }
 -->
 </style>
-
-<script type="text/javascript" src="template/scripts/rh.min.js"></script>
-<script type="text/javascript" src="template/scripts/common.min.js"></script>
-<script type="text/javascript" src="template/scripts/topic.min.js"></script>
-<script type="text/javascript" src="template/scripts/constants.js"></script>
-<script type="text/javascript" src="template/scripts/utils.js"></script>
-<script type="text/javascript" src="template/scripts/mhutils.js"></script>
-<script type="text/javascript" src="template/scripts/mhlang.js"></script>
-<script type="text/javascript" src="template/scripts/mhver.js"></script>
-<script type="text/javascript" src="template/scripts/settings.js"></script>
-<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
-<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
-<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
-<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
-<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
- <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
-<script type="text/javascript" >
+<script src="template/scripts/rh.min.js" type="text/javascript"></script>
+<script src="template/scripts/common.min.js" type="text/javascript"></script>
+<script src="template/scripts/topic.min.js" type="text/javascript"></script>
+<script src="template/scripts/constants.js" type="text/javascript"></script>
+<script src="template/scripts/utils.js" type="text/javascript"></script>
+<script src="template/scripts/mhutils.js" type="text/javascript"></script>
+<script src="template/scripts/mhlang.js" type="text/javascript"></script>
+<script src="template/scripts/mhver.js" type="text/javascript"></script>
+<script src="template/scripts/settings.js" type="text/javascript"></script>
+<script src="template/scripts/XmlJsReader.js" type="text/javascript"></script>
+<script src="template/scripts/loadparentdata.js" type="text/javascript"></script>
+<script src="template/scripts/loadscreen.js" type="text/javascript"></script>
+<script src="template/scripts/loadprojdata.js" type="text/javascript"></script>
+<script src="template/scripts/mhtopic.js" type="text/javascript"></script>
+<link href="template/styles/topic.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
 gRootRelPath = ".";
 gCommonRootRelPath = ".";
 gTopicId = "2.5_10";
 </script>
- <meta name="topic-breadcrumbs" content="Exploring the Editor" />
+<meta content="Exploring the Editor" name="topic-breadcrumbs"/>
 </head>
-
 <body>
-<script type="text/javascript" src="./ehlpdhtm.js"></script>
-
+<script src="./ehlpdhtm.js" type="text/javascript"></script>
 <p class="Topic_Heading">Sharing Content</p>
-<p>&#160;</p>
+<p> </p>
 <p><span class="Topic_Start">V</span>isual Novel Maker supports an easy-to-use 
  sharing of scripts, scenes, database entries and even assets via Extensions. 
  However, if you think about sharing, it is important that you learn about 
  so called Groups first.</p>
 <p>In VN Maker, many game objects such as pictures or texts on screen are 
  associated with a Number/ID like you can see here:</p>
-<p>&#160;</p>
-<p><img src="NumberDomain.png" alt="" style=" border:none; width:100%; max-width:1147px;" border="0" /></p>
-<p>&#160;</p>
+<p> </p>
+<p><img alt="" border="0" src="NumberDomain.png" style=" border:none; width:100%; max-width:1147px;"/></p>
+<p> </p>
 <p>With that command we are showing a picture on screen with the number 
  5. The number 5 is now associated with our picture on screen. You can 
- imagine this like we are giving the picture the name &quot;5&quot;. So 
+ imagine this like we are giving the picture the name "5". So 
  if we want to animate or move that picture to another position, we use 
  the number 5 to tell VN Maker which picture we mean. So if we want to 
  display more than one picture on screen, we have to use a different number 
  for each one so we can distinguish between them. That kind of number-system 
  is used in VN Maker not only for pictures but also for texts, backgrounds, 
- videos, message areas, hotspots and image-maps. </p>
-<p>&#160;</p>
+ videos, message areas, hotspots and image-maps.</p>
+<p> </p>
 <p>The problem with sharing is that, since simple numbers like that are 
  not really unique, if you share a cool and reusable gender-selection, 
  it maybe uses picture or text numbers which are already in use by other 
  pictures which results in bugs. To avoid that frustration, Groups come 
  into play.</p>
-<p>&#160;</p>
-<p>On the screenshot above you can see &quot;@default&quot; before the 
+<p> </p>
+<p>On the screenshot above you can see "@default" before the 
  number, which is the current group that picture should belong too. You 
  can click on it to change the group for that picture. A group itself is 
- just a unique name e.g. &quot;com.degica.vnm.bj&quot; or &quot;peter.usefulstuff.cool-gender-selection&quot; 
+ just a unique name e.g. "com.degica.vnm.bj" or "peter.usefulstuff.cool-gender-selection" 
  and acts as a group for variables and game object numbers. All groups 
  are independent from each other which means if you show a picture with 
- the number 5 of group &quot;peter.usefulstuff.cool-gender-selection&quot; 
- and then another picture with the number 5 of domain &quot;com.degica.vnm.bj&quot;, 
+ the number 5 of group "peter.usefulstuff.cool-gender-selection" 
+ and then another picture with the number 5 of domain "com.degica.vnm.bj", 
  both pictures will be displayed at the same time and there will be no 
  collisions/bugs since they are in different groups. It is the same with 
- variables as you can see on the following screenshot:. </p>
-<p>&#160;</p>
-<p><img src="VariableDomain.png" alt="" style=" border:none; width:100%; max-width:480px;" border="0" /></p>
-<p>&#160;</p>
+ variables as you can see on the following screenshot:.</p>
+<p> </p>
+<p><img alt="" border="0" src="VariableDomain.png" style=" border:none; width:100%; max-width:480px;"/></p>
+<p> </p>
 <p>For Variables, groups are only available for global and persistent variables 
  since local variables are already bound to a unique scene/common-event. 
  So with groups you can easily share your content e.g. a cool gender-selection 
  and other people can use it in their projects without any collisions.. 
  You just have to put all your picture numbers and global variables under 
  your own unique group and thats it.</p>
-<p>&#160;</p>
+<p> </p>
 <p class="Sub_Heading">How to use Groups</p>
 <p>The best thing about Groups is that you don't have to worry about anything. 
- By default, all your game objects and variables are part of the &quot;default&quot; 
+ By default, all your game objects and variables are part of the "default" 
  group. If you have any extensions installed, you maybe can select other 
  groups as well to get access to the game objects and variables from a 
  certain extension if necessary. If you want to share your content, you 
- have to use the Create Extension Wizard. During the export, the &quot;default&quot;group 
+ have to use the Create Extension Wizard. During the export, the "default"group 
  will be replaced with your own unique group which is the ID you have choosen 
  in the Create Extension Wizard.</p>
-<p>&#160;</p>
-<p><img src="CreateExtensionForSharing.png" alt="" style=" border:none; width:100%; max-width:686px;" border="0" /></p>
-<p>&#160;</p>
-<p>In the above example, the ID &quot;com.example.usefulevent&quot; will 
+<p> </p>
+<p><img alt="" border="0" src="CreateExtensionForSharing.png" style=" border:none; width:100%; max-width:686px;"/></p>
+<p> </p>
+<p>In the above example, the ID "com.example.usefulevent" will 
  be used as your unique group name. You can use any kind of name you want 
  but it is recommended to follow a domain-like pattern.</p>
-<p>&#160;</p>
+<p> </p>
 </body>
 </html>

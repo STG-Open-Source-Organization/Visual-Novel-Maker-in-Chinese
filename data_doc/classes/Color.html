@@ -1,267 +1,173 @@
-<!DOCTYPE html>
+html
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Color</title>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
-    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
-    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
-    <link rel="icon" href="../assets/favicon.ico">
-    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+<meta charset="utf-8"/>
+<title>颜色</title>
+<link href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css" rel="stylesheet"/>
+<link href="../assets/vendor/prettify/prettify-min.css" rel="stylesheet"/>
+<link href="../assets/css/main.css" id="site_styles" rel="stylesheet"/>
+<link href="../assets/favicon.ico" rel="icon"/>
+<script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
 </head>
 <body class="yui3-skin-sam">
-
 <div id="doc">
-    <div id="hd" class="yui3-g header">
-        <div class="yui3-u-3-4">
-                <h1><img src="../assets/css/logo.png" title="" width="117" height="52"></h1>
-        </div>
-        <div class="yui3-u-1-4 version">
-            <em>API Docs for: </em>
-        </div>
-    </div>
-    <div id="bd" class="yui3-g">
-
-        <div class="yui3-u-1-4">
-            <div id="docs-sidebar" class="sidebar apidocs">
-                <div id="api-list">
-                    <h2 class="off-left">APIs</h2>
-                    <div id="api-tabview" class="tabview">
-                        <ul class="tabs">
-                            <li><a href="#api-classes">Classes</a></li>
-                            <li><a href="#api-modules">Modules</a></li>
-                        </ul>
-                
-                        <div id="api-tabview-filter">
-                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
-                        </div>
-                
-                        <div id="api-tabview-panel">
-                            <ul id="api-classes" class="apis classes">
-                                <li><a href="../classes/AnimationDataRecordDocument.html">AnimationDataRecordDocument</a></li>
-                                <li><a href="../classes/AudioResource.html">AudioResource</a></li>
-                                <li><a href="../classes/CGGalleryDataRecordDocument.html">CGGalleryDataRecordDocument</a></li>
-                                <li><a href="../classes/CGGalleryRelationData.html">CGGalleryRelationData</a></li>
-                                <li><a href="../classes/CharacterDataRecordDocument.html">CharacterDataRecordDocument</a></li>
-                                <li><a href="../classes/CharacterExpressionDataRecordDocument.html">CharacterExpressionDataRecordDocument</a></li>
-                                <li><a href="../classes/Color.html">Color</a></li>
-                                <li><a href="../classes/CommonEventDataRecordDocument.html">CommonEventDataRecordDocument</a></li>
-                                <li><a href="../classes/CommonEventParameter.html">CommonEventParameter</a></li>
-                                <li><a href="../classes/CommonEventParameterNumberList.html">CommonEventParameterNumberList</a></li>
-                                <li><a href="../classes/CommonEventParameterNumberListEntry.html">CommonEventParameterNumberListEntry</a></li>
-                                <li><a href="../classes/DataRecordDocument.html">DataRecordDocument</a></li>
-                                <li><a href="../classes/Document.html">Document</a></li>
-                                <li><a href="../classes/DocumentLink.html">DocumentLink</a></li>
-                                <li><a href="../classes/GraphicResource.html">GraphicResource</a></li>
-                                <li><a href="../classes/LocalizableString.html">LocalizableString</a></li>
-                                <li><a href="../classes/LocalizableStringLink.html">LocalizableStringLink</a></li>
-                                <li><a href="../classes/Range.html">Range</a></li>
-                                <li><a href="../classes/Resource.html">Resource</a></li>
-                                <li><a href="../classes/ResourceWrapper.html">ResourceWrapper</a></li>
-                                <li><a href="../classes/SceneCommand.html">SceneCommand</a></li>
-                                <li><a href="../classes/SceneDocument.html">SceneDocument</a></li>
-                                <li><a href="../classes/SystemDataRecordDocument.html">SystemDataRecordDocument</a></li>
-                                <li><a href="../classes/Tone.html">Tone</a></li>
-                                <li><a href="../classes/Variable.html">Variable</a></li>
-                            </ul>
-                
-                
-                            <ul id="api-modules" class="apis modules">
-                                <li><a href="../modules/gs.html">gs</a></li>
-                                <li><a href="../modules/vn.html">vn</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="yui3-u-3-4">
-                <div id="api-options">
-                    Show:
-                    <label for="api-show-inherited">
-                        <input type="checkbox" id="api-show-inherited" checked>
-                        Inherited
-                    </label>
-            
-                    <label for="api-show-protected">
-                        <input type="checkbox" id="api-show-protected">
-                        Protected
-                    </label>
-            
-                    <label for="api-show-private">
-                        <input type="checkbox" id="api-show-private">
-                        Private
-                    </label>
-                    <label for="api-show-deprecated">
-                        <input type="checkbox" id="api-show-deprecated">
-                        Deprecated
-                    </label>
-            
-                </div>
-            
-            <div class="apidocs">
-                <div id="docs-main">
-                    <div class="content">
-<h1>Color Class</h1>
-<div class="box meta">
-
-
-
-            Module: <a href="../modules/gs.html">gs</a>
-
+<div class="yui3-g header" id="hd">
+<div class="yui3-u-3-4">
+<h1><img height="52" src="../assets/css/logo.png" title="" width="117"/></h1>
 </div>
-
-
+<div class="yui3-u-1-4 version">
+<em>API 文档，适用于：</em>
+</div>
+</div>
+<div class="yui3-g" id="bd">
+<div class="yui3-u-1-4">
+<div class="sidebar apidocs" id="docs-sidebar">
+<div id="api-list">
+<h2 class="off-left">API</h2>
+<div class="tabview" id="api-tabview">
+<ul class="tabs">
+<li><a href="#api-classes">类</a></li>
+<li><a href="#api-modules">模块</a></li>
+</ul>
+<div id="api-tabview-filter">
+<input id="api-filter" placeholder="Type to filter APIs" type="search"/>
+</div>
+<div id="api-tabview-panel">
+<ul class="apis classes" id="api-classes">
+<li><a href="../classes/AnimationDataRecordDocument.html">AnimationDataRecordDocument (动画数据记录文档)</a></li>
+<li><a href="../classes/AudioResource.html">AudioResource (音频资源)</a></li>
+<li><a href="../classes/CGGalleryDataRecordDocument.html">CGGalleryDataRecordDocument (CG画廊数据记录文档)</a></li>
+<li><a href="../classes/CGGalleryRelationData.html">CGGalleryRelationData (CG画廊关系数据)</a></li>
+<li><a href="../classes/CharacterDataRecordDocument.html">CharacterDataRecordDocument (角色数据记录文档)</a></li>
+<li><a href="../classes/CharacterExpressionDataRecordDocument.html">CharacterExpressionDataRecordDocument (角色表情数据记录文档)</a></li>
+<li><a href="../classes/Color.html">Color (颜色)</a></li>
+<li><a href="../classes/CommonEventDataRecordDocument.html">CommonEventDataRecordDocument (通用事件数据记录文档)</a></li>
+<li><a href="../classes/CommonEventParameter.html">CommonEventParameter (通用事件参数)</a></li>
+<li><a href="../classes/CommonEventParameterNumberList.html">CommonEventParameterNumberList (通用事件参数数字列表)</a></li>
+<li><a href="../classes/CommonEventParameterNumberListEntry.html">CommonEventParameterNumberListEntry (通用事件参数数字列表条目)</a></li>
+<li><a href="../classes/DataRecordDocument.html">DataRecordDocument (数据记录文档)</a></li>
+<li><a href="../classes/Document.html">Document (文档)</a></li>
+<li><a href="../classes/DocumentLink.html">DocumentLink (文档链接)</a></li>
+<li><a href="../classes/GraphicResource.html">GraphicResource (图形资源)</a></li>
+<li><a href="../classes/LocalizableString.html">LocalizableString (本地化字符串)</a></li>
+<li><a href="../classes/LocalizableStringLink.html">LocalizableStringLink (本地化字符串链接)</a></li>
+<li><a href="../classes/Range.html">Range (范围)</a></li>
+<li><a href="../classes/Resource.html">Resource (资源)</a></li>
+<li><a href="../classes/ResourceWrapper.html">ResourceWrapper (资源包装器)</a></li>
+<li><a href="../classes/SceneCommand.html">SceneCommand (场景命令)</a></li>
+<li><a href="../classes/SceneDocument.html">SceneDocument (场景文档)</a></li>
+<li><a href="../classes/SystemDataRecordDocument.html">SystemDataRecordDocument (系统数据记录文档)</a></li>
+<li><a href="../classes/Tone.html">Tone (色调)</a></li>
+<li><a href="../classes/Variable.html">Variable (变量)</a></li>
+</ul>
+<ul class="apis modules" id="api-modules">
+<li><a href="../modules/gs.html">gs</a></li>
+<li><a href="../modules/vn.html">vn</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="yui3-u-3-4">
+<div id="api-options">显示：<label for="api-show-inherited">
+<input checked="" id="api-show-inherited" type="checkbox"/>继承的</label>
+<label for="api-show-protected">
+<input id="api-show-protected" type="checkbox"/>受保护的</label>
+<label for="api-show-private">
+<input id="api-show-private" type="checkbox"/>私有的</label>
+<label for="api-show-deprecated">
+<input id="api-show-deprecated" type="checkbox"/>已弃用的</label>
+</div>
+<div class="apidocs">
+<div id="docs-main">
+<div class="content">
+<h1>Color 类 (颜色类)</h1>
+<div class="box meta">模块：<a href="../modules/gs.html">gs</a>
+</div>
 <div class="box intro">
-    <p>Describes a color.</p>
-
+<p>描述一种颜色。</p>
 </div>
-
-
-<div id="classdocs" class="tabview">
-    <ul class="api-class-tabs">
-        <li class="api-class-tab index"><a href="#index">Index</a></li>
-
-            <li class="api-class-tab properties"><a href="#properties">Properties</a></li>
-    </ul>
-
-    <div>
-        <div id="index" class="api-class-tabpanel index">
-            <h2 class="off-left">Item Index</h2>
-
-
-                <div class="index-section properties">
-                    <h3>Properties</h3>
-
-                    <ul class="index-list properties">
-                            <li class="index-item property">
-                                <a href="#property_alpha">alpha</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_blue">blue</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_green">green</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_red">red</a>
-
-                            </li>
-                    </ul>
-                </div>
-
-
-        </div>
-
-
-            <div id="properties" class="api-class-tabpanel">
-                <h2 class="off-left">Properties</h2>
-
-<div id="property_alpha" class="property item">
-    <h3 class="name"><code>alpha</code></h3>
-    <span class="type">Number</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The alpha-value (0 - 255).</p>
-
-    </div>
-
-
-
+<div class="tabview" id="classdocs">
+<ul class="api-class-tabs">
+<li class="api-class-tab index"><a href="#index">索引</a></li>
+<li class="api-class-tab properties"><a href="#properties">属性</a></li>
+</ul>
+<div>
+<div class="api-class-tabpanel index" id="index">
+<h2 class="off-left">项目索引</h2>
+<div class="index-section properties">
+<h3>属性</h3>
+<ul class="index-list properties">
+<li class="index-item property">
+<a href="#property_alpha">alpha (透明度)</a>
+</li>
+<li class="index-item property">
+<a href="#property_blue">blue (蓝色)</a>
+</li>
+<li class="index-item property">
+<a href="#property_green">green (绿色)</a>
+</li>
+<li class="index-item property">
+<a href="#property_red">red (红色)</a>
+</li>
+</ul>
 </div>
-<div id="property_blue" class="property item">
-    <h3 class="name"><code>blue</code></h3>
-    <span class="type">Number</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The blue-value (0 - 255).</p>
-
-    </div>
-
-
-
 </div>
-<div id="property_green" class="property item">
-    <h3 class="name"><code>green</code></h3>
-    <span class="type">Number</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The green-value (0 - 255).</p>
-
-    </div>
-
-
-
+<div class="api-class-tabpanel" id="properties">
+<h2 class="off-left">属性</h2>
+<div class="property item" id="property_alpha">
+<h3 class="name"><code>alpha (透明度)</code></h3>
+<span class="type">Number (数字)</span>
+<div class="meta">
+<p>
+</p>
 </div>
-<div id="property_red" class="property item">
-    <h3 class="name"><code>red</code></h3>
-    <span class="type">Number</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The red-value (0 - 255).</p>
-
-    </div>
-
-
-
+<div class="description">
+<p>透明度值（0 - 255）。</p>
 </div>
-            </div>
-
-
-    </div>
 </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="property item" id="property_blue">
+<h3 class="name"><code>blue (蓝色)</code></h3>
+<span class="type">Number (数字)</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>蓝色值（0 - 255）。</p>
+</div>
+</div>
+<div class="property item" id="property_green">
+<h3 class="name"><code>green (绿色)</code></h3>
+<span class="type">Number (数字)</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>绿色值（0 - 255）。</p>
+</div>
+</div>
+<div class="property item" id="property_red">
+<h3 class="name"><code>red (红色)</code></h3>
+<span class="type">Number (数字)</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>红色值（0 - 255）。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <script src="../assets/vendor/prettify/prettify-min.js"></script>
 <script>prettyPrint();</script>

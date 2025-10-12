@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+HTML
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="generator" content="Adobe RoboHelp 2015" />
-<title>Example:Create a Language Bundle</title>
-<link rel="StyleSheet" href="default.css" type="text/css" />
-<script type="text/javascript" language="JavaScript">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Adobe RoboHelp 2015" name="generator"/>
+<title>示例：创建语言包</title>
+<link href="default.css" rel="StyleSheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
 //<![CDATA[
 function reDo() {
   if (innerWidth != origWidth || innerHeight != origHeight)
@@ -29,73 +29,71 @@ visibility:hidden; }
 p.WebHelpNavBar { text-align:right; }
 -->
 </style>
-
-<script type="text/javascript" src="template/scripts/rh.min.js"></script>
-<script type="text/javascript" src="template/scripts/common.min.js"></script>
-<script type="text/javascript" src="template/scripts/topic.min.js"></script>
-<script type="text/javascript" src="template/scripts/constants.js"></script>
-<script type="text/javascript" src="template/scripts/utils.js"></script>
-<script type="text/javascript" src="template/scripts/mhutils.js"></script>
-<script type="text/javascript" src="template/scripts/mhlang.js"></script>
-<script type="text/javascript" src="template/scripts/mhver.js"></script>
-<script type="text/javascript" src="template/scripts/settings.js"></script>
-<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
-<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
-<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
-<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
-<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
- <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
-<script type="text/javascript" >
+<script src="template/scripts/rh.min.js" type="text/javascript"></script>
+<script src="template/scripts/common.min.js" type="text/javascript"></script>
+<script src="template/scripts/topic.min.js" type="text/javascript"></script>
+<script src="template/scripts/constants.js" type="text/javascript"></script>
+<script src="template/scripts/utils.js" type="text/javascript"></script>
+<script src="template/scripts/mhutils.js" type="text/javascript"></script>
+<script src="template/scripts/mhlang.js" type="text/javascript"></script>
+<script src="template/scripts/mhver.js" type="text/javascript"></script>
+<script src="template/scripts/settings.js" type="text/javascript"></script>
+<script src="template/scripts/XmlJsReader.js" type="text/javascript"></script>
+<script src="template/scripts/loadparentdata.js" type="text/javascript"></script>
+<script src="template/scripts/loadscreen.js" type="text/javascript"></script>
+<script src="template/scripts/loadprojdata.js" type="text/javascript"></script>
+<script src="template/scripts/mhtopic.js" type="text/javascript"></script>
+<link href="template/styles/topic.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
 gRootRelPath = ".";
 gCommonRootRelPath = ".";
 gTopicId = "5.2.1.1.0_4";
 </script>
- <meta name="topic-breadcrumbs" content="Script and Plugin Reference > Extension Documentation > Getting Started > Examples" />
+<meta content="Script and Plugin Reference &gt; Extension Documentation &gt; Getting Started &gt; Examples" name="topic-breadcrumbs"/>
 </head>
 <body>
-<script type="text/javascript" src="./ehlpdhtm.js"></script>
-
-<div style="width: 100%; position: relative;" id="header">
- <p class="Topic_Heading"><span style="font-family: 'Book Antiqua', serif; font-size: 24pt;">Example: Create a Language Bundle</span></p>
+<script src="./ehlpdhtm.js" type="text/javascript"></script>
+<div id="header" style="width: 100%; position: relative;">
+<p class="Topic_Heading"><span style="font-family: 'Book Antiqua', serif; font-size: 24pt;">示例：创建语言包</span></p>
 </div>
-<p>&#160;</p>
-<p><span class="Topic_Start">I</span>n this example we will create a language bundle to translate our extension into another language. To do that, we make a right-click on"Language Bundles " and select New &gt; Language Bundle. We will call it, "CardExtension ".</p>
-<p>&#160;</p>
-<p><span class="Code">{ "phrases": { "D63591732C7F724D8D98B6E5B34B914FFFD6": "Sample Text" } }</span></p>
-<p>&#160;</p>
-<p>It contains an example phrase we can just delete. Next we will create another language bundle called"CardExtension.de ". The"CardExtension " bundle contains our phrases in default language. The"default language " is used if there is no translation for the current language available. The second bundle"CardExtension.de " uses the suffix".de " which stands for german language. So that bundle is used if the current language is german.</p>
-<p>&#160;</p>
-<p>Lets take a look at the properties:</p>
-<p>&#160;</p>
+<p> </p>
+<p><span class="Topic_Start">I</span>在这个例子中，我们将创建一个语言包，将我们的扩展翻译成另一种语言。为此，我们在“语言包”上单击鼠标右键，然后选择新建 &gt; 语言包。我们将它命名为“CardExtension”。</p>
+<p> </p>
+<p><span class="Code">{ "phrases": { "D63591732C7F724D8D98B6E5B34B914FFFD6": "示例文本" } }</span></p>
+<p> </p>
+<p>它包含一个我们可以删除的示例短语。接下来，我们将创建另一个名为“CardExtension.de”的语言包。“CardExtension”包包含我们默认语言的短语。“默认语言”用于当前语言没有可用翻译时。第二个包“CardExtension.de”使用后缀“.de”，代表德语。因此，如果当前语言是德语，则使用该包。</p>
+<p> </p>
+<p>让我们看看属性：</p>
+<p> </p>
 <ul style="list-style: disc;">
 <li style="margin-left: -20px;">
 <p style="font-weight: bold;">phrases</p>
 </li>
 </ul>
-<p>Contains key:phrase pairs to define the different phrases of the bundle. So each phrase needs to have a unique key. The key can be any kind of text as long as it is unique enough. By default UIDs are used for each phrase.</p>
-<p>To use a phrase in a UI view you can just use the syntax $$&lt;bundle&gt;.&lt;phrase_uid&gt; like "$$CardExtension.D63591732C7F724D8D98B6E5B34B914FFFD6". That kind of syntax can be used in most places where displayable text can be specified. For Example:</p>
-<p>&#160;</p>
+<p>包含键：短语对，用于定义包的不同短语。因此，每个短语都需要一个唯一的键。键可以是任何文本，只要它足够独特即可。默认情况下，UID 用于每个短语。</p>
+<p>要在 UI 视图中使用短语，您只需使用语法 $$&lt;bundle&gt;.&lt;phrase_uid&gt;，例如“$$CardExtension.D63591732C7F724D8D98B6E5B34B914FFFD6”。这种语法可以在大多数可以指定显示文本的地方使用。例如：</p>
+<p> </p>
 <p><span class="Code">{</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"type": "GSLabel",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"text": "$$CardExtension.D63591732C7F724D8D98B6E5B34B914FFFD6",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"frame": [0, 0] &#160;</span></p>
+<p><span class="Code">"type": "GSLabel",</span></p>
+<p><span class="Code">"text": "$$CardExtension.D63591732C7F724D8D98B6E5B34B914FFFD6",</span></p>
+<p><span class="Code">"frame": [0, 0]</span></p>
 <p><span class="Code">}</span></p>
-<p>&#160;</p>
-<p>So this label will show the phase for key "D63591732C7F724D8D98B6E5B34B914FFFD6" if exists. It first looks if the phrase exists for current language and if that is not the case it will use the default language phrase.</p>
-<p>&#160;</p>
-<p>To create new phrases we could just manually add them to our bundle but since that feels a bit uncomfortable after some time, there are two helper-functions doing the most work for us automatically. These two functions are "Insert New String" and "Insert New String (LCS)". We can find these functions in menubar under Tools &gt; Developer Tools or in Extension Editor's toolbar.</p>
-<p>&#160;</p>
-<p>Both functions actually doing the same thing but the formatting of the output is different. Lets check how these functions can make our life a little bit easier:</p>
-<p>&#160;</p>
-<p>First we need to select a text in one of our views/scene-commands/scripts we want to translate. Next we click on "Insert New String" which will ask us then to enter a bundle name. We will enter the name of our bundle "CardExtension" and click "OK". Two things happened now:</p>
-<p>&#160;</p>
-<p>1. Our selected text has been replaced by "$$CardExtension.&lt;uid&gt;" automatically.</p>
-<p>2. The selected text has been added to the default language CardExtension bundle and also the UID has been generated automatically.</p>
-<p>&#160;</p>
-<p>That saves us a lot of time since we no longer need to generate UIDs by ourselves and add pharses to the bundle manually everytime we want to translate something. We can just use one of the helper-functions. The other helper-function "Insert New String (LCS)" is doing the same but the output is:</p>
-<p>&#160;</p>
+<p> </p>
+<p>因此，如果存在该键的短语，此标签将显示键“D63591732C7F724D8D98B6E5B34B914FFFD6”的短语。它首先检查当前语言是否存在该短语，如果不存在，则使用默认语言的短语。</p>
+<p> </p>
+<p>要创建新短语，我们可以直接在我们的包中手动添加它们，但由于一段时间后这感觉有点不舒服，因此有两个辅助函数会自动完成大部分工作。这两个函数是“插入新字符串”和“插入新字符串 (LCS)”。我们可以在菜单栏的“工具 &gt; 开发者工具”下找到这些函数，或者在 Extension Editor 的工具栏中找到它们。</p>
+<p> </p>
+<p>这两个函数实际上做的是同一件事，但输出的格式不同。让我们看看这些函数如何让我们的生活变得更轻松：</p>
+<p> </p>
+<p>首先，我们需要选择我们想要翻译的视图/场景命令/脚本中的一段文本。接下来，我们单击“插入新字符串”，它会要求我们输入一个包名。我们将输入我们的包名“CardExtension”，然后单击“确定”。现在发生了两件事：</p>
+<p> </p>
+<p>1. 选定的文本已自动替换为“$$CardExtension.&lt;uid&gt;”。</p>
+<p>2. 选定的文本已添加到默认语言的 CardExtension 包中，并且 UID 也已自动生成。</p>
+<p> </p>
+<p>这为我们节省了大量时间，因为每次我们想翻译某些内容时，都不再需要自己生成 UID 并手动将短语添加到包中。我们可以只使用其中一个辅助函数。另一个辅助函数“插入新字符串 (LCS)”做的事情相同，但输出是：</p>
+<p> </p>
 <p><span class="Code">lcs('&lt;bundle&gt;.&lt;uid&gt;')</span></p>
-<p>&#160;</p>
-<p>which can be used in scripts and formulas if necessary.</p>
+<p> </p>
+<p>如果需要，可以在脚本和公式中使用。</p>
 </body>
 </html>

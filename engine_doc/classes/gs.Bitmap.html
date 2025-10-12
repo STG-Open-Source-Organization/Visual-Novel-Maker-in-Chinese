@@ -1,1824 +1,1165 @@
-<!DOCTYPE html>
+html
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>gs.Bitmap</title>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
-    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
-    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
-    <link rel="icon" href="../assets/favicon.ico">
-    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+<meta charset="utf-8"/>
+<title>gs.Bitmap（位图）</title>
+<link href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css" rel="stylesheet"/>
+<link href="../assets/vendor/prettify/prettify-min.css" rel="stylesheet"/>
+<link href="../assets/css/main.css" id="site_styles" rel="stylesheet"/>
+<link href="../assets/favicon.ico" rel="icon"/>
+<script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
 </head>
 <body class="yui3-skin-sam">
-
 <div id="doc">
-    <div id="hd" class="yui3-g header">
-        <div class="yui3-u-3-4">
-                <h1><img src="../assets/css/logo.png" title="" width="117" height="52"></h1>
-        </div>
-        <div class="yui3-u-1-4 version">
-            <em>API Docs for: </em>
-        </div>
-    </div>
-    <div id="bd" class="yui3-g">
-
-        <div class="yui3-u-1-4">
-            <div id="docs-sidebar" class="sidebar apidocs">
-                <div id="api-list">
-                    <h2 class="off-left">APIs</h2>
-                    <div id="api-tabview" class="tabview">
-                        <ul class="tabs">
-                            <li><a href="#api-classes">Classes</a></li>
-                            <li><a href="#api-modules">Modules</a></li>
-                        </ul>
-                
-                        <div id="api-tabview-filter">
-                            <input type="search" id="api-filter" placeholder="Type to filter APIs">
-                        </div>
-                
-                        <div id="api-tabview-panel">
-                            <ul id="api-classes" class="apis classes">
-                                <li><a href="../classes/gs.Application.html">gs.Application</a></li>
-                                <li><a href="../classes/gs.Audio.html">gs.Audio</a></li>
-                                <li><a href="../classes/gs.AudioBuffer.html">gs.AudioBuffer</a></li>
-                                <li><a href="../classes/gs.AudioBufferReference.html">gs.AudioBufferReference</a></li>
-                                <li><a href="../classes/gs.Bitmap.html">gs.Bitmap</a></li>
-                                <li><a href="../classes/gs.BlendMode.html">gs.BlendMode</a></li>
-                                <li><a href="../classes/gs.BlurEffect.html">gs.BlurEffect</a></li>
-                                <li><a href="../classes/gs.Color.html">gs.Color</a></li>
-                                <li><a href="../classes/gs.Data.html">gs.Data</a></li>
-                                <li><a href="../classes/gs.Effect.html">gs.Effect</a></li>
-                                <li><a href="../classes/gs.EffectCollection.html">gs.EffectCollection</a></li>
-                                <li><a href="../classes/gs.EffectInfo.html">gs.EffectInfo</a></li>
-                                <li><a href="../classes/gs.Font.html">gs.Font</a></li>
-                                <li><a href="../classes/gs.Frame.html">gs.Frame</a></li>
-                                <li><a href="../classes/gs.GameStorage.html">gs.GameStorage</a></li>
-                                <li><a href="../classes/gs.GameStorageLocations.html">gs.GameStorageLocations</a></li>
-                                <li><a href="../classes/gs.GraphicEffect.html">gs.GraphicEffect</a></li>
-                                <li><a href="../classes/gs.GraphicEffectType.html">gs.GraphicEffectType</a></li>
-                                <li><a href="../classes/gs.GraphicObject.html">gs.GraphicObject</a></li>
-                                <li><a href="../classes/gs.Graphics.html">gs.Graphics</a></li>
-                                <li><a href="../classes/gs.Input.html">gs.Input</a></li>
-                                <li><a href="../classes/gs.Live2DModel.html">gs.Live2DModel</a></li>
-                                <li><a href="../classes/gs.Live2DMotionManager.html">gs.Live2DMotionManager</a></li>
-                                <li><a href="../classes/gs.Live2DMotionPlayTypes.html">gs.Live2DMotionPlayTypes</a></li>
-                                <li><a href="../classes/gs.Live2DObject.html">gs.Live2DObject</a></li>
-                                <li><a href="../classes/gs.Mask.html">gs.Mask</a></li>
-                                <li><a href="../classes/gs.MaskingType.html">gs.MaskingType</a></li>
-                                <li><a href="../classes/gs.MotionBlur.html">gs.MotionBlur</a></li>
-                                <li><a href="../classes/gs.MouseInput.html">gs.MouseInput</a></li>
-                                <li><a href="../classes/gs.PixelateEffect.html">gs.PixelateEffect</a></li>
-                                <li><a href="../classes/gs.Point.html">gs.Point</a></li>
-                                <li><a href="../classes/gs.Quad.html">gs.Quad</a></li>
-                                <li><a href="../classes/gs.Rect.html">gs.Rect</a></li>
-                                <li><a href="../classes/gs.Renderer.html">gs.Renderer</a></li>
-                                <li><a href="../classes/gs.RenderTask.html">gs.RenderTask</a></li>
-                                <li><a href="../classes/gs.Sprite.html">gs.Sprite</a></li>
-                                <li><a href="../classes/gs.Texture2D.html">gs.Texture2D</a></li>
-                                <li><a href="../classes/gs.TextureFilter.html">gs.TextureFilter</a></li>
-                                <li><a href="../classes/gs.ThreePartImage.html">gs.ThreePartImage</a></li>
-                                <li><a href="../classes/gs.Tilemap.html">gs.Tilemap</a></li>
-                                <li><a href="../classes/gs.TilemapLayer.html">gs.TilemapLayer</a></li>
-                                <li><a href="../classes/gs.TilemapRenderInfo.html">gs.TilemapRenderInfo</a></li>
-                                <li><a href="../classes/gs.TilesetConfiguration.html">gs.TilesetConfiguration</a></li>
-                                <li><a href="../classes/gs.TilingSprite.html">gs.TilingSprite</a></li>
-                                <li><a href="../classes/gs.Tone.html">gs.Tone</a></li>
-                                <li><a href="../classes/gs.Video.html">gs.Video</a></li>
-                                <li><a href="../classes/gs.Viewport.html">gs.Viewport</a></li>
-                                <li><a href="../classes/gs.WobbleEffect.html">gs.WobbleEffect</a></li>
-                            </ul>
-                
-                
-                            <ul id="api-modules" class="apis modules">
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="yui3-u-3-4">
-                <div id="api-options">
-                    Show:
-                    <label for="api-show-inherited">
-                        <input type="checkbox" id="api-show-inherited" checked>
-                        Inherited
-                    </label>
-            
-                    <label for="api-show-protected">
-                        <input type="checkbox" id="api-show-protected">
-                        Protected
-                    </label>
-            
-                    <label for="api-show-private">
-                        <input type="checkbox" id="api-show-private">
-                        Private
-                    </label>
-                    <label for="api-show-deprecated">
-                        <input type="checkbox" id="api-show-deprecated">
-                        Deprecated
-                    </label>
-            
-                </div>
-            
-            <div class="apidocs">
-                <div id="docs-main">
-                    <div class="content">
-<h1>gs.Bitmap Class</h1>
+<div class="yui3-g header" id="hd">
+<div class="yui3-u-3-4">
+<h1><img height="52" src="../assets/css/logo.png" title="" width="117"/></h1>
+</div>
+<div class="yui3-u-1-4 version">
+<em>API 文档：</em>
+</div>
+</div>
+<div class="yui3-g" id="bd">
+<div class="yui3-u-1-4">
+<div class="sidebar apidocs" id="docs-sidebar">
+<div id="api-list">
+<h2 class="off-left">API</h2>
+<div class="tabview" id="api-tabview">
+<ul class="tabs">
+<li><a href="#api-classes">类</a></li>
+<li><a href="#api-modules">模块</a></li>
+</ul>
+<div id="api-tabview-filter">
+<input id="api-filter" placeholder="Type to filter APIs" type="search"/>
+</div>
+<div id="api-tabview-panel">
+<ul class="apis classes" id="api-classes">
+<li><a href="../classes/gs.Application.html">gs.Application（应用）</a></li>
+<li><a href="../classes/gs.Audio.html">gs.Audio（音频）</a></li>
+<li><a href="../classes/gs.AudioBuffer.html">gs.AudioBuffer（音频缓冲区）</a></li>
+<li><a href="../classes/gs.AudioBufferReference.html">gs.AudioBufferReference（音频缓冲区引用）</a></li>
+<li><a href="../classes/gs.Bitmap.html">gs.Bitmap（位图）</a></li>
+<li><a href="../classes/gs.BlendMode.html">gs.BlendMode（混合模式）</a></li>
+<li><a href="../classes/gs.BlurEffect.html">gs.BlurEffect（模糊效果）</a></li>
+<li><a href="../classes/gs.Color.html">gs.Color（颜色）</a></li>
+<li><a href="../classes/gs.Data.html">gs.Data（数据）</a></li>
+<li><a href="../classes/gs.Effect.html">gs.Effect（效果）</a></li>
+<li><a href="../classes/gs.EffectCollection.html">gs.EffectCollection（效果集合）</a></li>
+<li><a href="../classes/gs.EffectInfo.html">gs.EffectInfo（效果信息）</a></li>
+<li><a href="../classes/gs.Font.html">gs.Font（字体）</a></li>
+<li><a href="../classes/gs.Frame.html">gs.Frame（帧）</a></li>
+<li><a href="../classes/gs.GameStorage.html">gs.GameStorage（游戏存储）</a></li>
+<li><a href="../classes/gs.GameStorageLocations.html">gs.GameStorageLocations（游戏存储位置）</a></li>
+<li><a href="../classes/gs.GraphicEffect.html">gs.GraphicEffect（图形效果）</a></li>
+<li><a href="../classes/gs.GraphicEffectType.html">gs.GraphicEffectType（图形效果类型）</a></li>
+<li><a href="../classes/gs.GraphicObject.html">gs.GraphicObject（图形对象）</a></li>
+<li><a href="../classes/gs.Graphics.html">gs.Graphics（图形）</a></li>
+<li><a href="../classes/gs.Input.html">gs.Input（输入）</a></li>
+<li><a href="../classes/gs.Live2DModel.html">gs.Live2DModel（Live2D模型）</a></li>
+<li><a href="../classes/gs.Live2DMotionManager.html">gs.Live2DMotionManager（Live2D动作管理器）</a></li>
+<li><a href="../classes/gs.Live2DMotionPlayTypes.html">gs.Live2DMotionPlayTypes（Live2D动作播放类型）</a></li>
+<li><a href="../classes/gs.Live2DObject.html">gs.Live2DObject（Live2D对象）</a></li>
+<li><a href="../classes/gs.Mask.html">gs.Mask（遮罩）</a></li>
+<li><a href="../classes/gs.MaskingType.html">gs.MaskingType（遮罩类型）</a></li>
+<li><a href="../classes/gs.MotionBlur.html">gs.MotionBlur（运动模糊）</a></li>
+<li><a href="../classes/gs.MouseInput.html">gs.MouseInput（鼠标输入）</a></li>
+<li><a href="../classes/gs.PixelateEffect.html">gs.PixelateEffect（像素化效果）</a></li>
+<li><a href="../classes/gs.Point.html">gs.Point（点）</a></li>
+<li><a href="../classes/gs.Quad.html">gs.Quad（四边形）</a></li>
+<li><a href="../classes/gs.Rect.html">gs.Rect（矩形）</a></li>
+<li><a href="../classes/gs.Renderer.html">gs.Renderer（渲染器）</a></li>
+<li><a href="../classes/gs.RenderTask.html">gs.RenderTask（渲染任务）</a></li>
+<li><a href="../classes/gs.Sprite.html">gs.Sprite（精灵）</a></li>
+<li><a href="../classes/gs.Texture2D.html">gs.Texture2D（2D纹理）</a></li>
+<li><a href="../classes/gs.TextureFilter.html">gs.TextureFilter（纹理过滤器）</a></li>
+<li><a href="../classes/gs.ThreePartImage.html">gs.ThreePartImage（三段式图像）</a></li>
+<li><a href="../classes/gs.Tilemap.html">gs.Tilemap（瓦片地图）</a></li>
+<li><a href="../classes/gs.TilemapLayer.html">gs.TilemapLayer（瓦片地图层）</a></li>
+<li><a href="../classes/gs.TilemapRenderInfo.html">gs.TilemapRenderInfo（瓦片地图渲染信息）</a></li>
+<li><a href="../classes/gs.TilesetConfiguration.html">gs.TilesetConfiguration（瓦片集配置）</a></li>
+<li><a href="../classes/gs.TilingSprite.html">gs.TilingSprite（平铺精灵）</a></li>
+<li><a href="../classes/gs.Tone.html">gs.Tone（色调）</a></li>
+<li><a href="../classes/gs.Video.html">gs.Video（视频）</a></li>
+<li><a href="../classes/gs.Viewport.html">gs.Viewport（视口）</a></li>
+<li><a href="../classes/gs.WobbleEffect.html">gs.WobbleEffect（摆动效果）</a></li>
+</ul>
+<ul class="apis modules" id="api-modules">
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="yui3-u-3-4">
+<div id="api-options">显示：<label for="api-show-inherited">
+<input checked="" id="api-show-inherited" type="checkbox"/>继承的</label>
+<label for="api-show-protected">
+<input id="api-show-protected" type="checkbox"/>受保护的</label>
+<label for="api-show-private">
+<input id="api-show-private" type="checkbox"/>私有的</label>
+<label for="api-show-deprecated">
+<input id="api-show-deprecated" type="checkbox"/>已弃用的</label>
+</div>
+<div class="apidocs">
+<div id="docs-main">
+<div class="content">
+<h1>gs.Bitmap 类</h1>
 <div class="box meta">
-
-
-
-
 </div>
-
-
 <div class="box intro">
-    <p>The bitmap class allows to load images from files or creating
-in-memory bitmap. It offers different methods to directly draw
-to the bitmap or recolor it. You can attach a bitmap to a gs.Sprite
-object to display it on screen.</p>
-<p>All bitmaps which are loaded from image files are immutable by default to keep memory usage
-as low as possible. The pixel-data of an immutable bitmap cannot be changed and the bitmap cannot be
-drawn onto another bitmap. However, an immutable bitmap will be automatically turned into a
-mutable bitmap whenever you try to draw onto that bitmap or use it as a source-bitmap. A mutable bitmap may take the double/triple
-amount of memory compared to an immutable one.</p>
-<p>You can make a bitmap immutable/mutable manually anytime using the makeMutable/makeImmutable methods. Notice that
-a conversion from immutable to mutable or vice-versa may be time-consuming.</p>
+<p>位图类允许从文件加载图像或创建内存位图。它提供了不同的方法来直接绘制到位图或对其进行重新着色。 您可以将位图附加到 gs.Sprite 对象以在屏幕上显示它。</p>
+<p>默认情况下，所有从图像文件加载的位图都是不可变的，以尽可能降低内存使用率。 不可变位图的像素数据无法更改，并且该位图无法绘制到另一个位图上。 但是，每当您尝试绘制到位图或将其用作源位图时，不可变位图都会自动转换为可变位图。 与不可变位图相比，可变位图可能占用两倍/三倍的内存。</p>
+<p>您可以使用 makeMutable/makeImmutable 方法随时手动将位图设置为不可变/可变。 请注意，从不可变到可变或反之亦然的转换可能很耗时。</p>
 </div>
-
-    <div class="constructor">
-        <h2>Constructor</h2>
-<div id="method_gs.Bitmap" class="method item">
-    <h3 class="name"><code>gs.Bitmap</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>width/filePath/image</code>
-                </li>
-                <li class="arg">
-                        <code class="optional">[height/languageCode=null]</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">width/filePath/image</code>
-                        <span class="type">Object</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The width of the bitmap for in-memory creation <b>OR</b> the filePath to an
-image resource to load it from file <b>OR</b> an HTMLImageElement to create the bitmap from.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name optional">[height/languageCode=null]</code>
-                        <span class="type">Number</span>
-                        <span class="flag optional" title="This parameter is optional.">optional</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The height of the bitmap <b>OR</b> the language code if the bitmap
-is created from filePath.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+<div class="constructor">
+<h2>构造函数</h2>
+<div class="method item" id="method_gs.Bitmap">
+<h3 class="name"><code>gs.Bitmap</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>width/filePath/image</code>
+</li>
+<li class="arg">
+<code class="optional">[height/languageCode=null]</code>
+</li>
+</ul><span class="paren">)</span>
 </div>
-    </div>
-
-<div id="classdocs" class="tabview">
-    <ul class="api-class-tabs">
-        <li class="api-class-tab index"><a href="#index">Index</a></li>
-
-            <li class="api-class-tab methods"><a href="#methods">Methods</a></li>
-            <li class="api-class-tab properties"><a href="#properties">Properties</a></li>
-    </ul>
-
-    <div>
-        <div id="index" class="api-class-tabpanel index">
-            <h2 class="off-left">Item Index</h2>
-
-                <div class="index-section methods">
-                    <h3>Methods</h3>
-
-                    <ul class="index-list methods">
-                            <li class="index-item method">
-                                <a href="#method_blt">blt</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_changeHue">changeHue</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_clear">clear</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_clearRect">clearRect</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_dispose">dispose</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_drawText">drawText</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_fillRect">fillRect</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_getImageData">getImageData</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_getPixel">getPixel</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_gradientFillRect">gradientFillRect</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_isPixelSet">isPixelSet</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_makeImmutable">makeImmutable</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_makeMutable">makeMutable</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_scale">scale</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_setImageData">setImageData</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_stretchBlt">stretchBlt</a>
-
-                            </li>
-                            <li class="index-item method">
-                                <a href="#method_textSize">textSize</a>
-
-                            </li>
-                    </ul>
-                </div>
-
-                <div class="index-section properties">
-                    <h3>Properties</h3>
-
-                    <ul class="index-list properties">
-                            <li class="index-item property">
-                                <a href="#property_font">font</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_immutable">immutable</a>
-
-                            </li>
-                            <li class="index-item property">
-                                <a href="#property_loaded">loaded</a>
-
-                            </li>
-                    </ul>
-                </div>
-
-
-        </div>
-
-            <div id="methods" class="api-class-tabpanel">
-                <h2 class="off-left">Methods</h2>
-
-<div id="method_blt" class="method item">
-    <h3 class="name"><code>blt</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>x</code>
-                </li>
-                <li class="arg">
-                        <code>y</code>
-                </li>
-                <li class="arg">
-                        <code>srcBitmap</code>
-                </li>
-                <li class="arg">
-                        <code>srcRect-</code>
-                </li>
-                <li class="arg">
-                        <code>opacity</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Blits/Draws the specified bitmap on this bitmap.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">x</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The x-coordinate of the position.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">y</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The y-coordinate of the position.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">srcBitmap</code>
-                        <span class="type"><a href="../classes/gs.Bitmap.html" class="crosslink">gs.Bitmap</a></span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The bitmap to blit/draw.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">srcRect-</code>
-                        <span class="type"><a href="../classes/gs.Rect.html" class="crosslink">gs.Rect</a></span>
-
-
-                    <div class="param-description">
-                        <p>The source-rectangle. Only that area will be blitted/drawn.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">opacity</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The opacity</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+<div class="meta">
+<p>
+</p>
 </div>
-<div id="method_changeHue" class="method item">
-    <h3 class="name"><code>changeHue</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>hue</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Changes the HUE of the bitmap. Once the HUE was changed it cannot changed back by
-passing 0 for hue or something. The HUE change is always executed on the current bitmap-data.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">hue</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The HUE in degrees.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
+<div class="description">
 </div>
-<div id="method_clear" class="method item">
-    <h3 class="name"><code>clear</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Clears the bitmap.</p>
-
-    </div>
-
-
-
-
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">width/filePath/image</code>
+<span class="type">Object</span>
+<div class="param-description">
+<ul>
+<li>用于内存创建的位图的宽度<b>或者</b>要加载的图像资源的filePath<b>或者</b>用于创建位图的HTMLImageElement。</li>
+</ul>
 </div>
-<div id="method_clearRect" class="method item">
-    <h3 class="name"><code>clearRect</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>x</code>
-                </li>
-                <li class="arg">
-                        <code>y</code>
-                </li>
-                <li class="arg">
-                        <code>width</code>
-                </li>
-                <li class="arg">
-                        <code>height</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Clears the specified rectangle-area.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">x</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The x-coordinate of the rectangle.</li>
+</li>
+<li class="param">
+<code class="param-name optional">[height/languageCode=null]</code>
+<span class="type">Number</span>
+<span class="flag optional" title="This parameter is optional.">可选</span>
+<div class="param-description">
+<ul>
+<li>位图的高度<b>或者</b>如果位图是从 filePath 创建的，则为语言代码。</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">y</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The x-coordinate of the rectangle.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">width</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The width of the rectangle.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">height</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The height of the rectangle.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_dispose" class="method item">
-    <h3 class="name"><code>dispose</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Disposes the bitmap and frees the memory. Should be called
-if the bitmap is no longer needed to free resources which are
-not handled by the garbage collector.</p>
-
-    </div>
-
-
-
-
+</li>
+</ul>
 </div>
-<div id="method_drawText" class="method item">
-    <h3 class="name"><code>drawText</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>x</code>
-                </li>
-                <li class="arg">
-                        <code>y</code>
-                </li>
-                <li class="arg">
-                        <code>w</code>
-                </li>
-                <li class="arg">
-                        <code>h</code>
-                </li>
-                <li class="arg">
-                        <code>text</code>
-                </li>
-                <li class="arg">
-                        <code class="optional">[hAlign=gs.Alignment.LEFT]</code>
-                </li>
-                <li class="arg">
-                        <code class="optional">[vAlign=gs.Alignment.TOP]</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Draws the specified text on the bitmap.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">x</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The x-coordinate of the text's position.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">y</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The y-coordinate of the text's position.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">w</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The width of text-box used to align the text.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">h</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The height of text-box used to align the text.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">text</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The text to draw.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name optional">[hAlign=gs.Alignment.LEFT]</code>
-                        <span class="type">gs.Alignment</span>
-                        <span class="flag optional" title="This parameter is optional.">optional</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The horizontal alignment of the text.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name optional">[vAlign=gs.Alignment.TOP]</code>
-                        <span class="type">gs.Alignment</span>
-                        <span class="flag optional" title="This parameter is optional.">optional</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The vertical alignment of the text.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_fillRect" class="method item">
-    <h3 class="name"><code>fillRect</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>x</code>
-                </li>
-                <li class="arg">
-                        <code>y</code>
-                </li>
-                <li class="arg">
-                        <code>width</code>
-                </li>
-                <li class="arg">
-                        <code>height</code>
-                </li>
-                <li class="arg">
-                        <code>color</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Fills a rectangle-area with the specified color.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">x</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The x-coordinate of the rectangle.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">y</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The x-coordinate of the rectangle.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">width</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The width of the rectangle.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">height</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The height of the rectangle.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">color</code>
-                        <span class="type"><a href="../classes/gs.Color.html" class="crosslink">gs.Color</a></span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The fill color.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_getImageData" class="method item">
-    <h3 class="name"><code>getImageData</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>x</code>
-                </li>
-                <li class="arg">
-                        <code>y</code>
-                </li>
-                <li class="arg">
-                        <code>width</code>
-                </li>
-                <li class="arg">
-                        <code>height</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">ImageData</span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Gets the image data of the specified rectangle-area.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">x</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The x-coordinate of the rectangle.</li>
+<div class="tabview" id="classdocs">
+<ul class="api-class-tabs">
+<li class="api-class-tab index"><a href="#index">索引</a></li>
+<li class="api-class-tab methods"><a href="#methods">方法</a></li>
+<li class="api-class-tab properties"><a href="#properties">属性</a></li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">y</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The x-coordinate of the rectangle.</li>
+<div>
+<div class="api-class-tabpanel index" id="index">
+<h2 class="off-left">项目索引</h2>
+<div class="index-section methods">
+<h3>方法</h3>
+<ul class="index-list methods">
+<li class="index-item method">
+<a href="#method_blt">blt</a>
+</li>
+<li class="index-item method">
+<a href="#method_changeHue">changeHue</a>
+</li>
+<li class="index-item method">
+<a href="#method_clear">clear</a>
+</li>
+<li class="index-item method">
+<a href="#method_clearRect">clearRect</a>
+</li>
+<li class="index-item method">
+<a href="#method_dispose">dispose</a>
+</li>
+<li class="index-item method">
+<a href="#method_drawText">drawText</a>
+</li>
+<li class="index-item method">
+<a href="#method_fillRect">fillRect</a>
+</li>
+<li class="index-item method">
+<a href="#method_getImageData">getImageData</a>
+</li>
+<li class="index-item method">
+<a href="#method_getPixel">getPixel</a>
+</li>
+<li class="index-item method">
+<a href="#method_gradientFillRect">gradientFillRect</a>
+</li>
+<li class="index-item method">
+<a href="#method_isPixelSet">isPixelSet</a>
+</li>
+<li class="index-item method">
+<a href="#method_makeImmutable">makeImmutable</a>
+</li>
+<li class="index-item method">
+<a href="#method_makeMutable">makeMutable</a>
+</li>
+<li class="index-item method">
+<a href="#method_scale">scale</a>
+</li>
+<li class="index-item method">
+<a href="#method_setImageData">setImageData</a>
+</li>
+<li class="index-item method">
+<a href="#method_stretchBlt">stretchBlt</a>
+</li>
+<li class="index-item method">
+<a href="#method_textSize">textSize</a>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">width</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The width of the rectangle.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">height</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The height of the rectangle.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">ImageData</span>:
-                    <p>The image data of the specified rectangle-area.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_getPixel" class="method item">
-    <h3 class="name"><code>getPixel</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>x</code>
-                </li>
-                <li class="arg">
-                        <code>y</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type"><a href="../classes/gs.Color.html" class="crosslink">gs.Color</a></span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Gets the color of the pixel at the specified position.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">x</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The x-coordinate of the pixel to get</li>
+<div class="index-section properties">
+<h3>属性</h3>
+<ul class="index-list properties">
+<li class="index-item property">
+<a href="#property_font">font</a>
+</li>
+<li class="index-item property">
+<a href="#property_immutable">immutable</a>
+</li>
+<li class="index-item property">
+<a href="#property_loaded">loaded</a>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">y</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The y-coordinate of the pixel to get</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type"><a href="../classes/gs.Color.html" class="crosslink">gs.Color</a></span>:
-                    <p>The color of the pixel.</p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_gradientFillRect" class="method item">
-    <h3 class="name"><code>gradientFillRect</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>x</code>
-                </li>
-                <li class="arg">
-                        <code>y</code>
-                </li>
-                <li class="arg">
-                        <code>width</code>
-                </li>
-                <li class="arg">
-                        <code>height</code>
-                </li>
-                <li class="arg">
-                        <code>color1</code>
-                </li>
-                <li class="arg">
-                        <code>color2</code>
-                </li>
-                <li class="arg">
-                        <code>vertical</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Fills a rectangle-area with a linear-gradient.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">x</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The x-coordinate of the rectangle.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">y</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The x-coordinate of the rectangle.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">width</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The width of the rectangle.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">height</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The height of the rectangle.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">color1</code>
-                        <span class="type"><a href="../classes/gs.Color.html" class="crosslink">gs.Color</a></span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The first gradient color.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">color2</code>
-                        <span class="type"><a href="../classes/gs.Color.html" class="crosslink">gs.Color</a></span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The second gradient color.</li>
-</ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">vertical</code>
-                        <span class="type">Boolean</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>If <b>true</b> the gradient is vertical. Otherwise horizontal.</li>
-</ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_isPixelSet" class="method item">
-    <h3 class="name"><code>isPixelSet</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>x</code>
-                </li>
-                <li class="arg">
-                        <code>y</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">Boolean</span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Checks if the pixel at the specified position has an alpha-value other than 0.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">x</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The x-coordinate of the pixel to check</li>
+<div class="api-class-tabpanel" id="methods">
+<h2 class="off-left">方法</h2>
+<div class="method item" id="method_blt">
+<h3 class="name"><code>blt</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>x</code>
+</li>
+<li class="arg">
+<code>y</code>
+</li>
+<li class="arg">
+<code>srcBitmap</code>
+</li>
+<li class="arg">
+<code>srcRect-</code>
+</li>
+<li class="arg">
+<code>opacity</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>在此位图上 Blits/绘制指定的位图。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">x</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>位置的 x 坐标。</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">y</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The y-coordinate of the pixel to check</li>
+</div>
+</li>
+<li class="param">
+<code class="param-name">y</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>位置的 y 坐标。</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">Boolean</span>:
-                    <p>If <b>true</b> the pixel is set(alpha &gt; 0). Otherwise <b>false</b></p>
-
-            </div>
-        </div>
-
-
 </div>
-<div id="method_makeImmutable" class="method item">
-    <h3 class="name"><code>makeImmutable</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Makes the bitmap immutable if it was mutable before. An immutable bitmap's pixel-data
-cannot be changed anymore and it cannot be drawn on other bitmaps but the memory consumption is much less. This action cannot be undone. You don't
-need to call this for bitmap's created from image files since those are immutable by default.</p>
-
-    </div>
-
-
-
-
-</div>
-<div id="method_makeMutable" class="method item">
-    <h3 class="name"><code>makeMutable</code></h3>
-
-        <span class="paren">()</span>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Makes the bitmap mutable if it was immutable before. An mutable bitmap's pixel-data
-can be changed anytime and it can be drawn on other mutable bitmaps but the memory consumption is much higher.</p>
-
-    </div>
-
-
-
-
-</div>
-<div id="method_scale" class="method item">
-    <h3 class="name"><code>scale</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>factor</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Scales the bitmap by the specified factor.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">factor</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The scale factor.</li>
+</li>
+<li class="param">
+<code class="param-name">srcBitmap</code>
+<span class="type"><a class="crosslink" href="../classes/gs.Bitmap.html">gs.Bitmap</a></span>
+<div class="param-description">
+<ul>
+<li>要 blit/绘制的位图。</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_setImageData" class="method item">
-    <h3 class="name"><code>setImageData</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>imageData</code>
-                </li>
-                <li class="arg">
-                        <code>x</code>
-                </li>
-                <li class="arg">
-                        <code>y</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Puts the image data at a specified point.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">imageData</code>
-                        <span class="type">ImageData</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The image data to put.</li>
+</li>
+<li class="param">
+<code class="param-name">srcRect-</code>
+<span class="type"><a class="crosslink" href="../classes/gs.Rect.html">gs.Rect</a></span>
+<div class="param-description">
+<p>源矩形。 仅将 blit/绘制该区域。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">opacity</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>不透明度</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">x</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The x-coordinate of the point.</li>
+</div>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">y</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The y-coordinate of the point.</li>
+</div>
+</div>
+<div class="method item" id="method_changeHue">
+<h3 class="name"><code>changeHue</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>hue</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>更改位图的色调。 一旦色调改变，就无法通过传递 0 作为色调来改回。 色调更改始终在当前的位图数据上执行。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">hue</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>色调（以度为单位）。</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_stretchBlt" class="method item">
-    <h3 class="name"><code>stretchBlt</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>destRect</code>
-                </li>
-                <li class="arg">
-                        <code>srcBitmap</code>
-                </li>
-                <li class="arg">
-                        <code>srcRect-</code>
-                </li>
-                <li class="arg">
-                        <code>opacity</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Blits/Draws the specified bitmap on this bitmap and stretches it to fit into the specified dest-rect.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">destRect</code>
-                        <span class="type"><a href="../classes/gs.Rect.html" class="crosslink">gs.Rect</a></span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The destination-rectangle for the bitmap to draw. If smaller/larger than the actual bitmap-size then it is automatically scaled.</li>
+</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">srcBitmap</code>
-                        <span class="type"><a href="../classes/gs.Bitmap.html" class="crosslink">gs.Bitmap</a></span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The bitmap to blit/draw.</li>
+</div>
+</div>
+<div class="method item" id="method_clear">
+<h3 class="name"><code>clear</code></h3>
+<span class="paren">()</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>清除位图。</p>
+</div>
+</div>
+<div class="method item" id="method_clearRect">
+<h3 class="name"><code>clearRect</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>x</code>
+</li>
+<li class="arg">
+<code>y</code>
+</li>
+<li class="arg">
+<code>width</code>
+</li>
+<li class="arg">
+<code>height</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>清除指定的矩形区域。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">x</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>矩形的 x 坐标。</li>
 </ul>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">srcRect-</code>
-                        <span class="type"><a href="../classes/gs.Rect.html" class="crosslink">gs.Rect</a></span>
-
-
-                    <div class="param-description">
-                        <p>The source-rectangle. Only that area will be blitted/drawn.</p>
-
-                    </div>
-
-                </li>
-                <li class="param">
-                        <code class="param-name">opacity</code>
-                        <span class="type">Number</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The opacity</li>
+</div>
+</li>
+<li class="param">
+<code class="param-name">y</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>矩形的 x 坐标。</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-
-
 </div>
-<div id="method_textSize" class="method item">
-    <h3 class="name"><code>textSize</code></h3>
-
-        <div class="args">
-            <span class="paren">(</span><ul class="args-list inline commas">
-                <li class="arg">
-                        <code>text</code>
-                </li>
-            </ul><span class="paren">)</span>
-        </div>
-
-        <span class="returns-inline">
-            <span class="type">gs.Size</span>
-        </span>
-
-
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-
-    </div>
-
-    <div class="description">
-        <p>Measures the size of the specified text.</p>
-
-    </div>
-
-        <div class="params">
-            <h4>Parameters:</h4>
-
-            <ul class="params-list">
-                <li class="param">
-                        <code class="param-name">text</code>
-                        <span class="type">String</span>
-
-
-                    <div class="param-description">
-                        <ul>
-<li>The text to measure</li>
+</li>
+<li class="param">
+<code class="param-name">width</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>矩形的宽度。</li>
 </ul>
-
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-
-        <div class="returns">
-            <h4>Returns:</h4>
-
-            <div class="returns-description">
-                        <span class="type">gs.Size</span>:
-                    <p>size - The size of the specified text.</p>
-
-            </div>
-        </div>
-
-
 </div>
-            </div>
-
-            <div id="properties" class="api-class-tabpanel">
-                <h2 class="off-left">Properties</h2>
-
-<div id="property_font" class="property item">
-    <h3 class="name"><code>font</code></h3>
-    <span class="type"><a href="../classes/gs.Font.html" class="crosslink">gs.Font</a></span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>The font used to draw text on the bitmap.</p>
-
-    </div>
-
-
-
+</li>
+<li class="param">
+<code class="param-name">height</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>矩形的高度。</li>
+</ul>
 </div>
-<div id="property_immutable" class="property item">
-    <h3 class="name"><code>immutable</code></h3>
-    <span class="type">Boolean</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Indicates if the bitmap is immutable. An immutable bitmap's pixel-data cannot be
-anymore after creation which is the default for bitmaps created from image files. For in-memory
-bitmaps, it defaults to <b>false</b>. You can change this property before the bitmap has been loaded to create an mutable bitmap. You
-can also check makeImmutable/makeMutable method to make a bitmap immutable/mutable anytime after creation.</p>
-
-    </div>
-
-
-
+</li>
+</ul>
 </div>
-<div id="property_loaded" class="property item">
-    <h3 class="name"><code>loaded</code></h3>
-    <span class="type">Boolean</span>
-
-
-
-
-
-    <div class="meta">
-                <p>
-        </p>
-
-
-    </div>
-
-    <div class="description">
-        <p>Indicates if the bitmap is loaded.</p>
-
-    </div>
-
-
-
 </div>
-            </div>
-
-
-    </div>
+<div class="method item" id="method_dispose">
+<h3 class="name"><code>dispose</code></h3>
+<span class="paren">()</span>
+<div class="meta">
+<p>
+</p>
 </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="description">
+<p>处置位图并释放内存。 如果不再需要位图，则应调用此方法以释放垃圾收集器未处理的资源。</p>
+</div>
+</div>
+<div class="method item" id="method_drawText">
+<h3 class="name"><code>drawText</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>x</code>
+</li>
+<li class="arg">
+<code>y</code>
+</li>
+<li class="arg">
+<code>w</code>
+</li>
+<li class="arg">
+<code>h</code>
+</li>
+<li class="arg">
+<code>text</code>
+</li>
+<li class="arg">
+<code class="optional">[hAlign=gs.Alignment.LEFT]</code>
+</li>
+<li class="arg">
+<code class="optional">[vAlign=gs.Alignment.TOP]</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>在位图上绘制指定的文本。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">x</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>文本位置的 x 坐标。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">y</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>文本位置的 y 坐标。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">w</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>用于对齐文本的文本框的宽度。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">h</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>用于对齐文本的文本框的高度。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">text</code>
+<span class="type">String</span>
+<div class="param-description">
+<ul>
+<li>要绘制的文本。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name optional">[hAlign=gs.Alignment.LEFT]</code>
+<span class="type">gs.Alignment</span>
+<span class="flag optional" title="This parameter is optional.">可选</span>
+<div class="param-description">
+<ul>
+<li>文本的水平对齐方式。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name optional">[vAlign=gs.Alignment.TOP]</code>
+<span class="type">gs.Alignment</span>
+<span class="flag optional" title="This parameter is optional.">可选</span>
+<div class="param-description">
+<ul>
+<li>文本的垂直对齐方式。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_fillRect">
+<h3 class="name"><code>fillRect</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>x</code>
+</li>
+<li class="arg">
+<code>y</code>
+</li>
+<li class="arg">
+<code>width</code>
+</li>
+<li class="arg">
+<code>height</code>
+</li>
+<li class="arg">
+<code>color</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>用指定的颜色填充矩形区域。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">x</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>矩形的 x 坐标。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">y</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>矩形的 x 坐标。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">width</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>矩形的宽度。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">height</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>矩形的高度。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">color</code>
+<span class="type"><a class="crosslink" href="../classes/gs.Color.html">gs.Color</a></span>
+<div class="param-description">
+<ul>
+<li>填充颜色。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_getImageData">
+<h3 class="name"><code>getImageData</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>x</code>
+</li>
+<li class="arg">
+<code>y</code>
+</li>
+<li class="arg">
+<code>width</code>
+</li>
+<li class="arg">
+<code>height</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="returns-inline">
+<span class="type">ImageData</span>
+</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>获取指定矩形区域的图像数据。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">x</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>矩形的 x 坐标。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">y</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>矩形的 x 坐标。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">width</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>矩形的宽度。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">height</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>矩形的高度。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type">ImageData</span>:<p>指定矩形区域的图像数据。</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_getPixel">
+<h3 class="name"><code>getPixel</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>x</code>
+</li>
+<li class="arg">
+<code>y</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="returns-inline">
+<span class="type"><a class="crosslink" href="../classes/gs.Color.html">gs.Color</a></span>
+</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>获取指定位置像素的颜色。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">x</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>要获取的像素的 x 坐标</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">y</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>要获取的像素的 y 坐标</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type"><a class="crosslink" href="../classes/gs.Color.html">gs.Color</a></span>:<p>像素的颜色。</p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_gradientFillRect">
+<h3 class="name"><code>gradientFillRect</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>x</code>
+</li>
+<li class="arg">
+<code>y</code>
+</li>
+<li class="arg">
+<code>width</code>
+</li>
+<li class="arg">
+<code>height</code>
+</li>
+<li class="arg">
+<code>color1</code>
+</li>
+<li class="arg">
+<code>color2</code>
+</li>
+<li class="arg">
+<code>vertical</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>用线性渐变填充矩形区域。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">x</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>矩形的 x 坐标。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">y</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>矩形的 x 坐标。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">width</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>矩形的宽度。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">height</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>矩形的高度。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">color1</code>
+<span class="type"><a class="crosslink" href="../classes/gs.Color.html">gs.Color</a></span>
+<div class="param-description">
+<ul>
+<li>第一个渐变色。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">color2</code>
+<span class="type"><a class="crosslink" href="../classes/gs.Color.html">gs.Color</a></span>
+<div class="param-description">
+<ul>
+<li>第二个渐变色。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">vertical</code>
+<span class="type">Boolean</span>
+<div class="param-description">
+<ul>
+<li>如果<b>true</b>渐变是垂直的。 否则为水平。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_isPixelSet">
+<h3 class="name"><code>isPixelSet</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>x</code>
+</li>
+<li class="arg">
+<code>y</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="returns-inline">
+<span class="type">Boolean</span>
+</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>检查指定位置的像素是否具有 0 以外的 alpha 值。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">x</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>要检查的像素的 x 坐标</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">y</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>要检查的像素的 y 坐标</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type">Boolean</span>:<p>如果<b>true</b>像素已设置（alpha &gt; 0）。 否则<b>false</b></p>
+</div>
+</div>
+</div>
+<div class="method item" id="method_makeImmutable">
+<h3 class="name"><code>makeImmutable</code></h3>
+<span class="paren">()</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>如果位图之前是可变的，则使其变为不可变的。 不可变位图的像素数据无法再更改，也无法在其他位图上绘制，但内存消耗要少得多。 此操作无法撤消。 您不需要为从图像文件创建的位图调用此方法，因为这些位图默认是不可变的。</p>
+</div>
+</div>
+<div class="method item" id="method_makeMutable">
+<h3 class="name"><code>makeMutable</code></h3>
+<span class="paren">()</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>如果位图之前是不可变的，则使其变为可变的。 可变位图的像素数据可以随时更改，并且可以在其他可变位图上绘制，但内存消耗要高得多。</p>
+</div>
+</div>
+<div class="method item" id="method_scale">
+<h3 class="name"><code>scale</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>factor</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>按指定的因子缩放位图。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">factor</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>缩放因子。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_setImageData">
+<h3 class="name"><code>setImageData</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>imageData</code>
+</li>
+<li class="arg">
+<code>x</code>
+</li>
+<li class="arg">
+<code>y</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>将图像数据放置在指定点。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">imageData</code>
+<span class="type">ImageData</span>
+<div class="param-description">
+<ul>
+<li>要放置的图像数据。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">x</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>点的 x 坐标。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">y</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>点的 y 坐标。</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_stretchBlt">
+<h3 class="name"><code>stretchBlt</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>destRect</code>
+</li>
+<li class="arg">
+<code>srcBitmap</code>
+</li>
+<li class="arg">
+<code>srcRect-</code>
+</li>
+<li class="arg">
+<code>opacity</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>在此位图上 Blits/绘制指定的位图，并将其拉伸以适合指定的 dest-rect。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">destRect</code>
+<span class="type"><a class="crosslink" href="../classes/gs.Rect.html">gs.Rect</a></span>
+<div class="param-description">
+<ul>
+<li>要绘制的位图的目标矩形。 如果小于/大于实际位图大小，则会自动缩放。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">srcBitmap</code>
+<span class="type"><a class="crosslink" href="../classes/gs.Bitmap.html">gs.Bitmap</a></span>
+<div class="param-description">
+<ul>
+<li>要 blit/绘制的位图。</li>
+</ul>
+</div>
+</li>
+<li class="param">
+<code class="param-name">srcRect-</code>
+<span class="type"><a class="crosslink" href="../classes/gs.Rect.html">gs.Rect</a></span>
+<div class="param-description">
+<p>源矩形。 仅将 blit/绘制该区域。</p>
+</div>
+</li>
+<li class="param">
+<code class="param-name">opacity</code>
+<span class="type">Number</span>
+<div class="param-description">
+<ul>
+<li>不透明度</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="method item" id="method_textSize">
+<h3 class="name"><code>textSize</code></h3>
+<div class="args">
+<span class="paren">(</span><ul class="args-list inline commas">
+<li class="arg">
+<code>text</code>
+</li>
+</ul><span class="paren">)</span>
+</div>
+<span class="returns-inline">
+<span class="type">gs.Size</span>
+</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>测量指定文本的大小。</p>
+</div>
+<div class="params">
+<h4>参数：</h4>
+<ul class="params-list">
+<li class="param">
+<code class="param-name">text</code>
+<span class="type">String</span>
+<div class="param-description">
+<ul>
+<li>要测量的文本</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="returns">
+<h4>返回：</h4>
+<div class="returns-description">
+<span class="type">gs.Size</span>:<p>size - 指定文本的大小。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="api-class-tabpanel" id="properties">
+<h2 class="off-left">属性</h2>
+<div class="property item" id="property_font">
+<h3 class="name"><code>font</code></h3>
+<span class="type"><a class="crosslink" href="../classes/gs.Font.html">gs.Font</a></span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>用于在位图上绘制文本的字体。</p>
+</div>
+</div>
+<div class="property item" id="property_immutable">
+<h3 class="name"><code>immutable</code></h3>
+<span class="type">Boolean</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>指示位图是否为不可变的。 不可变位图的像素数据在创建后不能再更改，这对于从图像文件创建的位图是默认的。 对于内存位图，它默认为<b>false</b>。 您可以在加载位图之前更改此属性以创建可变位图。 您还可以检查 makeImmutable/makeMutable 方法以在创建后的任何时间将位图设置为不可变/可变。</p>
+</div>
+</div>
+<div class="property item" id="property_loaded">
+<h3 class="name"><code>loaded</code></h3>
+<span class="type">Boolean</span>
+<div class="meta">
+<p>
+</p>
+</div>
+<div class="description">
+<p>指示位图是否已加载。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <script src="../assets/vendor/prettify/prettify-min.js"></script>
 <script>prettyPrint();</script>

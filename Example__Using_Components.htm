@@ -1,11 +1,11 @@
-<!DOCTYPE HTML>
+HTML
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
- <meta name="generator" content="Adobe RoboHelp 2015" />
-<title>Example: Using Components</title>
-<link rel="StyleSheet" href="default.css" type="text/css" />
-<script type="text/javascript" language="JavaScript">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="Adobe RoboHelp 2015" name="generator"/>
+<title>示例：使用组件</title>
+<link href="default.css" rel="StyleSheet" type="text/css"/>
+<script language="JavaScript" type="text/javascript">
 //<![CDATA[
 function reDo() {
   if (innerWidth != origWidth || innerHeight != origHeight)
@@ -29,95 +29,93 @@ visibility:hidden; }
 p.WebHelpNavBar { text-align:right; }
 -->
 </style>
-
-<script type="text/javascript" src="template/scripts/rh.min.js"></script>
-<script type="text/javascript" src="template/scripts/common.min.js"></script>
-<script type="text/javascript" src="template/scripts/topic.min.js"></script>
-<script type="text/javascript" src="template/scripts/constants.js"></script>
-<script type="text/javascript" src="template/scripts/utils.js"></script>
-<script type="text/javascript" src="template/scripts/mhutils.js"></script>
-<script type="text/javascript" src="template/scripts/mhlang.js"></script>
-<script type="text/javascript" src="template/scripts/mhver.js"></script>
-<script type="text/javascript" src="template/scripts/settings.js"></script>
-<script type="text/javascript" src="template/scripts/XmlJsReader.js"></script>
-<script type="text/javascript" src="template/scripts/loadparentdata.js"></script>
-<script type="text/javascript" src="template/scripts/loadscreen.js"></script>
-<script type="text/javascript" src="template/scripts/loadprojdata.js"></script>
-<script type="text/javascript" src="template/scripts/mhtopic.js"></script>
- <link rel="stylesheet" type="text/css" href="template/styles/topic.min.css">
-<script type="text/javascript" >
+<script src="template/scripts/rh.min.js" type="text/javascript"></script>
+<script src="template/scripts/common.min.js" type="text/javascript"></script>
+<script src="template/scripts/topic.min.js" type="text/javascript"></script>
+<script src="template/scripts/constants.js" type="text/javascript"></script>
+<script src="template/scripts/utils.js" type="text/javascript"></script>
+<script src="template/scripts/mhutils.js" type="text/javascript"></script>
+<script src="template/scripts/mhlang.js" type="text/javascript"></script>
+<script src="template/scripts/mhver.js" type="text/javascript"></script>
+<script src="template/scripts/settings.js" type="text/javascript"></script>
+<script src="template/scripts/XmlJsReader.js" type="text/javascript"></script>
+<script src="template/scripts/loadparentdata.js" type="text/javascript"></script>
+<script src="template/scripts/loadscreen.js" type="text/javascript"></script>
+<script src="template/scripts/loadprojdata.js" type="text/javascript"></script>
+<script src="template/scripts/mhtopic.js" type="text/javascript"></script>
+<link href="template/styles/topic.min.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript">
 gRootRelPath = ".";
 gCommonRootRelPath = ".";
 gTopicId = "5.3.1.0_8";
 </script>
- <meta name="topic-breadcrumbs" content="Script and Plugin Reference > In-Game UI Documentation > Getting Started" />
+<meta content="Script and Plugin Reference &gt; In-Game UI Documentation &gt; Getting Started" name="topic-breadcrumbs"/>
 </head>
 <body>
-<script type="text/javascript" src="./ehlpdhtm.js"></script>
-
-<div style="width: 100%; position: relative;" id="header">
- <p class="Topic_Heading"><span style="font-family: 'Book Antiqua', serif; font-size: 24pt;">Example: Using Components</span></p>
+<script src="./ehlpdhtm.js" type="text/javascript"></script>
+<div id="header" style="width: 100%; position: relative;">
+<p class="Topic_Heading"><span style="font-family: 'Book Antiqua', serif; font-size: 24pt;">示例：使用组件</span></p>
 </div>
-<p>&#160;</p>
-<p><span class="Topic_Start">W</span>ith components you can add specific kind of logic to a control. You can add already existing components or write your own. If you are familiar with Entity-Component Systems you probably already know what components are.</p>
-<p>&#160;</p>
-<p>Lets take a look at the following example:</p>
-<p>&#160;</p>
+<p> </p>
+<p><span class="Topic_Start">W</span>ith 组件，您可以为控件添加特定的逻辑。您可以添加已有的组件或编写自己的组件。如果您熟悉实体-组件系统，您可能已经知道组件是什么。</p>
+<p> </p>
+<p>让我们看看下面的例子：</p>
+<p> </p>
 <p><span class="Code">{</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"type": "ui.StackLayout",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;</span><span class="Code" style="font-weight: bold;">"components": [{ "id": "numberInput", "type": "Component_NumberInput", "params": { "digits": ($ -&gt; $tempFields.digits) } }]</span><span class="Code">,</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"sizeToFit": true,</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"id": "numberField",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"zIndex": 10,</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"alignmentX": "center",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"frame": [12, 50],</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"dataField": $ -&gt; $tempFields.digits</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;"template": {</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "ui.FreeLayout",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"margin": [5, 5, 5, 5],</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"sizeToFit": true,</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"controls": [</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "ui.Image",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"image": "entrybox"</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;},</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;{</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"type": "ui.Text",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"frame": [0, 0],</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"sizeToFit": true,</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"alignmentX": "center",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"alignmentY": "center",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"style": "numberInputEntryText",</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;"text": "0"</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;}</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;]</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;}</span></p>
+<p><span class="Code">"类型": "ui.StackLayout",</span></p>
+<p><span class="Code">    </span><span class="Code" style="font-weight: bold;">"组件": [{ "id": "numberInput", "type": "Component_NumberInput", "params": { "digits": ($ -&gt; $tempFields.digits) } }]</span><span class="Code">,</span></p>
+<p><span class="Code">"sizeToFit": true,</span></p>
+<p><span class="Code">"id": "numberField",</span></p>
+<p><span class="Code">"zIndex": 10,</span></p>
+<p><span class="Code">"alignmentX": "center",</span></p>
+<p><span class="Code">"框架": [12, 50],</span></p>
+<p><span class="Code">"dataField": $ -&gt; $tempFields.digits</span></p>
+<p><span class="Code">"template": {</span></p>
+<p><span class="Code">"类型": "ui.FreeLayout",</span></p>
+<p><span class="Code">"margin": [5, 5, 5, 5],</span></p>
+<p><span class="Code">"sizeToFit": true,</span></p>
+<p><span class="Code">"控件": [</span></p>
+<p><span class="Code">{</span></p>
+<p><span class="Code">"类型": "ui.Image",</span></p>
+<p><span class="Code">"图像": "entrybox"</span></p>
+<p><span class="Code">},</span></p>
+<p><span class="Code">{</span></p>
+<p><span class="Code">"类型": "ui.Text",</span></p>
+<p><span class="Code">"框架": [0, 0],</span></p>
+<p><span class="Code">"sizeToFit": true,</span></p>
+<p><span class="Code">"alignmentX": "center",</span></p>
+<p><span class="Code">"alignmentY": "center",</span></p>
+<p><span class="Code">"样式": "numberInputEntryText",</span></p>
+<p><span class="Code">"文本": "0"</span></p>
 <p><span class="Code">}</span></p>
-<p>&#160;</p>
-<p>That example defines a text-control with the text "New Game" and also assigned an action to it. But the problem is that a text-control doesn't support on-click actions by default. We need to add this kind of behavior first using the components-property. With that property we can add multiple components to our control. In our example we only add one component of type "Component_HotspotBehavior". With that component, our text-control supports on-click actions now and will start a new game if we click on it.</p>
-<p>&#160;</p>
-<p>If we take a look at "Components" folder in Script-Editor we will see that there is a component-class called gs.Component_HotspotBehavior. That is no accident, the type property we used refers to the class-name of the component we like to add. The component needs to be part of gs-module by default or you can specify another module using module-property. To add your own custom component, just use its class name and define in as part of gs-module or specify your own module (which is recommended).</p>
-<p>&#160;</p>
-<p class="Sub_Heading"><span>Writing your own component</span></p>
-<p>In the last example we saw how to add an existing component to allow a text-control executing on-click actions. In this example, we will write our own custom component to add some new behavior to a control.</p>
-<p>&#160;</p>
+<p><span class="Code">]</span></p>
+<p><span class="Code">}</span></p>
+<p><span class="Code">}</span></p>
+<p> </p>
+<p>该示例定义了一个文本控件，文本为“New Game”，并为其分配了一个动作。但问题是，文本控件默认不支持单击动作。我们需要首先使用 components 属性添加这种行为。使用该属性，我们可以将多个组件添加到我们的控件中。在我们的示例中，我们只添加了一个类型为“Component_HotspotBehavior”的组件。有了这个组件，我们的文本控件现在支持单击动作，并在我们单击它时启动一个新游戏。</p>
+<p> </p>
+<p>如果我们查看脚本编辑器中的“Components”文件夹，我们将看到一个名为 gs.Component_HotspotBehavior 的组件类。这并非偶然，我们使用的 type 属性指的是我们要添加的组件的类名。组件默认需要是 gs 模块的一部分，或者您可以使用 module 属性指定另一个模块。要添加您自己的自定义组件，只需使用其类名并将其定义为 gs 模块的一部分或指定您自己的模块（这是推荐的）。</p>
+<p> </p>
+<p class="Sub_Heading"><span>编写自己的组件</span></p>
+<p>在最后一个示例中，我们看到了如何添加一个现有组件来允许文本控件执行单击动作。在本示例中，我们将编写自己的自定义组件来为控件添加一些新行为。</p>
+<p> </p>
 <p><span class="Code">class Component_MyCustomBehavior extends gs.Component</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;constructor: (params) -&gt;</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# Create your component from optional params-object.</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;setup: -&gt;</span></p>
+<p><span class="Code">constructor: (params) -&gt;</span></p>
+<p><span class="Code"># Create your component from optional params-object.</span></p>
+<p><span class="Code">setup: -&gt;</span></p>
 <p style="margin-left: 80px;"><span class="Code"># Setup your component, the object-reference has been set to the control-object.</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;update: -&gt;</span></p>
+<p><span class="Code">update: -&gt;</span></p>
 <p style="margin-left: 80px;"><span class="Code"># Implement your update code if necessary.</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;action_method1: (sender, params) -&gt;</span></p>
-<p><span class="Code">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;# Implement action logic here</span></p>
+<p><span class="Code">action_method1: (sender, params) -&gt;</span></p>
+<p><span class="Code"># Implement action logic here</span></p>
 <p><span class="Code">gs.Component_MyCustomBehavior = Component_MyCustomBehavior</span></p>
-<p>&#160;</p>
-<p>You can see the above example as a template for your own custom components. To use our own component now, we just write:</p>
-<p>&#160;</p>
+<p> </p>
+<p>您上面的示例可以作为您自己的自定义组件的模板。要现在使用我们自己的组件，我们只需编写：</p>
+<p> </p>
 <p><span class="Code">"components": [{ "id": "custom_component", "type": "Component_MyCustomBehavior", "params": { "param1": "Hello" } }]</span></p>
-<p>&#160;</p>
-<p>The id-property is optional but allows you to specify your component as an action-target to call actions on your component like described in Example 6. The params-property is optional too and allows you to pass parameters to the component's constructor.</p>
-<p>&#160;</p>
-<p>If you want to see a more advanced example, take a look at gs.Component_NumberInput component for example.</p>
+<p> </p>
+<p>id 属性是可选的，但它允许您将您的组件指定为操作目标，以调用您组件上的操作，如示例 6 中所述。params 属性也是可选的，允许您将参数传递给组件的构造函数。</p>
+<p> </p>
+<p>如果您想看一个更高级的例子，可以看看 gs.Component_NumberInput 组件。</p>
 </body>
 </html>
